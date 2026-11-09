@@ -1,7 +1,7 @@
 # AdVal
 
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-yvligo-ffd21e)](https://huggingface.co/loglogai/yvligo)
-[![loglog.ai](https://img.shields.io/badge/web-loglog.ai-1f6feb)](https://loglog.ai)
+[![Blog](https://img.shields.io/badge/blog-Introducing%20AdVal-1f6feb)](https://loglog.ai/blog/introducing-adval)
 
 AdVal (Advertisement Eval) measures how well an LLM agent runs a paid ad campaign on its own. The agent gets a client's
 brief and a budget, runs the campaign on a simulated X (Twitter) Ads market, and is scored on what the client counts: the
