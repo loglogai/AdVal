@@ -1,0 +1,1 @@
+Campaign ended on schedule. Total spend was **$337.18** of the $350 budget, with **410,964 impressions** and **211 link clicks**. X couldn’t report booked demos because the site has no pixel.

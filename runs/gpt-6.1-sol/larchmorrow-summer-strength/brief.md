@@ -1,0 +1,21 @@
+Summer has a way of filling the calendar before anyone notices, so I want this campaign to show how a small strength routine can fit into an ordinary day. We're Larchmorrow Strength, a small app business based in Denver. Please run our X campaign from Sunday, July 11, 2027 through Thursday, July 15, 2027, inclusive. That's five days in our account's Mountain time zone; please use those local calendar days for the start and finish.
+
+Our app is designed for people over 60 who want a straightforward way to practice strength at home. Each session takes 12 minutes and uses a sturdy chair and light dumbbells. The chair is part of the exercise setup, and the app explains when to sit, stand or use it for support. The demonstrations are deliberately unhurried, with clear instructions and enough time to get into position. People can repeat a session instead of feeling pushed into a new routine every day.
+
+The idea came from hearing how often people put off exercise because the setup feels bigger than the workout. We built something that can happen in a familiar room with a small amount of equipment. Our summer story is about ordinary plans: carrying the picnic bag, getting ready for a day with family, or fitting a session in before heading outside. Please keep the tone practical and welcoming. We aren't promising a dramatic transformation in two weeks; the trial is a chance to see whether the routine fits someone's life.
+
+The landing page is https://larchmorrow.com/start. Here's the copy from our landing page: "Larchmorrow Strength is a Denver-built app designed for people over 60, with clear, 12-minute strength sessions using a sturdy chair and light dumbbells at home. Start your 14-day free trial and make a little room for strength this summer. Available in the United States and Canada, exclusively on iPhone (iOS) and Android phones. Our workouts are designed around life after 60, but there is no age restriction on signing up."
+
+We can serve customers in the United States and Canada. Although the product is built around people over 60, that is a description of whom we designed it for, not an enrollment cutoff. There is no minimum age requirement for starting the trial. The platform requirement is firm: someone must have an iPhone running iOS or an Android phone to start and use the trial. We don't have a desktop, browser or tablet version. The website explains the product and takes people to the appropriate phone app.
+
+The outcome I want is as many free-trial starts as possible. We count a trial start when someone activates the 14-day trial inside the app; a landing-page visit or an app download alone doesn't count. Our site does not have X's pixel installed, so X cannot see those trial starts. We keep the trial-start count in our own app reporting. Please keep that measurement gap in mind when reviewing the campaign's results.
+
+You may launch and manage the campaign on your own without asking me for approval. Please watch it throughout the full five-day flight and make adjustments as needed while it runs. Once it ends on July 15, send me a short recap with total spend, impressions and link clicks. Keep the recap clear about what those figures show, since the trial starts themselves aren't visible to X.
+
+Total budget: 500.00 USD for everything you launch: every campaign and ad group draws on this one budget. We've approved these 2 posts, all on our account, and only these, so please don't write new ones. Promote whichever you think will work, in as many campaigns and ad groups as you like, and change, pause or stop them as you learn what works:
+
+Post 2206282024354198610:
+A little strength can fit into a summer day. Larchmorrow Strength offers clear, 12-minute home sessions designed for life after 60. Try the app free for 14 days: https://larchmorrow.com/start
+
+Post 2206463218284357170:
+Your summer calendar has apparently forgotten to schedule a breather. Got 12 minutes before its next request? Find your free 14-day start: https://larchmorrow.com/start

@@ -1,0 +1,717 @@
+[
+  {
+    "at": "2027-02-10T16:00:00Z",
+    "tool": "list_ads_accounts",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"business_id\":null,\"business_name\":null,\"country_code\":\"AU\",\"created_at\":\"2024-08-16T16:00:00Z\",\"deleted\":false,\"id\":\"18nswhw8d22\",\"industry_type\":null,\"name\":\"Marrow Lane Scores\",\"timezone\":\"Australia/Perth\",\"timezone_switch_at\":\"2024-08-16T16:00:00Z\",\"updated_at\":\"2024-08-16T16:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-10T16:00:00Z",
+    "tool": "get_current_time",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-02-15T17:00:00Z\",\"now\":\"2027-02-10T16:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-10T16:00:00Z",
+    "tool": "list_funding_instruments",
+    "arguments": {
+      "account_id": "18nswhw8d22"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"able_to_fund\":true,\"created_at\":\"2024-08-16T16:00:00Z\",\"credit_limit_local_micro\":null,\"credit_remaining_local_micro\":null,\"currency\":\"USD\",\"deleted\":false,\"description\":\"Visa ending in 7764\",\"end_time\":null,\"entity_status\":\"ACTIVE\",\"funded_amount_local_micro\":0,\"id\":\"d341f4\",\"io_header\":null,\"reasons_not_able_to_fund\":[],\"start_time\":\"2024-08-16T16:00:00Z\",\"type\":\"CREDIT_CARD\",\"updated_at\":\"2024-08-16T16:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"18nswhw8d22\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-10T16:00:00Z",
+    "tool": "list_campaigns",
+    "arguments": {
+      "account_id": "18nswhw8d22"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"18nswhw8d22\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-10T16:00:00Z",
+    "tool": "list_line_item_placements",
+    "arguments": {
+      "product_type": "PROMOTED_TWEETS"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"placements\":[[\"ALL_ON_TWITTER\"],[\"ALL_ON_TWITTER\",\"PUBLISHER_NETWORK\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL_LANDSCAPE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_NATIVE\"],[\"PUBLISHER_NETWORK\"],[\"PUBLISHER_NETWORK\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"PUBLISHER_NETWORK\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"PUBLISHER_NETWORK\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"PUBLISHER_NETWORK\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\"],[\"TAP_BANNER\",\"TAP_FULL\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_NATIVE\"],[\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\"],[\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_NATIVE\"],[\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TWITTER_MEDIA_VIEWER\"],[\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TWITTER_REPLIES\"],[\"TWITTER_SEARCH\"],[\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TWITTER_TIMELINE\"]],\"product_type\":\"PROMOTED_TWEETS\"}],\"next_cursor\":null,\"request\":{\"params\":{\"product_type\":\"PROMOTED_TWEETS\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-10T16:00:00Z",
+    "tool": "get_ad_policy",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"enforcement\":\"ad groups that break the policy of their category are disapproved and don't serve\",\"minors\":\"no ad may reach anyone under 13; alcohol may never target minors\",\"pre_authorization\":\"required for every restricted category\",\"restricted_categories\":[{\"category\":\"alcohol\",\"countries\":[\"AL\",\"AR\",\"AT\",\"AU\",\"BA\",\"BE\",\"BG\",\"BO\",\"BR\",\"CA\",\"CH\",\"CL\",\"CO\",\"CR\",\"CY\",\"CZ\",\"DE\",\"DK\",\"DO\",\"EC\",\"EE\",\"ES\",\"FI\",\"FR\",\"GB\",\"GH\",\"GR\",\"HK\",\"HN\",\"HR\",\"HU\",\"IE\",\"IL\",\"IN\",\"IS\",\"IT\",\"JP\",\"KE\",\"KH\",\"KR\",\"LT\",\"LU\",\"LV\",\"ME\",\"MK\",\"MT\",\"MX\",\"MY\",\"NG\",\"NI\",\"NL\",\"NZ\",\"PA\",\"PE\",\"PH\",\"PT\",\"PY\",\"RO\",\"RS\",\"SE\",\"SG\",\"SI\",\"SK\",\"SN\",\"SV\",\"TW\",\"UA\",\"UG\",\"US\",\"UY\",\"VE\",\"ZA\",\"ZM\"],\"covers\":\"promoting, selling or branding beer, wine or spirits, and competitions with alcohol as a prize\",\"min_age\":{\"by_country\":{\"JP\":20,\"KR\":20,\"US\":21},\"elsewhere\":18},\"targeting_types\":null},{\"category\":\"financial_services\",\"countries\":[\"AE\",\"AR\",\"AT\",\"AU\",\"AW\",\"BA\",\"BB\",\"BE\",\"BG\",\"BM\",\"BR\",\"BS\",\"CA\",\"CH\",\"CL\",\"CR\",\"CW\",\"CZ\",\"DE\",\"DK\",\"DO\",\"EC\",\"EG\",\"ES\",\"FI\",\"FR\",\"GB\",\"GH\",\"GR\",\"GT\",\"HK\",\"HN\",\"HR\",\"ID\",\"IE\",\"IL\",\"IN\",\"IT\",\"JM\",\"JP\",\"KR\",\"KW\",\"MA\",\"MK\",\"MY\",\"NG\",\"NI\",\"NL\",\"NO\",\"NZ\",\"OM\",\"PA\",\"PE\",\"PH\",\"PK\",\"PL\",\"PT\",\"PY\",\"QA\",\"RO\",\"RS\",\"RU\",\"SA\",\"SE\",\"SG\",\"SI\",\"SV\",\"TH\",\"TR\",\"TT\",\"TW\",\"TZ\",\"UA\",\"UG\",\"US\",\"UY\",\"VE\",\"VN\",\"ZA\",\"ZM\"],\"covers\":\"banks, money service businesses, mobile and electronic payments, money transfer, savings, investment, currency exchange, loans and insurance\",\"min_age\":null,\"targeting_types\":null},{\"category\":\"political_content\",\"countries\":[\"AE\",\"AR\",\"AU\",\"CL\",\"CO\",\"EC\",\"GB\",\"GH\",\"ID\",\"IL\",\"IN\",\"JP\",\"MX\",\"PE\",\"SA\",\"US\",\"ZA\"],\"covers\":\"ads that reference a candidate, party, official, election, referendum, legislation, regulation or judicial outcome\",\"min_age\":null,\"targeting_types\":null},{\"category\":\"political_campaigning\",\"countries\":[\"AR\",\"AU\",\"CO\",\"EC\",\"GB\",\"GH\",\"ID\",\"IL\",\"JP\",\"MX\",\"PA\",\"PE\",\"US\",\"ZA\"],\"covers\":\"ads that advocate for or against, or ask for votes or money for, a candidate, party, election, legislation, referendum or ballot measure\",\"min_age\":null,\"targeting_types\":[\"LOCATION\",\"AGE\",\"GENDER\",\"INTEREST\",\"BROAD_KEYWORD\",\"PHRASE_KEYWORD\",\"EXACT_KEYWORD\",\"UNORDERED_KEYWORD\",\"NEGATIVE_PHRASE_KEYWORD\",\"NEGATIVE_EXACT_KEYWORD\",\"NEGATIVE_UNORDERED_KEYWORD\",\"CUSTOM_AUDIENCE\",\"CUSTOM_AUDIENCE_EXPANDED\",\"SIMILAR_TO_FOLLOWERS_OF_USER\",\"FOLLOWER_LOOK_ALIKES\"]}]},\"request\":{\"params\":{}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-10T16:00:00Z",
+    "tool": "create_campaign",
+    "arguments": {
+      "account_id": "18nswhw8d22",
+      "funding_instrument_id": "d341f4",
+      "name": "Tidelines Valentine's weekend (Feb 11-15, 2027)"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-02-10T16:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"PAUSED\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"d341f4\",\"id\":\"bldyv\",\"name\":\"Tidelines Valentine's weekend (Feb 11-15, 2027)\",\"purchase_order_number\":null,\"reasons_not_servable\":[\"PAUSED_BY_ADVERTISER\"],\"servable\":false,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-02-10T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18nswhw8d22\",\"funding_instrument_id\":\"d341f4\",\"name\":\"Tidelines Valentine's weekend (Feb 11-15, 2027)\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-10T16:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "q": "Iran",
+      "location_type": "COUNTRIES"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"location_type\":\"COUNTRIES\",\"q\":\"Iran\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-10T16:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "q": "North Korea",
+      "location_type": "COUNTRIES"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"country_code\":\"MP\",\"location_type\":\"COUNTRIES\",\"name\":\"Northern Mariana Islands\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"f342cd7d716c8acb\"},{\"country_code\":\"KR\",\"location_type\":\"COUNTRIES\",\"name\":\"South Korea\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"c00e5392b3fa46fb\"}],\"next_cursor\":null,\"request\":{\"params\":{\"location_type\":\"COUNTRIES\",\"q\":\"North Korea\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-10T16:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "q": "Cuba",
+      "location_type": "COUNTRIES"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"location_type\":\"COUNTRIES\",\"q\":\"Cuba\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-10T16:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "q": "Syria",
+      "location_type": "COUNTRIES"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"location_type\":\"COUNTRIES\",\"q\":\"Syria\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-10T16:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "country_code": "IR",
+      "location_type": "COUNTRIES"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"country_code\":\"IR\",\"location_type\":\"COUNTRIES\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-10T16:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "country_code": "KP",
+      "location_type": "COUNTRIES"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"country_code\":\"KP\",\"location_type\":\"COUNTRIES\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-10T16:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "country_code": "CU",
+      "location_type": "COUNTRIES"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"country_code\":\"CU\",\"location_type\":\"COUNTRIES\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-10T16:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "country_code": "SY",
+      "location_type": "COUNTRIES"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"country_code\":\"SY\",\"location_type\":\"COUNTRIES\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-10T16:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "q": "Iran"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"country_code\":\"FR\",\"location_type\":\"CITIES\",\"name\":\"Irancy, France, FR\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"66c216a432b4cc25\"},{\"country_code\":\"BR\",\"location_type\":\"CITIES\",\"name\":\"Iranduba, Brasil, BR\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"0071c8af840dc026\"},{\"country_code\":\"ES\",\"location_type\":\"CITIES\",\"name\":\"Ira\u00f1eta, ES\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"238aced06f966e44\"},{\"country_code\":\"BR\",\"location_type\":\"CITIES\",\"name\":\"Irani, Brasil, BR\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"17c29abbb15f70a1\"}],\"next_cursor\":null,\"request\":{\"params\":{\"q\":\"Iran\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-10T16:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "q": "Cuba"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"country_code\":\"US\",\"location_type\":\"CITIES\",\"name\":\"Cuba, MO, US\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"a86d44bc20143db5\"},{\"country_code\":\"PT\",\"location_type\":\"CITIES\",\"name\":\"Cuba, PT\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"684260257b67a369\"},{\"country_code\":\"AU\",\"location_type\":\"CITIES\",\"name\":\"Cuballing, AU\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"00dd4b8403047312\"},{\"country_code\":\"CO\",\"location_type\":\"CITIES\",\"name\":\"Cubar\u00e1, Colombia, CO\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"01601887782a8ef0\"},{\"country_code\":\"ES\",\"location_type\":\"CITIES\",\"name\":\"Cubas de la Sagra, ES\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"e21cdb71b488d117\"},{\"country_code\":\"BR\",\"location_type\":\"CITIES\",\"name\":\"Cubat\u00e3o, BR\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"0d0eb7906b10766f\"},{\"country_code\":\"BR\",\"location_type\":\"CITIES\",\"name\":\"Cubati, Brasil, BR\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"074c2a13a0951749\"},{\"country_code\":\"ES\",\"location_type\":\"CITIES\",\"name\":\"Almonacid de la Cuba, ES\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3f1a2b58623d9204\"},{\"country_code\":\"FR\",\"location_type\":\"CITIES\",\"name\":\"Cherveix-Cubas, France, FR\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"304ea26afd03810e\"},{\"country_code\":\"ES\",\"location_type\":\"CITIES\",\"name\":\"La Cuba, ES\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6e551ca1da555219\"},{\"country_code\":\"CO\",\"location_type\":\"CITIES\",\"name\":\"San Luis de Cubarral, Colombia, CO\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"01fde78d4879f578\"},{\"country_code\":\"ES\",\"location_type\":\"CITIES\",\"name\":\"San Rom\u00e1n de la Cuba, ES\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"a76dcab85cbd5657\"}],\"next_cursor\":null,\"request\":{\"params\":{\"q\":\"Cuba\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-10T16:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "q": "Syria"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"q\":\"Syria\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-10T16:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "q": "Korea",
+      "location_type": "COUNTRIES"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"country_code\":\"KR\",\"location_type\":\"COUNTRIES\",\"name\":\"South Korea\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"c00e5392b3fa46fb\"}],\"next_cursor\":null,\"request\":{\"params\":{\"location_type\":\"COUNTRIES\",\"q\":\"Korea\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-10T16:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "location_type": "COUNTRIES",
+      "count": 1000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"country_code\":\"AF\",\"location_type\":\"COUNTRIES\",\"name\":\"Afghanistan\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"9ac7aa903ba29bd1\"},{\"country_code\":\"AX\",\"location_type\":\"COUNTRIES\",\"name\":\"Aland Islands\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"33a212b5c4f9e952\"},{\"country_code\":\"AL\",\"location_type\":\"COUNTRIES\",\"name\":\"Albania\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"82779978c58253a6\"},{\"country_code\":\"DZ\",\"location_type\":\"COUNTRIES\",\"name\":\"Algeria\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"d73762e172ac7c37\"},{\"country_code\":\"AS\",\"location_type\":\"COUNTRIES\",\"name\":\"American Samoa\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"17f8f93731f3b9da\"},{\"country_code\":\"AD\",\"location_type\":\"COUNTRIES\",\"name\":\"Andorra\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"0a51cbf77aee0006\"},{\"country_code\":\"AO\",\"location_type\":\"COUNTRIES\",\"name\":\"Angola\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"e771af67815e87e8\"},{\"country_code\":\"AI\",\"location_type\":\"COUNTRIES\",\"name\":\"Anguilla\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"efe591bd99ea52c0\"},{\"country_code\":\"AQ\",\"location_type\":\"COUNTRIES\",\"name\":\"Antarctica\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"4d25f30d2fbf1463\"},{\"country_code\":\"AG\",\"location_type\":\"COUNTRIES\",\"name\":\"Antigua and Barbuda\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"e0f46cd26fe3d713\"},{\"country_code\":\"AR\",\"location_type\":\"COUNTRIES\",\"name\":\"Argentina\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"4d3b316fe2e52b29\"},{\"country_code\":\"AM\",\"location_type\":\"COUNTRIES\",\"name\":\"Armenia\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"1315b8e69a2d1511\"},{\"country_code\":\"AW\",\"location_type\":\"COUNTRIES\",\"name\":\"Aruba\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"fa07565662daf560\"},{\"country_code\":\"AU\",\"location_type\":\"COUNTRIES\",\"name\":\"Australia\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3f14ce28dc7c4566\"},{\"country_code\":\"AT\",\"location_type\":\"COUNTRIES\",\"name\":\"Austria\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"30410557050f13a5\"},{\"country_code\":\"AZ\",\"location_type\":\"COUNTRIES\",\"name\":\"Azerbaijan\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"efc23cd34689b068\"},{\"country_code\":\"BS\",\"location_type\":\"COUNTRIES\",\"name\":\"Bahamas\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"b631437cf2f16804\"},{\"country_code\":\"BH\",\"location_type\":\"COUNTRIES\",\"name\":\"Bahrain\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"e3e9c55876b99760\"},{\"country_code\":\"BD\",\"location_type\":\"COUNTRIES\",\"name\":\"Bangladesh\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"9f4e63426a3f3da2\"},{\"country_code\":\"BB\",\"location_type\":\"COUNTRIES\",\"name\":\"Barbados\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"80f128c34d2549c6\"},{\"country_code\":\"BY\",\"location_type\":\"COUNTRIES\",\"name\":\"Belarus\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"333a5811d6b0c1cb\"},{\"country_code\":\"BE\",\"location_type\":\"COUNTRIES\",\"name\":\"Belgium\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"78bfaf3f12c05982\"},{\"country_code\":\"BZ\",\"location_type\":\"COUNTRIES\",\"name\":\"Belize\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"26bbb44363843596\"},{\"country_code\":\"BJ\",\"location_type\":\"COUNTRIES\",\"name\":\"Benin\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ee84ba0d0454651a\"},{\"country_code\":\"BM\",\"location_type\":\"COUNTRIES\",\"name\":\"Bermuda\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"360981d61a4350f3\"},{\"country_code\":\"BT\",\"location_type\":\"COUNTRIES\",\"name\":\"Bhutan\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3a6b696db46e9e1d\"},{\"country_code\":\"BO\",\"location_type\":\"COUNTRIES\",\"name\":\"Bolivia\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"c4320f726d222937\"},{\"country_code\":\"BQ\",\"location_type\":\"COUNTRIES\",\"name\":\"Bonaire, Saint Eustatius and Saba\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6469452a7c914c92\"},{\"country_code\":\"BA\",\"location_type\":\"COUNTRIES\",\"name\":\"Bosnia and Herzegovina\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"7dc97830ee71b3cb\"},{\"country_code\":\"BW\",\"location_type\":\"COUNTRIES\",\"name\":\"Botswana\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"8a927a7056322151\"},{\"country_code\":\"BV\",\"location_type\":\"COUNTRIES\",\"name\":\"Bouvet Island\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3c3046e2f25a7a09\"},{\"country_code\":\"BR\",\"location_type\":\"COUNTRIES\",\"name\":\"Brazil\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"1b107df3ccc0aaa1\"},{\"country_code\":\"IO\",\"location_type\":\"COUNTRIES\",\"name\":\"British Indian Ocean Territory\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"88f6c97979c5c22d\"},{\"country_code\":\"VG\",\"location_type\":\"COUNTRIES\",\"name\":\"British Virgin Islands\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"7fe44a4ec805e4e2\"},{\"country_code\":\"BN\",\"location_type\":\"COUNTRIES\",\"name\":\"Brunei\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"b4260f742fbc8d32\"},{\"country_code\":\"BG\",\"location_type\":\"COUNTRIES\",\"name\":\"Bulgaria\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"1ef1183ed7056dc1\"},{\"country_code\":\"BF\",\"location_type\":\"COUNTRIES\",\"name\":\"Burkina Faso\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"04ba472d56551ba1\"},{\"country_code\":\"BI\",\"location_type\":\"COUNTRIES\",\"name\":\"Burundi\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6286fa85f57c2aad\"},{\"country_code\":\"KH\",\"location_type\":\"COUNTRIES\",\"name\":\"Cambodia\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"df4a2798d032e321\"},{\"country_code\":\"CM\",\"location_type\":\"COUNTRIES\",\"name\":\"Cameroon\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"97cabb75f5a4787a\"},{\"country_code\":\"CA\",\"location_type\":\"COUNTRIES\",\"name\":\"Canada\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3376992a082d67c7\"},{\"country_code\":\"CV\",\"location_type\":\"COUNTRIES\",\"name\":\"Cape Verde\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"910f8f064186be58\"},{\"country_code\":\"KY\",\"location_type\":\"COUNTRIES\",\"name\":\"Cayman Islands\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"cc896d5380524db4\"},{\"country_code\":\"CF\",\"location_type\":\"COUNTRIES\",\"name\":\"Central African Republic\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"12ff487cb5a05ff7\"},{\"country_code\":\"TD\",\"location_type\":\"COUNTRIES\",\"name\":\"Chad\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"9d86cf820e7f9341\"},{\"country_code\":\"CL\",\"location_type\":\"COUNTRIES\",\"name\":\"Chile\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"47a3cf27863714de\"},{\"country_code\":\"CN\",\"location_type\":\"COUNTRIES\",\"name\":\"China\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"4797714c95971ac1\"},{\"country_code\":\"CX\",\"location_type\":\"COUNTRIES\",\"name\":\"Christmas Island\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"be13fe9d62b80d9e\"},{\"country_code\":\"CC\",\"location_type\":\"COUNTRIES\",\"name\":\"Cocos (Keeling) Islands\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"7766f18018c690dc\"},{\"country_code\":\"CO\",\"location_type\":\"COUNTRIES\",\"name\":\"Colombia\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"0639360bd49a15e3\"},{\"country_code\":\"KM\",\"location_type\":\"COUNTRIES\",\"name\":\"Comoros\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"133b43ff55d804f4\"},{\"country_code\":\"CK\",\"location_type\":\"COUNTRIES\",\"name\":\"Cook Islands\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"21862bdb3b42ea33\"},{\"country_code\":\"CR\",\"location_type\":\"COUNTRIES\",\"name\":\"Costa Rica\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"e44e7dc5a2e1c3f1\"},{\"country_code\":\"CI\",\"location_type\":\"COUNTRIES\",\"name\":\"Cote d'Ivoire\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"7e0b3752623e1d72\"},{\"country_code\":\"HR\",\"location_type\":\"COUNTRIES\",\"name\":\"Croatia\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"8d65596349ee2e01\"},{\"country_code\":\"CW\",\"location_type\":\"COUNTRIES\",\"name\":\"Curacao\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"b0b7e818ce3fec3f\"},{\"country_code\":\"CY\",\"location_type\":\"COUNTRIES\",\"name\":\"Cyprus\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"f0af1239cbebb474\"},{\"country_code\":\"CZ\",\"location_type\":\"COUNTRIES\",\"name\":\"Czech Republic\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6b5d375c346e3be9\"},{\"country_code\":\"CD\",\"location_type\":\"COUNTRIES\",\"name\":\"Democratic Republic of the Congo\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"17cd9eb8e2c0152c\"},{\"country_code\":\"DK\",\"location_type\":\"COUNTRIES\",\"name\":\"Denmark\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"c29833e68a86e703\"},{\"country_code\":\"DJ\",\"location_type\":\"COUNTRIES\",\"name\":\"Djibouti\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"fa1e0cb60ddedc05\"},{\"country_code\":\"DM\",\"location_type\":\"COUNTRIES\",\"name\":\"Dominica\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"937d9ebcc1f8365b\"},{\"country_code\":\"DO\",\"location_type\":\"COUNTRIES\",\"name\":\"Dominican Republic\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"695f560eb8922977\"},{\"country_code\":\"EC\",\"location_type\":\"COUNTRIES\",\"name\":\"Ecuador\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"4e43cac8250a8b20\"},{\"country_code\":\"EG\",\"location_type\":\"COUNTRIES\",\"name\":\"Egypt\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"c659cb4912229666\"},{\"country_code\":\"SV\",\"location_type\":\"COUNTRIES\",\"name\":\"El Salvador\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"43bf7210cd175772\"},{\"country_code\":\"GQ\",\"location_type\":\"COUNTRIES\",\"name\":\"Equatorial Guinea\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"648e07ff5133ca21\"},{\"country_code\":\"ER\",\"location_type\":\"COUNTRIES\",\"name\":\"Eritrea\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"774ccf26b8961ffa\"},{\"country_code\":\"EE\",\"location_type\":\"COUNTRIES\",\"name\":\"Estonia\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"e222580e9a58b499\"},{\"country_code\":\"ET\",\"location_type\":\"COUNTRIES\",\"name\":\"Ethiopia\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"c3b85cf1d8b226f2\"},{\"country_code\":\"FK\",\"location_type\":\"COUNTRIES\",\"name\":\"Falkland Islands\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"5fe7735f51fb69d9\"},{\"country_code\":\"FO\",\"location_type\":\"COUNTRIES\",\"name\":\"Faroe Islands\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"5b1c430f0a25322e\"},{\"country_code\":\"FJ\",\"location_type\":\"COUNTRIES\",\"name\":\"Fiji\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"2eca8f364790ebb5\"},{\"country_code\":\"FI\",\"location_type\":\"COUNTRIES\",\"name\":\"Finland\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"e7c97cdfef3a741a\"},{\"country_code\":\"FR\",\"location_type\":\"COUNTRIES\",\"name\":\"France\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"f3bfc7dcc928977f\"},{\"country_code\":\"GF\",\"location_type\":\"COUNTRIES\",\"name\":\"French Guiana\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"991b4344edc2d520\"},{\"country_code\":\"PF\",\"location_type\":\"COUNTRIES\",\"name\":\"French Polynesia\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ea5eca163987d547\"},{\"country_code\":\"TF\",\"location_type\":\"COUNTRIES\",\"name\":\"French Southern Territories\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"c027ef7e8f9b3ee2\"},{\"country_code\":\"GA\",\"location_type\":\"COUNTRIES\",\"name\":\"Gabon\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"1a94ec7b94ebb007\"},{\"country_code\":\"GM\",\"location_type\":\"COUNTRIES\",\"name\":\"Gambia\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"59f7c708c61d85dc\"},{\"country_code\":\"GE\",\"location_type\":\"COUNTRIES\",\"name\":\"Georgia\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"60fcb78e1f3a23dd\"},{\"country_code\":\"DE\",\"location_type\":\"COUNTRIES\",\"name\":\"Germany\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"fdcd221ac44fa326\"},{\"country_code\":\"GH\",\"location_type\":\"COUNTRIES\",\"name\":\"Ghana\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"c08f5915ceeeb806\"},{\"country_code\":\"GI\",\"location_type\":\"COUNTRIES\",\"name\":\"Gibraltar\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3137081efbd2677e\"},{\"country_code\":\"GR\",\"location_type\":\"COUNTRIES\",\"name\":\"Greece\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"2ee7eeaa84dbe65a\"},{\"country_code\":\"GL\",\"location_type\":\"COUNTRIES\",\"name\":\"Greenland\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"2e61574e29165969\"},{\"country_code\":\"GD\",\"location_type\":\"COUNTRIES\",\"name\":\"Grenada\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ba1b68ac534ec439\"},{\"country_code\":\"GP\",\"location_type\":\"COUNTRIES\",\"name\":\"Guadeloupe\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"4e9baf84e2232342\"},{\"country_code\":\"GU\",\"location_type\":\"COUNTRIES\",\"name\":\"Guam\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"eb1b809cd6457a58\"},{\"country_code\":\"GT\",\"location_type\":\"COUNTRIES\",\"name\":\"Guatemala\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"13d479b108707983\"},{\"country_code\":\"GG\",\"location_type\":\"COUNTRIES\",\"name\":\"Guernsey\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"82c0b3139851e08b\"},{\"country_code\":\"GN\",\"location_type\":\"COUNTRIES\",\"name\":\"Guinea\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"2d3edd5369d26d84\"},{\"country_code\":\"GW\",\"location_type\":\"COUNTRIES\",\"name\":\"Guinea-bissau\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"9ba85a4b41cff9a3\"},{\"country_code\":\"GY\",\"location_type\":\"COUNTRIES\",\"name\":\"Guyana\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"23184b2af9649efa\"},{\"country_code\":\"HT\",\"location_type\":\"COUNTRIES\",\"name\":\"Haiti\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"d3e226ca18cd4ae8\"},{\"country_code\":\"HM\",\"location_type\":\"COUNTRIES\",\"name\":\"Heard Island and Mcdonald Islands\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"d8b99808049c05db\"},{\"country_code\":\"HN\",\"location_type\":\"COUNTRIES\",\"name\":\"Honduras\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"d862adecd71aa2a2\"},{\"country_code\":\"HK\",\"location_type\":\"COUNTRIES\",\"name\":\"Hong Kong SAR China\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"35fd5bacecc4c6e5\"},{\"country_code\":\"HU\",\"location_type\":\"COUNTRIES\",\"name\":\"Hungary\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"81b8dcbe189773f2\"},{\"country_code\":\"IS\",\"location_type\":\"COUNTRIES\",\"name\":\"Iceland\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"c3932d3da7922986\"},{\"country_code\":\"IN\",\"location_type\":\"COUNTRIES\",\"name\":\"India\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"b850c1bfd38f30e0\"},{\"country_code\":\"ID\",\"location_type\":\"COUNTRIES\",\"name\":\"Indonesia\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ce7988d3a8b6f49f\"},{\"country_code\":\"IQ\",\"location_type\":\"COUNTRIES\",\"name\":\"Iraq\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"b62cd77425868341\"},{\"country_code\":\"IE\",\"location_type\":\"COUNTRIES\",\"name\":\"Ireland\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ea679934779f45c7\"},{\"country_code\":\"IM\",\"location_type\":\"COUNTRIES\",\"name\":\"Isle of Man\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"a079e6ba1e5a8c28\"},{\"country_code\":\"IL\",\"location_type\":\"COUNTRIES\",\"name\":\"Israel\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"2edb6e240797c549\"},{\"country_code\":\"IT\",\"location_type\":\"COUNTRIES\",\"name\":\"Italy\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"c799e2d3a79f810e\"},{\"country_code\":\"JM\",\"location_type\":\"COUNTRIES\",\"name\":\"Jamaica\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"d66ca907ceb62690\"},{\"country_code\":\"JP\",\"location_type\":\"COUNTRIES\",\"name\":\"Japan\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"06ef846bfc783874\"},{\"country_code\":\"JE\",\"location_type\":\"COUNTRIES\",\"name\":\"Jersey\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"5d6b876b71a00ef1\"},{\"country_code\":\"JO\",\"location_type\":\"COUNTRIES\",\"name\":\"Jordan\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"fc6282dff859b848\"},{\"country_code\":\"KZ\",\"location_type\":\"COUNTRIES\",\"name\":\"Kazakhstan\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6d73a696edc5306f\"},{\"country_code\":\"KE\",\"location_type\":\"COUNTRIES\",\"name\":\"Kenya\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"17ad6a68301cd28b\"},{\"country_code\":\"KI\",\"location_type\":\"COUNTRIES\",\"name\":\"Kiribati\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"f77ef3a8c01d1bc0\"},{\"country_code\":\"XK\",\"location_type\":\"COUNTRIES\",\"name\":\"Kosovo\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ce840961e49976cf\"},{\"country_code\":\"KW\",\"location_type\":\"COUNTRIES\",\"name\":\"Kuwait\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"d303522079ceb9a7\"},{\"country_code\":\"KG\",\"location_type\":\"COUNTRIES\",\"name\":\"Kyrgyzstan\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"56ac89b367a68a34\"},{\"country_code\":\"LA\",\"location_type\":\"COUNTRIES\",\"name\":\"Laos\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"07fefc42d1da90c0\"},{\"country_code\":\"LV\",\"location_type\":\"COUNTRIES\",\"name\":\"Latvia\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"d0e642e8a900f679\"},{\"country_code\":\"LB\",\"location_type\":\"COUNTRIES\",\"name\":\"Lebanon\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"583bd538eb3129d1\"},{\"country_code\":\"LS\",\"location_type\":\"COUNTRIES\",\"name\":\"Lesotho\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"1273b0ca0f5d5ce5\"},{\"country_code\":\"LR\",\"location_type\":\"COUNTRIES\",\"name\":\"Liberia\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"8d2ea4d337845954\"},{\"country_code\":\"LY\",\"location_type\":\"COUNTRIES\",\"name\":\"Libya\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"70637f5c6cb00ec9\"},{\"country_code\":\"LI\",\"location_type\":\"COUNTRIES\",\"name\":\"Liechtenstein\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"db367491e0c03477\"},{\"country_code\":\"LT\",\"location_type\":\"COUNTRIES\",\"name\":\"Lithuania\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"d5cde4dddd7e6f94\"},{\"country_code\":\"LU\",\"location_type\":\"COUNTRIES\",\"name\":\"Luxembourg\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"a9928b6eaeb54f86\"},{\"country_code\":\"MO\",\"location_type\":\"COUNTRIES\",\"name\":\"Macau\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"d029ddcdc4fc44b6\"},{\"country_code\":\"MK\",\"location_type\":\"COUNTRIES\",\"name\":\"Macedonia\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"9778812ea3fffe48\"},{\"country_code\":\"MG\",\"location_type\":\"COUNTRIES\",\"name\":\"Madagascar\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"2b1888a4da352846\"},{\"country_code\":\"MW\",\"location_type\":\"COUNTRIES\",\"name\":\"Malawi\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"a0583a9994e6bf1b\"},{\"country_code\":\"MY\",\"location_type\":\"COUNTRIES\",\"name\":\"Malaysia\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"8633ee56a589f49c\"},{\"country_code\":\"MV\",\"location_type\":\"COUNTRIES\",\"name\":\"Maldives\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"2c614b2aca285e79\"},{\"country_code\":\"ML\",\"location_type\":\"COUNTRIES\",\"name\":\"Mali\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"44d34054431f2b36\"},{\"country_code\":\"MT\",\"location_type\":\"COUNTRIES\",\"name\":\"Malta\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"1d834adff5d584df\"},{\"country_code\":\"MH\",\"location_type\":\"COUNTRIES\",\"name\":\"Marshall Islands\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"e1ab84996b3f6609\"},{\"country_code\":\"MQ\",\"location_type\":\"COUNTRIES\",\"name\":\"Martinique\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"15bddd8209796b5e\"},{\"country_code\":\"MR\",\"location_type\":\"COUNTRIES\",\"name\":\"Mauritania\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"32c0b41931e32f4d\"},{\"country_code\":\"MU\",\"location_type\":\"COUNTRIES\",\"name\":\"Mauritius\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ee9d992aa12a6fa0\"},{\"country_code\":\"YT\",\"location_type\":\"COUNTRIES\",\"name\":\"Mayotte\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"2e1db4ccd414851e\"},{\"country_code\":\"MX\",\"location_type\":\"COUNTRIES\",\"name\":\"Mexico\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"25530ba03b7d90c6\"},{\"country_code\":\"FM\",\"location_type\":\"COUNTRIES\",\"name\":\"Micronesia\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"d1531c51dd2bc3a4\"},{\"country_code\":\"MD\",\"location_type\":\"COUNTRIES\",\"name\":\"Moldova\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"a89b926651acf416\"},{\"country_code\":\"MC\",\"location_type\":\"COUNTRIES\",\"name\":\"Monaco\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6c990e36e6fa8033\"},{\"country_code\":\"MN\",\"location_type\":\"COUNTRIES\",\"name\":\"Mongolia\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"8bd61930ae4f642d\"},{\"country_code\":\"ME\",\"location_type\":\"COUNTRIES\",\"name\":\"Montenegro\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"c9506eee1d5f5143\"},{\"country_code\":\"MS\",\"location_type\":\"COUNTRIES\",\"name\":\"Montserrat\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"f59f40c0fd8a944a\"},{\"country_code\":\"MA\",\"location_type\":\"COUNTRIES\",\"name\":\"Morocco\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"b5fc43481ea8b89a\"},{\"country_code\":\"MZ\",\"location_type\":\"COUNTRIES\",\"name\":\"Mozambique\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"b64dd3d6de94f13d\"},{\"country_code\":\"NA\",\"location_type\":\"COUNTRIES\",\"name\":\"Namibia\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3df4e3a5f8fa480a\"},{\"country_code\":\"NR\",\"location_type\":\"COUNTRIES\",\"name\":\"Nauru\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"68b11f0b17d9dd5a\"},{\"country_code\":\"NP\",\"location_type\":\"COUNTRIES\",\"name\":\"Nepal\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"f1d3a53f8a3cc7e9\"},{\"country_code\":\"NL\",\"location_type\":\"COUNTRIES\",\"name\":\"Netherlands\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"879d7cfc66c9c290\"},{\"country_code\":\"NC\",\"location_type\":\"COUNTRIES\",\"name\":\"New Caledonia\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"2f4cc128bb4fb146\"},{\"country_code\":\"NZ\",\"location_type\":\"COUNTRIES\",\"name\":\"New Zealand\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"0b039ce18ddf1cb9\"},{\"country_code\":\"NI\",\"location_type\":\"COUNTRIES\",\"name\":\"Nicaragua\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"d2a0bb4acbd6b824\"},{\"country_code\":\"NE\",\"location_type\":\"COUNTRIES\",\"name\":\"Niger\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"d5fbf8130a41420c\"},{\"country_code\":\"NG\",\"location_type\":\"COUNTRIES\",\"name\":\"Nigeria\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"59b27337f38d658b\"},{\"country_code\":\"NU\",\"location_type\":\"COUNTRIES\",\"name\":\"Niue\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"0560f64d7b342583\"},{\"country_code\":\"NF\",\"location_type\":\"COUNTRIES\",\"name\":\"Norfolk Island\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"8d9c9c8fd0993ecf\"},{\"country_code\":\"MP\",\"location_type\":\"COUNTRIES\",\"name\":\"Northern Mariana Islands\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"f342cd7d716c8acb\"},{\"country_code\":\"NO\",\"location_type\":\"COUNTRIES\",\"name\":\"Norway\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"0ce8b9a7b2742f7e\"},{\"country_code\":\"OM\",\"location_type\":\"COUNTRIES\",\"name\":\"Oman\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ec1d87074d3793f0\"},{\"country_code\":\"PK\",\"location_type\":\"COUNTRIES\",\"name\":\"Pakistan\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"64a07f675a8a699a\"},{\"country_code\":\"PW\",\"location_type\":\"COUNTRIES\",\"name\":\"Palau\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6afef0dd95bd25ca\"},{\"country_code\":\"PS\",\"location_type\":\"COUNTRIES\",\"name\":\"Palestinian Territories\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"df2a47f9371161bc\"},{\"country_code\":\"PA\",\"location_type\":\"COUNTRIES\",\"name\":\"Panama\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"9d8ae4b0fac2036a\"},{\"country_code\":\"PG\",\"location_type\":\"COUNTRIES\",\"name\":\"Papua New Guinea\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"85cb260e850b80e2\"},{\"country_code\":\"PY\",\"location_type\":\"COUNTRIES\",\"name\":\"Paraguay\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6cf2fd60a82329fc\"},{\"country_code\":\"PE\",\"location_type\":\"COUNTRIES\",\"name\":\"Peru\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"2dfa9ecb0179a4e4\"},{\"country_code\":\"PH\",\"location_type\":\"COUNTRIES\",\"name\":\"Philippines\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"fb151ef38fa2ac0d\"},{\"country_code\":\"PN\",\"location_type\":\"COUNTRIES\",\"name\":\"Pitcairn\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"f8bdf6c2726e5cd4\"},{\"country_code\":\"PL\",\"location_type\":\"COUNTRIES\",\"name\":\"Poland\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"d9074951d5976bdf\"},{\"country_code\":\"PT\",\"location_type\":\"COUNTRIES\",\"name\":\"Portugal\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"8198e85105936d3c\"},{\"country_code\":\"QA\",\"location_type\":\"COUNTRIES\",\"name\":\"Qatar\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"a54c21f6aedb2967\"},{\"country_code\":\"CG\",\"location_type\":\"COUNTRIES\",\"name\":\"Republic of the Congo\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"326674ea1ad6f260\"},{\"country_code\":\"RE\",\"location_type\":\"COUNTRIES\",\"name\":\"Reunion\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6f8bf4f18e6799fe\"},{\"country_code\":\"RO\",\"location_type\":\"COUNTRIES\",\"name\":\"Romania\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"f7531639e8db5e12\"},{\"country_code\":\"RU\",\"location_type\":\"COUNTRIES\",\"name\":\"Russia\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"5714382051c06d1e\"},{\"country_code\":\"RW\",\"location_type\":\"COUNTRIES\",\"name\":\"Rwanda\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"84f644e036f3dcb0\"},{\"country_code\":\"BL\",\"location_type\":\"COUNTRIES\",\"name\":\"Saint Barthelemy\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"d32a345c8a9139c1\"},{\"country_code\":\"SH\",\"location_type\":\"COUNTRIES\",\"name\":\"Saint Helena, Ascension and Tristan Da Cunha\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"d4c3e6700fba84cb\"},{\"country_code\":\"KN\",\"location_type\":\"COUNTRIES\",\"name\":\"Saint Kitts and Nevis\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ce1899c5b27d0caa\"},{\"country_code\":\"LC\",\"location_type\":\"COUNTRIES\",\"name\":\"Saint Lucia\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"015fd2ff54877b34\"},{\"country_code\":\"MF\",\"location_type\":\"COUNTRIES\",\"name\":\"Saint Martin (French part)\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ef292c6bcce65340\"},{\"country_code\":\"PM\",\"location_type\":\"COUNTRIES\",\"name\":\"Saint Pierre and Miquelon\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"e88c91f9f97e3d41\"},{\"country_code\":\"VC\",\"location_type\":\"COUNTRIES\",\"name\":\"Saint Vincent and the Grenadines\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"bb94af3e1fdbeb7f\"},{\"country_code\":\"WS\",\"location_type\":\"COUNTRIES\",\"name\":\"Samoa\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ee293e7b8b7d15d0\"},{\"country_code\":\"SM\",\"location_type\":\"COUNTRIES\",\"name\":\"San Marino\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"d9a15239f67eec6d\"},{\"country_code\":\"ST\",\"location_type\":\"COUNTRIES\",\"name\":\"Sao Tome and Principe\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"8acdb1fe9ee444a0\"},{\"country_code\":\"SA\",\"location_type\":\"COUNTRIES\",\"name\":\"Saudi Arabia\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"08b2d74428e2ca88\"},{\"country_code\":\"SN\",\"location_type\":\"COUNTRIES\",\"name\":\"Senegal\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"c5d6f8cac1a9be34\"},{\"country_code\":\"RS\",\"location_type\":\"COUNTRIES\",\"name\":\"Serbia\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"58a08d4ddc8aab9f\"},{\"country_code\":\"SC\",\"location_type\":\"COUNTRIES\",\"name\":\"Seychelles\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"04c9e28a7a635403\"},{\"country_code\":\"SL\",\"location_type\":\"COUNTRIES\",\"name\":\"Sierra Leone\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"1e228be254cad957\"},{\"country_code\":\"SG\",\"location_type\":\"COUNTRIES\",\"name\":\"Singapore\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"2509b9adc1fedfd2\"},{\"country_code\":\"SX\",\"location_type\":\"COUNTRIES\",\"name\":\"Sint Maarten (Dutch part)\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"98b249f9ea821f69\"},{\"country_code\":\"SK\",\"location_type\":\"COUNTRIES\",\"name\":\"Slovakia\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"34ed2e67dd5a22bb\"},{\"country_code\":\"SI\",\"location_type\":\"COUNTRIES\",\"name\":\"Slovenia\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"58f54743b1a62911\"},{\"country_code\":\"SB\",\"location_type\":\"COUNTRIES\",\"name\":\"Solomon Islands\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"c2cc3aca039a8280\"},{\"country_code\":\"SO\",\"location_type\":\"COUNTRIES\",\"name\":\"Somalia\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"2e09439cac5c7992\"},{\"country_code\":\"ZA\",\"location_type\":\"COUNTRIES\",\"name\":\"South Africa\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"dd9c0d7d7e07eb49\"},{\"country_code\":\"GS\",\"location_type\":\"COUNTRIES\",\"name\":\"South Georgia and the South Sandwich Islands\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"98c7a0e48eb6b42b\"},{\"country_code\":\"KR\",\"location_type\":\"COUNTRIES\",\"name\":\"South Korea\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"c00e5392b3fa46fb\"},{\"country_code\":\"ES\",\"location_type\":\"COUNTRIES\",\"name\":\"Spain\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ecdce75d48b13b64\"},{\"country_code\":\"LK\",\"location_type\":\"COUNTRIES\",\"name\":\"Sri Lanka\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"173c2bb9d42baaa5\"},{\"country_code\":\"SR\",\"location_type\":\"COUNTRIES\",\"name\":\"Suriname\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3afcd8fd83f599e3\"},{\"country_code\":\"SJ\",\"location_type\":\"COUNTRIES\",\"name\":\"Svalbard and Jan Mayen\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"8df637cb3293b094\"},{\"country_code\":\"SZ\",\"location_type\":\"COUNTRIES\",\"name\":\"Swaziland\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"02127c41c77b85ad\"},{\"country_code\":\"SE\",\"location_type\":\"COUNTRIES\",\"name\":\"Sweden\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"82b141af443cb1b8\"},{\"country_code\":\"CH\",\"location_type\":\"COUNTRIES\",\"name\":\"Switzerland\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"4e7c21fd2af027c6\"},{\"country_code\":\"TW\",\"location_type\":\"COUNTRIES\",\"name\":\"Taiwan\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"204a435ce97d5de4\"},{\"country_code\":\"TJ\",\"location_type\":\"COUNTRIES\",\"name\":\"Tajikistan\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"66fd08f1746d8702\"},{\"country_code\":\"TZ\",\"location_type\":\"COUNTRIES\",\"name\":\"Tanzania\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3a31097caf999c9f\"},{\"country_code\":\"TH\",\"location_type\":\"COUNTRIES\",\"name\":\"Thailand\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"974c290e10850494\"},{\"country_code\":\"TL\",\"location_type\":\"COUNTRIES\",\"name\":\"Timor-leste\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"b83e1dfa68cc396c\"},{\"country_code\":\"TG\",\"location_type\":\"COUNTRIES\",\"name\":\"Togo\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"9b3e472bb2f84d08\"},{\"country_code\":\"TK\",\"location_type\":\"COUNTRIES\",\"name\":\"Tokelau\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"64075bd521936443\"},{\"country_code\":\"TO\",\"location_type\":\"COUNTRIES\",\"name\":\"Tonga\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"aceeec48dbb9ede8\"},{\"country_code\":\"TT\",\"location_type\":\"COUNTRIES\",\"name\":\"Trinidad and Tobago\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"47bf5243296fa7e3\"},{\"country_code\":\"TN\",\"location_type\":\"COUNTRIES\",\"name\":\"Tunisia\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"5ddc8b97bfa4fa9d\"},{\"country_code\":\"TR\",\"location_type\":\"COUNTRIES\",\"name\":\"Turkey\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"682c5a667856ef42\"},{\"country_code\":\"TM\",\"location_type\":\"COUNTRIES\",\"name\":\"Turkmenistan\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3d77e0dd1c4ed51c\"},{\"country_code\":\"TC\",\"location_type\":\"COUNTRIES\",\"name\":\"Turks and Caicos Islands\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"06cd7798172f191e\"},{\"country_code\":\"TV\",\"location_type\":\"COUNTRIES\",\"name\":\"Tuvalu\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6286b0ee1f351799\"},{\"country_code\":\"VI\",\"location_type\":\"COUNTRIES\",\"name\":\"U.S. Virgin Islands\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"a88342b3900c93d6\"},{\"country_code\":\"UG\",\"location_type\":\"COUNTRIES\",\"name\":\"Uganda\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"939067979a7f3b95\"},{\"country_code\":\"UA\",\"location_type\":\"COUNTRIES\",\"name\":\"Ukraine\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"084d0d0155787e9d\"},{\"country_code\":\"AE\",\"location_type\":\"COUNTRIES\",\"name\":\"United Arab Emirates\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3f63906fc8aa5a7d\"},{\"country_code\":\"GB\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"},{\"country_code\":\"US\",\"location_type\":\"COUNTRIES\",\"name\":\"United States\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\"},{\"country_code\":\"UM\",\"location_type\":\"COUNTRIES\",\"name\":\"United States Minor Outlying Islands\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"08fbcf4cbc4bc5b9\"},{\"country_code\":\"UY\",\"location_type\":\"COUNTRIES\",\"name\":\"Uruguay\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"d0f5be1262dee9aa\"},{\"country_code\":\"UZ\",\"location_type\":\"COUNTRIES\",\"name\":\"Uzbekistan\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"8f3fa3e2dedc1db5\"},{\"country_code\":\"VU\",\"location_type\":\"COUNTRIES\",\"name\":\"Vanuatu\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"8cd83cbcaf4f8620\"},{\"country_code\":\"VA\",\"location_type\":\"COUNTRIES\",\"name\":\"Vatican City\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"f0bae89c752f9a54\"},{\"country_code\":\"VE\",\"location_type\":\"COUNTRIES\",\"name\":\"Venezuela\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"043383f8b2b79918\"},{\"country_code\":\"VN\",\"location_type\":\"COUNTRIES\",\"name\":\"Vietnam\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"2371490f9d073edc\"},{\"country_code\":\"WF\",\"location_type\":\"COUNTRIES\",\"name\":\"Wallis and Futuna\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"e49f634ed2e1554e\"},{\"country_code\":\"EH\",\"location_type\":\"COUNTRIES\",\"name\":\"Western Sahara\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"48c457daa287c999\"},{\"country_code\":\"YE\",\"location_type\":\"COUNTRIES\",\"name\":\"Yemen\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"e5ac80d8b565c01f\"},{\"country_code\":\"ZM\",\"location_type\":\"COUNTRIES\",\"name\":\"Zambia\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"5e8d90e3eaa45d69\"},{\"country_code\":\"ZW\",\"location_type\":\"COUNTRIES\",\"name\":\"Zimbabwe\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"d65fbac6845dcfd4\"}],\"next_cursor\":null,\"request\":{\"params\":{\"count\":1000,\"location_type\":\"COUNTRIES\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-10T16:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "18nswhw8d22",
+      "campaign_id": "bldyv",
+      "name": "Tidelines all-worldwide link clicks",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "pay_by": "LINK_CLICK",
+      "placements": "ALL_ON_TWITTER",
+      "product_type": "PROMOTED_TWEETS",
+      "daily_budget_amount_local_micro": 40000000,
+      "total_budget_amount_local_micro": 200000000,
+      "start_time": "2027-02-10T16:00:00Z",
+      "end_time": "2027-02-15T16:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1824476208953826860\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"bldyv\",\"categories\":[],\"created_at\":\"2027-02-10T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":40000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-02-15T16:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"d341f4\",\"goal\":\"LINK_CLICKS\",\"id\":\"g875e\",\"ios_app_store_identifier\":null,\"name\":\"Tidelines all-worldwide link clicks\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-02-10T16:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":200000000,\"updated_at\":\"2027-02-10T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18nswhw8d22\",\"campaign_id\":\"bldyv\",\"daily_budget_amount_local_micro\":40000000,\"end_time\":\"2027-02-15T16:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"Tidelines all-worldwide link clicks\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"start_time\":\"2027-02-10T16:00:00Z\",\"total_budget_amount_local_micro\":200000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-10T16:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "18nswhw8d22",
+      "line_item_id": "g875e",
+      "tweet_ids": "2152799615188857662,2152980809121615214,2153162003052675173,2153343196984500975,2153524390918485072"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-02-10T16:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"chgos1\",\"line_item_id\":\"g875e\",\"tweet_id\":\"2152799615188857662\",\"updated_at\":\"2027-02-10T16:00:00Z\"},{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-02-10T16:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"f8xix0\",\"line_item_id\":\"g875e\",\"tweet_id\":\"2152980809121615214\",\"updated_at\":\"2027-02-10T16:00:00Z\"},{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-02-10T16:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"ns0hpq\",\"line_item_id\":\"g875e\",\"tweet_id\":\"2153162003052675173\",\"updated_at\":\"2027-02-10T16:00:00Z\"},{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-02-10T16:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"errd3m\",\"line_item_id\":\"g875e\",\"tweet_id\":\"2153343196984500975\",\"updated_at\":\"2027-02-10T16:00:00Z\"},{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-02-10T16:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"9affm3\",\"line_item_id\":\"g875e\",\"tweet_id\":\"2153524390918485072\",\"updated_at\":\"2027-02-10T16:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"18nswhw8d22\",\"line_item_id\":\"g875e\",\"tweet_ids\":[\"2152799615188857662\",\"2152980809121615214\",\"2153162003052675173\",\"2153343196984500975\",\"2153524390918485072\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-10T16:00:00Z",
+    "tool": "activate_campaign",
+    "arguments": {
+      "account_id": "18nswhw8d22",
+      "campaign_id": "bldyv"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-02-10T16:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"RUNNING\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"d341f4\",\"id\":\"bldyv\",\"name\":\"Tidelines Valentine's weekend (Feb 11-15, 2027)\",\"purchase_order_number\":null,\"reasons_not_servable\":[],\"servable\":true,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-02-10T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18nswhw8d22\",\"campaign_id\":\"bldyv\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-10T16:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "18nswhw8d22",
+      "line_item_id": "g875e"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1824476208953826860\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"bldyv\",\"categories\":[],\"created_at\":\"2027-02-10T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":40000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-02-15T16:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"d341f4\",\"goal\":\"LINK_CLICKS\",\"id\":\"g875e\",\"ios_app_store_identifier\":null,\"name\":\"Tidelines all-worldwide link clicks\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-02-10T16:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":200000000,\"updated_at\":\"2027-02-10T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18nswhw8d22\",\"line_item_id\":\"g875e\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-10T16:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-02-11T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-02-15T17:00:00Z\",\"now\":\"2027-02-11T06:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-11T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18nswhw8d22",
+      "entity": "LINE_ITEM",
+      "entity_ids": "g875e",
+      "start_time": "2027-02-10T16:00:00Z",
+      "end_time": "2027-02-11T06:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"g875e\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[17810422],\"billed_engagements\":[573],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[39],\"engagements\":[573],\"follows\":null,\"impressions\":[80718],\"likes\":[11],\"link_clicks\":[39],\"qualified_impressions\":[80718],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-02-11T06:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"g875e\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-02-10T16:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-11T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18nswhw8d22",
+      "entity": "PROMOTED_TWEET",
+      "entity_ids": "chgos1,f8xix0,ns0hpq,errd3m,9affm3",
+      "start_time": "2027-02-10T16:00:00Z",
+      "end_time": "2027-02-11T06:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"chgos1\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[2269915],\"billed_engagements\":[116],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[5],\"engagements\":[116],\"follows\":null,\"impressions\":[17536],\"likes\":[2],\"link_clicks\":[5],\"qualified_impressions\":[17536],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"f8xix0\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[2369757],\"billed_engagements\":[103],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[5],\"engagements\":[103],\"follows\":null,\"impressions\":[14696],\"likes\":null,\"link_clicks\":[5],\"qualified_impressions\":[14696],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ns0hpq\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[415489],\"billed_engagements\":[72],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[1],\"engagements\":[72],\"follows\":null,\"impressions\":[9864],\"likes\":[1],\"link_clicks\":[1],\"qualified_impressions\":[9864],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"errd3m\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[6860352],\"billed_engagements\":[147],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[15],\"engagements\":[147],\"follows\":null,\"impressions\":[19196],\"likes\":[6],\"link_clicks\":[15],\"qualified_impressions\":[19196],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"9affm3\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[5894909],\"billed_engagements\":[135],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[13],\"engagements\":[135],\"follows\":null,\"impressions\":[19426],\"likes\":[2],\"link_clicks\":[13],\"qualified_impressions\":[19426],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-02-11T06:00:00Z\",\"entity\":\"PROMOTED_TWEET\",\"entity_ids\":[\"chgos1\",\"f8xix0\",\"ns0hpq\",\"errd3m\",\"9affm3\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-02-10T16:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-11T06:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-02-12T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-02-15T17:00:00Z\",\"now\":\"2027-02-12T06:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-12T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18nswhw8d22",
+      "entity": "LINE_ITEM",
+      "entity_ids": "g875e",
+      "start_time": "2027-02-10T16:00:00Z",
+      "end_time": "2027-02-12T06:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"g875e\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[59588696],\"billed_engagements\":[1761],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[129],\"engagements\":[1761],\"follows\":null,\"impressions\":[253326],\"likes\":[45],\"link_clicks\":[129],\"qualified_impressions\":[253326],\"replies\":null,\"retweets\":[3]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-02-12T06:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"g875e\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-02-10T16:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-12T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18nswhw8d22",
+      "entity": "PROMOTED_TWEET",
+      "entity_ids": "chgos1,f8xix0,ns0hpq,errd3m,9affm3",
+      "start_time": "2027-02-10T16:00:00Z",
+      "end_time": "2027-02-12T06:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"chgos1\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[14949354],\"billed_engagements\":[396],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[32],\"engagements\":[396],\"follows\":null,\"impressions\":[56128],\"likes\":[5],\"link_clicks\":[32],\"qualified_impressions\":[56128],\"replies\":null,\"retweets\":[1]},\"segment\":null}]},{\"id\":\"f8xix0\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[7954586],\"billed_engagements\":[318],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[17],\"engagements\":[318],\"follows\":null,\"impressions\":[46646],\"likes\":[9],\"link_clicks\":[17],\"qualified_impressions\":[46646],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ns0hpq\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[3131404],\"billed_engagements\":[205],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[7],\"engagements\":[205],\"follows\":null,\"impressions\":[29910],\"likes\":[3],\"link_clicks\":[7],\"qualified_impressions\":[29910],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"errd3m\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[19933753],\"billed_engagements\":[440],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[43],\"engagements\":[440],\"follows\":null,\"impressions\":[61547],\"likes\":[19],\"link_clicks\":[43],\"qualified_impressions\":[61547],\"replies\":null,\"retweets\":[1]},\"segment\":null}]},{\"id\":\"9affm3\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[13619599],\"billed_engagements\":[402],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[30],\"engagements\":[402],\"follows\":null,\"impressions\":[59095],\"likes\":[9],\"link_clicks\":[30],\"qualified_impressions\":[59095],\"replies\":null,\"retweets\":[1]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-02-12T06:00:00Z\",\"entity\":\"PROMOTED_TWEET\",\"entity_ids\":[\"chgos1\",\"f8xix0\",\"ns0hpq\",\"errd3m\",\"9affm3\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-02-10T16:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-12T06:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-02-13T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-02-15T17:00:00Z\",\"now\":\"2027-02-13T06:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-13T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18nswhw8d22",
+      "entity": "LINE_ITEM",
+      "entity_ids": "g875e",
+      "start_time": "2027-02-10T16:00:00Z",
+      "end_time": "2027-02-13T06:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"g875e\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[102963506],\"billed_engagements\":[2861],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[231],\"engagements\":[2861],\"follows\":null,\"impressions\":[400465],\"likes\":[71],\"link_clicks\":[231],\"qualified_impressions\":[400465],\"replies\":null,\"retweets\":[4]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-02-13T06:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"g875e\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-02-10T16:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-13T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18nswhw8d22",
+      "entity": "PROMOTED_TWEET",
+      "entity_ids": "chgos1,f8xix0,ns0hpq,errd3m,9affm3",
+      "start_time": "2027-02-10T16:00:00Z",
+      "end_time": "2027-02-13T06:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"chgos1\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[28653672],\"billed_engagements\":[654],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[64],\"engagements\":[654],\"follows\":null,\"impressions\":[89587],\"likes\":[13],\"link_clicks\":[64],\"qualified_impressions\":[89587],\"replies\":null,\"retweets\":[2]},\"segment\":null}]},{\"id\":\"f8xix0\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[13146233],\"billed_engagements\":[520],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[29],\"engagements\":[520],\"follows\":null,\"impressions\":[74007],\"likes\":[13],\"link_clicks\":[29],\"qualified_impressions\":[74007],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ns0hpq\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[6102022],\"billed_engagements\":[323],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[14],\"engagements\":[323],\"follows\":null,\"impressions\":[46479],\"likes\":[6],\"link_clicks\":[14],\"qualified_impressions\":[46479],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"errd3m\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[32819802],\"billed_engagements\":[714],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[73],\"engagements\":[714],\"follows\":null,\"impressions\":[97915],\"likes\":[23],\"link_clicks\":[73],\"qualified_impressions\":[97915],\"replies\":null,\"retweets\":[1]},\"segment\":null}]},{\"id\":\"9affm3\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[22241777],\"billed_engagements\":[650],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[51],\"engagements\":[650],\"follows\":null,\"impressions\":[92477],\"likes\":[16],\"link_clicks\":[51],\"qualified_impressions\":[92477],\"replies\":null,\"retweets\":[1]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-02-13T06:00:00Z\",\"entity\":\"PROMOTED_TWEET\",\"entity_ids\":[\"chgos1\",\"f8xix0\",\"ns0hpq\",\"errd3m\",\"9affm3\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-02-10T16:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-13T06:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-02-14T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-02-15T17:00:00Z\",\"now\":\"2027-02-14T06:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-14T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18nswhw8d22",
+      "entity": "LINE_ITEM",
+      "entity_ids": "g875e",
+      "start_time": "2027-02-10T16:00:00Z",
+      "end_time": "2027-02-14T06:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"g875e\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[139642119],\"billed_engagements\":[3982],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[319],\"engagements\":[3982],\"follows\":null,\"impressions\":[557954],\"likes\":[104],\"link_clicks\":[319],\"qualified_impressions\":[557954],\"replies\":null,\"retweets\":[4]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-02-14T06:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"g875e\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-02-10T16:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-14T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18nswhw8d22",
+      "entity": "PROMOTED_TWEET",
+      "entity_ids": "chgos1,f8xix0,ns0hpq,errd3m,9affm3",
+      "start_time": "2027-02-10T16:00:00Z",
+      "end_time": "2027-02-14T06:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"chgos1\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[38261721],\"billed_engagements\":[914],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[87],\"engagements\":[914],\"follows\":null,\"impressions\":[125620],\"likes\":[20],\"link_clicks\":[87],\"qualified_impressions\":[125620],\"replies\":null,\"retweets\":[2]},\"segment\":null}]},{\"id\":\"f8xix0\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[18228815],\"billed_engagements\":[728],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[41],\"engagements\":[728],\"follows\":null,\"impressions\":[103181],\"likes\":[19],\"link_clicks\":[41],\"qualified_impressions\":[103181],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ns0hpq\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[8136373],\"billed_engagements\":[439],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[19],\"engagements\":[439],\"follows\":null,\"impressions\":[64505],\"likes\":[7],\"link_clicks\":[19],\"qualified_impressions\":[64505],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"errd3m\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[42850252],\"billed_engagements\":[981],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[97],\"engagements\":[981],\"follows\":null,\"impressions\":[136163],\"likes\":[29],\"link_clicks\":[97],\"qualified_impressions\":[136163],\"replies\":null,\"retweets\":[1]},\"segment\":null}]},{\"id\":\"9affm3\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[32164958],\"billed_engagements\":[920],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[75],\"engagements\":[920],\"follows\":null,\"impressions\":[128485],\"likes\":[29],\"link_clicks\":[75],\"qualified_impressions\":[128485],\"replies\":null,\"retweets\":[1]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-02-14T06:00:00Z\",\"entity\":\"PROMOTED_TWEET\",\"entity_ids\":[\"chgos1\",\"f8xix0\",\"ns0hpq\",\"errd3m\",\"9affm3\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-02-10T16:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-14T06:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-02-15T16:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-02-15T17:00:00Z\",\"now\":\"2027-02-15T16:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-15T16:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18nswhw8d22",
+      "entity": "LINE_ITEM",
+      "entity_ids": "g875e",
+      "start_time": "2027-02-10T16:00:00Z",
+      "end_time": "2027-02-15T16:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"g875e\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[198985978],\"billed_engagements\":[5458],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[459],\"engagements\":[5458],\"follows\":null,\"impressions\":[761335],\"likes\":[137],\"link_clicks\":[459],\"qualified_impressions\":[761335],\"replies\":[1],\"retweets\":[7]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-02-15T16:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"g875e\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-02-10T16:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-15T16:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18nswhw8d22",
+      "entity": "PROMOTED_TWEET",
+      "entity_ids": "chgos1,f8xix0,ns0hpq,errd3m,9affm3",
+      "start_time": "2027-02-10T16:00:00Z",
+      "end_time": "2027-02-15T16:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"chgos1\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[51238334],\"billed_engagements\":[1221],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[117],\"engagements\":[1221],\"follows\":null,\"impressions\":[169973],\"likes\":[26],\"link_clicks\":[117],\"qualified_impressions\":[169973],\"replies\":null,\"retweets\":[3]},\"segment\":null}]},{\"id\":\"f8xix0\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[26107584],\"billed_engagements\":[980],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[60],\"engagements\":[980],\"follows\":null,\"impressions\":[138787],\"likes\":[27],\"link_clicks\":[60],\"qualified_impressions\":[138787],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ns0hpq\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[11578463],\"billed_engagements\":[619],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[27],\"engagements\":[619],\"follows\":null,\"impressions\":[89577],\"likes\":[11],\"link_clicks\":[27],\"qualified_impressions\":[89577],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"errd3m\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[60744438],\"billed_engagements\":[1334],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[139],\"engagements\":[1334],\"follows\":null,\"impressions\":[184016],\"likes\":[37],\"link_clicks\":[139],\"qualified_impressions\":[184016],\"replies\":null,\"retweets\":[3]},\"segment\":null}]},{\"id\":\"9affm3\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[49317159],\"billed_engagements\":[1304],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[116],\"engagements\":[1304],\"follows\":null,\"impressions\":[178982],\"likes\":[36],\"link_clicks\":[116],\"qualified_impressions\":[178982],\"replies\":[1],\"retweets\":[1]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-02-15T16:00:00Z\",\"entity\":\"PROMOTED_TWEET\",\"entity_ids\":[\"chgos1\",\"f8xix0\",\"ns0hpq\",\"errd3m\",\"9affm3\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-02-10T16:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

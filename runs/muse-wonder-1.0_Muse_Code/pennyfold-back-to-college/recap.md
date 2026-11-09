@@ -1,0 +1,1 @@
+Recap — Spend: $347.19. Impressions: 386,061. Link clicks: 197.

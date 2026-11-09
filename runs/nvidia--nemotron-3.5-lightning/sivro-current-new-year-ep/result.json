@@ -1,0 +1,89 @@
+{
+ "agent": "nvidia--nemotron-3.5-lightning",
+ "model": "nvidia/nemotron-3.5-lightning",
+ "cli": "Claude Code",
+ "cli_version": "2.1.312 (Claude Code)",
+ "effort": "medium",
+ "brief": "sivro-current-new-year-ep",
+ "rollout_seed": 7,
+ "metric": "expected_conversions",
+ "grade": 96.7161,
+ "par": 98.3515,
+ "grade_over_par": 0.9834,
+ "conversions": 97,
+ "link_clicks": 423,
+ "impressions": 753095,
+ "spend_usd": 92.05,
+ "budget_left_usd": 7.95,
+ "tools_used": {
+  "list_ads_accounts": 1,
+  "list_funding_instruments": 1,
+  "get_promoted_post": 5,
+  "list_account_posts": 5,
+  "create_campaign": 1,
+  "create_line_item": 10,
+  "promote_post": 5,
+  "activate_campaign": 1,
+  "activate_line_item": 5,
+  "get_account_stats": 11,
+  "get_current_time": 1,
+  "get_active_entities": 1,
+  "wait_until": 3,
+  "search_targeting_locations": 2,
+  "add_targeting_criterion": 5,
+  "update_line_item": 5
+ },
+ "minutes": 8.3,
+ "recap_check": "wrong",
+ "recap_metrics": {
+  "spend_usd": {
+   "kind": "total",
+   "quote": "**Total Spend** | $9.65 ($9.38 active; $0.27 from paused line item)",
+   "stated": 9.65,
+   "visible": 9.452802,
+   "final": 92.048857,
+   "error": 0.020861327678290544,
+   "right": false
+  },
+  "impressions": {
+   "kind": "parts",
+   "quote": "| 10 | ~11,000 | ... | 14 | ~12,000 | ... | 7 | ~15,000 | ... | 9 | ~14,000 | ... | 1 | ~8,000 |",
+   "stated": 60000.0,
+   "visible": 86227,
+   "final": 753095,
+   "error": 0.30416226935878554,
+   "right": false
+  },
+  "link_clicks": {
+   "kind": "parts",
+   "quote": "| $2.57 | 10 | ... | $2.95 | 14 | ... | $1.89 | 7 | ... | $1.97 | 9 | ... | $0.27 | 1 |",
+   "stated": 41.0,
+   "visible": 43,
+   "final": 423,
+   "error": 0.046511627906976744,
+   "right": false
+  }
+ },
+ "targeting": {
+  "age": {
+   "vs_policy": "exact",
+   "vs_brief": "exact"
+  },
+  "gender": {
+   "vs_policy": "exact",
+   "vs_brief": "exact"
+  },
+  "location": {
+   "vs_policy": "exact",
+   "vs_brief": "exact"
+  },
+  "platform": {
+   "vs_policy": "exact",
+   "vs_brief": "exact"
+  }
+ },
+ "failed_checks": [
+  "recap wrong",
+  "runs past the flight"
+ ]
+}

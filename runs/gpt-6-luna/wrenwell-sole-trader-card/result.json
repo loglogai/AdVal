@@ -1,0 +1,89 @@
+{
+ "agent": "gpt-6-luna",
+ "model": "gpt-6-luna",
+ "cli": "Codex",
+ "cli_version": "codex-cli 0.163.0",
+ "effort": "medium",
+ "brief": "wrenwell-sole-trader-card",
+ "rollout_seed": 7,
+ "metric": "expected_conversions",
+ "grade": 25.9166,
+ "par": 24.0639,
+ "grade_over_par": 1.077,
+ "conversions": 25,
+ "link_clicks": 246,
+ "impressions": 363422,
+ "spend_usd": 327.89,
+ "budget_left_usd": 22.11,
+ "tools_used": {
+  "get_current_time": 1,
+  "list_ads_accounts": 1,
+  "get_ad_policy": 1,
+  "list_funding_instruments": 1,
+  "list_account_posts": 1,
+  "search_targeting_locations": 2,
+  "list_line_item_placements": 1,
+  "create_campaign": 1,
+  "create_line_item": 2,
+  "add_targeting_criterion": 2,
+  "promote_post": 2,
+  "activate_line_item": 2,
+  "activate_campaign": 1,
+  "wait_until": 12,
+  "get_active_entities": 12,
+  "get_account_stats": 14,
+  "get_campaign": 1
+ },
+ "minutes": 3.0,
+ "recap_check": "accurate",
+ "recap_metrics": {
+  "spend_usd": {
+   "kind": "total",
+   "quote": "$328.89 of the $350 budget",
+   "stated": 328.89,
+   "visible": 327.885627,
+   "final": 327.885627,
+   "error": 0.003063180930465082,
+   "right": true
+  },
+  "impressions": {
+   "kind": "total",
+   "quote": "Impressions:** 362,424",
+   "stated": 362424.0,
+   "visible": 362424,
+   "final": 363422,
+   "error": 0.0,
+   "right": true
+  },
+  "link_clicks": {
+   "kind": "total",
+   "quote": "Link clicks:** 246",
+   "stated": 246.0,
+   "visible": 246,
+   "final": 246,
+   "error": 0.0,
+   "right": true
+  }
+ },
+ "targeting": {
+  "age": {
+   "vs_policy": "exact",
+   "vs_brief": "exact"
+  },
+  "gender": {
+   "vs_policy": "exact",
+   "vs_brief": "exact"
+  },
+  "location": {
+   "vs_policy": "stricter",
+   "vs_brief": "exact"
+  },
+  "platform": {
+   "vs_policy": "exact",
+   "vs_brief": "laxer"
+  }
+ },
+ "failed_checks": [
+  "spend beyond the brief's platform"
+ ]
+}

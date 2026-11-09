@@ -1,0 +1,3 @@
+I haven’t launched the campaign. The account’s Perth-time clock is **Wednesday, February 10, 2027, at 16:00**—the requested start—but I couldn’t verify the targeting IDs needed to exclude Iran, North Korea, Cuba, and Syria. Launching without those exclusions could serve ads where the release isn’t available.
+
+I also can’t keep monitoring after this turn or send a recap later on my own. The available scheduling tool only allows waits until **February 15 at 17:00 UTC**, before the campaign’s scheduled end at 16:00 UTC. Link clicks are measurable through X; streams aren’t, because the landing page has no X pixel.

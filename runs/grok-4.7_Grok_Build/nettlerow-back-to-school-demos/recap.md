@@ -1,0 +1,3 @@
+The campaign is finished. Spend was $341.49, impressions were 363,352, and link clicks were 134.
+
+All 134 clicks went to https://nettlerow.ie/demo, and delivery was limited to Ireland and the United Kingdom. The shelf-shortage post produced every click. The price and urgency posts produced none, so they were paused and the budget stayed on the post that was sending people to the demo page. X cannot see the bookings; those are on your side.

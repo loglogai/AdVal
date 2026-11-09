@@ -1,0 +1,3 @@
+The campaign completed its five day flight, July 11–15 in Denver time. It spent **$494.08** of the $500 budget and delivered **422,684 impressions** and **253 link clicks**.
+
+These are X delivery metrics. X could not measure trial activations, so the clicks do not show how many people started the 14-day trial. No app-click metric was available. The campaign used the one approved post that was available in the account; the other approved post ID wasn’t returned as a promotable post.

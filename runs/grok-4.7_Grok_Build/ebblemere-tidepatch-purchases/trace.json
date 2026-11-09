@@ -1,0 +1,1058 @@
+[
+  {
+    "at": "2027-04-28T16:00:00Z",
+    "tool": "get_current_time",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-05-02T17:00:00Z\",\"now\":\"2027-04-28T16:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-28T16:00:00Z",
+    "tool": "get_ad_policy",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"enforcement\":\"ad groups that break the policy of their category are disapproved and don't serve\",\"minors\":\"no ad may reach anyone under 13; alcohol may never target minors\",\"pre_authorization\":\"required for every restricted category\",\"restricted_categories\":[{\"category\":\"alcohol\",\"countries\":[\"AL\",\"AR\",\"AT\",\"AU\",\"BA\",\"BE\",\"BG\",\"BO\",\"BR\",\"CA\",\"CH\",\"CL\",\"CO\",\"CR\",\"CY\",\"CZ\",\"DE\",\"DK\",\"DO\",\"EC\",\"EE\",\"ES\",\"FI\",\"FR\",\"GB\",\"GH\",\"GR\",\"HK\",\"HN\",\"HR\",\"HU\",\"IE\",\"IL\",\"IN\",\"IS\",\"IT\",\"JP\",\"KE\",\"KH\",\"KR\",\"LT\",\"LU\",\"LV\",\"ME\",\"MK\",\"MT\",\"MX\",\"MY\",\"NG\",\"NI\",\"NL\",\"NZ\",\"PA\",\"PE\",\"PH\",\"PT\",\"PY\",\"RO\",\"RS\",\"SE\",\"SG\",\"SI\",\"SK\",\"SN\",\"SV\",\"TW\",\"UA\",\"UG\",\"US\",\"UY\",\"VE\",\"ZA\",\"ZM\"],\"covers\":\"promoting, selling or branding beer, wine or spirits, and competitions with alcohol as a prize\",\"min_age\":{\"by_country\":{\"JP\":20,\"KR\":20,\"US\":21},\"elsewhere\":18},\"targeting_types\":null},{\"category\":\"financial_services\",\"countries\":[\"AE\",\"AR\",\"AT\",\"AU\",\"AW\",\"BA\",\"BB\",\"BE\",\"BG\",\"BM\",\"BR\",\"BS\",\"CA\",\"CH\",\"CL\",\"CR\",\"CW\",\"CZ\",\"DE\",\"DK\",\"DO\",\"EC\",\"EG\",\"ES\",\"FI\",\"FR\",\"GB\",\"GH\",\"GR\",\"GT\",\"HK\",\"HN\",\"HR\",\"ID\",\"IE\",\"IL\",\"IN\",\"IT\",\"JM\",\"JP\",\"KR\",\"KW\",\"MA\",\"MK\",\"MY\",\"NG\",\"NI\",\"NL\",\"NO\",\"NZ\",\"OM\",\"PA\",\"PE\",\"PH\",\"PK\",\"PL\",\"PT\",\"PY\",\"QA\",\"RO\",\"RS\",\"RU\",\"SA\",\"SE\",\"SG\",\"SI\",\"SV\",\"TH\",\"TR\",\"TT\",\"TW\",\"TZ\",\"UA\",\"UG\",\"US\",\"UY\",\"VE\",\"VN\",\"ZA\",\"ZM\"],\"covers\":\"banks, money service businesses, mobile and electronic payments, money transfer, savings, investment, currency exchange, loans and insurance\",\"min_age\":null,\"targeting_types\":null},{\"category\":\"political_content\",\"countries\":[\"AE\",\"AR\",\"AU\",\"CL\",\"CO\",\"EC\",\"GB\",\"GH\",\"ID\",\"IL\",\"IN\",\"JP\",\"MX\",\"PE\",\"SA\",\"US\",\"ZA\"],\"covers\":\"ads that reference a candidate, party, official, election, referendum, legislation, regulation or judicial outcome\",\"min_age\":null,\"targeting_types\":null},{\"category\":\"political_campaigning\",\"countries\":[\"AR\",\"AU\",\"CO\",\"EC\",\"GB\",\"GH\",\"ID\",\"IL\",\"JP\",\"MX\",\"PA\",\"PE\",\"US\",\"ZA\"],\"covers\":\"ads that advocate for or against, or ask for votes or money for, a candidate, party, election, legislation, referendum or ballot measure\",\"min_age\":null,\"targeting_types\":[\"LOCATION\",\"AGE\",\"GENDER\",\"INTEREST\",\"BROAD_KEYWORD\",\"PHRASE_KEYWORD\",\"EXACT_KEYWORD\",\"UNORDERED_KEYWORD\",\"NEGATIVE_PHRASE_KEYWORD\",\"NEGATIVE_EXACT_KEYWORD\",\"NEGATIVE_UNORDERED_KEYWORD\",\"CUSTOM_AUDIENCE\",\"CUSTOM_AUDIENCE_EXPANDED\",\"SIMILAR_TO_FOLLOWERS_OF_USER\",\"FOLLOWER_LOOK_ALIKES\"]}]},\"request\":{\"params\":{}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-28T16:00:00Z",
+    "tool": "list_ads_accounts",
+    "arguments": {
+      "with_total_count": true
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"business_id\":null,\"business_name\":null,\"country_code\":\"PH\",\"created_at\":\"2024-03-28T16:00:00Z\",\"deleted\":false,\"id\":\"187dbto95s4\",\"industry_type\":null,\"name\":\"Ebblemere Games\",\"timezone\":\"Asia/Manila\",\"timezone_switch_at\":\"2024-03-28T16:00:00Z\",\"updated_at\":\"2024-03-28T16:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"with_total_count\":true}},\"total_count\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-28T16:00:00Z",
+    "tool": "list_funding_instruments",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "with_total_count": true
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"able_to_fund\":true,\"created_at\":\"2024-03-28T16:00:00Z\",\"credit_limit_local_micro\":null,\"credit_remaining_local_micro\":null,\"currency\":\"USD\",\"deleted\":false,\"description\":\"Visa ending in 7418\",\"end_time\":null,\"entity_status\":\"ACTIVE\",\"funded_amount_local_micro\":0,\"id\":\"mhr1nf\",\"io_header\":null,\"reasons_not_able_to_fund\":[],\"start_time\":\"2024-03-28T16:00:00Z\",\"type\":\"CREDIT_CARD\",\"updated_at\":\"2024-03-28T16:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"187dbto95s4\",\"with_total_count\":true}},\"total_count\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-28T16:00:00Z",
+    "tool": "list_web_event_tags",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "with_total_count": true
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"187dbto95s4\",\"with_total_count\":true}},\"total_count\":0}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-28T16:00:00Z",
+    "tool": "list_account_posts",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "tweet_type": "PUBLISHED",
+      "tweet_ids": "2180703480841134588,2180884674770473614,2181065868706016722",
+      "timeline_type": "ALL"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Tue Apr 27 16:00:00 +0000 2027\",\"display_text_range\":[0,169],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"ebblemeregames.com/tidepa\u2026\",\"expanded_url\":\"https://ebblemeregames.com/tidepatch\",\"indices\":[146,169],\"url\":\"https://t.co/UBKCgJ7qd4\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"US$18. One purchase. The complete Tidepatch game: floating farms to tend, lagoon fish to discover and a village to bring back to life. Settle in: https://t.co/UBKCgJ7qd4\",\"geo\":null,\"id\":2181065868706016722,\"id_str\":\"2181065868706016722\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2181065868706016722\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Thu Mar 28 16:00:00 +0000 2024\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2300,\"follow_request_sent\":null,\"followers_count\":3000,\"following\":null,\"friends_count\":450,\"geo_enabled\":false,\"id\":1773379519903273304,\"id_str\":\"1773379519903273304\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":40,\"location\":\"\",\"name\":\"Ebblemere Games\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1773379519903273304/1690234200\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1920527032490234200/0TZSnAKi_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1920527032490234200/0TZSnAKi_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"EbblemereGames\",\"statuses_count\":2500,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Tue Apr 27 04:00:00 +0000 2027\",\"display_text_range\":[0,121],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"ebblemeregames.com/tidepa\u2026\",\"expanded_url\":\"https://ebblemeregames.com/tidepatch\",\"indices\":[98,121],\"url\":\"https://t.co/AEGW9rPY0p\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"What if today's entire to-do list was \\\"water the beans, find a quiet spot, stay a little longer\\\"? https://t.co/AEGW9rPY0p\",\"geo\":null,\"id\":2180884674770473614,\"id_str\":\"2180884674770473614\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2180884674770473614\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Thu Mar 28 16:00:00 +0000 2024\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2300,\"follow_request_sent\":null,\"followers_count\":3000,\"following\":null,\"friends_count\":450,\"geo_enabled\":false,\"id\":1773379519903273304,\"id_str\":\"1773379519903273304\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":40,\"location\":\"\",\"name\":\"Ebblemere Games\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1773379519903273304/1690234200\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1920527032490234200/0TZSnAKi_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1920527032490234200/0TZSnAKi_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"EbblemereGames\",\"statuses_count\":2500,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Mon Apr 26 16:00:00 +0000 2027\",\"display_text_range\":[0,192],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"ebblemeregames.com/tidepa\u2026\",\"expanded_url\":\"https://ebblemeregames.com/tidepatch\",\"indices\":[169,192],\"url\":\"https://t.co/teUwJTMIh7\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Grow floating vegetable terraces, fish the lagoon and restore a sleepy village in Tidepatch. Our farming and fishing life sim is US$18 for the complete game, paid once. https://t.co/teUwJTMIh7\",\"geo\":null,\"id\":2180703480841134588,\"id_str\":\"2180703480841134588\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":false,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2180703480841134588\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Thu Mar 28 16:00:00 +0000 2024\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2300,\"follow_request_sent\":null,\"followers_count\":3000,\"following\":null,\"friends_count\":450,\"geo_enabled\":false,\"id\":1773379519903273304,\"id_str\":\"1773379519903273304\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":40,\"location\":\"\",\"name\":\"Ebblemere Games\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1773379519903273304/1690234200\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1920527032490234200/0TZSnAKi_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1920527032490234200/0TZSnAKi_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"EbblemereGames\",\"statuses_count\":2500,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"187dbto95s4\",\"timeline_type\":\"ALL\",\"tweet_ids\":[\"2180703480841134588\",\"2180884674770473614\",\"2181065868706016722\"],\"tweet_type\":\"PUBLISHED\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-28T16:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "q": "Iran",
+      "location_type": "COUNTRIES",
+      "count": 10
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"count\":10,\"location_type\":\"COUNTRIES\",\"q\":\"Iran\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-28T16:00:00Z",
+    "tool": "list_campaigns",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "with_total_count": true,
+      "count": 50
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"187dbto95s4\",\"count\":50,\"with_total_count\":true}},\"total_count\":0}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-28T16:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "location_type": "COUNTRIES",
+      "q": "Cuba",
+      "count": 5
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"count\":5,\"location_type\":\"COUNTRIES\",\"q\":\"Cuba\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-28T16:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "location_type": "COUNTRIES",
+      "q": "Syria",
+      "count": 5
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"count\":5,\"location_type\":\"COUNTRIES\",\"q\":\"Syria\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-28T16:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "location_type": "COUNTRIES",
+      "q": "Korea",
+      "count": 10
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"country_code\":\"KR\",\"location_type\":\"COUNTRIES\",\"name\":\"South Korea\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"c00e5392b3fa46fb\"}],\"next_cursor\":null,\"request\":{\"params\":{\"count\":10,\"location_type\":\"COUNTRIES\",\"q\":\"Korea\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-28T16:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "location_type": "COUNTRIES",
+      "q": "Philippines",
+      "count": 5
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"country_code\":\"PH\",\"location_type\":\"COUNTRIES\",\"name\":\"Philippines\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"fb151ef38fa2ac0d\"}],\"next_cursor\":null,\"request\":{\"params\":{\"count\":5,\"location_type\":\"COUNTRIES\",\"q\":\"Philippines\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-28T16:00:00Z",
+    "tool": "create_campaign",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "funding_instrument_id": "mhr1nf",
+      "name": "Tidepatch Sales 2027-04-29 to 2027-05-02"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-04-28T16:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"PAUSED\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"mhr1nf\",\"id\":\"joeqn\",\"name\":\"Tidepatch Sales 2027-04-29 to 2027-05-02\",\"purchase_order_number\":null,\"reasons_not_servable\":[\"PAUSED_BY_ADVERTISER\"],\"servable\":false,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-04-28T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187dbto95s4\",\"funding_instrument_id\":\"mhr1nf\",\"name\":\"Tidepatch Sales 2027-04-29 to 2027-05-02\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-28T16:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "campaign_id": "joeqn",
+      "name": "Tidepatch offer \u2014 terraces and lagoon",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "product_type": "PROMOTED_TWEETS",
+      "placements": "ALL_ON_TWITTER",
+      "bid_strategy": "AUTO",
+      "audience_expansion": "DEFINED",
+      "standard_delivery": true,
+      "daily_budget_amount_local_micro": 200000000,
+      "total_budget_amount_local_micro": 800000000,
+      "start_time": "2027-04-28T16:00:00Z",
+      "end_time": "2027-05-02T16:00:00Z",
+      "advertiser_domain": "ebblemeregames.com"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"ebblemeregames.com\",\"advertiser_user_id\":\"1773379519903273304\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"joeqn\",\"categories\":[],\"created_at\":\"2027-04-28T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":200000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-05-02T16:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"mhr1nf\",\"goal\":\"LINK_CLICKS\",\"id\":\"xne5k\",\"ios_app_store_identifier\":null,\"name\":\"Tidepatch offer \u2014 terraces and lagoon\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-04-28T16:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":800000000,\"updated_at\":\"2027-04-28T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187dbto95s4\",\"advertiser_domain\":\"ebblemeregames.com\",\"audience_expansion\":\"DEFINED\",\"bid_strategy\":\"AUTO\",\"campaign_id\":\"joeqn\",\"daily_budget_amount_local_micro\":200000000,\"end_time\":\"2027-05-02T16:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"Tidepatch offer \u2014 terraces and lagoon\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-04-28T16:00:00Z\",\"total_budget_amount_local_micro\":800000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-28T16:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "campaign_id": "joeqn",
+      "name": "Tidepatch offer \u2014 quiet to-do list",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "product_type": "PROMOTED_TWEETS",
+      "placements": "ALL_ON_TWITTER",
+      "bid_strategy": "AUTO",
+      "audience_expansion": "DEFINED",
+      "standard_delivery": true,
+      "daily_budget_amount_local_micro": 200000000,
+      "total_budget_amount_local_micro": 800000000,
+      "start_time": "2027-04-28T16:00:00Z",
+      "end_time": "2027-05-02T16:00:00Z",
+      "advertiser_domain": "ebblemeregames.com"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"ebblemeregames.com\",\"advertiser_user_id\":\"1773379519903273304\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"joeqn\",\"categories\":[],\"created_at\":\"2027-04-28T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":200000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-05-02T16:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"mhr1nf\",\"goal\":\"LINK_CLICKS\",\"id\":\"676cs\",\"ios_app_store_identifier\":null,\"name\":\"Tidepatch offer \u2014 quiet to-do list\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-04-28T16:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":800000000,\"updated_at\":\"2027-04-28T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187dbto95s4\",\"advertiser_domain\":\"ebblemeregames.com\",\"audience_expansion\":\"DEFINED\",\"bid_strategy\":\"AUTO\",\"campaign_id\":\"joeqn\",\"daily_budget_amount_local_micro\":200000000,\"end_time\":\"2027-05-02T16:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"Tidepatch offer \u2014 quiet to-do list\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-04-28T16:00:00Z\",\"total_budget_amount_local_micro\":800000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-28T16:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "campaign_id": "joeqn",
+      "name": "Tidepatch offer \u2014 US$18 complete game",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "product_type": "PROMOTED_TWEETS",
+      "placements": "ALL_ON_TWITTER",
+      "bid_strategy": "AUTO",
+      "audience_expansion": "DEFINED",
+      "standard_delivery": true,
+      "daily_budget_amount_local_micro": 200000000,
+      "total_budget_amount_local_micro": 800000000,
+      "start_time": "2027-04-28T16:00:00Z",
+      "end_time": "2027-05-02T16:00:00Z",
+      "advertiser_domain": "ebblemeregames.com"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"ebblemeregames.com\",\"advertiser_user_id\":\"1773379519903273304\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"joeqn\",\"categories\":[],\"created_at\":\"2027-04-28T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":200000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-05-02T16:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"mhr1nf\",\"goal\":\"LINK_CLICKS\",\"id\":\"6zhva\",\"ios_app_store_identifier\":null,\"name\":\"Tidepatch offer \u2014 US$18 complete game\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-04-28T16:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":800000000,\"updated_at\":\"2027-04-28T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187dbto95s4\",\"advertiser_domain\":\"ebblemeregames.com\",\"audience_expansion\":\"DEFINED\",\"bid_strategy\":\"AUTO\",\"campaign_id\":\"joeqn\",\"daily_budget_amount_local_micro\":200000000,\"end_time\":\"2027-05-02T16:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"Tidepatch offer \u2014 US$18 complete game\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-04-28T16:00:00Z\",\"total_budget_amount_local_micro\":800000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-28T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "line_item_id": "xne5k",
+      "targeting_type": "AGE",
+      "targeting_value": "18",
+      "operator_type": "GTE"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"errors\":[{\"code\":\"INVALID_PARAMETER\",\"message\":\"\\\"GTE\\\" is an unsupported operator_type. Supported type(s): \\\"EQ\\\" or \\\"NE\\\".\",\"parameter\":\"operator_type\"}],\"request\":{\"params\":{\"account_id\":\"187dbto95s4\",\"line_item_id\":\"xne5k\",\"operator_type\":\"GTE\",\"targeting_type\":\"AGE\",\"targeting_value\":\"18\"}}}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2027-04-28T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "line_item_id": "676cs",
+      "targeting_type": "AGE",
+      "targeting_value": "AGE_OVER_18",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-04-28T16:00:00Z\",\"deleted\":false,\"id\":\"7qqvwvx\",\"line_item_id\":\"676cs\",\"name\":\"AGE_OVER_18\",\"operator_type\":\"EQ\",\"targeting_type\":\"AGE\",\"targeting_value\":\"AGE_OVER_18\",\"updated_at\":\"2027-04-28T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187dbto95s4\",\"line_item_id\":\"676cs\",\"operator_type\":\"EQ\",\"targeting_type\":\"AGE\",\"targeting_value\":\"AGE_OVER_18\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-28T16:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "line_item_id": "xne5k",
+      "tweet_ids": "2180703480841134588"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-04-28T16:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"r63kcc\",\"line_item_id\":\"xne5k\",\"tweet_id\":\"2180703480841134588\",\"updated_at\":\"2027-04-28T16:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"187dbto95s4\",\"line_item_id\":\"xne5k\",\"tweet_ids\":[\"2180703480841134588\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-28T16:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "line_item_id": "676cs",
+      "tweet_ids": "2180884674770473614"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-04-28T16:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"6y4lez\",\"line_item_id\":\"676cs\",\"tweet_id\":\"2180884674770473614\",\"updated_at\":\"2027-04-28T16:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"187dbto95s4\",\"line_item_id\":\"676cs\",\"tweet_ids\":[\"2180884674770473614\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-28T16:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "line_item_id": "6zhva",
+      "tweet_ids": "2181065868706016722"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-04-28T16:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"3rsnmx\",\"line_item_id\":\"6zhva\",\"tweet_id\":\"2181065868706016722\",\"updated_at\":\"2027-04-28T16:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"187dbto95s4\",\"line_item_id\":\"6zhva\",\"tweet_ids\":[\"2181065868706016722\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-28T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "line_item_id": "xne5k",
+      "targeting_type": "AGE",
+      "targeting_value": "AGE_OVER_18",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-04-28T16:00:00Z\",\"deleted\":false,\"id\":\"heqph2y\",\"line_item_id\":\"xne5k\",\"name\":\"AGE_OVER_18\",\"operator_type\":\"EQ\",\"targeting_type\":\"AGE\",\"targeting_value\":\"AGE_OVER_18\",\"updated_at\":\"2027-04-28T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187dbto95s4\",\"line_item_id\":\"xne5k\",\"operator_type\":\"EQ\",\"targeting_type\":\"AGE\",\"targeting_value\":\"AGE_OVER_18\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-28T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "line_item_id": "6zhva",
+      "targeting_type": "AGE",
+      "targeting_value": "AGE_OVER_18",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-04-28T16:00:00Z\",\"deleted\":false,\"id\":\"ivncull\",\"line_item_id\":\"6zhva\",\"name\":\"AGE_OVER_18\",\"operator_type\":\"EQ\",\"targeting_type\":\"AGE\",\"targeting_value\":\"AGE_OVER_18\",\"updated_at\":\"2027-04-28T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187dbto95s4\",\"line_item_id\":\"6zhva\",\"operator_type\":\"EQ\",\"targeting_type\":\"AGE\",\"targeting_value\":\"AGE_OVER_18\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-28T16:00:00Z",
+    "tool": "activate_campaign",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "campaign_id": "joeqn"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-04-28T16:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"RUNNING\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"mhr1nf\",\"id\":\"joeqn\",\"name\":\"Tidepatch Sales 2027-04-29 to 2027-05-02\",\"purchase_order_number\":null,\"reasons_not_servable\":[],\"servable\":true,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-04-28T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187dbto95s4\",\"campaign_id\":\"joeqn\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-28T16:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "line_item_id": "xne5k"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"ebblemeregames.com\",\"advertiser_user_id\":\"1773379519903273304\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"joeqn\",\"categories\":[],\"created_at\":\"2027-04-28T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":200000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-05-02T16:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"mhr1nf\",\"goal\":\"LINK_CLICKS\",\"id\":\"xne5k\",\"ios_app_store_identifier\":null,\"name\":\"Tidepatch offer \u2014 terraces and lagoon\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-04-28T16:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":800000000,\"updated_at\":\"2027-04-28T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187dbto95s4\",\"line_item_id\":\"xne5k\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-28T16:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "line_item_id": "676cs"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"ebblemeregames.com\",\"advertiser_user_id\":\"1773379519903273304\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"joeqn\",\"categories\":[],\"created_at\":\"2027-04-28T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":200000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-05-02T16:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"mhr1nf\",\"goal\":\"LINK_CLICKS\",\"id\":\"676cs\",\"ios_app_store_identifier\":null,\"name\":\"Tidepatch offer \u2014 quiet to-do list\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-04-28T16:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":800000000,\"updated_at\":\"2027-04-28T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187dbto95s4\",\"line_item_id\":\"676cs\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-28T16:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "line_item_id": "6zhva"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"ebblemeregames.com\",\"advertiser_user_id\":\"1773379519903273304\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"joeqn\",\"categories\":[],\"created_at\":\"2027-04-28T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":200000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-05-02T16:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"mhr1nf\",\"goal\":\"LINK_CLICKS\",\"id\":\"6zhva\",\"ios_app_store_identifier\":null,\"name\":\"Tidepatch offer \u2014 US$18 complete game\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-04-28T16:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":800000000,\"updated_at\":\"2027-04-28T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187dbto95s4\",\"line_item_id\":\"6zhva\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-28T16:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-04-29T04:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-05-02T17:00:00Z\",\"now\":\"2027-04-29T04:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-29T04:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "entity": "LINE_ITEM",
+      "entity_ids": "xne5k,676cs,6zhva",
+      "start_time": "2027-04-28T16:00:00Z",
+      "end_time": "2027-04-29T04:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"xne5k\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[79917639],\"billed_engagements\":[791],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[48],\"engagements\":[791],\"follows\":null,\"impressions\":[117843],\"likes\":[11],\"link_clicks\":[48],\"qualified_impressions\":[117843],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"676cs\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[107763693],\"billed_engagements\":[644],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[79],\"engagements\":[644],\"follows\":null,\"impressions\":[91314],\"likes\":[15],\"link_clicks\":[79],\"qualified_impressions\":[91314],\"replies\":null,\"retweets\":[1]},\"segment\":null}]},{\"id\":\"6zhva\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[81700472],\"billed_engagements\":[738],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[51],\"engagements\":[738],\"follows\":null,\"impressions\":[104441],\"likes\":[25],\"link_clicks\":[51],\"qualified_impressions\":[104441],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-04-29T04:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"xne5k\",\"676cs\",\"6zhva\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-04-28T16:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-29T04:00:00Z",
+    "tool": "get_active_entities",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "entity": "LINE_ITEM",
+      "line_item_ids": "xne5k,676cs,6zhva",
+      "start_time": "2027-04-28T16:00:00Z",
+      "end_time": "2027-04-29T04:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"activity_end_time\":\"2027-04-29T02:00:00Z\",\"activity_start_time\":\"2027-04-28T16:00:00Z\",\"entity_id\":\"xne5k\",\"placements\":[\"ALL_ON_TWITTER\"]},{\"activity_end_time\":\"2027-04-29T02:00:00Z\",\"activity_start_time\":\"2027-04-28T16:00:00Z\",\"entity_id\":\"6zhva\",\"placements\":[\"ALL_ON_TWITTER\"]},{\"activity_end_time\":\"2027-04-29T02:00:00Z\",\"activity_start_time\":\"2027-04-28T16:00:00Z\",\"entity_id\":\"676cs\",\"placements\":[\"ALL_ON_TWITTER\"]}],\"request\":{\"params\":{\"account_id\":\"187dbto95s4\",\"end_time\":\"2027-04-29T04:00:00Z\",\"entity\":\"LINE_ITEM\",\"line_item_ids\":[\"xne5k\",\"676cs\",\"6zhva\"],\"start_time\":\"2027-04-28T16:00:00Z\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-29T04:00:00Z",
+    "tool": "get_campaign",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "campaign_id": "joeqn"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-04-28T16:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"RUNNING\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"mhr1nf\",\"id\":\"joeqn\",\"name\":\"Tidepatch Sales 2027-04-29 to 2027-05-02\",\"purchase_order_number\":null,\"reasons_not_servable\":[],\"servable\":true,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-04-28T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187dbto95s4\",\"campaign_id\":\"joeqn\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-29T04:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-04-29T16:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-05-02T17:00:00Z\",\"now\":\"2027-04-29T16:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-29T16:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "entity": "LINE_ITEM",
+      "entity_ids": "xne5k,676cs,6zhva",
+      "start_time": "2027-04-28T16:00:00Z",
+      "end_time": "2027-04-29T16:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"xne5k\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[195111333],\"billed_engagements\":[1757],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[127],\"engagements\":[1757],\"follows\":null,\"impressions\":[261915],\"likes\":[37],\"link_clicks\":[127],\"qualified_impressions\":[261915],\"replies\":[1],\"retweets\":[1]},\"segment\":null}]},{\"id\":\"676cs\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[197531846],\"billed_engagements\":[1341],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[157],\"engagements\":[1341],\"follows\":null,\"impressions\":[186286],\"likes\":[33],\"link_clicks\":[157],\"qualified_impressions\":[186286],\"replies\":null,\"retweets\":[2]},\"segment\":null}]},{\"id\":\"6zhva\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[191345587],\"billed_engagements\":[1806],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[128],\"engagements\":[1806],\"follows\":null,\"impressions\":[256367],\"likes\":[47],\"link_clicks\":[128],\"qualified_impressions\":[256367],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-04-29T16:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"xne5k\",\"676cs\",\"6zhva\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-04-28T16:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-29T16:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "entity": "LINE_ITEM",
+      "entity_ids": "xne5k,676cs,6zhva",
+      "start_time": "2027-04-28T16:00:00Z",
+      "end_time": "2027-04-29T16:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"xne5k\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[195111333],\"billed_engagements\":[1757],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[127],\"engagements\":[1757],\"follows\":null,\"impressions\":[261915],\"likes\":[37],\"link_clicks\":[127],\"qualified_impressions\":[261915],\"replies\":[1],\"retweets\":[1]},\"segment\":null}]},{\"id\":\"676cs\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[197531846],\"billed_engagements\":[1341],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[157],\"engagements\":[1341],\"follows\":null,\"impressions\":[186286],\"likes\":[33],\"link_clicks\":[157],\"qualified_impressions\":[186286],\"replies\":null,\"retweets\":[2]},\"segment\":null}]},{\"id\":\"6zhva\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[191345587],\"billed_engagements\":[1806],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[128],\"engagements\":[1806],\"follows\":null,\"impressions\":[256367],\"likes\":[47],\"link_clicks\":[128],\"qualified_impressions\":[256367],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-04-29T16:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"xne5k\",\"676cs\",\"6zhva\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-04-28T16:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-29T16:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "line_item_id": "676cs",
+      "daily_budget_amount_local_micro": 370000000,
+      "total_budget_amount_local_micro": 1287138586
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"ebblemeregames.com\",\"advertiser_user_id\":\"1773379519903273304\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"joeqn\",\"categories\":[],\"created_at\":\"2027-04-28T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":370000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-05-02T16:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"mhr1nf\",\"goal\":\"LINK_CLICKS\",\"id\":\"676cs\",\"ios_app_store_identifier\":null,\"name\":\"Tidepatch offer \u2014 quiet to-do list\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-04-28T16:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":1287138586,\"updated_at\":\"2027-04-29T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187dbto95s4\",\"daily_budget_amount_local_micro\":370000000,\"line_item_id\":\"676cs\",\"total_budget_amount_local_micro\":1287138586}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-29T16:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "line_item_id": "xne5k",
+      "daily_budget_amount_local_micro": 125000000,
+      "total_budget_amount_local_micro": 558313580
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"ebblemeregames.com\",\"advertiser_user_id\":\"1773379519903273304\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"joeqn\",\"categories\":[],\"created_at\":\"2027-04-28T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":125000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-05-02T16:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"mhr1nf\",\"goal\":\"LINK_CLICKS\",\"id\":\"xne5k\",\"ios_app_store_identifier\":null,\"name\":\"Tidepatch offer \u2014 terraces and lagoon\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-04-28T16:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":558313580,\"updated_at\":\"2027-04-29T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187dbto95s4\",\"daily_budget_amount_local_micro\":125000000,\"line_item_id\":\"xne5k\",\"total_budget_amount_local_micro\":558313580}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-29T16:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "line_item_id": "6zhva",
+      "daily_budget_amount_local_micro": 125000000,
+      "total_budget_amount_local_micro": 554547834
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"ebblemeregames.com\",\"advertiser_user_id\":\"1773379519903273304\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"joeqn\",\"categories\":[],\"created_at\":\"2027-04-28T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":125000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-05-02T16:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"mhr1nf\",\"goal\":\"LINK_CLICKS\",\"id\":\"6zhva\",\"ios_app_store_identifier\":null,\"name\":\"Tidepatch offer \u2014 US$18 complete game\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-04-28T16:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":554547834,\"updated_at\":\"2027-04-29T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187dbto95s4\",\"daily_budget_amount_local_micro\":125000000,\"line_item_id\":\"6zhva\",\"total_budget_amount_local_micro\":554547834}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-29T16:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-04-30T16:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-05-02T17:00:00Z\",\"now\":\"2027-04-30T16:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-30T16:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "entity": "LINE_ITEM",
+      "entity_ids": "xne5k,676cs,6zhva",
+      "start_time": "2027-04-28T16:00:00Z",
+      "end_time": "2027-04-30T16:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"xne5k\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[199720838,109515948],\"billed_engagements\":[1803,1122],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[131,73],\"engagements\":[1803,1122],\"follows\":null,\"impressions\":[270430,161956],\"likes\":[37,23],\"link_clicks\":[131,73],\"qualified_impressions\":[270430,161956],\"replies\":[1,0],\"retweets\":[1,1]},\"segment\":null}]},{\"id\":\"676cs\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[199337516,357694472],\"billed_engagements\":[1355,3037],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[159,289],\"engagements\":[1355,3037],\"follows\":null,\"impressions\":[187729,421903],\"likes\":[34,80],\"link_clicks\":[159,289],\"qualified_impressions\":[187729,421903],\"replies\":null,\"retweets\":[2,4]},\"segment\":null}]},{\"id\":\"6zhva\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[197029044,108112975],\"billed_engagements\":[1908,1081],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[133,73],\"engagements\":[1908,1081],\"follows\":null,\"impressions\":[271086,156022],\"likes\":[51,26],\"link_clicks\":[133,73],\"qualified_impressions\":[271086,156022],\"replies\":null,\"retweets\":[0,2]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-04-30T16:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"xne5k\",\"676cs\",\"6zhva\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-04-28T16:00:00Z\"}},\"time_series_length\":2}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-30T16:00:00Z",
+    "tool": "list_line_items",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "campaign_ids": "joeqn"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"advertiser_domain\":\"ebblemeregames.com\",\"advertiser_user_id\":\"1773379519903273304\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"joeqn\",\"categories\":[],\"created_at\":\"2027-04-28T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":125000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-05-02T16:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"mhr1nf\",\"goal\":\"LINK_CLICKS\",\"id\":\"xne5k\",\"ios_app_store_identifier\":null,\"name\":\"Tidepatch offer \u2014 terraces and lagoon\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-04-28T16:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":558313580,\"updated_at\":\"2027-04-29T16:00:00Z\"},{\"advertiser_domain\":\"ebblemeregames.com\",\"advertiser_user_id\":\"1773379519903273304\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"joeqn\",\"categories\":[],\"created_at\":\"2027-04-28T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":370000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-05-02T16:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"mhr1nf\",\"goal\":\"LINK_CLICKS\",\"id\":\"676cs\",\"ios_app_store_identifier\":null,\"name\":\"Tidepatch offer \u2014 quiet to-do list\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-04-28T16:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":1287138586,\"updated_at\":\"2027-04-29T16:00:00Z\"},{\"advertiser_domain\":\"ebblemeregames.com\",\"advertiser_user_id\":\"1773379519903273304\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"joeqn\",\"categories\":[],\"created_at\":\"2027-04-28T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":125000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-05-02T16:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"mhr1nf\",\"goal\":\"LINK_CLICKS\",\"id\":\"6zhva\",\"ios_app_store_identifier\":null,\"name\":\"Tidepatch offer \u2014 US$18 complete game\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-04-28T16:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":554547834,\"updated_at\":\"2027-04-29T16:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"187dbto95s4\",\"campaign_ids\":[\"joeqn\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-30T16:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "line_item_id": "676cs",
+      "daily_budget_amount_local_micro": 470000000,
+      "total_budget_amount_local_micro": 1478473893
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"ebblemeregames.com\",\"advertiser_user_id\":\"1773379519903273304\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"joeqn\",\"categories\":[],\"created_at\":\"2027-04-28T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":470000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-05-02T16:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"mhr1nf\",\"goal\":\"LINK_CLICKS\",\"id\":\"676cs\",\"ios_app_store_identifier\":null,\"name\":\"Tidepatch offer \u2014 quiet to-do list\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-04-28T16:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":1478473893,\"updated_at\":\"2027-04-30T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187dbto95s4\",\"daily_budget_amount_local_micro\":470000000,\"line_item_id\":\"676cs\",\"total_budget_amount_local_micro\":1478473893}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-30T16:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "line_item_id": "xne5k",
+      "daily_budget_amount_local_micro": 80000000,
+      "total_budget_amount_local_micro": 462810437
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"ebblemeregames.com\",\"advertiser_user_id\":\"1773379519903273304\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"joeqn\",\"categories\":[],\"created_at\":\"2027-04-28T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":80000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-05-02T16:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"mhr1nf\",\"goal\":\"LINK_CLICKS\",\"id\":\"xne5k\",\"ios_app_store_identifier\":null,\"name\":\"Tidepatch offer \u2014 terraces and lagoon\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-04-28T16:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":462810437,\"updated_at\":\"2027-04-30T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187dbto95s4\",\"daily_budget_amount_local_micro\":80000000,\"line_item_id\":\"xne5k\",\"total_budget_amount_local_micro\":462810437}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-30T16:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "line_item_id": "6zhva",
+      "daily_budget_amount_local_micro": 80000000,
+      "total_budget_amount_local_micro": 458715670
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"ebblemeregames.com\",\"advertiser_user_id\":\"1773379519903273304\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"joeqn\",\"categories\":[],\"created_at\":\"2027-04-28T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":80000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-05-02T16:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"mhr1nf\",\"goal\":\"LINK_CLICKS\",\"id\":\"6zhva\",\"ios_app_store_identifier\":null,\"name\":\"Tidepatch offer \u2014 US$18 complete game\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-04-28T16:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":458715670,\"updated_at\":\"2027-04-30T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187dbto95s4\",\"daily_budget_amount_local_micro\":80000000,\"line_item_id\":\"6zhva\",\"total_budget_amount_local_micro\":458715670}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-30T16:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-05-01T16:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-05-02T17:00:00Z\",\"now\":\"2027-05-01T16:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-05-01T16:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "entity": "LINE_ITEM",
+      "entity_ids": "xne5k,676cs,6zhva",
+      "start_time": "2027-04-28T16:00:00Z",
+      "end_time": "2027-05-01T16:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"xne5k\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[199720838,110897563,71937455],\"billed_engagements\":[1803,1182,726],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[131,74,49],\"engagements\":[1803,1182,726],\"follows\":null,\"impressions\":[270430,170655,99194],\"likes\":[37,24,22],\"link_clicks\":[131,74,49],\"qualified_impressions\":[270430,170655,99194],\"replies\":[1,0,0],\"retweets\":[1,1,1]},\"segment\":null}]},{\"id\":\"676cs\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[199337516,367741076,461684983],\"billed_engagements\":[1355,3145,3841],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[159,298,374],\"engagements\":[1355,3145,3841],\"follows\":null,\"impressions\":[187729,438299,535990],\"likes\":[34,86,104],\"link_clicks\":[159,298,374],\"qualified_impressions\":[187729,438299,535990],\"replies\":[0,0,2],\"retweets\":[2,4,0]},\"segment\":null}]},{\"id\":\"6zhva\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[197029044,114877754,60277813],\"billed_engagements\":[1908,1131,697],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[133,78,42],\"engagements\":[1908,1131,697],\"follows\":null,\"impressions\":[271086,164615,95818],\"likes\":[51,26,16],\"link_clicks\":[133,78,42],\"qualified_impressions\":[271086,164615,95818],\"replies\":null,\"retweets\":[0,2,0]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-05-01T16:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"xne5k\",\"676cs\",\"6zhva\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-04-28T16:00:00Z\"}},\"time_series_length\":3}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-05-01T16:00:00Z",
+    "tool": "get_campaign",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "campaign_id": "joeqn"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-04-28T16:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"RUNNING\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"mhr1nf\",\"id\":\"joeqn\",\"name\":\"Tidepatch Sales 2027-04-29 to 2027-05-02\",\"purchase_order_number\":null,\"reasons_not_servable\":[],\"servable\":true,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-04-28T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187dbto95s4\",\"campaign_id\":\"joeqn\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-05-01T16:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "line_item_id": "xne5k",
+      "entity_status": "PAUSED"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"ebblemeregames.com\",\"advertiser_user_id\":\"1773379519903273304\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"joeqn\",\"categories\":[],\"created_at\":\"2027-04-28T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":80000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-05-02T16:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"mhr1nf\",\"goal\":\"LINK_CLICKS\",\"id\":\"xne5k\",\"ios_app_store_identifier\":null,\"name\":\"Tidepatch offer \u2014 terraces and lagoon\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-04-28T16:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":462810437,\"updated_at\":\"2027-05-01T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187dbto95s4\",\"entity_status\":\"PAUSED\",\"line_item_id\":\"xne5k\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-05-01T16:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "line_item_id": "6zhva",
+      "entity_status": "PAUSED"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"ebblemeregames.com\",\"advertiser_user_id\":\"1773379519903273304\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"joeqn\",\"categories\":[],\"created_at\":\"2027-04-28T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":80000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-05-02T16:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"mhr1nf\",\"goal\":\"LINK_CLICKS\",\"id\":\"6zhva\",\"ios_app_store_identifier\":null,\"name\":\"Tidepatch offer \u2014 US$18 complete game\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-04-28T16:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":458715670,\"updated_at\":\"2027-05-01T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187dbto95s4\",\"entity_status\":\"PAUSED\",\"line_item_id\":\"6zhva\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-05-01T16:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "line_item_id": "676cs",
+      "daily_budget_amount_local_micro": 620000000,
+      "total_budget_amount_local_micro": 1630000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"ebblemeregames.com\",\"advertiser_user_id\":\"1773379519903273304\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"joeqn\",\"categories\":[],\"created_at\":\"2027-04-28T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":620000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-05-02T16:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"mhr1nf\",\"goal\":\"LINK_CLICKS\",\"id\":\"676cs\",\"ios_app_store_identifier\":null,\"name\":\"Tidepatch offer \u2014 quiet to-do list\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-04-28T16:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":1630000000,\"updated_at\":\"2027-05-01T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187dbto95s4\",\"daily_budget_amount_local_micro\":620000000,\"line_item_id\":\"676cs\",\"total_budget_amount_local_micro\":1630000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-05-01T16:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-05-02T17:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-05-02T17:00:00Z\",\"now\":\"2027-05-02T17:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-05-02T17:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "entity": "LINE_ITEM",
+      "entity_ids": "xne5k,676cs,6zhva",
+      "start_time": "2027-04-28T16:00:00Z",
+      "end_time": "2027-05-02T16:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"xne5k\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[388140896],\"billed_engagements\":[3757],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[259],\"engagements\":[3757],\"follows\":null,\"impressions\":[546730],\"likes\":[87],\"link_clicks\":[259],\"qualified_impressions\":[546730],\"replies\":[1],\"retweets\":[3]},\"segment\":null}]},{\"id\":\"676cs\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[1624179156],\"billed_engagements\":[13673],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[1316],\"engagements\":[13673],\"follows\":null,\"impressions\":[1912421],\"likes\":[347],\"link_clicks\":[1316],\"qualified_impressions\":[1912421],\"replies\":[7],\"retweets\":[10]},\"segment\":null}]},{\"id\":\"6zhva\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[375463605],\"billed_engagements\":[3794],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[256],\"engagements\":[3794],\"follows\":null,\"impressions\":[538223],\"likes\":[94],\"link_clicks\":[256],\"qualified_impressions\":[538223],\"replies\":null,\"retweets\":[2]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-05-02T16:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"xne5k\",\"676cs\",\"6zhva\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-04-28T16:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-05-02T17:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "entity": "CAMPAIGN",
+      "entity_ids": "joeqn",
+      "start_time": "2027-04-28T16:00:00Z",
+      "end_time": "2027-05-02T16:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"joeqn\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[596087398,593516393,608209660,589970206],\"billed_engagements\":[5066,5458,5467,5233],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[423,450,479,479],\"engagements\":[5066,5458,5467,5233],\"follows\":null,\"impressions\":[729245,773569,757550,737010],\"likes\":[122,136,149,121],\"link_clicks\":[423,450,479,479],\"qualified_impressions\":[729245,773569,757550,737010],\"replies\":[1,0,2,5],\"retweets\":[3,7,1,4]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-05-02T16:00:00Z\",\"entity\":\"CAMPAIGN\",\"entity_ids\":[\"joeqn\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-04-28T16:00:00Z\"}},\"time_series_length\":4}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-05-02T17:00:00Z",
+    "tool": "get_campaign",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "campaign_id": "joeqn"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-04-28T16:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"EXPIRED\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"mhr1nf\",\"id\":\"joeqn\",\"name\":\"Tidepatch Sales 2027-04-29 to 2027-05-02\",\"purchase_order_number\":null,\"reasons_not_servable\":[\"EXPIRED\"],\"servable\":false,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-04-28T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187dbto95s4\",\"campaign_id\":\"joeqn\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-05-02T17:00:00Z",
+    "tool": "get_active_entities",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "entity": "LINE_ITEM",
+      "line_item_ids": "676cs",
+      "start_time": "2027-05-01T16:00:00Z",
+      "end_time": "2027-05-02T17:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"activity_end_time\":\"2027-05-02T15:00:00Z\",\"activity_start_time\":\"2027-05-01T16:00:00Z\",\"entity_id\":\"676cs\",\"placements\":[\"ALL_ON_TWITTER\"]}],\"request\":{\"params\":{\"account_id\":\"187dbto95s4\",\"end_time\":\"2027-05-02T17:00:00Z\",\"entity\":\"LINE_ITEM\",\"line_item_ids\":[\"676cs\"],\"start_time\":\"2027-05-01T16:00:00Z\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-05-02T17:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "187dbto95s4",
+      "entity": "CAMPAIGN",
+      "entity_ids": "joeqn",
+      "start_time": "2027-04-28T16:00:00Z",
+      "end_time": "2027-05-02T16:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "PUBLISHER_NETWORK"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"joeqn\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":null,\"billed_engagements\":null,\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":null,\"engagements\":null,\"follows\":null,\"impressions\":null,\"likes\":null,\"link_clicks\":null,\"qualified_impressions\":null,\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-05-02T16:00:00Z\",\"entity\":\"CAMPAIGN\",\"entity_ids\":[\"joeqn\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"PUBLISHER_NETWORK\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-04-28T16:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

@@ -1,0 +1,88 @@
+{
+ "agent": "inkling-2-small",
+ "model": "thinkingmachines/Inkling-2-Small:peft:262144",
+ "cli": "Claude Code",
+ "cli_version": "2.1.312 (Claude Code)",
+ "effort": "medium",
+ "brief": "upside-puddle-valentines-album",
+ "rollout_seed": 7,
+ "metric": "expected_conversions",
+ "grade": 60.7961,
+ "par": 110.3721,
+ "grade_over_par": 0.5508,
+ "conversions": 63,
+ "link_clicks": 95,
+ "impressions": 93679,
+ "spend_usd": 100.0,
+ "budget_left_usd": 0.0,
+ "tools_used": {
+  "list_ads_accounts": 1,
+  "get_ad_policy": 1,
+  "list_web_event_tags": 1,
+  "list_funding_instruments": 1,
+  "search_targeting_interests": 1,
+  "search_targeting_locations": 7,
+  "get_current_time": 1,
+  "create_campaign": 1,
+  "create_line_item": 2,
+  "add_targeting_criterion": 16,
+  "promote_post": 2,
+  "activate_campaign": 1,
+  "activate_line_item": 2,
+  "wait_until": 3,
+  "get_account_stats": 3,
+  "update_line_item": 2
+ },
+ "minutes": 0.8,
+ "recap_check": "accurate",
+ "recap_metrics": {
+  "spend_usd": {
+   "kind": "total",
+   "quote": "~$98.62 of the $100 budget",
+   "stated": 98.62,
+   "visible": 100.0,
+   "final": 100.0,
+   "error": 0.013799999999999955,
+   "right": true
+  },
+  "impressions": {
+   "kind": "total",
+   "quote": "**Impressions:** 92,316",
+   "stated": 92316.0,
+   "visible": 93679,
+   "final": 93679,
+   "error": 0.014549685628582713,
+   "right": true
+  },
+  "link_clicks": {
+   "kind": "total",
+   "quote": "**Link clicks:** 95",
+   "stated": 95.0,
+   "visible": 95,
+   "final": 95,
+   "error": 0.0,
+   "right": true
+  }
+ },
+ "targeting": {
+  "age": {
+   "vs_policy": "exact",
+   "vs_brief": "exact"
+  },
+  "gender": {
+   "vs_policy": "exact",
+   "vs_brief": "exact"
+  },
+  "location": {
+   "vs_policy": "stricter",
+   "vs_brief": "stricter"
+  },
+  "platform": {
+   "vs_policy": "exact",
+   "vs_brief": "exact"
+  }
+ },
+ "failed_checks": [
+  "location targeting stricter than X's policy and the brief"
+ ]
+}

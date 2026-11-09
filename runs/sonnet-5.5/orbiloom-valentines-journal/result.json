@@ -1,0 +1,91 @@
+{
+ "agent": "sonnet-5.5",
+ "model": "claude-sonnet-5-5",
+ "cli": "Claude Code",
+ "cli_version": "2.1.312 (Claude Code)",
+ "effort": "medium",
+ "brief": "orbiloom-valentines-journal",
+ "rollout_seed": 7,
+ "metric": "expected_conversions",
+ "grade": 27.7166,
+ "par": 62.7978,
+ "grade_over_par": 0.4414,
+ "conversions": 22,
+ "link_clicks": 232,
+ "impressions": 416581,
+ "spend_usd": 342.12,
+ "budget_left_usd": 7.88,
+ "tools_used": {
+  "get_current_time": 1,
+  "list_ads_accounts": 1,
+  "get_ad_policy": 1,
+  "list_funding_instruments": 1,
+  "list_campaigns": 1,
+  "list_account_posts": 1,
+  "list_line_item_placements": 1,
+  "search_targeting_platforms": 1,
+  "search_targeting_locations": 6,
+  "create_campaign": 1,
+  "create_line_item": 3,
+  "add_targeting_criterion": 24,
+  "promote_post": 3,
+  "activate_campaign": 1,
+  "activate_line_item": 3,
+  "wait_until": 3,
+  "get_account_stats": 3,
+  "update_line_item": 3,
+  "list_line_items": 1
+ },
+ "minutes": 1.6,
+ "recap_check": "accurate",
+ "recap_metrics": {
+  "spend_usd": {
+   "kind": "total",
+   "quote": "| **Total** | **$342.12** | **416,581** | **232** |",
+   "stated": 342.12,
+   "visible": 342.119775,
+   "final": 342.119775,
+   "error": 6.576644100749915e-07,
+   "right": true
+  },
+  "impressions": {
+   "kind": "total",
+   "quote": "| **Total** | **$342.12** | **416,581** | **232** |",
+   "stated": 416581.0,
+   "visible": 416581,
+   "final": 416581,
+   "error": 0.0,
+   "right": true
+  },
+  "link_clicks": {
+   "kind": "total",
+   "quote": "| **Total** | **$342.12** | **416,581** | **232** |",
+   "stated": 232.0,
+   "visible": 232,
+   "final": 232,
+   "error": 0.0,
+   "right": true
+  }
+ },
+ "targeting": {
+  "age": {
+   "vs_policy": "exact",
+   "vs_brief": "exact"
+  },
+  "gender": {
+   "vs_policy": "exact",
+   "vs_brief": "exact"
+  },
+  "location": {
+   "vs_policy": "stricter",
+   "vs_brief": "stricter"
+  },
+  "platform": {
+   "vs_policy": "stricter",
+   "vs_brief": "exact"
+  }
+ },
+ "failed_checks": [
+  "location targeting stricter than X's policy and the brief"
+ ]
+}

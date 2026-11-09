@@ -1,0 +1,1023 @@
+[
+  {
+    "at": "2027-03-30T05:00:00Z",
+    "tool": "get_current_time",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-04-06T06:00:00Z\",\"now\":\"2027-03-30T05:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-03-30T05:00:00Z",
+    "tool": "list_ads_accounts",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"business_id\":null,\"business_name\":null,\"country_code\":\"US\",\"created_at\":\"2024-07-24T05:00:00Z\",\"deleted\":false,\"id\":\"18o5qr83adz\",\"industry_type\":null,\"name\":\"Quarterline Seltzer\",\"timezone\":\"America/Chicago\",\"timezone_switch_at\":\"2024-07-24T05:00:00Z\",\"updated_at\":\"2024-07-24T05:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-03-30T05:00:00Z",
+    "tool": "get_ad_policy",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"enforcement\":\"ad groups that break the policy of their category are disapproved and don't serve\",\"minors\":\"no ad may reach anyone under 13; alcohol may never target minors\",\"pre_authorization\":\"required for every restricted category\",\"restricted_categories\":[{\"category\":\"alcohol\",\"countries\":[\"AL\",\"AR\",\"AT\",\"AU\",\"BA\",\"BE\",\"BG\",\"BO\",\"BR\",\"CA\",\"CH\",\"CL\",\"CO\",\"CR\",\"CY\",\"CZ\",\"DE\",\"DK\",\"DO\",\"EC\",\"EE\",\"ES\",\"FI\",\"FR\",\"GB\",\"GH\",\"GR\",\"HK\",\"HN\",\"HR\",\"HU\",\"IE\",\"IL\",\"IN\",\"IS\",\"IT\",\"JP\",\"KE\",\"KH\",\"KR\",\"LT\",\"LU\",\"LV\",\"ME\",\"MK\",\"MT\",\"MX\",\"MY\",\"NG\",\"NI\",\"NL\",\"NZ\",\"PA\",\"PE\",\"PH\",\"PT\",\"PY\",\"RO\",\"RS\",\"SE\",\"SG\",\"SI\",\"SK\",\"SN\",\"SV\",\"TW\",\"UA\",\"UG\",\"US\",\"UY\",\"VE\",\"ZA\",\"ZM\"],\"covers\":\"promoting, selling or branding beer, wine or spirits, and competitions with alcohol as a prize\",\"min_age\":{\"by_country\":{\"JP\":20,\"KR\":20,\"US\":21},\"elsewhere\":18},\"targeting_types\":null},{\"category\":\"financial_services\",\"countries\":[\"AE\",\"AR\",\"AT\",\"AU\",\"AW\",\"BA\",\"BB\",\"BE\",\"BG\",\"BM\",\"BR\",\"BS\",\"CA\",\"CH\",\"CL\",\"CR\",\"CW\",\"CZ\",\"DE\",\"DK\",\"DO\",\"EC\",\"EG\",\"ES\",\"FI\",\"FR\",\"GB\",\"GH\",\"GR\",\"GT\",\"HK\",\"HN\",\"HR\",\"ID\",\"IE\",\"IL\",\"IN\",\"IT\",\"JM\",\"JP\",\"KR\",\"KW\",\"MA\",\"MK\",\"MY\",\"NG\",\"NI\",\"NL\",\"NO\",\"NZ\",\"OM\",\"PA\",\"PE\",\"PH\",\"PK\",\"PL\",\"PT\",\"PY\",\"QA\",\"RO\",\"RS\",\"RU\",\"SA\",\"SE\",\"SG\",\"SI\",\"SV\",\"TH\",\"TR\",\"TT\",\"TW\",\"TZ\",\"UA\",\"UG\",\"US\",\"UY\",\"VE\",\"VN\",\"ZA\",\"ZM\"],\"covers\":\"banks, money service businesses, mobile and electronic payments, money transfer, savings, investment, currency exchange, loans and insurance\",\"min_age\":null,\"targeting_types\":null},{\"category\":\"political_content\",\"countries\":[\"AE\",\"AR\",\"AU\",\"CL\",\"CO\",\"EC\",\"GB\",\"GH\",\"ID\",\"IL\",\"IN\",\"JP\",\"MX\",\"PE\",\"SA\",\"US\",\"ZA\"],\"covers\":\"ads that reference a candidate, party, official, election, referendum, legislation, regulation or judicial outcome\",\"min_age\":null,\"targeting_types\":null},{\"category\":\"political_campaigning\",\"countries\":[\"AR\",\"AU\",\"CO\",\"EC\",\"GB\",\"GH\",\"ID\",\"IL\",\"JP\",\"MX\",\"PA\",\"PE\",\"US\",\"ZA\"],\"covers\":\"ads that advocate for or against, or ask for votes or money for, a candidate, party, election, legislation, referendum or ballot measure\",\"min_age\":null,\"targeting_types\":[\"LOCATION\",\"AGE\",\"GENDER\",\"INTEREST\",\"BROAD_KEYWORD\",\"PHRASE_KEYWORD\",\"EXACT_KEYWORD\",\"UNORDERED_KEYWORD\",\"NEGATIVE_PHRASE_KEYWORD\",\"NEGATIVE_EXACT_KEYWORD\",\"NEGATIVE_UNORDERED_KEYWORD\",\"CUSTOM_AUDIENCE\",\"CUSTOM_AUDIENCE_EXPANDED\",\"SIMILAR_TO_FOLLOWERS_OF_USER\",\"FOLLOWER_LOOK_ALIKES\"]}]},\"request\":{\"params\":{}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-03-30T05:00:00Z",
+    "tool": "list_funding_instruments",
+    "arguments": {
+      "account_id": "18o5qr83adz"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"able_to_fund\":true,\"created_at\":\"2024-07-24T05:00:00Z\",\"credit_limit_local_micro\":null,\"credit_remaining_local_micro\":null,\"currency\":\"USD\",\"deleted\":false,\"description\":\"Mastercard ending in 2914\",\"end_time\":null,\"entity_status\":\"ACTIVE\",\"funded_amount_local_micro\":0,\"id\":\"4njlpy\",\"io_header\":null,\"reasons_not_able_to_fund\":[],\"start_time\":\"2024-07-24T05:00:00Z\",\"type\":\"CREDIT_CARD\",\"updated_at\":\"2024-07-24T05:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"18o5qr83adz\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-03-30T05:00:00Z",
+    "tool": "list_account_posts",
+    "arguments": {
+      "account_id": "18o5qr83adz",
+      "tweet_type": "PUBLISHED",
+      "tweet_ids": "2169303362567964049,2169484556499105334"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Fri Mar 26 17:00:00 +0000 2027\",\"display_text_range\":[0,156],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"quarterlineseltzer.com/br\u2026\",\"expanded_url\":\"https://quarterlineseltzer.com/bracket\",\"indices\":[133,156],\"url\":\"https://t.co/ZLhNDKSNxO\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Bracket busted by the first weekend? Same. Your couch still deserves a 65-inch upgrade for the Final Four. Take a free shot at it \ud83c\udf52\ud83d\udcfa https://t.co/ZLhNDKSNxO\",\"geo\":null,\"id\":2169484556499105334,\"id_str\":\"2169484556499105334\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2169484556499105334\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Wed Jul 24 05:00:00 +0000 2024\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":1028,\"follow_request_sent\":null,\"followers_count\":13728,\"following\":null,\"friends_count\":678,\"geo_enabled\":false,\"id\":1815975193606519872,\"id_str\":\"1815975193606519872\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":28,\"location\":\"\",\"name\":\"Quarterline Seltzer\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1815975193606519872/1657188928\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1845496041057188928/YztvFyAo_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1845496041057188928/YztvFyAo_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"QuarterlineSelt\",\"statuses_count\":1228,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"18o5qr83adz\",\"tweet_ids\":[\"2169303362567964049\",\"2169484556499105334\"],\"tweet_type\":\"PUBLISHED\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-03-30T05:00:00Z",
+    "tool": "list_campaigns",
+    "arguments": {
+      "account_id": "18o5qr83adz"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"18o5qr83adz\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-03-30T05:00:00Z",
+    "tool": "list_account_posts",
+    "arguments": {
+      "account_id": "18o5qr83adz",
+      "tweet_type": "PUBLISHED",
+      "tweet_ids": "2169303362567964049",
+      "timeline_type": "ALL"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Fri Mar 26 05:00:00 +0000 2027\",\"display_text_range\":[0,221],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"quarterlineseltzer.com/br\u2026\",\"expanded_url\":\"https://quarterlineseltzer.com/bracket\",\"indices\":[198,221],\"url\":\"https://t.co/RZth0AJy6L\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Quarterline tart cherry hard seltzer is giving away a 65\\\" TV + a year of Quarterline for tournament season. 20 runners-up get a 12-pack. Free to enter, US residents 21+ only, no purchase necessary. https://t.co/RZth0AJy6L\",\"geo\":null,\"id\":2169303362567964049,\"id_str\":\"2169303362567964049\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":false,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2169303362567964049\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Wed Jul 24 05:00:00 +0000 2024\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":1028,\"follow_request_sent\":null,\"followers_count\":13728,\"following\":null,\"friends_count\":678,\"geo_enabled\":false,\"id\":1815975193606519872,\"id_str\":\"1815975193606519872\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":28,\"location\":\"\",\"name\":\"Quarterline Seltzer\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1815975193606519872/1657188928\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1845496041057188928/YztvFyAo_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1845496041057188928/YztvFyAo_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"QuarterlineSelt\",\"statuses_count\":1228,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"18o5qr83adz\",\"timeline_type\":\"ALL\",\"tweet_ids\":[\"2169303362567964049\"],\"tweet_type\":\"PUBLISHED\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-03-30T05:00:00Z",
+    "tool": "list_account_posts",
+    "arguments": {
+      "account_id": "18o5qr83adz",
+      "tweet_type": "PUBLISHED",
+      "tweet_ids": "2169484556499105334",
+      "timeline_type": "ALL"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Fri Mar 26 17:00:00 +0000 2027\",\"display_text_range\":[0,156],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"quarterlineseltzer.com/br\u2026\",\"expanded_url\":\"https://quarterlineseltzer.com/bracket\",\"indices\":[133,156],\"url\":\"https://t.co/ZLhNDKSNxO\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Bracket busted by the first weekend? Same. Your couch still deserves a 65-inch upgrade for the Final Four. Take a free shot at it \ud83c\udf52\ud83d\udcfa https://t.co/ZLhNDKSNxO\",\"geo\":null,\"id\":2169484556499105334,\"id_str\":\"2169484556499105334\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2169484556499105334\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Wed Jul 24 05:00:00 +0000 2024\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":1028,\"follow_request_sent\":null,\"followers_count\":13728,\"following\":null,\"friends_count\":678,\"geo_enabled\":false,\"id\":1815975193606519872,\"id_str\":\"1815975193606519872\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":28,\"location\":\"\",\"name\":\"Quarterline Seltzer\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1815975193606519872/1657188928\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1845496041057188928/YztvFyAo_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1845496041057188928/YztvFyAo_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"QuarterlineSelt\",\"statuses_count\":1228,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"18o5qr83adz\",\"timeline_type\":\"ALL\",\"tweet_ids\":[\"2169484556499105334\"],\"tweet_type\":\"PUBLISHED\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-03-30T05:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "q": "United States",
+      "location_type": "COUNTRIES",
+      "count": 10
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"country_code\":\"US\",\"location_type\":\"COUNTRIES\",\"name\":\"United States\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\"},{\"country_code\":\"UM\",\"location_type\":\"COUNTRIES\",\"name\":\"United States Minor Outlying Islands\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"08fbcf4cbc4bc5b9\"},{\"country_code\":\"AE\",\"location_type\":\"COUNTRIES\",\"name\":\"United Arab Emirates\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3f63906fc8aa5a7d\"},{\"country_code\":\"GB\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"}],\"next_cursor\":null,\"request\":{\"params\":{\"count\":10,\"location_type\":\"COUNTRIES\",\"q\":\"United States\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-03-30T05:00:00Z",
+    "tool": "search_targeting_interests",
+    "arguments": {
+      "q": "basketball",
+      "count": 25
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"name\":\"Sports / Basketball\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925950530842464256\"}],\"request\":{\"params\":{\"count\":25,\"q\":\"basketball\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-03-30T05:00:00Z",
+    "tool": "search_targeting_interests",
+    "arguments": {
+      "q": "sports",
+      "count": 25
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"name\":\"Sports\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925949452197478400\"},{\"name\":\"Sports / Athletics\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925950838414942210\"},{\"name\":\"Sports / Baseball\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925950576740675584\"},{\"name\":\"Sports / Basketball\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925950530842464256\"},{\"name\":\"Sports / Boxing\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925950713982537888\"},{\"name\":\"Sports / Cricket\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925950653035151360\"},{\"name\":\"Sports / Cycling\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925950926910582786\"},{\"name\":\"Sports / Esports\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925950783448576000\"},{\"name\":\"Sports / Golf\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925950690574180352\"},{\"name\":\"Sports / Ice Hockey\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925950813043662848\"},{\"name\":\"Sports / MMA\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925950600140718080\"},{\"name\":\"Sports / MotoGP\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925951732204335105\"},{\"name\":\"Sports / NASCAR\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925951703007858688\"},{\"name\":\"Sports / NBA\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925951454121967616\"},{\"name\":\"Sports / NCAA Football\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925951645872975873\"},{\"name\":\"Sports / NFL\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925951614067650560\"},{\"name\":\"Sports / Olympics\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1943811470724153345\"},{\"name\":\"Sports / Racing\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1943810034309246976\"},{\"name\":\"Sports / Rugby\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925950895595876352\"},{\"name\":\"Sports / Skiing\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925950954962096130\"},{\"name\":\"Sports / Snowboarding\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925950982346682368\"},{\"name\":\"Sports / Soccer\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925950498420469760\"},{\"name\":\"Sports / Tennis\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925950625835008001\"}],\"request\":{\"params\":{\"count\":25,\"q\":\"sports\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-03-30T05:00:00Z",
+    "tool": "search_targeting_interests",
+    "arguments": {
+      "q": "beer",
+      "count": 25
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"request\":{\"params\":{\"count\":25,\"q\":\"beer\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-03-30T05:00:00Z",
+    "tool": "create_campaign",
+    "arguments": {
+      "account_id": "18o5qr83adz",
+      "funding_instrument_id": "4njlpy",
+      "name": "Bracket Bust Sweepstakes | March Madness 2027"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-03-30T05:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"PAUSED\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"4njlpy\",\"id\":\"lu1g9\",\"name\":\"Bracket Bust Sweepstakes | March Madness 2027\",\"purchase_order_number\":null,\"reasons_not_servable\":[\"PAUSED_BY_ADVERTISER\"],\"servable\":false,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-03-30T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18o5qr83adz\",\"funding_instrument_id\":\"4njlpy\",\"name\":\"Bracket Bust Sweepstakes | March Madness 2027\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-03-30T05:00:00Z",
+    "tool": "search_targeting_interests",
+    "arguments": {
+      "count": 20,
+      "q": "college"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"request\":{\"params\":{\"count\":20,\"q\":\"college\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-03-30T05:00:00Z",
+    "tool": "search_targeting_interests",
+    "arguments": {
+      "count": 20,
+      "q": "alcohol"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"request\":{\"params\":{\"count\":20,\"q\":\"alcohol\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-03-30T05:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "18o5qr83adz",
+      "campaign_id": "lu1g9",
+      "name": "Sweepstakes \u2013 Direct offer (Post 1)",
+      "objective": "WEBSITE_CLICKS",
+      "placements": "ALL_ON_TWITTER",
+      "product_type": "PROMOTED_TWEETS",
+      "goal": "LINK_CLICKS",
+      "pay_by": "LINK_CLICK",
+      "bid_strategy": "AUTO",
+      "daily_budget_amount_local_micro": 39290000,
+      "total_budget_amount_local_micro": 275000000,
+      "start_time": "2027-03-30T05:00:00Z",
+      "end_time": "2027-04-06T05:00:00Z",
+      "audience_expansion": "EXPANDED",
+      "standard_delivery": true
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1815975193606519872\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lu1g9\",\"categories\":[],\"created_at\":\"2027-03-30T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":39290000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-04-06T05:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"4njlpy\",\"goal\":\"LINK_CLICKS\",\"id\":\"pphga\",\"ios_app_store_identifier\":null,\"name\":\"Sweepstakes \u2013 Direct offer (Post 1)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-03-30T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":275000000,\"updated_at\":\"2027-03-30T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18o5qr83adz\",\"audience_expansion\":\"EXPANDED\",\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lu1g9\",\"daily_budget_amount_local_micro\":39290000,\"end_time\":\"2027-04-06T05:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"Sweepstakes \u2013 Direct offer (Post 1)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-03-30T05:00:00Z\",\"total_budget_amount_local_micro\":275000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-03-30T05:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "18o5qr83adz",
+      "campaign_id": "lu1g9",
+      "name": "Sweepstakes \u2013 Cheeky hook (Post 2)",
+      "objective": "WEBSITE_CLICKS",
+      "placements": "ALL_ON_TWITTER",
+      "product_type": "PROMOTED_TWEETS",
+      "goal": "LINK_CLICKS",
+      "pay_by": "LINK_CLICK",
+      "bid_strategy": "AUTO",
+      "daily_budget_amount_local_micro": 39290000,
+      "total_budget_amount_local_micro": 275000000,
+      "start_time": "2027-03-30T05:00:00Z",
+      "end_time": "2027-04-06T05:00:00Z",
+      "audience_expansion": "EXPANDED",
+      "standard_delivery": true
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1815975193606519872\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lu1g9\",\"categories\":[],\"created_at\":\"2027-03-30T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":39290000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-04-06T05:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"4njlpy\",\"goal\":\"LINK_CLICKS\",\"id\":\"ia1ia\",\"ios_app_store_identifier\":null,\"name\":\"Sweepstakes \u2013 Cheeky hook (Post 2)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-03-30T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":275000000,\"updated_at\":\"2027-03-30T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18o5qr83adz\",\"audience_expansion\":\"EXPANDED\",\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lu1g9\",\"daily_budget_amount_local_micro\":39290000,\"end_time\":\"2027-04-06T05:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"Sweepstakes \u2013 Cheeky hook (Post 2)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-03-30T05:00:00Z\",\"total_budget_amount_local_micro\":275000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-03-30T05:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18o5qr83adz",
+      "line_item_id": "pphga",
+      "targeting_type": "LOCATION",
+      "targeting_value": "96683cc9126741d1"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-03-30T05:00:00Z\",\"deleted\":false,\"id\":\"602dfio\",\"line_item_id\":\"pphga\",\"location_type\":\"COUNTRIES\",\"name\":\"United States\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\",\"updated_at\":\"2027-03-30T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18o5qr83adz\",\"line_item_id\":\"pphga\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-03-30T05:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18o5qr83adz",
+      "line_item_id": "ia1ia",
+      "targeting_type": "LOCATION",
+      "targeting_value": "96683cc9126741d1"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-03-30T05:00:00Z\",\"deleted\":false,\"id\":\"8a05e5j\",\"line_item_id\":\"ia1ia\",\"location_type\":\"COUNTRIES\",\"name\":\"United States\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\",\"updated_at\":\"2027-03-30T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18o5qr83adz\",\"line_item_id\":\"ia1ia\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-03-30T05:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18o5qr83adz",
+      "line_item_id": "pphga",
+      "targeting_type": "INTEREST",
+      "targeting_value": "1925950530842464256"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-03-30T05:00:00Z\",\"deleted\":false,\"id\":\"hp3drvr\",\"line_item_id\":\"pphga\",\"name\":\"Sports / Basketball\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925950530842464256\",\"updated_at\":\"2027-03-30T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18o5qr83adz\",\"line_item_id\":\"pphga\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925950530842464256\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-03-30T05:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18o5qr83adz",
+      "line_item_id": "ia1ia",
+      "targeting_type": "INTEREST",
+      "targeting_value": "1925950530842464256"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-03-30T05:00:00Z\",\"deleted\":false,\"id\":\"o063fjj\",\"line_item_id\":\"ia1ia\",\"name\":\"Sports / Basketball\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925950530842464256\",\"updated_at\":\"2027-03-30T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18o5qr83adz\",\"line_item_id\":\"ia1ia\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925950530842464256\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-03-30T05:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18o5qr83adz",
+      "line_item_id": "pphga",
+      "targeting_type": "AGE",
+      "targeting_value": "21"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"errors\":[{\"code\":\"INVALID_PARAMETER\",\"message\":\"Expected a value in AGE_13_TO_19, AGE_13_TO_24, AGE_13_TO_29, AGE_13_TO_34, AGE_13_TO_39, AGE_13_TO_49, AGE_13_TO_54, AGE_18_TO_24, AGE_18_TO_34, AGE_18_TO_49, AGE_18_TO_54, AGE_20_TO_29, AGE_20_TO_34, AGE_20_TO_39, AGE_20_TO_49, AGE_21_TO_34, AGE_21_TO_49, AGE_21_TO_54, AGE_25_TO_49, AGE_25_TO_54, AGE_30_TO_39, AGE_30_TO_49, AGE_35_TO_49, AGE_35_TO_54, AGE_40_TO_49, AGE_OVER_13, AGE_OVER_18, AGE_OVER_20, AGE_OVER_21, AGE_OVER_25, AGE_OVER_30, AGE_OVER_35, AGE_OVER_40, AGE_OVER_50, got \\\"21\\\" for targeting_value\",\"parameter\":\"targeting_value\"}],\"request\":{\"params\":{\"account_id\":\"18o5qr83adz\",\"line_item_id\":\"pphga\",\"targeting_type\":\"AGE\",\"targeting_value\":\"21\"}}}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2027-03-30T05:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18o5qr83adz",
+      "line_item_id": "pphga",
+      "targeting_type": "AGE",
+      "targeting_value": "AGE_OVER_21"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-03-30T05:00:00Z\",\"deleted\":false,\"id\":\"376t9zc\",\"line_item_id\":\"pphga\",\"name\":\"AGE_OVER_21\",\"operator_type\":\"EQ\",\"targeting_type\":\"AGE\",\"targeting_value\":\"AGE_OVER_21\",\"updated_at\":\"2027-03-30T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18o5qr83adz\",\"line_item_id\":\"pphga\",\"targeting_type\":\"AGE\",\"targeting_value\":\"AGE_OVER_21\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-03-30T05:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18o5qr83adz",
+      "line_item_id": "ia1ia",
+      "targeting_type": "AGE",
+      "targeting_value": "AGE_OVER_21"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-03-30T05:00:00Z\",\"deleted\":false,\"id\":\"ghieuck\",\"line_item_id\":\"ia1ia\",\"name\":\"AGE_OVER_21\",\"operator_type\":\"EQ\",\"targeting_type\":\"AGE\",\"targeting_value\":\"AGE_OVER_21\",\"updated_at\":\"2027-03-30T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18o5qr83adz\",\"line_item_id\":\"ia1ia\",\"targeting_type\":\"AGE\",\"targeting_value\":\"AGE_OVER_21\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-03-30T05:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "18o5qr83adz",
+      "line_item_id": "pphga",
+      "tweet_ids": "2169303362567964049"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-03-30T05:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"ubketk\",\"line_item_id\":\"pphga\",\"tweet_id\":\"2169303362567964049\",\"updated_at\":\"2027-03-30T05:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"18o5qr83adz\",\"line_item_id\":\"pphga\",\"tweet_ids\":[\"2169303362567964049\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-03-30T05:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "18o5qr83adz",
+      "line_item_id": "ia1ia",
+      "tweet_ids": "2169484556499105334"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-03-30T05:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"1lf0fq\",\"line_item_id\":\"ia1ia\",\"tweet_id\":\"2169484556499105334\",\"updated_at\":\"2027-03-30T05:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"18o5qr83adz\",\"line_item_id\":\"ia1ia\",\"tweet_ids\":[\"2169484556499105334\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-03-30T05:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "18o5qr83adz",
+      "line_item_id": "pphga"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1815975193606519872\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lu1g9\",\"categories\":[],\"created_at\":\"2027-03-30T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":39290000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-04-06T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"4njlpy\",\"goal\":\"LINK_CLICKS\",\"id\":\"pphga\",\"ios_app_store_identifier\":null,\"name\":\"Sweepstakes \u2013 Direct offer (Post 1)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-03-30T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":275000000,\"updated_at\":\"2027-03-30T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18o5qr83adz\",\"line_item_id\":\"pphga\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-03-30T05:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "18o5qr83adz",
+      "line_item_id": "ia1ia"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1815975193606519872\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lu1g9\",\"categories\":[],\"created_at\":\"2027-03-30T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":39290000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-04-06T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"4njlpy\",\"goal\":\"LINK_CLICKS\",\"id\":\"ia1ia\",\"ios_app_store_identifier\":null,\"name\":\"Sweepstakes \u2013 Cheeky hook (Post 2)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-03-30T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":275000000,\"updated_at\":\"2027-03-30T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18o5qr83adz\",\"line_item_id\":\"ia1ia\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-03-30T05:00:00Z",
+    "tool": "activate_campaign",
+    "arguments": {
+      "account_id": "18o5qr83adz",
+      "campaign_id": "lu1g9"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-03-30T05:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"RUNNING\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"4njlpy\",\"id\":\"lu1g9\",\"name\":\"Bracket Bust Sweepstakes | March Madness 2027\",\"purchase_order_number\":null,\"reasons_not_servable\":[],\"servable\":true,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-03-30T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18o5qr83adz\",\"campaign_id\":\"lu1g9\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-03-30T05:00:00Z",
+    "tool": "estimate_audience",
+    "arguments": {
+      "account_id": "18o5qr83adz",
+      "targeting_criteria": [
+        {
+          "targeting_type": "LOCATION",
+          "targeting_value": "96683cc9126741d1",
+          "operator_type": "EQ"
+        },
+        {
+          "targeting_type": "INTEREST",
+          "targeting_value": "1925950530842464256",
+          "operator_type": "EQ"
+        },
+        {
+          "targeting_type": "AGE",
+          "targeting_value": "AGE_OVER_21",
+          "operator_type": "EQ"
+        }
+      ]
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"audience_size\":{\"max\":80691004,\"min\":70133303},\"warnings\":[{\"code\":\"AUDIENCE_ESTIMATE_PARTIAL_TARGETING\",\"message\":\"Some targeting options are not included in audience estimates. Your campaign will still serve using all selected targeting.\",\"unsupported_targeting_types\":[\"INTEREST\"]}]},\"request\":{\"params\":{\"account_id\":\"18o5qr83adz\",\"targeting_criteria\":null}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-03-30T05:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-03-30T17:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-04-06T06:00:00Z\",\"now\":\"2027-03-30T17:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-03-30T17:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18o5qr83adz",
+      "entity": "LINE_ITEM",
+      "entity_ids": "pphga,ia1ia",
+      "start_time": "2027-03-30T05:00:00Z",
+      "end_time": "2027-03-30T17:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"pphga\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[8697095],\"billed_engagements\":[47],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[2],\"engagements\":[47],\"follows\":null,\"impressions\":[5712],\"likes\":null,\"link_clicks\":[2],\"qualified_impressions\":[5712],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ia1ia\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[18344119],\"billed_engagements\":[34],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[6],\"engagements\":[34],\"follows\":null,\"impressions\":[5338],\"likes\":[1],\"link_clicks\":[6],\"qualified_impressions\":[5338],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-03-30T17:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"pphga\",\"ia1ia\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-03-30T05:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-03-30T17:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-03-31T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-04-06T06:00:00Z\",\"now\":\"2027-03-31T05:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-03-31T05:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18o5qr83adz",
+      "end_time": "2027-03-31T05:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "pphga,ia1ia",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-03-30T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"pphga\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[30029183],\"billed_engagements\":[139],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[7],\"engagements\":[139],\"follows\":null,\"impressions\":[20586],\"likes\":[3],\"link_clicks\":[7],\"qualified_impressions\":[20586],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ia1ia\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[37364185],\"billed_engagements\":[100],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[12],\"engagements\":[100],\"follows\":null,\"impressions\":[13605],\"likes\":[1],\"link_clicks\":[12],\"qualified_impressions\":[13605],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-03-31T05:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"pphga\",\"ia1ia\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-03-30T05:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-03-31T05:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18o5qr83adz",
+      "line_item_id": "pphga",
+      "daily_budget_amount_local_micro": 20000000,
+      "total_budget_amount_local_micro": 150000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1815975193606519872\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lu1g9\",\"categories\":[],\"created_at\":\"2027-03-30T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":20000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-04-06T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"4njlpy\",\"goal\":\"LINK_CLICKS\",\"id\":\"pphga\",\"ios_app_store_identifier\":null,\"name\":\"Sweepstakes \u2013 Direct offer (Post 1)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-03-30T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":150000000,\"updated_at\":\"2027-03-31T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18o5qr83adz\",\"daily_budget_amount_local_micro\":20000000,\"line_item_id\":\"pphga\",\"total_budget_amount_local_micro\":150000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-03-31T05:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18o5qr83adz",
+      "line_item_id": "ia1ia",
+      "daily_budget_amount_local_micro": 58000000,
+      "total_budget_amount_local_micro": 400000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1815975193606519872\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lu1g9\",\"categories\":[],\"created_at\":\"2027-03-30T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":58000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-04-06T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"4njlpy\",\"goal\":\"LINK_CLICKS\",\"id\":\"ia1ia\",\"ios_app_store_identifier\":null,\"name\":\"Sweepstakes \u2013 Cheeky hook (Post 2)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-03-30T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":400000000,\"updated_at\":\"2027-03-31T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18o5qr83adz\",\"daily_budget_amount_local_micro\":58000000,\"line_item_id\":\"ia1ia\",\"total_budget_amount_local_micro\":400000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-03-31T05:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-04-01T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-04-06T06:00:00Z\",\"now\":\"2027-04-01T05:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-01T05:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18o5qr83adz",
+      "end_time": "2027-04-01T05:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "pphga,ia1ia",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-03-30T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"pphga\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[48806192],\"billed_engagements\":[217],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[12],\"engagements\":[217],\"follows\":null,\"impressions\":[31363],\"likes\":[5],\"link_clicks\":[12],\"qualified_impressions\":[31363],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ia1ia\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[94981216],\"billed_engagements\":[239],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[32],\"engagements\":[239],\"follows\":null,\"impressions\":[31170],\"likes\":[3],\"link_clicks\":[32],\"qualified_impressions\":[31170],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-04-01T05:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"pphga\",\"ia1ia\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-03-30T05:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-01T05:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18o5qr83adz",
+      "end_time": "2027-04-01T05:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "pphga,ia1ia",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-03-31T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"pphga\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[18777009],\"billed_engagements\":[72],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[5],\"engagements\":[72],\"follows\":null,\"impressions\":[10091],\"likes\":[2],\"link_clicks\":[5],\"qualified_impressions\":[10091],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ia1ia\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[57617031],\"billed_engagements\":[136],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[20],\"engagements\":[136],\"follows\":null,\"impressions\":[17232],\"likes\":[2],\"link_clicks\":[20],\"qualified_impressions\":[17232],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-04-01T05:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"pphga\",\"ia1ia\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-03-31T05:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-01T05:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18o5qr83adz",
+      "daily_budget_amount_local_micro": 18000000,
+      "line_item_id": "pphga",
+      "total_budget_amount_local_micro": 140000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1815975193606519872\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lu1g9\",\"categories\":[],\"created_at\":\"2027-03-30T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":18000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-04-06T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"4njlpy\",\"goal\":\"LINK_CLICKS\",\"id\":\"pphga\",\"ios_app_store_identifier\":null,\"name\":\"Sweepstakes \u2013 Direct offer (Post 1)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-03-30T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":140000000,\"updated_at\":\"2027-04-01T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18o5qr83adz\",\"daily_budget_amount_local_micro\":18000000,\"line_item_id\":\"pphga\",\"total_budget_amount_local_micro\":140000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-01T05:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18o5qr83adz",
+      "daily_budget_amount_local_micro": 63000000,
+      "line_item_id": "ia1ia",
+      "total_budget_amount_local_micro": 410000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1815975193606519872\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lu1g9\",\"categories\":[],\"created_at\":\"2027-03-30T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":63000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-04-06T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"4njlpy\",\"goal\":\"LINK_CLICKS\",\"id\":\"ia1ia\",\"ios_app_store_identifier\":null,\"name\":\"Sweepstakes \u2013 Cheeky hook (Post 2)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-03-30T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":410000000,\"updated_at\":\"2027-04-01T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18o5qr83adz\",\"daily_budget_amount_local_micro\":63000000,\"line_item_id\":\"ia1ia\",\"total_budget_amount_local_micro\":410000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-01T05:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-04-02T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-04-06T06:00:00Z\",\"now\":\"2027-04-02T05:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-02T05:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18o5qr83adz",
+      "end_time": "2027-04-02T05:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "pphga,ia1ia",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-03-30T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"pphga\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[63207293],\"billed_engagements\":[290],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[16],\"engagements\":[290],\"follows\":null,\"impressions\":[43992],\"likes\":[7],\"link_clicks\":[16],\"qualified_impressions\":[43992],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ia1ia\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[157773429],\"billed_engagements\":[368],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[58],\"engagements\":[368],\"follows\":null,\"impressions\":[46214],\"likes\":[5],\"link_clicks\":[58],\"qualified_impressions\":[46214],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-04-02T05:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"pphga\",\"ia1ia\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-03-30T05:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-02T05:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18o5qr83adz",
+      "end_time": "2027-04-02T05:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "pphga,ia1ia",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-04-01T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"pphga\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[14401101],\"billed_engagements\":[69],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[4],\"engagements\":[69],\"follows\":null,\"impressions\":[12459],\"likes\":[2],\"link_clicks\":[4],\"qualified_impressions\":[12459],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ia1ia\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[62792213],\"billed_engagements\":[125],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[26],\"engagements\":[125],\"follows\":null,\"impressions\":[14818],\"likes\":[2],\"link_clicks\":[26],\"qualified_impressions\":[14818],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-04-02T05:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"pphga\",\"ia1ia\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-04-01T05:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-02T05:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-04-04T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-04-06T06:00:00Z\",\"now\":\"2027-04-04T05:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-04T05:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18o5qr83adz",
+      "end_time": "2027-04-04T05:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "pphga,ia1ia",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-03-30T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"pphga\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[98019749],\"billed_engagements\":[481],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[24],\"engagements\":[481],\"follows\":null,\"impressions\":[72293],\"likes\":[10],\"link_clicks\":[24],\"qualified_impressions\":[72293],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ia1ia\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[279755446],\"billed_engagements\":[672],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[105],\"engagements\":[672],\"follows\":null,\"impressions\":[86750],\"likes\":[13],\"link_clicks\":[105],\"qualified_impressions\":[86750],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-04-04T05:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"pphga\",\"ia1ia\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-03-30T05:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-04T05:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18o5qr83adz",
+      "end_time": "2027-04-04T05:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "pphga,ia1ia",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-04-03T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"pphga\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[17499563],\"billed_engagements\":[67],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[5],\"engagements\":[67],\"follows\":null,\"impressions\":[10262],\"likes\":[1],\"link_clicks\":[5],\"qualified_impressions\":[10262],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ia1ia\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[62352181],\"billed_engagements\":[135],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[27],\"engagements\":[135],\"follows\":null,\"impressions\":[17895],\"likes\":[4],\"link_clicks\":[27],\"qualified_impressions\":[17895],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-04-04T05:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"pphga\",\"ia1ia\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-04-03T05:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-04T05:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18o5qr83adz",
+      "daily_budget_amount_local_micro": 20000000,
+      "line_item_id": "pphga",
+      "total_budget_amount_local_micro": 140000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1815975193606519872\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lu1g9\",\"categories\":[],\"created_at\":\"2027-03-30T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":20000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-04-06T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"4njlpy\",\"goal\":\"LINK_CLICKS\",\"id\":\"pphga\",\"ios_app_store_identifier\":null,\"name\":\"Sweepstakes \u2013 Direct offer (Post 1)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-03-30T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":140000000,\"updated_at\":\"2027-04-04T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18o5qr83adz\",\"daily_budget_amount_local_micro\":20000000,\"line_item_id\":\"pphga\",\"total_budget_amount_local_micro\":140000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-04T05:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18o5qr83adz",
+      "daily_budget_amount_local_micro": 66000000,
+      "line_item_id": "ia1ia",
+      "total_budget_amount_local_micro": 410000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1815975193606519872\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lu1g9\",\"categories\":[],\"created_at\":\"2027-03-30T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":66000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-04-06T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"4njlpy\",\"goal\":\"LINK_CLICKS\",\"id\":\"ia1ia\",\"ios_app_store_identifier\":null,\"name\":\"Sweepstakes \u2013 Cheeky hook (Post 2)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-03-30T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":410000000,\"updated_at\":\"2027-04-04T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18o5qr83adz\",\"daily_budget_amount_local_micro\":66000000,\"line_item_id\":\"ia1ia\",\"total_budget_amount_local_micro\":410000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-04T05:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-04-06T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-04-06T06:00:00Z\",\"now\":\"2027-04-06T06:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-06T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18o5qr83adz",
+      "end_time": "2027-04-06T05:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "pphga,ia1ia",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-03-30T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"pphga\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[134563480],\"billed_engagements\":[658],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[33],\"engagements\":[658],\"follows\":null,\"impressions\":[98825],\"likes\":[14],\"link_clicks\":[33],\"qualified_impressions\":[98825],\"replies\":[1],\"retweets\":null},\"segment\":null}]},{\"id\":\"ia1ia\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[407353744],\"billed_engagements\":[1035],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[161],\"engagements\":[1035],\"follows\":null,\"impressions\":[133121],\"likes\":[16],\"link_clicks\":[161],\"qualified_impressions\":[133121],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-04-06T05:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"pphga\",\"ia1ia\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-03-30T05:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-06T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18o5qr83adz",
+      "end_time": "2027-04-06T05:00:00Z",
+      "entity": "CAMPAIGN",
+      "entity_ids": "lu1g9",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-03-30T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"lu1g9\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[541917224],\"billed_engagements\":[1693],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[194],\"engagements\":[1693],\"follows\":null,\"impressions\":[231946],\"likes\":[30],\"link_clicks\":[194],\"qualified_impressions\":[231946],\"replies\":[1],\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-04-06T05:00:00Z\",\"entity\":\"CAMPAIGN\",\"entity_ids\":[\"lu1g9\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-03-30T05:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-04-06T06:00:00Z",
+    "tool": "get_campaign",
+    "arguments": {
+      "account_id": "18o5qr83adz",
+      "campaign_id": "lu1g9"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-03-30T05:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"EXPIRED\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"4njlpy\",\"id\":\"lu1g9\",\"name\":\"Bracket Bust Sweepstakes | March Madness 2027\",\"purchase_order_number\":null,\"reasons_not_servable\":[\"EXPIRED\"],\"servable\":false,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-03-30T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18o5qr83adz\",\"campaign_id\":\"lu1g9\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

@@ -1,0 +1,983 @@
+[
+  {
+    "at": "2027-10-22T23:00:00Z",
+    "tool": "get_current_time",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-11-01T01:00:00Z\",\"now\":\"2027-10-22T23:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-22T23:00:00Z",
+    "tool": "list_ads_accounts",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"business_id\":null,\"business_name\":null,\"country_code\":\"IE\",\"created_at\":\"2026-08-24T23:00:00Z\",\"deleted\":false,\"id\":\"186c3o0o2fk\",\"industry_type\":null,\"name\":\"Wrenhollow Choir \ud83d\udd6f\ufe0f\",\"timezone\":\"Europe/Dublin\",\"timezone_switch_at\":\"2026-08-24T23:00:00Z\",\"updated_at\":\"2026-08-24T23:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-22T23:00:00Z",
+    "tool": "list_funding_instruments",
+    "arguments": {
+      "account_id": "186c3o0o2fk"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"able_to_fund\":true,\"created_at\":\"2026-08-24T23:00:00Z\",\"credit_limit_local_micro\":null,\"credit_remaining_local_micro\":null,\"currency\":\"USD\",\"deleted\":false,\"description\":\"Mastercard ending in 1894\",\"end_time\":null,\"entity_status\":\"ACTIVE\",\"funded_amount_local_micro\":0,\"id\":\"yby3ct\",\"io_header\":null,\"reasons_not_able_to_fund\":[],\"start_time\":\"2026-08-24T23:00:00Z\",\"type\":\"CREDIT_CARD\",\"updated_at\":\"2026-08-24T23:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"186c3o0o2fk\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-22T23:00:00Z",
+    "tool": "list_campaigns",
+    "arguments": {
+      "account_id": "186c3o0o2fk"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"186c3o0o2fk\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-22T23:00:00Z",
+    "tool": "list_account_posts",
+    "arguments": {
+      "account_id": "186c3o0o2fk",
+      "tweet_type": "PUBLISHED",
+      "timeline_type": "ALL"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Wed Oct 20 23:00:00 +0000 2027\",\"display_text_range\":[0,226],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"wrenhollowchoir.ie/samhain\",\"expanded_url\":\"https://wrenhollowchoir.ie/samhain\",\"indices\":[203,226],\"url\":\"https://t.co/e62wP79Mnv\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Samhain Night Songs by Wrenhollow Choir: 12 tracks of Irish ghost songs and keening airs from a 40-voice Cork choir. Free to stream on all major services for listeners in Ireland and the United Kingdom. https://t.co/e62wP79Mnv\",\"geo\":null,\"id\":2244951829511788941,\"id_str\":\"2244951829511788941\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2244951829511788941\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Mon Aug 24 23:00:00 +0000 2026\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2239,\"follow_request_sent\":null,\"followers_count\":8939,\"following\":null,\"friends_count\":389,\"geo_enabled\":false,\"id\":2092024150226422795,\"id_str\":\"2092024150226422795\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":39,\"location\":\"\",\"name\":\"Wrenhollow Choir \ud83d\udd6f\ufe0f\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/2092024150226422795/1678384139\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1517874297678384139/DO62szd8_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1517874297678384139/DO62szd8_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"WrenhollowChoir\",\"statuses_count\":439,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Wed Oct 20 11:00:00 +0000 2027\",\"display_text_range\":[0,80],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"wrenhollowchoir.ie/samhain\",\"expanded_url\":\"https://wrenhollowchoir.ie/samhain\",\"indices\":[57,80],\"url\":\"https://t.co/UiRUQnepG6\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Our new album is out now. Hope you enjoy it! Link below. https://t.co/UiRUQnepG6\",\"geo\":null,\"id\":2244770635578862025,\"id_str\":\"2244770635578862025\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2244770635578862025\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Mon Aug 24 23:00:00 +0000 2026\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2239,\"follow_request_sent\":null,\"followers_count\":8939,\"following\":null,\"friends_count\":389,\"geo_enabled\":false,\"id\":2092024150226422795,\"id_str\":\"2092024150226422795\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":39,\"location\":\"\",\"name\":\"Wrenhollow Choir \ud83d\udd6f\ufe0f\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/2092024150226422795/1678384139\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1517874297678384139/DO62szd8_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1517874297678384139/DO62szd8_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"WrenhollowChoir\",\"statuses_count\":439,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Tue Oct 19 23:00:00 +0000 2027\",\"display_text_range\":[0,178],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"wrenhollowchoir.ie/samhain\",\"expanded_url\":\"https://wrenhollowchoir.ie/samhain\",\"indices\":[155,178],\"url\":\"https://t.co/kSXozxgyQi\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Free. That's the price of 12 ghost songs sung by 40 voices from Cork. Samhain Night Songs streams at no cost on every major service in Ireland and the UK. https://t.co/kSXozxgyQi\",\"geo\":null,\"id\":2244589441645788254,\"id_str\":\"2244589441645788254\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2244589441645788254\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Mon Aug 24 23:00:00 +0000 2026\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2239,\"follow_request_sent\":null,\"followers_count\":8939,\"following\":null,\"friends_count\":389,\"geo_enabled\":false,\"id\":2092024150226422795,\"id_str\":\"2092024150226422795\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":39,\"location\":\"\",\"name\":\"Wrenhollow Choir \ud83d\udd6f\ufe0f\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/2092024150226422795/1678384139\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1517874297678384139/DO62szd8_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1517874297678384139/DO62szd8_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"WrenhollowChoir\",\"statuses_count\":439,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Tue Oct 19 11:00:00 +0000 2027\",\"display_text_range\":[0,113],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"wrenhollowchoir.ie/samhain\",\"expanded_url\":\"https://wrenhollowchoir.ie/samhain\",\"indices\":[90,113],\"url\":\"https://t.co/13t0TGqLXt\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"What did Halloween sound like before plastic pumpkins? Turn the lights off and find out \ud83d\udc7b https://t.co/13t0TGqLXt\",\"geo\":null,\"id\":2244408247712985286,\"id_str\":\"2244408247712985286\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2244408247712985286\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Mon Aug 24 23:00:00 +0000 2026\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2239,\"follow_request_sent\":null,\"followers_count\":8939,\"following\":null,\"friends_count\":389,\"geo_enabled\":false,\"id\":2092024150226422795,\"id_str\":\"2092024150226422795\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":39,\"location\":\"\",\"name\":\"Wrenhollow Choir \ud83d\udd6f\ufe0f\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/2092024150226422795/1678384139\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1517874297678384139/DO62szd8_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1517874297678384139/DO62szd8_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"WrenhollowChoir\",\"statuses_count\":439,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Mon Oct 18 23:00:00 +0000 2027\",\"display_text_range\":[0,198],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"wrenhollowchoir.ie/samhain\",\"expanded_url\":\"https://wrenhollowchoir.ie/samhain\",\"indices\":[175,198],\"url\":\"https://t.co/Yg7O7XqX3d\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Samhain Night Songs is out: 40 Cork voices singing the old Irish ghost songs Halloween grew from. 12 tracks, free to stream in Ireland & the UK. Press play before the 31st \ud83d\udd6f\ufe0f https://t.co/Yg7O7XqX3d\",\"geo\":null,\"id\":2244227053780022236,\"id_str\":\"2244227053780022236\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":false,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2244227053780022236\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Mon Aug 24 23:00:00 +0000 2026\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2239,\"follow_request_sent\":null,\"followers_count\":8939,\"following\":null,\"friends_count\":389,\"geo_enabled\":false,\"id\":2092024150226422795,\"id_str\":\"2092024150226422795\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":39,\"location\":\"\",\"name\":\"Wrenhollow Choir \ud83d\udd6f\ufe0f\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/2092024150226422795/1678384139\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1517874297678384139/DO62szd8_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1517874297678384139/DO62szd8_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"WrenhollowChoir\",\"statuses_count\":439,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"186c3o0o2fk\",\"timeline_type\":\"ALL\",\"tweet_type\":\"PUBLISHED\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-22T23:00:00Z",
+    "tool": "get_ad_policy",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"enforcement\":\"ad groups that break the policy of their category are disapproved and don't serve\",\"minors\":\"no ad may reach anyone under 13; alcohol may never target minors\",\"pre_authorization\":\"required for every restricted category\",\"restricted_categories\":[{\"category\":\"alcohol\",\"countries\":[\"AL\",\"AR\",\"AT\",\"AU\",\"BA\",\"BE\",\"BG\",\"BO\",\"BR\",\"CA\",\"CH\",\"CL\",\"CO\",\"CR\",\"CY\",\"CZ\",\"DE\",\"DK\",\"DO\",\"EC\",\"EE\",\"ES\",\"FI\",\"FR\",\"GB\",\"GH\",\"GR\",\"HK\",\"HN\",\"HR\",\"HU\",\"IE\",\"IL\",\"IN\",\"IS\",\"IT\",\"JP\",\"KE\",\"KH\",\"KR\",\"LT\",\"LU\",\"LV\",\"ME\",\"MK\",\"MT\",\"MX\",\"MY\",\"NG\",\"NI\",\"NL\",\"NZ\",\"PA\",\"PE\",\"PH\",\"PT\",\"PY\",\"RO\",\"RS\",\"SE\",\"SG\",\"SI\",\"SK\",\"SN\",\"SV\",\"TW\",\"UA\",\"UG\",\"US\",\"UY\",\"VE\",\"ZA\",\"ZM\"],\"covers\":\"promoting, selling or branding beer, wine or spirits, and competitions with alcohol as a prize\",\"min_age\":{\"by_country\":{\"JP\":20,\"KR\":20,\"US\":21},\"elsewhere\":18},\"targeting_types\":null},{\"category\":\"financial_services\",\"countries\":[\"AE\",\"AR\",\"AT\",\"AU\",\"AW\",\"BA\",\"BB\",\"BE\",\"BG\",\"BM\",\"BR\",\"BS\",\"CA\",\"CH\",\"CL\",\"CR\",\"CW\",\"CZ\",\"DE\",\"DK\",\"DO\",\"EC\",\"EG\",\"ES\",\"FI\",\"FR\",\"GB\",\"GH\",\"GR\",\"GT\",\"HK\",\"HN\",\"HR\",\"ID\",\"IE\",\"IL\",\"IN\",\"IT\",\"JM\",\"JP\",\"KR\",\"KW\",\"MA\",\"MK\",\"MY\",\"NG\",\"NI\",\"NL\",\"NO\",\"NZ\",\"OM\",\"PA\",\"PE\",\"PH\",\"PK\",\"PL\",\"PT\",\"PY\",\"QA\",\"RO\",\"RS\",\"RU\",\"SA\",\"SE\",\"SG\",\"SI\",\"SV\",\"TH\",\"TR\",\"TT\",\"TW\",\"TZ\",\"UA\",\"UG\",\"US\",\"UY\",\"VE\",\"VN\",\"ZA\",\"ZM\"],\"covers\":\"banks, money service businesses, mobile and electronic payments, money transfer, savings, investment, currency exchange, loans and insurance\",\"min_age\":null,\"targeting_types\":null},{\"category\":\"political_content\",\"countries\":[\"AE\",\"AR\",\"AU\",\"CL\",\"CO\",\"EC\",\"GB\",\"GH\",\"ID\",\"IL\",\"IN\",\"JP\",\"MX\",\"PE\",\"SA\",\"US\",\"ZA\"],\"covers\":\"ads that reference a candidate, party, official, election, referendum, legislation, regulation or judicial outcome\",\"min_age\":null,\"targeting_types\":null},{\"category\":\"political_campaigning\",\"countries\":[\"AR\",\"AU\",\"CO\",\"EC\",\"GB\",\"GH\",\"ID\",\"IL\",\"JP\",\"MX\",\"PA\",\"PE\",\"US\",\"ZA\"],\"covers\":\"ads that advocate for or against, or ask for votes or money for, a candidate, party, election, legislation, referendum or ballot measure\",\"min_age\":null,\"targeting_types\":[\"LOCATION\",\"AGE\",\"GENDER\",\"INTEREST\",\"BROAD_KEYWORD\",\"PHRASE_KEYWORD\",\"EXACT_KEYWORD\",\"UNORDERED_KEYWORD\",\"NEGATIVE_PHRASE_KEYWORD\",\"NEGATIVE_EXACT_KEYWORD\",\"NEGATIVE_UNORDERED_KEYWORD\",\"CUSTOM_AUDIENCE\",\"CUSTOM_AUDIENCE_EXPANDED\",\"SIMILAR_TO_FOLLOWERS_OF_USER\",\"FOLLOWER_LOOK_ALIKES\"]}]},\"request\":{\"params\":{}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-22T23:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "q": "ireland",
+      "location_type": "COUNTRIES"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"country_code\":\"IE\",\"location_type\":\"COUNTRIES\",\"name\":\"Ireland\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ea679934779f45c7\"}],\"next_cursor\":null,\"request\":{\"params\":{\"location_type\":\"COUNTRIES\",\"q\":\"ireland\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-22T23:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "q": "united kingdom",
+      "location_type": "COUNTRIES"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"country_code\":\"GB\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"},{\"country_code\":\"AE\",\"location_type\":\"COUNTRIES\",\"name\":\"United Arab Emirates\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3f63906fc8aa5a7d\"},{\"country_code\":\"US\",\"location_type\":\"COUNTRIES\",\"name\":\"United States\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\"},{\"country_code\":\"UM\",\"location_type\":\"COUNTRIES\",\"name\":\"United States Minor Outlying Islands\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"08fbcf4cbc4bc5b9\"}],\"next_cursor\":null,\"request\":{\"params\":{\"location_type\":\"COUNTRIES\",\"q\":\"united kingdom\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-22T23:00:00Z",
+    "tool": "search_targeting_interests",
+    "arguments": {
+      "q": "music"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"name\":\"Music\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925949604224196608\"},{\"name\":\"Music / Concerts\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925952145615974400\"},{\"name\":\"Music / Country Music\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925952353485602816\"},{\"name\":\"Music / Electronic\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925952257893257217\"},{\"name\":\"Music / Hip Hop\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925952203962896384\"},{\"name\":\"Music / Jazz\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925952300213768192\"},{\"name\":\"Music / Pop\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925952179791151105\"},{\"name\":\"Music / Rock\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925952228818354177\"}],\"request\":{\"params\":{\"q\":\"music\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-22T23:00:00Z",
+    "tool": "search_targeting_interests",
+    "arguments": {
+      "q": "halloween"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"request\":{\"params\":{\"q\":\"halloween\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-22T23:00:00Z",
+    "tool": "create_campaign",
+    "arguments": {
+      "account_id": "186c3o0o2fk",
+      "funding_instrument_id": "yby3ct",
+      "name": "Samhain Night Songs \u2013 Streams \u2013 IE/UK \u2013 Oct 2027"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-10-22T23:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"PAUSED\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"yby3ct\",\"id\":\"i9ozs\",\"name\":\"Samhain Night Songs \u2013 Streams \u2013 IE/UK \u2013 Oct 2027\",\"purchase_order_number\":null,\"reasons_not_servable\":[\"PAUSED_BY_ADVERTISER\"],\"servable\":false,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-10-22T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"186c3o0o2fk\",\"funding_instrument_id\":\"yby3ct\",\"name\":\"Samhain Night Songs \u2013 Streams \u2013 IE/UK \u2013 Oct 2027\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-22T23:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "186c3o0o2fk",
+      "campaign_id": "i9ozs",
+      "name": "Broad IE+UK \u2013 link clicks",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "placements": "ALL_ON_TWITTER",
+      "product_type": "PROMOTED_TWEETS",
+      "daily_budget_amount_local_micro": 28000000,
+      "total_budget_amount_local_micro": 250000000,
+      "start_time": "2027-10-22T23:00:00Z",
+      "end_time": "2027-11-01T00:00:00Z",
+      "bid_strategy": "AUTO",
+      "standard_delivery": true
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2092024150226422795\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"i9ozs\",\"categories\":[],\"created_at\":\"2027-10-22T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":28000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-11-01T00:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"yby3ct\",\"goal\":\"LINK_CLICKS\",\"id\":\"yv9wa\",\"ios_app_store_identifier\":null,\"name\":\"Broad IE+UK \u2013 link clicks\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-10-22T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":250000000,\"updated_at\":\"2027-10-22T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"186c3o0o2fk\",\"bid_strategy\":\"AUTO\",\"campaign_id\":\"i9ozs\",\"daily_budget_amount_local_micro\":28000000,\"end_time\":\"2027-11-01T00:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"Broad IE+UK \u2013 link clicks\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-10-22T23:00:00Z\",\"total_budget_amount_local_micro\":250000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-22T23:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "186c3o0o2fk",
+      "campaign_id": "i9ozs",
+      "name": "Music interest IE+UK \u2013 link clicks",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "placements": "ALL_ON_TWITTER",
+      "product_type": "PROMOTED_TWEETS",
+      "daily_budget_amount_local_micro": 22000000,
+      "total_budget_amount_local_micro": 200000000,
+      "start_time": "2027-10-22T23:00:00Z",
+      "end_time": "2027-11-01T00:00:00Z",
+      "bid_strategy": "AUTO",
+      "standard_delivery": true
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2092024150226422795\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"i9ozs\",\"categories\":[],\"created_at\":\"2027-10-22T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":22000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-11-01T00:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"yby3ct\",\"goal\":\"LINK_CLICKS\",\"id\":\"bhmll\",\"ios_app_store_identifier\":null,\"name\":\"Music interest IE+UK \u2013 link clicks\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-10-22T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":200000000,\"updated_at\":\"2027-10-22T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"186c3o0o2fk\",\"bid_strategy\":\"AUTO\",\"campaign_id\":\"i9ozs\",\"daily_budget_amount_local_micro\":22000000,\"end_time\":\"2027-11-01T00:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"Music interest IE+UK \u2013 link clicks\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-10-22T23:00:00Z\",\"total_budget_amount_local_micro\":200000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-22T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "186c3o0o2fk",
+      "line_item_id": "yv9wa",
+      "targeting_type": "LOCATION",
+      "targeting_value": "ea679934779f45c7"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-10-22T23:00:00Z\",\"deleted\":false,\"id\":\"soumwlu\",\"line_item_id\":\"yv9wa\",\"location_type\":\"COUNTRIES\",\"name\":\"Ireland\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ea679934779f45c7\",\"updated_at\":\"2027-10-22T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"186c3o0o2fk\",\"line_item_id\":\"yv9wa\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ea679934779f45c7\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-22T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "186c3o0o2fk",
+      "line_item_id": "yv9wa",
+      "targeting_type": "LOCATION",
+      "targeting_value": "6416b8512febefc9"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-10-22T23:00:00Z\",\"deleted\":false,\"id\":\"es8wb80\",\"line_item_id\":\"yv9wa\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\",\"updated_at\":\"2027-10-22T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"186c3o0o2fk\",\"line_item_id\":\"yv9wa\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-22T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "186c3o0o2fk",
+      "line_item_id": "bhmll",
+      "targeting_type": "LOCATION",
+      "targeting_value": "ea679934779f45c7"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-10-22T23:00:00Z\",\"deleted\":false,\"id\":\"psr35s9\",\"line_item_id\":\"bhmll\",\"location_type\":\"COUNTRIES\",\"name\":\"Ireland\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ea679934779f45c7\",\"updated_at\":\"2027-10-22T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"186c3o0o2fk\",\"line_item_id\":\"bhmll\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ea679934779f45c7\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-22T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "186c3o0o2fk",
+      "line_item_id": "bhmll",
+      "targeting_type": "LOCATION",
+      "targeting_value": "6416b8512febefc9"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-10-22T23:00:00Z\",\"deleted\":false,\"id\":\"w9lhhez\",\"line_item_id\":\"bhmll\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\",\"updated_at\":\"2027-10-22T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"186c3o0o2fk\",\"line_item_id\":\"bhmll\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-22T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "186c3o0o2fk",
+      "line_item_id": "bhmll",
+      "targeting_type": "INTEREST",
+      "targeting_value": "1925949604224196608"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-10-22T23:00:00Z\",\"deleted\":false,\"id\":\"7c5l8fi\",\"line_item_id\":\"bhmll\",\"name\":\"Music\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925949604224196608\",\"updated_at\":\"2027-10-22T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"186c3o0o2fk\",\"line_item_id\":\"bhmll\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925949604224196608\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-22T23:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "186c3o0o2fk",
+      "line_item_id": "yv9wa",
+      "tweet_ids": "2244227053780022236,2244408247712985286,2244589441645788254,2244951829511788941"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-10-22T23:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"7aafig\",\"line_item_id\":\"yv9wa\",\"tweet_id\":\"2244227053780022236\",\"updated_at\":\"2027-10-22T23:00:00Z\"},{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-10-22T23:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"m6854v\",\"line_item_id\":\"yv9wa\",\"tweet_id\":\"2244408247712985286\",\"updated_at\":\"2027-10-22T23:00:00Z\"},{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-10-22T23:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"uyf8rt\",\"line_item_id\":\"yv9wa\",\"tweet_id\":\"2244589441645788254\",\"updated_at\":\"2027-10-22T23:00:00Z\"},{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-10-22T23:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"a7tbjn\",\"line_item_id\":\"yv9wa\",\"tweet_id\":\"2244951829511788941\",\"updated_at\":\"2027-10-22T23:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"186c3o0o2fk\",\"line_item_id\":\"yv9wa\",\"tweet_ids\":[\"2244227053780022236\",\"2244408247712985286\",\"2244589441645788254\",\"2244951829511788941\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-22T23:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "186c3o0o2fk",
+      "line_item_id": "bhmll",
+      "tweet_ids": "2244227053780022236,2244408247712985286,2244589441645788254,2244951829511788941"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-10-22T23:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"o37o6c\",\"line_item_id\":\"bhmll\",\"tweet_id\":\"2244227053780022236\",\"updated_at\":\"2027-10-22T23:00:00Z\"},{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-10-22T23:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"vqrfxo\",\"line_item_id\":\"bhmll\",\"tweet_id\":\"2244408247712985286\",\"updated_at\":\"2027-10-22T23:00:00Z\"},{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-10-22T23:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"rf2xzu\",\"line_item_id\":\"bhmll\",\"tweet_id\":\"2244589441645788254\",\"updated_at\":\"2027-10-22T23:00:00Z\"},{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-10-22T23:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"8jfn73\",\"line_item_id\":\"bhmll\",\"tweet_id\":\"2244951829511788941\",\"updated_at\":\"2027-10-22T23:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"186c3o0o2fk\",\"line_item_id\":\"bhmll\",\"tweet_ids\":[\"2244227053780022236\",\"2244408247712985286\",\"2244589441645788254\",\"2244951829511788941\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-22T23:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "186c3o0o2fk",
+      "line_item_id": "yv9wa"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2092024150226422795\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"i9ozs\",\"categories\":[],\"created_at\":\"2027-10-22T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":28000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-11-01T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"yby3ct\",\"goal\":\"LINK_CLICKS\",\"id\":\"yv9wa\",\"ios_app_store_identifier\":null,\"name\":\"Broad IE+UK \u2013 link clicks\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-10-22T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":250000000,\"updated_at\":\"2027-10-22T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"186c3o0o2fk\",\"line_item_id\":\"yv9wa\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-22T23:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "186c3o0o2fk",
+      "line_item_id": "bhmll"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2092024150226422795\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"i9ozs\",\"categories\":[],\"created_at\":\"2027-10-22T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":22000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-11-01T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"yby3ct\",\"goal\":\"LINK_CLICKS\",\"id\":\"bhmll\",\"ios_app_store_identifier\":null,\"name\":\"Music interest IE+UK \u2013 link clicks\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-10-22T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":200000000,\"updated_at\":\"2027-10-22T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"186c3o0o2fk\",\"line_item_id\":\"bhmll\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-22T23:00:00Z",
+    "tool": "activate_campaign",
+    "arguments": {
+      "account_id": "186c3o0o2fk",
+      "campaign_id": "i9ozs"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-10-22T23:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"RUNNING\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"yby3ct\",\"id\":\"i9ozs\",\"name\":\"Samhain Night Songs \u2013 Streams \u2013 IE/UK \u2013 Oct 2027\",\"purchase_order_number\":null,\"reasons_not_servable\":[],\"servable\":true,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-10-22T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"186c3o0o2fk\",\"campaign_id\":\"i9ozs\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-22T23:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-10-23T11:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-11-01T01:00:00Z\",\"now\":\"2027-10-23T11:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T11:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "186c3o0o2fk",
+      "entity": "LINE_ITEM",
+      "entity_ids": "yv9wa,bhmll",
+      "start_time": "2027-10-22T23:00:00Z",
+      "end_time": "2027-10-23T11:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"yv9wa\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[6093042],\"billed_engagements\":[49],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[3],\"engagements\":[49],\"follows\":null,\"impressions\":[7352],\"likes\":[3],\"link_clicks\":[3],\"qualified_impressions\":[7352],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"bhmll\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[5628657],\"billed_engagements\":[21],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[2],\"engagements\":[21],\"follows\":null,\"impressions\":[3679],\"likes\":[1],\"link_clicks\":[2],\"qualified_impressions\":[3679],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-10-23T11:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"yv9wa\",\"bhmll\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-10-22T23:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T11:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "186c3o0o2fk",
+      "entity": "PROMOTED_TWEET",
+      "entity_ids": "7aafig,m6854v,uyf8rt,a7tbjn,o37o6c,vqrfxo,rf2xzu,8jfn73",
+      "start_time": "2027-10-22T23:00:00Z",
+      "end_time": "2027-10-23T11:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"7aafig\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[2215267],\"billed_engagements\":[15],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[1],\"engagements\":[15],\"follows\":null,\"impressions\":[1634],\"likes\":null,\"link_clicks\":[1],\"qualified_impressions\":[1634],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"m6854v\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":null,\"billed_engagements\":[17],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":null,\"engagements\":[17],\"follows\":null,\"impressions\":[2046],\"likes\":[2],\"link_clicks\":null,\"qualified_impressions\":[2046],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"uyf8rt\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[2157744],\"billed_engagements\":[10],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[1],\"engagements\":[10],\"follows\":null,\"impressions\":[2117],\"likes\":[1],\"link_clicks\":[1],\"qualified_impressions\":[2117],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"a7tbjn\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[1720031],\"billed_engagements\":[7],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[1],\"engagements\":[7],\"follows\":null,\"impressions\":[1555],\"likes\":null,\"link_clicks\":[1],\"qualified_impressions\":[1555],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"o37o6c\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[2949572],\"billed_engagements\":[5],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[1],\"engagements\":[5],\"follows\":null,\"impressions\":[874],\"likes\":null,\"link_clicks\":[1],\"qualified_impressions\":[874],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"vqrfxo\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[2679085],\"billed_engagements\":[4],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[1],\"engagements\":[4],\"follows\":null,\"impressions\":[792],\"likes\":null,\"link_clicks\":[1],\"qualified_impressions\":[792],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"rf2xzu\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":null,\"billed_engagements\":[8],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":null,\"engagements\":[8],\"follows\":null,\"impressions\":[1133],\"likes\":null,\"link_clicks\":null,\"qualified_impressions\":[1133],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"8jfn73\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":null,\"billed_engagements\":[4],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":null,\"engagements\":[4],\"follows\":null,\"impressions\":[880],\"likes\":[1],\"link_clicks\":null,\"qualified_impressions\":[880],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-10-23T11:00:00Z\",\"entity\":\"PROMOTED_TWEET\",\"entity_ids\":[\"7aafig\",\"m6854v\",\"uyf8rt\",\"a7tbjn\",\"o37o6c\",\"vqrfxo\",\"rf2xzu\",\"8jfn73\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-10-22T23:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T11:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-10-24T11:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-11-01T01:00:00Z\",\"now\":\"2027-10-24T11:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-24T11:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "186c3o0o2fk",
+      "entity": "LINE_ITEM",
+      "entity_ids": "yv9wa,bhmll",
+      "start_time": "2027-10-22T23:00:00Z",
+      "end_time": "2027-10-24T11:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"yv9wa\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[34630402],\"billed_engagements\":[207],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[19],\"engagements\":[207],\"follows\":null,\"impressions\":[31696],\"likes\":[6],\"link_clicks\":[19],\"qualified_impressions\":[31696],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"bhmll\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[27979763],\"billed_engagements\":[104],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[9],\"engagements\":[104],\"follows\":null,\"impressions\":[14815],\"likes\":[2],\"link_clicks\":[9],\"qualified_impressions\":[14815],\"replies\":null,\"retweets\":[1]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-10-24T11:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"yv9wa\",\"bhmll\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-10-22T23:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-24T11:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "186c3o0o2fk",
+      "entity": "PROMOTED_TWEET",
+      "entity_ids": "7aafig,m6854v,uyf8rt,a7tbjn,o37o6c,vqrfxo,rf2xzu,8jfn73",
+      "start_time": "2027-10-22T23:00:00Z",
+      "end_time": "2027-10-24T11:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"7aafig\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[8040273],\"billed_engagements\":[48],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[4],\"engagements\":[48],\"follows\":null,\"impressions\":[7201],\"likes\":null,\"link_clicks\":[4],\"qualified_impressions\":[7201],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"m6854v\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[6925677],\"billed_engagements\":[58],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[4],\"engagements\":[58],\"follows\":null,\"impressions\":[8568],\"likes\":[3],\"link_clicks\":[4],\"qualified_impressions\":[8568],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"uyf8rt\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[16609339],\"billed_engagements\":[64],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[9],\"engagements\":[64],\"follows\":null,\"impressions\":[9065],\"likes\":[3],\"link_clicks\":[9],\"qualified_impressions\":[9065],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"a7tbjn\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[3055113],\"billed_engagements\":[37],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[2],\"engagements\":[37],\"follows\":null,\"impressions\":[6862],\"likes\":null,\"link_clicks\":[2],\"qualified_impressions\":[6862],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"o37o6c\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[9548166],\"billed_engagements\":[19],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[3],\"engagements\":[19],\"follows\":null,\"impressions\":[3533],\"likes\":null,\"link_clicks\":[3],\"qualified_impressions\":[3533],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"vqrfxo\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[8849880],\"billed_engagements\":[24],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[3],\"engagements\":[24],\"follows\":null,\"impressions\":[3226],\"likes\":null,\"link_clicks\":[3],\"qualified_impressions\":[3226],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"rf2xzu\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[9581717],\"billed_engagements\":[37],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[3],\"engagements\":[37],\"follows\":null,\"impressions\":[4560],\"likes\":[1],\"link_clicks\":[3],\"qualified_impressions\":[4560],\"replies\":null,\"retweets\":[1]},\"segment\":null}]},{\"id\":\"8jfn73\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":null,\"billed_engagements\":[24],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":null,\"engagements\":[24],\"follows\":null,\"impressions\":[3496],\"likes\":[1],\"link_clicks\":null,\"qualified_impressions\":[3496],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-10-24T11:00:00Z\",\"entity\":\"PROMOTED_TWEET\",\"entity_ids\":[\"7aafig\",\"m6854v\",\"uyf8rt\",\"a7tbjn\",\"o37o6c\",\"vqrfxo\",\"rf2xzu\",\"8jfn73\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-10-22T23:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-24T11:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "186c3o0o2fk",
+      "line_item_id": "bhmll",
+      "daily_budget_amount_local_micro": 8000000,
+      "total_budget_amount_local_micro": 80000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2092024150226422795\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"i9ozs\",\"categories\":[],\"created_at\":\"2027-10-22T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":8000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-11-01T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"yby3ct\",\"goal\":\"LINK_CLICKS\",\"id\":\"bhmll\",\"ios_app_store_identifier\":null,\"name\":\"Music interest IE+UK \u2013 link clicks\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-10-22T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":80000000,\"updated_at\":\"2027-10-24T11:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"186c3o0o2fk\",\"daily_budget_amount_local_micro\":8000000,\"line_item_id\":\"bhmll\",\"total_budget_amount_local_micro\":80000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-24T11:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "186c3o0o2fk",
+      "line_item_id": "yv9wa",
+      "daily_budget_amount_local_micro": 45000000,
+      "total_budget_amount_local_micro": 370000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2092024150226422795\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"i9ozs\",\"categories\":[],\"created_at\":\"2027-10-22T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":45000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-11-01T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"yby3ct\",\"goal\":\"LINK_CLICKS\",\"id\":\"yv9wa\",\"ios_app_store_identifier\":null,\"name\":\"Broad IE+UK \u2013 link clicks\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-10-22T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":370000000,\"updated_at\":\"2027-10-24T11:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"186c3o0o2fk\",\"daily_budget_amount_local_micro\":45000000,\"line_item_id\":\"yv9wa\",\"total_budget_amount_local_micro\":370000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-24T11:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-10-25T11:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-11-01T01:00:00Z\",\"now\":\"2027-10-25T11:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-25T11:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "186c3o0o2fk",
+      "entity": "LINE_ITEM",
+      "entity_ids": "yv9wa,bhmll",
+      "start_time": "2027-10-22T23:00:00Z",
+      "end_time": "2027-10-25T11:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"yv9wa\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[83172376],\"billed_engagements\":[454],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[46],\"engagements\":[454],\"follows\":null,\"impressions\":[68624],\"likes\":[9],\"link_clicks\":[46],\"qualified_impressions\":[68624],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"bhmll\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[30665392],\"billed_engagements\":[130],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[10],\"engagements\":[130],\"follows\":null,\"impressions\":[17967],\"likes\":[2],\"link_clicks\":[10],\"qualified_impressions\":[17967],\"replies\":null,\"retweets\":[1]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-10-25T11:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"yv9wa\",\"bhmll\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-10-22T23:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-25T11:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "186c3o0o2fk",
+      "entity": "PROMOTED_TWEET",
+      "entity_ids": "7aafig,m6854v,uyf8rt,a7tbjn,o37o6c,vqrfxo,rf2xzu,8jfn73",
+      "start_time": "2027-10-22T23:00:00Z",
+      "end_time": "2027-10-25T11:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"7aafig\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[15502289],\"billed_engagements\":[100],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[8],\"engagements\":[100],\"follows\":null,\"impressions\":[15356],\"likes\":[2],\"link_clicks\":[8],\"qualified_impressions\":[15356],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"m6854v\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[23041040],\"billed_engagements\":[141],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[13],\"engagements\":[141],\"follows\":null,\"impressions\":[18589],\"likes\":[4],\"link_clicks\":[13],\"qualified_impressions\":[18589],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"uyf8rt\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[28919849],\"billed_engagements\":[130],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[16],\"engagements\":[130],\"follows\":null,\"impressions\":[19860],\"likes\":[3],\"link_clicks\":[16],\"qualified_impressions\":[19860],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"a7tbjn\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[15709198],\"billed_engagements\":[83],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[9],\"engagements\":[83],\"follows\":null,\"impressions\":[14819],\"likes\":null,\"link_clicks\":[9],\"qualified_impressions\":[14819],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"o37o6c\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[9548166],\"billed_engagements\":[26],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[3],\"engagements\":[26],\"follows\":null,\"impressions\":[4290],\"likes\":null,\"link_clicks\":[3],\"qualified_impressions\":[4290],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"vqrfxo\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[11535509],\"billed_engagements\":[30],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[4],\"engagements\":[30],\"follows\":null,\"impressions\":[3884],\"likes\":null,\"link_clicks\":[4],\"qualified_impressions\":[3884],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"rf2xzu\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[9581717],\"billed_engagements\":[45],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[3],\"engagements\":[45],\"follows\":null,\"impressions\":[5533],\"likes\":[1],\"link_clicks\":[3],\"qualified_impressions\":[5533],\"replies\":null,\"retweets\":[1]},\"segment\":null}]},{\"id\":\"8jfn73\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":null,\"billed_engagements\":[29],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":null,\"engagements\":[29],\"follows\":null,\"impressions\":[4260],\"likes\":[1],\"link_clicks\":null,\"qualified_impressions\":[4260],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-10-25T11:00:00Z\",\"entity\":\"PROMOTED_TWEET\",\"entity_ids\":[\"7aafig\",\"m6854v\",\"uyf8rt\",\"a7tbjn\",\"o37o6c\",\"vqrfxo\",\"rf2xzu\",\"8jfn73\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-10-22T23:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-25T11:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "186c3o0o2fk",
+      "line_item_id": "bhmll",
+      "entity_status": "PAUSED"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2092024150226422795\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"i9ozs\",\"categories\":[],\"created_at\":\"2027-10-22T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":8000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-11-01T00:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"yby3ct\",\"goal\":\"LINK_CLICKS\",\"id\":\"bhmll\",\"ios_app_store_identifier\":null,\"name\":\"Music interest IE+UK \u2013 link clicks\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-10-22T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":80000000,\"updated_at\":\"2027-10-25T11:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"186c3o0o2fk\",\"entity_status\":\"PAUSED\",\"line_item_id\":\"bhmll\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-25T11:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "186c3o0o2fk",
+      "entity": "LINE_ITEM",
+      "entity_ids": "bhmll",
+      "start_time": "2027-10-22T23:00:00Z",
+      "end_time": "2027-10-25T12:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"bhmll\",\"id_data\":[{\"metrics\":{\"billed_charge_local_micro\":[30665392],\"billed_engagements\":[130]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-10-25T12:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"bhmll\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-10-22T23:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-25T11:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "186c3o0o2fk",
+      "line_item_id": "yv9wa",
+      "daily_budget_amount_local_micro": 52000000,
+      "total_budget_amount_local_micro": 419000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2092024150226422795\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"i9ozs\",\"categories\":[],\"created_at\":\"2027-10-22T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":52000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-11-01T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"yby3ct\",\"goal\":\"LINK_CLICKS\",\"id\":\"yv9wa\",\"ios_app_store_identifier\":null,\"name\":\"Broad IE+UK \u2013 link clicks\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-10-22T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":419000000,\"updated_at\":\"2027-10-25T11:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"186c3o0o2fk\",\"daily_budget_amount_local_micro\":52000000,\"line_item_id\":\"yv9wa\",\"total_budget_amount_local_micro\":419000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-25T11:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-10-26T11:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-11-01T01:00:00Z\",\"now\":\"2027-10-26T11:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-26T11:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "186c3o0o2fk",
+      "entity": "PROMOTED_TWEET",
+      "entity_ids": "7aafig,m6854v,uyf8rt,a7tbjn",
+      "start_time": "2027-10-22T23:00:00Z",
+      "end_time": "2027-10-26T11:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"7aafig\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[26422383],\"billed_engagements\":[174],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[14],\"engagements\":[174],\"follows\":null,\"impressions\":[25638],\"likes\":[2],\"link_clicks\":[14],\"qualified_impressions\":[25638],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"m6854v\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[36615598],\"billed_engagements\":[241],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[20],\"engagements\":[241],\"follows\":null,\"impressions\":[31378],\"likes\":[5],\"link_clicks\":[20],\"qualified_impressions\":[31378],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"uyf8rt\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[43576373],\"billed_engagements\":[215],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[24],\"engagements\":[215],\"follows\":null,\"impressions\":[33327],\"likes\":[4],\"link_clicks\":[24],\"qualified_impressions\":[33327],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"a7tbjn\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[19786838],\"billed_engagements\":[156],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[11],\"engagements\":[156],\"follows\":null,\"impressions\":[25052],\"likes\":[3],\"link_clicks\":[11],\"qualified_impressions\":[25052],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-10-26T11:00:00Z\",\"entity\":\"PROMOTED_TWEET\",\"entity_ids\":[\"7aafig\",\"m6854v\",\"uyf8rt\",\"a7tbjn\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-10-22T23:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-26T11:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "186c3o0o2fk",
+      "entity": "LINE_ITEM",
+      "entity_ids": "yv9wa,bhmll",
+      "start_time": "2027-10-22T23:00:00Z",
+      "end_time": "2027-10-26T11:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"yv9wa\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[126401192],\"billed_engagements\":[786],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[69],\"engagements\":[786],\"follows\":null,\"impressions\":[115395],\"likes\":[14],\"link_clicks\":[69],\"qualified_impressions\":[115395],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"bhmll\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[30665392],\"billed_engagements\":[134],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[10],\"engagements\":[134],\"follows\":null,\"impressions\":[18252],\"likes\":[2],\"link_clicks\":[10],\"qualified_impressions\":[18252],\"replies\":null,\"retweets\":[1]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-10-26T11:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"yv9wa\",\"bhmll\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-10-22T23:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-26T11:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-10-28T11:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-11-01T01:00:00Z\",\"now\":\"2027-10-28T11:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-28T11:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "186c3o0o2fk",
+      "entity": "LINE_ITEM",
+      "entity_ids": "yv9wa,bhmll",
+      "start_time": "2027-10-22T23:00:00Z",
+      "end_time": "2027-10-28T11:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"yv9wa\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[228531349],\"billed_engagements\":[1329],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[108],\"engagements\":[1329],\"follows\":null,\"impressions\":[186549],\"likes\":[26],\"link_clicks\":[108],\"qualified_impressions\":[186549],\"replies\":[1],\"retweets\":null},\"segment\":null}]},{\"id\":\"bhmll\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[30665392],\"billed_engagements\":[134],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[10],\"engagements\":[134],\"follows\":null,\"impressions\":[18252],\"likes\":[2],\"link_clicks\":[10],\"qualified_impressions\":[18252],\"replies\":null,\"retweets\":[1]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-10-28T11:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"yv9wa\",\"bhmll\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-10-22T23:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-28T11:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "186c3o0o2fk",
+      "entity": "PROMOTED_TWEET",
+      "entity_ids": "7aafig,m6854v,uyf8rt,a7tbjn",
+      "start_time": "2027-10-22T23:00:00Z",
+      "end_time": "2027-10-28T11:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"7aafig\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[46092293],\"billed_engagements\":[289],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[22],\"engagements\":[289],\"follows\":null,\"impressions\":[41691],\"likes\":[4],\"link_clicks\":[22],\"qualified_impressions\":[41691],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"m6854v\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[64347456],\"billed_engagements\":[372],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[30],\"engagements\":[372],\"follows\":null,\"impressions\":[50482],\"likes\":[9],\"link_clicks\":[30],\"qualified_impressions\":[50482],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"uyf8rt\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[77497682],\"billed_engagements\":[387],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[37],\"engagements\":[387],\"follows\":null,\"impressions\":[53809],\"likes\":[7],\"link_clicks\":[37],\"qualified_impressions\":[53809],\"replies\":[1],\"retweets\":null},\"segment\":null}]},{\"id\":\"a7tbjn\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[40593918],\"billed_engagements\":[281],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[19],\"engagements\":[281],\"follows\":null,\"impressions\":[40567],\"likes\":[6],\"link_clicks\":[19],\"qualified_impressions\":[40567],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-10-28T11:00:00Z\",\"entity\":\"PROMOTED_TWEET\",\"entity_ids\":[\"7aafig\",\"m6854v\",\"uyf8rt\",\"a7tbjn\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-10-22T23:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-28T11:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-10-30T11:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-11-01T01:00:00Z\",\"now\":\"2027-10-30T11:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-30T11:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "186c3o0o2fk",
+      "entity": "LINE_ITEM",
+      "entity_ids": "yv9wa,bhmll",
+      "start_time": "2027-10-22T23:00:00Z",
+      "end_time": "2027-10-30T11:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"errors\":[{\"code\":\"INVALID_TIME_WINDOW\",\"message\":\"The end_time (2027-10-30 11:00:00 +0000) can be a maximum of 7.days+1.hours after the start_time (2027-10-22 23:00:00 +0000)\",\"parameter\":\"\"}],\"request\":{\"params\":{\"account_id\":\"186c3o0o2fk\",\"end_time\":\"2027-10-30T11:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"yv9wa\",\"bhmll\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"start_time\":\"2027-10-22T23:00:00Z\"}}}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2027-10-30T11:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "186c3o0o2fk",
+      "entity": "LINE_ITEM",
+      "entity_ids": "yv9wa,bhmll",
+      "start_time": "2027-10-28T11:00:00Z",
+      "end_time": "2027-10-30T11:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"yv9wa\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[83406513],\"billed_engagements\":[408],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[39],\"engagements\":[408],\"follows\":null,\"impressions\":[58154],\"likes\":[16],\"link_clicks\":[39],\"qualified_impressions\":[58154],\"replies\":[1],\"retweets\":null},\"segment\":null}]},{\"id\":\"bhmll\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":null,\"billed_engagements\":null,\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":null,\"engagements\":null,\"follows\":null,\"impressions\":null,\"likes\":null,\"link_clicks\":null,\"qualified_impressions\":null,\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-10-30T11:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"yv9wa\",\"bhmll\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-10-28T11:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-30T11:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "186c3o0o2fk",
+      "line_item_id": "yv9wa",
+      "daily_budget_amount_local_micro": 72000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2092024150226422795\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"i9ozs\",\"categories\":[],\"created_at\":\"2027-10-22T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":72000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-11-01T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"yby3ct\",\"goal\":\"LINK_CLICKS\",\"id\":\"yv9wa\",\"ios_app_store_identifier\":null,\"name\":\"Broad IE+UK \u2013 link clicks\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-10-22T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":419000000,\"updated_at\":\"2027-10-30T11:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"186c3o0o2fk\",\"daily_budget_amount_local_micro\":72000000,\"line_item_id\":\"yv9wa\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-30T11:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-11-01T01:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-11-01T01:00:00Z\",\"now\":\"2027-11-01T01:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-11-01T01:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "186c3o0o2fk",
+      "entity": "LINE_ITEM",
+      "entity_ids": "yv9wa,bhmll",
+      "start_time": "2027-10-22T23:00:00Z",
+      "end_time": "2027-10-28T11:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"yv9wa\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[233312939],\"billed_engagements\":[1352],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[110],\"engagements\":[1352],\"follows\":null,\"impressions\":[189252],\"likes\":[27],\"link_clicks\":[110],\"qualified_impressions\":[189252],\"replies\":[1],\"retweets\":null},\"segment\":null}]},{\"id\":\"bhmll\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[30665392],\"billed_engagements\":[134],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[10],\"engagements\":[134],\"follows\":null,\"impressions\":[18252],\"likes\":[2],\"link_clicks\":[10],\"qualified_impressions\":[18252],\"replies\":null,\"retweets\":[1]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-10-28T11:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"yv9wa\",\"bhmll\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-10-22T23:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-11-01T01:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "186c3o0o2fk",
+      "entity": "LINE_ITEM",
+      "entity_ids": "yv9wa,bhmll",
+      "start_time": "2027-10-28T11:00:00Z",
+      "end_time": "2027-11-01T01:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"yv9wa\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[184971020],\"billed_engagements\":[1056],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[94],\"engagements\":[1056],\"follows\":null,\"impressions\":[147186],\"likes\":[35],\"link_clicks\":[94],\"qualified_impressions\":[147186],\"replies\":[1],\"retweets\":null},\"segment\":null}]},{\"id\":\"bhmll\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":null,\"billed_engagements\":null,\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":null,\"engagements\":null,\"follows\":null,\"impressions\":null,\"likes\":null,\"link_clicks\":null,\"qualified_impressions\":null,\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-11-01T01:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"yv9wa\",\"bhmll\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-10-28T11:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-11-01T01:00:00Z",
+    "tool": "get_campaign",
+    "arguments": {
+      "account_id": "186c3o0o2fk",
+      "campaign_id": "i9ozs"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-10-22T23:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"EXPIRED\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"yby3ct\",\"id\":\"i9ozs\",\"name\":\"Samhain Night Songs \u2013 Streams \u2013 IE/UK \u2013 Oct 2027\",\"purchase_order_number\":null,\"reasons_not_servable\":[\"EXPIRED\"],\"servable\":false,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-10-22T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"186c3o0o2fk\",\"campaign_id\":\"i9ozs\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

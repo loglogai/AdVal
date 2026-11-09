@@ -1,0 +1,88 @@
+{
+ "agent": "inkling-2-small",
+ "model": "thinkingmachines/Inkling-2-Small:peft:262144",
+ "cli": "Claude Code",
+ "cli_version": "2.1.312 (Claude Code)",
+ "effort": "medium",
+ "brief": "tervilo-back-to-school",
+ "rollout_seed": 7,
+ "metric": "expected_conversions",
+ "grade": 27.5186,
+ "par": 28.3177,
+ "grade_over_par": 0.9718,
+ "conversions": 29,
+ "link_clicks": 217,
+ "impressions": 548041,
+ "spend_usd": 628.15,
+ "budget_left_usd": 21.85,
+ "tools_used": {
+  "list_ads_accounts": 1,
+  "list_funding_instruments": 1,
+  "get_ad_policy": 1,
+  "get_current_time": 1,
+  "list_account_posts": 2,
+  "search_targeting_locations": 2,
+  "create_campaign": 1,
+  "create_line_item": 2,
+  "update_line_item": 4,
+  "add_targeting_criterion": 4,
+  "promote_post": 2,
+  "activate_line_item": 2,
+  "activate_campaign": 1,
+  "wait_until": 5,
+  "get_account_stats": 5,
+  "update_campaign": 1
+ },
+ "minutes": 1.0,
+ "recap_check": "accurate",
+ "recap_metrics": {
+  "spend_usd": {
+   "kind": "total",
+   "quote": "Spend: **$628.15** of the $650 budget ($312.42 + $315.73)",
+   "stated": 628.15,
+   "visible": 628.150615,
+   "final": 628.150615,
+   "error": 9.790645513240324e-07,
+   "right": true
+  },
+  "impressions": {
+   "kind": "total",
+   "quote": "Impressions: **548,041** (288,188 school-support / 259,853 cutoff)",
+   "stated": 548041.0,
+   "visible": 548041,
+   "final": 548041,
+   "error": 0.0,
+   "right": true
+  },
+  "link_clicks": {
+   "kind": "total",
+   "quote": "Link clicks: **217** (110 / 107), ~$2.90 per link click",
+   "stated": 217.0,
+   "visible": 217,
+   "final": 217,
+   "error": 0.0,
+   "right": true
+  }
+ },
+ "targeting": {
+  "age": {
+   "vs_policy": "exact",
+   "vs_brief": "exact"
+  },
+  "gender": {
+   "vs_policy": "exact",
+   "vs_brief": "exact"
+  },
+  "location": {
+   "vs_policy": "stricter",
+   "vs_brief": "exact"
+  },
+  "platform": {
+   "vs_policy": "exact",
+   "vs_brief": "laxer"
+  }
+ },
+ "failed_checks": [
+  "spend beyond the brief's platform"
+ ]
+}

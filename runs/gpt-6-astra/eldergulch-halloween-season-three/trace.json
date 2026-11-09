@@ -1,0 +1,893 @@
+[
+  {
+    "at": "2027-10-24T06:00:00Z",
+    "tool": "get_current_time",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-11-01T07:00:00Z\",\"now\":\"2027-10-24T06:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-24T06:00:00Z",
+    "tool": "list_ads_accounts",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"business_id\":null,\"business_name\":null,\"country_code\":\"US\",\"created_at\":\"2024-06-15T06:00:00Z\",\"deleted\":false,\"id\":\"18xcfklnz4w\",\"industry_type\":null,\"name\":\"The Eldergulch Tapes\",\"timezone\":\"America/Denver\",\"timezone_switch_at\":\"2024-06-15T06:00:00Z\",\"updated_at\":\"2024-06-15T06:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-24T06:00:00Z",
+    "tool": "list_funding_instruments",
+    "arguments": {
+      "account_id": "18xcfklnz4w"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"able_to_fund\":true,\"created_at\":\"2024-06-15T06:00:00Z\",\"credit_limit_local_micro\":null,\"credit_remaining_local_micro\":null,\"currency\":\"USD\",\"deleted\":false,\"description\":\"Visa ending in 4307\",\"end_time\":null,\"entity_status\":\"ACTIVE\",\"funded_amount_local_micro\":0,\"id\":\"21aql9\",\"io_header\":null,\"reasons_not_able_to_fund\":[],\"start_time\":\"2024-06-15T06:00:00Z\",\"type\":\"CREDIT_CARD\",\"updated_at\":\"2024-06-15T06:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"18xcfklnz4w\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-24T06:00:00Z",
+    "tool": "list_account_posts",
+    "arguments": {
+      "account_id": "18xcfklnz4w",
+      "tweet_type": "PUBLISHED",
+      "timeline_type": "ALL",
+      "tweet_ids": "2245419913839017173,2245601107772237999,2245782301702619459,2245963495636986737"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Sat Oct 23 18:00:00 +0000 2027\",\"display_text_range\":[0,194],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"eldergulch.com/season3\",\"expanded_url\":\"https://eldergulch.com/season3\",\"indices\":[171,194],\"url\":\"https://t.co/BLQ8SfwYjx\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Eight nights to Halloween, eight new episodes. Season 3 of The Eldergulch Tapes drops one free episode every night until the 31st. Start tonight so you don't fall behind. https://t.co/BLQ8SfwYjx\",\"geo\":null,\"id\":2245963495636986737,\"id_str\":\"2245963495636986737\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2245963495636986737\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Sat Jun 15 06:00:00 +0000 2024\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":1022,\"follow_request_sent\":null,\"followers_count\":13722,\"following\":null,\"friends_count\":72,\"geo_enabled\":false,\"id\":1801857166342677626,\"id_str\":\"1801857166342677626\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":22,\"location\":\"\",\"name\":\"The Eldergulch Tapes\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1801857166342677626/1633068922\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1718679601333068922/8b2u1ESZ_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1718679601333068922/8b2u1ESZ_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"TheEldergulchTa\",\"statuses_count\":1222,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Sat Oct 23 06:00:00 +0000 2027\",\"display_text_range\":[0,95],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"eldergulch.com/season3\",\"expanded_url\":\"https://eldergulch.com/season3\",\"indices\":[72,95],\"url\":\"https://t.co/l3HHzxvgag\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Ever heard a mine shaft breathe? Lights off. Headphones on. Press play. https://t.co/l3HHzxvgag\",\"geo\":null,\"id\":2245782301702619459,\"id_str\":\"2245782301702619459\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2245782301702619459\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Sat Jun 15 06:00:00 +0000 2024\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":1022,\"follow_request_sent\":null,\"followers_count\":13722,\"following\":null,\"friends_count\":72,\"geo_enabled\":false,\"id\":1801857166342677626,\"id_str\":\"1801857166342677626\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":22,\"location\":\"\",\"name\":\"The Eldergulch Tapes\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1801857166342677626/1633068922\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1718679601333068922/8b2u1ESZ_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1718679601333068922/8b2u1ESZ_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"TheEldergulchTa\",\"statuses_count\":1222,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Fri Oct 22 18:00:00 +0000 2027\",\"display_text_range\":[0,240],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"eldergulch.com/season3\",\"expanded_url\":\"https://eldergulch.com/season3\",\"indices\":[217,240],\"url\":\"https://t.co/UDayIRRCZr\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"The Eldergulch Tapes: a fictional horror audio drama set in a dead Colorado mining town. Season 3 has 8 episodes, one a night through Halloween, free to stream on Spotify, Apple Podcasts or any podcast app in the US. https://t.co/UDayIRRCZr\",\"geo\":null,\"id\":2245601107772237999,\"id_str\":\"2245601107772237999\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2245601107772237999\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Sat Jun 15 06:00:00 +0000 2024\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":1022,\"follow_request_sent\":null,\"followers_count\":13722,\"following\":null,\"friends_count\":72,\"geo_enabled\":false,\"id\":1801857166342677626,\"id_str\":\"1801857166342677626\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":22,\"location\":\"\",\"name\":\"The Eldergulch Tapes\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1801857166342677626/1633068922\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1718679601333068922/8b2u1ESZ_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1718679601333068922/8b2u1ESZ_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"TheEldergulchTa\",\"statuses_count\":1222,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Fri Oct 22 06:00:00 +0000 2027\",\"display_text_range\":[0,223],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"eldergulch.com/season3\",\"expanded_url\":\"https://eldergulch.com/season3\",\"indices\":[200,223],\"url\":\"https://t.co/cIrGsQI1HO\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Season 3 of The Eldergulch Tapes is here. A Colorado mining town went silent in 1893, and the tapes are still recording. A new episode every night through Halloween, free on Spotify & Apple Podcasts. https://t.co/cIrGsQI1HO\",\"geo\":null,\"id\":2245419913839017173,\"id_str\":\"2245419913839017173\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":false,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2245419913839017173\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Sat Jun 15 06:00:00 +0000 2024\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":1022,\"follow_request_sent\":null,\"followers_count\":13722,\"following\":null,\"friends_count\":72,\"geo_enabled\":false,\"id\":1801857166342677626,\"id_str\":\"1801857166342677626\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":22,\"location\":\"\",\"name\":\"The Eldergulch Tapes\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1801857166342677626/1633068922\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1718679601333068922/8b2u1ESZ_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1718679601333068922/8b2u1ESZ_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"TheEldergulchTa\",\"statuses_count\":1222,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"18xcfklnz4w\",\"timeline_type\":\"ALL\",\"tweet_ids\":[\"2245419913839017173\",\"2245601107772237999\",\"2245782301702619459\",\"2245963495636986737\"],\"tweet_type\":\"PUBLISHED\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-24T06:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "q": "United States",
+      "location_type": "COUNTRIES"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"country_code\":\"US\",\"location_type\":\"COUNTRIES\",\"name\":\"United States\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\"},{\"country_code\":\"UM\",\"location_type\":\"COUNTRIES\",\"name\":\"United States Minor Outlying Islands\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"08fbcf4cbc4bc5b9\"},{\"country_code\":\"AE\",\"location_type\":\"COUNTRIES\",\"name\":\"United Arab Emirates\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3f63906fc8aa5a7d\"},{\"country_code\":\"GB\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"}],\"next_cursor\":null,\"request\":{\"params\":{\"location_type\":\"COUNTRIES\",\"q\":\"United States\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-24T06:00:00Z",
+    "tool": "create_campaign",
+    "arguments": {
+      "account_id": "18xcfklnz4w",
+      "funding_instrument_id": "21aql9",
+      "name": "Eldergulch S3 | Halloween 2027 | US listening traffic"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-10-24T06:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"PAUSED\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"21aql9\",\"id\":\"om8vk\",\"name\":\"Eldergulch S3 | Halloween 2027 | US listening traffic\",\"purchase_order_number\":null,\"reasons_not_servable\":[\"PAUSED_BY_ADVERTISER\"],\"servable\":false,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-10-24T06:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18xcfklnz4w\",\"funding_instrument_id\":\"21aql9\",\"name\":\"Eldergulch S3 | Halloween 2027 | US listening traffic\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-24T06:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "18xcfklnz4w",
+      "campaign_id": "om8vk",
+      "name": "US | Season context | Link clicks",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "placements": "ALL_ON_TWITTER",
+      "start_time": "2027-10-24T06:00:00Z",
+      "end_time": "2027-11-01T06:00:00Z",
+      "daily_budget_amount_local_micro": 87500000,
+      "total_budget_amount_local_micro": 700000000,
+      "bid_strategy": "AUTO",
+      "standard_delivery": true,
+      "audience_expansion": "DEFINED"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1801857166342677626\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"om8vk\",\"categories\":[],\"created_at\":\"2027-10-24T06:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":87500000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-11-01T06:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"21aql9\",\"goal\":\"LINK_CLICKS\",\"id\":\"ke0ko\",\"ios_app_store_identifier\":null,\"name\":\"US | Season context | Link clicks\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-10-24T06:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":700000000,\"updated_at\":\"2027-10-24T06:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18xcfklnz4w\",\"audience_expansion\":\"DEFINED\",\"bid_strategy\":\"AUTO\",\"campaign_id\":\"om8vk\",\"daily_budget_amount_local_micro\":87500000,\"end_time\":\"2027-11-01T06:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"US | Season context | Link clicks\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"standard_delivery\":true,\"start_time\":\"2027-10-24T06:00:00Z\",\"total_budget_amount_local_micro\":700000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-24T06:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18xcfklnz4w",
+      "line_item_id": "ke0ko",
+      "targeting_type": "LOCATION",
+      "targeting_value": "96683cc9126741d1"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-10-24T06:00:00Z\",\"deleted\":false,\"id\":\"qt4epvo\",\"line_item_id\":\"ke0ko\",\"location_type\":\"COUNTRIES\",\"name\":\"United States\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\",\"updated_at\":\"2027-10-24T06:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18xcfklnz4w\",\"line_item_id\":\"ke0ko\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-24T06:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "18xcfklnz4w",
+      "line_item_id": "ke0ko",
+      "tweet_ids": "2245419913839017173,2245601107772237999"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-10-24T06:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"2a2do4\",\"line_item_id\":\"ke0ko\",\"tweet_id\":\"2245419913839017173\",\"updated_at\":\"2027-10-24T06:00:00Z\"},{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-10-24T06:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"vpw7u6\",\"line_item_id\":\"ke0ko\",\"tweet_id\":\"2245601107772237999\",\"updated_at\":\"2027-10-24T06:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"18xcfklnz4w\",\"line_item_id\":\"ke0ko\",\"tweet_ids\":[\"2245419913839017173\",\"2245601107772237999\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-24T06:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "18xcfklnz4w",
+      "line_item_id": "ke0ko"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1801857166342677626\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"om8vk\",\"categories\":[],\"created_at\":\"2027-10-24T06:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":87500000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-11-01T06:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"21aql9\",\"goal\":\"LINK_CLICKS\",\"id\":\"ke0ko\",\"ios_app_store_identifier\":null,\"name\":\"US | Season context | Link clicks\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-10-24T06:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":700000000,\"updated_at\":\"2027-10-24T06:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18xcfklnz4w\",\"line_item_id\":\"ke0ko\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-24T06:00:00Z",
+    "tool": "activate_campaign",
+    "arguments": {
+      "account_id": "18xcfklnz4w",
+      "campaign_id": "om8vk"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-10-24T06:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"RUNNING\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"21aql9\",\"id\":\"om8vk\",\"name\":\"Eldergulch S3 | Halloween 2027 | US listening traffic\",\"purchase_order_number\":null,\"reasons_not_servable\":[],\"servable\":true,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-10-24T06:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18xcfklnz4w\",\"campaign_id\":\"om8vk\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-24T06:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-10-25T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-11-01T07:00:00Z\",\"now\":\"2027-10-25T06:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-25T06:00:00Z",
+    "tool": "get_active_entities",
+    "arguments": {
+      "account_id": "18xcfklnz4w",
+      "entity": "CAMPAIGN",
+      "campaign_ids": "om8vk",
+      "start_time": "2027-10-24T06:00:00Z",
+      "end_time": "2027-10-25T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"activity_end_time\":\"2027-10-25T04:00:00Z\",\"activity_start_time\":\"2027-10-24T06:00:00Z\",\"entity_id\":\"om8vk\",\"placements\":[\"ALL_ON_TWITTER\"]}],\"request\":{\"params\":{\"account_id\":\"18xcfklnz4w\",\"campaign_ids\":[\"om8vk\"],\"end_time\":\"2027-10-25T06:00:00Z\",\"entity\":\"CAMPAIGN\",\"start_time\":\"2027-10-24T06:00:00Z\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-25T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18xcfklnz4w",
+      "entity": "PROMOTED_TWEET",
+      "entity_ids": "2a2do4,vpw7u6",
+      "start_time": "2027-10-24T06:00:00Z",
+      "end_time": "2027-10-25T06:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"2a2do4\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[45551978],\"billed_engagements\":[251],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[19],\"engagements\":[251],\"follows\":null,\"impressions\":[37368],\"likes\":[8],\"link_clicks\":[19],\"qualified_impressions\":[37368],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"vpw7u6\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[31881546],\"billed_engagements\":[237],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[13],\"engagements\":[237],\"follows\":null,\"impressions\":[35097],\"likes\":[6],\"link_clicks\":[13],\"qualified_impressions\":[35097],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-10-25T06:00:00Z\",\"entity\":\"PROMOTED_TWEET\",\"entity_ids\":[\"2a2do4\",\"vpw7u6\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-10-24T06:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-25T06:00:00Z",
+    "tool": "search_targeting_interests",
+    "arguments": {
+      "q": "horror"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"name\":\"Movies & TV / Horror & Thriller\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"191000000000002009\"}],\"request\":{\"params\":{\"q\":\"horror\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-25T06:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18xcfklnz4w",
+      "line_item_id": "ke0ko",
+      "targeting_type": "INTEREST",
+      "targeting_value": "191000000000002009"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-10-25T06:00:00Z\",\"deleted\":false,\"id\":\"dxuze42\",\"line_item_id\":\"ke0ko\",\"name\":\"Movies & TV / Horror & Thriller\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"191000000000002009\",\"updated_at\":\"2027-10-25T06:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18xcfklnz4w\",\"line_item_id\":\"ke0ko\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"191000000000002009\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-25T06:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-10-26T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-11-01T07:00:00Z\",\"now\":\"2027-10-26T06:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-26T06:00:00Z",
+    "tool": "get_active_entities",
+    "arguments": {
+      "account_id": "18xcfklnz4w",
+      "entity": "CAMPAIGN",
+      "campaign_ids": "om8vk",
+      "start_time": "2027-10-25T06:00:00Z",
+      "end_time": "2027-10-26T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"activity_end_time\":\"2027-10-26T04:00:00Z\",\"activity_start_time\":\"2027-10-25T06:00:00Z\",\"entity_id\":\"om8vk\",\"placements\":[\"ALL_ON_TWITTER\"]}],\"request\":{\"params\":{\"account_id\":\"18xcfklnz4w\",\"campaign_ids\":[\"om8vk\"],\"end_time\":\"2027-10-26T06:00:00Z\",\"entity\":\"CAMPAIGN\",\"start_time\":\"2027-10-25T06:00:00Z\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-26T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18xcfklnz4w",
+      "entity": "CAMPAIGN",
+      "entity_ids": "om8vk",
+      "start_time": "2027-10-24T06:00:00Z",
+      "end_time": "2027-10-26T06:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"om8vk\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[86348480,84103616],\"billed_engagements\":[515,270],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[34,18],\"engagements\":[515,270],\"follows\":null,\"impressions\":[76603,37336],\"likes\":[14,8],\"link_clicks\":[34,18],\"qualified_impressions\":[76603,37336],\"replies\":null,\"retweets\":[0,2]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-10-26T06:00:00Z\",\"entity\":\"CAMPAIGN\",\"entity_ids\":[\"om8vk\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-10-24T06:00:00Z\"}},\"time_series_length\":2}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-26T06:00:00Z",
+    "tool": "get_line_item",
+    "arguments": {
+      "account_id": "18xcfklnz4w",
+      "line_item_id": "ke0ko"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1801857166342677626\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"om8vk\",\"categories\":[],\"created_at\":\"2027-10-24T06:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":87500000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-11-01T06:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"21aql9\",\"goal\":\"LINK_CLICKS\",\"id\":\"ke0ko\",\"ios_app_store_identifier\":null,\"name\":\"US | Season context | Link clicks\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-10-24T06:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":700000000,\"updated_at\":\"2027-10-24T06:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18xcfklnz4w\",\"line_item_id\":\"ke0ko\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-26T06:00:00Z",
+    "tool": "remove_targeting",
+    "arguments": {
+      "account_id": "18xcfklnz4w",
+      "targeting_criterion_id": "dxuze42"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-10-25T06:00:00Z\",\"deleted\":true,\"id\":\"dxuze42\",\"line_item_id\":\"ke0ko\",\"name\":\"Movies & TV / Horror & Thriller\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"191000000000002009\",\"updated_at\":\"2027-10-26T06:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18xcfklnz4w\",\"targeting_criterion_id\":\"dxuze42\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-26T06:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "18xcfklnz4w",
+      "line_item_id": "ke0ko",
+      "tweet_ids": "2245782301702619459"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-10-26T06:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"1c827g\",\"line_item_id\":\"ke0ko\",\"tweet_id\":\"2245782301702619459\",\"updated_at\":\"2027-10-26T06:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"18xcfklnz4w\",\"line_item_id\":\"ke0ko\",\"tweet_ids\":[\"2245782301702619459\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-26T06:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-10-27T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-11-01T07:00:00Z\",\"now\":\"2027-10-27T06:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-27T06:00:00Z",
+    "tool": "get_active_entities",
+    "arguments": {
+      "account_id": "18xcfklnz4w",
+      "entity": "CAMPAIGN",
+      "campaign_ids": "om8vk",
+      "start_time": "2027-10-26T06:00:00Z",
+      "end_time": "2027-10-27T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"activity_end_time\":\"2027-10-27T04:00:00Z\",\"activity_start_time\":\"2027-10-26T06:00:00Z\",\"entity_id\":\"om8vk\",\"placements\":[\"ALL_ON_TWITTER\"]}],\"request\":{\"params\":{\"account_id\":\"18xcfklnz4w\",\"campaign_ids\":[\"om8vk\"],\"end_time\":\"2027-10-27T06:00:00Z\",\"entity\":\"CAMPAIGN\",\"start_time\":\"2027-10-26T06:00:00Z\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-27T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18xcfklnz4w",
+      "entity": "PROMOTED_TWEET",
+      "entity_ids": "2a2do4,vpw7u6,1c827g",
+      "start_time": "2027-10-26T06:00:00Z",
+      "end_time": "2027-10-27T06:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"2a2do4\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[34476935],\"billed_engagements\":[170],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[13],\"engagements\":[170],\"follows\":null,\"impressions\":[28064],\"likes\":[7],\"link_clicks\":[13],\"qualified_impressions\":[28064],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"vpw7u6\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[25621250],\"billed_engagements\":[172],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[10],\"engagements\":[172],\"follows\":null,\"impressions\":[26551],\"likes\":[3],\"link_clicks\":[10],\"qualified_impressions\":[26551],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"1c827g\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[26110560],\"billed_engagements\":[196],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[10],\"engagements\":[196],\"follows\":null,\"impressions\":[30581],\"likes\":[3],\"link_clicks\":[10],\"qualified_impressions\":[30581],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-10-27T06:00:00Z\",\"entity\":\"PROMOTED_TWEET\",\"entity_ids\":[\"2a2do4\",\"vpw7u6\",\"1c827g\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-10-26T06:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-27T06:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-10-28T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-11-01T07:00:00Z\",\"now\":\"2027-10-28T06:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-28T06:00:00Z",
+    "tool": "get_active_entities",
+    "arguments": {
+      "account_id": "18xcfklnz4w",
+      "entity": "CAMPAIGN",
+      "campaign_ids": "om8vk",
+      "start_time": "2027-10-27T06:00:00Z",
+      "end_time": "2027-10-28T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"activity_end_time\":\"2027-10-28T04:00:00Z\",\"activity_start_time\":\"2027-10-27T06:00:00Z\",\"entity_id\":\"om8vk\",\"placements\":[\"ALL_ON_TWITTER\"]}],\"request\":{\"params\":{\"account_id\":\"18xcfklnz4w\",\"campaign_ids\":[\"om8vk\"],\"end_time\":\"2027-10-28T06:00:00Z\",\"entity\":\"CAMPAIGN\",\"start_time\":\"2027-10-27T06:00:00Z\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-28T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18xcfklnz4w",
+      "entity": "CAMPAIGN",
+      "entity_ids": "om8vk",
+      "start_time": "2027-10-24T06:00:00Z",
+      "end_time": "2027-10-28T06:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"om8vk\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[342711029],\"billed_engagements\":[1972],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[122],\"engagements\":[1972],\"follows\":null,\"impressions\":[287514],\"likes\":[59],\"link_clicks\":[122],\"qualified_impressions\":[287514],\"replies\":null,\"retweets\":[2]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-10-28T06:00:00Z\",\"entity\":\"CAMPAIGN\",\"entity_ids\":[\"om8vk\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-10-24T06:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-28T06:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18xcfklnz4w",
+      "line_item_id": "ke0ko",
+      "bid_strategy": "TARGET",
+      "bid_amount_local_micro": 2000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1801857166342677626\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":2000000,\"bid_strategy\":\"TARGET\",\"campaign_id\":\"om8vk\",\"categories\":[],\"created_at\":\"2027-10-24T06:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":87500000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-11-01T06:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"21aql9\",\"goal\":\"LINK_CLICKS\",\"id\":\"ke0ko\",\"ios_app_store_identifier\":null,\"name\":\"US | Season context | Link clicks\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-10-24T06:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":700000000,\"updated_at\":\"2027-10-28T06:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18xcfklnz4w\",\"bid_amount_local_micro\":2000000,\"bid_strategy\":\"TARGET\",\"line_item_id\":\"ke0ko\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-28T06:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-10-29T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-11-01T07:00:00Z\",\"now\":\"2027-10-29T06:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-29T06:00:00Z",
+    "tool": "get_active_entities",
+    "arguments": {
+      "account_id": "18xcfklnz4w",
+      "entity": "CAMPAIGN",
+      "campaign_ids": "om8vk",
+      "start_time": "2027-10-28T06:00:00Z",
+      "end_time": "2027-10-29T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"activity_end_time\":\"2027-10-29T04:00:00Z\",\"activity_start_time\":\"2027-10-28T06:00:00Z\",\"entity_id\":\"om8vk\",\"placements\":[\"ALL_ON_TWITTER\"]}],\"request\":{\"params\":{\"account_id\":\"18xcfklnz4w\",\"campaign_ids\":[\"om8vk\"],\"end_time\":\"2027-10-29T06:00:00Z\",\"entity\":\"CAMPAIGN\",\"start_time\":\"2027-10-28T06:00:00Z\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-29T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18xcfklnz4w",
+      "entity": "CAMPAIGN",
+      "entity_ids": "om8vk",
+      "start_time": "2027-10-28T06:00:00Z",
+      "end_time": "2027-10-29T06:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"om8vk\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[61943356],\"billed_engagements\":[414],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[31],\"engagements\":[414],\"follows\":null,\"impressions\":[60118],\"likes\":[5],\"link_clicks\":[31],\"qualified_impressions\":[60118],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-10-29T06:00:00Z\",\"entity\":\"CAMPAIGN\",\"entity_ids\":[\"om8vk\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-10-28T06:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-29T06:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18xcfklnz4w",
+      "line_item_id": "ke0ko",
+      "daily_budget_amount_local_micro": 100000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1801857166342677626\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":2000000,\"bid_strategy\":\"TARGET\",\"campaign_id\":\"om8vk\",\"categories\":[],\"created_at\":\"2027-10-24T06:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":100000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-11-01T06:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"21aql9\",\"goal\":\"LINK_CLICKS\",\"id\":\"ke0ko\",\"ios_app_store_identifier\":null,\"name\":\"US | Season context | Link clicks\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-10-24T06:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":700000000,\"updated_at\":\"2027-10-29T06:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18xcfklnz4w\",\"daily_budget_amount_local_micro\":100000000,\"line_item_id\":\"ke0ko\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-29T06:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-10-30T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-11-01T07:00:00Z\",\"now\":\"2027-10-30T06:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-30T06:00:00Z",
+    "tool": "get_active_entities",
+    "arguments": {
+      "account_id": "18xcfklnz4w",
+      "entity": "CAMPAIGN",
+      "campaign_ids": "om8vk",
+      "start_time": "2027-10-29T06:00:00Z",
+      "end_time": "2027-10-30T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"activity_end_time\":\"2027-10-30T04:00:00Z\",\"activity_start_time\":\"2027-10-29T06:00:00Z\",\"entity_id\":\"om8vk\",\"placements\":[\"ALL_ON_TWITTER\"]}],\"request\":{\"params\":{\"account_id\":\"18xcfklnz4w\",\"campaign_ids\":[\"om8vk\"],\"end_time\":\"2027-10-30T06:00:00Z\",\"entity\":\"CAMPAIGN\",\"start_time\":\"2027-10-29T06:00:00Z\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-30T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18xcfklnz4w",
+      "entity": "CAMPAIGN",
+      "entity_ids": "om8vk",
+      "start_time": "2027-10-24T06:00:00Z",
+      "end_time": "2027-10-30T06:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"om8vk\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[480706588],\"billed_engagements\":[2934],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[191],\"engagements\":[2934],\"follows\":null,\"impressions\":[429631],\"likes\":[77],\"link_clicks\":[191],\"qualified_impressions\":[429631],\"replies\":null,\"retweets\":[2]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-10-30T06:00:00Z\",\"entity\":\"CAMPAIGN\",\"entity_ids\":[\"om8vk\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-10-24T06:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-30T06:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-10-31T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-11-01T07:00:00Z\",\"now\":\"2027-10-31T06:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-31T06:00:00Z",
+    "tool": "get_active_entities",
+    "arguments": {
+      "account_id": "18xcfklnz4w",
+      "entity": "CAMPAIGN",
+      "campaign_ids": "om8vk",
+      "start_time": "2027-10-30T06:00:00Z",
+      "end_time": "2027-10-31T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"activity_end_time\":\"2027-10-31T04:00:00Z\",\"activity_start_time\":\"2027-10-30T06:00:00Z\",\"entity_id\":\"om8vk\",\"placements\":[\"ALL_ON_TWITTER\"]}],\"request\":{\"params\":{\"account_id\":\"18xcfklnz4w\",\"campaign_ids\":[\"om8vk\"],\"end_time\":\"2027-10-31T06:00:00Z\",\"entity\":\"CAMPAIGN\",\"start_time\":\"2027-10-30T06:00:00Z\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-31T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18xcfklnz4w",
+      "entity": "CAMPAIGN",
+      "entity_ids": "om8vk",
+      "start_time": "2027-10-24T06:00:00Z",
+      "end_time": "2027-10-31T06:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"om8vk\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[560655726],\"billed_engagements\":[3500],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[231],\"engagements\":[3500],\"follows\":null,\"impressions\":[511707],\"likes\":[87],\"link_clicks\":[231],\"qualified_impressions\":[511707],\"replies\":null,\"retweets\":[2]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-10-31T06:00:00Z\",\"entity\":\"CAMPAIGN\",\"entity_ids\":[\"om8vk\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-10-24T06:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-31T06:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18xcfklnz4w",
+      "line_item_id": "ke0ko",
+      "daily_budget_amount_local_micro": 139000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1801857166342677626\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":2000000,\"bid_strategy\":\"TARGET\",\"campaign_id\":\"om8vk\",\"categories\":[],\"created_at\":\"2027-10-24T06:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":139000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-11-01T06:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"21aql9\",\"goal\":\"LINK_CLICKS\",\"id\":\"ke0ko\",\"ios_app_store_identifier\":null,\"name\":\"US | Season context | Link clicks\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-10-24T06:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":700000000,\"updated_at\":\"2027-10-31T06:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18xcfklnz4w\",\"daily_budget_amount_local_micro\":139000000,\"line_item_id\":\"ke0ko\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-31T06:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-11-01T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-11-01T07:00:00Z\",\"now\":\"2027-11-01T06:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-11-01T06:00:00Z",
+    "tool": "update_campaign",
+    "arguments": {
+      "account_id": "18xcfklnz4w",
+      "campaign_id": "om8vk",
+      "entity_status": "PAUSED"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-10-24T06:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"PAUSED\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"21aql9\",\"id\":\"om8vk\",\"name\":\"Eldergulch S3 | Halloween 2027 | US listening traffic\",\"purchase_order_number\":null,\"reasons_not_servable\":[\"EXPIRED\",\"PAUSED_BY_ADVERTISER\"],\"servable\":false,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-11-01T06:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18xcfklnz4w\",\"campaign_id\":\"om8vk\",\"entity_status\":\"PAUSED\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-11-01T06:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-11-01T07:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-11-01T07:00:00Z\",\"now\":\"2027-11-01T07:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-11-01T07:00:00Z",
+    "tool": "get_active_entities",
+    "arguments": {
+      "account_id": "18xcfklnz4w",
+      "entity": "CAMPAIGN",
+      "campaign_ids": "om8vk",
+      "start_time": "2027-10-24T06:00:00Z",
+      "end_time": "2027-11-01T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"activity_end_time\":\"2027-11-01T05:00:00Z\",\"activity_start_time\":\"2027-10-24T06:00:00Z\",\"entity_id\":\"om8vk\",\"placements\":[\"ALL_ON_TWITTER\"]}],\"request\":{\"params\":{\"account_id\":\"18xcfklnz4w\",\"campaign_ids\":[\"om8vk\"],\"end_time\":\"2027-11-01T06:00:00Z\",\"entity\":\"CAMPAIGN\",\"start_time\":\"2027-10-24T06:00:00Z\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-11-01T07:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18xcfklnz4w",
+      "entity": "CAMPAIGN",
+      "entity_ids": "om8vk",
+      "start_time": "2027-10-24T06:00:00Z",
+      "end_time": "2027-11-01T06:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"errors\":[{\"code\":\"INVALID_TIME_WINDOW\",\"message\":\"The end_time (2027-11-01 06:00:00 +0000) can be a maximum of 7.days+1.hours after the start_time (2027-10-24 06:00:00 +0000)\",\"parameter\":\"\"}],\"request\":{\"params\":{\"account_id\":\"18xcfklnz4w\",\"end_time\":\"2027-11-01T06:00:00Z\",\"entity\":\"CAMPAIGN\",\"entity_ids\":[\"om8vk\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"start_time\":\"2027-10-24T06:00:00Z\"}}}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2027-11-01T07:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18xcfklnz4w",
+      "entity": "CAMPAIGN",
+      "entity_ids": "om8vk",
+      "start_time": "2027-10-24T06:00:00Z",
+      "end_time": "2027-10-31T06:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"om8vk\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[560655726],\"billed_engagements\":[3521],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[231],\"engagements\":[3521],\"follows\":null,\"impressions\":[515472],\"likes\":[88],\"link_clicks\":[231],\"qualified_impressions\":[515472],\"replies\":null,\"retweets\":[2]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-10-31T06:00:00Z\",\"entity\":\"CAMPAIGN\",\"entity_ids\":[\"om8vk\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-10-24T06:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-11-01T07:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18xcfklnz4w",
+      "entity": "CAMPAIGN",
+      "entity_ids": "om8vk",
+      "start_time": "2027-10-31T06:00:00Z",
+      "end_time": "2027-11-01T06:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"om8vk\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[55921168],\"billed_engagements\":[640],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[28],\"engagements\":[640],\"follows\":null,\"impressions\":[93343],\"likes\":[20],\"link_clicks\":[28],\"qualified_impressions\":[93343],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-11-01T06:00:00Z\",\"entity\":\"CAMPAIGN\",\"entity_ids\":[\"om8vk\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-10-31T06:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

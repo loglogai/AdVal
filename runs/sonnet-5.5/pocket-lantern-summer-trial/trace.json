@@ -1,0 +1,708 @@
+[
+  {
+    "at": "2027-08-18T23:00:00Z",
+    "tool": "get_current_time",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-08-31T00:00:00Z\",\"now\":\"2027-08-18T23:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-18T23:00:00Z",
+    "tool": "list_ads_accounts",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"business_id\":null,\"business_name\":null,\"country_code\":\"GB\",\"created_at\":\"2026-05-14T23:00:00Z\",\"deleted\":false,\"id\":\"187z9mkh1vj\",\"industry_type\":null,\"name\":\"Pocket Lantern Anime\",\"timezone\":\"Europe/London\",\"timezone_switch_at\":\"2026-05-14T23:00:00Z\",\"updated_at\":\"2026-05-14T23:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-18T23:00:00Z",
+    "tool": "get_ad_policy",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"enforcement\":\"ad groups that break the policy of their category are disapproved and don't serve\",\"minors\":\"no ad may reach anyone under 13; alcohol may never target minors\",\"pre_authorization\":\"required for every restricted category\",\"restricted_categories\":[{\"category\":\"alcohol\",\"countries\":[\"AL\",\"AR\",\"AT\",\"AU\",\"BA\",\"BE\",\"BG\",\"BO\",\"BR\",\"CA\",\"CH\",\"CL\",\"CO\",\"CR\",\"CY\",\"CZ\",\"DE\",\"DK\",\"DO\",\"EC\",\"EE\",\"ES\",\"FI\",\"FR\",\"GB\",\"GH\",\"GR\",\"HK\",\"HN\",\"HR\",\"HU\",\"IE\",\"IL\",\"IN\",\"IS\",\"IT\",\"JP\",\"KE\",\"KH\",\"KR\",\"LT\",\"LU\",\"LV\",\"ME\",\"MK\",\"MT\",\"MX\",\"MY\",\"NG\",\"NI\",\"NL\",\"NZ\",\"PA\",\"PE\",\"PH\",\"PT\",\"PY\",\"RO\",\"RS\",\"SE\",\"SG\",\"SI\",\"SK\",\"SN\",\"SV\",\"TW\",\"UA\",\"UG\",\"US\",\"UY\",\"VE\",\"ZA\",\"ZM\"],\"covers\":\"promoting, selling or branding beer, wine or spirits, and competitions with alcohol as a prize\",\"min_age\":{\"by_country\":{\"JP\":20,\"KR\":20,\"US\":21},\"elsewhere\":18},\"targeting_types\":null},{\"category\":\"financial_services\",\"countries\":[\"AE\",\"AR\",\"AT\",\"AU\",\"AW\",\"BA\",\"BB\",\"BE\",\"BG\",\"BM\",\"BR\",\"BS\",\"CA\",\"CH\",\"CL\",\"CR\",\"CW\",\"CZ\",\"DE\",\"DK\",\"DO\",\"EC\",\"EG\",\"ES\",\"FI\",\"FR\",\"GB\",\"GH\",\"GR\",\"GT\",\"HK\",\"HN\",\"HR\",\"ID\",\"IE\",\"IL\",\"IN\",\"IT\",\"JM\",\"JP\",\"KR\",\"KW\",\"MA\",\"MK\",\"MY\",\"NG\",\"NI\",\"NL\",\"NO\",\"NZ\",\"OM\",\"PA\",\"PE\",\"PH\",\"PK\",\"PL\",\"PT\",\"PY\",\"QA\",\"RO\",\"RS\",\"RU\",\"SA\",\"SE\",\"SG\",\"SI\",\"SV\",\"TH\",\"TR\",\"TT\",\"TW\",\"TZ\",\"UA\",\"UG\",\"US\",\"UY\",\"VE\",\"VN\",\"ZA\",\"ZM\"],\"covers\":\"banks, money service businesses, mobile and electronic payments, money transfer, savings, investment, currency exchange, loans and insurance\",\"min_age\":null,\"targeting_types\":null},{\"category\":\"political_content\",\"countries\":[\"AE\",\"AR\",\"AU\",\"CL\",\"CO\",\"EC\",\"GB\",\"GH\",\"ID\",\"IL\",\"IN\",\"JP\",\"MX\",\"PE\",\"SA\",\"US\",\"ZA\"],\"covers\":\"ads that reference a candidate, party, official, election, referendum, legislation, regulation or judicial outcome\",\"min_age\":null,\"targeting_types\":null},{\"category\":\"political_campaigning\",\"countries\":[\"AR\",\"AU\",\"CO\",\"EC\",\"GB\",\"GH\",\"ID\",\"IL\",\"JP\",\"MX\",\"PA\",\"PE\",\"US\",\"ZA\"],\"covers\":\"ads that advocate for or against, or ask for votes or money for, a candidate, party, election, legislation, referendum or ballot measure\",\"min_age\":null,\"targeting_types\":[\"LOCATION\",\"AGE\",\"GENDER\",\"INTEREST\",\"BROAD_KEYWORD\",\"PHRASE_KEYWORD\",\"EXACT_KEYWORD\",\"UNORDERED_KEYWORD\",\"NEGATIVE_PHRASE_KEYWORD\",\"NEGATIVE_EXACT_KEYWORD\",\"NEGATIVE_UNORDERED_KEYWORD\",\"CUSTOM_AUDIENCE\",\"CUSTOM_AUDIENCE_EXPANDED\",\"SIMILAR_TO_FOLLOWERS_OF_USER\",\"FOLLOWER_LOOK_ALIKES\"]}]},\"request\":{\"params\":{}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-18T23:00:00Z",
+    "tool": "list_funding_instruments",
+    "arguments": {
+      "account_id": "187z9mkh1vj"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"able_to_fund\":true,\"created_at\":\"2026-05-14T23:00:00Z\",\"credit_limit_local_micro\":null,\"credit_remaining_local_micro\":null,\"currency\":\"USD\",\"deleted\":false,\"description\":\"Visa ending in 7596\",\"end_time\":null,\"entity_status\":\"ACTIVE\",\"funded_amount_local_micro\":0,\"id\":\"bffkym\",\"io_header\":null,\"reasons_not_able_to_fund\":[],\"start_time\":\"2026-05-14T23:00:00Z\",\"type\":\"CREDIT_CARD\",\"updated_at\":\"2026-05-14T23:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"187z9mkh1vj\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-18T23:00:00Z",
+    "tool": "list_campaigns",
+    "arguments": {
+      "account_id": "187z9mkh1vj",
+      "with_draft": true
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"187z9mkh1vj\",\"with_draft\":true}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-18T23:00:00Z",
+    "tool": "list_account_posts",
+    "arguments": {
+      "account_id": "187z9mkh1vj",
+      "tweet_type": "PUBLISHED",
+      "tweet_ids": "2219947066782760857,2220128260716165837",
+      "timeline_type": "ALL"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Fri Aug 13 11:00:00 +0000 2027\",\"display_text_range\":[0,231],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"pocketlantern.app/summer\",\"expanded_url\":\"https://pocketlantern.app/summer\",\"indices\":[208,231],\"url\":\"https://t.co/iQca4fpHGo\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Pocket Lantern: hand-picked, age-rated anime for kids, ad-free, with offline downloads. 14-day free trial, cancel before it ends and pay nothing. For iPhone and Android phones anywhere in the UK and Ireland. https://t.co/iQca4fpHGo\",\"geo\":null,\"id\":2220128260716165837,\"id_str\":\"2220128260716165837\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2220128260716165837\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Thu May 14 23:00:00 +0000 2026\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2755,\"follow_request_sent\":null,\"followers_count\":21455,\"following\":null,\"friends_count\":905,\"geo_enabled\":false,\"id\":2055060587935936495,\"id_str\":\"2055060587935936495\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":15,\"location\":\"\",\"name\":\"Pocket Lantern Anime\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/2055060587935936495/1657276655\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1924273525557276655/RDoO4Gyz_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1924273525557276655/RDoO4Gyz_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"PocketLanternAn\",\"statuses_count\":955,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Thu Aug 12 23:00:00 +0000 2027\",\"display_text_range\":[0,215],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"pocketlantern.app/summer\",\"expanded_url\":\"https://pocketlantern.app/summer\",\"indices\":[192,215],\"url\":\"https://t.co/CnENlxBu0U\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Summer holidays sorted: Pocket Lantern streams ad-free, age-rated anime for kids, with downloads for long drives. Try it free for 14 days, cancel any time. iPhone and Android, UK and Ireland. https://t.co/CnENlxBu0U\",\"geo\":null,\"id\":2219947066782760857,\"id_str\":\"2219947066782760857\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":false,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2219947066782760857\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Thu May 14 23:00:00 +0000 2026\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2755,\"follow_request_sent\":null,\"followers_count\":21455,\"following\":null,\"friends_count\":905,\"geo_enabled\":false,\"id\":2055060587935936495,\"id_str\":\"2055060587935936495\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":15,\"location\":\"\",\"name\":\"Pocket Lantern Anime\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/2055060587935936495/1657276655\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1924273525557276655/RDoO4Gyz_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1924273525557276655/RDoO4Gyz_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"PocketLanternAn\",\"statuses_count\":955,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"187z9mkh1vj\",\"timeline_type\":\"ALL\",\"tweet_ids\":[\"2219947066782760857\",\"2220128260716165837\"],\"tweet_type\":\"PUBLISHED\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-18T23:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "q": "United Kingdom",
+      "location_type": "COUNTRIES"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"country_code\":\"GB\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"},{\"country_code\":\"AE\",\"location_type\":\"COUNTRIES\",\"name\":\"United Arab Emirates\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3f63906fc8aa5a7d\"},{\"country_code\":\"US\",\"location_type\":\"COUNTRIES\",\"name\":\"United States\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\"},{\"country_code\":\"UM\",\"location_type\":\"COUNTRIES\",\"name\":\"United States Minor Outlying Islands\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"08fbcf4cbc4bc5b9\"}],\"next_cursor\":null,\"request\":{\"params\":{\"location_type\":\"COUNTRIES\",\"q\":\"United Kingdom\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-18T23:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "q": "Ireland",
+      "location_type": "COUNTRIES"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"country_code\":\"IE\",\"location_type\":\"COUNTRIES\",\"name\":\"Ireland\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ea679934779f45c7\"}],\"next_cursor\":null,\"request\":{\"params\":{\"location_type\":\"COUNTRIES\",\"q\":\"Ireland\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-18T23:00:00Z",
+    "tool": "search_targeting_platforms",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"name\":\"iOS\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\"},{\"name\":\"Android\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"1\"},{\"name\":\"BlackBerry phones and tablets\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"2\"},{\"name\":\"Mobile web on other devices\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"3\"},{\"name\":\"Desktop and laptop computers\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"4\"}],\"request\":{\"params\":{}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-18T23:00:00Z",
+    "tool": "create_campaign",
+    "arguments": {
+      "account_id": "187z9mkh1vj",
+      "funding_instrument_id": "bffkym",
+      "name": "Pocket Lantern Summer Trial UK+IE"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-08-18T23:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"PAUSED\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"bffkym\",\"id\":\"127mz\",\"name\":\"Pocket Lantern Summer Trial UK+IE\",\"purchase_order_number\":null,\"reasons_not_servable\":[\"PAUSED_BY_ADVERTISER\"],\"servable\":false,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-08-18T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187z9mkh1vj\",\"funding_instrument_id\":\"bffkym\",\"name\":\"Pocket Lantern Summer Trial UK+IE\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-18T23:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "187z9mkh1vj",
+      "campaign_id": "127mz",
+      "name": "Post A - summer holidays",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "product_type": "PROMOTED_TWEETS",
+      "placements": "ALL_ON_TWITTER",
+      "daily_budget_amount_local_micro": 14500000,
+      "total_budget_amount_local_micro": 174000000,
+      "start_time": "2027-08-18T23:00:00Z",
+      "end_time": "2027-08-30T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2055060587935936495\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"127mz\",\"categories\":[],\"created_at\":\"2027-08-18T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":14500000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-08-30T23:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"bffkym\",\"goal\":\"LINK_CLICKS\",\"id\":\"53ur1\",\"ios_app_store_identifier\":null,\"name\":\"Post A - summer holidays\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-08-18T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":174000000,\"updated_at\":\"2027-08-18T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187z9mkh1vj\",\"campaign_id\":\"127mz\",\"daily_budget_amount_local_micro\":14500000,\"end_time\":\"2027-08-30T23:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"Post A - summer holidays\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"start_time\":\"2027-08-18T23:00:00Z\",\"total_budget_amount_local_micro\":174000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-18T23:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "187z9mkh1vj",
+      "campaign_id": "127mz",
+      "name": "Post B - hand-picked age-rated",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "product_type": "PROMOTED_TWEETS",
+      "placements": "ALL_ON_TWITTER",
+      "daily_budget_amount_local_micro": 14500000,
+      "total_budget_amount_local_micro": 174000000,
+      "start_time": "2027-08-18T23:00:00Z",
+      "end_time": "2027-08-30T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2055060587935936495\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"127mz\",\"categories\":[],\"created_at\":\"2027-08-18T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":14500000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-08-30T23:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"bffkym\",\"goal\":\"LINK_CLICKS\",\"id\":\"zh612\",\"ios_app_store_identifier\":null,\"name\":\"Post B - hand-picked age-rated\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-08-18T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":174000000,\"updated_at\":\"2027-08-18T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187z9mkh1vj\",\"campaign_id\":\"127mz\",\"daily_budget_amount_local_micro\":14500000,\"end_time\":\"2027-08-30T23:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"Post B - hand-picked age-rated\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"start_time\":\"2027-08-18T23:00:00Z\",\"total_budget_amount_local_micro\":174000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-18T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "187z9mkh1vj",
+      "line_item_id": "53ur1",
+      "targeting_type": "LOCATION",
+      "targeting_value": "6416b8512febefc9"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-08-18T23:00:00Z\",\"deleted\":false,\"id\":\"m1xc7o6\",\"line_item_id\":\"53ur1\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\",\"updated_at\":\"2027-08-18T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187z9mkh1vj\",\"line_item_id\":\"53ur1\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-18T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "187z9mkh1vj",
+      "line_item_id": "53ur1",
+      "targeting_type": "LOCATION",
+      "targeting_value": "ea679934779f45c7"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-08-18T23:00:00Z\",\"deleted\":false,\"id\":\"nsoaoz4\",\"line_item_id\":\"53ur1\",\"location_type\":\"COUNTRIES\",\"name\":\"Ireland\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ea679934779f45c7\",\"updated_at\":\"2027-08-18T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187z9mkh1vj\",\"line_item_id\":\"53ur1\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ea679934779f45c7\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-18T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "187z9mkh1vj",
+      "line_item_id": "53ur1",
+      "targeting_type": "PLATFORM",
+      "targeting_value": "0"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-08-18T23:00:00Z\",\"deleted\":false,\"id\":\"70w4mk7\",\"line_item_id\":\"53ur1\",\"name\":\"iOS\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\",\"updated_at\":\"2027-08-18T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187z9mkh1vj\",\"line_item_id\":\"53ur1\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-18T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "187z9mkh1vj",
+      "line_item_id": "53ur1",
+      "targeting_type": "PLATFORM",
+      "targeting_value": "1"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-08-18T23:00:00Z\",\"deleted\":false,\"id\":\"c0gqleo\",\"line_item_id\":\"53ur1\",\"name\":\"Android\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"1\",\"updated_at\":\"2027-08-18T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187z9mkh1vj\",\"line_item_id\":\"53ur1\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-18T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "187z9mkh1vj",
+      "line_item_id": "zh612",
+      "targeting_type": "LOCATION",
+      "targeting_value": "6416b8512febefc9"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-08-18T23:00:00Z\",\"deleted\":false,\"id\":\"qhqdw84\",\"line_item_id\":\"zh612\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\",\"updated_at\":\"2027-08-18T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187z9mkh1vj\",\"line_item_id\":\"zh612\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-18T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "187z9mkh1vj",
+      "line_item_id": "zh612",
+      "targeting_type": "LOCATION",
+      "targeting_value": "ea679934779f45c7"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-08-18T23:00:00Z\",\"deleted\":false,\"id\":\"mf4acbu\",\"line_item_id\":\"zh612\",\"location_type\":\"COUNTRIES\",\"name\":\"Ireland\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ea679934779f45c7\",\"updated_at\":\"2027-08-18T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187z9mkh1vj\",\"line_item_id\":\"zh612\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ea679934779f45c7\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-18T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "187z9mkh1vj",
+      "line_item_id": "zh612",
+      "targeting_type": "PLATFORM",
+      "targeting_value": "0"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-08-18T23:00:00Z\",\"deleted\":false,\"id\":\"ybgy4oe\",\"line_item_id\":\"zh612\",\"name\":\"iOS\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\",\"updated_at\":\"2027-08-18T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187z9mkh1vj\",\"line_item_id\":\"zh612\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-18T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "187z9mkh1vj",
+      "line_item_id": "zh612",
+      "targeting_type": "PLATFORM",
+      "targeting_value": "1"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-08-18T23:00:00Z\",\"deleted\":false,\"id\":\"okf34vo\",\"line_item_id\":\"zh612\",\"name\":\"Android\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"1\",\"updated_at\":\"2027-08-18T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187z9mkh1vj\",\"line_item_id\":\"zh612\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-18T23:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "187z9mkh1vj",
+      "line_item_id": "53ur1",
+      "tweet_ids": "2219947066782760857"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-08-18T23:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"daam15\",\"line_item_id\":\"53ur1\",\"tweet_id\":\"2219947066782760857\",\"updated_at\":\"2027-08-18T23:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"187z9mkh1vj\",\"line_item_id\":\"53ur1\",\"tweet_ids\":[\"2219947066782760857\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-18T23:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "187z9mkh1vj",
+      "line_item_id": "zh612",
+      "tweet_ids": "2220128260716165837"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-08-18T23:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"uauko4\",\"line_item_id\":\"zh612\",\"tweet_id\":\"2220128260716165837\",\"updated_at\":\"2027-08-18T23:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"187z9mkh1vj\",\"line_item_id\":\"zh612\",\"tweet_ids\":[\"2220128260716165837\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-18T23:00:00Z",
+    "tool": "activate_campaign",
+    "arguments": {
+      "account_id": "187z9mkh1vj",
+      "campaign_id": "127mz"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-08-18T23:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"RUNNING\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"bffkym\",\"id\":\"127mz\",\"name\":\"Pocket Lantern Summer Trial UK+IE\",\"purchase_order_number\":null,\"reasons_not_servable\":[],\"servable\":true,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-08-18T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187z9mkh1vj\",\"campaign_id\":\"127mz\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-18T23:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "187z9mkh1vj",
+      "line_item_id": "53ur1"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2055060587935936495\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"127mz\",\"categories\":[],\"created_at\":\"2027-08-18T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":14500000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-08-30T23:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"bffkym\",\"goal\":\"LINK_CLICKS\",\"id\":\"53ur1\",\"ios_app_store_identifier\":null,\"name\":\"Post A - summer holidays\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-08-18T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":174000000,\"updated_at\":\"2027-08-18T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187z9mkh1vj\",\"line_item_id\":\"53ur1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-18T23:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "187z9mkh1vj",
+      "line_item_id": "zh612"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2055060587935936495\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"127mz\",\"categories\":[],\"created_at\":\"2027-08-18T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":14500000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-08-30T23:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"bffkym\",\"goal\":\"LINK_CLICKS\",\"id\":\"zh612\",\"ios_app_store_identifier\":null,\"name\":\"Post B - hand-picked age-rated\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-08-18T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":174000000,\"updated_at\":\"2027-08-18T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187z9mkh1vj\",\"line_item_id\":\"zh612\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-18T23:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-08-23T09:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-08-31T00:00:00Z\",\"now\":\"2027-08-23T09:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-23T09:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "187z9mkh1vj",
+      "entity": "LINE_ITEM",
+      "entity_ids": "53ur1,zh612",
+      "start_time": "2027-08-18T23:00:00Z",
+      "end_time": "2027-08-23T09:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"53ur1\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[58807603],\"billed_engagements\":[446],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[29],\"engagements\":[446],\"follows\":null,\"impressions\":[62545],\"likes\":[13],\"link_clicks\":[29],\"qualified_impressions\":[62545],\"replies\":null,\"retweets\":[2]},\"segment\":null}]},{\"id\":\"zh612\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[58695407],\"billed_engagements\":[430],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[35],\"engagements\":[430],\"follows\":null,\"impressions\":[59590],\"likes\":[11],\"link_clicks\":[35],\"qualified_impressions\":[59590],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-08-23T09:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"53ur1\",\"zh612\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-08-18T23:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-23T09:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-08-27T09:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-08-31T00:00:00Z\",\"now\":\"2027-08-27T09:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-27T09:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "187z9mkh1vj",
+      "entity": "LINE_ITEM",
+      "entity_ids": "53ur1,zh612",
+      "start_time": "2027-08-18T23:00:00Z",
+      "end_time": "2027-08-27T09:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"errors\":[{\"code\":\"INVALID_TIME_WINDOW\",\"message\":\"The end_time (2027-08-27 09:00:00 +0000) can be a maximum of 7.days+1.hours after the start_time (2027-08-18 23:00:00 +0000)\",\"parameter\":\"\"}],\"request\":{\"params\":{\"account_id\":\"187z9mkh1vj\",\"end_time\":\"2027-08-27T09:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"53ur1\",\"zh612\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"start_time\":\"2027-08-18T23:00:00Z\"}}}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2027-08-27T09:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "187z9mkh1vj",
+      "entity": "LINE_ITEM",
+      "entity_ids": "53ur1,zh612",
+      "start_time": "2027-08-18T23:00:00Z",
+      "end_time": "2027-08-26T00:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"53ur1\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[93655006],\"billed_engagements\":[707],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[43],\"engagements\":[707],\"follows\":null,\"impressions\":[100431],\"likes\":[19],\"link_clicks\":[43],\"qualified_impressions\":[100431],\"replies\":null,\"retweets\":[2]},\"segment\":null}]},{\"id\":\"zh612\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[95143649],\"billed_engagements\":[667],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[54],\"engagements\":[667],\"follows\":null,\"impressions\":[91074],\"likes\":[16],\"link_clicks\":[54],\"qualified_impressions\":[91074],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-08-26T00:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"53ur1\",\"zh612\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-08-18T23:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-27T09:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "187z9mkh1vj",
+      "entity": "LINE_ITEM",
+      "entity_ids": "53ur1,zh612",
+      "start_time": "2027-08-26T00:00:00Z",
+      "end_time": "2027-08-27T09:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"53ur1\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[19811342],\"billed_engagements\":[98],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[10],\"engagements\":[98],\"follows\":null,\"impressions\":[15175],\"likes\":[2],\"link_clicks\":[10],\"qualified_impressions\":[15175],\"replies\":null,\"retweets\":[1]},\"segment\":null}]},{\"id\":\"zh612\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[15792563],\"billed_engagements\":[193],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[10],\"engagements\":[193],\"follows\":null,\"impressions\":[26562],\"likes\":[3],\"link_clicks\":[10],\"qualified_impressions\":[26562],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-08-27T09:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"53ur1\",\"zh612\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-08-26T00:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-27T09:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "187z9mkh1vj",
+      "line_item_id": "53ur1",
+      "daily_budget_amount_local_micro": 9000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2055060587935936495\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"127mz\",\"categories\":[],\"created_at\":\"2027-08-18T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":9000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-08-30T23:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"bffkym\",\"goal\":\"LINK_CLICKS\",\"id\":\"53ur1\",\"ios_app_store_identifier\":null,\"name\":\"Post A - summer holidays\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-08-18T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":174000000,\"updated_at\":\"2027-08-27T09:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187z9mkh1vj\",\"daily_budget_amount_local_micro\":9000000,\"line_item_id\":\"53ur1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-27T09:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "187z9mkh1vj",
+      "line_item_id": "zh612",
+      "daily_budget_amount_local_micro": 20000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2055060587935936495\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"127mz\",\"categories\":[],\"created_at\":\"2027-08-18T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":20000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-08-30T23:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"bffkym\",\"goal\":\"LINK_CLICKS\",\"id\":\"zh612\",\"ios_app_store_identifier\":null,\"name\":\"Post B - hand-picked age-rated\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-08-18T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":174000000,\"updated_at\":\"2027-08-27T09:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187z9mkh1vj\",\"daily_budget_amount_local_micro\":20000000,\"line_item_id\":\"zh612\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-27T09:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-08-30T23:30:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"error\":\"until must be on the hour\"}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2027-08-27T09:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-08-31T00:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-08-31T00:00:00Z\",\"now\":\"2027-08-31T00:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-31T00:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "187z9mkh1vj",
+      "entity": "LINE_ITEM",
+      "entity_ids": "53ur1,zh612",
+      "start_time": "2027-08-18T23:00:00Z",
+      "end_time": "2027-08-26T00:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"53ur1\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[93655006],\"billed_engagements\":[707],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[43],\"engagements\":[707],\"follows\":null,\"impressions\":[100431],\"likes\":[19],\"link_clicks\":[43],\"qualified_impressions\":[100431],\"replies\":null,\"retweets\":[2]},\"segment\":null}]},{\"id\":\"zh612\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[95143649],\"billed_engagements\":[667],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[54],\"engagements\":[667],\"follows\":null,\"impressions\":[91074],\"likes\":[16],\"link_clicks\":[54],\"qualified_impressions\":[91074],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-08-26T00:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"53ur1\",\"zh612\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-08-18T23:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-31T00:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "187z9mkh1vj",
+      "entity": "LINE_ITEM",
+      "entity_ids": "53ur1,zh612",
+      "start_time": "2027-08-26T00:00:00Z",
+      "end_time": "2027-08-31T00:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"53ur1\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[45608623],\"billed_engagements\":[415],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[26],\"engagements\":[415],\"follows\":null,\"impressions\":[58585],\"likes\":[10],\"link_clicks\":[26],\"qualified_impressions\":[58585],\"replies\":null,\"retweets\":[2]},\"segment\":null}]},{\"id\":\"zh612\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[78332071],\"billed_engagements\":[675],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[57],\"engagements\":[675],\"follows\":null,\"impressions\":[90139],\"likes\":[16],\"link_clicks\":[57],\"qualified_impressions\":[90139],\"replies\":[1],\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-08-31T00:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"53ur1\",\"zh612\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-08-26T00:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-31T00:00:00Z",
+    "tool": "get_line_item",
+    "arguments": {
+      "account_id": "187z9mkh1vj",
+      "line_item_id": "53ur1"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2055060587935936495\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"127mz\",\"categories\":[],\"created_at\":\"2027-08-18T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":9000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-08-30T23:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"bffkym\",\"goal\":\"LINK_CLICKS\",\"id\":\"53ur1\",\"ios_app_store_identifier\":null,\"name\":\"Post A - summer holidays\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-08-18T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":174000000,\"updated_at\":\"2027-08-27T09:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"187z9mkh1vj\",\"line_item_id\":\"53ur1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

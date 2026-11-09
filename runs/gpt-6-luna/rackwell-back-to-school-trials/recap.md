@@ -1,0 +1,1 @@
+The July 28–31 flight has ended. It spent **$446.53** of the $450 budget, with **375,353 impressions** and **202 link clicks**. X couldn’t track free-trial starts because there’s no pixel on the site, so clicks are the available performance measure.

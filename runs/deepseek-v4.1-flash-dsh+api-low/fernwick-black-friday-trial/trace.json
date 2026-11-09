@@ -1,0 +1,1580 @@
+[
+  {
+    "at": "2026-11-21T05:00:00Z",
+    "tool": "list_ads_accounts",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"business_id\":null,\"business_name\":null,\"country_code\":\"US\",\"created_at\":\"2024-10-22T05:00:00Z\",\"deleted\":false,\"id\":\"184hxd2iszy\",\"industry_type\":null,\"name\":\"Fernwick Crash Reporting\",\"timezone\":\"America/New_York\",\"timezone_switch_at\":\"2024-10-22T05:00:00Z\",\"updated_at\":\"2024-10-22T05:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T05:00:00Z",
+    "tool": "get_current_time",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2026-11-29T06:00:00Z\",\"now\":\"2026-11-21T05:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T05:00:00Z",
+    "tool": "get_ad_policy",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"enforcement\":\"ad groups that break the policy of their category are disapproved and don't serve\",\"minors\":\"no ad may reach anyone under 13; alcohol may never target minors\",\"pre_authorization\":\"required for every restricted category\",\"restricted_categories\":[{\"category\":\"alcohol\",\"countries\":[\"AL\",\"AR\",\"AT\",\"AU\",\"BA\",\"BE\",\"BG\",\"BO\",\"BR\",\"CA\",\"CH\",\"CL\",\"CO\",\"CR\",\"CY\",\"CZ\",\"DE\",\"DK\",\"DO\",\"EC\",\"EE\",\"ES\",\"FI\",\"FR\",\"GB\",\"GH\",\"GR\",\"HK\",\"HN\",\"HR\",\"HU\",\"IE\",\"IL\",\"IN\",\"IS\",\"IT\",\"JP\",\"KE\",\"KH\",\"KR\",\"LT\",\"LU\",\"LV\",\"ME\",\"MK\",\"MT\",\"MX\",\"MY\",\"NG\",\"NI\",\"NL\",\"NZ\",\"PA\",\"PE\",\"PH\",\"PT\",\"PY\",\"RO\",\"RS\",\"SE\",\"SG\",\"SI\",\"SK\",\"SN\",\"SV\",\"TW\",\"UA\",\"UG\",\"US\",\"UY\",\"VE\",\"ZA\",\"ZM\"],\"covers\":\"promoting, selling or branding beer, wine or spirits, and competitions with alcohol as a prize\",\"min_age\":{\"by_country\":{\"JP\":20,\"KR\":20,\"US\":21},\"elsewhere\":18},\"targeting_types\":null},{\"category\":\"financial_services\",\"countries\":[\"AE\",\"AR\",\"AT\",\"AU\",\"AW\",\"BA\",\"BB\",\"BE\",\"BG\",\"BM\",\"BR\",\"BS\",\"CA\",\"CH\",\"CL\",\"CR\",\"CW\",\"CZ\",\"DE\",\"DK\",\"DO\",\"EC\",\"EG\",\"ES\",\"FI\",\"FR\",\"GB\",\"GH\",\"GR\",\"GT\",\"HK\",\"HN\",\"HR\",\"ID\",\"IE\",\"IL\",\"IN\",\"IT\",\"JM\",\"JP\",\"KR\",\"KW\",\"MA\",\"MK\",\"MY\",\"NG\",\"NI\",\"NL\",\"NO\",\"NZ\",\"OM\",\"PA\",\"PE\",\"PH\",\"PK\",\"PL\",\"PT\",\"PY\",\"QA\",\"RO\",\"RS\",\"RU\",\"SA\",\"SE\",\"SG\",\"SI\",\"SV\",\"TH\",\"TR\",\"TT\",\"TW\",\"TZ\",\"UA\",\"UG\",\"US\",\"UY\",\"VE\",\"VN\",\"ZA\",\"ZM\"],\"covers\":\"banks, money service businesses, mobile and electronic payments, money transfer, savings, investment, currency exchange, loans and insurance\",\"min_age\":null,\"targeting_types\":null},{\"category\":\"political_content\",\"countries\":[\"AE\",\"AR\",\"AU\",\"CL\",\"CO\",\"EC\",\"GB\",\"GH\",\"ID\",\"IL\",\"IN\",\"JP\",\"MX\",\"PE\",\"SA\",\"US\",\"ZA\"],\"covers\":\"ads that reference a candidate, party, official, election, referendum, legislation, regulation or judicial outcome\",\"min_age\":null,\"targeting_types\":null},{\"category\":\"political_campaigning\",\"countries\":[\"AR\",\"AU\",\"CO\",\"EC\",\"GB\",\"GH\",\"ID\",\"IL\",\"JP\",\"MX\",\"PA\",\"PE\",\"US\",\"ZA\"],\"covers\":\"ads that advocate for or against, or ask for votes or money for, a candidate, party, election, legislation, referendum or ballot measure\",\"min_age\":null,\"targeting_types\":[\"LOCATION\",\"AGE\",\"GENDER\",\"INTEREST\",\"BROAD_KEYWORD\",\"PHRASE_KEYWORD\",\"EXACT_KEYWORD\",\"UNORDERED_KEYWORD\",\"NEGATIVE_PHRASE_KEYWORD\",\"NEGATIVE_EXACT_KEYWORD\",\"NEGATIVE_UNORDERED_KEYWORD\",\"CUSTOM_AUDIENCE\",\"CUSTOM_AUDIENCE_EXPANDED\",\"SIMILAR_TO_FOLLOWERS_OF_USER\",\"FOLLOWER_LOOK_ALIKES\"]}]},\"request\":{\"params\":{}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T05:00:00Z",
+    "tool": "list_funding_instruments",
+    "arguments": {
+      "account_id": "184hxd2iszy"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"able_to_fund\":true,\"created_at\":\"2024-10-22T05:00:00Z\",\"credit_limit_local_micro\":null,\"credit_remaining_local_micro\":null,\"currency\":\"USD\",\"deleted\":false,\"description\":\"Mastercard ending in 2525\",\"end_time\":null,\"entity_status\":\"ACTIVE\",\"funded_amount_local_micro\":0,\"id\":\"qctl2d\",\"io_header\":null,\"reasons_not_able_to_fund\":[],\"start_time\":\"2024-10-22T05:00:00Z\",\"type\":\"CREDIT_CARD\",\"updated_at\":\"2024-10-22T05:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T05:00:00Z",
+    "tool": "list_account_posts",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "tweet_type": "PUBLISHED",
+      "tweet_ids": "2123280103634283814,2123461297568149236,2123642491501123261,2123823685432753560"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Fri Nov 20 17:00:00 +0000 2026\",\"display_text_range\":[0,180],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"fernwick.io/blackfriday\",\"expanded_url\":\"https://fernwick.io/blackfriday\",\"indices\":[157,180],\"url\":\"https://t.co/xkil6DD54B\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"$0 for 60 days. That's Fernwick Pro crash reporting for your game, free for the whole trial, and our Indie plan stays free forever after. Sign up by Nov 30. https://t.co/xkil6DD54B\",\"geo\":null,\"id\":2123823685432753560,\"id_str\":\"2123823685432753560\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2123823685432753560\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Tue Oct 22 05:00:00 +0000 2024\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":1777,\"follow_request_sent\":null,\"followers_count\":14477,\"following\":null,\"friends_count\":227,\"geo_enabled\":false,\"id\":1848590101511439981,\"id_str\":\"1848590101511439981\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":57,\"location\":\"\",\"name\":\"Fernwick Crash Reporting\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1848590101511439981/1697165677\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1857017306197165677/PDc7GGWm_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1857017306197165677/PDc7GGWm_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"FernwickCrashRe\",\"statuses_count\":1977,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Fri Nov 20 05:00:00 +0000 2026\",\"display_text_range\":[0,186],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"fernwick.io/blackfriday\",\"expanded_url\":\"https://fernwick.io/blackfriday\",\"indices\":[163,186],\"url\":\"https://t.co/rp3vvq9JRO\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"The 60-day Fernwick Pro trial ends Cyber Monday, Nov 30. After that it's back to 14 days. Sign up this week and ship your next patch knowing exactly what crashed. https://t.co/rp3vvq9JRO\",\"geo\":null,\"id\":2123642491501123261,\"id_str\":\"2123642491501123261\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2123642491501123261\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Tue Oct 22 05:00:00 +0000 2024\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":1777,\"follow_request_sent\":null,\"followers_count\":14477,\"following\":null,\"friends_count\":227,\"geo_enabled\":false,\"id\":1848590101511439981,\"id_str\":\"1848590101511439981\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":57,\"location\":\"\",\"name\":\"Fernwick Crash Reporting\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1848590101511439981/1697165677\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1857017306197165677/PDc7GGWm_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1857017306197165677/PDc7GGWm_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"FernwickCrashRe\",\"statuses_count\":1977,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Thu Nov 19 17:00:00 +0000 2026\",\"display_text_range\":[0,214],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"fernwick.io/blackfriday\",\"expanded_url\":\"https://fernwick.io/blackfriday\",\"indices\":[191,214],\"url\":\"https://t.co/IIDKfSxNg4\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Fernwick: one SDK for Unity, Unreal and Godot that logs crashes, errors and player-device details from every build. 60-day free Pro trial through Cyber Monday, for devs in the US and Canada. https://t.co/IIDKfSxNg4\",\"geo\":null,\"id\":2123461297568149236,\"id_str\":\"2123461297568149236\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2123461297568149236\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Tue Oct 22 05:00:00 +0000 2024\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":1777,\"follow_request_sent\":null,\"followers_count\":14477,\"following\":null,\"friends_count\":227,\"geo_enabled\":false,\"id\":1848590101511439981,\"id_str\":\"1848590101511439981\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":57,\"location\":\"\",\"name\":\"Fernwick Crash Reporting\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1848590101511439981/1697165677\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1857017306197165677/PDc7GGWm_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1857017306197165677/PDc7GGWm_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"FernwickCrashRe\",\"statuses_count\":1977,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"tweet_ids\":[\"2123280103634283814\",\"2123461297568149236\",\"2123642491501123261\",\"2123823685432753560\"],\"tweet_type\":\"PUBLISHED\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T05:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "q": "United States",
+      "location_type": "COUNTRIES"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"country_code\":\"US\",\"location_type\":\"COUNTRIES\",\"name\":\"United States\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\"},{\"country_code\":\"UM\",\"location_type\":\"COUNTRIES\",\"name\":\"United States Minor Outlying Islands\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"08fbcf4cbc4bc5b9\"},{\"country_code\":\"AE\",\"location_type\":\"COUNTRIES\",\"name\":\"United Arab Emirates\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3f63906fc8aa5a7d\"},{\"country_code\":\"GB\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"}],\"next_cursor\":null,\"request\":{\"params\":{\"location_type\":\"COUNTRIES\",\"q\":\"United States\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T05:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "q": "Canada",
+      "location_type": "COUNTRIES"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"country_code\":\"CA\",\"location_type\":\"COUNTRIES\",\"name\":\"Canada\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3376992a082d67c7\"}],\"next_cursor\":null,\"request\":{\"params\":{\"location_type\":\"COUNTRIES\",\"q\":\"Canada\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T05:00:00Z",
+    "tool": "list_account_posts",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "tweet_type": "PUBLISHED",
+      "tweet_ids": "2123280103634283814"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"tweet_ids\":[\"2123280103634283814\"],\"tweet_type\":\"PUBLISHED\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T05:00:00Z",
+    "tool": "list_campaigns",
+    "arguments": {
+      "account_id": "184hxd2iszy"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T05:00:00Z",
+    "tool": "list_line_item_placements",
+    "arguments": {
+      "product_type": "PROMOTED_TWEETS"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"placements\":[[\"ALL_ON_TWITTER\"],[\"ALL_ON_TWITTER\",\"PUBLISHER_NETWORK\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL_LANDSCAPE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_NATIVE\"],[\"PUBLISHER_NETWORK\"],[\"PUBLISHER_NETWORK\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"PUBLISHER_NETWORK\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"PUBLISHER_NETWORK\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"PUBLISHER_NETWORK\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\"],[\"TAP_BANNER\",\"TAP_FULL\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_NATIVE\"],[\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\"],[\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_NATIVE\"],[\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TWITTER_MEDIA_VIEWER\"],[\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TWITTER_REPLIES\"],[\"TWITTER_SEARCH\"],[\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TWITTER_TIMELINE\"]],\"product_type\":\"PROMOTED_TWEETS\"}],\"next_cursor\":null,\"request\":{\"params\":{\"product_type\":\"PROMOTED_TWEETS\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T05:00:00Z",
+    "tool": "list_account_posts",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "tweet_type": "PUBLISHED",
+      "timeline_type": "ALL",
+      "tweet_ids": "2123280103634283814",
+      "include_mentions_and_replies": true
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Thu Nov 19 05:00:00 +0000 2026\",\"display_text_range\":[0,187],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"fernwick.io/blackfriday\",\"expanded_url\":\"https://fernwick.io/blackfriday\",\"indices\":[164,187],\"url\":\"https://t.co/MuPaB6o48P\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Crashes in your Unity, Unreal or Godot build? Fernwick catches them with full stack traces and device info. Black Friday deal: a 60-day free Pro trial, up from 14. https://t.co/MuPaB6o48P\",\"geo\":null,\"id\":2123280103634283814,\"id_str\":\"2123280103634283814\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":false,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2123280103634283814\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Tue Oct 22 05:00:00 +0000 2024\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":1777,\"follow_request_sent\":null,\"followers_count\":14477,\"following\":null,\"friends_count\":227,\"geo_enabled\":false,\"id\":1848590101511439981,\"id_str\":\"1848590101511439981\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":57,\"location\":\"\",\"name\":\"Fernwick Crash Reporting\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1848590101511439981/1697165677\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1857017306197165677/PDc7GGWm_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1857017306197165677/PDc7GGWm_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"FernwickCrashRe\",\"statuses_count\":1977,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"include_mentions_and_replies\":true,\"timeline_type\":\"ALL\",\"tweet_ids\":[\"2123280103634283814\"],\"tweet_type\":\"PUBLISHED\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T05:00:00Z",
+    "tool": "list_account_posts",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "tweet_type": "DRAFT"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"tweet_type\":\"DRAFT\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T05:00:00Z",
+    "tool": "list_account_posts",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "tweet_type": "SCHEDULED"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"tweet_type\":\"SCHEDULED\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T05:00:00Z",
+    "tool": "create_campaign",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "name": "Fernwick BFCM 2026 \u2014 Signups (US/CA)",
+      "funding_instrument_id": "qctl2d"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2026-11-21T05:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"PAUSED\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"qctl2d\",\"id\":\"qsnrq\",\"name\":\"Fernwick BFCM 2026 \u2014 Signups (US/CA)\",\"purchase_order_number\":null,\"reasons_not_servable\":[\"PAUSED_BY_ADVERTISER\"],\"servable\":false,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2026-11-21T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"funding_instrument_id\":\"qctl2d\",\"name\":\"Fernwick BFCM 2026 \u2014 Signups (US/CA)\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T05:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "campaign_id": "qsnrq",
+      "name": "LI-A \u2014 Crash pain point (Post 1)",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "pay_by": "LINK_CLICK",
+      "bid_strategy": "AUTO",
+      "placements": "ALL_ON_TWITTER",
+      "product_type": "PROMOTED_TWEETS",
+      "advertiser_domain": "fernwick.io",
+      "daily_budget_amount_local_micro": 35714286,
+      "total_budget_amount_local_micro": 250000000,
+      "start_time": "2026-11-21T05:00:00Z",
+      "end_time": "2026-11-29T05:00:00Z",
+      "standard_delivery": true
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"fernwick.io\",\"advertiser_user_id\":\"1848590101511439981\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"qsnrq\",\"categories\":[],\"created_at\":\"2026-11-21T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":35714286,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-29T05:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"qctl2d\",\"goal\":\"LINK_CLICKS\",\"id\":\"bxj0m\",\"ios_app_store_identifier\":null,\"name\":\"LI-A \u2014 Crash pain point (Post 1)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":250000000,\"updated_at\":\"2026-11-21T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"advertiser_domain\":\"fernwick.io\",\"bid_strategy\":\"AUTO\",\"campaign_id\":\"qsnrq\",\"daily_budget_amount_local_micro\":35714286,\"end_time\":\"2026-11-29T05:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"LI-A \u2014 Crash pain point (Post 1)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T05:00:00Z\",\"total_budget_amount_local_micro\":250000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T05:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "campaign_id": "qsnrq",
+      "name": "LI-B \u2014 $0 for 60 days (Post 4)",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "pay_by": "LINK_CLICK",
+      "bid_strategy": "AUTO",
+      "placements": "ALL_ON_TWITTER",
+      "product_type": "PROMOTED_TWEETS",
+      "advertiser_domain": "fernwick.io",
+      "daily_budget_amount_local_micro": 35714286,
+      "total_budget_amount_local_micro": 250000000,
+      "start_time": "2026-11-21T05:00:00Z",
+      "end_time": "2026-11-29T05:00:00Z",
+      "standard_delivery": true
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"fernwick.io\",\"advertiser_user_id\":\"1848590101511439981\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"qsnrq\",\"categories\":[],\"created_at\":\"2026-11-21T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":35714286,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-29T05:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"qctl2d\",\"goal\":\"LINK_CLICKS\",\"id\":\"vjd3w\",\"ios_app_store_identifier\":null,\"name\":\"LI-B \u2014 $0 for 60 days (Post 4)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":250000000,\"updated_at\":\"2026-11-21T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"advertiser_domain\":\"fernwick.io\",\"bid_strategy\":\"AUTO\",\"campaign_id\":\"qsnrq\",\"daily_budget_amount_local_micro\":35714286,\"end_time\":\"2026-11-29T05:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"LI-B \u2014 $0 for 60 days (Post 4)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T05:00:00Z\",\"total_budget_amount_local_micro\":250000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T05:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "line_item_id": "bxj0m",
+      "targeting_type": "LOCATION",
+      "targeting_value": "96683cc9126741d1",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2026-11-21T05:00:00Z\",\"deleted\":false,\"id\":\"wfiro34\",\"line_item_id\":\"bxj0m\",\"location_type\":\"COUNTRIES\",\"name\":\"United States\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\",\"updated_at\":\"2026-11-21T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"line_item_id\":\"bxj0m\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T05:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "line_item_id": "bxj0m",
+      "targeting_type": "LOCATION",
+      "targeting_value": "3376992a082d67c7",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2026-11-21T05:00:00Z\",\"deleted\":false,\"id\":\"yj1nb03\",\"line_item_id\":\"bxj0m\",\"location_type\":\"COUNTRIES\",\"name\":\"Canada\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3376992a082d67c7\",\"updated_at\":\"2026-11-21T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"line_item_id\":\"bxj0m\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3376992a082d67c7\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T05:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "line_item_id": "vjd3w",
+      "targeting_type": "LOCATION",
+      "targeting_value": "96683cc9126741d1",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2026-11-21T05:00:00Z\",\"deleted\":false,\"id\":\"qjs5y8p\",\"line_item_id\":\"vjd3w\",\"location_type\":\"COUNTRIES\",\"name\":\"United States\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\",\"updated_at\":\"2026-11-21T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"line_item_id\":\"vjd3w\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T05:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "line_item_id": "vjd3w",
+      "targeting_type": "LOCATION",
+      "targeting_value": "3376992a082d67c7",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2026-11-21T05:00:00Z\",\"deleted\":false,\"id\":\"ebvsvi4\",\"line_item_id\":\"vjd3w\",\"location_type\":\"COUNTRIES\",\"name\":\"Canada\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3376992a082d67c7\",\"updated_at\":\"2026-11-21T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"line_item_id\":\"vjd3w\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3376992a082d67c7\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T05:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "line_item_id": "bxj0m",
+      "tweet_ids": "2123280103634283814"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2026-11-21T05:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"i9g9dj\",\"line_item_id\":\"bxj0m\",\"tweet_id\":\"2123280103634283814\",\"updated_at\":\"2026-11-21T05:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"line_item_id\":\"bxj0m\",\"tweet_ids\":[\"2123280103634283814\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T05:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "line_item_id": "vjd3w",
+      "tweet_ids": "2123823685432753560"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2026-11-21T05:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"aturb9\",\"line_item_id\":\"vjd3w\",\"tweet_id\":\"2123823685432753560\",\"updated_at\":\"2026-11-21T05:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"line_item_id\":\"vjd3w\",\"tweet_ids\":[\"2123823685432753560\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T05:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "line_item_id": "bxj0m"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"fernwick.io\",\"advertiser_user_id\":\"1848590101511439981\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"qsnrq\",\"categories\":[],\"created_at\":\"2026-11-21T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":35714286,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-29T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"qctl2d\",\"goal\":\"LINK_CLICKS\",\"id\":\"bxj0m\",\"ios_app_store_identifier\":null,\"name\":\"LI-A \u2014 Crash pain point (Post 1)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":250000000,\"updated_at\":\"2026-11-21T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"line_item_id\":\"bxj0m\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T05:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "line_item_id": "vjd3w"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"fernwick.io\",\"advertiser_user_id\":\"1848590101511439981\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"qsnrq\",\"categories\":[],\"created_at\":\"2026-11-21T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":35714286,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-29T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"qctl2d\",\"goal\":\"LINK_CLICKS\",\"id\":\"vjd3w\",\"ios_app_store_identifier\":null,\"name\":\"LI-B \u2014 $0 for 60 days (Post 4)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":250000000,\"updated_at\":\"2026-11-21T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"line_item_id\":\"vjd3w\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T05:00:00Z",
+    "tool": "activate_campaign",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "campaign_id": "qsnrq"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2026-11-21T05:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"RUNNING\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"qctl2d\",\"id\":\"qsnrq\",\"name\":\"Fernwick BFCM 2026 \u2014 Signups (US/CA)\",\"purchase_order_number\":null,\"reasons_not_servable\":[],\"servable\":true,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2026-11-21T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"campaign_id\":\"qsnrq\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T05:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2026-11-21T17:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2026-11-29T06:00:00Z\",\"now\":\"2026-11-21T17:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T17:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "entity": "LINE_ITEM",
+      "entity_ids": "bxj0m,vjd3w",
+      "start_time": "2026-11-21T05:00:00Z",
+      "end_time": "2026-11-21T17:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"bxj0m\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[9663026],\"billed_engagements\":[62],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[5],\"engagements\":[62],\"follows\":null,\"impressions\":[8958],\"likes\":[3],\"link_clicks\":[5],\"qualified_impressions\":[8958],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"vjd3w\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[2203900],\"billed_engagements\":[58],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[1],\"engagements\":[58],\"follows\":null,\"impressions\":[9093],\"likes\":null,\"link_clicks\":[1],\"qualified_impressions\":[9093],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-11-21T17:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"bxj0m\",\"vjd3w\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-21T05:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T17:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "entity": "PROMOTED_TWEET",
+      "entity_ids": "i9g9dj,aturb9",
+      "start_time": "2026-11-21T05:00:00Z",
+      "end_time": "2026-11-21T17:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"i9g9dj\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[9663026],\"billed_engagements\":[62],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[5],\"engagements\":[62],\"follows\":null,\"impressions\":[8958],\"likes\":[3],\"link_clicks\":[5],\"qualified_impressions\":[8958],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"aturb9\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[2203900],\"billed_engagements\":[58],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[1],\"engagements\":[58],\"follows\":null,\"impressions\":[9093],\"likes\":null,\"link_clicks\":[1],\"qualified_impressions\":[9093],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-11-21T17:00:00Z\",\"entity\":\"PROMOTED_TWEET\",\"entity_ids\":[\"i9g9dj\",\"aturb9\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-21T05:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T17:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2026-11-22T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2026-11-29T06:00:00Z\",\"now\":\"2026-11-22T05:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-22T05:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "end_time": "2026-11-22T05:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "bxj0m,vjd3w",
+      "granularity": "TOTAL",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2026-11-21T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"bxj0m\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[21975481],\"billed_engagements\":[219],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[11],\"engagements\":[219],\"follows\":null,\"impressions\":[33790],\"likes\":[5],\"link_clicks\":[11],\"qualified_impressions\":[33790],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"vjd3w\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[21535999],\"billed_engagements\":[229],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[9],\"engagements\":[229],\"follows\":null,\"impressions\":[33533],\"likes\":[3],\"link_clicks\":[9],\"qualified_impressions\":[33533],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-11-22T05:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"bxj0m\",\"vjd3w\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-21T05:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-22T05:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2026-11-22T17:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2026-11-29T06:00:00Z\",\"now\":\"2026-11-22T17:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-22T17:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "end_time": "2026-11-22T17:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "bxj0m,vjd3w",
+      "granularity": "TOTAL",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2026-11-21T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"bxj0m\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[30602910],\"billed_engagements\":[297],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[15],\"engagements\":[297],\"follows\":null,\"impressions\":[46423],\"likes\":[6],\"link_clicks\":[15],\"qualified_impressions\":[46423],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"vjd3w\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[27426125],\"billed_engagements\":[300],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[11],\"engagements\":[300],\"follows\":null,\"impressions\":[46108],\"likes\":[5],\"link_clicks\":[11],\"qualified_impressions\":[46108],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-11-22T17:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"bxj0m\",\"vjd3w\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-21T05:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-22T17:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "daily_budget_amount_local_micro": 60000000,
+      "line_item_id": "bxj0m"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"fernwick.io\",\"advertiser_user_id\":\"1848590101511439981\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"qsnrq\",\"categories\":[],\"created_at\":\"2026-11-21T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":60000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-29T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"qctl2d\",\"goal\":\"LINK_CLICKS\",\"id\":\"bxj0m\",\"ios_app_store_identifier\":null,\"name\":\"LI-A \u2014 Crash pain point (Post 1)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":250000000,\"updated_at\":\"2026-11-22T17:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"daily_budget_amount_local_micro\":60000000,\"line_item_id\":\"bxj0m\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-22T17:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "daily_budget_amount_local_micro": 60000000,
+      "line_item_id": "vjd3w"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"fernwick.io\",\"advertiser_user_id\":\"1848590101511439981\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"qsnrq\",\"categories\":[],\"created_at\":\"2026-11-21T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":60000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-29T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"qctl2d\",\"goal\":\"LINK_CLICKS\",\"id\":\"vjd3w\",\"ios_app_store_identifier\":null,\"name\":\"LI-B \u2014 $0 for 60 days (Post 4)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":250000000,\"updated_at\":\"2026-11-22T17:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"daily_budget_amount_local_micro\":60000000,\"line_item_id\":\"vjd3w\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-22T17:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2026-11-23T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2026-11-29T06:00:00Z\",\"now\":\"2026-11-23T05:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-23T05:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "end_time": "2026-11-23T05:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "bxj0m,vjd3w",
+      "granularity": "TOTAL",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2026-11-21T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"bxj0m\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[41347974],\"billed_engagements\":[440],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[20],\"engagements\":[440],\"follows\":null,\"impressions\":[70356],\"likes\":[10],\"link_clicks\":[20],\"qualified_impressions\":[70356],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"vjd3w\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[38178181],\"billed_engagements\":[437],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[15],\"engagements\":[437],\"follows\":null,\"impressions\":[70404],\"likes\":[10],\"link_clicks\":[15],\"qualified_impressions\":[70404],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-11-23T05:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"bxj0m\",\"vjd3w\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-21T05:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-23T05:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "end_time": "2026-11-23T05:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "bxj0m,vjd3w",
+      "granularity": "DAY",
+      "metric_groups": "BILLING",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2026-11-21T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"bxj0m\",\"id_data\":[{\"metrics\":{\"billed_charge_local_micro\":[21975481,19372493],\"billed_engagements\":[228,212]},\"segment\":null}]},{\"id\":\"vjd3w\",\"id_data\":[{\"metrics\":{\"billed_charge_local_micro\":[21535999,16642182],\"billed_engagements\":[233,204]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-11-23T05:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"bxj0m\",\"vjd3w\"],\"granularity\":\"DAY\",\"metric_groups\":[\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-21T05:00:00Z\"}},\"time_series_length\":2}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-23T05:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "bid_amount_local_micro": 3500000,
+      "bid_strategy": "MAX",
+      "line_item_id": "vjd3w"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"fernwick.io\",\"advertiser_user_id\":\"1848590101511439981\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":3500000,\"bid_strategy\":\"MAX\",\"campaign_id\":\"qsnrq\",\"categories\":[],\"created_at\":\"2026-11-21T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":60000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-29T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"qctl2d\",\"goal\":\"LINK_CLICKS\",\"id\":\"vjd3w\",\"ios_app_store_identifier\":null,\"name\":\"LI-B \u2014 $0 for 60 days (Post 4)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":250000000,\"updated_at\":\"2026-11-23T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"bid_amount_local_micro\":3500000,\"bid_strategy\":\"MAX\",\"line_item_id\":\"vjd3w\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-23T05:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2026-11-23T17:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2026-11-29T06:00:00Z\",\"now\":\"2026-11-23T17:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-23T17:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "end_time": "2026-11-23T05:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "bxj0m,vjd3w",
+      "granularity": "DAY",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2026-11-21T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"bxj0m\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[21975481,19372493],\"billed_engagements\":[228,229],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[11,9],\"engagements\":[228,229],\"follows\":null,\"impressions\":[35552,36659],\"likes\":[5,6],\"link_clicks\":[11,9],\"qualified_impressions\":[35552,36659],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"vjd3w\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[21535999,16642182],\"billed_engagements\":[233,214],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[9,6],\"engagements\":[233,214],\"follows\":null,\"impressions\":[35282,36903],\"likes\":[3,7],\"link_clicks\":[9,6],\"qualified_impressions\":[35282,36903],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-11-23T05:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"bxj0m\",\"vjd3w\"],\"granularity\":\"DAY\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-21T05:00:00Z\"}},\"time_series_length\":2}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-23T17:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "end_time": "2026-11-23T17:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "bxj0m,vjd3w",
+      "granularity": "TOTAL",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2026-11-21T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"bxj0m\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[56944841],\"billed_engagements\":[533],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[28],\"engagements\":[533],\"follows\":null,\"impressions\":[83191],\"likes\":[12],\"link_clicks\":[28],\"qualified_impressions\":[83191],\"replies\":[1],\"retweets\":null},\"segment\":null}]},{\"id\":\"vjd3w\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[42333055],\"billed_engagements\":[489],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[17],\"engagements\":[489],\"follows\":null,\"impressions\":[77502],\"likes\":[11],\"link_clicks\":[17],\"qualified_impressions\":[77502],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-11-23T17:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"bxj0m\",\"vjd3w\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-21T05:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-23T17:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "bid_strategy": "AUTO",
+      "line_item_id": "vjd3w",
+      "placements": "ALL_ON_TWITTER,PUBLISHER_NETWORK"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"errors\":[{\"code\":\"MISSING_PARAMETER\",\"message\":\"\\\"categories\\\" is a required parameter\",\"parameter\":\"categories\"}],\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"bid_strategy\":\"AUTO\",\"line_item_id\":\"vjd3w\",\"placements\":[\"ALL_ON_TWITTER\",\"PUBLISHER_NETWORK\"]}}}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2026-11-23T17:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "bid_strategy": "AUTO",
+      "categories": "IAB19",
+      "line_item_id": "vjd3w",
+      "placements": "ALL_ON_TWITTER,PUBLISHER_NETWORK"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"fernwick.io\",\"advertiser_user_id\":\"1848590101511439981\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"qsnrq\",\"categories\":[\"IAB19\"],\"created_at\":\"2026-11-21T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":60000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-29T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"qctl2d\",\"goal\":\"LINK_CLICKS\",\"id\":\"vjd3w\",\"ios_app_store_identifier\":null,\"name\":\"LI-B \u2014 $0 for 60 days (Post 4)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\",\"PUBLISHER_NETWORK\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":250000000,\"updated_at\":\"2026-11-23T17:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"bid_strategy\":\"AUTO\",\"categories\":[\"IAB19\"],\"line_item_id\":\"vjd3w\",\"placements\":[\"ALL_ON_TWITTER\",\"PUBLISHER_NETWORK\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-23T17:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2026-11-24T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2026-11-29T06:00:00Z\",\"now\":\"2026-11-24T05:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-24T05:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "end_time": "2026-11-24T05:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "bxj0m,vjd3w",
+      "granularity": "TOTAL",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2026-11-21T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"bxj0m\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[73069945],\"billed_engagements\":[691],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[35],\"engagements\":[691],\"follows\":null,\"impressions\":[110379],\"likes\":[17],\"link_clicks\":[35],\"qualified_impressions\":[110379],\"replies\":[2],\"retweets\":null},\"segment\":null}]},{\"id\":\"vjd3w\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[65008512],\"billed_engagements\":[682],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[24],\"engagements\":[682],\"follows\":null,\"impressions\":[105186],\"likes\":[17],\"link_clicks\":[24],\"qualified_impressions\":[105186],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-11-24T05:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"bxj0m\",\"vjd3w\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-21T05:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-24T05:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "end_time": "2026-11-24T05:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "vjd3w",
+      "granularity": "TOTAL",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "PUBLISHER_NETWORK",
+      "start_time": "2026-11-21T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"vjd3w\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":null,\"billed_engagements\":null,\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":null,\"engagements\":null,\"follows\":null,\"impressions\":null,\"likes\":null,\"link_clicks\":null,\"qualified_impressions\":null,\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-11-24T05:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"vjd3w\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"PUBLISHER_NETWORK\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-21T05:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-24T05:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "line_item_id": "vjd3w",
+      "placements": "ALL_ON_TWITTER",
+      "total_budget_amount_local_micro": 125000000,
+      "daily_budget_amount_local_micro": 40000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"fernwick.io\",\"advertiser_user_id\":\"1848590101511439981\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"qsnrq\",\"categories\":[\"IAB19\"],\"created_at\":\"2026-11-21T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":40000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-29T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"qctl2d\",\"goal\":\"LINK_CLICKS\",\"id\":\"vjd3w\",\"ios_app_store_identifier\":null,\"name\":\"LI-B \u2014 $0 for 60 days (Post 4)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":125000000,\"updated_at\":\"2026-11-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"daily_budget_amount_local_micro\":40000000,\"line_item_id\":\"vjd3w\",\"placements\":[\"ALL_ON_TWITTER\"],\"total_budget_amount_local_micro\":125000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-24T05:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "line_item_id": "bxj0m",
+      "total_budget_amount_local_micro": 175000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"fernwick.io\",\"advertiser_user_id\":\"1848590101511439981\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"qsnrq\",\"categories\":[],\"created_at\":\"2026-11-21T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":60000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-29T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"qctl2d\",\"goal\":\"LINK_CLICKS\",\"id\":\"bxj0m\",\"ios_app_store_identifier\":null,\"name\":\"LI-A \u2014 Crash pain point (Post 1)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":175000000,\"updated_at\":\"2026-11-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"line_item_id\":\"bxj0m\",\"total_budget_amount_local_micro\":175000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-24T05:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "advertiser_domain": "fernwick.io",
+      "bid_strategy": "AUTO",
+      "campaign_id": "qsnrq",
+      "daily_budget_amount_local_micro": 40000000,
+      "end_time": "2026-11-29T05:00:00Z",
+      "goal": "LINK_CLICKS",
+      "name": "LI-C \u2014 One SDK / US-CA (Post 2)",
+      "objective": "WEBSITE_CLICKS",
+      "pay_by": "LINK_CLICK",
+      "placements": "ALL_ON_TWITTER",
+      "product_type": "PROMOTED_TWEETS",
+      "standard_delivery": true,
+      "start_time": "2026-11-21T05:00:00Z",
+      "total_budget_amount_local_micro": 125000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"fernwick.io\",\"advertiser_user_id\":\"1848590101511439981\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"qsnrq\",\"categories\":[],\"created_at\":\"2026-11-24T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":40000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-29T05:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"qctl2d\",\"goal\":\"LINK_CLICKS\",\"id\":\"q9hid\",\"ios_app_store_identifier\":null,\"name\":\"LI-C \u2014 One SDK / US-CA (Post 2)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":125000000,\"updated_at\":\"2026-11-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"advertiser_domain\":\"fernwick.io\",\"bid_strategy\":\"AUTO\",\"campaign_id\":\"qsnrq\",\"daily_budget_amount_local_micro\":40000000,\"end_time\":\"2026-11-29T05:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"LI-C \u2014 One SDK / US-CA (Post 2)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T05:00:00Z\",\"total_budget_amount_local_micro\":125000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-24T05:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "advertiser_domain": "fernwick.io",
+      "bid_strategy": "AUTO",
+      "campaign_id": "qsnrq",
+      "daily_budget_amount_local_micro": 30000000,
+      "end_time": "2026-11-29T05:00:00Z",
+      "goal": "LINK_CLICKS",
+      "name": "LI-D \u2014 Urgency / ends Nov 30 (Post 3)",
+      "objective": "WEBSITE_CLICKS",
+      "pay_by": "LINK_CLICK",
+      "placements": "ALL_ON_TWITTER",
+      "product_type": "PROMOTED_TWEETS",
+      "standard_delivery": true,
+      "start_time": "2026-11-21T05:00:00Z",
+      "total_budget_amount_local_micro": 75000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"fernwick.io\",\"advertiser_user_id\":\"1848590101511439981\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"qsnrq\",\"categories\":[],\"created_at\":\"2026-11-24T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":30000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-29T05:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"qctl2d\",\"goal\":\"LINK_CLICKS\",\"id\":\"iz2u8\",\"ios_app_store_identifier\":null,\"name\":\"LI-D \u2014 Urgency / ends Nov 30 (Post 3)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":75000000,\"updated_at\":\"2026-11-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"advertiser_domain\":\"fernwick.io\",\"bid_strategy\":\"AUTO\",\"campaign_id\":\"qsnrq\",\"daily_budget_amount_local_micro\":30000000,\"end_time\":\"2026-11-29T05:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"LI-D \u2014 Urgency / ends Nov 30 (Post 3)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T05:00:00Z\",\"total_budget_amount_local_micro\":75000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-24T05:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "line_item_id": "q9hid",
+      "operator_type": "EQ",
+      "targeting_type": "LOCATION",
+      "targeting_value": "96683cc9126741d1"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2026-11-24T05:00:00Z\",\"deleted\":false,\"id\":\"aiqwml8\",\"line_item_id\":\"q9hid\",\"location_type\":\"COUNTRIES\",\"name\":\"United States\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\",\"updated_at\":\"2026-11-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"line_item_id\":\"q9hid\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-24T05:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "line_item_id": "q9hid",
+      "operator_type": "EQ",
+      "targeting_type": "LOCATION",
+      "targeting_value": "3376992a082d67c7"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2026-11-24T05:00:00Z\",\"deleted\":false,\"id\":\"s0gkw8l\",\"line_item_id\":\"q9hid\",\"location_type\":\"COUNTRIES\",\"name\":\"Canada\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3376992a082d67c7\",\"updated_at\":\"2026-11-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"line_item_id\":\"q9hid\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3376992a082d67c7\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-24T05:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "line_item_id": "iz2u8",
+      "operator_type": "EQ",
+      "targeting_type": "LOCATION",
+      "targeting_value": "96683cc9126741d1"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2026-11-24T05:00:00Z\",\"deleted\":false,\"id\":\"m7gv53c\",\"line_item_id\":\"iz2u8\",\"location_type\":\"COUNTRIES\",\"name\":\"United States\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\",\"updated_at\":\"2026-11-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"line_item_id\":\"iz2u8\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-24T05:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "line_item_id": "iz2u8",
+      "operator_type": "EQ",
+      "targeting_type": "LOCATION",
+      "targeting_value": "3376992a082d67c7"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2026-11-24T05:00:00Z\",\"deleted\":false,\"id\":\"tmfal3b\",\"line_item_id\":\"iz2u8\",\"location_type\":\"COUNTRIES\",\"name\":\"Canada\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3376992a082d67c7\",\"updated_at\":\"2026-11-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"line_item_id\":\"iz2u8\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3376992a082d67c7\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-24T05:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "line_item_id": "q9hid",
+      "tweet_ids": "2123461297568149236"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2026-11-24T05:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"5gylci\",\"line_item_id\":\"q9hid\",\"tweet_id\":\"2123461297568149236\",\"updated_at\":\"2026-11-24T05:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"line_item_id\":\"q9hid\",\"tweet_ids\":[\"2123461297568149236\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-24T05:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "line_item_id": "iz2u8",
+      "tweet_ids": "2123642491501123261"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2026-11-24T05:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"b77qp2\",\"line_item_id\":\"iz2u8\",\"tweet_id\":\"2123642491501123261\",\"updated_at\":\"2026-11-24T05:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"line_item_id\":\"iz2u8\",\"tweet_ids\":[\"2123642491501123261\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-24T05:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "line_item_id": "q9hid"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"fernwick.io\",\"advertiser_user_id\":\"1848590101511439981\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"qsnrq\",\"categories\":[],\"created_at\":\"2026-11-24T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":40000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-29T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"qctl2d\",\"goal\":\"LINK_CLICKS\",\"id\":\"q9hid\",\"ios_app_store_identifier\":null,\"name\":\"LI-C \u2014 One SDK / US-CA (Post 2)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":125000000,\"updated_at\":\"2026-11-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"line_item_id\":\"q9hid\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-24T05:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "line_item_id": "iz2u8"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"fernwick.io\",\"advertiser_user_id\":\"1848590101511439981\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"qsnrq\",\"categories\":[],\"created_at\":\"2026-11-24T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":30000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-29T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"qctl2d\",\"goal\":\"LINK_CLICKS\",\"id\":\"iz2u8\",\"ios_app_store_identifier\":null,\"name\":\"LI-D \u2014 Urgency / ends Nov 30 (Post 3)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":75000000,\"updated_at\":\"2026-11-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"line_item_id\":\"iz2u8\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-24T05:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2026-11-25T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2026-11-29T06:00:00Z\",\"now\":\"2026-11-25T05:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-25T05:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "end_time": "2026-11-25T05:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "bxj0m,vjd3w,q9hid,iz2u8",
+      "granularity": "TOTAL",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2026-11-21T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"bxj0m\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[95034130],\"billed_engagements\":[817],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[44],\"engagements\":[817],\"follows\":null,\"impressions\":[130093],\"likes\":[21],\"link_clicks\":[44],\"qualified_impressions\":[130093],\"replies\":[2],\"retweets\":null},\"segment\":null}]},{\"id\":\"vjd3w\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[68784288],\"billed_engagements\":[783],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[25],\"engagements\":[783],\"follows\":null,\"impressions\":[117946],\"likes\":[19],\"link_clicks\":[25],\"qualified_impressions\":[117946],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"q9hid\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[39430020],\"billed_engagements\":[186],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[24],\"engagements\":[186],\"follows\":null,\"impressions\":[23652],\"likes\":[5],\"link_clicks\":[24],\"qualified_impressions\":[23652],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"iz2u8\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[25880330],\"billed_engagements\":[72],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[13],\"engagements\":[72],\"follows\":null,\"impressions\":[10769],\"likes\":[1],\"link_clicks\":[13],\"qualified_impressions\":[10769],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-11-25T05:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"bxj0m\",\"vjd3w\",\"q9hid\",\"iz2u8\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-21T05:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-25T05:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "line_item_id": "vjd3w",
+      "total_budget_amount_local_micro": 70000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"fernwick.io\",\"advertiser_user_id\":\"1848590101511439981\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"qsnrq\",\"categories\":[\"IAB19\"],\"created_at\":\"2026-11-21T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":40000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-29T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"qctl2d\",\"goal\":\"LINK_CLICKS\",\"id\":\"vjd3w\",\"ios_app_store_identifier\":null,\"name\":\"LI-B \u2014 $0 for 60 days (Post 4)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":70000000,\"updated_at\":\"2026-11-25T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"line_item_id\":\"vjd3w\",\"total_budget_amount_local_micro\":70000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-25T05:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "line_item_id": "q9hid",
+      "total_budget_amount_local_micro": 200000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"fernwick.io\",\"advertiser_user_id\":\"1848590101511439981\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"qsnrq\",\"categories\":[],\"created_at\":\"2026-11-24T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":40000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-29T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"qctl2d\",\"goal\":\"LINK_CLICKS\",\"id\":\"q9hid\",\"ios_app_store_identifier\":null,\"name\":\"LI-C \u2014 One SDK / US-CA (Post 2)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":200000000,\"updated_at\":\"2026-11-25T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"line_item_id\":\"q9hid\",\"total_budget_amount_local_micro\":200000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-25T05:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "line_item_id": "bxj0m",
+      "total_budget_amount_local_micro": 155000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"fernwick.io\",\"advertiser_user_id\":\"1848590101511439981\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"qsnrq\",\"categories\":[],\"created_at\":\"2026-11-21T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":60000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-29T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"qctl2d\",\"goal\":\"LINK_CLICKS\",\"id\":\"bxj0m\",\"ios_app_store_identifier\":null,\"name\":\"LI-A \u2014 Crash pain point (Post 1)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":155000000,\"updated_at\":\"2026-11-25T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"line_item_id\":\"bxj0m\",\"total_budget_amount_local_micro\":155000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-25T05:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2026-11-26T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2026-11-29T06:00:00Z\",\"now\":\"2026-11-26T05:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-26T05:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "end_time": "2026-11-26T05:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "bxj0m,vjd3w,q9hid,iz2u8",
+      "granularity": "TOTAL",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2026-11-21T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"bxj0m\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[110461119],\"billed_engagements\":[911],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[51],\"engagements\":[911],\"follows\":null,\"impressions\":[145626],\"likes\":[24],\"link_clicks\":[51],\"qualified_impressions\":[145626],\"replies\":[2],\"retweets\":null},\"segment\":null}]},{\"id\":\"vjd3w\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[68784288],\"billed_engagements\":[794],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[25],\"engagements\":[794],\"follows\":null,\"impressions\":[118973],\"likes\":[20],\"link_clicks\":[25],\"qualified_impressions\":[118973],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"q9hid\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[79168388],\"billed_engagements\":[355],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[51],\"engagements\":[355],\"follows\":null,\"impressions\":[43856],\"likes\":[9],\"link_clicks\":[51],\"qualified_impressions\":[43856],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"iz2u8\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[41229601],\"billed_engagements\":[148],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[22],\"engagements\":[148],\"follows\":null,\"impressions\":[21574],\"likes\":[1],\"link_clicks\":[22],\"qualified_impressions\":[21574],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-11-26T05:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"bxj0m\",\"vjd3w\",\"q9hid\",\"iz2u8\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-21T05:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-26T05:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2026-11-27T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2026-11-29T06:00:00Z\",\"now\":\"2026-11-27T05:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-27T05:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "end_time": "2026-11-27T05:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "bxj0m,vjd3w,q9hid,iz2u8",
+      "granularity": "TOTAL",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2026-11-21T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"bxj0m\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[121875906],\"billed_engagements\":[1003],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[56],\"engagements\":[1003],\"follows\":null,\"impressions\":[159435],\"likes\":[28],\"link_clicks\":[56],\"qualified_impressions\":[159435],\"replies\":[2],\"retweets\":null},\"segment\":null}]},{\"id\":\"vjd3w\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[68784288],\"billed_engagements\":[795],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[25],\"engagements\":[795],\"follows\":null,\"impressions\":[119367],\"likes\":[20],\"link_clicks\":[25],\"qualified_impressions\":[119367],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"q9hid\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[118408646],\"billed_engagements\":[661],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[77],\"engagements\":[661],\"follows\":null,\"impressions\":[85759],\"likes\":[16],\"link_clicks\":[77],\"qualified_impressions\":[85759],\"replies\":null,\"retweets\":[1]},\"segment\":null}]},{\"id\":\"iz2u8\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[56103442],\"billed_engagements\":[203],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[30],\"engagements\":[203],\"follows\":null,\"impressions\":[29290],\"likes\":[2],\"link_clicks\":[30],\"qualified_impressions\":[29290],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-11-27T05:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"bxj0m\",\"vjd3w\",\"q9hid\",\"iz2u8\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-21T05:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-27T05:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "line_item_id": "bxj0m",
+      "total_budget_amount_local_micro": 145000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"fernwick.io\",\"advertiser_user_id\":\"1848590101511439981\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"qsnrq\",\"categories\":[],\"created_at\":\"2026-11-21T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":60000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-29T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"qctl2d\",\"goal\":\"LINK_CLICKS\",\"id\":\"bxj0m\",\"ios_app_store_identifier\":null,\"name\":\"LI-A \u2014 Crash pain point (Post 1)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":145000000,\"updated_at\":\"2026-11-27T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"line_item_id\":\"bxj0m\",\"total_budget_amount_local_micro\":145000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-27T05:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "line_item_id": "iz2u8",
+      "total_budget_amount_local_micro": 85000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"fernwick.io\",\"advertiser_user_id\":\"1848590101511439981\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"qsnrq\",\"categories\":[],\"created_at\":\"2026-11-24T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":30000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-29T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"qctl2d\",\"goal\":\"LINK_CLICKS\",\"id\":\"iz2u8\",\"ios_app_store_identifier\":null,\"name\":\"LI-D \u2014 Urgency / ends Nov 30 (Post 3)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":85000000,\"updated_at\":\"2026-11-27T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"line_item_id\":\"iz2u8\",\"total_budget_amount_local_micro\":85000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-27T05:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2026-11-28T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2026-11-29T06:00:00Z\",\"now\":\"2026-11-28T05:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-28T05:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "end_time": "2026-11-28T05:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "bxj0m,vjd3w,q9hid,iz2u8",
+      "granularity": "TOTAL",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2026-11-21T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"bxj0m\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[127852139],\"billed_engagements\":[1088],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[59],\"engagements\":[1088],\"follows\":null,\"impressions\":[172780],\"likes\":[32],\"link_clicks\":[59],\"qualified_impressions\":[172780],\"replies\":[2],\"retweets\":null},\"segment\":null}]},{\"id\":\"vjd3w\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[68784288],\"billed_engagements\":[799],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[25],\"engagements\":[799],\"follows\":null,\"impressions\":[120059],\"likes\":[20],\"link_clicks\":[25],\"qualified_impressions\":[120059],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"q9hid\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[155347798],\"billed_engagements\":[901],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[107],\"engagements\":[901],\"follows\":null,\"impressions\":[122877],\"likes\":[19],\"link_clicks\":[107],\"qualified_impressions\":[122877],\"replies\":null,\"retweets\":[2]},\"segment\":null}]},{\"id\":\"iz2u8\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[74294361],\"billed_engagements\":[272],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[42],\"engagements\":[272],\"follows\":null,\"impressions\":[39283],\"likes\":[2],\"link_clicks\":[42],\"qualified_impressions\":[39283],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-11-28T05:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"bxj0m\",\"vjd3w\",\"q9hid\",\"iz2u8\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-21T05:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-28T05:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2026-11-29T05:30:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"error\":\"until must be on the hour\"}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2026-11-28T05:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2026-11-29T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2026-11-29T06:00:00Z\",\"now\":\"2026-11-29T06:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-29T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "end_time": "2026-11-29T06:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "bxj0m,vjd3w,q9hid,iz2u8",
+      "granularity": "TOTAL",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2026-11-21T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"errors\":[{\"code\":\"INVALID_TIME_WINDOW\",\"message\":\"The end_time (2026-11-29 06:00:00 +0000) can be a maximum of 7.days+1.hours after the start_time (2026-11-21 05:00:00 +0000)\",\"parameter\":\"\"}],\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"end_time\":\"2026-11-29T06:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"bxj0m\",\"vjd3w\",\"q9hid\",\"iz2u8\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"start_time\":\"2026-11-21T05:00:00Z\"}}}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2026-11-29T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "end_time": "2026-11-29T06:00:00Z",
+      "entity": "ACCOUNT",
+      "entity_ids": "184hxd2iszy",
+      "granularity": "TOTAL",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2026-11-21T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"errors\":[{\"code\":\"INVALID_TIME_WINDOW\",\"message\":\"The end_time (2026-11-29 06:00:00 +0000) can be a maximum of 7.days+1.hours after the start_time (2026-11-21 05:00:00 +0000)\",\"parameter\":\"\"}],\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"end_time\":\"2026-11-29T06:00:00Z\",\"entity\":\"ACCOUNT\",\"entity_ids\":[\"184hxd2iszy\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"start_time\":\"2026-11-21T05:00:00Z\"}}}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2026-11-29T06:00:00Z",
+    "tool": "list_line_items",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "campaign_ids": "qsnrq"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"advertiser_domain\":\"fernwick.io\",\"advertiser_user_id\":\"1848590101511439981\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"qsnrq\",\"categories\":[],\"created_at\":\"2026-11-21T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":60000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-29T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"qctl2d\",\"goal\":\"LINK_CLICKS\",\"id\":\"bxj0m\",\"ios_app_store_identifier\":null,\"name\":\"LI-A \u2014 Crash pain point (Post 1)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":145000000,\"updated_at\":\"2026-11-27T05:00:00Z\"},{\"advertiser_domain\":\"fernwick.io\",\"advertiser_user_id\":\"1848590101511439981\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"qsnrq\",\"categories\":[\"IAB19\"],\"created_at\":\"2026-11-21T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":40000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-29T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"qctl2d\",\"goal\":\"LINK_CLICKS\",\"id\":\"vjd3w\",\"ios_app_store_identifier\":null,\"name\":\"LI-B \u2014 $0 for 60 days (Post 4)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":70000000,\"updated_at\":\"2026-11-25T05:00:00Z\"},{\"advertiser_domain\":\"fernwick.io\",\"advertiser_user_id\":\"1848590101511439981\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"qsnrq\",\"categories\":[],\"created_at\":\"2026-11-24T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":40000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-29T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"qctl2d\",\"goal\":\"LINK_CLICKS\",\"id\":\"q9hid\",\"ios_app_store_identifier\":null,\"name\":\"LI-C \u2014 One SDK / US-CA (Post 2)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":200000000,\"updated_at\":\"2026-11-25T05:00:00Z\"},{\"advertiser_domain\":\"fernwick.io\",\"advertiser_user_id\":\"1848590101511439981\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"qsnrq\",\"categories\":[],\"created_at\":\"2026-11-24T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":30000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-29T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"qctl2d\",\"goal\":\"LINK_CLICKS\",\"id\":\"iz2u8\",\"ios_app_store_identifier\":null,\"name\":\"LI-D \u2014 Urgency / ends Nov 30 (Post 3)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":85000000,\"updated_at\":\"2026-11-27T05:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"campaign_ids\":[\"qsnrq\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-29T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "end_time": "2026-11-29T05:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "bxj0m,vjd3w,q9hid,iz2u8",
+      "granularity": "TOTAL",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2026-11-28T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"bxj0m\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[15753026],\"billed_engagements\":[82],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[9],\"engagements\":[82],\"follows\":null,\"impressions\":[13254],\"likes\":null,\"link_clicks\":[9],\"qualified_impressions\":[13254],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"vjd3w\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":null,\"billed_engagements\":[25],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":null,\"engagements\":[25],\"follows\":null,\"impressions\":[3431],\"likes\":[2],\"link_clicks\":null,\"qualified_impressions\":[3431],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"q9hid\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[32330819],\"billed_engagements\":[232],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[28],\"engagements\":[232],\"follows\":null,\"impressions\":[30390],\"likes\":[6],\"link_clicks\":[28],\"qualified_impressions\":[30390],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"iz2u8\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[9770216],\"billed_engagements\":[96],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[6],\"engagements\":[96],\"follows\":null,\"impressions\":[15169],\"likes\":[2],\"link_clicks\":[6],\"qualified_impressions\":[15169],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-11-29T05:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"bxj0m\",\"vjd3w\",\"q9hid\",\"iz2u8\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-28T05:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-29T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "end_time": "2026-11-29T05:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "bxj0m,vjd3w,q9hid,iz2u8",
+      "granularity": "TOTAL",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2026-11-22T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"bxj0m\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[121629684],\"billed_engagements\":[946],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[57],\"engagements\":[946],\"follows\":null,\"impressions\":[151102],\"likes\":[27],\"link_clicks\":[57],\"qualified_impressions\":[151102],\"replies\":[2],\"retweets\":null},\"segment\":null}]},{\"id\":\"vjd3w\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[47248289],\"billed_engagements\":[594],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[16],\"engagements\":[594],\"follows\":null,\"impressions\":[88249],\"likes\":[19],\"link_clicks\":[16],\"qualified_impressions\":[88249],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"q9hid\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[187678617],\"billed_engagements\":[1144],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[135],\"engagements\":[1144],\"follows\":null,\"impressions\":[155691],\"likes\":[26],\"link_clicks\":[135],\"qualified_impressions\":[155691],\"replies\":null,\"retweets\":[2]},\"segment\":null}]},{\"id\":\"iz2u8\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[84064577],\"billed_engagements\":[370],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[48],\"engagements\":[370],\"follows\":null,\"impressions\":[54761],\"likes\":[4],\"link_clicks\":[48],\"qualified_impressions\":[54761],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-11-29T05:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"bxj0m\",\"vjd3w\",\"q9hid\",\"iz2u8\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-22T05:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-29T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "end_time": "2026-11-28T05:00:00Z",
+      "entity": "ACCOUNT",
+      "entity_ids": "184hxd2iszy",
+      "granularity": "TOTAL",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2026-11-21T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"184hxd2iszy\",\"id_data\":[{\"metrics\":{\"engagements\":[3080],\"follows\":null,\"impressions\":[458393],\"likes\":[74],\"replies\":[2],\"retweets\":[2]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-11-28T05:00:00Z\",\"entity\":\"ACCOUNT\",\"entity_ids\":null,\"granularity\":\"TOTAL\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-21T05:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-29T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "end_time": "2026-11-29T05:00:00Z",
+      "entity": "ACCOUNT",
+      "entity_ids": "184hxd2iszy",
+      "granularity": "TOTAL",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2026-11-28T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"184hxd2iszy\",\"id_data\":[{\"metrics\":{\"engagements\":[435],\"follows\":null,\"impressions\":[62244],\"likes\":[10],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-11-29T05:00:00Z\",\"entity\":\"ACCOUNT\",\"entity_ids\":null,\"granularity\":\"TOTAL\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-28T05:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-29T06:00:00Z",
+    "tool": "update_campaign",
+    "arguments": {
+      "account_id": "184hxd2iszy",
+      "campaign_id": "qsnrq",
+      "entity_status": "PAUSED"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2026-11-21T05:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"PAUSED\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"qctl2d\",\"id\":\"qsnrq\",\"name\":\"Fernwick BFCM 2026 \u2014 Signups (US/CA)\",\"purchase_order_number\":null,\"reasons_not_servable\":[\"EXPIRED\",\"PAUSED_BY_ADVERTISER\"],\"servable\":false,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2026-11-29T06:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184hxd2iszy\",\"campaign_id\":\"qsnrq\",\"entity_status\":\"PAUSED\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

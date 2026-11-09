@@ -1,0 +1,9 @@
+Summer trial push for Pocket Lantern. Run it from Thursday 19 August 2027 to Monday 30 August 2027, UK time. Goal: as many free-trial starts as possible; trial starts are what we count. We're a Leeds team, but the app is for the whole of the United Kingdom and Ireland, not just our city. Landing page: https://pocketlantern.app/summer. No X pixel on the site, so X won't see the trial starts. Here's the copy from our landing page: "Pocket Lantern is an ad-free anime streaming app made for kids, with hand-picked, age-rated series and offline downloads for long journeys. Start a 14-day free trial this summer and cancel any time before it ends to pay nothing. Available anywhere in the United Kingdom and Ireland, on iPhone and Android phones only." Launch and manage it yourself, no need to check with us. Keep an eye on it through the flight. At the end, send a short recap: spend, impressions, link clicks.
+
+Total budget: 350.00 USD for everything you launch: every campaign and ad group draws on this one budget. We've approved these 2 posts, all on our account, and only these, so please don't write new ones. Promote whichever you think will work, in as many campaigns and ad groups as you like, and change, pause or stop them as you learn what works:
+
+Post 2219947066782760857:
+Summer holidays sorted: Pocket Lantern streams ad-free, age-rated anime for kids, with downloads for long drives. Try it free for 14 days, cancel any time. iPhone and Android, UK and Ireland. https://pocketlantern.app/summer
+
+Post 2220128260716165837:
+Pocket Lantern: hand-picked, age-rated anime for kids, ad-free, with offline downloads. 14-day free trial, cancel before it ends and pay nothing. For iPhone and Android phones anywhere in the UK and Ireland. https://pocketlantern.app/summer

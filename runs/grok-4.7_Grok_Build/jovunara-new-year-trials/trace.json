@@ -1,0 +1,1405 @@
+[
+  {
+    "at": "2027-01-05T18:00:00Z",
+    "tool": "get_current_time",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-01-08T19:00:00Z\",\"now\":\"2027-01-05T18:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T18:00:00Z",
+    "tool": "list_ads_accounts",
+    "arguments": {
+      "with_total_count": true
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"business_id\":null,\"business_name\":null,\"country_code\":\"BD\",\"created_at\":\"2024-05-24T18:00:00Z\",\"deleted\":false,\"id\":\"18j8o7ylhlb\",\"industry_type\":null,\"name\":\"Jovunara Pilates\",\"timezone\":\"Asia/Dhaka\",\"timezone_switch_at\":\"2024-05-24T18:00:00Z\",\"updated_at\":\"2024-05-24T18:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"with_total_count\":true}},\"total_count\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T18:00:00Z",
+    "tool": "list_funding_instruments",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "with_total_count": true
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"able_to_fund\":true,\"created_at\":\"2024-05-24T18:00:00Z\",\"credit_limit_local_micro\":null,\"credit_remaining_local_micro\":null,\"currency\":\"USD\",\"deleted\":false,\"description\":\"Visa ending in 0780\",\"end_time\":null,\"entity_status\":\"ACTIVE\",\"funded_amount_local_micro\":0,\"id\":\"38di22\",\"io_header\":null,\"reasons_not_able_to_fund\":[],\"start_time\":\"2024-05-24T18:00:00Z\",\"type\":\"CREDIT_CARD\",\"updated_at\":\"2024-05-24T18:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"with_total_count\":true}},\"total_count\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T18:00:00Z",
+    "tool": "search_targeting_platforms",
+    "arguments": {
+      "q": "ios",
+      "count": 50
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"name\":\"iOS\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\"}],\"request\":{\"params\":{\"count\":50,\"q\":\"ios\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T18:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "q": "China",
+      "location_type": "COUNTRIES",
+      "count": 20
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"country_code\":\"CN\",\"location_type\":\"COUNTRIES\",\"name\":\"China\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"4797714c95971ac1\"},{\"country_code\":\"HK\",\"location_type\":\"COUNTRIES\",\"name\":\"Hong Kong SAR China\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"35fd5bacecc4c6e5\"}],\"next_cursor\":null,\"request\":{\"params\":{\"count\":20,\"location_type\":\"COUNTRIES\",\"q\":\"China\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T18:00:00Z",
+    "tool": "list_line_item_placements",
+    "arguments": {
+      "product_type": "PROMOTED_TWEETS"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"placements\":[[\"ALL_ON_TWITTER\"],[\"ALL_ON_TWITTER\",\"PUBLISHER_NETWORK\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL_LANDSCAPE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_NATIVE\"],[\"PUBLISHER_NETWORK\"],[\"PUBLISHER_NETWORK\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"PUBLISHER_NETWORK\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"PUBLISHER_NETWORK\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"PUBLISHER_NETWORK\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\"],[\"TAP_BANNER\",\"TAP_FULL\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_NATIVE\"],[\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\"],[\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_NATIVE\"],[\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TWITTER_MEDIA_VIEWER\"],[\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TWITTER_REPLIES\"],[\"TWITTER_SEARCH\"],[\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TWITTER_TIMELINE\"]],\"product_type\":\"PROMOTED_TWEETS\"}],\"next_cursor\":null,\"request\":{\"params\":{\"product_type\":\"PROMOTED_TWEETS\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T18:00:00Z",
+    "tool": "list_account_posts",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "tweet_type": "PUBLISHED",
+      "tweet_ids": "2138696687416686580,2138877881350341546,2139059075284323251",
+      "timeline_type": "ALL"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Fri Jan 01 18:00:00 +0000 2027\",\"display_text_range\":[0,204],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"jovunarapilates.app/start\",\"expanded_url\":\"https://jovunarapilates.app/start\",\"indices\":[181,204],\"url\":\"https://t.co/pXhDftPEzZ\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Give your New Year resolution a starting date. Begin your 7-day free trial of Jovunara Pilates by January 10, 2027, and make room for nine-minute back-care routines on your iPhone. https://t.co/pXhDftPEzZ\",\"geo\":null,\"id\":2139059075284323251,\"id_str\":\"2139059075284323251\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2139059075284323251\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Fri May 24 18:00:00 +0000 2024\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":337,\"follow_request_sent\":null,\"followers_count\":7037,\"following\":null,\"friends_count\":287,\"geo_enabled\":false,\"id\":1794065827233773597,\"id_str\":\"1794065827233773597\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":57,\"location\":\"\",\"name\":\"Jovunara Pilates\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1794065827233773597/1616574237\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1983216612916574237/5o17aSTy_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1983216612916574237/5o17aSTy_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"JovunaraPilates\",\"statuses_count\":2537,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Fri Jan 01 06:00:00 +0000 2027\",\"display_text_range\":[0,204],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"jovunarapilates.app/start\",\"expanded_url\":\"https://jovunarapilates.app/start\",\"indices\":[181,204],\"url\":\"https://t.co/W4mRVU9QQM\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Nine-minute guided Pilates routines for everyday back care. Start Jovunara Pilates with a 7-day free trial by January 10, 2027. iPhone (iOS) only; available worldwide except China. https://t.co/W4mRVU9QQM\",\"geo\":null,\"id\":2138877881350341546,\"id_str\":\"2138877881350341546\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2138877881350341546\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Fri May 24 18:00:00 +0000 2024\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":337,\"follow_request_sent\":null,\"followers_count\":7037,\"following\":null,\"friends_count\":287,\"geo_enabled\":false,\"id\":1794065827233773597,\"id_str\":\"1794065827233773597\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":57,\"location\":\"\",\"name\":\"Jovunara Pilates\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1794065827233773597/1616574237\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1983216612916574237/5o17aSTy_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1983216612916574237/5o17aSTy_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"JovunaraPilates\",\"statuses_count\":2537,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Thu Dec 31 18:00:00 +0000 2026\",\"display_text_range\":[0,191],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"jovunarapilates.app/start\",\"expanded_url\":\"https://jovunarapilates.app/start\",\"indices\":[168,191],\"url\":\"https://t.co/GKYCKFGk47\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Close the laptop. Make nine minutes for your back. Jovunara Pilates brings guided back-care routines to your iPhone. Begin your New Year habit with a 7-day free trial: https://t.co/GKYCKFGk47\",\"geo\":null,\"id\":2138696687416686580,\"id_str\":\"2138696687416686580\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":false,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2138696687416686580\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Fri May 24 18:00:00 +0000 2024\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":337,\"follow_request_sent\":null,\"followers_count\":7037,\"following\":null,\"friends_count\":287,\"geo_enabled\":false,\"id\":1794065827233773597,\"id_str\":\"1794065827233773597\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":57,\"location\":\"\",\"name\":\"Jovunara Pilates\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1794065827233773597/1616574237\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1983216612916574237/5o17aSTy_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1983216612916574237/5o17aSTy_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"JovunaraPilates\",\"statuses_count\":2537,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"timeline_type\":\"ALL\",\"tweet_ids\":[\"2138696687416686580\",\"2138877881350341546\",\"2139059075284323251\"],\"tweet_type\":\"PUBLISHED\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T18:00:00Z",
+    "tool": "search_targeting_interests",
+    "arguments": {
+      "q": "pilates",
+      "count": 20
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"request\":{\"params\":{\"count\":20,\"q\":\"pilates\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T18:00:00Z",
+    "tool": "search_targeting_interests",
+    "arguments": {
+      "q": "fitness",
+      "count": 20
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"name\":\"Health & Fitness\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925949856834588672\"},{\"name\":\"Health & Fitness / Nutrition\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925953366091350017\"},{\"name\":\"Health & Fitness / Workouts\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925953337020555264\"}],\"request\":{\"params\":{\"count\":20,\"q\":\"fitness\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T18:00:00Z",
+    "tool": "search_targeting_interests",
+    "arguments": {
+      "q": "yoga",
+      "count": 10
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"request\":{\"params\":{\"count\":10,\"q\":\"yoga\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T18:00:00Z",
+    "tool": "list_campaigns",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "with_total_count": true,
+      "count": 50
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"count\":50,\"with_total_count\":true}},\"total_count\":0}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T18:00:00Z",
+    "tool": "list_web_event_tags",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "with_total_count": true
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"with_total_count\":true}},\"total_count\":0}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T18:00:00Z",
+    "tool": "create_campaign",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "funding_instrument_id": "38di22",
+      "name": "Jovunara NY trial starts 6-8 Jan 2027"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-01-05T18:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"PAUSED\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"38di22\",\"id\":\"ujomx\",\"name\":\"Jovunara NY trial starts 6-8 Jan 2027\",\"purchase_order_number\":null,\"reasons_not_servable\":[\"PAUSED_BY_ADVERTISER\"],\"servable\":false,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-01-05T18:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"funding_instrument_id\":\"38di22\",\"name\":\"Jovunara NY trial starts 6-8 Jan 2027\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T18:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "campaign_id": "ujomx",
+      "name": "iOS link clicks \u2014 Close the laptop",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "product_type": "PROMOTED_TWEETS",
+      "placements": "TWITTER_TIMELINE,TWITTER_PROFILE,TWITTER_SEARCH",
+      "daily_budget_amount_local_micro": 72220000,
+      "total_budget_amount_local_micro": 216660000,
+      "start_time": "2027-01-05T18:00:00Z",
+      "end_time": "2027-01-08T18:00:00Z",
+      "bid_strategy": "AUTO",
+      "standard_delivery": true,
+      "audience_expansion": "DEFINED",
+      "advertiser_domain": "jovunarapilates.app"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"jovunarapilates.app\",\"advertiser_user_id\":\"1794065827233773597\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ujomx\",\"categories\":[],\"created_at\":\"2027-01-05T18:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":72220000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-08T18:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"38di22\",\"goal\":\"LINK_CLICKS\",\"id\":\"dqmmz\",\"ios_app_store_identifier\":null,\"name\":\"iOS link clicks \u2014 Close the laptop\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"TWITTER_TIMELINE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-05T18:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":216660000,\"updated_at\":\"2027-01-05T18:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"advertiser_domain\":\"jovunarapilates.app\",\"audience_expansion\":\"DEFINED\",\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ujomx\",\"daily_budget_amount_local_micro\":72220000,\"end_time\":\"2027-01-08T18:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"iOS link clicks \u2014 Close the laptop\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"TWITTER_TIMELINE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\"],\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-05T18:00:00Z\",\"total_budget_amount_local_micro\":216660000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T18:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "campaign_id": "ujomx",
+      "name": "iOS link clicks \u2014 Nine-minute routines",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "product_type": "PROMOTED_TWEETS",
+      "placements": "TWITTER_TIMELINE,TWITTER_PROFILE,TWITTER_SEARCH",
+      "daily_budget_amount_local_micro": 72220000,
+      "total_budget_amount_local_micro": 216670000,
+      "start_time": "2027-01-05T18:00:00Z",
+      "end_time": "2027-01-08T18:00:00Z",
+      "bid_strategy": "AUTO",
+      "standard_delivery": true,
+      "audience_expansion": "DEFINED",
+      "advertiser_domain": "jovunarapilates.app"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"jovunarapilates.app\",\"advertiser_user_id\":\"1794065827233773597\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ujomx\",\"categories\":[],\"created_at\":\"2027-01-05T18:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":72220000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-08T18:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"38di22\",\"goal\":\"LINK_CLICKS\",\"id\":\"ym4ru\",\"ios_app_store_identifier\":null,\"name\":\"iOS link clicks \u2014 Nine-minute routines\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"TWITTER_TIMELINE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-05T18:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":216670000,\"updated_at\":\"2027-01-05T18:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"advertiser_domain\":\"jovunarapilates.app\",\"audience_expansion\":\"DEFINED\",\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ujomx\",\"daily_budget_amount_local_micro\":72220000,\"end_time\":\"2027-01-08T18:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"iOS link clicks \u2014 Nine-minute routines\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"TWITTER_TIMELINE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\"],\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-05T18:00:00Z\",\"total_budget_amount_local_micro\":216670000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T18:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "campaign_id": "ujomx",
+      "name": "iOS link clicks \u2014 Resolution date",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "product_type": "PROMOTED_TWEETS",
+      "placements": "TWITTER_TIMELINE,TWITTER_PROFILE,TWITTER_SEARCH",
+      "daily_budget_amount_local_micro": 72230000,
+      "total_budget_amount_local_micro": 216670000,
+      "start_time": "2027-01-05T18:00:00Z",
+      "end_time": "2027-01-08T18:00:00Z",
+      "bid_strategy": "AUTO",
+      "standard_delivery": true,
+      "audience_expansion": "DEFINED",
+      "advertiser_domain": "jovunarapilates.app"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"jovunarapilates.app\",\"advertiser_user_id\":\"1794065827233773597\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ujomx\",\"categories\":[],\"created_at\":\"2027-01-05T18:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":72230000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-08T18:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"38di22\",\"goal\":\"LINK_CLICKS\",\"id\":\"hqsz9\",\"ios_app_store_identifier\":null,\"name\":\"iOS link clicks \u2014 Resolution date\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"TWITTER_TIMELINE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-05T18:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":216670000,\"updated_at\":\"2027-01-05T18:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"advertiser_domain\":\"jovunarapilates.app\",\"audience_expansion\":\"DEFINED\",\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ujomx\",\"daily_budget_amount_local_micro\":72230000,\"end_time\":\"2027-01-08T18:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"iOS link clicks \u2014 Resolution date\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"TWITTER_TIMELINE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\"],\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-05T18:00:00Z\",\"total_budget_amount_local_micro\":216670000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T18:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "line_item_id": "dqmmz",
+      "targeting_type": "PLATFORM",
+      "targeting_value": "0",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-05T18:00:00Z\",\"deleted\":false,\"id\":\"4jogkll\",\"line_item_id\":\"dqmmz\",\"name\":\"iOS\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\",\"updated_at\":\"2027-01-05T18:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"line_item_id\":\"dqmmz\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T18:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "line_item_id": "dqmmz",
+      "targeting_type": "LOCATION",
+      "targeting_value": "4797714c95971ac1",
+      "operator_type": "NE"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-05T18:00:00Z\",\"deleted\":false,\"id\":\"29c0spj\",\"line_item_id\":\"dqmmz\",\"location_type\":\"COUNTRIES\",\"name\":\"China\",\"operator_type\":\"NE\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"4797714c95971ac1\",\"updated_at\":\"2027-01-05T18:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"line_item_id\":\"dqmmz\",\"operator_type\":\"NE\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"4797714c95971ac1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T18:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "line_item_id": "dqmmz",
+      "targeting_type": "INTEREST",
+      "targeting_value": "1925949856834588672",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-05T18:00:00Z\",\"deleted\":false,\"id\":\"ff9gp5o\",\"line_item_id\":\"dqmmz\",\"name\":\"Health & Fitness\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925949856834588672\",\"updated_at\":\"2027-01-05T18:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"line_item_id\":\"dqmmz\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925949856834588672\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T18:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "line_item_id": "dqmmz",
+      "targeting_type": "INTEREST",
+      "targeting_value": "1925953337020555264",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-05T18:00:00Z\",\"deleted\":false,\"id\":\"zwvbcx5\",\"line_item_id\":\"dqmmz\",\"name\":\"Health & Fitness / Workouts\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925953337020555264\",\"updated_at\":\"2027-01-05T18:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"line_item_id\":\"dqmmz\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925953337020555264\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T18:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "line_item_id": "ym4ru",
+      "targeting_type": "PLATFORM",
+      "targeting_value": "0",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-05T18:00:00Z\",\"deleted\":false,\"id\":\"t6h9rh0\",\"line_item_id\":\"ym4ru\",\"name\":\"iOS\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\",\"updated_at\":\"2027-01-05T18:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"line_item_id\":\"ym4ru\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T18:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "line_item_id": "ym4ru",
+      "targeting_type": "LOCATION",
+      "targeting_value": "4797714c95971ac1",
+      "operator_type": "NE"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-05T18:00:00Z\",\"deleted\":false,\"id\":\"36x6gkm\",\"line_item_id\":\"ym4ru\",\"location_type\":\"COUNTRIES\",\"name\":\"China\",\"operator_type\":\"NE\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"4797714c95971ac1\",\"updated_at\":\"2027-01-05T18:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"line_item_id\":\"ym4ru\",\"operator_type\":\"NE\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"4797714c95971ac1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T18:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "line_item_id": "ym4ru",
+      "targeting_type": "INTEREST",
+      "targeting_value": "1925949856834588672",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-05T18:00:00Z\",\"deleted\":false,\"id\":\"61o6jq2\",\"line_item_id\":\"ym4ru\",\"name\":\"Health & Fitness\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925949856834588672\",\"updated_at\":\"2027-01-05T18:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"line_item_id\":\"ym4ru\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925949856834588672\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T18:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "line_item_id": "ym4ru",
+      "targeting_type": "INTEREST",
+      "targeting_value": "1925953337020555264",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-05T18:00:00Z\",\"deleted\":false,\"id\":\"h5l3yd2\",\"line_item_id\":\"ym4ru\",\"name\":\"Health & Fitness / Workouts\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925953337020555264\",\"updated_at\":\"2027-01-05T18:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"line_item_id\":\"ym4ru\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925953337020555264\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T18:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "line_item_id": "hqsz9",
+      "targeting_type": "PLATFORM",
+      "targeting_value": "0",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-05T18:00:00Z\",\"deleted\":false,\"id\":\"whwzab8\",\"line_item_id\":\"hqsz9\",\"name\":\"iOS\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\",\"updated_at\":\"2027-01-05T18:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"line_item_id\":\"hqsz9\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T18:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "line_item_id": "hqsz9",
+      "targeting_type": "LOCATION",
+      "targeting_value": "4797714c95971ac1",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-05T18:00:00Z\",\"deleted\":false,\"id\":\"5ih1tu7\",\"line_item_id\":\"hqsz9\",\"location_type\":\"COUNTRIES\",\"name\":\"China\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"4797714c95971ac1\",\"updated_at\":\"2027-01-05T18:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"line_item_id\":\"hqsz9\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"4797714c95971ac1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T18:00:00Z",
+    "tool": "remove_targeting",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "targeting_criterion_id": "5ih1tu7"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-05T18:00:00Z\",\"deleted\":true,\"id\":\"5ih1tu7\",\"line_item_id\":\"hqsz9\",\"location_type\":\"COUNTRIES\",\"name\":\"China\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"4797714c95971ac1\",\"updated_at\":\"2027-01-05T18:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"targeting_criterion_id\":\"5ih1tu7\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T18:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "line_item_id": "hqsz9",
+      "targeting_type": "LOCATION",
+      "targeting_value": "4797714c95971ac1",
+      "operator_type": "NE"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-05T18:00:00Z\",\"deleted\":false,\"id\":\"pc1efa1\",\"line_item_id\":\"hqsz9\",\"location_type\":\"COUNTRIES\",\"name\":\"China\",\"operator_type\":\"NE\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"4797714c95971ac1\",\"updated_at\":\"2027-01-05T18:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"line_item_id\":\"hqsz9\",\"operator_type\":\"NE\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"4797714c95971ac1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T18:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "line_item_id": "hqsz9",
+      "targeting_type": "INTEREST",
+      "targeting_value": "1925949856834588672",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-05T18:00:00Z\",\"deleted\":false,\"id\":\"yan4289\",\"line_item_id\":\"hqsz9\",\"name\":\"Health & Fitness\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925949856834588672\",\"updated_at\":\"2027-01-05T18:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"line_item_id\":\"hqsz9\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925949856834588672\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T18:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "line_item_id": "hqsz9",
+      "targeting_type": "INTEREST",
+      "targeting_value": "1925953337020555264",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-05T18:00:00Z\",\"deleted\":false,\"id\":\"kbbtrvg\",\"line_item_id\":\"hqsz9\",\"name\":\"Health & Fitness / Workouts\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925953337020555264\",\"updated_at\":\"2027-01-05T18:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"line_item_id\":\"hqsz9\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925953337020555264\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T18:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "line_item_id": "dqmmz",
+      "tweet_ids": "2138696687416686580"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-01-05T18:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"h10g44\",\"line_item_id\":\"dqmmz\",\"tweet_id\":\"2138696687416686580\",\"updated_at\":\"2027-01-05T18:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"line_item_id\":\"dqmmz\",\"tweet_ids\":[\"2138696687416686580\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T18:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "line_item_id": "ym4ru",
+      "tweet_ids": "2138877881350341546"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-01-05T18:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"dekbqy\",\"line_item_id\":\"ym4ru\",\"tweet_id\":\"2138877881350341546\",\"updated_at\":\"2027-01-05T18:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"line_item_id\":\"ym4ru\",\"tweet_ids\":[\"2138877881350341546\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T18:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "line_item_id": "hqsz9",
+      "tweet_ids": "2139059075284323251"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-01-05T18:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"4kmjty\",\"line_item_id\":\"hqsz9\",\"tweet_id\":\"2139059075284323251\",\"updated_at\":\"2027-01-05T18:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"line_item_id\":\"hqsz9\",\"tweet_ids\":[\"2139059075284323251\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T18:00:00Z",
+    "tool": "list_targeting_criteria",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "line_item_ids": "dqmmz,ym4ru,hqsz9",
+      "with_deleted": false
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"created_at\":\"2027-01-05T18:00:00Z\",\"deleted\":false,\"id\":\"4jogkll\",\"line_item_id\":\"dqmmz\",\"name\":\"iOS\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\",\"updated_at\":\"2027-01-05T18:00:00Z\"},{\"created_at\":\"2027-01-05T18:00:00Z\",\"deleted\":false,\"id\":\"29c0spj\",\"line_item_id\":\"dqmmz\",\"location_type\":\"COUNTRIES\",\"name\":\"China\",\"operator_type\":\"NE\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"4797714c95971ac1\",\"updated_at\":\"2027-01-05T18:00:00Z\"},{\"created_at\":\"2027-01-05T18:00:00Z\",\"deleted\":false,\"id\":\"ff9gp5o\",\"line_item_id\":\"dqmmz\",\"name\":\"Health & Fitness\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925949856834588672\",\"updated_at\":\"2027-01-05T18:00:00Z\"},{\"created_at\":\"2027-01-05T18:00:00Z\",\"deleted\":false,\"id\":\"zwvbcx5\",\"line_item_id\":\"dqmmz\",\"name\":\"Health & Fitness / Workouts\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925953337020555264\",\"updated_at\":\"2027-01-05T18:00:00Z\"},{\"created_at\":\"2027-01-05T18:00:00Z\",\"deleted\":false,\"id\":\"t6h9rh0\",\"line_item_id\":\"ym4ru\",\"name\":\"iOS\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\",\"updated_at\":\"2027-01-05T18:00:00Z\"},{\"created_at\":\"2027-01-05T18:00:00Z\",\"deleted\":false,\"id\":\"36x6gkm\",\"line_item_id\":\"ym4ru\",\"location_type\":\"COUNTRIES\",\"name\":\"China\",\"operator_type\":\"NE\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"4797714c95971ac1\",\"updated_at\":\"2027-01-05T18:00:00Z\"},{\"created_at\":\"2027-01-05T18:00:00Z\",\"deleted\":false,\"id\":\"61o6jq2\",\"line_item_id\":\"ym4ru\",\"name\":\"Health & Fitness\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925949856834588672\",\"updated_at\":\"2027-01-05T18:00:00Z\"},{\"created_at\":\"2027-01-05T18:00:00Z\",\"deleted\":false,\"id\":\"h5l3yd2\",\"line_item_id\":\"ym4ru\",\"name\":\"Health & Fitness / Workouts\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925953337020555264\",\"updated_at\":\"2027-01-05T18:00:00Z\"},{\"created_at\":\"2027-01-05T18:00:00Z\",\"deleted\":false,\"id\":\"whwzab8\",\"line_item_id\":\"hqsz9\",\"name\":\"iOS\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\",\"updated_at\":\"2027-01-05T18:00:00Z\"},{\"created_at\":\"2027-01-05T18:00:00Z\",\"deleted\":false,\"id\":\"pc1efa1\",\"line_item_id\":\"hqsz9\",\"location_type\":\"COUNTRIES\",\"name\":\"China\",\"operator_type\":\"NE\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"4797714c95971ac1\",\"updated_at\":\"2027-01-05T18:00:00Z\"},{\"created_at\":\"2027-01-05T18:00:00Z\",\"deleted\":false,\"id\":\"yan4289\",\"line_item_id\":\"hqsz9\",\"name\":\"Health & Fitness\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925949856834588672\",\"updated_at\":\"2027-01-05T18:00:00Z\"},{\"created_at\":\"2027-01-05T18:00:00Z\",\"deleted\":false,\"id\":\"kbbtrvg\",\"line_item_id\":\"hqsz9\",\"name\":\"Health & Fitness / Workouts\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925953337020555264\",\"updated_at\":\"2027-01-05T18:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"line_item_ids\":[\"dqmmz\",\"ym4ru\",\"hqsz9\"],\"with_deleted\":false}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T18:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "line_item_id": "dqmmz"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"jovunarapilates.app\",\"advertiser_user_id\":\"1794065827233773597\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ujomx\",\"categories\":[],\"created_at\":\"2027-01-05T18:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":72220000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-08T18:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"38di22\",\"goal\":\"LINK_CLICKS\",\"id\":\"dqmmz\",\"ios_app_store_identifier\":null,\"name\":\"iOS link clicks \u2014 Close the laptop\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"TWITTER_TIMELINE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-05T18:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":216660000,\"updated_at\":\"2027-01-05T18:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"line_item_id\":\"dqmmz\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T18:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "line_item_id": "ym4ru"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"jovunarapilates.app\",\"advertiser_user_id\":\"1794065827233773597\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ujomx\",\"categories\":[],\"created_at\":\"2027-01-05T18:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":72220000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-08T18:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"38di22\",\"goal\":\"LINK_CLICKS\",\"id\":\"ym4ru\",\"ios_app_store_identifier\":null,\"name\":\"iOS link clicks \u2014 Nine-minute routines\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"TWITTER_TIMELINE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-05T18:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":216670000,\"updated_at\":\"2027-01-05T18:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"line_item_id\":\"ym4ru\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T18:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "line_item_id": "hqsz9"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"jovunarapilates.app\",\"advertiser_user_id\":\"1794065827233773597\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ujomx\",\"categories\":[],\"created_at\":\"2027-01-05T18:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":72230000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-08T18:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"38di22\",\"goal\":\"LINK_CLICKS\",\"id\":\"hqsz9\",\"ios_app_store_identifier\":null,\"name\":\"iOS link clicks \u2014 Resolution date\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"TWITTER_TIMELINE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-05T18:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":216670000,\"updated_at\":\"2027-01-05T18:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"line_item_id\":\"hqsz9\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T18:00:00Z",
+    "tool": "activate_campaign",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "campaign_id": "ujomx"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-01-05T18:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"RUNNING\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"38di22\",\"id\":\"ujomx\",\"name\":\"Jovunara NY trial starts 6-8 Jan 2027\",\"purchase_order_number\":null,\"reasons_not_servable\":[],\"servable\":true,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-01-05T18:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"campaign_id\":\"ujomx\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T18:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-01-06T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-01-08T19:00:00Z\",\"now\":\"2027-01-06T06:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-06T06:00:00Z",
+    "tool": "get_active_entities",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "entity": "LINE_ITEM",
+      "start_time": "2027-01-05T18:00:00Z",
+      "end_time": "2027-01-06T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"activity_end_time\":\"2027-01-06T04:00:00Z\",\"activity_start_time\":\"2027-01-05T18:00:00Z\",\"entity_id\":\"ym4ru\",\"placements\":[\"ALL_ON_TWITTER\"]},{\"activity_end_time\":\"2027-01-06T04:00:00Z\",\"activity_start_time\":\"2027-01-05T18:00:00Z\",\"entity_id\":\"hqsz9\",\"placements\":[\"ALL_ON_TWITTER\"]},{\"activity_end_time\":\"2027-01-06T04:00:00Z\",\"activity_start_time\":\"2027-01-05T18:00:00Z\",\"entity_id\":\"dqmmz\",\"placements\":[\"ALL_ON_TWITTER\"]}],\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"end_time\":\"2027-01-06T06:00:00Z\",\"entity\":\"LINE_ITEM\",\"start_time\":\"2027-01-05T18:00:00Z\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-06T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "entity": "PROMOTED_TWEET",
+      "entity_ids": "h10g44,dekbqy,4kmjty",
+      "start_time": "2027-01-05T18:00:00Z",
+      "end_time": "2027-01-06T06:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"h10g44\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[37313928],\"billed_engagements\":[248],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[46],\"engagements\":[248],\"follows\":null,\"impressions\":[37229],\"likes\":[10],\"link_clicks\":[46],\"qualified_impressions\":[37229],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"dekbqy\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[43647083],\"billed_engagements\":[297],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[60],\"engagements\":[297],\"follows\":null,\"impressions\":[33455],\"likes\":[4],\"link_clicks\":[60],\"qualified_impressions\":[33455],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"4kmjty\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[36648863],\"billed_engagements\":[267],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[50],\"engagements\":[267],\"follows\":null,\"impressions\":[33768],\"likes\":[4],\"link_clicks\":[50],\"qualified_impressions\":[33768],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-06T06:00:00Z\",\"entity\":\"PROMOTED_TWEET\",\"entity_ids\":[\"h10g44\",\"dekbqy\",\"4kmjty\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-05T18:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-06T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "entity": "LINE_ITEM",
+      "entity_ids": "dqmmz,ym4ru,hqsz9",
+      "start_time": "2027-01-05T18:00:00Z",
+      "end_time": "2027-01-06T06:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"dqmmz\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[37313928],\"billed_engagements\":[248],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[46],\"engagements\":[248],\"follows\":null,\"impressions\":[37229],\"likes\":[10],\"link_clicks\":[46],\"qualified_impressions\":[37229],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ym4ru\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[43647083],\"billed_engagements\":[297],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[60],\"engagements\":[297],\"follows\":null,\"impressions\":[33455],\"likes\":[4],\"link_clicks\":[60],\"qualified_impressions\":[33455],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"hqsz9\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[36648863],\"billed_engagements\":[267],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[50],\"engagements\":[267],\"follows\":null,\"impressions\":[33768],\"likes\":[4],\"link_clicks\":[50],\"qualified_impressions\":[33768],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-06T06:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"dqmmz\",\"ym4ru\",\"hqsz9\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-05T18:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-06T06:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "line_item_id": "dqmmz",
+      "daily_budget_amount_local_micro": 36000000,
+      "total_budget_amount_local_micro": 110000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"jovunarapilates.app\",\"advertiser_user_id\":\"1794065827233773597\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ujomx\",\"categories\":[],\"created_at\":\"2027-01-05T18:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":36000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-08T18:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"38di22\",\"goal\":\"LINK_CLICKS\",\"id\":\"dqmmz\",\"ios_app_store_identifier\":null,\"name\":\"iOS link clicks \u2014 Close the laptop\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"TWITTER_TIMELINE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-05T18:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":110000000,\"updated_at\":\"2027-01-06T06:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"daily_budget_amount_local_micro\":36000000,\"line_item_id\":\"dqmmz\",\"total_budget_amount_local_micro\":110000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-06T06:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "line_item_id": "ym4ru",
+      "daily_budget_amount_local_micro": 110000000,
+      "total_budget_amount_local_micro": 320000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"jovunarapilates.app\",\"advertiser_user_id\":\"1794065827233773597\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ujomx\",\"categories\":[],\"created_at\":\"2027-01-05T18:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":110000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-08T18:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"38di22\",\"goal\":\"LINK_CLICKS\",\"id\":\"ym4ru\",\"ios_app_store_identifier\":null,\"name\":\"iOS link clicks \u2014 Nine-minute routines\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"TWITTER_TIMELINE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-05T18:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":320000000,\"updated_at\":\"2027-01-06T06:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"daily_budget_amount_local_micro\":110000000,\"line_item_id\":\"ym4ru\",\"total_budget_amount_local_micro\":320000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-06T06:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "line_item_id": "hqsz9",
+      "daily_budget_amount_local_micro": 73000000,
+      "total_budget_amount_local_micro": 220000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"jovunarapilates.app\",\"advertiser_user_id\":\"1794065827233773597\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ujomx\",\"categories\":[],\"created_at\":\"2027-01-05T18:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":73000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-08T18:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"38di22\",\"goal\":\"LINK_CLICKS\",\"id\":\"hqsz9\",\"ios_app_store_identifier\":null,\"name\":\"iOS link clicks \u2014 Resolution date\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"TWITTER_TIMELINE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-05T18:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":220000000,\"updated_at\":\"2027-01-06T06:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"daily_budget_amount_local_micro\":73000000,\"line_item_id\":\"hqsz9\",\"total_budget_amount_local_micro\":220000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-06T06:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-01-06T18:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-01-08T19:00:00Z\",\"now\":\"2027-01-06T18:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-06T18:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "entity": "LINE_ITEM",
+      "entity_ids": "dqmmz,ym4ru,hqsz9",
+      "start_time": "2027-01-05T18:00:00Z",
+      "end_time": "2027-01-06T18:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"dqmmz\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[38675655],\"billed_engagements\":[274],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[48],\"engagements\":[274],\"follows\":null,\"impressions\":[40429],\"likes\":[10],\"link_clicks\":[48],\"qualified_impressions\":[40429],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ym4ru\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[107325024],\"billed_engagements\":[792],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[189],\"engagements\":[792],\"follows\":null,\"impressions\":[90628],\"likes\":[12],\"link_clicks\":[189],\"qualified_impressions\":[90628],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"hqsz9\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[71996800],\"billed_engagements\":[643],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[119],\"engagements\":[643],\"follows\":null,\"impressions\":[80014],\"likes\":[12],\"link_clicks\":[119],\"qualified_impressions\":[80014],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-06T18:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"dqmmz\",\"ym4ru\",\"hqsz9\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-05T18:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-06T18:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "entity": "LINE_ITEM",
+      "entity_ids": "dqmmz,ym4ru,hqsz9",
+      "start_time": "2027-01-06T06:00:00Z",
+      "end_time": "2027-01-06T18:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"dqmmz\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":null,\"billed_engagements\":null,\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":null,\"engagements\":null,\"follows\":null,\"impressions\":null,\"likes\":null,\"link_clicks\":null,\"qualified_impressions\":null,\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ym4ru\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[58909882],\"billed_engagements\":[471],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[121],\"engagements\":[471],\"follows\":null,\"impressions\":[54535],\"likes\":[8],\"link_clicks\":[121],\"qualified_impressions\":[54535],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"hqsz9\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[32905169],\"billed_engagements\":[343],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[65],\"engagements\":[343],\"follows\":null,\"impressions\":[42972],\"likes\":[8],\"link_clicks\":[65],\"qualified_impressions\":[42972],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-06T18:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"dqmmz\",\"ym4ru\",\"hqsz9\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-06T06:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-06T18:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "line_item_id": "dqmmz",
+      "entity_status": "PAUSED",
+      "daily_budget_amount_local_micro": 1000000,
+      "total_budget_amount_local_micro": 39000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"jovunarapilates.app\",\"advertiser_user_id\":\"1794065827233773597\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ujomx\",\"categories\":[],\"created_at\":\"2027-01-05T18:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":1000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-08T18:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"38di22\",\"goal\":\"LINK_CLICKS\",\"id\":\"dqmmz\",\"ios_app_store_identifier\":null,\"name\":\"iOS link clicks \u2014 Close the laptop\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"TWITTER_TIMELINE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-05T18:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":39000000,\"updated_at\":\"2027-01-06T18:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"daily_budget_amount_local_micro\":1000000,\"entity_status\":\"PAUSED\",\"line_item_id\":\"dqmmz\",\"total_budget_amount_local_micro\":39000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-06T18:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "line_item_id": "ym4ru",
+      "daily_budget_amount_local_micro": 142000000,
+      "total_budget_amount_local_micro": 391000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"jovunarapilates.app\",\"advertiser_user_id\":\"1794065827233773597\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ujomx\",\"categories\":[],\"created_at\":\"2027-01-05T18:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":142000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-08T18:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"38di22\",\"goal\":\"LINK_CLICKS\",\"id\":\"ym4ru\",\"ios_app_store_identifier\":null,\"name\":\"iOS link clicks \u2014 Nine-minute routines\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"TWITTER_TIMELINE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-05T18:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":391000000,\"updated_at\":\"2027-01-06T18:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"daily_budget_amount_local_micro\":142000000,\"line_item_id\":\"ym4ru\",\"total_budget_amount_local_micro\":391000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-06T18:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "line_item_id": "hqsz9",
+      "daily_budget_amount_local_micro": 75000000,
+      "total_budget_amount_local_micro": 220000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"jovunarapilates.app\",\"advertiser_user_id\":\"1794065827233773597\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ujomx\",\"categories\":[],\"created_at\":\"2027-01-05T18:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":75000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-08T18:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"38di22\",\"goal\":\"LINK_CLICKS\",\"id\":\"hqsz9\",\"ios_app_store_identifier\":null,\"name\":\"iOS link clicks \u2014 Resolution date\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"TWITTER_TIMELINE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-05T18:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":220000000,\"updated_at\":\"2027-01-06T18:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"daily_budget_amount_local_micro\":75000000,\"line_item_id\":\"hqsz9\",\"total_budget_amount_local_micro\":220000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-06T18:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-01-07T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-01-08T19:00:00Z\",\"now\":\"2027-01-07T06:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-07T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "entity": "LINE_ITEM",
+      "entity_ids": "dqmmz,ym4ru,hqsz9",
+      "start_time": "2027-01-05T18:00:00Z",
+      "end_time": "2027-01-07T06:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"errors\":[{\"code\":\"INVALID_TIME_WINDOW\",\"message\":\"Expect time to be midnight in the account's local timezone for day granularity\",\"parameter\":\"\"}],\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"end_time\":\"2027-01-07T06:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"dqmmz\",\"ym4ru\",\"hqsz9\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"start_time\":\"2027-01-05T18:00:00Z\"}}}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2027-01-07T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "entity": "LINE_ITEM",
+      "entity_ids": "dqmmz,ym4ru,hqsz9",
+      "start_time": "2027-01-06T18:00:00Z",
+      "end_time": "2027-01-07T06:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"dqmmz\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":null,\"billed_engagements\":null,\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":null,\"engagements\":null,\"follows\":null,\"impressions\":null,\"likes\":null,\"link_clicks\":null,\"qualified_impressions\":null,\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ym4ru\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[87981493],\"billed_engagements\":[582],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[160],\"engagements\":[582],\"follows\":null,\"impressions\":[67513],\"likes\":[7],\"link_clicks\":[160],\"qualified_impressions\":[67513],\"replies\":null,\"retweets\":[1]},\"segment\":null}]},{\"id\":\"hqsz9\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[33213103],\"billed_engagements\":[320],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[55],\"engagements\":[320],\"follows\":null,\"impressions\":[39542],\"likes\":[5],\"link_clicks\":[55],\"qualified_impressions\":[39542],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-07T06:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"dqmmz\",\"ym4ru\",\"hqsz9\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-06T18:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-07T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "entity": "LINE_ITEM",
+      "entity_ids": "dqmmz,ym4ru,hqsz9",
+      "start_time": "2027-01-05T18:00:00Z",
+      "end_time": "2027-01-07T06:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"dqmmz\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[38675655],\"billed_engagements\":[274],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[48],\"engagements\":[274],\"follows\":null,\"impressions\":[40429],\"likes\":[10],\"link_clicks\":[48],\"qualified_impressions\":[40429],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ym4ru\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[197935098],\"billed_engagements\":[1415],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[356],\"engagements\":[1415],\"follows\":null,\"impressions\":[162830],\"likes\":[20],\"link_clicks\":[356],\"qualified_impressions\":[162830],\"replies\":null,\"retweets\":[1]},\"segment\":null}]},{\"id\":\"hqsz9\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[106009377],\"billed_engagements\":[974],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[176],\"engagements\":[974],\"follows\":null,\"impressions\":[121070],\"likes\":[17],\"link_clicks\":[176],\"qualified_impressions\":[121070],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-07T06:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"dqmmz\",\"ym4ru\",\"hqsz9\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-05T18:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-07T06:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "line_item_id": "ym4ru",
+      "daily_budget_amount_local_micro": 165000000,
+      "total_budget_amount_local_micro": 441000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"jovunarapilates.app\",\"advertiser_user_id\":\"1794065827233773597\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ujomx\",\"categories\":[],\"created_at\":\"2027-01-05T18:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":165000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-08T18:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"38di22\",\"goal\":\"LINK_CLICKS\",\"id\":\"ym4ru\",\"ios_app_store_identifier\":null,\"name\":\"iOS link clicks \u2014 Nine-minute routines\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"TWITTER_TIMELINE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-05T18:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":441000000,\"updated_at\":\"2027-01-07T06:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"daily_budget_amount_local_micro\":165000000,\"line_item_id\":\"ym4ru\",\"total_budget_amount_local_micro\":441000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-07T06:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "line_item_id": "hqsz9",
+      "daily_budget_amount_local_micro": 50000000,
+      "total_budget_amount_local_micro": 170000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"jovunarapilates.app\",\"advertiser_user_id\":\"1794065827233773597\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ujomx\",\"categories\":[],\"created_at\":\"2027-01-05T18:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":50000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-08T18:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"38di22\",\"goal\":\"LINK_CLICKS\",\"id\":\"hqsz9\",\"ios_app_store_identifier\":null,\"name\":\"iOS link clicks \u2014 Resolution date\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"TWITTER_TIMELINE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-05T18:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":170000000,\"updated_at\":\"2027-01-07T06:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"daily_budget_amount_local_micro\":50000000,\"line_item_id\":\"hqsz9\",\"total_budget_amount_local_micro\":170000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-07T06:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-01-07T18:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-01-08T19:00:00Z\",\"now\":\"2027-01-07T18:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-07T18:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "entity": "LINE_ITEM",
+      "entity_ids": "dqmmz,ym4ru,hqsz9",
+      "start_time": "2027-01-06T18:00:00Z",
+      "end_time": "2027-01-07T18:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"dqmmz\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":null,\"billed_engagements\":null,\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":null,\"engagements\":null,\"follows\":null,\"impressions\":null,\"likes\":null,\"link_clicks\":null,\"qualified_impressions\":null,\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ym4ru\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[162841728],\"billed_engagements\":[1352],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[346],\"engagements\":[1352],\"follows\":null,\"impressions\":[151346],\"likes\":[22],\"link_clicks\":[346],\"qualified_impressions\":[151346],\"replies\":null,\"retweets\":[2]},\"segment\":null}]},{\"id\":\"hqsz9\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[48322576],\"billed_engagements\":[517],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[89],\"engagements\":[517],\"follows\":null,\"impressions\":[65960],\"likes\":[11],\"link_clicks\":[89],\"qualified_impressions\":[65960],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-07T18:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"dqmmz\",\"ym4ru\",\"hqsz9\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-06T18:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-07T18:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "entity": "LINE_ITEM",
+      "entity_ids": "dqmmz,ym4ru,hqsz9",
+      "start_time": "2027-01-05T18:00:00Z",
+      "end_time": "2027-01-07T18:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"dqmmz\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[38675655],\"billed_engagements\":[274],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[48],\"engagements\":[274],\"follows\":null,\"impressions\":[40429],\"likes\":[10],\"link_clicks\":[48],\"qualified_impressions\":[40429],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ym4ru\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[272795333],\"billed_engagements\":[2185],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[542],\"engagements\":[2185],\"follows\":null,\"impressions\":[246663],\"likes\":[35],\"link_clicks\":[542],\"qualified_impressions\":[246663],\"replies\":null,\"retweets\":[2]},\"segment\":null}]},{\"id\":\"hqsz9\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[121118850],\"billed_engagements\":[1171],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[210],\"engagements\":[1171],\"follows\":null,\"impressions\":[147488],\"likes\":[23],\"link_clicks\":[210],\"qualified_impressions\":[147488],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-07T18:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"dqmmz\",\"ym4ru\",\"hqsz9\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-05T18:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-07T18:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "line_item_id": "ym4ru",
+      "daily_budget_amount_local_micro": 176000000,
+      "total_budget_amount_local_micro": 449000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"jovunarapilates.app\",\"advertiser_user_id\":\"1794065827233773597\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ujomx\",\"categories\":[],\"created_at\":\"2027-01-05T18:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":176000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-08T18:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"38di22\",\"goal\":\"LINK_CLICKS\",\"id\":\"ym4ru\",\"ios_app_store_identifier\":null,\"name\":\"iOS link clicks \u2014 Nine-minute routines\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"TWITTER_TIMELINE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-05T18:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":449000000,\"updated_at\":\"2027-01-07T18:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"daily_budget_amount_local_micro\":176000000,\"line_item_id\":\"ym4ru\",\"total_budget_amount_local_micro\":449000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-07T18:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "line_item_id": "hqsz9",
+      "daily_budget_amount_local_micro": 41000000,
+      "total_budget_amount_local_micro": 162000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"jovunarapilates.app\",\"advertiser_user_id\":\"1794065827233773597\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ujomx\",\"categories\":[],\"created_at\":\"2027-01-05T18:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":41000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-08T18:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"38di22\",\"goal\":\"LINK_CLICKS\",\"id\":\"hqsz9\",\"ios_app_store_identifier\":null,\"name\":\"iOS link clicks \u2014 Resolution date\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"TWITTER_TIMELINE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-05T18:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":162000000,\"updated_at\":\"2027-01-07T18:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"daily_budget_amount_local_micro\":41000000,\"line_item_id\":\"hqsz9\",\"total_budget_amount_local_micro\":162000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-07T18:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-01-08T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-01-08T19:00:00Z\",\"now\":\"2027-01-08T06:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-08T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "entity": "LINE_ITEM",
+      "entity_ids": "dqmmz,ym4ru,hqsz9",
+      "start_time": "2027-01-07T18:00:00Z",
+      "end_time": "2027-01-08T06:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"dqmmz\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":null,\"billed_engagements\":null,\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":null,\"engagements\":null,\"follows\":null,\"impressions\":null,\"likes\":null,\"link_clicks\":null,\"qualified_impressions\":null,\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ym4ru\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[68240519],\"billed_engagements\":[579],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[156],\"engagements\":[579],\"follows\":null,\"impressions\":[68005],\"likes\":[8],\"link_clicks\":[156],\"qualified_impressions\":[68005],\"replies\":[1],\"retweets\":[1]},\"segment\":null}]},{\"id\":\"hqsz9\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[17067158],\"billed_engagements\":[183],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[32],\"engagements\":[183],\"follows\":null,\"impressions\":[23849],\"likes\":[6],\"link_clicks\":[32],\"qualified_impressions\":[23849],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-08T06:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"dqmmz\",\"ym4ru\",\"hqsz9\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-07T18:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-08T06:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "line_item_id": "ym4ru",
+      "standard_delivery": false
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"jovunarapilates.app\",\"advertiser_user_id\":\"1794065827233773597\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ujomx\",\"categories\":[],\"created_at\":\"2027-01-05T18:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":176000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-08T18:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"38di22\",\"goal\":\"LINK_CLICKS\",\"id\":\"ym4ru\",\"ios_app_store_identifier\":null,\"name\":\"iOS link clicks \u2014 Nine-minute routines\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"TWITTER_TIMELINE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":false,\"start_time\":\"2027-01-05T18:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":449000000,\"updated_at\":\"2027-01-08T06:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"line_item_id\":\"ym4ru\",\"standard_delivery\":false}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-08T06:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "line_item_id": "hqsz9",
+      "standard_delivery": false
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"jovunarapilates.app\",\"advertiser_user_id\":\"1794065827233773597\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ujomx\",\"categories\":[],\"created_at\":\"2027-01-05T18:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":41000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-08T18:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"38di22\",\"goal\":\"LINK_CLICKS\",\"id\":\"hqsz9\",\"ios_app_store_identifier\":null,\"name\":\"iOS link clicks \u2014 Resolution date\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"TWITTER_TIMELINE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":false,\"start_time\":\"2027-01-05T18:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":162000000,\"updated_at\":\"2027-01-08T06:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"line_item_id\":\"hqsz9\",\"standard_delivery\":false}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-08T06:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-01-08T19:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-01-08T19:00:00Z\",\"now\":\"2027-01-08T19:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-08T19:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "entity": "LINE_ITEM",
+      "entity_ids": "dqmmz,ym4ru,hqsz9",
+      "start_time": "2027-01-05T18:00:00Z",
+      "end_time": "2027-01-08T18:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"dqmmz\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[38675655],\"billed_engagements\":[274],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[48],\"engagements\":[274],\"follows\":null,\"impressions\":[40429],\"likes\":[10],\"link_clicks\":[48],\"qualified_impressions\":[40429],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ym4ru\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[448966470],\"billed_engagements\":[3535],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[887],\"engagements\":[3535],\"follows\":null,\"impressions\":[405335],\"likes\":[55],\"link_clicks\":[887],\"qualified_impressions\":[405335],\"replies\":[2],\"retweets\":[3]},\"segment\":null}]},{\"id\":\"hqsz9\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[161917524],\"billed_engagements\":[1540],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[270],\"engagements\":[1540],\"follows\":null,\"impressions\":[197071],\"likes\":[34],\"link_clicks\":[270],\"qualified_impressions\":[197071],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-08T18:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"dqmmz\",\"ym4ru\",\"hqsz9\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-05T18:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-08T19:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "entity": "LINE_ITEM",
+      "entity_ids": "dqmmz,ym4ru,hqsz9",
+      "start_time": "2027-01-05T18:00:00Z",
+      "end_time": "2027-01-08T18:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"dqmmz\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[38675655,0,0],\"billed_engagements\":[274,0,0],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[48,0,0],\"engagements\":[274,0,0],\"follows\":null,\"impressions\":[40429,0,0],\"likes\":[10,0,0],\"link_clicks\":[48,0,0],\"qualified_impressions\":[40429,0,0],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ym4ru\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[109953605,164494933,174517932],\"billed_engagements\":[833,1376,1326],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[196,351,340],\"engagements\":[833,1376,1326],\"follows\":null,\"impressions\":[95317,154774,155244],\"likes\":[13,22,20],\"link_clicks\":[196,351,340],\"qualified_impressions\":[95317,154774,155244],\"replies\":[0,0,2],\"retweets\":[0,2,1]},\"segment\":null}]},{\"id\":\"hqsz9\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[72796274,49432409,39688841],\"billed_engagements\":[654,543,343],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[121,92,57],\"engagements\":[654,543,343],\"follows\":null,\"impressions\":[81528,68691,46852],\"likes\":[12,12,10],\"link_clicks\":[121,92,57],\"qualified_impressions\":[81528,68691,46852],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-08T18:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"dqmmz\",\"ym4ru\",\"hqsz9\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-05T18:00:00Z\"}},\"time_series_length\":3}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-08T19:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "entity": "FUNDING_INSTRUMENT",
+      "entity_ids": "38di22",
+      "start_time": "2027-01-05T18:00:00Z",
+      "end_time": "2027-01-08T18:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"38di22\",\"id_data\":[{\"metrics\":{\"billed_charge_local_micro\":[649559649],\"billed_engagements\":[5349]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-08T18:00:00Z\",\"entity\":\"FUNDING_INSTRUMENT\",\"entity_ids\":[\"38di22\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-05T18:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-08T19:00:00Z",
+    "tool": "get_campaign",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "campaign_id": "ujomx"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-01-05T18:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"EXPIRED\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"38di22\",\"id\":\"ujomx\",\"name\":\"Jovunara NY trial starts 6-8 Jan 2027\",\"purchase_order_number\":null,\"reasons_not_servable\":[\"EXPIRED\"],\"servable\":false,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-01-05T18:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"campaign_id\":\"ujomx\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-08T19:00:00Z",
+    "tool": "list_line_items",
+    "arguments": {
+      "account_id": "18j8o7ylhlb",
+      "campaign_ids": "ujomx"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"advertiser_domain\":\"jovunarapilates.app\",\"advertiser_user_id\":\"1794065827233773597\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ujomx\",\"categories\":[],\"created_at\":\"2027-01-05T18:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":1000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-08T18:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"38di22\",\"goal\":\"LINK_CLICKS\",\"id\":\"dqmmz\",\"ios_app_store_identifier\":null,\"name\":\"iOS link clicks \u2014 Close the laptop\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"TWITTER_TIMELINE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-05T18:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":39000000,\"updated_at\":\"2027-01-06T18:00:00Z\"},{\"advertiser_domain\":\"jovunarapilates.app\",\"advertiser_user_id\":\"1794065827233773597\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ujomx\",\"categories\":[],\"created_at\":\"2027-01-05T18:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":176000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-08T18:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"38di22\",\"goal\":\"LINK_CLICKS\",\"id\":\"ym4ru\",\"ios_app_store_identifier\":null,\"name\":\"iOS link clicks \u2014 Nine-minute routines\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"TWITTER_TIMELINE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":false,\"start_time\":\"2027-01-05T18:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":449000000,\"updated_at\":\"2027-01-08T06:00:00Z\"},{\"advertiser_domain\":\"jovunarapilates.app\",\"advertiser_user_id\":\"1794065827233773597\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ujomx\",\"categories\":[],\"created_at\":\"2027-01-05T18:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":41000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-08T18:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"38di22\",\"goal\":\"LINK_CLICKS\",\"id\":\"hqsz9\",\"ios_app_store_identifier\":null,\"name\":\"iOS link clicks \u2014 Resolution date\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"TWITTER_TIMELINE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":false,\"start_time\":\"2027-01-05T18:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":162000000,\"updated_at\":\"2027-01-08T06:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"18j8o7ylhlb\",\"campaign_ids\":[\"ujomx\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

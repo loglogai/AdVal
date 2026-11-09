@@ -1,0 +1,5 @@
+The campaign has finished. From September 5 through September 12, 2027 (Toronto time), X reports **$848.13** spent, **701,977** impressions, and **245** link clicks to the demo page.
+
+Those figures are ad delivery only. Keldrack’s site has no X pixel, so X cannot count confirmed demo bookings. This session also has no access to the scheduling records, so confirmed appointments are not included here. A link click is not a booked demo.
+
+The one campaign, “Keldrack Aisle Rehearsal demo Sep 5-12 2027,” optimized for link clicks in the United States and Canada, with no age or device limit, and stayed inside the $850 cap. All five approved posts ran at the start. The two weaker posts were paused after the first day, and the remaining budget went to the three that earned more demo-page clicks. The “September reset” starter-pack post accounted for 122 of the 245 clicks. Spend was nearly even across the eight days and stopped when the flight ended.

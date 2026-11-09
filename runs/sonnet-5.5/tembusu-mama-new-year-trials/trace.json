@@ -1,0 +1,1071 @@
+[
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "get_current_time",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-01-06T17:00:00Z\",\"now\":\"2027-01-02T16:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "list_ads_accounts",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"business_id\":null,\"business_name\":null,\"country_code\":\"SG\",\"created_at\":\"2025-05-17T16:00:00Z\",\"deleted\":false,\"id\":\"180jmz2f7l9\",\"industry_type\":null,\"name\":\"Tembusu Mama\",\"timezone\":\"Asia/Singapore\",\"timezone_switch_at\":\"2025-05-17T16:00:00Z\",\"updated_at\":\"2025-05-17T16:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "list_funding_instruments",
+    "arguments": {
+      "account_id": "180jmz2f7l9"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"able_to_fund\":true,\"created_at\":\"2025-05-17T16:00:00Z\",\"credit_limit_local_micro\":null,\"credit_remaining_local_micro\":null,\"currency\":\"USD\",\"deleted\":false,\"description\":\"American Express ending in 2459\",\"end_time\":null,\"entity_status\":\"ACTIVE\",\"funded_amount_local_micro\":0,\"id\":\"hgjhl2\",\"io_header\":null,\"reasons_not_able_to_fund\":[],\"start_time\":\"2025-05-17T16:00:00Z\",\"type\":\"CREDIT_CARD\",\"updated_at\":\"2025-05-17T16:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "list_campaigns",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "with_draft": true
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"with_draft\":true}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "list_account_posts",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "tweet_type": "PUBLISHED",
+      "tweet_ids": "2137216936968368797,2137398130901070126,2137579324831556276",
+      "timeline_type": "ALL"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Mon Dec 28 16:00:00 +0000 2026\",\"display_text_range\":[0,178],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"tembusumama.app/newyear\",\"expanded_url\":\"https://tembusumama.app/newyear\",\"indices\":[155,178],\"url\":\"https://t.co/k2nxtDD3rc\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Only until January 6: start Tembusu Mama with a 14-day free trial instead of our usual 7. Ten gentle minutes a day, matched to your trimester. iPhone app. https://t.co/k2nxtDD3rc\",\"geo\":null,\"id\":2137579324831556276,\"id_str\":\"2137579324831556276\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2137579324831556276\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Sat May 17 16:00:00 +0000 2025\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2816,\"follow_request_sent\":null,\"followers_count\":15516,\"following\":null,\"friends_count\":666,\"geo_enabled\":false,\"id\":1923770484127236860,\"id_str\":\"1923770484127236860\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":16,\"location\":\"\",\"name\":\"Tembusu Mama\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1923770484127236860/1623614716\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1899956030223614716/OvKk6GKD_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1899956030223614716/OvKk6GKD_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"TembusuMama\",\"statuses_count\":3016,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Mon Dec 28 04:00:00 +0000 2026\",\"display_text_range\":[0,194],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"tembusumama.app/newyear\",\"expanded_url\":\"https://tembusumama.app/newyear\",\"indices\":[171,194],\"url\":\"https://t.co/cK7ipUaHOj\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Try 14 days of prenatal workouts for $0. After that it's US$9.99 a month, cancel anytime. Short trimester-by-trimester sessions plus daily pelvic floor work, iPhone only. https://t.co/cK7ipUaHOj\",\"geo\":null,\"id\":2137398130901070126,\"id_str\":\"2137398130901070126\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2137398130901070126\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Sat May 17 16:00:00 +0000 2025\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2816,\"follow_request_sent\":null,\"followers_count\":15516,\"following\":null,\"friends_count\":666,\"geo_enabled\":false,\"id\":1923770484127236860,\"id_str\":\"1923770484127236860\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":16,\"location\":\"\",\"name\":\"Tembusu Mama\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1923770484127236860/1623614716\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1899956030223614716/OvKk6GKD_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1899956030223614716/OvKk6GKD_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"TembusuMama\",\"statuses_count\":3016,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Sun Dec 27 16:00:00 +0000 2026\",\"display_text_range\":[0,218],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"tembusumama.app/newyear\",\"expanded_url\":\"https://tembusumama.app/newyear\",\"indices\":[195,218],\"url\":\"https://t.co/CsCPJEiwkk\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Pregnant and setting a 2027 resolution? Tembusu Mama gives you 10-minute prenatal workouts for each trimester, built with physiotherapists, on iPhone. New Year offer: 14 days free through Jan 6. https://t.co/CsCPJEiwkk\",\"geo\":null,\"id\":2137216936968368797,\"id_str\":\"2137216936968368797\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":false,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2137216936968368797\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Sat May 17 16:00:00 +0000 2025\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2816,\"follow_request_sent\":null,\"followers_count\":15516,\"following\":null,\"friends_count\":666,\"geo_enabled\":false,\"id\":1923770484127236860,\"id_str\":\"1923770484127236860\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":16,\"location\":\"\",\"name\":\"Tembusu Mama\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1923770484127236860/1623614716\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1899956030223614716/OvKk6GKD_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1899956030223614716/OvKk6GKD_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"TembusuMama\",\"statuses_count\":3016,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"timeline_type\":\"ALL\",\"tweet_ids\":[\"2137216936968368797\",\"2137398130901070126\",\"2137579324831556276\"],\"tweet_type\":\"PUBLISHED\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "list_line_items",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "with_draft": true
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"with_draft\":true}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "get_ad_policy",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"enforcement\":\"ad groups that break the policy of their category are disapproved and don't serve\",\"minors\":\"no ad may reach anyone under 13; alcohol may never target minors\",\"pre_authorization\":\"required for every restricted category\",\"restricted_categories\":[{\"category\":\"alcohol\",\"countries\":[\"AL\",\"AR\",\"AT\",\"AU\",\"BA\",\"BE\",\"BG\",\"BO\",\"BR\",\"CA\",\"CH\",\"CL\",\"CO\",\"CR\",\"CY\",\"CZ\",\"DE\",\"DK\",\"DO\",\"EC\",\"EE\",\"ES\",\"FI\",\"FR\",\"GB\",\"GH\",\"GR\",\"HK\",\"HN\",\"HR\",\"HU\",\"IE\",\"IL\",\"IN\",\"IS\",\"IT\",\"JP\",\"KE\",\"KH\",\"KR\",\"LT\",\"LU\",\"LV\",\"ME\",\"MK\",\"MT\",\"MX\",\"MY\",\"NG\",\"NI\",\"NL\",\"NZ\",\"PA\",\"PE\",\"PH\",\"PT\",\"PY\",\"RO\",\"RS\",\"SE\",\"SG\",\"SI\",\"SK\",\"SN\",\"SV\",\"TW\",\"UA\",\"UG\",\"US\",\"UY\",\"VE\",\"ZA\",\"ZM\"],\"covers\":\"promoting, selling or branding beer, wine or spirits, and competitions with alcohol as a prize\",\"min_age\":{\"by_country\":{\"JP\":20,\"KR\":20,\"US\":21},\"elsewhere\":18},\"targeting_types\":null},{\"category\":\"financial_services\",\"countries\":[\"AE\",\"AR\",\"AT\",\"AU\",\"AW\",\"BA\",\"BB\",\"BE\",\"BG\",\"BM\",\"BR\",\"BS\",\"CA\",\"CH\",\"CL\",\"CR\",\"CW\",\"CZ\",\"DE\",\"DK\",\"DO\",\"EC\",\"EG\",\"ES\",\"FI\",\"FR\",\"GB\",\"GH\",\"GR\",\"GT\",\"HK\",\"HN\",\"HR\",\"ID\",\"IE\",\"IL\",\"IN\",\"IT\",\"JM\",\"JP\",\"KR\",\"KW\",\"MA\",\"MK\",\"MY\",\"NG\",\"NI\",\"NL\",\"NO\",\"NZ\",\"OM\",\"PA\",\"PE\",\"PH\",\"PK\",\"PL\",\"PT\",\"PY\",\"QA\",\"RO\",\"RS\",\"RU\",\"SA\",\"SE\",\"SG\",\"SI\",\"SV\",\"TH\",\"TR\",\"TT\",\"TW\",\"TZ\",\"UA\",\"UG\",\"US\",\"UY\",\"VE\",\"VN\",\"ZA\",\"ZM\"],\"covers\":\"banks, money service businesses, mobile and electronic payments, money transfer, savings, investment, currency exchange, loans and insurance\",\"min_age\":null,\"targeting_types\":null},{\"category\":\"political_content\",\"countries\":[\"AE\",\"AR\",\"AU\",\"CL\",\"CO\",\"EC\",\"GB\",\"GH\",\"ID\",\"IL\",\"IN\",\"JP\",\"MX\",\"PE\",\"SA\",\"US\",\"ZA\"],\"covers\":\"ads that reference a candidate, party, official, election, referendum, legislation, regulation or judicial outcome\",\"min_age\":null,\"targeting_types\":null},{\"category\":\"political_campaigning\",\"countries\":[\"AR\",\"AU\",\"CO\",\"EC\",\"GB\",\"GH\",\"ID\",\"IL\",\"JP\",\"MX\",\"PA\",\"PE\",\"US\",\"ZA\"],\"covers\":\"ads that advocate for or against, or ask for votes or money for, a candidate, party, election, legislation, referendum or ballot measure\",\"min_age\":null,\"targeting_types\":[\"LOCATION\",\"AGE\",\"GENDER\",\"INTEREST\",\"BROAD_KEYWORD\",\"PHRASE_KEYWORD\",\"EXACT_KEYWORD\",\"UNORDERED_KEYWORD\",\"NEGATIVE_PHRASE_KEYWORD\",\"NEGATIVE_EXACT_KEYWORD\",\"NEGATIVE_UNORDERED_KEYWORD\",\"CUSTOM_AUDIENCE\",\"CUSTOM_AUDIENCE_EXPANDED\",\"SIMILAR_TO_FOLLOWERS_OF_USER\",\"FOLLOWER_LOOK_ALIKES\"]}]},\"request\":{\"params\":{}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "search_targeting_platforms",
+    "arguments": {
+      "q": "ios"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"name\":\"iOS\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\"}],\"request\":{\"params\":{\"q\":\"ios\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "list_line_item_placements",
+    "arguments": {
+      "product_type": "PROMOTED_TWEETS"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"placements\":[[\"ALL_ON_TWITTER\"],[\"ALL_ON_TWITTER\",\"PUBLISHER_NETWORK\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL_LANDSCAPE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_NATIVE\"],[\"PUBLISHER_NETWORK\"],[\"PUBLISHER_NETWORK\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"PUBLISHER_NETWORK\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"PUBLISHER_NETWORK\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"PUBLISHER_NETWORK\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\"],[\"TAP_BANNER\",\"TAP_FULL\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_NATIVE\"],[\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\"],[\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_NATIVE\"],[\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TWITTER_MEDIA_VIEWER\"],[\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TWITTER_REPLIES\"],[\"TWITTER_SEARCH\"],[\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TWITTER_TIMELINE\"]],\"product_type\":\"PROMOTED_TWEETS\"}],\"next_cursor\":null,\"request\":{\"params\":{\"product_type\":\"PROMOTED_TWEETS\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "q": "united states",
+      "location_type": "COUNTRIES"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"country_code\":\"US\",\"location_type\":\"COUNTRIES\",\"name\":\"United States\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\"},{\"country_code\":\"UM\",\"location_type\":\"COUNTRIES\",\"name\":\"United States Minor Outlying Islands\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"08fbcf4cbc4bc5b9\"},{\"country_code\":\"AE\",\"location_type\":\"COUNTRIES\",\"name\":\"United Arab Emirates\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3f63906fc8aa5a7d\"},{\"country_code\":\"GB\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"}],\"next_cursor\":null,\"request\":{\"params\":{\"location_type\":\"COUNTRIES\",\"q\":\"united states\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "q": "united kingdom",
+      "location_type": "COUNTRIES"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"country_code\":\"GB\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"},{\"country_code\":\"AE\",\"location_type\":\"COUNTRIES\",\"name\":\"United Arab Emirates\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3f63906fc8aa5a7d\"},{\"country_code\":\"US\",\"location_type\":\"COUNTRIES\",\"name\":\"United States\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\"},{\"country_code\":\"UM\",\"location_type\":\"COUNTRIES\",\"name\":\"United States Minor Outlying Islands\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"08fbcf4cbc4bc5b9\"}],\"next_cursor\":null,\"request\":{\"params\":{\"location_type\":\"COUNTRIES\",\"q\":\"united kingdom\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "q": "canada",
+      "location_type": "COUNTRIES"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"country_code\":\"CA\",\"location_type\":\"COUNTRIES\",\"name\":\"Canada\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3376992a082d67c7\"}],\"next_cursor\":null,\"request\":{\"params\":{\"location_type\":\"COUNTRIES\",\"q\":\"canada\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "q": "australia",
+      "location_type": "COUNTRIES"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"country_code\":\"AU\",\"location_type\":\"COUNTRIES\",\"name\":\"Australia\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3f14ce28dc7c4566\"}],\"next_cursor\":null,\"request\":{\"params\":{\"location_type\":\"COUNTRIES\",\"q\":\"australia\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "q": "singapore",
+      "location_type": "COUNTRIES"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"country_code\":\"SG\",\"location_type\":\"COUNTRIES\",\"name\":\"Singapore\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"2509b9adc1fedfd2\"}],\"next_cursor\":null,\"request\":{\"params\":{\"location_type\":\"COUNTRIES\",\"q\":\"singapore\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "create_campaign",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "funding_instrument_id": "hgjhl2",
+      "name": "NewYear 2027 - 14-day trial - iOS"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-01-02T16:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"PAUSED\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"hgjhl2\",\"id\":\"lo3n6\",\"name\":\"NewYear 2027 - 14-day trial - iOS\",\"purchase_order_number\":null,\"reasons_not_servable\":[\"PAUSED_BY_ADVERTISER\"],\"servable\":false,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"funding_instrument_id\":\"hgjhl2\",\"name\":\"NewYear 2027 - 14-day trial - iOS\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "search_targeting_interests",
+    "arguments": {
+      "q": "pregnancy"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"request\":{\"params\":{\"q\":\"pregnancy\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "search_targeting_interests",
+    "arguments": {
+      "q": "parenting"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"name\":\"Relationships / Parenting\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925954095342338048\"}],\"request\":{\"params\":{\"q\":\"parenting\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "campaign_id": "lo3n6",
+      "name": "Post A - resolution",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "product_type": "PROMOTED_TWEETS",
+      "placements": "ALL_ON_TWITTER",
+      "bid_strategy": "AUTO",
+      "daily_budget_amount_local_micro": 15000000,
+      "total_budget_amount_local_micro": 60000000,
+      "start_time": "2027-01-02T16:00:00Z",
+      "end_time": "2027-01-06T16:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1923770484127236860\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lo3n6\",\"categories\":[],\"created_at\":\"2027-01-02T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":15000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-06T16:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"hgjhl2\",\"goal\":\"LINK_CLICKS\",\"id\":\"ez5u4\",\"ios_app_store_identifier\":null,\"name\":\"Post A - resolution\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T16:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":60000000,\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lo3n6\",\"daily_budget_amount_local_micro\":15000000,\"end_time\":\"2027-01-06T16:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"Post A - resolution\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"start_time\":\"2027-01-02T16:00:00Z\",\"total_budget_amount_local_micro\":60000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "campaign_id": "lo3n6",
+      "name": "Post B - $0 trial",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "product_type": "PROMOTED_TWEETS",
+      "placements": "ALL_ON_TWITTER",
+      "bid_strategy": "AUTO",
+      "daily_budget_amount_local_micro": 15000000,
+      "total_budget_amount_local_micro": 60000000,
+      "start_time": "2027-01-02T16:00:00Z",
+      "end_time": "2027-01-06T16:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1923770484127236860\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lo3n6\",\"categories\":[],\"created_at\":\"2027-01-02T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":15000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-06T16:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"hgjhl2\",\"goal\":\"LINK_CLICKS\",\"id\":\"3m53y\",\"ios_app_store_identifier\":null,\"name\":\"Post B - $0 trial\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T16:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":60000000,\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lo3n6\",\"daily_budget_amount_local_micro\":15000000,\"end_time\":\"2027-01-06T16:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"Post B - $0 trial\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"start_time\":\"2027-01-02T16:00:00Z\",\"total_budget_amount_local_micro\":60000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "campaign_id": "lo3n6",
+      "name": "Post C - until Jan 6",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "product_type": "PROMOTED_TWEETS",
+      "placements": "ALL_ON_TWITTER",
+      "bid_strategy": "AUTO",
+      "daily_budget_amount_local_micro": 15000000,
+      "total_budget_amount_local_micro": 60000000,
+      "start_time": "2027-01-02T16:00:00Z",
+      "end_time": "2027-01-06T16:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1923770484127236860\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lo3n6\",\"categories\":[],\"created_at\":\"2027-01-02T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":15000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-06T16:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"hgjhl2\",\"goal\":\"LINK_CLICKS\",\"id\":\"ugiov\",\"ios_app_store_identifier\":null,\"name\":\"Post C - until Jan 6\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T16:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":60000000,\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lo3n6\",\"daily_budget_amount_local_micro\":15000000,\"end_time\":\"2027-01-06T16:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"Post C - until Jan 6\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"start_time\":\"2027-01-02T16:00:00Z\",\"total_budget_amount_local_micro\":60000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ez5u4",
+      "targeting_type": "PLATFORM",
+      "targeting_value": "0"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"lzu3uex\",\"line_item_id\":\"ez5u4\",\"name\":\"iOS\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ez5u4\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ez5u4",
+      "targeting_type": "LANGUAGE",
+      "targeting_value": "en"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"4isyr12\",\"line_item_id\":\"ez5u4\",\"name\":\"en\",\"operator_type\":\"EQ\",\"targeting_type\":\"LANGUAGE\",\"targeting_value\":\"en\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ez5u4\",\"targeting_type\":\"LANGUAGE\",\"targeting_value\":\"en\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ez5u4",
+      "targeting_type": "LOCATION",
+      "targeting_value": "96683cc9126741d1"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"xyv3rph\",\"line_item_id\":\"ez5u4\",\"location_type\":\"COUNTRIES\",\"name\":\"United States\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ez5u4\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ez5u4",
+      "targeting_type": "LOCATION",
+      "targeting_value": "6416b8512febefc9"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"y1tdswg\",\"line_item_id\":\"ez5u4\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ez5u4\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ez5u4",
+      "targeting_type": "LOCATION",
+      "targeting_value": "3376992a082d67c7"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"vg0dptv\",\"line_item_id\":\"ez5u4\",\"location_type\":\"COUNTRIES\",\"name\":\"Canada\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3376992a082d67c7\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ez5u4\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3376992a082d67c7\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ez5u4",
+      "targeting_type": "LOCATION",
+      "targeting_value": "3f14ce28dc7c4566"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"xr3rqkz\",\"line_item_id\":\"ez5u4\",\"location_type\":\"COUNTRIES\",\"name\":\"Australia\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3f14ce28dc7c4566\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ez5u4\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3f14ce28dc7c4566\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ez5u4",
+      "targeting_type": "LOCATION",
+      "targeting_value": "2509b9adc1fedfd2"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"cm13tyo\",\"line_item_id\":\"ez5u4\",\"location_type\":\"COUNTRIES\",\"name\":\"Singapore\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"2509b9adc1fedfd2\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ez5u4\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"2509b9adc1fedfd2\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "3m53y",
+      "targeting_type": "PLATFORM",
+      "targeting_value": "0"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"o3extxh\",\"line_item_id\":\"3m53y\",\"name\":\"iOS\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"3m53y\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "3m53y",
+      "targeting_type": "LANGUAGE",
+      "targeting_value": "en"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"q1zbfg0\",\"line_item_id\":\"3m53y\",\"name\":\"en\",\"operator_type\":\"EQ\",\"targeting_type\":\"LANGUAGE\",\"targeting_value\":\"en\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"3m53y\",\"targeting_type\":\"LANGUAGE\",\"targeting_value\":\"en\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "3m53y",
+      "targeting_type": "LOCATION",
+      "targeting_value": "96683cc9126741d1"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"3qep0zf\",\"line_item_id\":\"3m53y\",\"location_type\":\"COUNTRIES\",\"name\":\"United States\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"3m53y\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "3m53y",
+      "targeting_type": "LOCATION",
+      "targeting_value": "6416b8512febefc9"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"472kut3\",\"line_item_id\":\"3m53y\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"3m53y\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "3m53y",
+      "targeting_type": "LOCATION",
+      "targeting_value": "3376992a082d67c7"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"hh45qiq\",\"line_item_id\":\"3m53y\",\"location_type\":\"COUNTRIES\",\"name\":\"Canada\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3376992a082d67c7\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"3m53y\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3376992a082d67c7\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "3m53y",
+      "targeting_type": "LOCATION",
+      "targeting_value": "3f14ce28dc7c4566"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"mlkvmt2\",\"line_item_id\":\"3m53y\",\"location_type\":\"COUNTRIES\",\"name\":\"Australia\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3f14ce28dc7c4566\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"3m53y\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3f14ce28dc7c4566\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "3m53y",
+      "targeting_type": "LOCATION",
+      "targeting_value": "2509b9adc1fedfd2"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"fyhu90b\",\"line_item_id\":\"3m53y\",\"location_type\":\"COUNTRIES\",\"name\":\"Singapore\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"2509b9adc1fedfd2\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"3m53y\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"2509b9adc1fedfd2\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ugiov",
+      "targeting_type": "PLATFORM",
+      "targeting_value": "0"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"sed6gqy\",\"line_item_id\":\"ugiov\",\"name\":\"iOS\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ugiov\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ugiov",
+      "targeting_type": "LANGUAGE",
+      "targeting_value": "en"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"s5vfo2i\",\"line_item_id\":\"ugiov\",\"name\":\"en\",\"operator_type\":\"EQ\",\"targeting_type\":\"LANGUAGE\",\"targeting_value\":\"en\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ugiov\",\"targeting_type\":\"LANGUAGE\",\"targeting_value\":\"en\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ugiov",
+      "targeting_type": "LOCATION",
+      "targeting_value": "96683cc9126741d1"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"5w2tryj\",\"line_item_id\":\"ugiov\",\"location_type\":\"COUNTRIES\",\"name\":\"United States\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ugiov\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ugiov",
+      "targeting_type": "LOCATION",
+      "targeting_value": "6416b8512febefc9"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"fbe9hjg\",\"line_item_id\":\"ugiov\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ugiov\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ugiov",
+      "targeting_type": "LOCATION",
+      "targeting_value": "3376992a082d67c7"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"aghlgqx\",\"line_item_id\":\"ugiov\",\"location_type\":\"COUNTRIES\",\"name\":\"Canada\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3376992a082d67c7\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ugiov\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3376992a082d67c7\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ugiov",
+      "targeting_type": "LOCATION",
+      "targeting_value": "3f14ce28dc7c4566"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"lq5wyql\",\"line_item_id\":\"ugiov\",\"location_type\":\"COUNTRIES\",\"name\":\"Australia\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3f14ce28dc7c4566\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ugiov\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3f14ce28dc7c4566\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ugiov",
+      "targeting_type": "LOCATION",
+      "targeting_value": "2509b9adc1fedfd2"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"brz29hy\",\"line_item_id\":\"ugiov\",\"location_type\":\"COUNTRIES\",\"name\":\"Singapore\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"2509b9adc1fedfd2\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ugiov\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"2509b9adc1fedfd2\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ez5u4",
+      "tweet_ids": "2137216936968368797"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"ufkubx\",\"line_item_id\":\"ez5u4\",\"tweet_id\":\"2137216936968368797\",\"updated_at\":\"2027-01-02T16:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ez5u4\",\"tweet_ids\":[\"2137216936968368797\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "3m53y",
+      "tweet_ids": "2137398130901070126"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"r9a33c\",\"line_item_id\":\"3m53y\",\"tweet_id\":\"2137398130901070126\",\"updated_at\":\"2027-01-02T16:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"3m53y\",\"tweet_ids\":[\"2137398130901070126\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ugiov",
+      "tweet_ids": "2137579324831556276"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"ekmk16\",\"line_item_id\":\"ugiov\",\"tweet_id\":\"2137579324831556276\",\"updated_at\":\"2027-01-02T16:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ugiov\",\"tweet_ids\":[\"2137579324831556276\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "activate_campaign",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "campaign_id": "lo3n6"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-01-02T16:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"RUNNING\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"hgjhl2\",\"id\":\"lo3n6\",\"name\":\"NewYear 2027 - 14-day trial - iOS\",\"purchase_order_number\":null,\"reasons_not_servable\":[],\"servable\":true,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"campaign_id\":\"lo3n6\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ez5u4"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1923770484127236860\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lo3n6\",\"categories\":[],\"created_at\":\"2027-01-02T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":15000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-06T16:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"hgjhl2\",\"goal\":\"LINK_CLICKS\",\"id\":\"ez5u4\",\"ios_app_store_identifier\":null,\"name\":\"Post A - resolution\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T16:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":60000000,\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ez5u4\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "3m53y"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1923770484127236860\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lo3n6\",\"categories\":[],\"created_at\":\"2027-01-02T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":15000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-06T16:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"hgjhl2\",\"goal\":\"LINK_CLICKS\",\"id\":\"3m53y\",\"ios_app_store_identifier\":null,\"name\":\"Post B - $0 trial\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T16:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":60000000,\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"3m53y\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ugiov"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1923770484127236860\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lo3n6\",\"categories\":[],\"created_at\":\"2027-01-02T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":15000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-06T16:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"hgjhl2\",\"goal\":\"LINK_CLICKS\",\"id\":\"ugiov\",\"ios_app_store_identifier\":null,\"name\":\"Post C - until Jan 6\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T16:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":60000000,\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ugiov\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-01-03T16:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-01-06T17:00:00Z\",\"now\":\"2027-01-03T16:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-03T16:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ez5u4,3m53y,ugiov",
+      "start_time": "2027-01-02T16:00:00Z",
+      "end_time": "2027-01-03T16:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ez5u4\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[14249711],\"billed_engagements\":[140],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[17],\"engagements\":[140],\"follows\":null,\"impressions\":[22576],\"likes\":[3],\"link_clicks\":[17],\"qualified_impressions\":[22576],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"3m53y\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[14653144],\"billed_engagements\":[145],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[15],\"engagements\":[145],\"follows\":null,\"impressions\":[19758],\"likes\":[4],\"link_clicks\":[15],\"qualified_impressions\":[19758],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ugiov\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[14452485],\"billed_engagements\":[137],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[17],\"engagements\":[137],\"follows\":null,\"impressions\":[21222],\"likes\":null,\"link_clicks\":[17],\"qualified_impressions\":[21222],\"replies\":null,\"retweets\":[1]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-03T16:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ez5u4\",\"3m53y\",\"ugiov\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-02T16:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-03T16:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-01-04T16:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-01-06T17:00:00Z\",\"now\":\"2027-01-04T16:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-04T16:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ez5u4,3m53y,ugiov",
+      "start_time": "2027-01-02T16:00:00Z",
+      "end_time": "2027-01-04T16:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ez5u4\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[29043625],\"billed_engagements\":[306],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[32],\"engagements\":[306],\"follows\":null,\"impressions\":[48102],\"likes\":[5],\"link_clicks\":[32],\"qualified_impressions\":[48102],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"3m53y\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[29147584],\"billed_engagements\":[312],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[28],\"engagements\":[312],\"follows\":null,\"impressions\":[45475],\"likes\":[10],\"link_clicks\":[28],\"qualified_impressions\":[45475],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ugiov\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[27934346],\"billed_engagements\":[352],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[31],\"engagements\":[352],\"follows\":null,\"impressions\":[47830],\"likes\":[4],\"link_clicks\":[31],\"qualified_impressions\":[47830],\"replies\":null,\"retweets\":[1]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-04T16:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ez5u4\",\"3m53y\",\"ugiov\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-02T16:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-04T16:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-01-05T16:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-01-06T17:00:00Z\",\"now\":\"2027-01-05T16:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T16:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ez5u4,3m53y,ugiov",
+      "start_time": "2027-01-02T16:00:00Z",
+      "end_time": "2027-01-05T16:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ez5u4\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[43488319],\"billed_engagements\":[504],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[49],\"engagements\":[504],\"follows\":null,\"impressions\":[75736],\"likes\":[10],\"link_clicks\":[49],\"qualified_impressions\":[75736],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"3m53y\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[44119611],\"billed_engagements\":[455],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[43],\"engagements\":[455],\"follows\":null,\"impressions\":[64511],\"likes\":[11],\"link_clicks\":[43],\"qualified_impressions\":[64511],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ugiov\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[43320109],\"billed_engagements\":[491],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[48],\"engagements\":[491],\"follows\":null,\"impressions\":[66413],\"likes\":[7],\"link_clicks\":[48],\"qualified_impressions\":[66413],\"replies\":null,\"retweets\":[1]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-05T16:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ez5u4\",\"3m53y\",\"ugiov\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-02T16:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T16:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-01-06T16:30:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"error\":\"until must be on the hour\"}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2027-01-05T16:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-01-06T17:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-01-06T17:00:00Z\",\"now\":\"2027-01-06T17:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-06T17:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ez5u4,3m53y,ugiov",
+      "start_time": "2027-01-02T16:00:00Z",
+      "end_time": "2027-01-06T17:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ez5u4\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[58000465],\"billed_engagements\":[720],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[63],\"engagements\":[720],\"follows\":null,\"impressions\":[106870],\"likes\":[13],\"link_clicks\":[63],\"qualified_impressions\":[106870],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"3m53y\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[58663571],\"billed_engagements\":[582],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[57],\"engagements\":[582],\"follows\":null,\"impressions\":[81085],\"likes\":[17],\"link_clicks\":[57],\"qualified_impressions\":[81085],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ugiov\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[57062611],\"billed_engagements\":[693],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[62],\"engagements\":[693],\"follows\":null,\"impressions\":[98518],\"likes\":[11],\"link_clicks\":[62],\"qualified_impressions\":[98518],\"replies\":null,\"retweets\":[2]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-06T17:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ez5u4\",\"3m53y\",\"ugiov\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-02T16:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-06T17:00:00Z",
+    "tool": "list_line_items",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "campaign_ids": "lo3n6"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"advertiser_domain\":null,\"advertiser_user_id\":\"1923770484127236860\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lo3n6\",\"categories\":[],\"created_at\":\"2027-01-02T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":15000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-06T16:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"hgjhl2\",\"goal\":\"LINK_CLICKS\",\"id\":\"ez5u4\",\"ios_app_store_identifier\":null,\"name\":\"Post A - resolution\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T16:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":60000000,\"updated_at\":\"2027-01-02T16:00:00Z\"},{\"advertiser_domain\":null,\"advertiser_user_id\":\"1923770484127236860\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lo3n6\",\"categories\":[],\"created_at\":\"2027-01-02T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":15000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-06T16:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"hgjhl2\",\"goal\":\"LINK_CLICKS\",\"id\":\"3m53y\",\"ios_app_store_identifier\":null,\"name\":\"Post B - $0 trial\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T16:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":60000000,\"updated_at\":\"2027-01-02T16:00:00Z\"},{\"advertiser_domain\":null,\"advertiser_user_id\":\"1923770484127236860\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lo3n6\",\"categories\":[],\"created_at\":\"2027-01-02T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":15000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-06T16:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"hgjhl2\",\"goal\":\"LINK_CLICKS\",\"id\":\"ugiov\",\"ios_app_store_identifier\":null,\"name\":\"Post C - until Jan 6\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T16:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":60000000,\"updated_at\":\"2027-01-02T16:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"campaign_ids\":[\"lo3n6\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

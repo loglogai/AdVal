@@ -1,0 +1,595 @@
+[
+  {
+    "at": "2027-07-18T23:00:00Z",
+    "tool": "list_ads_accounts",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"business_id\":null,\"business_name\":null,\"country_code\":\"GB\",\"created_at\":\"2026-02-28T23:00:00Z\",\"deleted\":false,\"id\":\"18ubm33zsvt\",\"industry_type\":null,\"name\":\"Vellmoss\",\"timezone\":\"Europe/London\",\"timezone_switch_at\":\"2026-02-28T23:00:00Z\",\"updated_at\":\"2026-02-28T23:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-18T23:00:00Z",
+    "tool": "get_current_time",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-07-31T00:00:00Z\",\"now\":\"2027-07-18T23:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-18T23:00:00Z",
+    "tool": "list_web_event_tags",
+    "arguments": {
+      "account_id": "18ubm33zsvt"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"auto_created\":false,\"click_window\":14,\"deleted\":false,\"embed_code\":\"<script src=\\\"//platform.twitter.com/oct.js\\\" type=\\\"text/javascript\\\"></script><script type=\\\"text/javascript\\\">twttr.conversion.trackPid('ow4wz',  { tw_sale_amount: 0, tw_order_quantity: 0 });</script><noscript><img height=\\\"1\\\" width=\\\"1\\\" style=\\\"display:none;\\\" alt=\\\"\\\"  src=\\\"https://analytics.twitter.com/i/adsct?txn_id=ow4wz&amp;p_id=Twitter&amp;tw_sale_amount=0&amp;tw_order_quantity=0\\\" /><img height=\\\"1\\\" width=\\\"1\\\" style=\\\"display:none;\\\" alt=\\\"\\\"  src=\\\"//t.co/i/adsct?txn_id=ow4wz&amp;p_id=Twitter&amp;tw_sale_amount=0&amp;tw_order_quantity=0\\\" /></noscript>\",\"id\":\"wni7y\",\"last_tracked_at\":\"2027-07-18T20:00:00Z\",\"name\":\"Release opened\",\"retargeting_enabled\":true,\"status\":\"VERIFIED\",\"type\":\"CUSTOM\",\"view_through_window\":1,\"website_tag_id\":\"ow4wz\"}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"18ubm33zsvt\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-18T23:00:00Z",
+    "tool": "list_funding_instruments",
+    "arguments": {
+      "account_id": "18ubm33zsvt"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"able_to_fund\":true,\"created_at\":\"2026-02-28T23:00:00Z\",\"credit_limit_local_micro\":null,\"credit_remaining_local_micro\":null,\"currency\":\"USD\",\"deleted\":false,\"description\":\"Visa ending in 8448\",\"end_time\":null,\"entity_status\":\"ACTIVE\",\"funded_amount_local_micro\":0,\"id\":\"y2a13e\",\"io_header\":null,\"reasons_not_able_to_fund\":[],\"start_time\":\"2026-02-28T23:00:00Z\",\"type\":\"CREDIT_CARD\",\"updated_at\":\"2026-02-28T23:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"18ubm33zsvt\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-18T23:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "country_code": "GB",
+      "location_type": "COUNTRIES",
+      "q": "United Kingdom"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"country_code\":\"GB\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"}],\"next_cursor\":null,\"request\":{\"params\":{\"country_code\":\"GB\",\"location_type\":\"COUNTRIES\",\"q\":\"United Kingdom\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-18T23:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "location_type": "COUNTRIES",
+      "q": "Ireland"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"country_code\":\"IE\",\"location_type\":\"COUNTRIES\",\"name\":\"Ireland\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ea679934779f45c7\"}],\"next_cursor\":null,\"request\":{\"params\":{\"location_type\":\"COUNTRIES\",\"q\":\"Ireland\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-18T23:00:00Z",
+    "tool": "create_campaign",
+    "arguments": {
+      "account_id": "18ubm33zsvt",
+      "funding_instrument_id": "y2a13e",
+      "name": "Last Light on the Towpath \u2014 Streams (Jul 19\u201330)"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-07-18T23:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"PAUSED\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"y2a13e\",\"id\":\"poysm\",\"name\":\"Last Light on the Towpath \u2014 Streams (Jul 19\u201330)\",\"purchase_order_number\":null,\"reasons_not_servable\":[\"PAUSED_BY_ADVERTISER\"],\"servable\":false,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-07-18T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18ubm33zsvt\",\"funding_instrument_id\":\"y2a13e\",\"name\":\"Last Light on the Towpath \u2014 Streams (Jul 19\u201330)\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-18T23:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "18ubm33zsvt",
+      "campaign_id": "poysm",
+      "daily_budget_amount_local_micro": 14580000,
+      "end_time": "2027-07-30T23:00:00Z",
+      "goal": "WEBSITE_CONVERSIONS",
+      "name": "LI-A post 2209437818680962828",
+      "objective": "WEBSITE_CLICKS",
+      "placements": "ALL_ON_TWITTER",
+      "primary_web_event_tag": "wni7y",
+      "product_type": "PROMOTED_TWEETS",
+      "start_time": "2027-07-18T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2027881498016030166\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"poysm\",\"categories\":[],\"created_at\":\"2027-07-18T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":14580000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-07-30T23:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"y2a13e\",\"goal\":\"WEBSITE_CONVERSIONS\",\"id\":\"i2298\",\"ios_app_store_identifier\":null,\"name\":\"LI-A post 2209437818680962828\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"IMPRESSION\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":\"wni7y\",\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-07-18T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-07-18T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18ubm33zsvt\",\"campaign_id\":\"poysm\",\"daily_budget_amount_local_micro\":14580000,\"end_time\":\"2027-07-30T23:00:00Z\",\"goal\":\"WEBSITE_CONVERSIONS\",\"name\":\"LI-A post 2209437818680962828\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":\"wni7y\",\"product_type\":\"PROMOTED_TWEETS\",\"start_time\":\"2027-07-18T23:00:00Z\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-18T23:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "18ubm33zsvt",
+      "campaign_id": "poysm",
+      "daily_budget_amount_local_micro": 14580000,
+      "end_time": "2027-07-30T23:00:00Z",
+      "goal": "WEBSITE_CONVERSIONS",
+      "name": "LI-B post 2209619012615350526",
+      "objective": "WEBSITE_CLICKS",
+      "placements": "ALL_ON_TWITTER",
+      "primary_web_event_tag": "wni7y",
+      "product_type": "PROMOTED_TWEETS",
+      "start_time": "2027-07-18T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2027881498016030166\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"poysm\",\"categories\":[],\"created_at\":\"2027-07-18T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":14580000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-07-30T23:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"y2a13e\",\"goal\":\"WEBSITE_CONVERSIONS\",\"id\":\"nhtir\",\"ios_app_store_identifier\":null,\"name\":\"LI-B post 2209619012615350526\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"IMPRESSION\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":\"wni7y\",\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-07-18T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-07-18T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18ubm33zsvt\",\"campaign_id\":\"poysm\",\"daily_budget_amount_local_micro\":14580000,\"end_time\":\"2027-07-30T23:00:00Z\",\"goal\":\"WEBSITE_CONVERSIONS\",\"name\":\"LI-B post 2209619012615350526\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":\"wni7y\",\"product_type\":\"PROMOTED_TWEETS\",\"start_time\":\"2027-07-18T23:00:00Z\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-18T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18ubm33zsvt",
+      "line_item_id": "i2298",
+      "targeting_type": "LOCATION",
+      "targeting_value": "6416b8512febefc9"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-07-18T23:00:00Z\",\"deleted\":false,\"id\":\"f8dd656\",\"line_item_id\":\"i2298\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\",\"updated_at\":\"2027-07-18T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18ubm33zsvt\",\"line_item_id\":\"i2298\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-18T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18ubm33zsvt",
+      "line_item_id": "i2298",
+      "targeting_type": "LOCATION",
+      "targeting_value": "ea679934779f45c7"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-07-18T23:00:00Z\",\"deleted\":false,\"id\":\"xgtr28n\",\"line_item_id\":\"i2298\",\"location_type\":\"COUNTRIES\",\"name\":\"Ireland\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ea679934779f45c7\",\"updated_at\":\"2027-07-18T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18ubm33zsvt\",\"line_item_id\":\"i2298\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ea679934779f45c7\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-18T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18ubm33zsvt",
+      "line_item_id": "nhtir",
+      "targeting_type": "LOCATION",
+      "targeting_value": "6416b8512febefc9"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-07-18T23:00:00Z\",\"deleted\":false,\"id\":\"v4p2by0\",\"line_item_id\":\"nhtir\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\",\"updated_at\":\"2027-07-18T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18ubm33zsvt\",\"line_item_id\":\"nhtir\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-18T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18ubm33zsvt",
+      "line_item_id": "nhtir",
+      "targeting_type": "LOCATION",
+      "targeting_value": "ea679934779f45c7"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-07-18T23:00:00Z\",\"deleted\":false,\"id\":\"4154zr6\",\"line_item_id\":\"nhtir\",\"location_type\":\"COUNTRIES\",\"name\":\"Ireland\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ea679934779f45c7\",\"updated_at\":\"2027-07-18T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18ubm33zsvt\",\"line_item_id\":\"nhtir\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ea679934779f45c7\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-18T23:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "18ubm33zsvt",
+      "line_item_id": "i2298",
+      "tweet_ids": "2209437818680962828"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-07-18T23:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"61znts\",\"line_item_id\":\"i2298\",\"tweet_id\":\"2209437818680962828\",\"updated_at\":\"2027-07-18T23:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"18ubm33zsvt\",\"line_item_id\":\"i2298\",\"tweet_ids\":[\"2209437818680962828\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-18T23:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "18ubm33zsvt",
+      "line_item_id": "nhtir",
+      "tweet_ids": "2209619012615350526"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-07-18T23:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"vczkeo\",\"line_item_id\":\"nhtir\",\"tweet_id\":\"2209619012615350526\",\"updated_at\":\"2027-07-18T23:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"18ubm33zsvt\",\"line_item_id\":\"nhtir\",\"tweet_ids\":[\"2209619012615350526\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-18T23:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "18ubm33zsvt",
+      "line_item_id": "i2298"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2027881498016030166\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"poysm\",\"categories\":[],\"created_at\":\"2027-07-18T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":14580000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-07-30T23:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"y2a13e\",\"goal\":\"WEBSITE_CONVERSIONS\",\"id\":\"i2298\",\"ios_app_store_identifier\":null,\"name\":\"LI-A post 2209437818680962828\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"IMPRESSION\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":\"wni7y\",\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-07-18T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-07-18T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18ubm33zsvt\",\"line_item_id\":\"i2298\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-18T23:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "18ubm33zsvt",
+      "line_item_id": "nhtir"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2027881498016030166\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"poysm\",\"categories\":[],\"created_at\":\"2027-07-18T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":14580000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-07-30T23:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"y2a13e\",\"goal\":\"WEBSITE_CONVERSIONS\",\"id\":\"nhtir\",\"ios_app_store_identifier\":null,\"name\":\"LI-B post 2209619012615350526\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"IMPRESSION\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":\"wni7y\",\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-07-18T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-07-18T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18ubm33zsvt\",\"line_item_id\":\"nhtir\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-18T23:00:00Z",
+    "tool": "activate_campaign",
+    "arguments": {
+      "account_id": "18ubm33zsvt",
+      "campaign_id": "poysm"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-07-18T23:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"RUNNING\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"y2a13e\",\"id\":\"poysm\",\"name\":\"Last Light on the Towpath \u2014 Streams (Jul 19\u201330)\",\"purchase_order_number\":null,\"reasons_not_servable\":[],\"servable\":true,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-07-18T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18ubm33zsvt\",\"campaign_id\":\"poysm\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-18T23:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-07-22T09:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-07-31T00:00:00Z\",\"now\":\"2027-07-22T09:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-22T09:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18ubm33zsvt",
+      "end_time": "2027-07-22T09:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "i2298,nhtir",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING,WEB_CONVERSION",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-07-19T00:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"i2298\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[45460257],\"billed_engagements\":[46307],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[30],\"conversion_add_to_carts\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_add_to_wishlists\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_checkouts_initiated\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_content_views\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_custom\":{\"assisted\":null,\"metric\":[15],\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":[11],\"post_view\":[4],\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_downloads\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_landing_page_views\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_payment_info_additions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_purchases\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_searches\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_sessions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_sign_ups\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_site_visits\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_subscriptions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"engagements\":[290],\"follows\":null,\"impressions\":[46307],\"likes\":[6],\"link_clicks\":[30],\"qualified_impressions\":[46307],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"nhtir\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[45567838],\"billed_engagements\":[46545],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[20],\"conversion_add_to_carts\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_add_to_wishlists\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_checkouts_initiated\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_content_views\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_custom\":{\"assisted\":null,\"metric\":[13],\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":[12],\"post_view\":[1],\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_downloads\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_landing_page_views\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_payment_info_additions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_purchases\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_searches\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_sessions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_sign_ups\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_site_visits\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_subscriptions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"engagements\":[333],\"follows\":null,\"impressions\":[46545],\"likes\":[10],\"link_clicks\":[20],\"qualified_impressions\":[46545],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-07-22T09:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"i2298\",\"nhtir\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\",\"WEB_CONVERSION\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-07-19T00:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-22T09:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18ubm33zsvt",
+      "daily_budget_amount_local_micro": 20000000,
+      "line_item_id": "i2298"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2027881498016030166\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"poysm\",\"categories\":[],\"created_at\":\"2027-07-18T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":20000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-07-30T23:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"y2a13e\",\"goal\":\"WEBSITE_CONVERSIONS\",\"id\":\"i2298\",\"ios_app_store_identifier\":null,\"name\":\"LI-A post 2209437818680962828\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"IMPRESSION\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":\"wni7y\",\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-07-18T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-07-22T09:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18ubm33zsvt\",\"daily_budget_amount_local_micro\":20000000,\"line_item_id\":\"i2298\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-22T09:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18ubm33zsvt",
+      "daily_budget_amount_local_micro": 9160000,
+      "line_item_id": "nhtir"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2027881498016030166\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"poysm\",\"categories\":[],\"created_at\":\"2027-07-18T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":9160000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-07-30T23:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"y2a13e\",\"goal\":\"WEBSITE_CONVERSIONS\",\"id\":\"nhtir\",\"ios_app_store_identifier\":null,\"name\":\"LI-B post 2209619012615350526\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"IMPRESSION\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":\"wni7y\",\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-07-18T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-07-22T09:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18ubm33zsvt\",\"daily_budget_amount_local_micro\":9160000,\"line_item_id\":\"nhtir\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-22T09:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-07-26T09:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-07-31T00:00:00Z\",\"now\":\"2027-07-26T09:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-26T09:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18ubm33zsvt",
+      "end_time": "2027-07-26T09:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "i2298,nhtir",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING,WEB_CONVERSION",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-07-19T00:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"errors\":[{\"code\":\"INVALID_TIME_WINDOW\",\"message\":\"The end_time (2027-07-26 09:00:00 +0000) can be a maximum of 7.days+1.hours after the start_time (2027-07-19 00:00:00 +0000)\",\"parameter\":\"\"}],\"request\":{\"params\":{\"account_id\":\"18ubm33zsvt\",\"end_time\":\"2027-07-26T09:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"i2298\",\"nhtir\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\",\"WEB_CONVERSION\"],\"placement\":\"ALL_ON_TWITTER\",\"start_time\":\"2027-07-19T00:00:00Z\"}}}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2027-07-26T09:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18ubm33zsvt",
+      "end_time": "2027-07-26T09:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "i2298,nhtir",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING,WEB_CONVERSION",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-07-22T09:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"i2298\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[78973072],\"billed_engagements\":[73403],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[50],\"conversion_add_to_carts\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_add_to_wishlists\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_checkouts_initiated\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_content_views\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_custom\":{\"assisted\":null,\"metric\":[28],\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":[24],\"post_view\":[4],\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_downloads\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_landing_page_views\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_payment_info_additions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_purchases\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_searches\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_sessions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_sign_ups\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_site_visits\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_subscriptions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"engagements\":[534],\"follows\":null,\"impressions\":[73403],\"likes\":[9],\"link_clicks\":[50],\"qualified_impressions\":[73403],\"replies\":[1],\"retweets\":[1]},\"segment\":null}]},{\"id\":\"nhtir\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[34237354],\"billed_engagements\":[30498],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[25],\"conversion_add_to_carts\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_add_to_wishlists\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_checkouts_initiated\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_content_views\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_custom\":{\"assisted\":null,\"metric\":[10],\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":[9],\"post_view\":[1],\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_downloads\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_landing_page_views\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_payment_info_additions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_purchases\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_searches\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_sessions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_sign_ups\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_site_visits\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_subscriptions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"engagements\":[242],\"follows\":null,\"impressions\":[30498],\"likes\":[6],\"link_clicks\":[25],\"qualified_impressions\":[30498],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-07-26T09:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"i2298\",\"nhtir\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\",\"WEB_CONVERSION\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-07-22T09:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-26T09:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18ubm33zsvt",
+      "entity_status": "PAUSED",
+      "line_item_id": "nhtir"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2027881498016030166\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"poysm\",\"categories\":[],\"created_at\":\"2027-07-18T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":9160000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-07-30T23:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"y2a13e\",\"goal\":\"WEBSITE_CONVERSIONS\",\"id\":\"nhtir\",\"ios_app_store_identifier\":null,\"name\":\"LI-B post 2209619012615350526\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"IMPRESSION\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":\"wni7y\",\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-07-18T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-07-26T09:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18ubm33zsvt\",\"entity_status\":\"PAUSED\",\"line_item_id\":\"nhtir\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-26T09:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18ubm33zsvt",
+      "daily_budget_amount_local_micro": 29160000,
+      "line_item_id": "i2298"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2027881498016030166\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"poysm\",\"categories\":[],\"created_at\":\"2027-07-18T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":29160000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-07-30T23:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"y2a13e\",\"goal\":\"WEBSITE_CONVERSIONS\",\"id\":\"i2298\",\"ios_app_store_identifier\":null,\"name\":\"LI-A post 2209437818680962828\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"IMPRESSION\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":\"wni7y\",\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-07-18T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-07-26T09:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18ubm33zsvt\",\"daily_budget_amount_local_micro\":29160000,\"line_item_id\":\"i2298\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-26T09:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-07-31T00:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-07-31T00:00:00Z\",\"now\":\"2027-07-31T00:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-31T00:00:00Z",
+    "tool": "get_line_item",
+    "arguments": {
+      "account_id": "18ubm33zsvt",
+      "line_item_id": "i2298"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2027881498016030166\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"poysm\",\"categories\":[],\"created_at\":\"2027-07-18T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":29160000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-07-30T23:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"y2a13e\",\"goal\":\"WEBSITE_CONVERSIONS\",\"id\":\"i2298\",\"ios_app_store_identifier\":null,\"name\":\"LI-A post 2209437818680962828\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"IMPRESSION\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":\"wni7y\",\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-07-18T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-07-26T09:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18ubm33zsvt\",\"line_item_id\":\"i2298\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-31T00:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18ubm33zsvt",
+      "end_time": "2027-07-31T00:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "i2298,nhtir",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING,WEB_CONVERSION",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-07-26T09:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"i2298\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[141165625],\"billed_engagements\":[154489],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[91],\"conversion_add_to_carts\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_add_to_wishlists\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_checkouts_initiated\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_content_views\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_custom\":{\"assisted\":null,\"metric\":[45],\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":[43],\"post_view\":[2],\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_downloads\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_landing_page_views\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_payment_info_additions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_purchases\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_searches\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_sessions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_sign_ups\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_site_visits\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_subscriptions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"engagements\":[1098],\"follows\":null,\"impressions\":[154489],\"likes\":[23],\"link_clicks\":[91],\"qualified_impressions\":[154489],\"replies\":[1],\"retweets\":[1]},\"segment\":null}]},{\"id\":\"nhtir\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":null,\"billed_engagements\":null,\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":null,\"conversion_add_to_carts\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_add_to_wishlists\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_checkouts_initiated\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_content_views\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_custom\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_downloads\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_landing_page_views\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_payment_info_additions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_purchases\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_searches\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_sessions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_sign_ups\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_site_visits\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_subscriptions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"engagements\":null,\"follows\":null,\"impressions\":null,\"likes\":null,\"link_clicks\":null,\"qualified_impressions\":null,\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-07-31T00:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"i2298\",\"nhtir\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\",\"WEB_CONVERSION\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-07-26T09:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-31T00:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18ubm33zsvt",
+      "entity_status": "PAUSED",
+      "line_item_id": "i2298"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2027881498016030166\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"poysm\",\"categories\":[],\"created_at\":\"2027-07-18T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":29160000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-07-30T23:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"y2a13e\",\"goal\":\"WEBSITE_CONVERSIONS\",\"id\":\"i2298\",\"ios_app_store_identifier\":null,\"name\":\"LI-A post 2209437818680962828\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"IMPRESSION\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":\"wni7y\",\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-07-18T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-07-31T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18ubm33zsvt\",\"entity_status\":\"PAUSED\",\"line_item_id\":\"i2298\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-31T00:00:00Z",
+    "tool": "update_campaign",
+    "arguments": {
+      "account_id": "18ubm33zsvt",
+      "campaign_id": "poysm",
+      "entity_status": "PAUSED"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-07-18T23:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"PAUSED\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"y2a13e\",\"id\":\"poysm\",\"name\":\"Last Light on the Towpath \u2014 Streams (Jul 19\u201330)\",\"purchase_order_number\":null,\"reasons_not_servable\":[\"EXPIRED\",\"PAUSED_BY_ADVERTISER\"],\"servable\":false,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-07-31T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18ubm33zsvt\",\"campaign_id\":\"poysm\",\"entity_status\":\"PAUSED\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

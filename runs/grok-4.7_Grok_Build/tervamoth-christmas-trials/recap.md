@@ -1,0 +1,5 @@
+The Christmas flight is finished. From December 7 through December 18, Nairobi time, X reports **$387.02** spent, **332,120** impressions, and **195** link clicks.
+
+Those are X delivery results for the landing page at https://tervamoth.com/christmas. Completed free-trial starts are recorded only by Tervamoth. This account has no X pixel, so this recap does not include trial starts, invitations sent, or unfinished registrations.
+
+The campaign used only the four approved posts, in Nigeria, Kenya, Ghana, and South Africa, on iOS and Android. After the first days, more of the budget went to iOS, where link clicks cost less, and the Christmas invitation kept running there on its own. The Android invitation group was paused once it was the most expensive source of clicks. Spend stayed inside the $400 cap.

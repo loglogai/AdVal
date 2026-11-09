@@ -1,0 +1,5 @@
+The five-day flight is finished. X billed **$499.40**, and the ads received **416,904 impressions** and **243 link clicks**.
+
+Those three figures are X delivery metrics for July 11–15, 2027, in Mountain time. The spend is what X charged for this campaign. The impressions are how often the two approved posts were shown. The link clicks are clicks through to https://larchmorrow.com/start. A free-trial start is counted only when someone activates the 14-day trial inside the app. X cannot see that event: the site has no X pixel, and the start happens in the app, so the trial-start count stays in Larchmorrow’s own reporting. A link click, a landing-page visit, or a download is not a trial start.
+
+Both approved posts ran in one campaign, aimed at the United States and Canada on iOS and Android, with no age cutoff. After the first two days, more of the budget went to the calendar post, which was bringing people to the landing page at a lower cost per click. That post ended at $327.04, 270,401 impressions, and 163 link clicks. The summer-day post ended at $172.36, 146,503 impressions, and 80 link clicks.

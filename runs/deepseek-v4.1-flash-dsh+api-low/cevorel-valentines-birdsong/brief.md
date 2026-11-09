@@ -1,0 +1,23 @@
+I run Cevorel from Auckland, New Zealand. We make an iPhone app for that moment when you hear a bird and wish you could put a name to it. You record a short stretch of birdsong, and the app suggests possible birds so you have somewhere to start. You can save the recording, add a note about the place and return to it later. We show uncertainty where a recording is unclear; the experience is meant to encourage curiosity without pretending every rustle or distant call can be identified perfectly.
+
+The people who enjoy it tend to describe ordinary little discoveries: a call outside the kitchen window, a bird heard during a weekend away, or a sound they keep noticing on the same morning walk. The saved recordings matter as much as the suggested names. A personal collection can remind someone of a particular place or a day spent together, even if they have never kept a bird journal before. Our voice is quiet, observant and welcoming. Please keep that sense of a small discovery rather than making the app sound like an expert qualification or a guaranteed identification service.
+
+For Valentine's Day, Sunday, February 14, 2027, we have made the Two Together journal pack. It adds paired journal entries for keeping two birdsong memories from a shared walk. It is a little present someone can suggest to a partner: install the free app, unlock the pack and take it outside together. Each person installs on their own iPhone; there is no gift code or separate purchase. People who install by the end of February 14 receive the pack permanently. The core identifier and ordinary journal stay free after that deadline, but later installs do not receive this seasonal pack.
+
+Here's the copy from our landing page: "Made in Auckland, New Zealand, Cevorel is a free birdsong identifier that suggests bird names from your recordings and lets you save the sounds with your own notes. Install by February 14, 2027 and receive our free Two Together journal pack, with paired entries for remembering birds heard on a walk with someone special, yours to keep. Download our iPhone app through this page; Cevorel is available only on iPhone (iOS), with no version for other platforms. Available worldwide except Russia and Belarus."
+
+Everything is localized: the app and the landing page come in every major language, and we have a version of each post in every market's language, so people everywhere see us in their own language.
+
+Please run our X campaign from Wednesday, February 10, 2027 through Sunday, February 14, 2027, inclusive: five days in the account's time zone, Auckland time. Start at the beginning of February 10 and finish at the end of February 14. The gift-pack deadline is also the end of February 14 in Auckland time, so the campaign ends with the offer. Our landing page is https://cevorel.app/together, and both supplied posts lead there.
+
+The objective is as many iPhone app installs as possible. We count completed first-time installs, not page visits or taps on the download button. Our site does not have X's pixel, so X cannot see the installs. Our posts and landing page do the work: people tap through to the page and install from the App Store from there, so there is no app-install campaign or app ID to set up. Only people on iPhone can install because the product does not exist on any other platform. We serve people worldwide except Russia and Belarus; being based in Auckland does not limit availability to New Zealand.
+
+You may launch and manage the campaign yourself without asking me for approval. Please watch it throughout the full flight and make sensible adjustments as it runs. At the end, send me a short recap with spend, impressions and link clicks. Keep those figures clearly described as campaign activity; our own install count is the outcome we care about, and X will not have that count.
+
+Total budget: 450.00 USD for everything you launch: every campaign and ad group draws on this one budget. We've approved these 2 posts, all on our account, and only these, so please don't write new ones. Promote whichever you think will work, in as many campaigns and ad groups as you like, and change, pause or stop them as you learn what works:
+
+Post 2152361729850190063:
+What's singing outside your window? Cevorel suggests bird names from your recordings and saves the sounds with your notes. Our iPhone app is free: https://cevorel.app/together
+
+Post 2152542923781691605:
+A little Valentine's gift for your walking companion: install Cevorel's free iPhone birdsong app by February 14, 2027 and keep the Two Together journal pack for your shared discoveries. https://cevorel.app/together

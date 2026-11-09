@@ -1,0 +1,666 @@
+[
+  {
+    "at": "2027-01-04T22:00:00Z",
+    "tool": "get_current_time",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-01-17T23:00:00Z\",\"now\":\"2027-01-04T22:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-04T22:00:00Z",
+    "tool": "list_ads_accounts",
+    "arguments": {
+      "count": 20
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"business_id\":null,\"business_name\":null,\"country_code\":\"ZA\",\"created_at\":\"2023-07-05T22:00:00Z\",\"deleted\":false,\"id\":\"1846tsl9zxa\",\"industry_type\":null,\"name\":\"Sivro Current\",\"timezone\":\"Africa/Johannesburg\",\"timezone_switch_at\":\"2023-07-05T22:00:00Z\",\"updated_at\":\"2023-07-05T22:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"count\":20}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-04T22:00:00Z",
+    "tool": "list_funding_instruments",
+    "arguments": {
+      "account_id": "1846tsl9zxa"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"able_to_fund\":true,\"created_at\":\"2023-07-05T22:00:00Z\",\"credit_limit_local_micro\":null,\"credit_remaining_local_micro\":null,\"currency\":\"USD\",\"deleted\":false,\"description\":\"American Express ending in 5522\",\"end_time\":null,\"entity_status\":\"ACTIVE\",\"funded_amount_local_micro\":0,\"id\":\"p5l9fr\",\"io_header\":null,\"reasons_not_able_to_fund\":[],\"start_time\":\"2023-07-05T22:00:00Z\",\"type\":\"CREDIT_CARD\",\"updated_at\":\"2023-07-05T22:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"1846tsl9zxa\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-04T22:00:00Z",
+    "tool": "get_ad_policy",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"enforcement\":\"ad groups that break the policy of their category are disapproved and don't serve\",\"minors\":\"no ad may reach anyone under 13; alcohol may never target minors\",\"pre_authorization\":\"required for every restricted category\",\"restricted_categories\":[{\"category\":\"alcohol\",\"countries\":[\"AL\",\"AR\",\"AT\",\"AU\",\"BA\",\"BE\",\"BG\",\"BO\",\"BR\",\"CA\",\"CH\",\"CL\",\"CO\",\"CR\",\"CY\",\"CZ\",\"DE\",\"DK\",\"DO\",\"EC\",\"EE\",\"ES\",\"FI\",\"FR\",\"GB\",\"GH\",\"GR\",\"HK\",\"HN\",\"HR\",\"HU\",\"IE\",\"IL\",\"IN\",\"IS\",\"IT\",\"JP\",\"KE\",\"KH\",\"KR\",\"LT\",\"LU\",\"LV\",\"ME\",\"MK\",\"MT\",\"MX\",\"MY\",\"NG\",\"NI\",\"NL\",\"NZ\",\"PA\",\"PE\",\"PH\",\"PT\",\"PY\",\"RO\",\"RS\",\"SE\",\"SG\",\"SI\",\"SK\",\"SN\",\"SV\",\"TW\",\"UA\",\"UG\",\"US\",\"UY\",\"VE\",\"ZA\",\"ZM\"],\"covers\":\"promoting, selling or branding beer, wine or spirits, and competitions with alcohol as a prize\",\"min_age\":{\"by_country\":{\"JP\":20,\"KR\":20,\"US\":21},\"elsewhere\":18},\"targeting_types\":null},{\"category\":\"financial_services\",\"countries\":[\"AE\",\"AR\",\"AT\",\"AU\",\"AW\",\"BA\",\"BB\",\"BE\",\"BG\",\"BM\",\"BR\",\"BS\",\"CA\",\"CH\",\"CL\",\"CR\",\"CW\",\"CZ\",\"DE\",\"DK\",\"DO\",\"EC\",\"EG\",\"ES\",\"FI\",\"FR\",\"GB\",\"GH\",\"GR\",\"GT\",\"HK\",\"HN\",\"HR\",\"ID\",\"IE\",\"IL\",\"IN\",\"IT\",\"JM\",\"JP\",\"KR\",\"KW\",\"MA\",\"MK\",\"MY\",\"NG\",\"NI\",\"NL\",\"NO\",\"NZ\",\"OM\",\"PA\",\"PE\",\"PH\",\"PK\",\"PL\",\"PT\",\"PY\",\"QA\",\"RO\",\"RS\",\"RU\",\"SA\",\"SE\",\"SG\",\"SI\",\"SV\",\"TH\",\"TR\",\"TT\",\"TW\",\"TZ\",\"UA\",\"UG\",\"US\",\"UY\",\"VE\",\"VN\",\"ZA\",\"ZM\"],\"covers\":\"banks, money service businesses, mobile and electronic payments, money transfer, savings, investment, currency exchange, loans and insurance\",\"min_age\":null,\"targeting_types\":null},{\"category\":\"political_content\",\"countries\":[\"AE\",\"AR\",\"AU\",\"CL\",\"CO\",\"EC\",\"GB\",\"GH\",\"ID\",\"IL\",\"IN\",\"JP\",\"MX\",\"PE\",\"SA\",\"US\",\"ZA\"],\"covers\":\"ads that reference a candidate, party, official, election, referendum, legislation, regulation or judicial outcome\",\"min_age\":null,\"targeting_types\":null},{\"category\":\"political_campaigning\",\"countries\":[\"AR\",\"AU\",\"CO\",\"EC\",\"GB\",\"GH\",\"ID\",\"IL\",\"JP\",\"MX\",\"PA\",\"PE\",\"US\",\"ZA\"],\"covers\":\"ads that advocate for or against, or ask for votes or money for, a candidate, party, election, legislation, referendum or ballot measure\",\"min_age\":null,\"targeting_types\":[\"LOCATION\",\"AGE\",\"GENDER\",\"INTEREST\",\"BROAD_KEYWORD\",\"PHRASE_KEYWORD\",\"EXACT_KEYWORD\",\"UNORDERED_KEYWORD\",\"NEGATIVE_PHRASE_KEYWORD\",\"NEGATIVE_EXACT_KEYWORD\",\"NEGATIVE_UNORDERED_KEYWORD\",\"CUSTOM_AUDIENCE\",\"CUSTOM_AUDIENCE_EXPANDED\",\"SIMILAR_TO_FOLLOWERS_OF_USER\",\"FOLLOWER_LOOK_ALIKES\"]}]},\"request\":{\"params\":{}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-04T22:00:00Z",
+    "tool": "list_line_item_placements",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"placements\":[[\"ALL_ON_TWITTER\"],[\"PUBLISHER_NETWORK\"],[\"TAP_BANNER\"],[\"TAP_BANNER\",\"TAP_FULL\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_NATIVE\"],[\"TAP_FULL\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_FULL\",\"TAP_MRECT\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_FULL\",\"TAP_NATIVE\"],[\"TAP_FULL_LANDSCAPE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_MRECT\"],[\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_NATIVE\"]],\"product_type\":\"MEDIA\"},{\"placements\":[[\"ALL_ON_TWITTER\"],[\"ALL_ON_TWITTER\",\"PUBLISHER_NETWORK\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL_LANDSCAPE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_NATIVE\"],[\"PUBLISHER_NETWORK\"],[\"PUBLISHER_NETWORK\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"PUBLISHER_NETWORK\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"PUBLISHER_NETWORK\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"PUBLISHER_NETWORK\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\"],[\"TAP_BANNER\",\"TAP_FULL\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_NATIVE\"],[\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\"],[\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_NATIVE\"],[\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TWITTER_MEDIA_VIEWER\"],[\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TWITTER_REPLIES\"],[\"TWITTER_SEARCH\"],[\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TWITTER_TIMELINE\"]],\"product_type\":\"PROMOTED_TWEETS\"},{\"placements\":[[\"ALL_ON_TWITTER\"],[\"TWITTER_TIMELINE\"]],\"product_type\":\"PROMOTED_ACCOUNT\"}],\"next_cursor\":null,\"request\":{\"params\":{}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-04T22:00:00Z",
+    "tool": "list_account_posts",
+    "arguments": {
+      "account_id": "1846tsl9zxa",
+      "tweet_type": "PUBLISHED",
+      "count": 20
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Fri Jan 01 22:00:00 +0000 2027\",\"display_text_range\":[0,209],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"sivrocurrent.com/one-more\u2026\",\"expanded_url\":\"https://sivrocurrent.com/one-more-morning\",\"indices\":[186,209],\"url\":\"https://t.co/rnixuwRi3S\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"One More Morning: four melodic house tracks built from dawn recordings. Stream free on Sivro Stream through January 17, 2027. All ages, worldwide except China; no account or app needed. https://t.co/rnixuwRi3S\",\"geo\":null,\"id\":2139119473260467502,\"id_str\":\"2139119473260467502\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2139119473260467502\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Wed Jul 05 22:00:00 +0000 2023\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2213,\"follow_request_sent\":null,\"followers_count\":20913,\"following\":null,\"friends_count\":63,\"geo_enabled\":false,\"id\":1676712556755794257,\"id_str\":\"1676712556755794257\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":13,\"location\":\"\",\"name\":\"Sivro Current\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1676712556755794257/1695884113\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1592858352695884113/d3j1xRKM_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1592858352695884113/d3j1xRKM_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"SivroCurrent\",\"statuses_count\":413,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Fri Jan 01 10:00:00 +0000 2027\",\"display_text_range\":[0,118],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"sivrocurrent.com/one-more\u2026\",\"expanded_url\":\"https://sivrocurrent.com/one-more-morning\",\"indices\":[95,118],\"url\":\"https://t.co/HlrTX8GgkR\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Something new from me. Please take a look when you have a moment, and thanks for your support. https://t.co/HlrTX8GgkR\",\"geo\":null,\"id\":2138938279327834804,\"id_str\":\"2138938279327834804\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2138938279327834804\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Wed Jul 05 22:00:00 +0000 2023\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2213,\"follow_request_sent\":null,\"followers_count\":20913,\"following\":null,\"friends_count\":63,\"geo_enabled\":false,\"id\":1676712556755794257,\"id_str\":\"1676712556755794257\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":13,\"location\":\"\",\"name\":\"Sivro Current\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1676712556755794257/1695884113\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1592858352695884113/d3j1xRKM_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1592858352695884113/d3j1xRKM_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"SivroCurrent\",\"statuses_count\":413,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Thu Dec 31 22:00:00 +0000 2026\",\"display_text_range\":[0,184],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"sivrocurrent.com/one-more\u2026\",\"expanded_url\":\"https://sivrocurrent.com/one-more-morning\",\"indices\":[161,184],\"url\":\"https://t.co/iyyCF4KegU\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Free through January 17, 2027: all four tracks of One More Morning. Dawn recordings meet melodic house on my new EP. No account or app required\u2014just press play. https://t.co/iyyCF4KegU\",\"geo\":null,\"id\":2138757085397349696,\"id_str\":\"2138757085397349696\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2138757085397349696\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Wed Jul 05 22:00:00 +0000 2023\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2213,\"follow_request_sent\":null,\"followers_count\":20913,\"following\":null,\"friends_count\":63,\"geo_enabled\":false,\"id\":1676712556755794257,\"id_str\":\"1676712556755794257\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":13,\"location\":\"\",\"name\":\"Sivro Current\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1676712556755794257/1695884113\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1592858352695884113/d3j1xRKM_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1592858352695884113/d3j1xRKM_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"SivroCurrent\",\"statuses_count\":413,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Thu Dec 31 10:00:00 +0000 2026\",\"display_text_range\":[0,186],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"sivrocurrent.com/one-more\u2026\",\"expanded_url\":\"https://sivrocurrent.com/one-more-morning\",\"indices\":[163,186],\"url\":\"https://t.co/5SnyiGPLSy\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Keep that fresh-start feeling moving. Free streaming of my four-track EP One More Morning ends January 17, 2027. Open it on Sivro Stream while the window is open: https://t.co/5SnyiGPLSy\",\"geo\":null,\"id\":2138575891461644122,\"id_str\":\"2138575891461644122\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2138575891461644122\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Wed Jul 05 22:00:00 +0000 2023\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2213,\"follow_request_sent\":null,\"followers_count\":20913,\"following\":null,\"friends_count\":63,\"geo_enabled\":false,\"id\":1676712556755794257,\"id_str\":\"1676712556755794257\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":13,\"location\":\"\",\"name\":\"Sivro Current\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1676712556755794257/1695884113\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1592858352695884113/d3j1xRKM_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1592858352695884113/d3j1xRKM_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"SivroCurrent\",\"statuses_count\":413,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"1846tsl9zxa\",\"count\":20,\"tweet_type\":\"PUBLISHED\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-04T22:00:00Z",
+    "tool": "list_account_posts",
+    "arguments": {
+      "account_id": "1846tsl9zxa",
+      "count": 10,
+      "tweet_ids": "2138394697530616770",
+      "tweet_type": "PUBLISHED"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"1846tsl9zxa\",\"count\":10,\"tweet_ids\":[\"2138394697530616770\"],\"tweet_type\":\"PUBLISHED\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-04T22:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "count": 5,
+      "q": "China"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"country_code\":\"CN\",\"location_type\":\"COUNTRIES\",\"name\":\"China\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"4797714c95971ac1\"},{\"country_code\":\"MX\",\"location_type\":\"CITIES\",\"name\":\"China, MX\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3ff47328c4b533ac\"},{\"country_code\":\"US\",\"location_type\":\"CITIES\",\"name\":\"China Grove, NC, US\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"213c6cc2982d1293\"},{\"country_code\":\"US\",\"location_type\":\"CITIES\",\"name\":\"China Grove, TX, US\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"d89d04db083f8e73\"},{\"country_code\":\"US\",\"location_type\":\"CITIES\",\"name\":\"China Lake Acres, CA, US\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"0c30a3af2b5427ee\"}],\"next_cursor\":null,\"request\":{\"params\":{\"count\":5,\"q\":\"China\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-04T22:00:00Z",
+    "tool": "list_account_posts",
+    "arguments": {
+      "account_id": "1846tsl9zxa",
+      "count": 20,
+      "timeline_type": "ALL",
+      "tweet_type": "PUBLISHED"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Fri Jan 01 22:00:00 +0000 2027\",\"display_text_range\":[0,209],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"sivrocurrent.com/one-more\u2026\",\"expanded_url\":\"https://sivrocurrent.com/one-more-morning\",\"indices\":[186,209],\"url\":\"https://t.co/rnixuwRi3S\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"One More Morning: four melodic house tracks built from dawn recordings. Stream free on Sivro Stream through January 17, 2027. All ages, worldwide except China; no account or app needed. https://t.co/rnixuwRi3S\",\"geo\":null,\"id\":2139119473260467502,\"id_str\":\"2139119473260467502\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2139119473260467502\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Wed Jul 05 22:00:00 +0000 2023\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2213,\"follow_request_sent\":null,\"followers_count\":20913,\"following\":null,\"friends_count\":63,\"geo_enabled\":false,\"id\":1676712556755794257,\"id_str\":\"1676712556755794257\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":13,\"location\":\"\",\"name\":\"Sivro Current\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1676712556755794257/1695884113\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1592858352695884113/d3j1xRKM_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1592858352695884113/d3j1xRKM_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"SivroCurrent\",\"statuses_count\":413,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Fri Jan 01 10:00:00 +0000 2027\",\"display_text_range\":[0,118],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"sivrocurrent.com/one-more\u2026\",\"expanded_url\":\"https://sivrocurrent.com/one-more-morning\",\"indices\":[95,118],\"url\":\"https://t.co/HlrTX8GgkR\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Something new from me. Please take a look when you have a moment, and thanks for your support. https://t.co/HlrTX8GgkR\",\"geo\":null,\"id\":2138938279327834804,\"id_str\":\"2138938279327834804\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2138938279327834804\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Wed Jul 05 22:00:00 +0000 2023\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2213,\"follow_request_sent\":null,\"followers_count\":20913,\"following\":null,\"friends_count\":63,\"geo_enabled\":false,\"id\":1676712556755794257,\"id_str\":\"1676712556755794257\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":13,\"location\":\"\",\"name\":\"Sivro Current\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1676712556755794257/1695884113\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1592858352695884113/d3j1xRKM_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1592858352695884113/d3j1xRKM_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"SivroCurrent\",\"statuses_count\":413,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Thu Dec 31 22:00:00 +0000 2026\",\"display_text_range\":[0,184],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"sivrocurrent.com/one-more\u2026\",\"expanded_url\":\"https://sivrocurrent.com/one-more-morning\",\"indices\":[161,184],\"url\":\"https://t.co/iyyCF4KegU\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Free through January 17, 2027: all four tracks of One More Morning. Dawn recordings meet melodic house on my new EP. No account or app required\u2014just press play. https://t.co/iyyCF4KegU\",\"geo\":null,\"id\":2138757085397349696,\"id_str\":\"2138757085397349696\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2138757085397349696\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Wed Jul 05 22:00:00 +0000 2023\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2213,\"follow_request_sent\":null,\"followers_count\":20913,\"following\":null,\"friends_count\":63,\"geo_enabled\":false,\"id\":1676712556755794257,\"id_str\":\"1676712556755794257\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":13,\"location\":\"\",\"name\":\"Sivro Current\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1676712556755794257/1695884113\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1592858352695884113/d3j1xRKM_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1592858352695884113/d3j1xRKM_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"SivroCurrent\",\"statuses_count\":413,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Thu Dec 31 10:00:00 +0000 2026\",\"display_text_range\":[0,186],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"sivrocurrent.com/one-more\u2026\",\"expanded_url\":\"https://sivrocurrent.com/one-more-morning\",\"indices\":[163,186],\"url\":\"https://t.co/5SnyiGPLSy\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Keep that fresh-start feeling moving. Free streaming of my four-track EP One More Morning ends January 17, 2027. Open it on Sivro Stream while the window is open: https://t.co/5SnyiGPLSy\",\"geo\":null,\"id\":2138575891461644122,\"id_str\":\"2138575891461644122\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2138575891461644122\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Wed Jul 05 22:00:00 +0000 2023\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2213,\"follow_request_sent\":null,\"followers_count\":20913,\"following\":null,\"friends_count\":63,\"geo_enabled\":false,\"id\":1676712556755794257,\"id_str\":\"1676712556755794257\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":13,\"location\":\"\",\"name\":\"Sivro Current\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1676712556755794257/1695884113\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1592858352695884113/d3j1xRKM_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1592858352695884113/d3j1xRKM_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"SivroCurrent\",\"statuses_count\":413,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Wed Dec 30 22:00:00 +0000 2026\",\"display_text_range\":[0,183],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"sivrocurrent.com/one-more\u2026\",\"expanded_url\":\"https://sivrocurrent.com/one-more-morning\",\"indices\":[160,183],\"url\":\"https://t.co/eFsGDTerQA\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Small resolutions. Steady grooves. My new EP One More Morning brings four tracks of Cape Town dawn into melodic house. Stream it free through January 17, 2027: https://t.co/eFsGDTerQA\",\"geo\":null,\"id\":2138394697530616770,\"id_str\":\"2138394697530616770\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":false,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2138394697530616770\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Wed Jul 05 22:00:00 +0000 2023\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2213,\"follow_request_sent\":null,\"followers_count\":20913,\"following\":null,\"friends_count\":63,\"geo_enabled\":false,\"id\":1676712556755794257,\"id_str\":\"1676712556755794257\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":13,\"location\":\"\",\"name\":\"Sivro Current\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1676712556755794257/1695884113\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1592858352695884113/d3j1xRKM_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1592858352695884113/d3j1xRKM_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"SivroCurrent\",\"statuses_count\":413,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"1846tsl9zxa\",\"count\":20,\"timeline_type\":\"ALL\",\"tweet_type\":\"PUBLISHED\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-04T22:00:00Z",
+    "tool": "list_campaigns",
+    "arguments": {
+      "account_id": "1846tsl9zxa"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"1846tsl9zxa\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-04T22:00:00Z",
+    "tool": "list_line_items",
+    "arguments": {
+      "account_id": "1846tsl9zxa"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"1846tsl9zxa\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-04T22:00:00Z",
+    "tool": "create_campaign",
+    "arguments": {
+      "account_id": "1846tsl9zxa",
+      "funding_instrument_id": "p5l9fr",
+      "name": "One More Morning - Streams Jan 5-17"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-01-04T22:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"PAUSED\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"p5l9fr\",\"id\":\"10lig\",\"name\":\"One More Morning - Streams Jan 5-17\",\"purchase_order_number\":null,\"reasons_not_servable\":[\"PAUSED_BY_ADVERTISER\"],\"servable\":false,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-01-04T22:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1846tsl9zxa\",\"funding_instrument_id\":\"p5l9fr\",\"name\":\"One More Morning - Streams Jan 5-17\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-04T22:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "1846tsl9zxa",
+      "campaign_id": "10lig",
+      "daily_budget_amount_local_micro": 3845000,
+      "end_time": "2027-01-17T21:59:59Z",
+      "goal": "LINK_CLICKS",
+      "name": "OMM - Press Play - WW ex China",
+      "objective": "WEBSITE_CLICKS",
+      "placements": "ALL_ON_TWITTER",
+      "product_type": "PROMOTED_TWEETS",
+      "start_time": "2027-01-04T22:00:00Z",
+      "total_budget_amount_local_micro": 50000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1676712556755794257\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"10lig\",\"categories\":[],\"created_at\":\"2027-01-04T22:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":3845000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-17T21:59:59Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"p5l9fr\",\"goal\":\"LINK_CLICKS\",\"id\":\"1j3ry\",\"ios_app_store_identifier\":null,\"name\":\"OMM - Press Play - WW ex China\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-04T22:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":50000000,\"updated_at\":\"2027-01-04T22:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1846tsl9zxa\",\"campaign_id\":\"10lig\",\"daily_budget_amount_local_micro\":3845000,\"end_time\":\"2027-01-17T21:59:59Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"OMM - Press Play - WW ex China\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"start_time\":\"2027-01-04T22:00:00Z\",\"total_budget_amount_local_micro\":50000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-04T22:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "1846tsl9zxa",
+      "campaign_id": "10lig",
+      "daily_budget_amount_local_micro": 3845000,
+      "end_time": "2027-01-17T21:59:59Z",
+      "goal": "LINK_CLICKS",
+      "name": "OMM - All Ages WW - WW ex China",
+      "objective": "WEBSITE_CLICKS",
+      "placements": "ALL_ON_TWITTER",
+      "product_type": "PROMOTED_TWEETS",
+      "start_time": "2027-01-04T22:00:00Z",
+      "total_budget_amount_local_micro": 50000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1676712556755794257\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"10lig\",\"categories\":[],\"created_at\":\"2027-01-04T22:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":3845000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-17T21:59:59Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"p5l9fr\",\"goal\":\"LINK_CLICKS\",\"id\":\"9d32p\",\"ios_app_store_identifier\":null,\"name\":\"OMM - All Ages WW - WW ex China\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-04T22:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":50000000,\"updated_at\":\"2027-01-04T22:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1846tsl9zxa\",\"campaign_id\":\"10lig\",\"daily_budget_amount_local_micro\":3845000,\"end_time\":\"2027-01-17T21:59:59Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"OMM - All Ages WW - WW ex China\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"start_time\":\"2027-01-04T22:00:00Z\",\"total_budget_amount_local_micro\":50000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-04T22:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "1846tsl9zxa",
+      "line_item_id": "1j3ry",
+      "operator_type": "NE",
+      "targeting_type": "LOCATION",
+      "targeting_value": "4797714c95971ac1"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-04T22:00:00Z\",\"deleted\":false,\"id\":\"s9pqwlo\",\"line_item_id\":\"1j3ry\",\"location_type\":\"COUNTRIES\",\"name\":\"China\",\"operator_type\":\"NE\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"4797714c95971ac1\",\"updated_at\":\"2027-01-04T22:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1846tsl9zxa\",\"line_item_id\":\"1j3ry\",\"operator_type\":\"NE\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"4797714c95971ac1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-04T22:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "1846tsl9zxa",
+      "line_item_id": "9d32p",
+      "operator_type": "NE",
+      "targeting_type": "LOCATION",
+      "targeting_value": "4797714c95971ac1"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-04T22:00:00Z\",\"deleted\":false,\"id\":\"jbvy5uy\",\"line_item_id\":\"9d32p\",\"location_type\":\"COUNTRIES\",\"name\":\"China\",\"operator_type\":\"NE\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"4797714c95971ac1\",\"updated_at\":\"2027-01-04T22:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1846tsl9zxa\",\"line_item_id\":\"9d32p\",\"operator_type\":\"NE\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"4797714c95971ac1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-04T22:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "1846tsl9zxa",
+      "line_item_id": "1j3ry",
+      "tweet_ids": "2138757085397349696"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-01-04T22:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"pug7jj\",\"line_item_id\":\"1j3ry\",\"tweet_id\":\"2138757085397349696\",\"updated_at\":\"2027-01-04T22:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"1846tsl9zxa\",\"line_item_id\":\"1j3ry\",\"tweet_ids\":[\"2138757085397349696\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-04T22:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "1846tsl9zxa",
+      "line_item_id": "9d32p",
+      "tweet_ids": "2139119473260467502"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-01-04T22:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"rqt0ip\",\"line_item_id\":\"9d32p\",\"tweet_id\":\"2139119473260467502\",\"updated_at\":\"2027-01-04T22:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"1846tsl9zxa\",\"line_item_id\":\"9d32p\",\"tweet_ids\":[\"2139119473260467502\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-04T22:00:00Z",
+    "tool": "activate_campaign",
+    "arguments": {
+      "account_id": "1846tsl9zxa",
+      "campaign_id": "10lig"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-01-04T22:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"RUNNING\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"p5l9fr\",\"id\":\"10lig\",\"name\":\"One More Morning - Streams Jan 5-17\",\"purchase_order_number\":null,\"reasons_not_servable\":[],\"servable\":true,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-01-04T22:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1846tsl9zxa\",\"campaign_id\":\"10lig\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-04T22:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "1846tsl9zxa",
+      "line_item_id": "1j3ry"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1676712556755794257\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"10lig\",\"categories\":[],\"created_at\":\"2027-01-04T22:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":3845000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-17T21:59:59Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"p5l9fr\",\"goal\":\"LINK_CLICKS\",\"id\":\"1j3ry\",\"ios_app_store_identifier\":null,\"name\":\"OMM - Press Play - WW ex China\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-04T22:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":50000000,\"updated_at\":\"2027-01-04T22:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1846tsl9zxa\",\"line_item_id\":\"1j3ry\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-04T22:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "1846tsl9zxa",
+      "line_item_id": "9d32p"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1676712556755794257\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"10lig\",\"categories\":[],\"created_at\":\"2027-01-04T22:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":3845000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-17T21:59:59Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"p5l9fr\",\"goal\":\"LINK_CLICKS\",\"id\":\"9d32p\",\"ios_app_store_identifier\":null,\"name\":\"OMM - All Ages WW - WW ex China\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-04T22:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":50000000,\"updated_at\":\"2027-01-04T22:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1846tsl9zxa\",\"line_item_id\":\"9d32p\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-04T22:00:00Z",
+    "tool": "list_targeting_criteria",
+    "arguments": {
+      "account_id": "1846tsl9zxa",
+      "line_item_ids": "1j3ry,9d32p"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"created_at\":\"2027-01-04T22:00:00Z\",\"deleted\":false,\"id\":\"s9pqwlo\",\"line_item_id\":\"1j3ry\",\"location_type\":\"COUNTRIES\",\"name\":\"China\",\"operator_type\":\"NE\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"4797714c95971ac1\",\"updated_at\":\"2027-01-04T22:00:00Z\"},{\"created_at\":\"2027-01-04T22:00:00Z\",\"deleted\":false,\"id\":\"jbvy5uy\",\"line_item_id\":\"9d32p\",\"location_type\":\"COUNTRIES\",\"name\":\"China\",\"operator_type\":\"NE\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"4797714c95971ac1\",\"updated_at\":\"2027-01-04T22:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"1846tsl9zxa\",\"line_item_ids\":[\"1j3ry\",\"9d32p\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-04T22:00:00Z",
+    "tool": "list_promoted_posts",
+    "arguments": {
+      "account_id": "1846tsl9zxa",
+      "line_item_ids": "1j3ry,9d32p"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-01-04T22:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"pug7jj\",\"line_item_id\":\"1j3ry\",\"tweet_id\":\"2138757085397349696\",\"updated_at\":\"2027-01-04T22:00:00Z\"},{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-01-04T22:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"rqt0ip\",\"line_item_id\":\"9d32p\",\"tweet_id\":\"2139119473260467502\",\"updated_at\":\"2027-01-04T22:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"1846tsl9zxa\",\"line_item_ids\":[\"1j3ry\",\"9d32p\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-04T22:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-01-08T22:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-01-17T23:00:00Z\",\"now\":\"2027-01-08T22:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-08T22:00:00Z",
+    "tool": "get_active_entities",
+    "arguments": {
+      "account_id": "1846tsl9zxa",
+      "entity": "LINE_ITEM",
+      "end_time": "2027-01-08T22:00:00Z",
+      "start_time": "2027-01-04T22:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"activity_end_time\":\"2027-01-08T20:00:00Z\",\"activity_start_time\":\"2027-01-04T22:00:00Z\",\"entity_id\":\"9d32p\",\"placements\":[\"ALL_ON_TWITTER\"]},{\"activity_end_time\":\"2027-01-08T20:00:00Z\",\"activity_start_time\":\"2027-01-04T22:00:00Z\",\"entity_id\":\"1j3ry\",\"placements\":[\"ALL_ON_TWITTER\"]}],\"request\":{\"params\":{\"account_id\":\"1846tsl9zxa\",\"end_time\":\"2027-01-08T22:00:00Z\",\"entity\":\"LINE_ITEM\",\"start_time\":\"2027-01-04T22:00:00Z\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-08T22:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "1846tsl9zxa",
+      "end_time": "2027-01-08T22:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "1j3ry,9d32p",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-01-04T22:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"1j3ry\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[14905465],\"billed_engagements\":[906],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[61],\"engagements\":[906],\"follows\":null,\"impressions\":[125519],\"likes\":[21],\"link_clicks\":[61],\"qualified_impressions\":[125519],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"9d32p\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[14617683],\"billed_engagements\":[769],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[70],\"engagements\":[769],\"follows\":null,\"impressions\":[111625],\"likes\":[19],\"link_clicks\":[70],\"qualified_impressions\":[111625],\"replies\":null,\"retweets\":[2]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-08T22:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"1j3ry\",\"9d32p\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-04T22:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-08T22:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "1846tsl9zxa",
+      "daily_budget_amount_local_micro": 5000000,
+      "line_item_id": "9d32p"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1676712556755794257\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"10lig\",\"categories\":[],\"created_at\":\"2027-01-04T22:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":5000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-17T21:59:59Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"p5l9fr\",\"goal\":\"LINK_CLICKS\",\"id\":\"9d32p\",\"ios_app_store_identifier\":null,\"name\":\"OMM - All Ages WW - WW ex China\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-04T22:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":50000000,\"updated_at\":\"2027-01-08T22:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1846tsl9zxa\",\"daily_budget_amount_local_micro\":5000000,\"line_item_id\":\"9d32p\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-08T22:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "1846tsl9zxa",
+      "daily_budget_amount_local_micro": 2690000,
+      "line_item_id": "1j3ry"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1676712556755794257\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"10lig\",\"categories\":[],\"created_at\":\"2027-01-04T22:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":2690000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-17T21:59:59Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"p5l9fr\",\"goal\":\"LINK_CLICKS\",\"id\":\"1j3ry\",\"ios_app_store_identifier\":null,\"name\":\"OMM - Press Play - WW ex China\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-04T22:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":50000000,\"updated_at\":\"2027-01-08T22:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1846tsl9zxa\",\"daily_budget_amount_local_micro\":2690000,\"line_item_id\":\"1j3ry\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-08T22:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-01-12T22:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-01-17T23:00:00Z\",\"now\":\"2027-01-12T22:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-12T22:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "1846tsl9zxa",
+      "end_time": "2027-01-12T22:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "1j3ry,9d32p",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-01-04T22:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"errors\":[{\"code\":\"INVALID_TIME_WINDOW\",\"message\":\"The end_time (2027-01-12 22:00:00 +0000) can be a maximum of 7.days+1.hours after the start_time (2027-01-04 22:00:00 +0000)\",\"parameter\":\"\"}],\"request\":{\"params\":{\"account_id\":\"1846tsl9zxa\",\"end_time\":\"2027-01-12T22:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"1j3ry\",\"9d32p\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"start_time\":\"2027-01-04T22:00:00Z\"}}}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2027-01-12T22:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "1846tsl9zxa",
+      "end_time": "2027-01-12T22:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "1j3ry,9d32p",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-01-08T22:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"1j3ry\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[10420265],\"billed_engagements\":[484],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[47],\"engagements\":[484],\"follows\":null,\"impressions\":[74062],\"likes\":[15],\"link_clicks\":[47],\"qualified_impressions\":[74062],\"replies\":null,\"retweets\":[1]},\"segment\":null}]},{\"id\":\"9d32p\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[17153644],\"billed_engagements\":[931],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[88],\"engagements\":[931],\"follows\":null,\"impressions\":[130210],\"likes\":[30],\"link_clicks\":[88],\"qualified_impressions\":[130210],\"replies\":[1],\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-12T22:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"1j3ry\",\"9d32p\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-08T22:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-12T22:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "1846tsl9zxa",
+      "entity_status": "PAUSED",
+      "line_item_id": "1j3ry"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1676712556755794257\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"10lig\",\"categories\":[],\"created_at\":\"2027-01-04T22:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":2690000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-17T21:59:59Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"p5l9fr\",\"goal\":\"LINK_CLICKS\",\"id\":\"1j3ry\",\"ios_app_store_identifier\":null,\"name\":\"OMM - Press Play - WW ex China\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-04T22:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":50000000,\"updated_at\":\"2027-01-12T22:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1846tsl9zxa\",\"entity_status\":\"PAUSED\",\"line_item_id\":\"1j3ry\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-12T22:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "1846tsl9zxa",
+      "daily_budget_amount_local_micro": 8000000,
+      "line_item_id": "9d32p"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1676712556755794257\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"10lig\",\"categories\":[],\"created_at\":\"2027-01-04T22:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":8000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-17T21:59:59Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"p5l9fr\",\"goal\":\"LINK_CLICKS\",\"id\":\"9d32p\",\"ios_app_store_identifier\":null,\"name\":\"OMM - All Ages WW - WW ex China\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-04T22:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":50000000,\"updated_at\":\"2027-01-12T22:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1846tsl9zxa\",\"daily_budget_amount_local_micro\":8000000,\"line_item_id\":\"9d32p\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-12T22:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-01-17T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-01-17T23:00:00Z\",\"now\":\"2027-01-17T23:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-17T23:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "1846tsl9zxa",
+      "end_time": "2027-01-17T21:59:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "1j3ry,9d32p",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-01-12T22:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"errors\":[{\"code\":\"INVALID_TIME_WINDOW\",\"message\":\"Time cannot be fractional hours\",\"parameter\":\"end_time\"}],\"request\":{\"params\":{\"account_id\":\"1846tsl9zxa\",\"end_time\":\"2027-01-17T21:59:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"1j3ry\",\"9d32p\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"start_time\":\"2027-01-12T22:00:00Z\"}}}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2027-01-17T23:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "1846tsl9zxa",
+      "end_time": "2027-01-17T22:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "1j3ry,9d32p",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-01-12T22:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"1j3ry\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":null,\"billed_engagements\":null,\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":null,\"engagements\":null,\"follows\":null,\"impressions\":null,\"likes\":null,\"link_clicks\":null,\"qualified_impressions\":null,\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"9d32p\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[17558025],\"billed_engagements\":[1193],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[108],\"engagements\":[1193],\"follows\":null,\"impressions\":[166935],\"likes\":[23],\"link_clicks\":[108],\"qualified_impressions\":[166935],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-17T22:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"1j3ry\",\"9d32p\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-12T22:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

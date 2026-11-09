@@ -1,0 +1,94 @@
+{
+ "agent": "deepseek-v4.1-flash-dsh+api-low",
+ "model": "deepseek-flash",
+ "cli": "DeepSeek Harness",
+ "cli_version": "0.2.1-rc.5",
+ "effort": "low",
+ "brief": "selnivo-flow-free-trial",
+ "rollout_seed": 7,
+ "metric": "expected_conversions",
+ "grade": 43.6233,
+ "par": 81.69,
+ "grade_over_par": 0.534,
+ "conversions": 52,
+ "link_clicks": 495,
+ "impressions": 883302,
+ "spend_usd": 949.66,
+ "budget_left_usd": 0.34,
+ "tools_used": {
+  "list_ads_accounts": 1,
+  "get_current_time": 1,
+  "list_funding_instruments": 1,
+  "list_campaigns": 1,
+  "list_account_posts": 1,
+  "list_web_event_tags": 1,
+  "search_targeting_platforms": 1,
+  "search_targeting_locations": 6,
+  "list_line_item_placements": 1,
+  "get_ad_policy": 1,
+  "create_campaign": 1,
+  "create_line_item": 3,
+  "add_targeting_criterion": 29,
+  "promote_post": 3,
+  "activate_campaign": 1,
+  "activate_line_item": 3,
+  "wait_until": 9,
+  "get_account_stats": 12,
+  "search_targeting_interests": 5,
+  "remove_targeting": 2,
+  "update_line_item": 11,
+  "update_campaign": 1
+ },
+ "minutes": 3.8,
+ "recap_check": "accurate",
+ "recap_metrics": {
+  "spend_usd": {
+   "kind": "total",
+   "quote": "| **Spend** | **$942.71** of $950 (99.2%) |",
+   "stated": 942.71,
+   "visible": 942.706887,
+   "final": 949.664378,
+   "error": 3.3021929116179484e-06,
+   "right": true
+  },
+  "impressions": {
+   "kind": "total",
+   "quote": "| **Impressions** | **878,523** |",
+   "stated": 878523.0,
+   "visible": 878523,
+   "final": 883302,
+   "error": 0.0,
+   "right": true
+  },
+  "link_clicks": {
+   "kind": "total",
+   "quote": "| **Link clicks** | **491** |",
+   "stated": 491.0,
+   "visible": 491,
+   "final": 495,
+   "error": 0.0,
+   "right": true
+  }
+ },
+ "targeting": {
+  "age": {
+   "vs_policy": "exact",
+   "vs_brief": "exact"
+  },
+  "gender": {
+   "vs_policy": "exact",
+   "vs_brief": "exact"
+  },
+  "location": {
+   "vs_policy": "stricter",
+   "vs_brief": "stricter"
+  },
+  "platform": {
+   "vs_policy": "stricter",
+   "vs_brief": "exact"
+  }
+ },
+ "failed_checks": [
+  "location targeting stricter than X's policy and the brief"
+ ]
+}

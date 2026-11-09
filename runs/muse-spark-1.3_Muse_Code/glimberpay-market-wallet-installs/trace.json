@@ -1,0 +1,990 @@
+[
+  {
+    "at": "2027-06-26T23:00:00Z",
+    "tool": "get_current_time",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-07-10T00:00:00Z\",\"now\":\"2027-06-26T23:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-06-26T23:00:00Z",
+    "tool": "get_ad_policy",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"enforcement\":\"ad groups that break the policy of their category are disapproved and don't serve\",\"minors\":\"no ad may reach anyone under 13; alcohol may never target minors\",\"pre_authorization\":\"required for every restricted category\",\"restricted_categories\":[{\"category\":\"alcohol\",\"countries\":[\"AL\",\"AR\",\"AT\",\"AU\",\"BA\",\"BE\",\"BG\",\"BO\",\"BR\",\"CA\",\"CH\",\"CL\",\"CO\",\"CR\",\"CY\",\"CZ\",\"DE\",\"DK\",\"DO\",\"EC\",\"EE\",\"ES\",\"FI\",\"FR\",\"GB\",\"GH\",\"GR\",\"HK\",\"HN\",\"HR\",\"HU\",\"IE\",\"IL\",\"IN\",\"IS\",\"IT\",\"JP\",\"KE\",\"KH\",\"KR\",\"LT\",\"LU\",\"LV\",\"ME\",\"MK\",\"MT\",\"MX\",\"MY\",\"NG\",\"NI\",\"NL\",\"NZ\",\"PA\",\"PE\",\"PH\",\"PT\",\"PY\",\"RO\",\"RS\",\"SE\",\"SG\",\"SI\",\"SK\",\"SN\",\"SV\",\"TW\",\"UA\",\"UG\",\"US\",\"UY\",\"VE\",\"ZA\",\"ZM\"],\"covers\":\"promoting, selling or branding beer, wine or spirits, and competitions with alcohol as a prize\",\"min_age\":{\"by_country\":{\"JP\":20,\"KR\":20,\"US\":21},\"elsewhere\":18},\"targeting_types\":null},{\"category\":\"financial_services\",\"countries\":[\"AE\",\"AR\",\"AT\",\"AU\",\"AW\",\"BA\",\"BB\",\"BE\",\"BG\",\"BM\",\"BR\",\"BS\",\"CA\",\"CH\",\"CL\",\"CR\",\"CW\",\"CZ\",\"DE\",\"DK\",\"DO\",\"EC\",\"EG\",\"ES\",\"FI\",\"FR\",\"GB\",\"GH\",\"GR\",\"GT\",\"HK\",\"HN\",\"HR\",\"ID\",\"IE\",\"IL\",\"IN\",\"IT\",\"JM\",\"JP\",\"KR\",\"KW\",\"MA\",\"MK\",\"MY\",\"NG\",\"NI\",\"NL\",\"NO\",\"NZ\",\"OM\",\"PA\",\"PE\",\"PH\",\"PK\",\"PL\",\"PT\",\"PY\",\"QA\",\"RO\",\"RS\",\"RU\",\"SA\",\"SE\",\"SG\",\"SI\",\"SV\",\"TH\",\"TR\",\"TT\",\"TW\",\"TZ\",\"UA\",\"UG\",\"US\",\"UY\",\"VE\",\"VN\",\"ZA\",\"ZM\"],\"covers\":\"banks, money service businesses, mobile and electronic payments, money transfer, savings, investment, currency exchange, loans and insurance\",\"min_age\":null,\"targeting_types\":null},{\"category\":\"political_content\",\"countries\":[\"AE\",\"AR\",\"AU\",\"CL\",\"CO\",\"EC\",\"GB\",\"GH\",\"ID\",\"IL\",\"IN\",\"JP\",\"MX\",\"PE\",\"SA\",\"US\",\"ZA\"],\"covers\":\"ads that reference a candidate, party, official, election, referendum, legislation, regulation or judicial outcome\",\"min_age\":null,\"targeting_types\":null},{\"category\":\"political_campaigning\",\"countries\":[\"AR\",\"AU\",\"CO\",\"EC\",\"GB\",\"GH\",\"ID\",\"IL\",\"JP\",\"MX\",\"PA\",\"PE\",\"US\",\"ZA\"],\"covers\":\"ads that advocate for or against, or ask for votes or money for, a candidate, party, election, legislation, referendum or ballot measure\",\"min_age\":null,\"targeting_types\":[\"LOCATION\",\"AGE\",\"GENDER\",\"INTEREST\",\"BROAD_KEYWORD\",\"PHRASE_KEYWORD\",\"EXACT_KEYWORD\",\"UNORDERED_KEYWORD\",\"NEGATIVE_PHRASE_KEYWORD\",\"NEGATIVE_EXACT_KEYWORD\",\"NEGATIVE_UNORDERED_KEYWORD\",\"CUSTOM_AUDIENCE\",\"CUSTOM_AUDIENCE_EXPANDED\",\"SIMILAR_TO_FOLLOWERS_OF_USER\",\"FOLLOWER_LOOK_ALIKES\"]}]},\"request\":{\"params\":{}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-06-26T23:00:00Z",
+    "tool": "list_ads_accounts",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"business_id\":null,\"business_name\":null,\"country_code\":\"GB\",\"created_at\":\"2025-02-08T23:00:00Z\",\"deleted\":false,\"id\":\"1866jervt6y\",\"industry_type\":null,\"name\":\"Glimberpay\",\"timezone\":\"Europe/London\",\"timezone_switch_at\":\"2025-02-08T23:00:00Z\",\"updated_at\":\"2025-02-08T23:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-06-26T23:00:00Z",
+    "tool": "list_funding_instruments",
+    "arguments": {
+      "account_id": "1866jervt6y"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"able_to_fund\":true,\"created_at\":\"2025-02-08T23:00:00Z\",\"credit_limit_local_micro\":null,\"credit_remaining_local_micro\":null,\"currency\":\"USD\",\"deleted\":false,\"description\":\"American Express ending in 1215\",\"end_time\":null,\"entity_status\":\"ACTIVE\",\"funded_amount_local_micro\":0,\"id\":\"9bz463\",\"io_header\":null,\"reasons_not_able_to_fund\":[],\"start_time\":\"2025-02-08T23:00:00Z\",\"type\":\"CREDIT_CARD\",\"updated_at\":\"2025-02-08T23:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"1866jervt6y\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-06-26T23:00:00Z",
+    "tool": "list_web_event_tags",
+    "arguments": {
+      "account_id": "1866jervt6y"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"auto_created\":false,\"click_window\":14,\"deleted\":false,\"embed_code\":\"<script src=\\\"//platform.twitter.com/oct.js\\\" type=\\\"text/javascript\\\"></script><script type=\\\"text/javascript\\\">twttr.conversion.trackPid('osui6',  { tw_sale_amount: 0, tw_order_quantity: 0 });</script><noscript><img height=\\\"1\\\" width=\\\"1\\\" style=\\\"display:none;\\\" alt=\\\"\\\"  src=\\\"https://analytics.twitter.com/i/adsct?txn_id=osui6&amp;p_id=Twitter&amp;tw_sale_amount=0&amp;tw_order_quantity=0\\\" /><img height=\\\"1\\\" width=\\\"1\\\" style=\\\"display:none;\\\" alt=\\\"\\\"  src=\\\"//t.co/i/adsct?txn_id=osui6&amp;p_id=Twitter&amp;tw_sale_amount=0&amp;tw_order_quantity=0\\\" /></noscript>\",\"id\":\"uxtnr\",\"last_tracked_at\":\"2027-06-26T20:00:00Z\",\"name\":\"Wallet installed\",\"retargeting_enabled\":true,\"status\":\"VERIFIED\",\"type\":\"DOWNLOAD\",\"view_through_window\":1,\"website_tag_id\":\"osui6\"}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"1866jervt6y\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-06-26T23:00:00Z",
+    "tool": "list_account_posts",
+    "arguments": {
+      "account_id": "1866jervt6y",
+      "tweet_type": "PUBLISHED"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Sat Jun 26 23:00:00 +0000 2027\",\"display_text_range\":[0,189],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"glimberpay.co.uk/market-w\u2026\",\"expanded_url\":\"https://glimberpay.co.uk/market-wallet\",\"indices\":[166,189],\"url\":\"https://t.co/Bv0Wv5N6c5\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"9 July is the last day to install Glimberpay and get your first 30 days of receipt sorting free. Get your market wallet ready before your next stall-to-stall stroll: https://t.co/Bv0Wv5N6c5\",\"geo\":null,\"id\":2202914837102979029,\"id_str\":\"2202914837102979029\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2202914837102979029\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Sat Feb 08 23:00:00 +0000 2025\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2484,\"follow_request_sent\":null,\"followers_count\":12184,\"following\":null,\"friends_count\":334,\"geo_enabled\":false,\"id\":1888362169762164984,\"id_str\":\"1888362169762164984\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":44,\"location\":\"\",\"name\":\"Glimberpay\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1888362169762164984/1678139384\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1916609574578139384/IZ3TF4rA_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1916609574578139384/IZ3TF4rA_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"Glimberpay\",\"statuses_count\":3684,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Sat Jun 26 11:00:00 +0000 2027\",\"display_text_range\":[0,200],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"glimberpay.co.uk/market-w\u2026\",\"expanded_url\":\"https://glimberpay.co.uk/market-wallet\",\"indices\":[177,200],\"url\":\"https://t.co/GSQ2bCWXlQ\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"\u00a30 to download. No monthly wallet fee. Glimberpay puts payments at participating market stalls in one app. Install by 9 July and receipt sorting is free for your first 30 days. https://t.co/GSQ2bCWXlQ\",\"geo\":null,\"id\":2202733643170090864,\"id_str\":\"2202733643170090864\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2202733643170090864\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Sat Feb 08 23:00:00 +0000 2025\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2484,\"follow_request_sent\":null,\"followers_count\":12184,\"following\":null,\"friends_count\":334,\"geo_enabled\":false,\"id\":1888362169762164984,\"id_str\":\"1888362169762164984\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":44,\"location\":\"\",\"name\":\"Glimberpay\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1888362169762164984/1678139384\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1916609574578139384/IZ3TF4rA_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1916609574578139384/IZ3TF4rA_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"Glimberpay\",\"statuses_count\":3684,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Fri Jun 25 23:00:00 +0000 2027\",\"display_text_range\":[0,218],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"glimberpay.co.uk/market-w\u2026\",\"expanded_url\":\"https://glimberpay.co.uk/market-wallet\",\"indices\":[195,218],\"url\":\"https://t.co/7J6dx3ml8a\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Pay by QR at participating UK market stalls with Glimberpay. Free download, no monthly wallet fee. Install by 9 July for 30 days of free receipt sorting. Only on iPhone (iOS) and Android phones. https://t.co/7J6dx3ml8a\",\"geo\":null,\"id\":2202552449234154346,\"id_str\":\"2202552449234154346\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2202552449234154346\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Sat Feb 08 23:00:00 +0000 2025\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2484,\"follow_request_sent\":null,\"followers_count\":12184,\"following\":null,\"friends_count\":334,\"geo_enabled\":false,\"id\":1888362169762164984,\"id_str\":\"1888362169762164984\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":44,\"location\":\"\",\"name\":\"Glimberpay\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1888362169762164984/1678139384\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1916609574578139384/IZ3TF4rA_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1916609574578139384/IZ3TF4rA_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"Glimberpay\",\"statuses_count\":3684,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Fri Jun 25 11:00:00 +0000 2027\",\"display_text_range\":[0,163],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"glimberpay.co.uk/market-w\u2026\",\"expanded_url\":\"https://glimberpay.co.uk/market-wallet\",\"indices\":[140,163],\"url\":\"https://t.co/TzJfApOx3T\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Bought the bread. Found the cheese. Lost the receipt somewhere near the tomatoes? We\u2019ve got a little something for your next market wander: https://t.co/TzJfApOx3T\",\"geo\":null,\"id\":2202371255301263080,\"id_str\":\"2202371255301263080\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2202371255301263080\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Sat Feb 08 23:00:00 +0000 2025\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2484,\"follow_request_sent\":null,\"followers_count\":12184,\"following\":null,\"friends_count\":334,\"geo_enabled\":false,\"id\":1888362169762164984,\"id_str\":\"1888362169762164984\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":44,\"location\":\"\",\"name\":\"Glimberpay\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1888362169762164984/1678139384\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1916609574578139384/IZ3TF4rA_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1916609574578139384/IZ3TF4rA_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"Glimberpay\",\"statuses_count\":3684,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"1866jervt6y\",\"tweet_type\":\"PUBLISHED\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-06-26T23:00:00Z",
+    "tool": "list_line_item_placements",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"placements\":[[\"ALL_ON_TWITTER\"],[\"PUBLISHER_NETWORK\"],[\"TAP_BANNER\"],[\"TAP_BANNER\",\"TAP_FULL\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_NATIVE\"],[\"TAP_FULL\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_FULL\",\"TAP_MRECT\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_FULL\",\"TAP_NATIVE\"],[\"TAP_FULL_LANDSCAPE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_MRECT\"],[\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_NATIVE\"]],\"product_type\":\"MEDIA\"},{\"placements\":[[\"ALL_ON_TWITTER\"],[\"ALL_ON_TWITTER\",\"PUBLISHER_NETWORK\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL_LANDSCAPE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_NATIVE\"],[\"PUBLISHER_NETWORK\"],[\"PUBLISHER_NETWORK\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"PUBLISHER_NETWORK\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"PUBLISHER_NETWORK\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"PUBLISHER_NETWORK\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\"],[\"TAP_BANNER\",\"TAP_FULL\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_NATIVE\"],[\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\"],[\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_NATIVE\"],[\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TWITTER_MEDIA_VIEWER\"],[\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TWITTER_REPLIES\"],[\"TWITTER_SEARCH\"],[\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TWITTER_TIMELINE\"]],\"product_type\":\"PROMOTED_TWEETS\"},{\"placements\":[[\"ALL_ON_TWITTER\"],[\"TWITTER_TIMELINE\"]],\"product_type\":\"PROMOTED_ACCOUNT\"}],\"next_cursor\":null,\"request\":{\"params\":{}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-06-26T23:00:00Z",
+    "tool": "list_account_posts",
+    "arguments": {
+      "account_id": "1866jervt6y",
+      "tweet_ids": "2202190061369539840,2202371255301263080,2202552449234154346,2202733643170090864,2202914837102979029",
+      "tweet_type": "PUBLISHED"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Sat Jun 26 23:00:00 +0000 2027\",\"display_text_range\":[0,189],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"glimberpay.co.uk/market-w\u2026\",\"expanded_url\":\"https://glimberpay.co.uk/market-wallet\",\"indices\":[166,189],\"url\":\"https://t.co/Bv0Wv5N6c5\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"9 July is the last day to install Glimberpay and get your first 30 days of receipt sorting free. Get your market wallet ready before your next stall-to-stall stroll: https://t.co/Bv0Wv5N6c5\",\"geo\":null,\"id\":2202914837102979029,\"id_str\":\"2202914837102979029\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2202914837102979029\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Sat Feb 08 23:00:00 +0000 2025\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2484,\"follow_request_sent\":null,\"followers_count\":12184,\"following\":null,\"friends_count\":334,\"geo_enabled\":false,\"id\":1888362169762164984,\"id_str\":\"1888362169762164984\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":44,\"location\":\"\",\"name\":\"Glimberpay\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1888362169762164984/1678139384\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1916609574578139384/IZ3TF4rA_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1916609574578139384/IZ3TF4rA_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"Glimberpay\",\"statuses_count\":3684,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Sat Jun 26 11:00:00 +0000 2027\",\"display_text_range\":[0,200],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"glimberpay.co.uk/market-w\u2026\",\"expanded_url\":\"https://glimberpay.co.uk/market-wallet\",\"indices\":[177,200],\"url\":\"https://t.co/GSQ2bCWXlQ\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"\u00a30 to download. No monthly wallet fee. Glimberpay puts payments at participating market stalls in one app. Install by 9 July and receipt sorting is free for your first 30 days. https://t.co/GSQ2bCWXlQ\",\"geo\":null,\"id\":2202733643170090864,\"id_str\":\"2202733643170090864\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2202733643170090864\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Sat Feb 08 23:00:00 +0000 2025\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2484,\"follow_request_sent\":null,\"followers_count\":12184,\"following\":null,\"friends_count\":334,\"geo_enabled\":false,\"id\":1888362169762164984,\"id_str\":\"1888362169762164984\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":44,\"location\":\"\",\"name\":\"Glimberpay\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1888362169762164984/1678139384\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1916609574578139384/IZ3TF4rA_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1916609574578139384/IZ3TF4rA_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"Glimberpay\",\"statuses_count\":3684,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Fri Jun 25 23:00:00 +0000 2027\",\"display_text_range\":[0,218],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"glimberpay.co.uk/market-w\u2026\",\"expanded_url\":\"https://glimberpay.co.uk/market-wallet\",\"indices\":[195,218],\"url\":\"https://t.co/7J6dx3ml8a\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Pay by QR at participating UK market stalls with Glimberpay. Free download, no monthly wallet fee. Install by 9 July for 30 days of free receipt sorting. Only on iPhone (iOS) and Android phones. https://t.co/7J6dx3ml8a\",\"geo\":null,\"id\":2202552449234154346,\"id_str\":\"2202552449234154346\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2202552449234154346\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Sat Feb 08 23:00:00 +0000 2025\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2484,\"follow_request_sent\":null,\"followers_count\":12184,\"following\":null,\"friends_count\":334,\"geo_enabled\":false,\"id\":1888362169762164984,\"id_str\":\"1888362169762164984\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":44,\"location\":\"\",\"name\":\"Glimberpay\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1888362169762164984/1678139384\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1916609574578139384/IZ3TF4rA_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1916609574578139384/IZ3TF4rA_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"Glimberpay\",\"statuses_count\":3684,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Fri Jun 25 11:00:00 +0000 2027\",\"display_text_range\":[0,163],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"glimberpay.co.uk/market-w\u2026\",\"expanded_url\":\"https://glimberpay.co.uk/market-wallet\",\"indices\":[140,163],\"url\":\"https://t.co/TzJfApOx3T\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Bought the bread. Found the cheese. Lost the receipt somewhere near the tomatoes? We\u2019ve got a little something for your next market wander: https://t.co/TzJfApOx3T\",\"geo\":null,\"id\":2202371255301263080,\"id_str\":\"2202371255301263080\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2202371255301263080\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Sat Feb 08 23:00:00 +0000 2025\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2484,\"follow_request_sent\":null,\"followers_count\":12184,\"following\":null,\"friends_count\":334,\"geo_enabled\":false,\"id\":1888362169762164984,\"id_str\":\"1888362169762164984\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":44,\"location\":\"\",\"name\":\"Glimberpay\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1888362169762164984/1678139384\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1916609574578139384/IZ3TF4rA_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1916609574578139384/IZ3TF4rA_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"Glimberpay\",\"statuses_count\":3684,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"1866jervt6y\",\"tweet_ids\":[\"2202190061369539840\",\"2202371255301263080\",\"2202552449234154346\",\"2202733643170090864\",\"2202914837102979029\"],\"tweet_type\":\"PUBLISHED\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-06-26T23:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "country_code": "GB",
+      "location_type": "COUNTRIES",
+      "q": "United Kingdom"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"country_code\":\"GB\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"}],\"next_cursor\":null,\"request\":{\"params\":{\"country_code\":\"GB\",\"location_type\":\"COUNTRIES\",\"q\":\"United Kingdom\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-06-26T23:00:00Z",
+    "tool": "list_campaigns",
+    "arguments": {
+      "account_id": "1866jervt6y"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"1866jervt6y\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-06-26T23:00:00Z",
+    "tool": "list_line_items",
+    "arguments": {
+      "account_id": "1866jervt6y"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"1866jervt6y\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-06-26T23:00:00Z",
+    "tool": "list_account_posts",
+    "arguments": {
+      "account_id": "1866jervt6y",
+      "timeline_type": "ALL",
+      "tweet_ids": "2202190061369539840",
+      "tweet_type": "PUBLISHED"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Thu Jun 24 23:00:00 +0000 2027\",\"display_text_range\":[0,205],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"glimberpay.co.uk/market-w\u2026\",\"expanded_url\":\"https://glimberpay.co.uk/market-wallet\",\"indices\":[182,205],\"url\":\"https://t.co/lDJGxjh5hj\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Market payments, gathered in one wallet. Glimberpay lets you scan and pay at participating stalls, with no monthly wallet fee. Install by 9 July for 30 days of free receipt sorting: https://t.co/lDJGxjh5hj\",\"geo\":null,\"id\":2202190061369539840,\"id_str\":\"2202190061369539840\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":false,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2202190061369539840\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Sat Feb 08 23:00:00 +0000 2025\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2484,\"follow_request_sent\":null,\"followers_count\":12184,\"following\":null,\"friends_count\":334,\"geo_enabled\":false,\"id\":1888362169762164984,\"id_str\":\"1888362169762164984\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":44,\"location\":\"\",\"name\":\"Glimberpay\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1888362169762164984/1678139384\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1916609574578139384/IZ3TF4rA_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1916609574578139384/IZ3TF4rA_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"Glimberpay\",\"statuses_count\":3684,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"1866jervt6y\",\"timeline_type\":\"ALL\",\"tweet_ids\":[\"2202190061369539840\"],\"tweet_type\":\"PUBLISHED\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-06-26T23:00:00Z",
+    "tool": "search_targeting_platforms",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"name\":\"iOS\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\"},{\"name\":\"Android\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"1\"},{\"name\":\"BlackBerry phones and tablets\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"2\"},{\"name\":\"Mobile web on other devices\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"3\"},{\"name\":\"Desktop and laptop computers\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"4\"}],\"request\":{\"params\":{}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-06-26T23:00:00Z",
+    "tool": "search_targeting_interests",
+    "arguments": {
+      "q": "shopping"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"name\":\"Shopping\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925949979966701568\"}],\"request\":{\"params\":{\"q\":\"shopping\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-06-26T23:00:00Z",
+    "tool": "create_campaign",
+    "arguments": {
+      "account_id": "1866jervt6y",
+      "funding_instrument_id": "9bz463",
+      "name": "Glimberpay Market Wallet \u2013 Installs 27Jun-9Jul"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-06-26T23:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"PAUSED\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"9bz463\",\"id\":\"o8tgw\",\"name\":\"Glimberpay Market Wallet \u2013 Installs 27Jun-9Jul\",\"purchase_order_number\":null,\"reasons_not_servable\":[\"PAUSED_BY_ADVERTISER\"],\"servable\":false,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-06-26T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866jervt6y\",\"funding_instrument_id\":\"9bz463\",\"name\":\"Glimberpay Market Wallet \u2013 Installs 27Jun-9Jul\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-06-26T23:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "1866jervt6y",
+      "campaign_id": "o8tgw",
+      "daily_budget_amount_local_micro": 15000000,
+      "end_time": "2027-07-10T00:00:00+01:00",
+      "goal": "WEBSITE_CONVERSIONS",
+      "name": "UK Mobile \u2013 Direct offer",
+      "objective": "WEBSITE_CLICKS",
+      "placements": "ALL_ON_TWITTER",
+      "primary_web_event_tag": "uxtnr",
+      "product_type": "PROMOTED_TWEETS",
+      "start_time": "2027-06-27T00:00:00+01:00"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1888362169762164984\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"o8tgw\",\"categories\":[],\"created_at\":\"2027-06-26T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":15000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-07-09T23:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"9bz463\",\"goal\":\"WEBSITE_CONVERSIONS\",\"id\":\"39ipe\",\"ios_app_store_identifier\":null,\"name\":\"UK Mobile \u2013 Direct offer\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"IMPRESSION\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":\"uxtnr\",\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-06-26T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-06-26T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866jervt6y\",\"campaign_id\":\"o8tgw\",\"daily_budget_amount_local_micro\":15000000,\"end_time\":\"2027-07-10T00:00:00+01:00\",\"goal\":\"WEBSITE_CONVERSIONS\",\"name\":\"UK Mobile \u2013 Direct offer\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":\"uxtnr\",\"product_type\":\"PROMOTED_TWEETS\",\"start_time\":\"2027-06-27T00:00:00+01:00\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-06-26T23:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "1866jervt6y",
+      "campaign_id": "o8tgw",
+      "daily_budget_amount_local_micro": 15000000,
+      "end_time": "2027-07-10T00:00:00+01:00",
+      "goal": "WEBSITE_CONVERSIONS",
+      "name": "UK Mobile \u2013 Story hook",
+      "objective": "WEBSITE_CLICKS",
+      "placements": "ALL_ON_TWITTER",
+      "primary_web_event_tag": "uxtnr",
+      "product_type": "PROMOTED_TWEETS",
+      "start_time": "2027-06-27T00:00:00+01:00"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1888362169762164984\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"o8tgw\",\"categories\":[],\"created_at\":\"2027-06-26T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":15000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-07-09T23:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"9bz463\",\"goal\":\"WEBSITE_CONVERSIONS\",\"id\":\"r2oky\",\"ios_app_store_identifier\":null,\"name\":\"UK Mobile \u2013 Story hook\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"IMPRESSION\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":\"uxtnr\",\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-06-26T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-06-26T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866jervt6y\",\"campaign_id\":\"o8tgw\",\"daily_budget_amount_local_micro\":15000000,\"end_time\":\"2027-07-10T00:00:00+01:00\",\"goal\":\"WEBSITE_CONVERSIONS\",\"name\":\"UK Mobile \u2013 Story hook\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":\"uxtnr\",\"product_type\":\"PROMOTED_TWEETS\",\"start_time\":\"2027-06-27T00:00:00+01:00\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-06-26T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "1866jervt6y",
+      "line_item_id": "39ipe",
+      "targeting_type": "LOCATION",
+      "targeting_value": "6416b8512febefc9"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-06-26T23:00:00Z\",\"deleted\":false,\"id\":\"93frxn9\",\"line_item_id\":\"39ipe\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\",\"updated_at\":\"2027-06-26T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866jervt6y\",\"line_item_id\":\"39ipe\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-06-26T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "1866jervt6y",
+      "line_item_id": "39ipe",
+      "targeting_type": "PLATFORM",
+      "targeting_value": "0"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-06-26T23:00:00Z\",\"deleted\":false,\"id\":\"6ovxvi6\",\"line_item_id\":\"39ipe\",\"name\":\"iOS\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\",\"updated_at\":\"2027-06-26T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866jervt6y\",\"line_item_id\":\"39ipe\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-06-26T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "1866jervt6y",
+      "line_item_id": "39ipe",
+      "targeting_type": "PLATFORM",
+      "targeting_value": "1"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-06-26T23:00:00Z\",\"deleted\":false,\"id\":\"i81em05\",\"line_item_id\":\"39ipe\",\"name\":\"Android\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"1\",\"updated_at\":\"2027-06-26T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866jervt6y\",\"line_item_id\":\"39ipe\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-06-26T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "1866jervt6y",
+      "line_item_id": "r2oky",
+      "targeting_type": "LOCATION",
+      "targeting_value": "6416b8512febefc9"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-06-26T23:00:00Z\",\"deleted\":false,\"id\":\"vfz5bxq\",\"line_item_id\":\"r2oky\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\",\"updated_at\":\"2027-06-26T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866jervt6y\",\"line_item_id\":\"r2oky\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-06-26T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "1866jervt6y",
+      "line_item_id": "r2oky",
+      "targeting_type": "PLATFORM",
+      "targeting_value": "0"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-06-26T23:00:00Z\",\"deleted\":false,\"id\":\"mc7916n\",\"line_item_id\":\"r2oky\",\"name\":\"iOS\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\",\"updated_at\":\"2027-06-26T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866jervt6y\",\"line_item_id\":\"r2oky\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-06-26T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "1866jervt6y",
+      "line_item_id": "r2oky",
+      "targeting_type": "PLATFORM",
+      "targeting_value": "1"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-06-26T23:00:00Z\",\"deleted\":false,\"id\":\"cnmh1i1\",\"line_item_id\":\"r2oky\",\"name\":\"Android\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"1\",\"updated_at\":\"2027-06-26T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866jervt6y\",\"line_item_id\":\"r2oky\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-06-26T23:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "1866jervt6y",
+      "line_item_id": "39ipe",
+      "tweet_ids": "2202552449234154346,2202733643170090864,2202914837102979029"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-06-26T23:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"87ead8\",\"line_item_id\":\"39ipe\",\"tweet_id\":\"2202552449234154346\",\"updated_at\":\"2027-06-26T23:00:00Z\"},{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-06-26T23:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"etpbwi\",\"line_item_id\":\"39ipe\",\"tweet_id\":\"2202733643170090864\",\"updated_at\":\"2027-06-26T23:00:00Z\"},{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-06-26T23:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"qdr50i\",\"line_item_id\":\"39ipe\",\"tweet_id\":\"2202914837102979029\",\"updated_at\":\"2027-06-26T23:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"1866jervt6y\",\"line_item_id\":\"39ipe\",\"tweet_ids\":[\"2202552449234154346\",\"2202733643170090864\",\"2202914837102979029\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-06-26T23:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "1866jervt6y",
+      "line_item_id": "r2oky",
+      "tweet_ids": "2202190061369539840,2202371255301263080"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-06-26T23:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"8pk2fe\",\"line_item_id\":\"r2oky\",\"tweet_id\":\"2202190061369539840\",\"updated_at\":\"2027-06-26T23:00:00Z\"},{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-06-26T23:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"ce5etj\",\"line_item_id\":\"r2oky\",\"tweet_id\":\"2202371255301263080\",\"updated_at\":\"2027-06-26T23:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"1866jervt6y\",\"line_item_id\":\"r2oky\",\"tweet_ids\":[\"2202190061369539840\",\"2202371255301263080\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-06-26T23:00:00Z",
+    "tool": "activate_campaign",
+    "arguments": {
+      "account_id": "1866jervt6y",
+      "campaign_id": "o8tgw"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-06-26T23:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"RUNNING\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"9bz463\",\"id\":\"o8tgw\",\"name\":\"Glimberpay Market Wallet \u2013 Installs 27Jun-9Jul\",\"purchase_order_number\":null,\"reasons_not_servable\":[],\"servable\":true,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-06-26T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866jervt6y\",\"campaign_id\":\"o8tgw\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-06-26T23:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "1866jervt6y",
+      "line_item_id": "39ipe"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1888362169762164984\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"o8tgw\",\"categories\":[],\"created_at\":\"2027-06-26T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":15000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-07-09T23:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"9bz463\",\"goal\":\"WEBSITE_CONVERSIONS\",\"id\":\"39ipe\",\"ios_app_store_identifier\":null,\"name\":\"UK Mobile \u2013 Direct offer\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"IMPRESSION\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":\"uxtnr\",\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-06-26T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-06-26T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866jervt6y\",\"line_item_id\":\"39ipe\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-06-26T23:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "1866jervt6y",
+      "line_item_id": "r2oky"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1888362169762164984\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"o8tgw\",\"categories\":[],\"created_at\":\"2027-06-26T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":15000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-07-09T23:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"9bz463\",\"goal\":\"WEBSITE_CONVERSIONS\",\"id\":\"r2oky\",\"ios_app_store_identifier\":null,\"name\":\"UK Mobile \u2013 Story hook\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"IMPRESSION\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":\"uxtnr\",\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-06-26T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-06-26T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866jervt6y\",\"line_item_id\":\"r2oky\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-06-26T23:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-06-29T00:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-07-10T00:00:00Z\",\"now\":\"2027-06-29T00:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-06-29T00:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "1866jervt6y",
+      "end_time": "2027-06-29T00:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "39ipe,r2oky",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "start_time": "2027-06-26T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `placement` query parameter can not be empty\",\"parameters\":{\"placement\":[]}}],\"title\":\"Invalid Request\",\"type\":\"https://api.x.com/2/problems/invalid-request\"}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2027-06-29T00:00:00Z",
+    "tool": "list_promoted_posts",
+    "arguments": {
+      "account_id": "1866jervt6y",
+      "line_item_ids": "39ipe,r2oky"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-06-26T23:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"87ead8\",\"line_item_id\":\"39ipe\",\"tweet_id\":\"2202552449234154346\",\"updated_at\":\"2027-06-26T23:00:00Z\"},{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-06-26T23:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"etpbwi\",\"line_item_id\":\"39ipe\",\"tweet_id\":\"2202733643170090864\",\"updated_at\":\"2027-06-26T23:00:00Z\"},{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-06-26T23:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"qdr50i\",\"line_item_id\":\"39ipe\",\"tweet_id\":\"2202914837102979029\",\"updated_at\":\"2027-06-26T23:00:00Z\"},{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-06-26T23:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"8pk2fe\",\"line_item_id\":\"r2oky\",\"tweet_id\":\"2202190061369539840\",\"updated_at\":\"2027-06-26T23:00:00Z\"},{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-06-26T23:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"ce5etj\",\"line_item_id\":\"r2oky\",\"tweet_id\":\"2202371255301263080\",\"updated_at\":\"2027-06-26T23:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"1866jervt6y\",\"line_item_ids\":[\"39ipe\",\"r2oky\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-06-29T00:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "1866jervt6y",
+      "end_time": "2027-06-29T00:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "39ipe,r2oky",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-06-26T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"39ipe\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[29428395],\"billed_engagements\":[26099],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[12],\"engagements\":[170],\"follows\":null,\"impressions\":[26099],\"likes\":[5],\"link_clicks\":[12],\"qualified_impressions\":[26099],\"replies\":null,\"retweets\":[1]},\"segment\":null}]},{\"id\":\"r2oky\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[29555342],\"billed_engagements\":[27899],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[15],\"engagements\":[206],\"follows\":null,\"impressions\":[27899],\"likes\":[14],\"link_clicks\":[15],\"qualified_impressions\":[27899],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-06-29T00:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"39ipe\",\"r2oky\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-06-26T23:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-06-29T00:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "1866jervt6y",
+      "end_time": "2027-06-29T00:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "39ipe,r2oky",
+      "granularity": "TOTAL",
+      "metric_groups": "WEB_CONVERSION",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-06-26T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"39ipe\",\"id_data\":[{\"metrics\":{\"conversion_add_to_carts\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_add_to_wishlists\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_checkouts_initiated\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_content_views\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_custom\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_downloads\":{\"assisted\":null,\"metric\":[2],\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":[2],\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_landing_page_views\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_payment_info_additions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_purchases\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_searches\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_sessions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_sign_ups\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_site_visits\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_subscriptions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null}},\"segment\":null}]},{\"id\":\"r2oky\",\"id_data\":[{\"metrics\":{\"conversion_add_to_carts\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_add_to_wishlists\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_checkouts_initiated\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_content_views\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_custom\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_downloads\":{\"assisted\":null,\"metric\":[3],\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":[2],\"post_view\":[1],\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_landing_page_views\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_payment_info_additions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_purchases\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_searches\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_sessions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_sign_ups\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_site_visits\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_subscriptions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null}},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-06-29T00:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"39ipe\",\"r2oky\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"WEB_CONVERSION\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-06-26T23:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-06-29T00:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-07-02T00:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-07-10T00:00:00Z\",\"now\":\"2027-07-02T00:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-02T00:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "1866jervt6y",
+      "end_time": "2027-07-02T00:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "39ipe,r2oky",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-06-26T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"39ipe\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[74397046],\"billed_engagements\":[63813],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[34],\"engagements\":[426],\"follows\":null,\"impressions\":[63813],\"likes\":[12],\"link_clicks\":[34],\"qualified_impressions\":[63813],\"replies\":null,\"retweets\":[1]},\"segment\":null}]},{\"id\":\"r2oky\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[74555342],\"billed_engagements\":[67914],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[38],\"engagements\":[496],\"follows\":null,\"impressions\":[67914],\"likes\":[19],\"link_clicks\":[38],\"qualified_impressions\":[67914],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-07-02T00:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"39ipe\",\"r2oky\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-06-26T23:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-02T00:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "1866jervt6y",
+      "end_time": "2027-07-02T00:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "39ipe,r2oky",
+      "granularity": "TOTAL",
+      "metric_groups": "WEB_CONVERSION",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-06-26T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"39ipe\",\"id_data\":[{\"metrics\":{\"conversion_add_to_carts\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_add_to_wishlists\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_checkouts_initiated\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_content_views\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_custom\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_downloads\":{\"assisted\":null,\"metric\":[7],\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":[6],\"post_view\":[1],\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_landing_page_views\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_payment_info_additions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_purchases\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_searches\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_sessions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_sign_ups\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_site_visits\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_subscriptions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null}},\"segment\":null}]},{\"id\":\"r2oky\",\"id_data\":[{\"metrics\":{\"conversion_add_to_carts\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_add_to_wishlists\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_checkouts_initiated\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_content_views\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_custom\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_downloads\":{\"assisted\":null,\"metric\":[4],\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":[2],\"post_view\":[2],\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_landing_page_views\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_payment_info_additions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_purchases\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_searches\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_sessions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_sign_ups\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_site_visits\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_subscriptions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null}},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-07-02T00:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"39ipe\",\"r2oky\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"WEB_CONVERSION\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-06-26T23:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-02T00:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "1866jervt6y",
+      "daily_budget_amount_local_micro": 20000000,
+      "line_item_id": "39ipe"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1888362169762164984\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"o8tgw\",\"categories\":[],\"created_at\":\"2027-06-26T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":20000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-07-09T23:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"9bz463\",\"goal\":\"WEBSITE_CONVERSIONS\",\"id\":\"39ipe\",\"ios_app_store_identifier\":null,\"name\":\"UK Mobile \u2013 Direct offer\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"IMPRESSION\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":\"uxtnr\",\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-06-26T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-07-02T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866jervt6y\",\"daily_budget_amount_local_micro\":20000000,\"line_item_id\":\"39ipe\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-02T00:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "1866jervt6y",
+      "daily_budget_amount_local_micro": 10000000,
+      "line_item_id": "r2oky"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1888362169762164984\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"o8tgw\",\"categories\":[],\"created_at\":\"2027-06-26T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":10000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-07-09T23:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"9bz463\",\"goal\":\"WEBSITE_CONVERSIONS\",\"id\":\"r2oky\",\"ios_app_store_identifier\":null,\"name\":\"UK Mobile \u2013 Story hook\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"IMPRESSION\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":\"uxtnr\",\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-06-26T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-07-02T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866jervt6y\",\"daily_budget_amount_local_micro\":10000000,\"line_item_id\":\"r2oky\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-02T00:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-07-06T00:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-07-10T00:00:00Z\",\"now\":\"2027-07-06T00:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-06T00:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "1866jervt6y",
+      "end_time": "2027-07-06T00:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "39ipe,r2oky",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-06-26T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"errors\":[{\"code\":\"INVALID_TIME_WINDOW\",\"message\":\"The end_time (2027-07-06 00:00:00 +0000) can be a maximum of 7.days+1.hours after the start_time (2027-06-26 23:00:00 +0000)\",\"parameter\":\"\"}],\"request\":{\"params\":{\"account_id\":\"1866jervt6y\",\"end_time\":\"2027-07-06T00:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"39ipe\",\"r2oky\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"start_time\":\"2027-06-26T23:00:00Z\"}}}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2027-07-06T00:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "1866jervt6y",
+      "end_time": "2027-07-06T00:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "39ipe,r2oky",
+      "granularity": "TOTAL",
+      "metric_groups": "WEB_CONVERSION",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-06-26T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"errors\":[{\"code\":\"INVALID_TIME_WINDOW\",\"message\":\"The end_time (2027-07-06 00:00:00 +0000) can be a maximum of 7.days+1.hours after the start_time (2027-06-26 23:00:00 +0000)\",\"parameter\":\"\"}],\"request\":{\"params\":{\"account_id\":\"1866jervt6y\",\"end_time\":\"2027-07-06T00:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"39ipe\",\"r2oky\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"WEB_CONVERSION\"],\"placement\":\"ALL_ON_TWITTER\",\"start_time\":\"2027-06-26T23:00:00Z\"}}}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2027-07-06T00:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "1866jervt6y",
+      "end_time": "2027-07-06T00:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "39ipe,r2oky",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-07-02T00:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"39ipe\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[79264718],\"billed_engagements\":[71980],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[39],\"engagements\":[518],\"follows\":null,\"impressions\":[71980],\"likes\":[7],\"link_clicks\":[39],\"qualified_impressions\":[71980],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"r2oky\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[39469754],\"billed_engagements\":[37087],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[24],\"engagements\":[246],\"follows\":null,\"impressions\":[37087],\"likes\":[4],\"link_clicks\":[24],\"qualified_impressions\":[37087],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-07-06T00:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"39ipe\",\"r2oky\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-07-02T00:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-06T00:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "1866jervt6y",
+      "end_time": "2027-07-06T00:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "39ipe,r2oky",
+      "granularity": "TOTAL",
+      "metric_groups": "WEB_CONVERSION",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-07-02T00:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"39ipe\",\"id_data\":[{\"metrics\":{\"conversion_add_to_carts\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_add_to_wishlists\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_checkouts_initiated\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_content_views\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_custom\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_downloads\":{\"assisted\":null,\"metric\":[6],\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":[4],\"post_view\":[2],\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_landing_page_views\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_payment_info_additions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_purchases\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_searches\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_sessions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_sign_ups\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_site_visits\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_subscriptions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null}},\"segment\":null}]},{\"id\":\"r2oky\",\"id_data\":[{\"metrics\":{\"conversion_add_to_carts\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_add_to_wishlists\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_checkouts_initiated\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_content_views\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_custom\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_downloads\":{\"assisted\":null,\"metric\":[4],\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":[3],\"post_view\":[1],\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_landing_page_views\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_payment_info_additions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_purchases\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_searches\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_sessions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_sign_ups\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_site_visits\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_subscriptions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null}},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-07-06T00:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"39ipe\",\"r2oky\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"WEB_CONVERSION\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-07-02T00:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-06T00:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-07-09T12:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-07-10T00:00:00Z\",\"now\":\"2027-07-09T12:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-09T12:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "1866jervt6y",
+      "end_time": "2027-07-09T12:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "39ipe,r2oky",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-07-06T00:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"39ipe\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[66750697],\"billed_engagements\":[66589],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[35],\"engagements\":[482],\"follows\":null,\"impressions\":[66589],\"likes\":[9],\"link_clicks\":[35],\"qualified_impressions\":[66589],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"r2oky\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[33348900],\"billed_engagements\":[34357],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[24],\"engagements\":[228],\"follows\":null,\"impressions\":[34357],\"likes\":[3],\"link_clicks\":[24],\"qualified_impressions\":[34357],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-07-09T12:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"39ipe\",\"r2oky\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-07-06T00:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-09T12:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "1866jervt6y",
+      "end_time": "2027-07-09T12:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "39ipe,r2oky",
+      "granularity": "TOTAL",
+      "metric_groups": "WEB_CONVERSION",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-07-06T00:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"39ipe\",\"id_data\":[{\"metrics\":{\"conversion_add_to_carts\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_add_to_wishlists\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_checkouts_initiated\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_content_views\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_custom\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_downloads\":{\"assisted\":null,\"metric\":[4],\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":[4],\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_landing_page_views\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_payment_info_additions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_purchases\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_searches\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_sessions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_sign_ups\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_site_visits\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_subscriptions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null}},\"segment\":null}]},{\"id\":\"r2oky\",\"id_data\":[{\"metrics\":{\"conversion_add_to_carts\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_add_to_wishlists\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_checkouts_initiated\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_content_views\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_custom\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_downloads\":{\"assisted\":null,\"metric\":[2],\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":[2],\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_landing_page_views\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_payment_info_additions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_purchases\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_searches\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_sessions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_sign_ups\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_site_visits\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_subscriptions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null}},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-07-09T12:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"39ipe\",\"r2oky\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"WEB_CONVERSION\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-07-06T00:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-09T12:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-07-10T00:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-07-10T00:00:00Z\",\"now\":\"2027-07-10T00:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-10T00:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "1866jervt6y",
+      "end_time": "2027-07-03T23:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "39ipe,r2oky",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-06-26T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"39ipe\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[113920280],\"billed_engagements\":[93885],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[50],\"engagements\":[634],\"follows\":null,\"impressions\":[93885],\"likes\":[16],\"link_clicks\":[50],\"qualified_impressions\":[93885],\"replies\":null,\"retweets\":[1]},\"segment\":null}]},{\"id\":\"r2oky\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[94368803],\"billed_engagements\":[83527],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[50],\"engagements\":[605],\"follows\":null,\"impressions\":[83527],\"likes\":[21],\"link_clicks\":[50],\"qualified_impressions\":[83527],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-07-03T23:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"39ipe\",\"r2oky\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-06-26T23:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-10T00:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "1866jervt6y",
+      "end_time": "2027-07-09T23:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "39ipe,r2oky",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-07-03T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"39ipe\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[119791822],\"billed_engagements\":[122773],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[65],\"engagements\":[878],\"follows\":null,\"impressions\":[122773],\"likes\":[16],\"link_clicks\":[65],\"qualified_impressions\":[122773],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"r2oky\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[59889495],\"billed_engagements\":[63387],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[39],\"engagements\":[410],\"follows\":null,\"impressions\":[63387],\"likes\":[5],\"link_clicks\":[39],\"qualified_impressions\":[63387],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-07-09T23:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"39ipe\",\"r2oky\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-07-03T23:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-10T00:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "1866jervt6y",
+      "end_time": "2027-07-03T23:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "39ipe,r2oky",
+      "granularity": "TOTAL",
+      "metric_groups": "WEB_CONVERSION",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-06-26T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"39ipe\",\"id_data\":[{\"metrics\":{\"conversion_add_to_carts\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_add_to_wishlists\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_checkouts_initiated\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_content_views\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_custom\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_downloads\":{\"assisted\":null,\"metric\":[8],\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":[6],\"post_view\":[2],\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_landing_page_views\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_payment_info_additions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_purchases\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_searches\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_sessions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_sign_ups\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_site_visits\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_subscriptions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null}},\"segment\":null}]},{\"id\":\"r2oky\",\"id_data\":[{\"metrics\":{\"conversion_add_to_carts\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_add_to_wishlists\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_checkouts_initiated\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_content_views\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_custom\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_downloads\":{\"assisted\":null,\"metric\":[5],\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":[3],\"post_view\":[2],\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_landing_page_views\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_payment_info_additions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_purchases\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_searches\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_sessions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_sign_ups\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_site_visits\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_subscriptions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null}},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-07-03T23:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"39ipe\",\"r2oky\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"WEB_CONVERSION\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-06-26T23:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-10T00:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "1866jervt6y",
+      "end_time": "2027-07-09T23:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "39ipe,r2oky",
+      "granularity": "TOTAL",
+      "metric_groups": "WEB_CONVERSION",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-07-03T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"39ipe\",\"id_data\":[{\"metrics\":{\"conversion_add_to_carts\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_add_to_wishlists\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_checkouts_initiated\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_content_views\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_custom\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_downloads\":{\"assisted\":null,\"metric\":[9],\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":[8],\"post_view\":[1],\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_landing_page_views\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_payment_info_additions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_purchases\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_searches\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_sessions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_sign_ups\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_site_visits\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_subscriptions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null}},\"segment\":null}]},{\"id\":\"r2oky\",\"id_data\":[{\"metrics\":{\"conversion_add_to_carts\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_add_to_wishlists\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_checkouts_initiated\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_content_views\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_custom\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_downloads\":{\"assisted\":null,\"metric\":[5],\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":[4],\"post_view\":[1],\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_landing_page_views\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_payment_info_additions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_purchases\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_searches\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_sessions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_sign_ups\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_site_visits\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null},\"conversion_subscriptions\":{\"assisted\":null,\"metric\":null,\"order_quantity\":null,\"order_quantity_engagement\":null,\"order_quantity_view\":null,\"post_engagement\":null,\"post_view\":null,\"sale_amount\":null,\"sale_amount_engagement\":null,\"sale_amount_view\":null}},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-07-09T23:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"39ipe\",\"r2oky\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"WEB_CONVERSION\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-07-03T23:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-10T00:00:00Z",
+    "tool": "update_campaign",
+    "arguments": {
+      "account_id": "1866jervt6y",
+      "campaign_id": "o8tgw",
+      "entity_status": "PAUSED"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-06-26T23:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"PAUSED\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"9bz463\",\"id\":\"o8tgw\",\"name\":\"Glimberpay Market Wallet \u2013 Installs 27Jun-9Jul\",\"purchase_order_number\":null,\"reasons_not_servable\":[\"EXPIRED\",\"PAUSED_BY_ADVERTISER\"],\"servable\":false,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-07-10T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866jervt6y\",\"campaign_id\":\"o8tgw\",\"entity_status\":\"PAUSED\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

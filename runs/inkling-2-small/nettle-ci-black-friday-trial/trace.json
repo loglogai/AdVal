@@ -1,0 +1,1139 @@
+[
+  {
+    "at": "2026-11-21T00:00:00Z",
+    "tool": "get_current_time",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2026-11-30T01:00:00Z\",\"now\":\"2026-11-21T00:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T00:00:00Z",
+    "tool": "list_ads_accounts",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"business_id\":null,\"business_name\":null,\"country_code\":\"GB\",\"created_at\":\"2024-01-13T00:00:00Z\",\"deleted\":false,\"id\":\"18bfh2jwglt\",\"industry_type\":null,\"name\":\"Nettle CI\",\"timezone\":\"Europe/London\",\"timezone_switch_at\":\"2024-01-13T00:00:00Z\",\"updated_at\":\"2024-01-13T00:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T00:00:00Z",
+    "tool": "list_funding_instruments",
+    "arguments": {
+      "account_id": "18bfh2jwglt"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"able_to_fund\":true,\"created_at\":\"2024-01-13T00:00:00Z\",\"credit_limit_local_micro\":null,\"credit_remaining_local_micro\":null,\"currency\":\"USD\",\"deleted\":false,\"description\":\"Visa ending in 1810\",\"end_time\":null,\"entity_status\":\"ACTIVE\",\"funded_amount_local_micro\":0,\"id\":\"ktvt86\",\"io_header\":null,\"reasons_not_able_to_fund\":[],\"start_time\":\"2024-01-13T00:00:00Z\",\"type\":\"CREDIT_CARD\",\"updated_at\":\"2024-01-13T00:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T00:00:00Z",
+    "tool": "list_promoted_posts",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "line_item_ids": "dummy"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\",\"line_item_ids\":[\"dummy\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T00:00:00Z",
+    "tool": "list_account_posts",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "tweet_ids": "2123204606163673400,2123385800094755076,2123566994028154923,2123748187962542190",
+      "tweet_type": "PUBLISHED"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Fri Nov 20 12:00:00 +0000 2026\",\"display_text_range\":[0,165],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"nettleci.co.uk/blackfriday\",\"expanded_url\":\"https://nettleci.co.uk/blackfriday\",\"indices\":[142,165],\"url\":\"https://t.co/aEOeRaMzeN\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Until Sunday 29 November only: sign up to Nettle CI and get 60 days of the Team plan free, not 14. After Sunday it's back to the usual trial. https://t.co/aEOeRaMzeN\",\"geo\":null,\"id\":2123748187962542190,\"id_str\":\"2123748187962542190\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2123748187962542190\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Sat Jan 13 00:00:00 +0000 2024\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2356,\"follow_request_sent\":null,\"followers_count\":3056,\"following\":null,\"friends_count\":806,\"geo_enabled\":false,\"id\":1745958838072711440,\"id_str\":\"1745958838072711440\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":36,\"location\":\"\",\"name\":\"Nettle CI\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1745958838072711440/1682826256\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1705848368582826256/8w3dVtiu_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1705848368582826256/8w3dVtiu_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"NettleCI\",\"statuses_count\":2556,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Fri Nov 20 00:00:00 +0000 2026\",\"display_text_range\":[0,84],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"nettleci.co.uk/blackfriday\",\"expanded_url\":\"https://nettleci.co.uk/blackfriday\",\"indices\":[61,84],\"url\":\"https://t.co/JqPxWpBfef\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Be honest: how many times did you hit 'rerun job' this week? https://t.co/JqPxWpBfef\",\"geo\":null,\"id\":2123566994028154923,\"id_str\":\"2123566994028154923\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2123566994028154923\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Sat Jan 13 00:00:00 +0000 2024\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2356,\"follow_request_sent\":null,\"followers_count\":3056,\"following\":null,\"friends_count\":806,\"geo_enabled\":false,\"id\":1745958838072711440,\"id_str\":\"1745958838072711440\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":36,\"location\":\"\",\"name\":\"Nettle CI\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1745958838072711440/1682826256\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1705848368582826256/8w3dVtiu_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1705848368582826256/8w3dVtiu_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"NettleCI\",\"statuses_count\":2556,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Thu Nov 19 12:00:00 +0000 2026\",\"display_text_range\":[0,188],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"nettleci.co.uk/blackfriday\",\"expanded_url\":\"https://nettleci.co.uk/blackfriday\",\"indices\":[165,188],\"url\":\"https://t.co/1VxjA7SR6d\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"\u00a30 for 60 days. That's the Nettle CI Team plan this Black Friday week, up from our usual 14-day trial, and no card to sign up. After that, the free plan stays free. https://t.co/1VxjA7SR6d\",\"geo\":null,\"id\":2123385800094755076,\"id_str\":\"2123385800094755076\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2123385800094755076\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Sat Jan 13 00:00:00 +0000 2024\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2356,\"follow_request_sent\":null,\"followers_count\":3056,\"following\":null,\"friends_count\":806,\"geo_enabled\":false,\"id\":1745958838072711440,\"id_str\":\"1745958838072711440\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":36,\"location\":\"\",\"name\":\"Nettle CI\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1745958838072711440/1682826256\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1705848368582826256/8w3dVtiu_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1705848368582826256/8w3dVtiu_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"NettleCI\",\"statuses_count\":2556,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\",\"tweet_ids\":[\"2123204606163673400\",\"2123385800094755076\",\"2123566994028154923\",\"2123748187962542190\"],\"tweet_type\":\"PUBLISHED\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T00:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "country_code": "GB",
+      "location_type": "COUNTRIES",
+      "q": "United Kingdom"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"country_code\":\"GB\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"}],\"next_cursor\":null,\"request\":{\"params\":{\"country_code\":\"GB\",\"location_type\":\"COUNTRIES\",\"q\":\"United Kingdom\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T00:00:00Z",
+    "tool": "list_account_posts",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "tweet_ids": "2123204606163673400",
+      "tweet_type": "PUBLISHED"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\",\"tweet_ids\":[\"2123204606163673400\"],\"tweet_type\":\"PUBLISHED\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T00:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "country_code": "IE",
+      "location_type": "COUNTRIES",
+      "q": "Ireland"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"country_code\":\"IE\",\"location_type\":\"COUNTRIES\",\"name\":\"Ireland\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ea679934779f45c7\"}],\"next_cursor\":null,\"request\":{\"params\":{\"country_code\":\"IE\",\"location_type\":\"COUNTRIES\",\"q\":\"Ireland\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T00:00:00Z",
+    "tool": "list_account_posts",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "tweet_ids": "2123204606163673400",
+      "tweet_type": "ALL"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `tweet_type` query parameter value [ALL] is not one of [PUBLISHED,SCHEDULED,DRAFT]\",\"parameters\":{\"tweet_type\":[\"ALL\"]}}],\"title\":\"Invalid Request\",\"type\":\"https://api.x.com/2/problems/invalid-request\"}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2026-11-21T00:00:00Z",
+    "tool": "list_account_posts",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "tweet_ids": "2123204606163673400",
+      "tweet_type": "DRAFT"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\",\"tweet_ids\":[\"2123204606163673400\"],\"tweet_type\":\"DRAFT\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T00:00:00Z",
+    "tool": "list_account_posts",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "tweet_ids": "2123204606163673400",
+      "tweet_type": "SCHEDULED"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\",\"tweet_ids\":[\"2123204606163673400\"],\"tweet_type\":\"SCHEDULED\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T00:00:00Z",
+    "tool": "list_account_posts",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "timeline_type": "ALL",
+      "tweet_ids": "2123204606163673400",
+      "tweet_type": "PUBLISHED"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Thu Nov 19 00:00:00 +0000 2026\",\"display_text_range\":[0,216],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"nettleci.co.uk/blackfriday\",\"expanded_url\":\"https://nettleci.co.uk/blackfriday\",\"indices\":[193,216],\"url\":\"https://t.co/yQVBoehBlu\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Nettle CI scores every test in your pipeline for flakiness, so you know which red builds are real. Black Friday week: Team plan free for 60 days instead of 14, no card. For UK & Ireland teams. https://t.co/yQVBoehBlu\",\"geo\":null,\"id\":2123204606163673400,\"id_str\":\"2123204606163673400\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":false,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2123204606163673400\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Sat Jan 13 00:00:00 +0000 2024\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2356,\"follow_request_sent\":null,\"followers_count\":3056,\"following\":null,\"friends_count\":806,\"geo_enabled\":false,\"id\":1745958838072711440,\"id_str\":\"1745958838072711440\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":36,\"location\":\"\",\"name\":\"Nettle CI\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1745958838072711440/1682826256\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1705848368582826256/8w3dVtiu_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1705848368582826256/8w3dVtiu_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"NettleCI\",\"statuses_count\":2556,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\",\"timeline_type\":\"ALL\",\"tweet_ids\":[\"2123204606163673400\"],\"tweet_type\":\"PUBLISHED\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T00:00:00Z",
+    "tool": "create_campaign",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "funding_instrument_id": "ktvt86",
+      "name": "Nettle CI Black Friday 2026"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2026-11-21T00:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"PAUSED\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"ktvt86\",\"id\":\"bzftj\",\"name\":\"Nettle CI Black Friday 2026\",\"purchase_order_number\":null,\"reasons_not_servable\":[\"PAUSED_BY_ADVERTISER\"],\"servable\":false,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2026-11-21T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\",\"funding_instrument_id\":\"ktvt86\",\"name\":\"Nettle CI Black Friday 2026\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T00:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "campaign_id": "bzftj",
+      "daily_budget_amount_local_micro": 13000000,
+      "end_time": "2026-11-30T00:00:00Z",
+      "goal": "LINK_CLICKS",
+      "name": "BF - Post A (product+offer)",
+      "objective": "WEBSITE_CLICKS",
+      "placements": "ALL_ON_TWITTER",
+      "product_type": "PROMOTED_TWEETS",
+      "start_time": "2026-11-21T00:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1745958838072711440\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"bzftj\",\"categories\":[],\"created_at\":\"2026-11-21T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":13000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"ktvt86\",\"goal\":\"LINK_CLICKS\",\"id\":\"zi7g2\",\"ios_app_store_identifier\":null,\"name\":\"BF - Post A (product+offer)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2026-11-21T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\",\"campaign_id\":\"bzftj\",\"daily_budget_amount_local_micro\":13000000,\"end_time\":\"2026-11-30T00:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"BF - Post A (product+offer)\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"start_time\":\"2026-11-21T00:00:00Z\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T00:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "campaign_id": "bzftj",
+      "daily_budget_amount_local_micro": 13000000,
+      "end_time": "2026-11-30T00:00:00Z",
+      "goal": "LINK_CLICKS",
+      "name": "BF - Post B (\u00a30/60 days)",
+      "objective": "WEBSITE_CLICKS",
+      "placements": "ALL_ON_TWITTER",
+      "product_type": "PROMOTED_TWEETS",
+      "start_time": "2026-11-21T00:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1745958838072711440\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"bzftj\",\"categories\":[],\"created_at\":\"2026-11-21T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":13000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"ktvt86\",\"goal\":\"LINK_CLICKS\",\"id\":\"cirm4\",\"ios_app_store_identifier\":null,\"name\":\"BF - Post B (\u00a30/60 days)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2026-11-21T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\",\"campaign_id\":\"bzftj\",\"daily_budget_amount_local_micro\":13000000,\"end_time\":\"2026-11-30T00:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"BF - Post B (\u00a30/60 days)\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"start_time\":\"2026-11-21T00:00:00Z\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T00:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "campaign_id": "bzftj",
+      "daily_budget_amount_local_micro": 13000000,
+      "end_time": "2026-11-30T00:00:00Z",
+      "goal": "LINK_CLICKS",
+      "name": "BF - Post C (rerun job hook)",
+      "objective": "WEBSITE_CLICKS",
+      "placements": "ALL_ON_TWITTER",
+      "product_type": "PROMOTED_TWEETS",
+      "start_time": "2026-11-21T00:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1745958838072711440\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"bzftj\",\"categories\":[],\"created_at\":\"2026-11-21T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":13000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"ktvt86\",\"goal\":\"LINK_CLICKS\",\"id\":\"r3zhe\",\"ios_app_store_identifier\":null,\"name\":\"BF - Post C (rerun job hook)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2026-11-21T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\",\"campaign_id\":\"bzftj\",\"daily_budget_amount_local_micro\":13000000,\"end_time\":\"2026-11-30T00:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"BF - Post C (rerun job hook)\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"start_time\":\"2026-11-21T00:00:00Z\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T00:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "campaign_id": "bzftj",
+      "daily_budget_amount_local_micro": 13000000,
+      "end_time": "2026-11-30T00:00:00Z",
+      "goal": "LINK_CLICKS",
+      "name": "BF - Post D (deadline)",
+      "objective": "WEBSITE_CLICKS",
+      "placements": "ALL_ON_TWITTER",
+      "product_type": "PROMOTED_TWEETS",
+      "start_time": "2026-11-21T00:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1745958838072711440\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"bzftj\",\"categories\":[],\"created_at\":\"2026-11-21T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":13000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"ktvt86\",\"goal\":\"LINK_CLICKS\",\"id\":\"jxq3i\",\"ios_app_store_identifier\":null,\"name\":\"BF - Post D (deadline)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2026-11-21T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\",\"campaign_id\":\"bzftj\",\"daily_budget_amount_local_micro\":13000000,\"end_time\":\"2026-11-30T00:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"BF - Post D (deadline)\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"start_time\":\"2026-11-21T00:00:00Z\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T00:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "line_item_id": "zi7g2",
+      "targeting_type": "LOCATION",
+      "targeting_value": "6416b8512febefc9"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2026-11-21T00:00:00Z\",\"deleted\":false,\"id\":\"ftnm7m9\",\"line_item_id\":\"zi7g2\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\",\"updated_at\":\"2026-11-21T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\",\"line_item_id\":\"zi7g2\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T00:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "line_item_id": "zi7g2",
+      "targeting_type": "LOCATION",
+      "targeting_value": "ea679934779f45c7"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2026-11-21T00:00:00Z\",\"deleted\":false,\"id\":\"seb0wuk\",\"line_item_id\":\"zi7g2\",\"location_type\":\"COUNTRIES\",\"name\":\"Ireland\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ea679934779f45c7\",\"updated_at\":\"2026-11-21T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\",\"line_item_id\":\"zi7g2\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ea679934779f45c7\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T00:00:00Z",
+    "tool": "search_targeting_interests",
+    "arguments": {
+      "count": 10,
+      "q": "devops"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"request\":{\"params\":{\"count\":10,\"q\":\"devops\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T00:00:00Z",
+    "tool": "search_targeting_interests",
+    "arguments": {
+      "count": 10,
+      "q": "software"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"name\":\"Technology / Software Development\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925953040130953216\"}],\"request\":{\"params\":{\"count\":10,\"q\":\"software\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T00:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "line_item_id": "cirm4",
+      "targeting_type": "LOCATION",
+      "targeting_value": "6416b8512febefc9"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2026-11-21T00:00:00Z\",\"deleted\":false,\"id\":\"rmk6aqs\",\"line_item_id\":\"cirm4\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\",\"updated_at\":\"2026-11-21T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\",\"line_item_id\":\"cirm4\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T00:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "line_item_id": "cirm4",
+      "targeting_type": "LOCATION",
+      "targeting_value": "ea679934779f45c7"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2026-11-21T00:00:00Z\",\"deleted\":false,\"id\":\"tpe5yku\",\"line_item_id\":\"cirm4\",\"location_type\":\"COUNTRIES\",\"name\":\"Ireland\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ea679934779f45c7\",\"updated_at\":\"2026-11-21T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\",\"line_item_id\":\"cirm4\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ea679934779f45c7\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T00:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "line_item_id": "r3zhe",
+      "targeting_type": "LOCATION",
+      "targeting_value": "6416b8512febefc9"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2026-11-21T00:00:00Z\",\"deleted\":false,\"id\":\"38tebbg\",\"line_item_id\":\"r3zhe\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\",\"updated_at\":\"2026-11-21T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\",\"line_item_id\":\"r3zhe\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T00:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "line_item_id": "r3zhe",
+      "targeting_type": "LOCATION",
+      "targeting_value": "ea679934779f45c7"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2026-11-21T00:00:00Z\",\"deleted\":false,\"id\":\"f03ho7o\",\"line_item_id\":\"r3zhe\",\"location_type\":\"COUNTRIES\",\"name\":\"Ireland\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ea679934779f45c7\",\"updated_at\":\"2026-11-21T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\",\"line_item_id\":\"r3zhe\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ea679934779f45c7\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T00:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "line_item_id": "jxq3i",
+      "targeting_type": "LOCATION",
+      "targeting_value": "6416b8512febefc9"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2026-11-21T00:00:00Z\",\"deleted\":false,\"id\":\"2glznwn\",\"line_item_id\":\"jxq3i\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\",\"updated_at\":\"2026-11-21T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\",\"line_item_id\":\"jxq3i\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T00:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "line_item_id": "jxq3i",
+      "targeting_type": "LOCATION",
+      "targeting_value": "ea679934779f45c7"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2026-11-21T00:00:00Z\",\"deleted\":false,\"id\":\"r513iki\",\"line_item_id\":\"jxq3i\",\"location_type\":\"COUNTRIES\",\"name\":\"Ireland\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ea679934779f45c7\",\"updated_at\":\"2026-11-21T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\",\"line_item_id\":\"jxq3i\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ea679934779f45c7\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T00:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "line_item_id": "zi7g2",
+      "tweet_ids": "2123204606163673400"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2026-11-21T00:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"euq5ph\",\"line_item_id\":\"zi7g2\",\"tweet_id\":\"2123204606163673400\",\"updated_at\":\"2026-11-21T00:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\",\"line_item_id\":\"zi7g2\",\"tweet_ids\":[\"2123204606163673400\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T00:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "line_item_id": "cirm4",
+      "tweet_ids": "2123385800094755076"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2026-11-21T00:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"pw1w9d\",\"line_item_id\":\"cirm4\",\"tweet_id\":\"2123385800094755076\",\"updated_at\":\"2026-11-21T00:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\",\"line_item_id\":\"cirm4\",\"tweet_ids\":[\"2123385800094755076\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T00:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "line_item_id": "r3zhe",
+      "tweet_ids": "2123566994028154923"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2026-11-21T00:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"e5l580\",\"line_item_id\":\"r3zhe\",\"tweet_id\":\"2123566994028154923\",\"updated_at\":\"2026-11-21T00:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\",\"line_item_id\":\"r3zhe\",\"tweet_ids\":[\"2123566994028154923\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T00:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "line_item_id": "jxq3i",
+      "tweet_ids": "2123748187962542190"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2026-11-21T00:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"mvh8qv\",\"line_item_id\":\"jxq3i\",\"tweet_id\":\"2123748187962542190\",\"updated_at\":\"2026-11-21T00:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\",\"line_item_id\":\"jxq3i\",\"tweet_ids\":[\"2123748187962542190\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T00:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "line_item_id": "zi7g2"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1745958838072711440\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"bzftj\",\"categories\":[],\"created_at\":\"2026-11-21T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":13000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"ktvt86\",\"goal\":\"LINK_CLICKS\",\"id\":\"zi7g2\",\"ios_app_store_identifier\":null,\"name\":\"BF - Post A (product+offer)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2026-11-21T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\",\"line_item_id\":\"zi7g2\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T00:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "line_item_id": "cirm4"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1745958838072711440\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"bzftj\",\"categories\":[],\"created_at\":\"2026-11-21T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":13000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"ktvt86\",\"goal\":\"LINK_CLICKS\",\"id\":\"cirm4\",\"ios_app_store_identifier\":null,\"name\":\"BF - Post B (\u00a30/60 days)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2026-11-21T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\",\"line_item_id\":\"cirm4\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T00:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "line_item_id": "r3zhe"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1745958838072711440\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"bzftj\",\"categories\":[],\"created_at\":\"2026-11-21T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":13000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"ktvt86\",\"goal\":\"LINK_CLICKS\",\"id\":\"r3zhe\",\"ios_app_store_identifier\":null,\"name\":\"BF - Post C (rerun job hook)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2026-11-21T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\",\"line_item_id\":\"r3zhe\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T00:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "line_item_id": "jxq3i"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1745958838072711440\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"bzftj\",\"categories\":[],\"created_at\":\"2026-11-21T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":13000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"ktvt86\",\"goal\":\"LINK_CLICKS\",\"id\":\"jxq3i\",\"ios_app_store_identifier\":null,\"name\":\"BF - Post D (deadline)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2026-11-21T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\",\"line_item_id\":\"jxq3i\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T00:00:00Z",
+    "tool": "activate_campaign",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "campaign_id": "bzftj"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2026-11-21T00:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"RUNNING\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"ktvt86\",\"id\":\"bzftj\",\"name\":\"Nettle CI Black Friday 2026\",\"purchase_order_number\":null,\"reasons_not_servable\":[],\"servable\":true,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2026-11-21T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\",\"campaign_id\":\"bzftj\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T00:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2026-11-22T09:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2026-11-30T01:00:00Z\",\"now\":\"2026-11-22T09:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-22T09:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "end_time": "2026-11-22T09:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "zi7g2,cirm4,r3zhe,jxq3i",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2026-11-21T00:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"zi7g2\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[14252371],\"billed_engagements\":[96],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[4],\"engagements\":[96],\"follows\":null,\"impressions\":[14954],\"likes\":[4],\"link_clicks\":[4],\"qualified_impressions\":[14954],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"cirm4\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[8761588],\"billed_engagements\":[87],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[2],\"engagements\":[87],\"follows\":null,\"impressions\":[10314],\"likes\":[2],\"link_clicks\":[2],\"qualified_impressions\":[10314],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"r3zhe\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[14291301],\"billed_engagements\":[52],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[5],\"engagements\":[52],\"follows\":null,\"impressions\":[6543],\"likes\":[1],\"link_clicks\":[5],\"qualified_impressions\":[6543],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"jxq3i\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[14150271],\"billed_engagements\":[65],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[5],\"engagements\":[65],\"follows\":null,\"impressions\":[9719],\"likes\":[4],\"link_clicks\":[5],\"qualified_impressions\":[9719],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-11-22T09:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"zi7g2\",\"cirm4\",\"r3zhe\",\"jxq3i\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-21T00:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-22T09:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2026-11-23T09:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2026-11-30T01:00:00Z\",\"now\":\"2026-11-23T09:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-23T09:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "end_time": "2026-11-23T09:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "zi7g2,cirm4,r3zhe,jxq3i",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2026-11-21T00:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"zi7g2\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[21939440],\"billed_engagements\":[161],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[7],\"engagements\":[161],\"follows\":null,\"impressions\":[25162],\"likes\":[4],\"link_clicks\":[7],\"qualified_impressions\":[25162],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"cirm4\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[19351883],\"billed_engagements\":[164],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[5],\"engagements\":[164],\"follows\":null,\"impressions\":[23618],\"likes\":[4],\"link_clicks\":[5],\"qualified_impressions\":[23618],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"r3zhe\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[22641786],\"billed_engagements\":[116],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[9],\"engagements\":[116],\"follows\":null,\"impressions\":[16554],\"likes\":[5],\"link_clicks\":[9],\"qualified_impressions\":[16554],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"jxq3i\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[26858451],\"billed_engagements\":[118],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[12],\"engagements\":[118],\"follows\":null,\"impressions\":[16547],\"likes\":[9],\"link_clicks\":[12],\"qualified_impressions\":[16547],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-11-23T09:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"zi7g2\",\"cirm4\",\"r3zhe\",\"jxq3i\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-21T00:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-23T09:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "daily_budget_amount_local_micro": 11000000,
+      "line_item_id": "zi7g2"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1745958838072711440\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"bzftj\",\"categories\":[],\"created_at\":\"2026-11-21T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":11000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"ktvt86\",\"goal\":\"LINK_CLICKS\",\"id\":\"zi7g2\",\"ios_app_store_identifier\":null,\"name\":\"BF - Post A (product+offer)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2026-11-23T09:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\",\"daily_budget_amount_local_micro\":11000000,\"line_item_id\":\"zi7g2\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-23T09:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "daily_budget_amount_local_micro": 8000000,
+      "line_item_id": "cirm4"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1745958838072711440\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"bzftj\",\"categories\":[],\"created_at\":\"2026-11-21T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":8000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"ktvt86\",\"goal\":\"LINK_CLICKS\",\"id\":\"cirm4\",\"ios_app_store_identifier\":null,\"name\":\"BF - Post B (\u00a30/60 days)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2026-11-23T09:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\",\"daily_budget_amount_local_micro\":8000000,\"line_item_id\":\"cirm4\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-23T09:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "daily_budget_amount_local_micro": 16000000,
+      "line_item_id": "r3zhe"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1745958838072711440\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"bzftj\",\"categories\":[],\"created_at\":\"2026-11-21T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":16000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"ktvt86\",\"goal\":\"LINK_CLICKS\",\"id\":\"r3zhe\",\"ios_app_store_identifier\":null,\"name\":\"BF - Post C (rerun job hook)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2026-11-23T09:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\",\"daily_budget_amount_local_micro\":16000000,\"line_item_id\":\"r3zhe\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-23T09:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "daily_budget_amount_local_micro": 17000000,
+      "line_item_id": "jxq3i"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1745958838072711440\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"bzftj\",\"categories\":[],\"created_at\":\"2026-11-21T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":17000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"ktvt86\",\"goal\":\"LINK_CLICKS\",\"id\":\"jxq3i\",\"ios_app_store_identifier\":null,\"name\":\"BF - Post D (deadline)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2026-11-23T09:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\",\"daily_budget_amount_local_micro\":17000000,\"line_item_id\":\"jxq3i\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-23T09:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2026-11-25T09:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2026-11-30T01:00:00Z\",\"now\":\"2026-11-25T09:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-25T09:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "end_time": "2026-11-25T09:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "zi7g2,cirm4,r3zhe,jxq3i",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2026-11-21T00:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"zi7g2\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[40915646],\"billed_engagements\":[325],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[16],\"engagements\":[325],\"follows\":null,\"impressions\":[48052],\"likes\":[8],\"link_clicks\":[16],\"qualified_impressions\":[48052],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"cirm4\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[32186052],\"billed_engagements\":[292],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[9],\"engagements\":[292],\"follows\":null,\"impressions\":[43503],\"likes\":[7],\"link_clicks\":[9],\"qualified_impressions\":[43503],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"r3zhe\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[52144275],\"billed_engagements\":[256],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[23],\"engagements\":[256],\"follows\":null,\"impressions\":[36880],\"likes\":[7],\"link_clicks\":[23],\"qualified_impressions\":[36880],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"jxq3i\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[65987624],\"billed_engagements\":[253],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[30],\"engagements\":[253],\"follows\":null,\"impressions\":[34558],\"likes\":[11],\"link_clicks\":[30],\"qualified_impressions\":[34558],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-11-25T09:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"zi7g2\",\"cirm4\",\"r3zhe\",\"jxq3i\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-21T00:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-25T09:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "entity_status": "PAUSED",
+      "line_item_id": "cirm4"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1745958838072711440\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"bzftj\",\"categories\":[],\"created_at\":\"2026-11-21T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":8000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"ktvt86\",\"goal\":\"LINK_CLICKS\",\"id\":\"cirm4\",\"ios_app_store_identifier\":null,\"name\":\"BF - Post B (\u00a30/60 days)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2026-11-25T09:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\",\"entity_status\":\"PAUSED\",\"line_item_id\":\"cirm4\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-25T09:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "daily_budget_amount_local_micro": 13000000,
+      "line_item_id": "zi7g2"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1745958838072711440\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"bzftj\",\"categories\":[],\"created_at\":\"2026-11-21T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":13000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"ktvt86\",\"goal\":\"LINK_CLICKS\",\"id\":\"zi7g2\",\"ios_app_store_identifier\":null,\"name\":\"BF - Post A (product+offer)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2026-11-25T09:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\",\"daily_budget_amount_local_micro\":13000000,\"line_item_id\":\"zi7g2\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-25T09:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "daily_budget_amount_local_micro": 23000000,
+      "line_item_id": "r3zhe"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1745958838072711440\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"bzftj\",\"categories\":[],\"created_at\":\"2026-11-21T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":23000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"ktvt86\",\"goal\":\"LINK_CLICKS\",\"id\":\"r3zhe\",\"ios_app_store_identifier\":null,\"name\":\"BF - Post C (rerun job hook)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2026-11-25T09:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\",\"daily_budget_amount_local_micro\":23000000,\"line_item_id\":\"r3zhe\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-25T09:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "daily_budget_amount_local_micro": 26000000,
+      "line_item_id": "jxq3i"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1745958838072711440\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"bzftj\",\"categories\":[],\"created_at\":\"2026-11-21T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":26000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"ktvt86\",\"goal\":\"LINK_CLICKS\",\"id\":\"jxq3i\",\"ios_app_store_identifier\":null,\"name\":\"BF - Post D (deadline)\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-21T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2026-11-25T09:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\",\"daily_budget_amount_local_micro\":26000000,\"line_item_id\":\"jxq3i\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-25T09:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2026-11-27T09:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2026-11-30T01:00:00Z\",\"now\":\"2026-11-27T09:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-27T09:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "end_time": "2026-11-27T09:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "zi7g2,cirm4,r3zhe,jxq3i",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2026-11-21T00:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"zi7g2\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[68549052],\"billed_engagements\":[462],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[25],\"engagements\":[462],\"follows\":null,\"impressions\":[67201],\"likes\":[10],\"link_clicks\":[25],\"qualified_impressions\":[67201],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"cirm4\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[32186052],\"billed_engagements\":[292],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[9],\"engagements\":[292],\"follows\":null,\"impressions\":[43760],\"likes\":[7],\"link_clicks\":[9],\"qualified_impressions\":[43760],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"r3zhe\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[98887176],\"billed_engagements\":[460],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[39],\"engagements\":[460],\"follows\":null,\"impressions\":[64870],\"likes\":[10],\"link_clicks\":[39],\"qualified_impressions\":[64870],\"replies\":[1],\"retweets\":null},\"segment\":null}]},{\"id\":\"jxq3i\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[111258417],\"billed_engagements\":[423],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[46],\"engagements\":[423],\"follows\":null,\"impressions\":[58296],\"likes\":[15],\"link_clicks\":[46],\"qualified_impressions\":[58296],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-11-27T09:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"zi7g2\",\"cirm4\",\"r3zhe\",\"jxq3i\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-21T00:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-27T09:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2026-11-29T09:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2026-11-30T01:00:00Z\",\"now\":\"2026-11-29T09:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-29T09:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "end_time": "2026-11-29T09:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "zi7g2,cirm4,r3zhe,jxq3i",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2026-11-21T00:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"errors\":[{\"code\":\"INVALID_TIME_WINDOW\",\"message\":\"The end_time (2026-11-29 09:00:00 +0000) can be a maximum of 7.days+1.hours after the start_time (2026-11-21 00:00:00 +0000)\",\"parameter\":\"\"}],\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\",\"end_time\":\"2026-11-29T09:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"zi7g2\",\"cirm4\",\"r3zhe\",\"jxq3i\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"start_time\":\"2026-11-21T00:00:00Z\"}}}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2026-11-29T09:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "end_time": "2026-11-29T09:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "zi7g2,cirm4,r3zhe,jxq3i",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2026-11-22T00:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"errors\":[{\"code\":\"INVALID_TIME_WINDOW\",\"message\":\"The end_time (2026-11-29 09:00:00 +0000) can be a maximum of 7.days+1.hours after the start_time (2026-11-22 00:00:00 +0000)\",\"parameter\":\"\"}],\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\",\"end_time\":\"2026-11-29T09:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"zi7g2\",\"cirm4\",\"r3zhe\",\"jxq3i\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"start_time\":\"2026-11-22T00:00:00Z\"}}}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2026-11-29T09:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "end_time": "2026-11-29T09:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "zi7g2,cirm4,r3zhe,jxq3i",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2026-11-22T08:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"zi7g2\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[74576927],\"billed_engagements\":[463],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[28],\"engagements\":[463],\"follows\":null,\"impressions\":[68637],\"likes\":[9],\"link_clicks\":[28],\"qualified_impressions\":[68637],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"cirm4\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[23424464],\"billed_engagements\":[205],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[7],\"engagements\":[205],\"follows\":null,\"impressions\":[33446],\"likes\":[5],\"link_clicks\":[7],\"qualified_impressions\":[33446],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"r3zhe\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[128723034],\"billed_engagements\":[573],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[50],\"engagements\":[573],\"follows\":null,\"impressions\":[84951],\"likes\":[12],\"link_clicks\":[50],\"qualified_impressions\":[84951],\"replies\":[1],\"retweets\":null},\"segment\":null}]},{\"id\":\"jxq3i\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[144890474],\"billed_engagements\":[524],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[60],\"engagements\":[524],\"follows\":null,\"impressions\":[73729],\"likes\":[15],\"link_clicks\":[60],\"qualified_impressions\":[73729],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-11-29T09:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"zi7g2\",\"cirm4\",\"r3zhe\",\"jxq3i\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-22T08:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-29T09:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2026-11-30T01:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2026-11-30T01:00:00Z\",\"now\":\"2026-11-30T01:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-30T01:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "end_time": "2026-11-30T00:30:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "zi7g2,cirm4,r3zhe,jxq3i",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2026-11-23T00:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"errors\":[{\"code\":\"INVALID_TIME_WINDOW\",\"message\":\"Time cannot be fractional hours\",\"parameter\":\"end_time\"}],\"request\":{\"params\":{\"account_id\":\"18bfh2jwglt\",\"end_time\":\"2026-11-30T00:30:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"zi7g2\",\"cirm4\",\"r3zhe\",\"jxq3i\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"start_time\":\"2026-11-23T00:00:00Z\"}}}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2026-11-30T01:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "end_time": "2026-11-30T00:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "zi7g2,cirm4,r3zhe,jxq3i",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2026-11-23T00:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"zi7g2\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[78368453],\"billed_engagements\":[493],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[30],\"engagements\":[493],\"follows\":null,\"impressions\":[70650],\"likes\":[9],\"link_clicks\":[30],\"qualified_impressions\":[70650],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"cirm4\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[12834169],\"billed_engagements\":[136],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[4],\"engagements\":[136],\"follows\":null,\"impressions\":[21655],\"likes\":[3],\"link_clicks\":[4],\"qualified_impressions\":[21655],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"r3zhe\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[138486315],\"billed_engagements\":[611],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[54],\"engagements\":[611],\"follows\":null,\"impressions\":[87779],\"likes\":[14],\"link_clicks\":[54],\"qualified_impressions\":[87779],\"replies\":[1],\"retweets\":null},\"segment\":null}]},{\"id\":\"jxq3i\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[154835141],\"billed_engagements\":[564],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[64],\"engagements\":[564],\"follows\":null,\"impressions\":[82627],\"likes\":[12],\"link_clicks\":[64],\"qualified_impressions\":[82627],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"zi7g2\",\"cirm4\",\"r3zhe\",\"jxq3i\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-23T00:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-30T01:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18bfh2jwglt",
+      "end_time": "2026-11-22T08:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "zi7g2,cirm4,r3zhe,jxq3i",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2026-11-21T00:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"zi7g2\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[14252371],\"billed_engagements\":[96],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[4],\"engagements\":[96],\"follows\":null,\"impressions\":[14954],\"likes\":[4],\"link_clicks\":[4],\"qualified_impressions\":[14954],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"cirm4\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[8761588],\"billed_engagements\":[87],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[2],\"engagements\":[87],\"follows\":null,\"impressions\":[10314],\"likes\":[2],\"link_clicks\":[2],\"qualified_impressions\":[10314],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"r3zhe\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[14291301],\"billed_engagements\":[52],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[5],\"engagements\":[52],\"follows\":null,\"impressions\":[6543],\"likes\":[1],\"link_clicks\":[5],\"qualified_impressions\":[6543],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"jxq3i\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[14150271],\"billed_engagements\":[65],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[5],\"engagements\":[65],\"follows\":null,\"impressions\":[9719],\"likes\":[4],\"link_clicks\":[5],\"qualified_impressions\":[9719],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-11-22T08:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"zi7g2\",\"cirm4\",\"r3zhe\",\"jxq3i\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-21T00:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

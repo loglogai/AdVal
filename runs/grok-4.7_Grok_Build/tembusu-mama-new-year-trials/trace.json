@@ -1,0 +1,1542 @@
+[
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "list_ads_accounts",
+    "arguments": {
+      "with_total_count": true
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"business_id\":null,\"business_name\":null,\"country_code\":\"SG\",\"created_at\":\"2025-05-17T16:00:00Z\",\"deleted\":false,\"id\":\"180jmz2f7l9\",\"industry_type\":null,\"name\":\"Tembusu Mama\",\"timezone\":\"Asia/Singapore\",\"timezone_switch_at\":\"2025-05-17T16:00:00Z\",\"updated_at\":\"2025-05-17T16:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"with_total_count\":true}},\"total_count\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "get_current_time",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-01-06T17:00:00Z\",\"now\":\"2027-01-02T16:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "list_funding_instruments",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "with_total_count": true
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"able_to_fund\":true,\"created_at\":\"2025-05-17T16:00:00Z\",\"credit_limit_local_micro\":null,\"credit_remaining_local_micro\":null,\"currency\":\"USD\",\"deleted\":false,\"description\":\"American Express ending in 2459\",\"end_time\":null,\"entity_status\":\"ACTIVE\",\"funded_amount_local_micro\":0,\"id\":\"hgjhl2\",\"io_header\":null,\"reasons_not_able_to_fund\":[],\"start_time\":\"2025-05-17T16:00:00Z\",\"type\":\"CREDIT_CARD\",\"updated_at\":\"2025-05-17T16:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"with_total_count\":true}},\"total_count\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "list_campaigns",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "with_total_count": true,
+      "count": 50
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"count\":50,\"with_total_count\":true}},\"total_count\":0}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "search_targeting_platforms",
+    "arguments": {
+      "q": "ios"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"name\":\"iOS\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\"}],\"request\":{\"params\":{\"q\":\"ios\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "q": "Russia",
+      "location_type": "COUNTRIES"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"country_code\":\"RU\",\"location_type\":\"COUNTRIES\",\"name\":\"Russia\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"5714382051c06d1e\"}],\"next_cursor\":null,\"request\":{\"params\":{\"location_type\":\"COUNTRIES\",\"q\":\"Russia\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "q": "Belarus",
+      "location_type": "COUNTRIES"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"country_code\":\"BY\",\"location_type\":\"COUNTRIES\",\"name\":\"Belarus\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"333a5811d6b0c1cb\"}],\"next_cursor\":null,\"request\":{\"params\":{\"location_type\":\"COUNTRIES\",\"q\":\"Belarus\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "list_account_posts",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "tweet_type": "PUBLISHED",
+      "tweet_ids": "2137216936968368797,2137398130901070126,2137579324831556276",
+      "timeline_type": "ALL"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Mon Dec 28 16:00:00 +0000 2026\",\"display_text_range\":[0,178],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"tembusumama.app/newyear\",\"expanded_url\":\"https://tembusumama.app/newyear\",\"indices\":[155,178],\"url\":\"https://t.co/k2nxtDD3rc\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Only until January 6: start Tembusu Mama with a 14-day free trial instead of our usual 7. Ten gentle minutes a day, matched to your trimester. iPhone app. https://t.co/k2nxtDD3rc\",\"geo\":null,\"id\":2137579324831556276,\"id_str\":\"2137579324831556276\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2137579324831556276\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Sat May 17 16:00:00 +0000 2025\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2816,\"follow_request_sent\":null,\"followers_count\":15516,\"following\":null,\"friends_count\":666,\"geo_enabled\":false,\"id\":1923770484127236860,\"id_str\":\"1923770484127236860\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":16,\"location\":\"\",\"name\":\"Tembusu Mama\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1923770484127236860/1623614716\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1899956030223614716/OvKk6GKD_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1899956030223614716/OvKk6GKD_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"TembusuMama\",\"statuses_count\":3016,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Mon Dec 28 04:00:00 +0000 2026\",\"display_text_range\":[0,194],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"tembusumama.app/newyear\",\"expanded_url\":\"https://tembusumama.app/newyear\",\"indices\":[171,194],\"url\":\"https://t.co/cK7ipUaHOj\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Try 14 days of prenatal workouts for $0. After that it's US$9.99 a month, cancel anytime. Short trimester-by-trimester sessions plus daily pelvic floor work, iPhone only. https://t.co/cK7ipUaHOj\",\"geo\":null,\"id\":2137398130901070126,\"id_str\":\"2137398130901070126\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2137398130901070126\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Sat May 17 16:00:00 +0000 2025\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2816,\"follow_request_sent\":null,\"followers_count\":15516,\"following\":null,\"friends_count\":666,\"geo_enabled\":false,\"id\":1923770484127236860,\"id_str\":\"1923770484127236860\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":16,\"location\":\"\",\"name\":\"Tembusu Mama\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1923770484127236860/1623614716\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1899956030223614716/OvKk6GKD_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1899956030223614716/OvKk6GKD_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"TembusuMama\",\"statuses_count\":3016,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Sun Dec 27 16:00:00 +0000 2026\",\"display_text_range\":[0,218],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"tembusumama.app/newyear\",\"expanded_url\":\"https://tembusumama.app/newyear\",\"indices\":[195,218],\"url\":\"https://t.co/CsCPJEiwkk\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Pregnant and setting a 2027 resolution? Tembusu Mama gives you 10-minute prenatal workouts for each trimester, built with physiotherapists, on iPhone. New Year offer: 14 days free through Jan 6. https://t.co/CsCPJEiwkk\",\"geo\":null,\"id\":2137216936968368797,\"id_str\":\"2137216936968368797\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":false,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2137216936968368797\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Sat May 17 16:00:00 +0000 2025\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2816,\"follow_request_sent\":null,\"followers_count\":15516,\"following\":null,\"friends_count\":666,\"geo_enabled\":false,\"id\":1923770484127236860,\"id_str\":\"1923770484127236860\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":16,\"location\":\"\",\"name\":\"Tembusu Mama\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1923770484127236860/1623614716\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1899956030223614716/OvKk6GKD_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1899956030223614716/OvKk6GKD_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"TembusuMama\",\"statuses_count\":3016,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"timeline_type\":\"ALL\",\"tweet_ids\":[\"2137216936968368797\",\"2137398130901070126\",\"2137579324831556276\"],\"tweet_type\":\"PUBLISHED\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "search_targeting_interests",
+    "arguments": {
+      "q": "pregnancy",
+      "count": 20
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"request\":{\"params\":{\"count\":20,\"q\":\"pregnancy\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "search_targeting_interests",
+    "arguments": {
+      "q": "parenting",
+      "count": 15
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"name\":\"Relationships / Parenting\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925954095342338048\"}],\"request\":{\"params\":{\"count\":15,\"q\":\"parenting\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "search_targeting_interests",
+    "arguments": {
+      "q": "fitness",
+      "count": 10
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"name\":\"Health & Fitness\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925949856834588672\"},{\"name\":\"Health & Fitness / Nutrition\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925953366091350017\"},{\"name\":\"Health & Fitness / Workouts\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925953337020555264\"}],\"request\":{\"params\":{\"count\":10,\"q\":\"fitness\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "search_targeting_platforms",
+    "arguments": {
+      "q": ""
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"name\":\"iOS\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\"},{\"name\":\"Android\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"1\"},{\"name\":\"BlackBerry phones and tablets\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"2\"},{\"name\":\"Mobile web on other devices\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"3\"},{\"name\":\"Desktop and laptop computers\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"4\"}],\"request\":{\"params\":{}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "create_campaign",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "funding_instrument_id": "hgjhl2",
+      "name": "Tembusu Mama New Year trial 2027"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-01-02T16:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"PAUSED\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"hgjhl2\",\"id\":\"lo3n6\",\"name\":\"Tembusu Mama New Year trial 2027\",\"purchase_order_number\":null,\"reasons_not_servable\":[\"PAUSED_BY_ADVERTISER\"],\"servable\":false,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"funding_instrument_id\":\"hgjhl2\",\"name\":\"Tembusu Mama New Year trial 2027\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "search_targeting_interests",
+    "arguments": {
+      "q": "baby",
+      "count": 10
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"request\":{\"params\":{\"count\":10,\"q\":\"baby\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "search_targeting_interests",
+    "arguments": {
+      "q": "yoga",
+      "count": 5
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"request\":{\"params\":{\"count\":5,\"q\":\"yoga\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "campaign_id": "lo3n6",
+      "name": "iOS \u2014 resolution post",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "placements": "ALL_ON_TWITTER",
+      "product_type": "PROMOTED_TWEETS",
+      "bid_strategy": "AUTO",
+      "standard_delivery": true,
+      "audience_expansion": "DEFINED",
+      "daily_budget_amount_local_micro": 16666666,
+      "total_budget_amount_local_micro": 66666668,
+      "start_time": "2027-01-02T16:30:00Z",
+      "end_time": "2027-01-06T16:00:00Z",
+      "advertiser_domain": "tembusumama.app"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"tembusumama.app\",\"advertiser_user_id\":\"1923770484127236860\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lo3n6\",\"categories\":[],\"created_at\":\"2027-01-02T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":16666666,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-06T16:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"hgjhl2\",\"goal\":\"LINK_CLICKS\",\"id\":\"ez5u4\",\"ios_app_store_identifier\":null,\"name\":\"iOS \u2014 resolution post\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T16:30:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":66666668,\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"advertiser_domain\":\"tembusumama.app\",\"audience_expansion\":\"DEFINED\",\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lo3n6\",\"daily_budget_amount_local_micro\":16666666,\"end_time\":\"2027-01-06T16:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"iOS \u2014 resolution post\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T16:30:00Z\",\"total_budget_amount_local_micro\":66666668}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "campaign_id": "lo3n6",
+      "name": "iOS \u2014 $0 trial post",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "placements": "ALL_ON_TWITTER",
+      "product_type": "PROMOTED_TWEETS",
+      "bid_strategy": "AUTO",
+      "standard_delivery": true,
+      "audience_expansion": "DEFINED",
+      "daily_budget_amount_local_micro": 16666667,
+      "total_budget_amount_local_micro": 66666666,
+      "start_time": "2027-01-02T16:30:00Z",
+      "end_time": "2027-01-06T16:00:00Z",
+      "advertiser_domain": "tembusumama.app"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"tembusumama.app\",\"advertiser_user_id\":\"1923770484127236860\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lo3n6\",\"categories\":[],\"created_at\":\"2027-01-02T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":16666667,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-06T16:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"hgjhl2\",\"goal\":\"LINK_CLICKS\",\"id\":\"3m53y\",\"ios_app_store_identifier\":null,\"name\":\"iOS \u2014 $0 trial post\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T16:30:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":66666666,\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"advertiser_domain\":\"tembusumama.app\",\"audience_expansion\":\"DEFINED\",\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lo3n6\",\"daily_budget_amount_local_micro\":16666667,\"end_time\":\"2027-01-06T16:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"iOS \u2014 $0 trial post\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T16:30:00Z\",\"total_budget_amount_local_micro\":66666666}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "campaign_id": "lo3n6",
+      "name": "iOS \u2014 Jan 6 deadline post",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "placements": "ALL_ON_TWITTER",
+      "product_type": "PROMOTED_TWEETS",
+      "bid_strategy": "AUTO",
+      "standard_delivery": true,
+      "audience_expansion": "DEFINED",
+      "daily_budget_amount_local_micro": 16666667,
+      "total_budget_amount_local_micro": 66666666,
+      "start_time": "2027-01-02T16:30:00Z",
+      "end_time": "2027-01-06T16:00:00Z",
+      "advertiser_domain": "tembusumama.app"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"tembusumama.app\",\"advertiser_user_id\":\"1923770484127236860\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lo3n6\",\"categories\":[],\"created_at\":\"2027-01-02T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":16666667,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-06T16:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"hgjhl2\",\"goal\":\"LINK_CLICKS\",\"id\":\"ugiov\",\"ios_app_store_identifier\":null,\"name\":\"iOS \u2014 Jan 6 deadline post\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T16:30:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":66666666,\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"advertiser_domain\":\"tembusumama.app\",\"audience_expansion\":\"DEFINED\",\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lo3n6\",\"daily_budget_amount_local_micro\":16666667,\"end_time\":\"2027-01-06T16:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"iOS \u2014 Jan 6 deadline post\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T16:30:00Z\",\"total_budget_amount_local_micro\":66666666}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ez5u4",
+      "targeting_type": "PLATFORM",
+      "targeting_value": "0",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"lzu3uex\",\"line_item_id\":\"ez5u4\",\"name\":\"iOS\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ez5u4\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ez5u4",
+      "targeting_type": "LOCATION",
+      "targeting_value": "5714382051c06d1e",
+      "operator_type": "NE"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"4isyr12\",\"line_item_id\":\"ez5u4\",\"location_type\":\"COUNTRIES\",\"name\":\"Russia\",\"operator_type\":\"NE\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"5714382051c06d1e\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ez5u4\",\"operator_type\":\"NE\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"5714382051c06d1e\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ez5u4",
+      "targeting_type": "LOCATION",
+      "targeting_value": "333a5811d6b0c1cb",
+      "operator_type": "NE"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"xyv3rph\",\"line_item_id\":\"ez5u4\",\"location_type\":\"COUNTRIES\",\"name\":\"Belarus\",\"operator_type\":\"NE\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"333a5811d6b0c1cb\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ez5u4\",\"operator_type\":\"NE\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"333a5811d6b0c1cb\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ez5u4",
+      "targeting_type": "GENDER",
+      "targeting_value": "2",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"errors\":[{\"code\":\"INVALID_PARAMETER\",\"message\":\"Expected gender value of MALE or FEMALE, got \\\"2\\\" for targeting_value\",\"parameter\":\"targeting_value\"}],\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ez5u4\",\"operator_type\":\"EQ\",\"targeting_type\":\"GENDER\",\"targeting_value\":\"2\"}}}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ez5u4",
+      "targeting_type": "AGE",
+      "targeting_value": "AGE_18_TO_49",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"y1tdswg\",\"line_item_id\":\"ez5u4\",\"name\":\"AGE_18_TO_49\",\"operator_type\":\"EQ\",\"targeting_type\":\"AGE\",\"targeting_value\":\"AGE_18_TO_49\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ez5u4\",\"operator_type\":\"EQ\",\"targeting_type\":\"AGE\",\"targeting_value\":\"AGE_18_TO_49\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ez5u4",
+      "targeting_type": "BROAD_KEYWORD",
+      "targeting_value": "pregnant",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"vg0dptv\",\"line_item_id\":\"ez5u4\",\"name\":\"pregnant\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"pregnant\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ez5u4\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"pregnant\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ez5u4",
+      "targeting_type": "BROAD_KEYWORD",
+      "targeting_value": "pregnancy",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"xr3rqkz\",\"line_item_id\":\"ez5u4\",\"name\":\"pregnancy\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"pregnancy\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ez5u4\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"pregnancy\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ez5u4",
+      "targeting_type": "BROAD_KEYWORD",
+      "targeting_value": "prenatal",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"cm13tyo\",\"line_item_id\":\"ez5u4\",\"name\":\"prenatal\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"prenatal\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ez5u4\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"prenatal\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ez5u4",
+      "targeting_type": "BROAD_KEYWORD",
+      "targeting_value": "maternity",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"o3extxh\",\"line_item_id\":\"ez5u4\",\"name\":\"maternity\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"maternity\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ez5u4\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"maternity\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ez5u4",
+      "tweet_ids": "2137216936968368797"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"q1zbfg\",\"line_item_id\":\"ez5u4\",\"tweet_id\":\"2137216936968368797\",\"updated_at\":\"2027-01-02T16:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ez5u4\",\"tweet_ids\":[\"2137216936968368797\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "3m53y",
+      "tweet_ids": "2137398130901070126"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"3qep0z\",\"line_item_id\":\"3m53y\",\"tweet_id\":\"2137398130901070126\",\"updated_at\":\"2027-01-02T16:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"3m53y\",\"tweet_ids\":[\"2137398130901070126\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ugiov",
+      "tweet_ids": "2137579324831556276"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"472kut\",\"line_item_id\":\"ugiov\",\"tweet_id\":\"2137579324831556276\",\"updated_at\":\"2027-01-02T16:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ugiov\",\"tweet_ids\":[\"2137579324831556276\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ez5u4",
+      "targeting_type": "GENDER",
+      "targeting_value": "FEMALE",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"hh45qiq\",\"line_item_id\":\"ez5u4\",\"name\":\"FEMALE\",\"operator_type\":\"EQ\",\"targeting_type\":\"GENDER\",\"targeting_value\":\"FEMALE\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ez5u4\",\"operator_type\":\"EQ\",\"targeting_type\":\"GENDER\",\"targeting_value\":\"FEMALE\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "3m53y",
+      "targeting_type": "PLATFORM",
+      "targeting_value": "0",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"mlkvmt2\",\"line_item_id\":\"3m53y\",\"name\":\"iOS\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"3m53y\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "3m53y",
+      "targeting_type": "LOCATION",
+      "targeting_value": "5714382051c06d1e",
+      "operator_type": "NE"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"fyhu90b\",\"line_item_id\":\"3m53y\",\"location_type\":\"COUNTRIES\",\"name\":\"Russia\",\"operator_type\":\"NE\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"5714382051c06d1e\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"3m53y\",\"operator_type\":\"NE\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"5714382051c06d1e\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "3m53y",
+      "targeting_type": "LOCATION",
+      "targeting_value": "333a5811d6b0c1cb",
+      "operator_type": "NE"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"sed6gqy\",\"line_item_id\":\"3m53y\",\"location_type\":\"COUNTRIES\",\"name\":\"Belarus\",\"operator_type\":\"NE\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"333a5811d6b0c1cb\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"3m53y\",\"operator_type\":\"NE\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"333a5811d6b0c1cb\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "3m53y",
+      "targeting_type": "GENDER",
+      "targeting_value": "FEMALE",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"s5vfo2i\",\"line_item_id\":\"3m53y\",\"name\":\"FEMALE\",\"operator_type\":\"EQ\",\"targeting_type\":\"GENDER\",\"targeting_value\":\"FEMALE\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"3m53y\",\"operator_type\":\"EQ\",\"targeting_type\":\"GENDER\",\"targeting_value\":\"FEMALE\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "3m53y",
+      "targeting_type": "AGE",
+      "targeting_value": "AGE_18_TO_49",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"5w2tryj\",\"line_item_id\":\"3m53y\",\"name\":\"AGE_18_TO_49\",\"operator_type\":\"EQ\",\"targeting_type\":\"AGE\",\"targeting_value\":\"AGE_18_TO_49\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"3m53y\",\"operator_type\":\"EQ\",\"targeting_type\":\"AGE\",\"targeting_value\":\"AGE_18_TO_49\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "3m53y",
+      "targeting_type": "BROAD_KEYWORD",
+      "targeting_value": "pregnant",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"fbe9hjg\",\"line_item_id\":\"3m53y\",\"name\":\"pregnant\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"pregnant\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"3m53y\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"pregnant\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "3m53y",
+      "targeting_type": "BROAD_KEYWORD",
+      "targeting_value": "pregnancy",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"aghlgqx\",\"line_item_id\":\"3m53y\",\"name\":\"pregnancy\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"pregnancy\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"3m53y\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"pregnancy\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "3m53y",
+      "targeting_type": "BROAD_KEYWORD",
+      "targeting_value": "prenatal",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"lq5wyql\",\"line_item_id\":\"3m53y\",\"name\":\"prenatal\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"prenatal\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"3m53y\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"prenatal\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "3m53y",
+      "targeting_type": "BROAD_KEYWORD",
+      "targeting_value": "maternity",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"brz29hy\",\"line_item_id\":\"3m53y\",\"name\":\"maternity\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"maternity\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"3m53y\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"maternity\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ugiov",
+      "targeting_type": "PLATFORM",
+      "targeting_value": "0",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"ufkubxk\",\"line_item_id\":\"ugiov\",\"name\":\"iOS\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ugiov\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ugiov",
+      "targeting_type": "LOCATION",
+      "targeting_value": "5714382051c06d1e",
+      "operator_type": "NE"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"r9a33cd\",\"line_item_id\":\"ugiov\",\"location_type\":\"COUNTRIES\",\"name\":\"Russia\",\"operator_type\":\"NE\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"5714382051c06d1e\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ugiov\",\"operator_type\":\"NE\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"5714382051c06d1e\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ugiov",
+      "targeting_type": "LOCATION",
+      "targeting_value": "333a5811d6b0c1cb",
+      "operator_type": "NE"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"ekmk16y\",\"line_item_id\":\"ugiov\",\"location_type\":\"COUNTRIES\",\"name\":\"Belarus\",\"operator_type\":\"NE\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"333a5811d6b0c1cb\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ugiov\",\"operator_type\":\"NE\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"333a5811d6b0c1cb\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ugiov",
+      "targeting_type": "GENDER",
+      "targeting_value": "FEMALE",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"7uiu40e\",\"line_item_id\":\"ugiov\",\"name\":\"FEMALE\",\"operator_type\":\"EQ\",\"targeting_type\":\"GENDER\",\"targeting_value\":\"FEMALE\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ugiov\",\"operator_type\":\"EQ\",\"targeting_type\":\"GENDER\",\"targeting_value\":\"FEMALE\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ugiov",
+      "targeting_type": "AGE",
+      "targeting_value": "AGE_18_TO_49",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"87w11pk\",\"line_item_id\":\"ugiov\",\"name\":\"AGE_18_TO_49\",\"operator_type\":\"EQ\",\"targeting_type\":\"AGE\",\"targeting_value\":\"AGE_18_TO_49\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ugiov\",\"operator_type\":\"EQ\",\"targeting_type\":\"AGE\",\"targeting_value\":\"AGE_18_TO_49\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ugiov",
+      "targeting_type": "BROAD_KEYWORD",
+      "targeting_value": "pregnant",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"smmwi8p\",\"line_item_id\":\"ugiov\",\"name\":\"pregnant\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"pregnant\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ugiov\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"pregnant\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ugiov",
+      "targeting_type": "BROAD_KEYWORD",
+      "targeting_value": "pregnancy",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"i92unhy\",\"line_item_id\":\"ugiov\",\"name\":\"pregnancy\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"pregnancy\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ugiov\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"pregnancy\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ugiov",
+      "targeting_type": "BROAD_KEYWORD",
+      "targeting_value": "prenatal",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"sqyfalm\",\"line_item_id\":\"ugiov\",\"name\":\"prenatal\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"prenatal\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ugiov\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"prenatal\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ugiov",
+      "targeting_type": "BROAD_KEYWORD",
+      "targeting_value": "maternity",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T16:00:00Z\",\"deleted\":false,\"id\":\"er9u2za\",\"line_item_id\":\"ugiov\",\"name\":\"maternity\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"maternity\",\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ugiov\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"maternity\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "estimate_audience",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "targeting_criteria": [
+        {
+          "targeting_type": "PLATFORM",
+          "targeting_value": "0",
+          "operator_type": "EQ"
+        },
+        {
+          "targeting_type": "LOCATION",
+          "targeting_value": "5714382051c06d1e",
+          "operator_type": "NE"
+        },
+        {
+          "targeting_type": "LOCATION",
+          "targeting_value": "333a5811d6b0c1cb",
+          "operator_type": "NE"
+        },
+        {
+          "targeting_type": "GENDER",
+          "targeting_value": "FEMALE",
+          "operator_type": "EQ"
+        },
+        {
+          "targeting_type": "AGE",
+          "targeting_value": "AGE_18_TO_49",
+          "operator_type": "EQ"
+        },
+        {
+          "targeting_type": "BROAD_KEYWORD",
+          "targeting_value": "pregnant",
+          "operator_type": "EQ"
+        },
+        {
+          "targeting_type": "BROAD_KEYWORD",
+          "targeting_value": "pregnancy",
+          "operator_type": "EQ"
+        },
+        {
+          "targeting_type": "BROAD_KEYWORD",
+          "targeting_value": "prenatal",
+          "operator_type": "EQ"
+        },
+        {
+          "targeting_type": "BROAD_KEYWORD",
+          "targeting_value": "maternity",
+          "operator_type": "EQ"
+        }
+      ]
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"audience_size\":{\"max\":44137808,\"min\":38362767},\"warnings\":[{\"code\":\"AUDIENCE_ESTIMATE_PARTIAL_TARGETING\",\"message\":\"Some targeting options are not included in audience estimates. Your campaign will still serve using all selected targeting.\",\"unsupported_targeting_types\":[\"BROAD_KEYWORD\"]}]},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"targeting_criteria\":null}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "activate_campaign",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "campaign_id": "lo3n6"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-01-02T16:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"RUNNING\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"hgjhl2\",\"id\":\"lo3n6\",\"name\":\"Tembusu Mama New Year trial 2027\",\"purchase_order_number\":null,\"reasons_not_servable\":[],\"servable\":true,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"campaign_id\":\"lo3n6\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ez5u4"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"tembusumama.app\",\"advertiser_user_id\":\"1923770484127236860\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lo3n6\",\"categories\":[],\"created_at\":\"2027-01-02T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":16666666,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-06T16:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"hgjhl2\",\"goal\":\"LINK_CLICKS\",\"id\":\"ez5u4\",\"ios_app_store_identifier\":null,\"name\":\"iOS \u2014 resolution post\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T16:30:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":66666668,\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ez5u4\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "3m53y"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"tembusumama.app\",\"advertiser_user_id\":\"1923770484127236860\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lo3n6\",\"categories\":[],\"created_at\":\"2027-01-02T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":16666667,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-06T16:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"hgjhl2\",\"goal\":\"LINK_CLICKS\",\"id\":\"3m53y\",\"ios_app_store_identifier\":null,\"name\":\"iOS \u2014 $0 trial post\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T16:30:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":66666666,\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"3m53y\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ugiov"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"tembusumama.app\",\"advertiser_user_id\":\"1923770484127236860\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lo3n6\",\"categories\":[],\"created_at\":\"2027-01-02T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":16666667,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-06T16:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"hgjhl2\",\"goal\":\"LINK_CLICKS\",\"id\":\"ugiov\",\"ios_app_store_identifier\":null,\"name\":\"iOS \u2014 Jan 6 deadline post\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T16:30:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":66666666,\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"line_item_id\":\"ugiov\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T16:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-01-02T20:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-01-06T17:00:00Z\",\"now\":\"2027-01-02T20:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T20:00:00Z",
+    "tool": "get_active_entities",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "entity": "LINE_ITEM",
+      "start_time": "2027-01-02T16:00:00Z",
+      "end_time": "2027-01-02T20:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"activity_end_time\":\"2027-01-02T18:00:00Z\",\"activity_start_time\":\"2027-01-02T16:00:00Z\",\"entity_id\":\"ugiov\",\"placements\":[\"ALL_ON_TWITTER\"]},{\"activity_end_time\":\"2027-01-02T18:00:00Z\",\"activity_start_time\":\"2027-01-02T16:00:00Z\",\"entity_id\":\"ez5u4\",\"placements\":[\"ALL_ON_TWITTER\"]},{\"activity_end_time\":\"2027-01-02T18:00:00Z\",\"activity_start_time\":\"2027-01-02T16:00:00Z\",\"entity_id\":\"3m53y\",\"placements\":[\"ALL_ON_TWITTER\"]}],\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"end_time\":\"2027-01-02T20:00:00Z\",\"entity\":\"LINE_ITEM\",\"start_time\":\"2027-01-02T16:00:00Z\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T20:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ez5u4,3m53y,ugiov",
+      "start_time": "2027-01-02T16:00:00Z",
+      "end_time": "2027-01-02T20:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ez5u4\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[3152923],\"billed_engagements\":[18],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[4],\"engagements\":[18],\"follows\":null,\"impressions\":[2326],\"likes\":null,\"link_clicks\":[4],\"qualified_impressions\":[2326],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"3m53y\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[1937684],\"billed_engagements\":[15],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[2],\"engagements\":[15],\"follows\":null,\"impressions\":[2479],\"likes\":null,\"link_clicks\":[2],\"qualified_impressions\":[2479],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ugiov\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[888775],\"billed_engagements\":[13],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[1],\"engagements\":[13],\"follows\":null,\"impressions\":[2422],\"likes\":null,\"link_clicks\":[1],\"qualified_impressions\":[2422],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-02T20:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ez5u4\",\"3m53y\",\"ugiov\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-02T16:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T20:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "entity": "PROMOTED_TWEET",
+      "entity_ids": "q1zbfg,3qep0z,472kut",
+      "start_time": "2027-01-02T16:00:00Z",
+      "end_time": "2027-01-02T20:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"q1zbfg\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[3152923],\"billed_engagements\":[18],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[4],\"engagements\":[18],\"follows\":null,\"impressions\":[2326],\"likes\":null,\"link_clicks\":[4],\"qualified_impressions\":[2326],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"3qep0z\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[1937684],\"billed_engagements\":[15],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[2],\"engagements\":[15],\"follows\":null,\"impressions\":[2479],\"likes\":null,\"link_clicks\":[2],\"qualified_impressions\":[2479],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"472kut\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[888775],\"billed_engagements\":[13],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[1],\"engagements\":[13],\"follows\":null,\"impressions\":[2422],\"likes\":null,\"link_clicks\":[1],\"qualified_impressions\":[2422],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-02T20:00:00Z\",\"entity\":\"PROMOTED_TWEET\",\"entity_ids\":[\"q1zbfg\",\"3qep0z\",\"472kut\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-02T16:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T20:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-01-03T08:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-01-06T17:00:00Z\",\"now\":\"2027-01-03T08:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-03T08:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ez5u4,3m53y,ugiov",
+      "start_time": "2027-01-02T16:00:00Z",
+      "end_time": "2027-01-03T08:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ez5u4\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[10609227],\"billed_engagements\":[69],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[13],\"engagements\":[69],\"follows\":null,\"impressions\":[10291],\"likes\":[1],\"link_clicks\":[13],\"qualified_impressions\":[10291],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"3m53y\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[10066573],\"billed_engagements\":[83],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[10],\"engagements\":[83],\"follows\":null,\"impressions\":[10091],\"likes\":[3],\"link_clicks\":[10],\"qualified_impressions\":[10091],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ugiov\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[9195924],\"billed_engagements\":[72],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[10],\"engagements\":[72],\"follows\":null,\"impressions\":[11475],\"likes\":[1],\"link_clicks\":[10],\"qualified_impressions\":[11475],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-03T08:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ez5u4\",\"3m53y\",\"ugiov\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-02T16:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-03T08:00:00Z",
+    "tool": "get_active_entities",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "entity": "LINE_ITEM",
+      "start_time": "2027-01-03T00:00:00Z",
+      "end_time": "2027-01-03T08:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"activity_end_time\":\"2027-01-03T06:00:00Z\",\"activity_start_time\":\"2027-01-03T00:00:00Z\",\"entity_id\":\"ugiov\",\"placements\":[\"ALL_ON_TWITTER\"]},{\"activity_end_time\":\"2027-01-03T06:00:00Z\",\"activity_start_time\":\"2027-01-03T00:00:00Z\",\"entity_id\":\"ez5u4\",\"placements\":[\"ALL_ON_TWITTER\"]},{\"activity_end_time\":\"2027-01-03T06:00:00Z\",\"activity_start_time\":\"2027-01-03T00:00:00Z\",\"entity_id\":\"3m53y\",\"placements\":[\"ALL_ON_TWITTER\"]}],\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"end_time\":\"2027-01-03T08:00:00Z\",\"entity\":\"LINE_ITEM\",\"start_time\":\"2027-01-03T00:00:00Z\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-03T08:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-01-03T16:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-01-06T17:00:00Z\",\"now\":\"2027-01-03T16:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-03T16:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ez5u4,3m53y,ugiov",
+      "start_time": "2027-01-02T16:00:00Z",
+      "end_time": "2027-01-03T16:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ez5u4\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[15942552],\"billed_engagements\":[111],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[20],\"engagements\":[111],\"follows\":null,\"impressions\":[17337],\"likes\":[2],\"link_clicks\":[20],\"qualified_impressions\":[17337],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"3m53y\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[16473309],\"billed_engagements\":[126],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[17],\"engagements\":[126],\"follows\":null,\"impressions\":[16799],\"likes\":[5],\"link_clicks\":[17],\"qualified_impressions\":[16799],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ugiov\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[15763798],\"billed_engagements\":[114],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[18],\"engagements\":[114],\"follows\":null,\"impressions\":[17542],\"likes\":[2],\"link_clicks\":[18],\"qualified_impressions\":[17542],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-03T16:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ez5u4\",\"3m53y\",\"ugiov\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-02T16:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-03T16:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-01-04T16:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-01-06T17:00:00Z\",\"now\":\"2027-01-04T16:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-04T16:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ez5u4,3m53y,ugiov",
+      "start_time": "2027-01-02T16:00:00Z",
+      "end_time": "2027-01-04T16:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ez5u4\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[15942552,16196040],\"billed_engagements\":[114,121],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[20,19],\"engagements\":[114,121],\"follows\":null,\"impressions\":[18164,17534],\"likes\":[2,1],\"link_clicks\":[20,19],\"qualified_impressions\":[18164,17534],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"3m53y\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[16473309,15869817],\"billed_engagements\":[126,128],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[17,15],\"engagements\":[126,128],\"follows\":null,\"impressions\":[17017,18427],\"likes\":[5,4],\"link_clicks\":[17,15],\"qualified_impressions\":[17017,18427],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ugiov\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[15763798,14961116],\"billed_engagements\":[120,177],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[18,16],\"engagements\":[120,177],\"follows\":null,\"impressions\":[18469,20982],\"likes\":[2,5],\"link_clicks\":[18,16],\"qualified_impressions\":[18469,20982],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-04T16:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ez5u4\",\"3m53y\",\"ugiov\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-02T16:00:00Z\"}},\"time_series_length\":2}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-04T16:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "3m53y",
+      "entity_status": "PAUSED",
+      "total_budget_amount_local_micro": 32343126,
+      "daily_budget_amount_local_micro": 1000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"tembusumama.app\",\"advertiser_user_id\":\"1923770484127236860\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lo3n6\",\"categories\":[],\"created_at\":\"2027-01-02T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":1000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-06T16:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"hgjhl2\",\"goal\":\"LINK_CLICKS\",\"id\":\"3m53y\",\"ios_app_store_identifier\":null,\"name\":\"iOS \u2014 $0 trial post\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T16:30:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":32343126,\"updated_at\":\"2027-01-04T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"daily_budget_amount_local_micro\":1000000,\"entity_status\":\"PAUSED\",\"line_item_id\":\"3m53y\",\"total_budget_amount_local_micro\":32343126}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-04T16:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ez5u4",
+      "total_budget_amount_local_micro": 100990208,
+      "daily_budget_amount_local_micro": 34425808
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"tembusumama.app\",\"advertiser_user_id\":\"1923770484127236860\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lo3n6\",\"categories\":[],\"created_at\":\"2027-01-02T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":34425808,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-06T16:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"hgjhl2\",\"goal\":\"LINK_CLICKS\",\"id\":\"ez5u4\",\"ios_app_store_identifier\":null,\"name\":\"iOS \u2014 resolution post\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T16:30:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":100990208,\"updated_at\":\"2027-01-04T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"daily_budget_amount_local_micro\":34425808,\"line_item_id\":\"ez5u4\",\"total_budget_amount_local_micro\":100990208}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-04T16:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-01-05T16:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-01-06T17:00:00Z\",\"now\":\"2027-01-05T16:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T16:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ez5u4,3m53y,ugiov",
+      "start_time": "2027-01-04T16:00:00Z",
+      "end_time": "2027-01-05T16:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ez5u4\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[33992248],\"billed_engagements\":[268],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[38],\"engagements\":[268],\"follows\":null,\"impressions\":[35541],\"likes\":[7],\"link_clicks\":[38],\"qualified_impressions\":[35541],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"3m53y\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":null,\"billed_engagements\":null,\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":null,\"engagements\":null,\"follows\":null,\"impressions\":null,\"likes\":null,\"link_clicks\":null,\"qualified_impressions\":null,\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ugiov\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[16322073],\"billed_engagements\":[112],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[18],\"engagements\":[112],\"follows\":null,\"impressions\":[14356],\"likes\":[4],\"link_clicks\":[18],\"qualified_impressions\":[14356],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-05T16:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ez5u4\",\"3m53y\",\"ugiov\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-04T16:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T16:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ez5u4,3m53y,ugiov",
+      "start_time": "2027-01-02T16:00:00Z",
+      "end_time": "2027-01-05T16:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ez5u4\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[66130840],\"billed_engagements\":[505],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[77],\"engagements\":[505],\"follows\":null,\"impressions\":[71399],\"likes\":[10],\"link_clicks\":[77],\"qualified_impressions\":[71399],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"3m53y\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[32343126],\"billed_engagements\":[261],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[32],\"engagements\":[261],\"follows\":null,\"impressions\":[36289],\"likes\":[10],\"link_clicks\":[32],\"qualified_impressions\":[36289],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ugiov\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[47998391],\"billed_engagements\":[420],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[53],\"engagements\":[420],\"follows\":null,\"impressions\":[55683],\"likes\":[11],\"link_clicks\":[53],\"qualified_impressions\":[55683],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-05T16:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ez5u4\",\"3m53y\",\"ugiov\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-02T16:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T16:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ez5u4",
+      "total_budget_amount_local_micro": 92990208,
+      "daily_budget_amount_local_micro": 26859368
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"tembusumama.app\",\"advertiser_user_id\":\"1923770484127236860\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lo3n6\",\"categories\":[],\"created_at\":\"2027-01-02T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":26859368,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-06T16:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"hgjhl2\",\"goal\":\"LINK_CLICKS\",\"id\":\"ez5u4\",\"ios_app_store_identifier\":null,\"name\":\"iOS \u2014 resolution post\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T16:30:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":92990208,\"updated_at\":\"2027-01-05T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"daily_budget_amount_local_micro\":26859368,\"line_item_id\":\"ez5u4\",\"total_budget_amount_local_micro\":92990208}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T16:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "line_item_id": "ugiov",
+      "total_budget_amount_local_micro": 74666666,
+      "daily_budget_amount_local_micro": 26668275
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"tembusumama.app\",\"advertiser_user_id\":\"1923770484127236860\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lo3n6\",\"categories\":[],\"created_at\":\"2027-01-02T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":26668275,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-06T16:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"hgjhl2\",\"goal\":\"LINK_CLICKS\",\"id\":\"ugiov\",\"ios_app_store_identifier\":null,\"name\":\"iOS \u2014 Jan 6 deadline post\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T16:30:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":74666666,\"updated_at\":\"2027-01-05T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"daily_budget_amount_local_micro\":26668275,\"line_item_id\":\"ugiov\",\"total_budget_amount_local_micro\":74666666}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T16:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-01-06T17:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-01-06T17:00:00Z\",\"now\":\"2027-01-06T17:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-06T17:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ez5u4,3m53y,ugiov",
+      "start_time": "2027-01-02T16:00:00Z",
+      "end_time": "2027-01-06T16:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ez5u4\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[15942552,16196040,33992248,26098408],\"billed_engagements\":[114,123,275,237],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[20,19,38,29],\"engagements\":[114,123,275,237],\"follows\":null,\"impressions\":[18164,17694,36223,33692],\"likes\":[2,1,7,2],\"link_clicks\":[20,19,38,29],\"qualified_impressions\":[18164,17694,36223,33692],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"3m53y\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[16473309,15869817,0,0],\"billed_engagements\":[126,135,0,0],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[17,15,0,0],\"engagements\":[126,135,0,0],\"follows\":null,\"impressions\":[17017,19272,0,0],\"likes\":[5,5,0,0],\"link_clicks\":[17,15,0,0],\"qualified_impressions\":[17017,19272,0,0],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ugiov\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[15763798,15912520,16322073,25364718],\"billed_engagements\":[120,188,114,240],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[18,17,18,26],\"engagements\":[120,188,114,240],\"follows\":null,\"impressions\":[18469,22858,14661,36038],\"likes\":[2,5,4,6],\"link_clicks\":[18,17,18,26],\"qualified_impressions\":[18469,22858,14661,36038],\"replies\":null,\"retweets\":[0,0,0,1]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-06T16:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ez5u4\",\"3m53y\",\"ugiov\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-02T16:00:00Z\"}},\"time_series_length\":4}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-06T17:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "entity": "CAMPAIGN",
+      "entity_ids": "lo3n6",
+      "start_time": "2027-01-02T16:00:00Z",
+      "end_time": "2027-01-06T17:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"lo3n6\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[197935483],\"billed_engagements\":[1672],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[217],\"engagements\":[1672],\"follows\":null,\"impressions\":[234088],\"likes\":[39],\"link_clicks\":[217],\"qualified_impressions\":[234088],\"replies\":null,\"retweets\":[1]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-06T17:00:00Z\",\"entity\":\"CAMPAIGN\",\"entity_ids\":[\"lo3n6\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-02T16:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-06T17:00:00Z",
+    "tool": "get_campaign",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "campaign_id": "lo3n6"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-01-02T16:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"EXPIRED\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"hgjhl2\",\"id\":\"lo3n6\",\"name\":\"Tembusu Mama New Year trial 2027\",\"purchase_order_number\":null,\"reasons_not_servable\":[\"EXPIRED\"],\"servable\":false,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-01-02T16:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"campaign_id\":\"lo3n6\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-06T17:00:00Z",
+    "tool": "list_line_items",
+    "arguments": {
+      "account_id": "180jmz2f7l9",
+      "campaign_ids": "lo3n6"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"advertiser_domain\":\"tembusumama.app\",\"advertiser_user_id\":\"1923770484127236860\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lo3n6\",\"categories\":[],\"created_at\":\"2027-01-02T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":26859368,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-06T16:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"hgjhl2\",\"goal\":\"LINK_CLICKS\",\"id\":\"ez5u4\",\"ios_app_store_identifier\":null,\"name\":\"iOS \u2014 resolution post\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T16:30:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":92990208,\"updated_at\":\"2027-01-05T16:00:00Z\"},{\"advertiser_domain\":\"tembusumama.app\",\"advertiser_user_id\":\"1923770484127236860\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lo3n6\",\"categories\":[],\"created_at\":\"2027-01-02T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":1000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-06T16:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"hgjhl2\",\"goal\":\"LINK_CLICKS\",\"id\":\"3m53y\",\"ios_app_store_identifier\":null,\"name\":\"iOS \u2014 $0 trial post\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T16:30:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":32343126,\"updated_at\":\"2027-01-04T16:00:00Z\"},{\"advertiser_domain\":\"tembusumama.app\",\"advertiser_user_id\":\"1923770484127236860\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"lo3n6\",\"categories\":[],\"created_at\":\"2027-01-02T16:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":26668275,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-06T16:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"hgjhl2\",\"goal\":\"LINK_CLICKS\",\"id\":\"ugiov\",\"ios_app_store_identifier\":null,\"name\":\"iOS \u2014 Jan 6 deadline post\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T16:30:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":74666666,\"updated_at\":\"2027-01-05T16:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"180jmz2f7l9\",\"campaign_ids\":[\"lo3n6\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

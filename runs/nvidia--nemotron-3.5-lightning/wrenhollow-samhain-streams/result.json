@@ -1,0 +1,89 @@
+{
+ "agent": "nvidia--nemotron-3.5-lightning",
+ "model": "nvidia/nemotron-3.5-lightning",
+ "cli": "Claude Code",
+ "cli_version": "2.1.312 (Claude Code)",
+ "effort": "medium",
+ "brief": "wrenhollow-samhain-streams",
+ "rollout_seed": 7,
+ "metric": "expected_conversions",
+ "grade": 18.301,
+ "par": 88.1569,
+ "grade_over_par": 0.2076,
+ "conversions": 20,
+ "link_clicks": 935,
+ "impressions": 1579462,
+ "spend_usd": 438.81,
+ "budget_left_usd": 11.19,
+ "tools_used": {
+  "list_ads_accounts": 1,
+  "list_promoted_posts": 1,
+  "list_funding_instruments": 1,
+  "create_campaign": 1,
+  "create_line_item": 5,
+  "promote_post": 5,
+  "activate_campaign": 1,
+  "activate_line_item": 5,
+  "update_line_item": 1,
+  "get_account_stats": 17,
+  "get_active_entities": 1,
+  "get_campaign": 1,
+  "list_line_items": 1,
+  "get_current_time": 1,
+  "wait_until": 11
+ },
+ "minutes": 9.4,
+ "recap_check": "wrong",
+ "recap_metrics": {
+  "spend_usd": {
+   "kind": "total",
+   "quote": "**Final Spend**: $432.68",
+   "stated": 432.68,
+   "visible": 434.758643,
+   "final": 438.805591,
+   "error": 0.00478114244183065,
+   "right": true
+  },
+  "impressions": {
+   "kind": "total",
+   "quote": "| **Impressions** | 1,508,282 |",
+   "stated": 1508282.0,
+   "visible": 1562644,
+   "final": 1579462,
+   "error": 0.03478847389424591,
+   "right": false
+  },
+  "link_clicks": {
+   "kind": "total",
+   "quote": "| **Link Clicks** | 855 |",
+   "stated": 855.0,
+   "visible": 928,
+   "final": 935,
+   "error": 0.07866379310344827,
+   "right": false
+  }
+ },
+ "targeting": {
+  "age": {
+   "vs_policy": "exact",
+   "vs_brief": "exact"
+  },
+  "gender": {
+   "vs_policy": "exact",
+   "vs_brief": "exact"
+  },
+  "location": {
+   "vs_policy": "exact",
+   "vs_brief": "laxer"
+  },
+  "platform": {
+   "vs_policy": "exact",
+   "vs_brief": "exact"
+  }
+ },
+ "failed_checks": [
+  "recap wrong",
+  "runs past the flight",
+  "spend beyond the brief's location"
+ ]
+}

@@ -1,0 +1,1465 @@
+[
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "get_ad_policy",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"enforcement\":\"ad groups that break the policy of their category are disapproved and don't serve\",\"minors\":\"no ad may reach anyone under 13; alcohol may never target minors\",\"pre_authorization\":\"required for every restricted category\",\"restricted_categories\":[{\"category\":\"alcohol\",\"countries\":[\"AL\",\"AR\",\"AT\",\"AU\",\"BA\",\"BE\",\"BG\",\"BO\",\"BR\",\"CA\",\"CH\",\"CL\",\"CO\",\"CR\",\"CY\",\"CZ\",\"DE\",\"DK\",\"DO\",\"EC\",\"EE\",\"ES\",\"FI\",\"FR\",\"GB\",\"GH\",\"GR\",\"HK\",\"HN\",\"HR\",\"HU\",\"IE\",\"IL\",\"IN\",\"IS\",\"IT\",\"JP\",\"KE\",\"KH\",\"KR\",\"LT\",\"LU\",\"LV\",\"ME\",\"MK\",\"MT\",\"MX\",\"MY\",\"NG\",\"NI\",\"NL\",\"NZ\",\"PA\",\"PE\",\"PH\",\"PT\",\"PY\",\"RO\",\"RS\",\"SE\",\"SG\",\"SI\",\"SK\",\"SN\",\"SV\",\"TW\",\"UA\",\"UG\",\"US\",\"UY\",\"VE\",\"ZA\",\"ZM\"],\"covers\":\"promoting, selling or branding beer, wine or spirits, and competitions with alcohol as a prize\",\"min_age\":{\"by_country\":{\"JP\":20,\"KR\":20,\"US\":21},\"elsewhere\":18},\"targeting_types\":null},{\"category\":\"financial_services\",\"countries\":[\"AE\",\"AR\",\"AT\",\"AU\",\"AW\",\"BA\",\"BB\",\"BE\",\"BG\",\"BM\",\"BR\",\"BS\",\"CA\",\"CH\",\"CL\",\"CR\",\"CW\",\"CZ\",\"DE\",\"DK\",\"DO\",\"EC\",\"EG\",\"ES\",\"FI\",\"FR\",\"GB\",\"GH\",\"GR\",\"GT\",\"HK\",\"HN\",\"HR\",\"ID\",\"IE\",\"IL\",\"IN\",\"IT\",\"JM\",\"JP\",\"KR\",\"KW\",\"MA\",\"MK\",\"MY\",\"NG\",\"NI\",\"NL\",\"NO\",\"NZ\",\"OM\",\"PA\",\"PE\",\"PH\",\"PK\",\"PL\",\"PT\",\"PY\",\"QA\",\"RO\",\"RS\",\"RU\",\"SA\",\"SE\",\"SG\",\"SI\",\"SV\",\"TH\",\"TR\",\"TT\",\"TW\",\"TZ\",\"UA\",\"UG\",\"US\",\"UY\",\"VE\",\"VN\",\"ZA\",\"ZM\"],\"covers\":\"banks, money service businesses, mobile and electronic payments, money transfer, savings, investment, currency exchange, loans and insurance\",\"min_age\":null,\"targeting_types\":null},{\"category\":\"political_content\",\"countries\":[\"AE\",\"AR\",\"AU\",\"CL\",\"CO\",\"EC\",\"GB\",\"GH\",\"ID\",\"IL\",\"IN\",\"JP\",\"MX\",\"PE\",\"SA\",\"US\",\"ZA\"],\"covers\":\"ads that reference a candidate, party, official, election, referendum, legislation, regulation or judicial outcome\",\"min_age\":null,\"targeting_types\":null},{\"category\":\"political_campaigning\",\"countries\":[\"AR\",\"AU\",\"CO\",\"EC\",\"GB\",\"GH\",\"ID\",\"IL\",\"JP\",\"MX\",\"PA\",\"PE\",\"US\",\"ZA\"],\"covers\":\"ads that advocate for or against, or ask for votes or money for, a candidate, party, election, legislation, referendum or ballot measure\",\"min_age\":null,\"targeting_types\":[\"LOCATION\",\"AGE\",\"GENDER\",\"INTEREST\",\"BROAD_KEYWORD\",\"PHRASE_KEYWORD\",\"EXACT_KEYWORD\",\"UNORDERED_KEYWORD\",\"NEGATIVE_PHRASE_KEYWORD\",\"NEGATIVE_EXACT_KEYWORD\",\"NEGATIVE_UNORDERED_KEYWORD\",\"CUSTOM_AUDIENCE\",\"CUSTOM_AUDIENCE_EXPANDED\",\"SIMILAR_TO_FOLLOWERS_OF_USER\",\"FOLLOWER_LOOK_ALIKES\"]}]},\"request\":{\"params\":{}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "get_current_time",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-07-29T06:00:00Z\",\"now\":\"2027-07-24T05:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "list_ads_accounts",
+    "arguments": {
+      "with_total_count": true
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"business_id\":null,\"business_name\":null,\"country_code\":\"US\",\"created_at\":\"2026-06-11T05:00:00Z\",\"deleted\":false,\"id\":\"188uckfgeq6\",\"industry_type\":null,\"name\":\"Tervilo\",\"timezone\":\"America/Chicago\",\"timezone_switch_at\":\"2026-06-11T05:00:00Z\",\"updated_at\":\"2026-06-11T05:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"with_total_count\":true}},\"total_count\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "location_type": "COUNTRIES",
+      "q": "United States",
+      "count": 10
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"country_code\":\"US\",\"location_type\":\"COUNTRIES\",\"name\":\"United States\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\"},{\"country_code\":\"UM\",\"location_type\":\"COUNTRIES\",\"name\":\"United States Minor Outlying Islands\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"08fbcf4cbc4bc5b9\"},{\"country_code\":\"AE\",\"location_type\":\"COUNTRIES\",\"name\":\"United Arab Emirates\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3f63906fc8aa5a7d\"},{\"country_code\":\"GB\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"}],\"next_cursor\":null,\"request\":{\"params\":{\"count\":10,\"location_type\":\"COUNTRIES\",\"q\":\"United States\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "location_type": "COUNTRIES",
+      "q": "Canada",
+      "count": 5
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"country_code\":\"CA\",\"location_type\":\"COUNTRIES\",\"name\":\"Canada\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3376992a082d67c7\"}],\"next_cursor\":null,\"request\":{\"params\":{\"count\":5,\"location_type\":\"COUNTRIES\",\"q\":\"Canada\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "search_targeting_platforms",
+    "arguments": {
+      "count": 50
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"name\":\"iOS\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\"},{\"name\":\"Android\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"1\"},{\"name\":\"BlackBerry phones and tablets\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"2\"},{\"name\":\"Mobile web on other devices\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"3\"},{\"name\":\"Desktop and laptop computers\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"4\"}],\"request\":{\"params\":{\"count\":50}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "list_funding_instruments",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "with_total_count": true
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"able_to_fund\":true,\"created_at\":\"2026-06-11T05:00:00Z\",\"credit_limit_local_micro\":null,\"credit_remaining_local_micro\":null,\"currency\":\"USD\",\"deleted\":false,\"description\":\"American Express ending in 3955\",\"end_time\":null,\"entity_status\":\"ACTIVE\",\"funded_amount_local_micro\":0,\"id\":\"3tyi3r\",\"io_header\":null,\"reasons_not_able_to_fund\":[],\"start_time\":\"2026-06-11T05:00:00Z\",\"type\":\"CREDIT_CARD\",\"updated_at\":\"2026-06-11T05:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"with_total_count\":true}},\"total_count\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "list_account_posts",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "tweet_type": "PUBLISHED",
+      "tweet_ids": "2212065130708528326,2212246324639150169,2212427518575471207",
+      "timeline_type": "ALL"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Fri Jul 23 05:00:00 +0000 2027\",\"display_text_range\":[0,203],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"tervilo.app/school\",\"expanded_url\":\"https://tervilo.app/school\",\"indices\":[180,203],\"url\":\"https://t.co/9PdJgrsbH7\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"July 28 is the cutoff: complete your first Tervilo transfer by July 28, 2027 and pay no transfer fee on money sent to family abroad for back-to-school needs. Exchange rates apply. https://t.co/9PdJgrsbH7\",\"geo\":null,\"id\":2212427518575471207,\"id_str\":\"2212427518575471207\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2212427518575471207\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Thu Jun 11 05:00:00 +0000 2026\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":1977,\"follow_request_sent\":null,\"followers_count\":17677,\"following\":null,\"friends_count\":427,\"geo_enabled\":false,\"id\":2064935657274594733,\"id_str\":\"2064935657274594733\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":17,\"location\":\"\",\"name\":\"Tervilo\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/2064935657274594733/1685672877\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1807425045085672877/fQP0TMnA_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1807425045085672877/fQP0TMnA_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"Tervilo\",\"statuses_count\":1177,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Thu Jul 22 17:00:00 +0000 2027\",\"display_text_range\":[0,101],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"tervilo.app/school\",\"expanded_url\":\"https://tervilo.app/school\",\"indices\":[78,101],\"url\":\"https://t.co/x8TlMfOlnX\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Please take a look at our app when you have a moment. Thanks for stopping by. https://t.co/x8TlMfOlnX\",\"geo\":null,\"id\":2212246324639150169,\"id_str\":\"2212246324639150169\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2212246324639150169\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Thu Jun 11 05:00:00 +0000 2026\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":1977,\"follow_request_sent\":null,\"followers_count\":17677,\"following\":null,\"friends_count\":427,\"geo_enabled\":false,\"id\":2064935657274594733,\"id_str\":\"2064935657274594733\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":17,\"location\":\"\",\"name\":\"Tervilo\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/2064935657274594733/1685672877\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1807425045085672877/fQP0TMnA_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1807425045085672877/fQP0TMnA_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"Tervilo\",\"statuses_count\":1177,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Thu Jul 22 05:00:00 +0000 2027\",\"display_text_range\":[0,213],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"tervilo.app/school\",\"expanded_url\":\"https://tervilo.app/school\",\"indices\":[190,213],\"url\":\"https://t.co/Jzk51u8A4P\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"School support, receipts in one place. Send money to family abroad with Tervilo and pay no transfer fee on your first transfer completed by July 28, 2027. Exchange rates apply. Get the app: https://t.co/Jzk51u8A4P\",\"geo\":null,\"id\":2212065130708528326,\"id_str\":\"2212065130708528326\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":false,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2212065130708528326\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Thu Jun 11 05:00:00 +0000 2026\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":1977,\"follow_request_sent\":null,\"followers_count\":17677,\"following\":null,\"friends_count\":427,\"geo_enabled\":false,\"id\":2064935657274594733,\"id_str\":\"2064935657274594733\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":17,\"location\":\"\",\"name\":\"Tervilo\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/2064935657274594733/1685672877\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1807425045085672877/fQP0TMnA_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1807425045085672877/fQP0TMnA_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"Tervilo\",\"statuses_count\":1177,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"timeline_type\":\"ALL\",\"tweet_ids\":[\"2212065130708528326\",\"2212246324639150169\",\"2212427518575471207\"],\"tweet_type\":\"PUBLISHED\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "list_campaigns",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "with_total_count": true,
+      "count": 100
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"count\":100,\"with_total_count\":true}},\"total_count\":0}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "search_targeting_interests",
+    "arguments": {
+      "q": "parenting",
+      "count": 15
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"name\":\"Relationships / Parenting\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925954095342338048\"}],\"request\":{\"params\":{\"count\":15,\"q\":\"parenting\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "search_targeting_interests",
+    "arguments": {
+      "q": "personal finance",
+      "count": 10
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"name\":\"Business & Finance / Personal Finance\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925952988486447104\"}],\"request\":{\"params\":{\"count\":10,\"q\":\"personal finance\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "search_targeting_interests",
+    "arguments": {
+      "q": "education",
+      "count": 10
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"name\":\"Education\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925950405709631490\"}],\"request\":{\"params\":{\"count\":10,\"q\":\"education\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "search_targeting_interests",
+    "arguments": {
+      "q": "family",
+      "count": 10
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"name\":\"Movies & TV / Animation & Family\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"191000000000002002\"},{\"name\":\"Relationships / Family\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925954059338493952\"}],\"request\":{\"params\":{\"count\":10,\"q\":\"family\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "create_campaign",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "funding_instrument_id": "3tyi3r",
+      "name": "Tervilo school installs Jul 24-28"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-07-24T05:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"PAUSED\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"3tyi3r\",\"id\":\"kttp4\",\"name\":\"Tervilo school installs Jul 24-28\",\"purchase_order_number\":null,\"reasons_not_servable\":[\"PAUSED_BY_ADVERTISER\"],\"servable\":false,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-07-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"funding_instrument_id\":\"3tyi3r\",\"name\":\"Tervilo school installs Jul 24-28\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "campaign_id": "kttp4",
+      "name": "Broad US-CA phones receipts+cutoff",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "product_type": "PROMOTED_TWEETS",
+      "placements": "ALL_ON_TWITTER",
+      "bid_strategy": "AUTO",
+      "audience_expansion": "DEFINED",
+      "standard_delivery": true,
+      "daily_budget_amount_local_micro": 70000000,
+      "total_budget_amount_local_micro": 350000000,
+      "start_time": "2027-07-24T05:00:00Z",
+      "end_time": "2027-07-29T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2064935657274594733\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"kttp4\",\"categories\":[],\"created_at\":\"2027-07-24T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":70000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-07-29T05:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"3tyi3r\",\"goal\":\"LINK_CLICKS\",\"id\":\"3basu\",\"ios_app_store_identifier\":null,\"name\":\"Broad US-CA phones receipts+cutoff\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-07-24T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":350000000,\"updated_at\":\"2027-07-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"audience_expansion\":\"DEFINED\",\"bid_strategy\":\"AUTO\",\"campaign_id\":\"kttp4\",\"daily_budget_amount_local_micro\":70000000,\"end_time\":\"2027-07-29T05:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"Broad US-CA phones receipts+cutoff\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-07-24T05:00:00Z\",\"total_budget_amount_local_micro\":350000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "campaign_id": "kttp4",
+      "name": "Parents finance school US-CA phones",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "product_type": "PROMOTED_TWEETS",
+      "placements": "ALL_ON_TWITTER",
+      "bid_strategy": "AUTO",
+      "audience_expansion": "DEFINED",
+      "standard_delivery": true,
+      "daily_budget_amount_local_micro": 36000000,
+      "total_budget_amount_local_micro": 180000000,
+      "start_time": "2027-07-24T05:00:00Z",
+      "end_time": "2027-07-29T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2064935657274594733\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"kttp4\",\"categories\":[],\"created_at\":\"2027-07-24T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":36000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-07-29T05:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"3tyi3r\",\"goal\":\"LINK_CLICKS\",\"id\":\"swrnx\",\"ios_app_store_identifier\":null,\"name\":\"Parents finance school US-CA phones\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-07-24T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":180000000,\"updated_at\":\"2027-07-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"audience_expansion\":\"DEFINED\",\"bid_strategy\":\"AUTO\",\"campaign_id\":\"kttp4\",\"daily_budget_amount_local_micro\":36000000,\"end_time\":\"2027-07-29T05:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"Parents finance school US-CA phones\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-07-24T05:00:00Z\",\"total_budget_amount_local_micro\":180000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "campaign_id": "kttp4",
+      "name": "Keyword send-money US-CA phones",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "product_type": "PROMOTED_TWEETS",
+      "placements": "ALL_ON_TWITTER",
+      "bid_strategy": "AUTO",
+      "audience_expansion": "DEFINED",
+      "standard_delivery": true,
+      "daily_budget_amount_local_micro": 24000000,
+      "total_budget_amount_local_micro": 120000000,
+      "start_time": "2027-07-24T05:00:00Z",
+      "end_time": "2027-07-29T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2064935657274594733\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"kttp4\",\"categories\":[],\"created_at\":\"2027-07-24T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":24000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-07-29T05:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"3tyi3r\",\"goal\":\"LINK_CLICKS\",\"id\":\"1uckd\",\"ios_app_store_identifier\":null,\"name\":\"Keyword send-money US-CA phones\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-07-24T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":120000000,\"updated_at\":\"2027-07-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"audience_expansion\":\"DEFINED\",\"bid_strategy\":\"AUTO\",\"campaign_id\":\"kttp4\",\"daily_budget_amount_local_micro\":24000000,\"end_time\":\"2027-07-29T05:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"Keyword send-money US-CA phones\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-07-24T05:00:00Z\",\"total_budget_amount_local_micro\":120000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "line_item_id": "3basu",
+      "targeting_type": "LOCATION",
+      "targeting_value": "96683cc9126741d1",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-07-24T05:00:00Z\",\"deleted\":false,\"id\":\"u59kah1\",\"line_item_id\":\"3basu\",\"location_type\":\"COUNTRIES\",\"name\":\"United States\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\",\"updated_at\":\"2027-07-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"line_item_id\":\"3basu\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "line_item_id": "3basu",
+      "targeting_type": "LOCATION",
+      "targeting_value": "3376992a082d67c7",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-07-24T05:00:00Z\",\"deleted\":false,\"id\":\"z0x5jxy\",\"line_item_id\":\"3basu\",\"location_type\":\"COUNTRIES\",\"name\":\"Canada\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3376992a082d67c7\",\"updated_at\":\"2027-07-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"line_item_id\":\"3basu\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3376992a082d67c7\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "line_item_id": "3basu",
+      "targeting_type": "PLATFORM",
+      "targeting_value": "0",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-07-24T05:00:00Z\",\"deleted\":false,\"id\":\"q25x5df\",\"line_item_id\":\"3basu\",\"name\":\"iOS\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\",\"updated_at\":\"2027-07-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"line_item_id\":\"3basu\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "line_item_id": "3basu",
+      "targeting_type": "PLATFORM",
+      "targeting_value": "1",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-07-24T05:00:00Z\",\"deleted\":false,\"id\":\"wd8racu\",\"line_item_id\":\"3basu\",\"name\":\"Android\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"1\",\"updated_at\":\"2027-07-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"line_item_id\":\"3basu\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "line_item_id": "3basu",
+      "targeting_type": "AGE",
+      "targeting_value": "AGE_OVER_18",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-07-24T05:00:00Z\",\"deleted\":false,\"id\":\"1x6jpra\",\"line_item_id\":\"3basu\",\"name\":\"AGE_OVER_18\",\"operator_type\":\"EQ\",\"targeting_type\":\"AGE\",\"targeting_value\":\"AGE_OVER_18\",\"updated_at\":\"2027-07-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"line_item_id\":\"3basu\",\"operator_type\":\"EQ\",\"targeting_type\":\"AGE\",\"targeting_value\":\"AGE_OVER_18\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "line_item_id": "swrnx",
+      "targeting_type": "LOCATION",
+      "targeting_value": "96683cc9126741d1",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-07-24T05:00:00Z\",\"deleted\":false,\"id\":\"xhe6sno\",\"line_item_id\":\"swrnx\",\"location_type\":\"COUNTRIES\",\"name\":\"United States\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\",\"updated_at\":\"2027-07-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"line_item_id\":\"swrnx\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "line_item_id": "swrnx",
+      "targeting_type": "LOCATION",
+      "targeting_value": "3376992a082d67c7",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-07-24T05:00:00Z\",\"deleted\":false,\"id\":\"512z26m\",\"line_item_id\":\"swrnx\",\"location_type\":\"COUNTRIES\",\"name\":\"Canada\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3376992a082d67c7\",\"updated_at\":\"2027-07-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"line_item_id\":\"swrnx\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3376992a082d67c7\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "line_item_id": "swrnx",
+      "targeting_type": "PLATFORM",
+      "targeting_value": "0",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-07-24T05:00:00Z\",\"deleted\":false,\"id\":\"iincddp\",\"line_item_id\":\"swrnx\",\"name\":\"iOS\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\",\"updated_at\":\"2027-07-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"line_item_id\":\"swrnx\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "line_item_id": "swrnx",
+      "targeting_type": "PLATFORM",
+      "targeting_value": "1",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-07-24T05:00:00Z\",\"deleted\":false,\"id\":\"j69cfpk\",\"line_item_id\":\"swrnx\",\"name\":\"Android\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"1\",\"updated_at\":\"2027-07-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"line_item_id\":\"swrnx\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "line_item_id": "swrnx",
+      "targeting_type": "AGE",
+      "targeting_value": "AGE_OVER_18",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-07-24T05:00:00Z\",\"deleted\":false,\"id\":\"zxh3e0s\",\"line_item_id\":\"swrnx\",\"name\":\"AGE_OVER_18\",\"operator_type\":\"EQ\",\"targeting_type\":\"AGE\",\"targeting_value\":\"AGE_OVER_18\",\"updated_at\":\"2027-07-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"line_item_id\":\"swrnx\",\"operator_type\":\"EQ\",\"targeting_type\":\"AGE\",\"targeting_value\":\"AGE_OVER_18\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "line_item_id": "1uckd",
+      "targeting_type": "LOCATION",
+      "targeting_value": "96683cc9126741d1",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-07-24T05:00:00Z\",\"deleted\":false,\"id\":\"yulhtq7\",\"line_item_id\":\"1uckd\",\"location_type\":\"COUNTRIES\",\"name\":\"United States\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\",\"updated_at\":\"2027-07-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"line_item_id\":\"1uckd\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "line_item_id": "1uckd",
+      "targeting_type": "LOCATION",
+      "targeting_value": "3376992a082d67c7",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-07-24T05:00:00Z\",\"deleted\":false,\"id\":\"zzym74x\",\"line_item_id\":\"1uckd\",\"location_type\":\"COUNTRIES\",\"name\":\"Canada\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3376992a082d67c7\",\"updated_at\":\"2027-07-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"line_item_id\":\"1uckd\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3376992a082d67c7\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "line_item_id": "1uckd",
+      "targeting_type": "PLATFORM",
+      "targeting_value": "0",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-07-24T05:00:00Z\",\"deleted\":false,\"id\":\"e2qeme8\",\"line_item_id\":\"1uckd\",\"name\":\"iOS\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\",\"updated_at\":\"2027-07-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"line_item_id\":\"1uckd\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "line_item_id": "1uckd",
+      "targeting_type": "PLATFORM",
+      "targeting_value": "1",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-07-24T05:00:00Z\",\"deleted\":false,\"id\":\"dgqp4o5\",\"line_item_id\":\"1uckd\",\"name\":\"Android\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"1\",\"updated_at\":\"2027-07-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"line_item_id\":\"1uckd\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "line_item_id": "1uckd",
+      "targeting_type": "AGE",
+      "targeting_value": "AGE_OVER_18",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-07-24T05:00:00Z\",\"deleted\":false,\"id\":\"2soa5he\",\"line_item_id\":\"1uckd\",\"name\":\"AGE_OVER_18\",\"operator_type\":\"EQ\",\"targeting_type\":\"AGE\",\"targeting_value\":\"AGE_OVER_18\",\"updated_at\":\"2027-07-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"line_item_id\":\"1uckd\",\"operator_type\":\"EQ\",\"targeting_type\":\"AGE\",\"targeting_value\":\"AGE_OVER_18\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "line_item_id": "swrnx",
+      "targeting_type": "INTEREST",
+      "targeting_value": "1925954095342338048",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-07-24T05:00:00Z\",\"deleted\":false,\"id\":\"vrelsyg\",\"line_item_id\":\"swrnx\",\"name\":\"Relationships / Parenting\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925954095342338048\",\"updated_at\":\"2027-07-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"line_item_id\":\"swrnx\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925954095342338048\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "line_item_id": "swrnx",
+      "targeting_type": "INTEREST",
+      "targeting_value": "1925952988486447104",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-07-24T05:00:00Z\",\"deleted\":false,\"id\":\"xwqb8gb\",\"line_item_id\":\"swrnx\",\"name\":\"Business & Finance / Personal Finance\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925952988486447104\",\"updated_at\":\"2027-07-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"line_item_id\":\"swrnx\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925952988486447104\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "line_item_id": "swrnx",
+      "targeting_type": "INTEREST",
+      "targeting_value": "1925950405709631490",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-07-24T05:00:00Z\",\"deleted\":false,\"id\":\"cfbed0k\",\"line_item_id\":\"swrnx\",\"name\":\"Education\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925950405709631490\",\"updated_at\":\"2027-07-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"line_item_id\":\"swrnx\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925950405709631490\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "line_item_id": "swrnx",
+      "targeting_type": "INTEREST",
+      "targeting_value": "1925954059338493952",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-07-24T05:00:00Z\",\"deleted\":false,\"id\":\"alcifge\",\"line_item_id\":\"swrnx\",\"name\":\"Relationships / Family\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925954059338493952\",\"updated_at\":\"2027-07-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"line_item_id\":\"swrnx\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925954059338493952\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "line_item_id": "1uckd",
+      "targeting_type": "PHRASE_KEYWORD",
+      "targeting_value": "send money",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-07-24T05:00:00Z\",\"deleted\":false,\"id\":\"kw5m6yv\",\"line_item_id\":\"1uckd\",\"name\":\"send money\",\"operator_type\":\"EQ\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"send money\",\"updated_at\":\"2027-07-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"line_item_id\":\"1uckd\",\"operator_type\":\"EQ\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"send money\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "line_item_id": "1uckd",
+      "targeting_type": "PHRASE_KEYWORD",
+      "targeting_value": "money transfer",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-07-24T05:00:00Z\",\"deleted\":false,\"id\":\"cuil36x\",\"line_item_id\":\"1uckd\",\"name\":\"money transfer\",\"operator_type\":\"EQ\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"money transfer\",\"updated_at\":\"2027-07-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"line_item_id\":\"1uckd\",\"operator_type\":\"EQ\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"money transfer\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "line_item_id": "1uckd",
+      "targeting_type": "PHRASE_KEYWORD",
+      "targeting_value": "school fees",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-07-24T05:00:00Z\",\"deleted\":false,\"id\":\"ptzrum6\",\"line_item_id\":\"1uckd\",\"name\":\"school fees\",\"operator_type\":\"EQ\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"school fees\",\"updated_at\":\"2027-07-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"line_item_id\":\"1uckd\",\"operator_type\":\"EQ\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"school fees\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "line_item_id": "1uckd",
+      "targeting_type": "PHRASE_KEYWORD",
+      "targeting_value": "remittance",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-07-24T05:00:00Z\",\"deleted\":false,\"id\":\"2infkm1\",\"line_item_id\":\"1uckd\",\"name\":\"remittance\",\"operator_type\":\"EQ\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"remittance\",\"updated_at\":\"2027-07-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"line_item_id\":\"1uckd\",\"operator_type\":\"EQ\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"remittance\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "line_item_id": "3basu",
+      "tweet_ids": "2212065130708528326,2212427518575471207"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-07-24T05:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"u7oc7g\",\"line_item_id\":\"3basu\",\"tweet_id\":\"2212065130708528326\",\"updated_at\":\"2027-07-24T05:00:00Z\"},{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-07-24T05:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"q1yals\",\"line_item_id\":\"3basu\",\"tweet_id\":\"2212427518575471207\",\"updated_at\":\"2027-07-24T05:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"line_item_id\":\"3basu\",\"tweet_ids\":[\"2212065130708528326\",\"2212427518575471207\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "line_item_id": "swrnx",
+      "tweet_ids": "2212065130708528326,2212427518575471207"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-07-24T05:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"rxhkd8\",\"line_item_id\":\"swrnx\",\"tweet_id\":\"2212065130708528326\",\"updated_at\":\"2027-07-24T05:00:00Z\"},{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-07-24T05:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"f628qs\",\"line_item_id\":\"swrnx\",\"tweet_id\":\"2212427518575471207\",\"updated_at\":\"2027-07-24T05:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"line_item_id\":\"swrnx\",\"tweet_ids\":[\"2212065130708528326\",\"2212427518575471207\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "line_item_id": "1uckd",
+      "tweet_ids": "2212065130708528326,2212427518575471207"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-07-24T05:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"c78w2m\",\"line_item_id\":\"1uckd\",\"tweet_id\":\"2212065130708528326\",\"updated_at\":\"2027-07-24T05:00:00Z\"},{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-07-24T05:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"d3kpqg\",\"line_item_id\":\"1uckd\",\"tweet_id\":\"2212427518575471207\",\"updated_at\":\"2027-07-24T05:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"line_item_id\":\"1uckd\",\"tweet_ids\":[\"2212065130708528326\",\"2212427518575471207\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "activate_campaign",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "campaign_id": "kttp4"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-07-24T05:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"RUNNING\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"3tyi3r\",\"id\":\"kttp4\",\"name\":\"Tervilo school installs Jul 24-28\",\"purchase_order_number\":null,\"reasons_not_servable\":[],\"servable\":true,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-07-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"campaign_id\":\"kttp4\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "line_item_id": "3basu"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2064935657274594733\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"kttp4\",\"categories\":[],\"created_at\":\"2027-07-24T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":70000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-07-29T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"3tyi3r\",\"goal\":\"LINK_CLICKS\",\"id\":\"3basu\",\"ios_app_store_identifier\":null,\"name\":\"Broad US-CA phones receipts+cutoff\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-07-24T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":350000000,\"updated_at\":\"2027-07-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"line_item_id\":\"3basu\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "line_item_id": "swrnx"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2064935657274594733\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"kttp4\",\"categories\":[],\"created_at\":\"2027-07-24T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":36000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-07-29T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"3tyi3r\",\"goal\":\"LINK_CLICKS\",\"id\":\"swrnx\",\"ios_app_store_identifier\":null,\"name\":\"Parents finance school US-CA phones\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-07-24T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":180000000,\"updated_at\":\"2027-07-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"line_item_id\":\"swrnx\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "line_item_id": "1uckd"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2064935657274594733\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"kttp4\",\"categories\":[],\"created_at\":\"2027-07-24T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":24000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-07-29T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"3tyi3r\",\"goal\":\"LINK_CLICKS\",\"id\":\"1uckd\",\"ios_app_store_identifier\":null,\"name\":\"Keyword send-money US-CA phones\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-07-24T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":120000000,\"updated_at\":\"2027-07-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"line_item_id\":\"1uckd\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T05:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-07-24T17:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-07-29T06:00:00Z\",\"now\":\"2027-07-24T17:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T17:00:00Z",
+    "tool": "get_active_entities",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "entity": "LINE_ITEM",
+      "start_time": "2027-07-24T05:00:00Z",
+      "end_time": "2027-07-24T17:00:00Z",
+      "campaign_ids": "kttp4"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"activity_end_time\":\"2027-07-24T15:00:00Z\",\"activity_start_time\":\"2027-07-24T05:00:00Z\",\"entity_id\":\"swrnx\",\"placements\":[\"ALL_ON_TWITTER\"]},{\"activity_end_time\":\"2027-07-24T15:00:00Z\",\"activity_start_time\":\"2027-07-24T05:00:00Z\",\"entity_id\":\"3basu\",\"placements\":[\"ALL_ON_TWITTER\"]},{\"activity_end_time\":\"2027-07-24T15:00:00Z\",\"activity_start_time\":\"2027-07-24T05:00:00Z\",\"entity_id\":\"1uckd\",\"placements\":[\"ALL_ON_TWITTER\"]}],\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"campaign_ids\":[\"kttp4\"],\"end_time\":\"2027-07-24T17:00:00Z\",\"entity\":\"LINE_ITEM\",\"start_time\":\"2027-07-24T05:00:00Z\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T17:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "entity": "LINE_ITEM",
+      "entity_ids": "3basu,swrnx,1uckd",
+      "start_time": "2027-07-24T05:00:00Z",
+      "end_time": "2027-07-24T17:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"3basu\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[14227121],\"billed_engagements\":[102],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[6],\"engagements\":[102],\"follows\":null,\"impressions\":[18881],\"likes\":null,\"link_clicks\":[6],\"qualified_impressions\":[18881],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"swrnx\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[5894929],\"billed_engagements\":[50],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[2],\"engagements\":[50],\"follows\":null,\"impressions\":[6712],\"likes\":[1],\"link_clicks\":[2],\"qualified_impressions\":[6712],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"1uckd\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[2680855],\"billed_engagements\":[27],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[1],\"engagements\":[27],\"follows\":null,\"impressions\":[4498],\"likes\":[1],\"link_clicks\":[1],\"qualified_impressions\":[4498],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-07-24T17:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"3basu\",\"swrnx\",\"1uckd\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-07-24T05:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T17:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "entity": "PROMOTED_TWEET",
+      "entity_ids": "u7oc7g,q1yals,rxhkd8,f628qs,c78w2m,d3kpqg",
+      "start_time": "2027-07-24T05:00:00Z",
+      "end_time": "2027-07-24T17:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"u7oc7g\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[9354453],\"billed_engagements\":[58],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[4],\"engagements\":[58],\"follows\":null,\"impressions\":[10026],\"likes\":null,\"link_clicks\":[4],\"qualified_impressions\":[10026],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"q1yals\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[4872668],\"billed_engagements\":[44],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[2],\"engagements\":[44],\"follows\":null,\"impressions\":[8855],\"likes\":null,\"link_clicks\":[2],\"qualified_impressions\":[8855],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"rxhkd8\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[2996910],\"billed_engagements\":[24],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[1],\"engagements\":[24],\"follows\":null,\"impressions\":[3513],\"likes\":[1],\"link_clicks\":[1],\"qualified_impressions\":[3513],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"f628qs\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[2898019],\"billed_engagements\":[26],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[1],\"engagements\":[26],\"follows\":null,\"impressions\":[3199],\"likes\":null,\"link_clicks\":[1],\"qualified_impressions\":[3199],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"c78w2m\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":null,\"billed_engagements\":[13],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":null,\"engagements\":[13],\"follows\":null,\"impressions\":[2347],\"likes\":null,\"link_clicks\":null,\"qualified_impressions\":[2347],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"d3kpqg\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[2680855],\"billed_engagements\":[14],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[1],\"engagements\":[14],\"follows\":null,\"impressions\":[2151],\"likes\":[1],\"link_clicks\":[1],\"qualified_impressions\":[2151],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-07-24T17:00:00Z\",\"entity\":\"PROMOTED_TWEET\",\"entity_ids\":[\"u7oc7g\",\"q1yals\",\"rxhkd8\",\"f628qs\",\"c78w2m\",\"d3kpqg\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-07-24T05:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-24T17:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-07-25T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-07-29T06:00:00Z\",\"now\":\"2027-07-25T06:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-25T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "entity": "LINE_ITEM",
+      "entity_ids": "3basu,swrnx,1uckd",
+      "start_time": "2027-07-24T05:00:00Z",
+      "end_time": "2027-07-25T05:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"3basu\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[64849187],\"billed_engagements\":[469],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[26],\"engagements\":[469],\"follows\":null,\"impressions\":[70804],\"likes\":[9],\"link_clicks\":[26],\"qualified_impressions\":[70804],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"swrnx\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[34553177],\"billed_engagements\":[263],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[9],\"engagements\":[263],\"follows\":null,\"impressions\":[38738],\"likes\":[7],\"link_clicks\":[9],\"qualified_impressions\":[38738],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"1uckd\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[20749212],\"billed_engagements\":[105],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[7],\"engagements\":[105],\"follows\":null,\"impressions\":[15551],\"likes\":[1],\"link_clicks\":[7],\"qualified_impressions\":[15551],\"replies\":[1],\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-07-25T05:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"3basu\",\"swrnx\",\"1uckd\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-07-24T05:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-25T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "entity": "PROMOTED_TWEET",
+      "entity_ids": "u7oc7g,q1yals,rxhkd8,f628qs,c78w2m,d3kpqg",
+      "start_time": "2027-07-24T05:00:00Z",
+      "end_time": "2027-07-25T05:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"u7oc7g\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[31982731],\"billed_engagements\":[268],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[13],\"engagements\":[268],\"follows\":null,\"impressions\":[37099],\"likes\":[7],\"link_clicks\":[13],\"qualified_impressions\":[37099],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"q1yals\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[32866456],\"billed_engagements\":[201],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[13],\"engagements\":[201],\"follows\":null,\"impressions\":[33705],\"likes\":[2],\"link_clicks\":[13],\"qualified_impressions\":[33705],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"rxhkd8\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[15115533],\"billed_engagements\":[139],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[4],\"engagements\":[139],\"follows\":null,\"impressions\":[20273],\"likes\":[5],\"link_clicks\":[4],\"qualified_impressions\":[20273],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"f628qs\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[19437644],\"billed_engagements\":[124],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[5],\"engagements\":[124],\"follows\":null,\"impressions\":[18465],\"likes\":[2],\"link_clicks\":[5],\"qualified_impressions\":[18465],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"c78w2m\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[6226485],\"billed_engagements\":[56],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[2],\"engagements\":[56],\"follows\":null,\"impressions\":[8093],\"likes\":null,\"link_clicks\":[2],\"qualified_impressions\":[8093],\"replies\":[1],\"retweets\":null},\"segment\":null}]},{\"id\":\"d3kpqg\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[14522727],\"billed_engagements\":[49],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[5],\"engagements\":[49],\"follows\":null,\"impressions\":[7458],\"likes\":[1],\"link_clicks\":[5],\"qualified_impressions\":[7458],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-07-25T05:00:00Z\",\"entity\":\"PROMOTED_TWEET\",\"entity_ids\":[\"u7oc7g\",\"q1yals\",\"rxhkd8\",\"f628qs\",\"c78w2m\",\"d3kpqg\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-07-24T05:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-25T06:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "line_item_id": "swrnx",
+      "entity_status": "PAUSED"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2064935657274594733\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"kttp4\",\"categories\":[],\"created_at\":\"2027-07-24T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":36000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-07-29T05:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"3tyi3r\",\"goal\":\"LINK_CLICKS\",\"id\":\"swrnx\",\"ios_app_store_identifier\":null,\"name\":\"Parents finance school US-CA phones\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-07-24T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":180000000,\"updated_at\":\"2027-07-25T06:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"entity_status\":\"PAUSED\",\"line_item_id\":\"swrnx\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-25T06:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "line_item_id": "3basu",
+      "daily_budget_amount_local_micro": 112592790,
+      "total_budget_amount_local_micro": 515220347
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2064935657274594733\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"kttp4\",\"categories\":[],\"created_at\":\"2027-07-24T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":112592790,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-07-29T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"3tyi3r\",\"goal\":\"LINK_CLICKS\",\"id\":\"3basu\",\"ios_app_store_identifier\":null,\"name\":\"Broad US-CA phones receipts+cutoff\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-07-24T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":515220347,\"updated_at\":\"2027-07-25T06:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"daily_budget_amount_local_micro\":112592790,\"line_item_id\":\"3basu\",\"total_budget_amount_local_micro\":515220347}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-25T06:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "line_item_id": "1uckd",
+      "daily_budget_amount_local_micro": 19869316,
+      "total_budget_amount_local_micro": 100226476
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2064935657274594733\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"kttp4\",\"categories\":[],\"created_at\":\"2027-07-24T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":19869316,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-07-29T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"3tyi3r\",\"goal\":\"LINK_CLICKS\",\"id\":\"1uckd\",\"ios_app_store_identifier\":null,\"name\":\"Keyword send-money US-CA phones\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-07-24T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":100226476,\"updated_at\":\"2027-07-25T06:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"daily_budget_amount_local_micro\":19869316,\"line_item_id\":\"1uckd\",\"total_budget_amount_local_micro\":100226476}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-25T06:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-07-27T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-07-29T06:00:00Z\",\"now\":\"2027-07-27T06:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-27T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "entity": "LINE_ITEM",
+      "entity_ids": "3basu,swrnx,1uckd",
+      "start_time": "2027-07-24T05:00:00Z",
+      "end_time": "2027-07-27T05:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"3basu\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[64849187,109671119,110194757],\"billed_engagements\":[469,706,588],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[26,37,37],\"engagements\":[469,706,588],\"follows\":null,\"impressions\":[70804,95031,84587],\"likes\":[9,12,10],\"link_clicks\":[26,37,37],\"qualified_impressions\":[70804,95031,84587],\"replies\":[0,1,0],\"retweets\":null},\"segment\":null}]},{\"id\":\"swrnx\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[34553177,3476783,0],\"billed_engagements\":[263,5,0],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[9,1,0],\"engagements\":[263,5,0],\"follows\":null,\"impressions\":[38738,1027,0],\"likes\":[7,0,0],\"link_clicks\":[9,1,0],\"qualified_impressions\":[38738,1027,0],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"1uckd\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[20749212,19086516,19418623],\"billed_engagements\":[105,168,127],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[7,7,7],\"engagements\":[105,168,127],\"follows\":null,\"impressions\":[15551,25595,17764],\"likes\":[1,5,3],\"link_clicks\":[7,7,7],\"qualified_impressions\":[15551,25595,17764],\"replies\":[1,0,0],\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-07-27T05:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"3basu\",\"swrnx\",\"1uckd\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-07-24T05:00:00Z\"}},\"time_series_length\":3}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-27T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "entity": "PROMOTED_TWEET",
+      "entity_ids": "u7oc7g,q1yals,rxhkd8,f628qs,c78w2m,d3kpqg",
+      "start_time": "2027-07-24T05:00:00Z",
+      "end_time": "2027-07-27T05:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"u7oc7g\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[104083896],\"billed_engagements\":[920],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[37],\"engagements\":[920],\"follows\":null,\"impressions\":[129623],\"likes\":[17],\"link_clicks\":[37],\"qualified_impressions\":[129623],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"q1yals\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[180631167],\"billed_engagements\":[843],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[63],\"engagements\":[843],\"follows\":null,\"impressions\":[120799],\"likes\":[14],\"link_clicks\":[63],\"qualified_impressions\":[120799],\"replies\":[1],\"retweets\":null},\"segment\":null}]},{\"id\":\"rxhkd8\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[18592316],\"billed_engagements\":[142],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[5],\"engagements\":[142],\"follows\":null,\"impressions\":[20837],\"likes\":[5],\"link_clicks\":[5],\"qualified_impressions\":[20837],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"f628qs\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[19437644],\"billed_engagements\":[126],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[5],\"engagements\":[126],\"follows\":null,\"impressions\":[18928],\"likes\":[2],\"link_clicks\":[5],\"qualified_impressions\":[18928],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"c78w2m\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[19614899],\"billed_engagements\":[207],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[7],\"engagements\":[207],\"follows\":null,\"impressions\":[30845],\"likes\":[5],\"link_clicks\":[7],\"qualified_impressions\":[30845],\"replies\":[1],\"retweets\":null},\"segment\":null}]},{\"id\":\"d3kpqg\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[39639452],\"billed_engagements\":[193],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[14],\"engagements\":[193],\"follows\":null,\"impressions\":[28065],\"likes\":[4],\"link_clicks\":[14],\"qualified_impressions\":[28065],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-07-27T05:00:00Z\",\"entity\":\"PROMOTED_TWEET\",\"entity_ids\":[\"u7oc7g\",\"q1yals\",\"rxhkd8\",\"f628qs\",\"c78w2m\",\"d3kpqg\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-07-24T05:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-27T06:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "line_item_id": "3basu",
+      "daily_budget_amount_local_micro": 93800219,
+      "total_budget_amount_local_micro": 472315501
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2064935657274594733\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"kttp4\",\"categories\":[],\"created_at\":\"2027-07-24T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":93800219,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-07-29T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"3tyi3r\",\"goal\":\"LINK_CLICKS\",\"id\":\"3basu\",\"ios_app_store_identifier\":null,\"name\":\"Broad US-CA phones receipts+cutoff\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-07-24T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":472315501,\"updated_at\":\"2027-07-27T06:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"daily_budget_amount_local_micro\":93800219,\"line_item_id\":\"3basu\",\"total_budget_amount_local_micro\":472315501}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-27T06:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "line_item_id": "1uckd",
+      "daily_budget_amount_local_micro": 40200094,
+      "total_budget_amount_local_micro": 139654539
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2064935657274594733\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"kttp4\",\"categories\":[],\"created_at\":\"2027-07-24T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":40200094,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-07-29T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"3tyi3r\",\"goal\":\"LINK_CLICKS\",\"id\":\"1uckd\",\"ios_app_store_identifier\":null,\"name\":\"Keyword send-money US-CA phones\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-07-24T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":139654539,\"updated_at\":\"2027-07-27T06:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"daily_budget_amount_local_micro\":40200094,\"line_item_id\":\"1uckd\",\"total_budget_amount_local_micro\":139654539}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-27T06:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "line_item_id": "swrnx",
+      "daily_budget_amount_local_micro": 0,
+      "total_budget_amount_local_micro": 38029960,
+      "entity_status": "PAUSED"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"errors\":[{\"code\":\"INVALID_PARAMETER\",\"message\":\"daily_budget_amount_local_micro must be greater than 0\",\"parameter\":\"daily_budget_amount_local_micro\"}],\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"daily_budget_amount_local_micro\":0,\"entity_status\":\"PAUSED\",\"line_item_id\":\"swrnx\",\"total_budget_amount_local_micro\":38029960}}}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2027-07-27T06:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "line_item_id": "swrnx",
+      "total_budget_amount_local_micro": 38029960,
+      "entity_status": "PAUSED"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2064935657274594733\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"kttp4\",\"categories\":[],\"created_at\":\"2027-07-24T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":36000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-07-29T05:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"3tyi3r\",\"goal\":\"LINK_CLICKS\",\"id\":\"swrnx\",\"ios_app_store_identifier\":null,\"name\":\"Parents finance school US-CA phones\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-07-24T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":38029960,\"updated_at\":\"2027-07-27T06:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"entity_status\":\"PAUSED\",\"line_item_id\":\"swrnx\",\"total_budget_amount_local_micro\":38029960}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-27T06:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-07-28T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-07-29T06:00:00Z\",\"now\":\"2027-07-28T06:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-28T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "entity": "LINE_ITEM",
+      "entity_ids": "3basu,swrnx,1uckd",
+      "start_time": "2027-07-24T05:00:00Z",
+      "end_time": "2027-07-28T05:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"3basu\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[64849187,109671119,110194757,93526023],\"billed_engagements\":[469,706,588,467],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[26,37,37,35],\"engagements\":[469,706,588,467],\"follows\":null,\"impressions\":[70804,95031,84587,63776],\"likes\":[9,12,10,14],\"link_clicks\":[26,37,37,35],\"qualified_impressions\":[70804,95031,84587,63776],\"replies\":[0,1,0,1],\"retweets\":null},\"segment\":null}]},{\"id\":\"swrnx\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[34553177,3476783,0,0],\"billed_engagements\":[263,5,0,0],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[9,1,0,0],\"engagements\":[263,5,0,0],\"follows\":null,\"impressions\":[38738,1027,0,0],\"likes\":[7,0,0,0],\"link_clicks\":[9,1,0,0],\"qualified_impressions\":[38738,1027,0,0],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"1uckd\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[20749212,19086516,19418623,37318492],\"billed_engagements\":[105,168,127,160],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[7,7,7,12],\"engagements\":[105,168,127,160],\"follows\":null,\"impressions\":[15551,25595,17764,22895],\"likes\":[1,5,3,4],\"link_clicks\":[7,7,7,12],\"qualified_impressions\":[15551,25595,17764,22895],\"replies\":[1,0,0,0],\"retweets\":[0,0,0,1]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-07-28T05:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"3basu\",\"swrnx\",\"1uckd\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-07-24T05:00:00Z\"}},\"time_series_length\":4}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-28T06:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "line_item_id": "3basu",
+      "daily_budget_amount_local_micro": 117156111,
+      "total_budget_amount_local_micro": 495397197
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2064935657274594733\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"kttp4\",\"categories\":[],\"created_at\":\"2027-07-24T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":117156111,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-07-29T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"3tyi3r\",\"goal\":\"LINK_CLICKS\",\"id\":\"3basu\",\"ios_app_store_identifier\":null,\"name\":\"Broad US-CA phones receipts+cutoff\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-07-24T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":495397197,\"updated_at\":\"2027-07-28T06:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"daily_budget_amount_local_micro\":117156111,\"line_item_id\":\"3basu\",\"total_budget_amount_local_micro\":495397197}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-28T06:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "line_item_id": "1uckd",
+      "daily_budget_amount_local_micro": 20000000,
+      "total_budget_amount_local_micro": 116572843
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"2064935657274594733\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"kttp4\",\"categories\":[],\"created_at\":\"2027-07-24T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":20000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-07-29T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"3tyi3r\",\"goal\":\"LINK_CLICKS\",\"id\":\"1uckd\",\"ios_app_store_identifier\":null,\"name\":\"Keyword send-money US-CA phones\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-07-24T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":116572843,\"updated_at\":\"2027-07-28T06:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"daily_budget_amount_local_micro\":20000000,\"line_item_id\":\"1uckd\",\"total_budget_amount_local_micro\":116572843}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-28T06:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-07-29T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-07-29T06:00:00Z\",\"now\":\"2027-07-29T06:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-29T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "entity": "LINE_ITEM",
+      "entity_ids": "3basu,swrnx,1uckd",
+      "start_time": "2027-07-24T05:00:00Z",
+      "end_time": "2027-07-29T06:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"errors\":[{\"code\":\"INVALID_TIME_WINDOW\",\"message\":\"Expect time to be midnight in the account's local timezone for day granularity\",\"parameter\":\"\"}],\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"end_time\":\"2027-07-29T06:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"3basu\",\"swrnx\",\"1uckd\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"start_time\":\"2027-07-24T05:00:00Z\"}}}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2027-07-29T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "entity": "PROMOTED_TWEET",
+      "entity_ids": "u7oc7g,q1yals,rxhkd8,f628qs,c78w2m,d3kpqg",
+      "start_time": "2027-07-24T05:00:00Z",
+      "end_time": "2027-07-29T06:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"u7oc7g\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[163953814],\"billed_engagements\":[1438],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[58],\"engagements\":[1438],\"follows\":null,\"impressions\":[203691],\"likes\":[35],\"link_clicks\":[58],\"qualified_impressions\":[203691],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"q1yals\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[324990360],\"billed_engagements\":[1379],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[114],\"engagements\":[1379],\"follows\":null,\"impressions\":[192768],\"likes\":[25],\"link_clicks\":[114],\"qualified_impressions\":[192768],\"replies\":[2],\"retweets\":[1]},\"segment\":null}]},{\"id\":\"rxhkd8\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[18592316],\"billed_engagements\":[142],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[5],\"engagements\":[142],\"follows\":null,\"impressions\":[20837],\"likes\":[5],\"link_clicks\":[5],\"qualified_impressions\":[20837],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"f628qs\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[19437644],\"billed_engagements\":[126],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[5],\"engagements\":[126],\"follows\":null,\"impressions\":[18928],\"likes\":[2],\"link_clicks\":[5],\"qualified_impressions\":[18928],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"c78w2m\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[52743329],\"billed_engagements\":[316],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[18],\"engagements\":[316],\"follows\":null,\"impressions\":[47038],\"likes\":[10],\"link_clicks\":[18],\"qualified_impressions\":[47038],\"replies\":[1],\"retweets\":[1]},\"segment\":null}]},{\"id\":\"d3kpqg\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[63028498],\"billed_engagements\":[298],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[22],\"engagements\":[298],\"follows\":null,\"impressions\":[43246],\"likes\":[5],\"link_clicks\":[22],\"qualified_impressions\":[43246],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-07-29T06:00:00Z\",\"entity\":\"PROMOTED_TWEET\",\"entity_ids\":[\"u7oc7g\",\"q1yals\",\"rxhkd8\",\"f628qs\",\"c78w2m\",\"d3kpqg\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-07-24T05:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-29T06:00:00Z",
+    "tool": "get_campaign",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "campaign_id": "kttp4"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-07-24T05:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"EXPIRED\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"3tyi3r\",\"id\":\"kttp4\",\"name\":\"Tervilo school installs Jul 24-28\",\"purchase_order_number\":null,\"reasons_not_servable\":[\"EXPIRED\"],\"servable\":false,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-07-24T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"campaign_id\":\"kttp4\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-29T06:00:00Z",
+    "tool": "list_line_items",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "campaign_ids": "kttp4"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"advertiser_domain\":null,\"advertiser_user_id\":\"2064935657274594733\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"kttp4\",\"categories\":[],\"created_at\":\"2027-07-24T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":117156111,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-07-29T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"3tyi3r\",\"goal\":\"LINK_CLICKS\",\"id\":\"3basu\",\"ios_app_store_identifier\":null,\"name\":\"Broad US-CA phones receipts+cutoff\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-07-24T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":495397197,\"updated_at\":\"2027-07-28T06:00:00Z\"},{\"advertiser_domain\":null,\"advertiser_user_id\":\"2064935657274594733\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"kttp4\",\"categories\":[],\"created_at\":\"2027-07-24T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":36000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-07-29T05:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"3tyi3r\",\"goal\":\"LINK_CLICKS\",\"id\":\"swrnx\",\"ios_app_store_identifier\":null,\"name\":\"Parents finance school US-CA phones\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-07-24T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":38029960,\"updated_at\":\"2027-07-27T06:00:00Z\"},{\"advertiser_domain\":null,\"advertiser_user_id\":\"2064935657274594733\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"kttp4\",\"categories\":[],\"created_at\":\"2027-07-24T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":20000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-07-29T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"3tyi3r\",\"goal\":\"LINK_CLICKS\",\"id\":\"1uckd\",\"ios_app_store_identifier\":null,\"name\":\"Keyword send-money US-CA phones\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-07-24T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":116572843,\"updated_at\":\"2027-07-28T06:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"188uckfgeq6\",\"campaign_ids\":[\"kttp4\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-29T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "entity": "LINE_ITEM",
+      "entity_ids": "3basu,swrnx,1uckd",
+      "start_time": "2027-07-24T05:00:00Z",
+      "end_time": "2027-07-29T05:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"3basu\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[488944174],\"billed_engagements\":[2817],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[172],\"engagements\":[2817],\"follows\":null,\"impressions\":[396459],\"likes\":[60],\"link_clicks\":[172],\"qualified_impressions\":[396459],\"replies\":[2],\"retweets\":[1]},\"segment\":null}]},{\"id\":\"swrnx\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[38029960],\"billed_engagements\":[268],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[10],\"engagements\":[268],\"follows\":null,\"impressions\":[39765],\"likes\":[7],\"link_clicks\":[10],\"qualified_impressions\":[39765],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"1uckd\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[115771827],\"billed_engagements\":[614],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[40],\"engagements\":[614],\"follows\":null,\"impressions\":[90284],\"likes\":[15],\"link_clicks\":[40],\"qualified_impressions\":[90284],\"replies\":[1],\"retweets\":[1]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-07-29T05:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"3basu\",\"swrnx\",\"1uckd\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-07-24T05:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-07-29T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "188uckfgeq6",
+      "entity": "LINE_ITEM",
+      "entity_ids": "3basu,swrnx,1uckd",
+      "start_time": "2027-07-24T05:00:00Z",
+      "end_time": "2027-07-29T05:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"3basu\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[64849187,109671119,110194757,93526023,110703088],\"billed_engagements\":[469,706,588,467,587],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[26,37,37,35,37],\"engagements\":[469,706,588,467,587],\"follows\":null,\"impressions\":[70804,95031,84587,63776,82261],\"likes\":[9,12,10,14,15],\"link_clicks\":[26,37,37,35,37],\"qualified_impressions\":[70804,95031,84587,63776,82261],\"replies\":[0,1,0,1,0],\"retweets\":[0,0,0,0,1]},\"segment\":null}]},{\"id\":\"swrnx\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[34553177,3476783,0,0,0],\"billed_engagements\":[263,5,0,0,0],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[9,1,0,0,0],\"engagements\":[263,5,0,0,0],\"follows\":null,\"impressions\":[38738,1027,0,0,0],\"likes\":[7,0,0,0,0],\"link_clicks\":[9,1,0,0,0],\"qualified_impressions\":[38738,1027,0,0,0],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"1uckd\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[20749212,19086516,19418623,37318492,19198984],\"billed_engagements\":[105,168,127,160,54],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[7,7,7,12,7],\"engagements\":[105,168,127,160,54],\"follows\":null,\"impressions\":[15551,25595,17764,22895,8479],\"likes\":[1,5,3,4,2],\"link_clicks\":[7,7,7,12,7],\"qualified_impressions\":[15551,25595,17764,22895,8479],\"replies\":[1,0,0,0,0],\"retweets\":[0,0,0,1,0]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-07-29T05:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"3basu\",\"swrnx\",\"1uckd\"],\"granularity\":\"DAY\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-07-24T05:00:00Z\"}},\"time_series_length\":5}"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

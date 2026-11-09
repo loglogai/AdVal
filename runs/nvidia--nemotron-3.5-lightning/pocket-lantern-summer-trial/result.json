@@ -1,0 +1,97 @@
+{
+ "agent": "nvidia--nemotron-3.5-lightning",
+ "model": "nvidia/nemotron-3.5-lightning",
+ "cli": "Claude Code",
+ "cli_version": "2.1.312 (Claude Code)",
+ "effort": "medium",
+ "brief": "pocket-lantern-summer-trial",
+ "rollout_seed": 7,
+ "metric": "expected_conversions",
+ "grade": 28.9996,
+ "par": 33.9429,
+ "grade_over_par": 0.8544,
+ "conversions": 29,
+ "link_clicks": 164,
+ "impressions": 531834,
+ "spend_usd": 316.94,
+ "budget_left_usd": 33.06,
+ "tools_used": {
+  "list_ads_accounts": 1,
+  "list_campaigns": 1,
+  "list_line_items": 1,
+  "list_web_event_tags": 1,
+  "list_funding_instruments": 1,
+  "list_media_library": 1,
+  "list_account_posts": 3,
+  "get_promoted_post": 1,
+  "create_ad_post": 2,
+  "list_promoted_posts": 1,
+  "create_web_event_tag": 1,
+  "search_targeting_locations": 2,
+  "search_targeting_platforms": 2,
+  "create_campaign": 1,
+  "create_line_item": 3,
+  "add_targeting_criterion": 6,
+  "promote_post": 3,
+  "activate_campaign": 1,
+  "activate_line_item": 3,
+  "get_current_time": 1,
+  "get_account_stats": 12,
+  "get_active_entities": 2,
+  "wait_until": 4
+ },
+ "minutes": 1.8,
+ "recap_check": "wrong",
+ "recap_metrics": {
+  "spend_usd": {
+   "kind": "total",
+   "quote": "**Spend** | $104.16",
+   "stated": 104.16,
+   "visible": 106.155365,
+   "final": 316.944479,
+   "error": 0.018796647724775913,
+   "right": true
+  },
+  "impressions": {
+   "kind": "total",
+   "quote": "**Impressions** | 177,530",
+   "stated": 177530.0,
+   "visible": 181144,
+   "final": 531834,
+   "error": 0.019950978227266707,
+   "right": true
+  },
+  "link_clicks": {
+   "kind": "total",
+   "quote": "**Link Clicks** | 50",
+   "stated": 50.0,
+   "visible": 56,
+   "final": 164,
+   "error": 0.10714285714285714,
+   "right": false
+  }
+ },
+ "targeting": {
+  "age": {
+   "vs_policy": "exact",
+   "vs_brief": "exact"
+  },
+  "gender": {
+   "vs_policy": "exact",
+   "vs_brief": "exact"
+  },
+  "location": {
+   "vs_policy": "stricter",
+   "vs_brief": "exact"
+  },
+  "platform": {
+   "vs_policy": "exact",
+   "vs_brief": "laxer"
+  }
+ },
+ "failed_checks": [
+  "recap wrong",
+  "runs past the flight",
+  "spend beyond the brief's platform"
+ ]
+}

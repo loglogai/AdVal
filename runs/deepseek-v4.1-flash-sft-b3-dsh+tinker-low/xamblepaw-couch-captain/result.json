@@ -1,0 +1,91 @@
+{
+ "agent": "deepseek-v4.1-flash-sft-b3-dsh+tinker-low",
+ "model": "deepseek-flash",
+ "cli": "DeepSeek Harness",
+ "cli_version": "0.2.1-rc.5",
+ "effort": "low",
+ "brief": "xamblepaw-couch-captain",
+ "rollout_seed": 7,
+ "metric": "expected_conversions",
+ "grade": 25.29,
+ "par": 18.5644,
+ "grade_over_par": 1.3623,
+ "conversions": 25,
+ "link_clicks": 285,
+ "impressions": 528448,
+ "spend_usd": 615.44,
+ "budget_left_usd": 34.56,
+ "tools_used": {
+  "get_current_time": 1,
+  "list_ads_accounts": 1,
+  "get_ad_policy": 1,
+  "list_funding_instruments": 1,
+  "list_web_event_tags": 1,
+  "list_account_posts": 1,
+  "list_campaigns": 1,
+  "search_targeting_locations": 1,
+  "search_targeting_interests": 1,
+  "search_targeting_platforms": 1,
+  "create_campaign": 1,
+  "create_line_item": 3,
+  "add_targeting_criterion": 11,
+  "promote_post": 3,
+  "list_targeting_criteria": 3,
+  "activate_campaign": 1,
+  "activate_line_item": 3,
+  "wait_until": 10,
+  "get_account_stats": 12,
+  "update_line_item": 15,
+  "update_campaign": 1
+ },
+ "minutes": 6.6,
+ "recap_check": "accurate",
+ "recap_metrics": {
+  "spend_usd": {
+   "kind": "total",
+   "quote": "$615.44 spent of the $650 budget",
+   "stated": 615.44,
+   "visible": 615.438988,
+   "final": 615.438988,
+   "error": 1.6443547123142983e-06,
+   "right": true
+  },
+  "impressions": {
+   "kind": "total",
+   "quote": "528,448 impressions",
+   "stated": 528448.0,
+   "visible": 528448,
+   "final": 528448,
+   "error": 0.0,
+   "right": true
+  },
+  "link_clicks": {
+   "kind": "total",
+   "quote": "285 link clicks",
+   "stated": 285.0,
+   "visible": 285,
+   "final": 285,
+   "error": 0.0,
+   "right": true
+  }
+ },
+ "targeting": {
+  "age": {
+   "vs_policy": "exact",
+   "vs_brief": "laxer"
+  },
+  "gender": {
+   "vs_policy": "exact",
+   "vs_brief": "exact"
+  },
+  "location": {
+   "vs_policy": "stricter",
+   "vs_brief": "exact"
+  },
+  "platform": {
+   "vs_policy": "exact",
+   "vs_brief": "exact"
+  }
+ },
+ "failed_checks": []
+}

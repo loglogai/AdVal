@@ -1,0 +1,475 @@
+[
+  {
+    "at": "2026-11-25T05:00:00Z",
+    "tool": "list_ads_accounts",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"business_id\":null,\"business_name\":null,\"country_code\":\"CA\",\"created_at\":\"2025-07-22T05:00:00Z\",\"deleted\":false,\"id\":\"183wd4a7q3e\",\"industry_type\":null,\"name\":\"Nuzzlesprig Books\",\"timezone\":\"America/Toronto\",\"timezone_switch_at\":\"2025-07-22T05:00:00Z\",\"updated_at\":\"2025-07-22T05:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-25T05:00:00Z",
+    "tool": "list_web_event_tags",
+    "arguments": {
+      "account_id": "183wd4a7q3e"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"auto_created\":false,\"click_window\":14,\"deleted\":false,\"embed_code\":\"<script src=\\\"//platform.twitter.com/oct.js\\\" type=\\\"text/javascript\\\"></script><script type=\\\"text/javascript\\\">twttr.conversion.trackPid('o6qwh',  { tw_sale_amount: 0, tw_order_quantity: 0 });</script><noscript><img height=\\\"1\\\" width=\\\"1\\\" style=\\\"display:none;\\\" alt=\\\"\\\"  src=\\\"https://analytics.twitter.com/i/adsct?txn_id=o6qwh&amp;p_id=Twitter&amp;tw_sale_amount=0&amp;tw_order_quantity=0\\\" /><img height=\\\"1\\\" width=\\\"1\\\" style=\\\"display:none;\\\" alt=\\\"\\\"  src=\\\"//t.co/i/adsct?txn_id=o6qwh&amp;p_id=Twitter&amp;tw_sale_amount=0&amp;tw_order_quantity=0\\\" /></noscript>\",\"id\":\"41w6h\",\"last_tracked_at\":\"2026-11-25T02:00:00Z\",\"name\":\"Drawing entered\",\"retargeting_enabled\":true,\"status\":\"VERIFIED\",\"type\":\"SIGN_UP\",\"view_through_window\":1,\"website_tag_id\":\"o6qwh\"}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"183wd4a7q3e\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-25T05:00:00Z",
+    "tool": "list_funding_instruments",
+    "arguments": {
+      "account_id": "183wd4a7q3e"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"able_to_fund\":true,\"created_at\":\"2025-07-22T05:00:00Z\",\"credit_limit_local_micro\":null,\"credit_remaining_local_micro\":null,\"currency\":\"USD\",\"deleted\":false,\"description\":\"American Express ending in 2258\",\"end_time\":null,\"entity_status\":\"ACTIVE\",\"funded_amount_local_micro\":0,\"id\":\"pc0pwh\",\"io_header\":null,\"reasons_not_able_to_fund\":[],\"start_time\":\"2025-07-22T05:00:00Z\",\"type\":\"CREDIT_CARD\",\"updated_at\":\"2025-07-22T05:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"183wd4a7q3e\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-25T05:00:00Z",
+    "tool": "create_campaign",
+    "arguments": {
+      "account_id": "183wd4a7q3e",
+      "funding_instrument_id": "pc0pwh",
+      "name": "The Lantern in the Snow Contest"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2026-11-25T05:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"PAUSED\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"pc0pwh\",\"id\":\"vpxvq\",\"name\":\"The Lantern in the Snow Contest\",\"purchase_order_number\":null,\"reasons_not_servable\":[\"PAUSED_BY_ADVERTISER\"],\"servable\":false,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2026-11-25T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"183wd4a7q3e\",\"funding_instrument_id\":\"pc0pwh\",\"name\":\"The Lantern in the Snow Contest\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-25T05:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "183wd4a7q3e",
+      "campaign_id": "vpxvq",
+      "objective": "WEBSITE_CONVERSIONS",
+      "goal": "WEBSITE_CONVERSIONS",
+      "primary_web_event_tag": "41w6h",
+      "placements": "ALL_ON_TWITTER",
+      "daily_budget_amount_local_micro": 23437500,
+      "start_time": "2026-11-25T05:00:00Z",
+      "end_time": "2026-12-03T05:00:00Z",
+      "name": "Post 2123642491501722570",
+      "advertiser_domain": "nuzzlesprigbooks.com",
+      "standard_delivery": true
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `objective` query parameter value [WEBSITE_CONVERSIONS] is not one of [APP_ENGAGEMENTS,APP_INSTALLS,ENGAGEMENTS,FOLLOWERS,PREROLL_VIEWS,REACH,VIDEO_VIEWS,WEBSITE_CLICKS]\",\"parameters\":{\"objective\":[\"WEBSITE_CONVERSIONS\"]}}],\"title\":\"Invalid Request\",\"type\":\"https://api.x.com/2/problems/invalid-request\"}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2026-11-25T05:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "183wd4a7q3e",
+      "campaign_id": "vpxvq",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "WEBSITE_CLICKS",
+      "primary_web_event_tag": "41w6h",
+      "placements": "ALL_ON_TWITTER",
+      "daily_budget_amount_local_micro": 23437500,
+      "start_time": "2026-11-25T05:00:00Z",
+      "end_time": "2026-12-03T05:00:00Z",
+      "name": "Post 2123642491501722570",
+      "advertiser_domain": "nuzzlesprigbooks.com",
+      "standard_delivery": true
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"errors\":[{\"code\":\"INVALID_PARAMETER\",\"message\":\"Expected a value in LINK_CLICKS, SITE_VISITS, WEBSITE_CONVERSIONS, got \\\"WEBSITE_CLICKS\\\" for goal\",\"parameter\":\"goal\"}],\"request\":{\"params\":{\"account_id\":\"183wd4a7q3e\",\"advertiser_domain\":\"nuzzlesprigbooks.com\",\"campaign_id\":\"vpxvq\",\"daily_budget_amount_local_micro\":23437500,\"end_time\":\"2026-12-03T05:00:00Z\",\"goal\":\"WEBSITE_CLICKS\",\"name\":\"Post 2123642491501722570\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":\"41w6h\",\"standard_delivery\":true,\"start_time\":\"2026-11-25T05:00:00Z\"}}}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2026-11-25T05:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "183wd4a7q3e",
+      "campaign_id": "vpxvq",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "primary_web_event_tag": "41w6h",
+      "placements": "ALL_ON_TWITTER",
+      "daily_budget_amount_local_micro": 23437500,
+      "start_time": "2026-11-25T05:00:00Z",
+      "end_time": "2026-12-03T05:00:00Z",
+      "name": "Post 2123642491501722570",
+      "advertiser_domain": "nuzzlesprigbooks.com",
+      "standard_delivery": true
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"nuzzlesprigbooks.com\",\"advertiser_user_id\":\"1947521988818847613\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"vpxvq\",\"categories\":[],\"created_at\":\"2026-11-25T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":23437500,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-12-03T05:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"pc0pwh\",\"goal\":\"LINK_CLICKS\",\"id\":\"290t7\",\"ios_app_store_identifier\":null,\"name\":\"Post 2123642491501722570\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":\"41w6h\",\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-25T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2026-11-25T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"183wd4a7q3e\",\"advertiser_domain\":\"nuzzlesprigbooks.com\",\"campaign_id\":\"vpxvq\",\"daily_budget_amount_local_micro\":23437500,\"end_time\":\"2026-12-03T05:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"Post 2123642491501722570\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":\"41w6h\",\"standard_delivery\":true,\"start_time\":\"2026-11-25T05:00:00Z\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-25T05:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "183wd4a7q3e",
+      "campaign_id": "vpxvq",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "primary_web_event_tag": "41w6h",
+      "placements": "ALL_ON_TWITTER",
+      "daily_budget_amount_local_micro": 23437500,
+      "start_time": "2026-11-25T05:00:00Z",
+      "end_time": "2026-12-03T05:00:00Z",
+      "name": "Post 2123823685434688529",
+      "advertiser_domain": "nuzzlesprigbooks.com",
+      "standard_delivery": true
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"nuzzlesprigbooks.com\",\"advertiser_user_id\":\"1947521988818847613\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"vpxvq\",\"categories\":[],\"created_at\":\"2026-11-25T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":23437500,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-12-03T05:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"pc0pwh\",\"goal\":\"LINK_CLICKS\",\"id\":\"z8k0a\",\"ios_app_store_identifier\":null,\"name\":\"Post 2123823685434688529\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":\"41w6h\",\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-25T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2026-11-25T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"183wd4a7q3e\",\"advertiser_domain\":\"nuzzlesprigbooks.com\",\"campaign_id\":\"vpxvq\",\"daily_budget_amount_local_micro\":23437500,\"end_time\":\"2026-12-03T05:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"Post 2123823685434688529\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":\"41w6h\",\"standard_delivery\":true,\"start_time\":\"2026-11-25T05:00:00Z\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-25T05:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "183wd4a7q3e",
+      "campaign_id": "vpxvq",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "primary_web_event_tag": "41w6h",
+      "placements": "ALL_ON_TWITTER",
+      "daily_budget_amount_local_micro": 23437500,
+      "start_time": "2026-11-25T05:00:00Z",
+      "end_time": "2026-12-03T05:00:00Z",
+      "name": "Post 2124004879365323099",
+      "advertiser_domain": "nuzzlesprigbooks.com",
+      "standard_delivery": true
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"nuzzlesprigbooks.com\",\"advertiser_user_id\":\"1947521988818847613\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"vpxvq\",\"categories\":[],\"created_at\":\"2026-11-25T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":23437500,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-12-03T05:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"pc0pwh\",\"goal\":\"LINK_CLICKS\",\"id\":\"3n57x\",\"ios_app_store_identifier\":null,\"name\":\"Post 2124004879365323099\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":\"41w6h\",\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-25T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2026-11-25T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"183wd4a7q3e\",\"advertiser_domain\":\"nuzzlesprigbooks.com\",\"campaign_id\":\"vpxvq\",\"daily_budget_amount_local_micro\":23437500,\"end_time\":\"2026-12-03T05:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"Post 2124004879365323099\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":\"41w6h\",\"standard_delivery\":true,\"start_time\":\"2026-11-25T05:00:00Z\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-25T05:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "183wd4a7q3e",
+      "campaign_id": "vpxvq",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "primary_web_event_tag": "41w6h",
+      "placements": "ALL_ON_TWITTER",
+      "daily_budget_amount_local_micro": 23437500,
+      "start_time": "2026-11-25T05:00:00Z",
+      "end_time": "2026-12-03T05:00:00Z",
+      "name": "Post 2124186073300227528",
+      "advertiser_domain": "nuzzlesprigbooks.com",
+      "standard_delivery": true
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"nuzzlesprigbooks.com\",\"advertiser_user_id\":\"1947521988818847613\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"vpxvq\",\"categories\":[],\"created_at\":\"2026-11-25T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":23437500,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-12-03T05:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"pc0pwh\",\"goal\":\"LINK_CLICKS\",\"id\":\"izvt3\",\"ios_app_store_identifier\":null,\"name\":\"Post 2124186073300227528\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":\"41w6h\",\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-25T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2026-11-25T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"183wd4a7q3e\",\"advertiser_domain\":\"nuzzlesprigbooks.com\",\"campaign_id\":\"vpxvq\",\"daily_budget_amount_local_micro\":23437500,\"end_time\":\"2026-12-03T05:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"Post 2124186073300227528\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":\"41w6h\",\"standard_delivery\":true,\"start_time\":\"2026-11-25T05:00:00Z\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-25T05:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "183wd4a7q3e",
+      "line_item_id": "290t7",
+      "tweet_ids": "2123642491501722570"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2026-11-25T05:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"zhgtwt\",\"line_item_id\":\"290t7\",\"tweet_id\":\"2123642491501722570\",\"updated_at\":\"2026-11-25T05:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"183wd4a7q3e\",\"line_item_id\":\"290t7\",\"tweet_ids\":[\"2123642491501722570\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-25T05:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "183wd4a7q3e",
+      "line_item_id": "z8k0a",
+      "tweet_ids": "2123823685434688529"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2026-11-25T05:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"doj28l\",\"line_item_id\":\"z8k0a\",\"tweet_id\":\"2123823685434688529\",\"updated_at\":\"2026-11-25T05:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"183wd4a7q3e\",\"line_item_id\":\"z8k0a\",\"tweet_ids\":[\"2123823685434688529\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-25T05:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "183wd4a7q3e",
+      "line_item_id": "3n57x",
+      "tweet_ids": "2124004879365323099"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2026-11-25T05:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"j7qfvm\",\"line_item_id\":\"3n57x\",\"tweet_id\":\"2124004879365323099\",\"updated_at\":\"2026-11-25T05:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"183wd4a7q3e\",\"line_item_id\":\"3n57x\",\"tweet_ids\":[\"2124004879365323099\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-25T05:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "183wd4a7q3e",
+      "line_item_id": "izvt3",
+      "tweet_ids": "2124186073300227528"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2026-11-25T05:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"ztsfjz\",\"line_item_id\":\"izvt3\",\"tweet_id\":\"2124186073300227528\",\"updated_at\":\"2026-11-25T05:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"183wd4a7q3e\",\"line_item_id\":\"izvt3\",\"tweet_ids\":[\"2124186073300227528\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-25T05:00:00Z",
+    "tool": "activate_campaign",
+    "arguments": {
+      "account_id": "183wd4a7q3e",
+      "campaign_id": "vpxvq"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2026-11-25T05:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"RUNNING\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"pc0pwh\",\"id\":\"vpxvq\",\"name\":\"The Lantern in the Snow Contest\",\"purchase_order_number\":null,\"reasons_not_servable\":[],\"servable\":true,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2026-11-25T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"183wd4a7q3e\",\"campaign_id\":\"vpxvq\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-25T05:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "183wd4a7q3e",
+      "line_item_id": "290t7"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"nuzzlesprigbooks.com\",\"advertiser_user_id\":\"1947521988818847613\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"vpxvq\",\"categories\":[],\"created_at\":\"2026-11-25T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":23437500,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-12-03T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"pc0pwh\",\"goal\":\"LINK_CLICKS\",\"id\":\"290t7\",\"ios_app_store_identifier\":null,\"name\":\"Post 2123642491501722570\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":\"41w6h\",\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-25T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2026-11-25T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"183wd4a7q3e\",\"line_item_id\":\"290t7\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-25T05:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "183wd4a7q3e",
+      "line_item_id": "z8k0a"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"nuzzlesprigbooks.com\",\"advertiser_user_id\":\"1947521988818847613\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"vpxvq\",\"categories\":[],\"created_at\":\"2026-11-25T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":23437500,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-12-03T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"pc0pwh\",\"goal\":\"LINK_CLICKS\",\"id\":\"z8k0a\",\"ios_app_store_identifier\":null,\"name\":\"Post 2123823685434688529\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":\"41w6h\",\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-25T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2026-11-25T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"183wd4a7q3e\",\"line_item_id\":\"z8k0a\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-25T05:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "183wd4a7q3e",
+      "line_item_id": "3n57x"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"nuzzlesprigbooks.com\",\"advertiser_user_id\":\"1947521988818847613\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"vpxvq\",\"categories\":[],\"created_at\":\"2026-11-25T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":23437500,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-12-03T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"pc0pwh\",\"goal\":\"LINK_CLICKS\",\"id\":\"3n57x\",\"ios_app_store_identifier\":null,\"name\":\"Post 2124004879365323099\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":\"41w6h\",\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-25T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2026-11-25T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"183wd4a7q3e\",\"line_item_id\":\"3n57x\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-25T05:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "183wd4a7q3e",
+      "line_item_id": "izvt3"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"nuzzlesprigbooks.com\",\"advertiser_user_id\":\"1947521988818847613\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"vpxvq\",\"categories\":[],\"created_at\":\"2026-11-25T05:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":23437500,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-12-03T05:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"pc0pwh\",\"goal\":\"LINK_CLICKS\",\"id\":\"izvt3\",\"ios_app_store_identifier\":null,\"name\":\"Post 2124186073300227528\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":\"41w6h\",\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-25T05:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2026-11-25T05:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"183wd4a7q3e\",\"line_item_id\":\"izvt3\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-25T05:00:00Z",
+    "tool": "get_current_time",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2026-12-03T06:00:00Z\",\"now\":\"2026-11-25T05:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-25T05:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2026-12-03T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2026-12-03T06:00:00Z\",\"now\":\"2026-12-03T06:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-12-03T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "183wd4a7q3e",
+      "entity": "LINE_ITEM",
+      "entity_ids": "290t7,z8k0a,3n57x,izvt3",
+      "start_time": "2026-11-25T05:00:00Z",
+      "end_time": "2026-12-03T05:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"errors\":[{\"code\":\"INVALID_TIME_WINDOW\",\"message\":\"The end_time (2026-12-03 05:00:00 +0000) can be a maximum of 7.days+1.hours after the start_time (2026-11-25 05:00:00 +0000)\",\"parameter\":\"\"}],\"request\":{\"params\":{\"account_id\":\"183wd4a7q3e\",\"end_time\":\"2026-12-03T05:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"290t7\",\"z8k0a\",\"3n57x\",\"izvt3\"],\"granularity\":\"DAY\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"start_time\":\"2026-11-25T05:00:00Z\"}}}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2026-12-03T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "183wd4a7q3e",
+      "entity": "LINE_ITEM",
+      "entity_ids": "290t7,z8k0a,3n57x,izvt3",
+      "start_time": "2026-11-25T05:00:00Z",
+      "end_time": "2026-12-02T05:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"290t7\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[23046305,23350025,23282794,22827995,23094956,23107562,23410754],\"billed_engagements\":[460,392,513,447,488,451,542],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[29,28,27,30,27,26,26],\"engagements\":[460,392,513,447,488,451,542],\"follows\":null,\"impressions\":[70155,60351,76593,67470,74639,67671,73905],\"likes\":[17,16,14,8,8,10,15],\"link_clicks\":[29,28,27,30,27,26,26],\"qualified_impressions\":[70155,60351,76593,67470,74639,67671,73905],\"replies\":null,\"retweets\":[0,0,0,0,0,1,1]},\"segment\":null}]},{\"id\":\"z8k0a\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[22639586,22913790,22998560,23198769,23229622,23172989,23251017],\"billed_engagements\":[415,367,350,323,380,355,479],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[31,29,28,33,30,30,33],\"engagements\":[415,367,350,323,380,355,479],\"follows\":null,\"impressions\":[58014,56795,47945,41291,54161,52120,62889],\"likes\":[7,7,8,6,9,6,19],\"link_clicks\":[31,29,28,33,30,30,33],\"qualified_impressions\":[58014,56795,47945,41291,54161,52120,62889],\"replies\":[0,0,0,0,0,1,0],\"retweets\":null},\"segment\":null}]},{\"id\":\"3n57x\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[22792732,23320054,23136276,22949898,21740969,23226832,23103745],\"billed_engagements\":[550,441,322,539,518,436,415],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[35,35,34,38,34,34,34],\"engagements\":[550,441,322,539,518,436,415],\"follows\":null,\"impressions\":[81733,62382,47652,71322,73395,63307,60347],\"likes\":[14,11,8,10,12,6,10],\"link_clicks\":[35,35,34,38,34,34,34],\"qualified_impressions\":[81733,62382,47652,71322,73395,63307,60347],\"replies\":[0,0,0,0,1,0,1],\"retweets\":null},\"segment\":null}]},{\"id\":\"izvt3\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[23398834,22299015,22554729,23145383,23273068,23145896,23227798],\"billed_engagements\":[369,389,416,503,384,437,487],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[29,27,26,30,28,26,26],\"engagements\":[369,389,416,503,384,437,487],\"follows\":null,\"impressions\":[55283,60607,63053,70450,60734,58365,71683],\"likes\":[13,12,12,17,14,12,13],\"link_clicks\":[29,27,26,30,28,26,26],\"qualified_impressions\":[55283,60607,63053,70450,60734,58365,71683],\"replies\":[0,0,1,0,0,1,1],\"retweets\":[0,2,0,0,2,0,0]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-12-02T05:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"290t7\",\"z8k0a\",\"3n57x\",\"izvt3\"],\"granularity\":\"DAY\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-25T05:00:00Z\"}},\"time_series_length\":7}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-12-03T06:00:00Z",
+    "tool": "get_current_time",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2026-12-03T06:00:00Z\",\"now\":\"2026-12-03T06:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

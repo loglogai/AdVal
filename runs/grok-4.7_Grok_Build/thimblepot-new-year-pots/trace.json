@@ -1,0 +1,1452 @@
+[
+  {
+    "at": "2027-01-02T00:00:00Z",
+    "tool": "get_ad_policy",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"enforcement\":\"ad groups that break the policy of their category are disapproved and don't serve\",\"minors\":\"no ad may reach anyone under 13; alcohol may never target minors\",\"pre_authorization\":\"required for every restricted category\",\"restricted_categories\":[{\"category\":\"alcohol\",\"countries\":[\"AL\",\"AR\",\"AT\",\"AU\",\"BA\",\"BE\",\"BG\",\"BO\",\"BR\",\"CA\",\"CH\",\"CL\",\"CO\",\"CR\",\"CY\",\"CZ\",\"DE\",\"DK\",\"DO\",\"EC\",\"EE\",\"ES\",\"FI\",\"FR\",\"GB\",\"GH\",\"GR\",\"HK\",\"HN\",\"HR\",\"HU\",\"IE\",\"IL\",\"IN\",\"IS\",\"IT\",\"JP\",\"KE\",\"KH\",\"KR\",\"LT\",\"LU\",\"LV\",\"ME\",\"MK\",\"MT\",\"MX\",\"MY\",\"NG\",\"NI\",\"NL\",\"NZ\",\"PA\",\"PE\",\"PH\",\"PT\",\"PY\",\"RO\",\"RS\",\"SE\",\"SG\",\"SI\",\"SK\",\"SN\",\"SV\",\"TW\",\"UA\",\"UG\",\"US\",\"UY\",\"VE\",\"ZA\",\"ZM\"],\"covers\":\"promoting, selling or branding beer, wine or spirits, and competitions with alcohol as a prize\",\"min_age\":{\"by_country\":{\"JP\":20,\"KR\":20,\"US\":21},\"elsewhere\":18},\"targeting_types\":null},{\"category\":\"financial_services\",\"countries\":[\"AE\",\"AR\",\"AT\",\"AU\",\"AW\",\"BA\",\"BB\",\"BE\",\"BG\",\"BM\",\"BR\",\"BS\",\"CA\",\"CH\",\"CL\",\"CR\",\"CW\",\"CZ\",\"DE\",\"DK\",\"DO\",\"EC\",\"EG\",\"ES\",\"FI\",\"FR\",\"GB\",\"GH\",\"GR\",\"GT\",\"HK\",\"HN\",\"HR\",\"ID\",\"IE\",\"IL\",\"IN\",\"IT\",\"JM\",\"JP\",\"KR\",\"KW\",\"MA\",\"MK\",\"MY\",\"NG\",\"NI\",\"NL\",\"NO\",\"NZ\",\"OM\",\"PA\",\"PE\",\"PH\",\"PK\",\"PL\",\"PT\",\"PY\",\"QA\",\"RO\",\"RS\",\"RU\",\"SA\",\"SE\",\"SG\",\"SI\",\"SV\",\"TH\",\"TR\",\"TT\",\"TW\",\"TZ\",\"UA\",\"UG\",\"US\",\"UY\",\"VE\",\"VN\",\"ZA\",\"ZM\"],\"covers\":\"banks, money service businesses, mobile and electronic payments, money transfer, savings, investment, currency exchange, loans and insurance\",\"min_age\":null,\"targeting_types\":null},{\"category\":\"political_content\",\"countries\":[\"AE\",\"AR\",\"AU\",\"CL\",\"CO\",\"EC\",\"GB\",\"GH\",\"ID\",\"IL\",\"IN\",\"JP\",\"MX\",\"PE\",\"SA\",\"US\",\"ZA\"],\"covers\":\"ads that reference a candidate, party, official, election, referendum, legislation, regulation or judicial outcome\",\"min_age\":null,\"targeting_types\":null},{\"category\":\"political_campaigning\",\"countries\":[\"AR\",\"AU\",\"CO\",\"EC\",\"GB\",\"GH\",\"ID\",\"IL\",\"JP\",\"MX\",\"PA\",\"PE\",\"US\",\"ZA\"],\"covers\":\"ads that advocate for or against, or ask for votes or money for, a candidate, party, election, legislation, referendum or ballot measure\",\"min_age\":null,\"targeting_types\":[\"LOCATION\",\"AGE\",\"GENDER\",\"INTEREST\",\"BROAD_KEYWORD\",\"PHRASE_KEYWORD\",\"EXACT_KEYWORD\",\"UNORDERED_KEYWORD\",\"NEGATIVE_PHRASE_KEYWORD\",\"NEGATIVE_EXACT_KEYWORD\",\"NEGATIVE_UNORDERED_KEYWORD\",\"CUSTOM_AUDIENCE\",\"CUSTOM_AUDIENCE_EXPANDED\",\"SIMILAR_TO_FOLLOWERS_OF_USER\",\"FOLLOWER_LOOK_ALIKES\"]}]},\"request\":{\"params\":{}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T00:00:00Z",
+    "tool": "get_current_time",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-01-13T01:00:00Z\",\"now\":\"2027-01-02T00:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T00:00:00Z",
+    "tool": "list_ads_accounts",
+    "arguments": {
+      "q": "Thimblepot",
+      "with_total_count": true
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"business_id\":null,\"business_name\":null,\"country_code\":\"GB\",\"created_at\":\"2024-08-23T00:00:00Z\",\"deleted\":false,\"id\":\"184ophajccr\",\"industry_type\":null,\"name\":\"Thimblepot\",\"timezone\":\"Europe/London\",\"timezone_switch_at\":\"2024-08-23T00:00:00Z\",\"updated_at\":\"2024-08-23T00:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"q\":\"Thimblepot\",\"with_total_count\":true}},\"total_count\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T00:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "q": "United Kingdom",
+      "location_type": "COUNTRIES",
+      "country_code": "GB"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"country_code\":\"GB\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"}],\"next_cursor\":null,\"request\":{\"params\":{\"country_code\":\"GB\",\"location_type\":\"COUNTRIES\",\"q\":\"United Kingdom\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T00:00:00Z",
+    "tool": "list_funding_instruments",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "with_total_count": true
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"able_to_fund\":true,\"created_at\":\"2024-08-23T00:00:00Z\",\"credit_limit_local_micro\":null,\"credit_remaining_local_micro\":null,\"currency\":\"USD\",\"deleted\":false,\"description\":\"Visa ending in 3982\",\"end_time\":null,\"entity_status\":\"ACTIVE\",\"funded_amount_local_micro\":0,\"id\":\"2acq3i\",\"io_header\":null,\"reasons_not_able_to_fund\":[],\"start_time\":\"2024-08-23T00:00:00Z\",\"type\":\"CREDIT_CARD\",\"updated_at\":\"2024-08-23T00:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"with_total_count\":true}},\"total_count\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T00:00:00Z",
+    "tool": "list_account_posts",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "tweet_type": "PUBLISHED",
+      "tweet_ids": "2138062508651453803,2138243702585486562",
+      "timeline_type": "ALL"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Wed Dec 30 12:00:00 +0000 2026\",\"display_text_range\":[0,149],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"thimblepot.co.uk/new-year\",\"expanded_url\":\"https://thimblepot.co.uk/new-year\",\"indices\":[126,149],\"url\":\"https://t.co/NOkWlqLeLB\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Be honest: which New Year's resolution has already wobbled? \ud83e\udee0 Saving is the one that sticks when the whole family's in on it. https://t.co/NOkWlqLeLB\",\"geo\":null,\"id\":2138243702585486562,\"id_str\":\"2138243702585486562\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2138243702585486562\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Fri Aug 23 00:00:00 +0000 2024\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2415,\"follow_request_sent\":null,\"followers_count\":3115,\"following\":null,\"friends_count\":565,\"geo_enabled\":false,\"id\":1826771332102232779,\"id_str\":\"1826771332102232779\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":35,\"location\":\"\",\"name\":\"Thimblepot\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1826771332102232779/1652826315\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1733760186652826315/9z1kIuCq_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1733760186652826315/9z1kIuCq_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"Thimblepot\",\"statuses_count\":2615,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Wed Dec 30 00:00:00 +0000 2026\",\"display_text_range\":[0,216],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"thimblepot.co.uk/new-year\",\"expanded_url\":\"https://thimblepot.co.uk/new-year\",\"indices\":[193,216],\"url\":\"https://t.co/t79Xx9wMat\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"New year, new pots. Thimblepot lets the whole family save together for holidays, birthdays and the big stuff. Free to download, plus Family Plus free for your first 3 months. UK residents 18+. https://t.co/t79Xx9wMat\",\"geo\":null,\"id\":2138062508651453803,\"id_str\":\"2138062508651453803\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":false,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2138062508651453803\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Fri Aug 23 00:00:00 +0000 2024\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":2415,\"follow_request_sent\":null,\"followers_count\":3115,\"following\":null,\"friends_count\":565,\"geo_enabled\":false,\"id\":1826771332102232779,\"id_str\":\"1826771332102232779\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":35,\"location\":\"\",\"name\":\"Thimblepot\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1826771332102232779/1652826315\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1733760186652826315/9z1kIuCq_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1733760186652826315/9z1kIuCq_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"Thimblepot\",\"statuses_count\":2615,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"timeline_type\":\"ALL\",\"tweet_ids\":[\"2138062508651453803\",\"2138243702585486562\"],\"tweet_type\":\"PUBLISHED\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T00:00:00Z",
+    "tool": "search_targeting_platforms",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"name\":\"iOS\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\"},{\"name\":\"Android\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"1\"},{\"name\":\"BlackBerry phones and tablets\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"2\"},{\"name\":\"Mobile web on other devices\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"3\"},{\"name\":\"Desktop and laptop computers\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"4\"}],\"request\":{\"params\":{}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T00:00:00Z",
+    "tool": "search_targeting_interests",
+    "arguments": {
+      "q": "personal finance",
+      "count": 10
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"name\":\"Business & Finance / Personal Finance\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925952988486447104\"}],\"request\":{\"params\":{\"count\":10,\"q\":\"personal finance\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T00:00:00Z",
+    "tool": "search_targeting_interests",
+    "arguments": {
+      "q": "parenting",
+      "count": 10
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"name\":\"Relationships / Parenting\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925954095342338048\"}],\"request\":{\"params\":{\"count\":10,\"q\":\"parenting\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T00:00:00Z",
+    "tool": "search_targeting_interests",
+    "arguments": {
+      "q": "family",
+      "count": 15
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"name\":\"Movies & TV / Animation & Family\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"191000000000002002\"},{\"name\":\"Relationships / Family\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925954059338493952\"}],\"request\":{\"params\":{\"count\":15,\"q\":\"family\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T00:00:00Z",
+    "tool": "list_campaigns",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "with_total_count": true,
+      "count": 50
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"count\":50,\"with_total_count\":true}},\"total_count\":0}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T00:00:00Z",
+    "tool": "estimate_audience",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "targeting_criteria": [
+        {
+          "targeting_type": "LOCATION",
+          "targeting_value": "6416b8512febefc9",
+          "operator_type": "EQ"
+        },
+        {
+          "targeting_type": "AGE",
+          "targeting_value": "AGE_OVER_18",
+          "operator_type": "EQ"
+        },
+        {
+          "targeting_type": "PLATFORM",
+          "targeting_value": "0",
+          "operator_type": "EQ"
+        },
+        {
+          "targeting_type": "PLATFORM",
+          "targeting_value": "1",
+          "operator_type": "EQ"
+        },
+        {
+          "targeting_type": "INTEREST",
+          "targeting_value": "1925952988486447104",
+          "operator_type": "EQ"
+        },
+        {
+          "targeting_type": "INTEREST",
+          "targeting_value": "1925954095342338048",
+          "operator_type": "EQ"
+        },
+        {
+          "targeting_type": "INTEREST",
+          "targeting_value": "1925954059338493952",
+          "operator_type": "EQ"
+        }
+      ]
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"audience_size\":{\"max\":12278125,\"min\":10671641},\"warnings\":[{\"code\":\"AUDIENCE_ESTIMATE_PARTIAL_TARGETING\",\"message\":\"Some targeting options are not included in audience estimates. Your campaign will still serve using all selected targeting.\",\"unsupported_targeting_types\":[\"INTEREST\"]}]},\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"targeting_criteria\":null}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T00:00:00Z",
+    "tool": "create_campaign",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "funding_instrument_id": "2acq3i",
+      "name": "Thimblepot New Year installs 2-12 Jan 2027"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-01-02T00:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"PAUSED\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"2acq3i\",\"id\":\"buu8n\",\"name\":\"Thimblepot New Year installs 2-12 Jan 2027\",\"purchase_order_number\":null,\"reasons_not_servable\":[\"PAUSED_BY_ADVERTISER\"],\"servable\":false,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-01-02T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"funding_instrument_id\":\"2acq3i\",\"name\":\"Thimblepot New Year installs 2-12 Jan 2027\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T00:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "campaign_id": "buu8n",
+      "name": "Offer post UK 18+ mobile",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "product_type": "PROMOTED_TWEETS",
+      "placements": "ALL_ON_TWITTER",
+      "advertiser_domain": "thimblepot.co.uk",
+      "daily_budget_amount_local_micro": 24545455,
+      "total_budget_amount_local_micro": 270000000,
+      "start_time": "2027-01-02T00:00:00Z",
+      "end_time": "2027-01-13T00:00:00Z",
+      "standard_delivery": true,
+      "bid_strategy": "AUTO",
+      "audience_expansion": "DEFINED"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"thimblepot.co.uk\",\"advertiser_user_id\":\"1826771332102232779\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"buu8n\",\"categories\":[],\"created_at\":\"2027-01-02T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":24545455,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-13T00:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"2acq3i\",\"goal\":\"LINK_CLICKS\",\"id\":\"ix4yj\",\"ios_app_store_identifier\":null,\"name\":\"Offer post UK 18+ mobile\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":270000000,\"updated_at\":\"2027-01-02T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"advertiser_domain\":\"thimblepot.co.uk\",\"audience_expansion\":\"DEFINED\",\"bid_strategy\":\"AUTO\",\"campaign_id\":\"buu8n\",\"daily_budget_amount_local_micro\":24545455,\"end_time\":\"2027-01-13T00:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"Offer post UK 18+ mobile\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T00:00:00Z\",\"total_budget_amount_local_micro\":270000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T00:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "campaign_id": "buu8n",
+      "name": "Resolution post UK 18+ mobile",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "product_type": "PROMOTED_TWEETS",
+      "placements": "ALL_ON_TWITTER",
+      "advertiser_domain": "thimblepot.co.uk",
+      "daily_budget_amount_local_micro": 16363636,
+      "total_budget_amount_local_micro": 180000000,
+      "start_time": "2027-01-02T00:00:00Z",
+      "end_time": "2027-01-13T00:00:00Z",
+      "standard_delivery": true,
+      "bid_strategy": "AUTO",
+      "audience_expansion": "DEFINED"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"thimblepot.co.uk\",\"advertiser_user_id\":\"1826771332102232779\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"buu8n\",\"categories\":[],\"created_at\":\"2027-01-02T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":16363636,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-13T00:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"2acq3i\",\"goal\":\"LINK_CLICKS\",\"id\":\"j1myw\",\"ios_app_store_identifier\":null,\"name\":\"Resolution post UK 18+ mobile\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":180000000,\"updated_at\":\"2027-01-02T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"advertiser_domain\":\"thimblepot.co.uk\",\"audience_expansion\":\"DEFINED\",\"bid_strategy\":\"AUTO\",\"campaign_id\":\"buu8n\",\"daily_budget_amount_local_micro\":16363636,\"end_time\":\"2027-01-13T00:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"Resolution post UK 18+ mobile\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T00:00:00Z\",\"total_budget_amount_local_micro\":180000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T00:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "line_item_id": "ix4yj",
+      "targeting_type": "LOCATION",
+      "targeting_value": "6416b8512febefc9",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T00:00:00Z\",\"deleted\":false,\"id\":\"o74om26\",\"line_item_id\":\"ix4yj\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\",\"updated_at\":\"2027-01-02T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"line_item_id\":\"ix4yj\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T00:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "line_item_id": "ix4yj",
+      "targeting_type": "AGE",
+      "targeting_value": "AGE_OVER_18",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T00:00:00Z\",\"deleted\":false,\"id\":\"zodqj4f\",\"line_item_id\":\"ix4yj\",\"name\":\"AGE_OVER_18\",\"operator_type\":\"EQ\",\"targeting_type\":\"AGE\",\"targeting_value\":\"AGE_OVER_18\",\"updated_at\":\"2027-01-02T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"line_item_id\":\"ix4yj\",\"operator_type\":\"EQ\",\"targeting_type\":\"AGE\",\"targeting_value\":\"AGE_OVER_18\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T00:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "line_item_id": "ix4yj",
+      "targeting_type": "PLATFORM",
+      "targeting_value": "0",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T00:00:00Z\",\"deleted\":false,\"id\":\"8tq3tfp\",\"line_item_id\":\"ix4yj\",\"name\":\"iOS\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\",\"updated_at\":\"2027-01-02T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"line_item_id\":\"ix4yj\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T00:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "line_item_id": "ix4yj",
+      "targeting_type": "PLATFORM",
+      "targeting_value": "1",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T00:00:00Z\",\"deleted\":false,\"id\":\"exbmqsp\",\"line_item_id\":\"ix4yj\",\"name\":\"Android\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"1\",\"updated_at\":\"2027-01-02T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"line_item_id\":\"ix4yj\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T00:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "line_item_id": "ix4yj",
+      "targeting_type": "INTEREST",
+      "targeting_value": "1925952988486447104",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T00:00:00Z\",\"deleted\":false,\"id\":\"y31ub8c\",\"line_item_id\":\"ix4yj\",\"name\":\"Business & Finance / Personal Finance\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925952988486447104\",\"updated_at\":\"2027-01-02T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"line_item_id\":\"ix4yj\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925952988486447104\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T00:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "line_item_id": "ix4yj",
+      "targeting_type": "INTEREST",
+      "targeting_value": "1925954095342338048",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T00:00:00Z\",\"deleted\":false,\"id\":\"jls62pm\",\"line_item_id\":\"ix4yj\",\"name\":\"Relationships / Parenting\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925954095342338048\",\"updated_at\":\"2027-01-02T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"line_item_id\":\"ix4yj\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925954095342338048\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T00:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "line_item_id": "ix4yj",
+      "targeting_type": "INTEREST",
+      "targeting_value": "1925954059338493952",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T00:00:00Z\",\"deleted\":false,\"id\":\"94dkbva\",\"line_item_id\":\"ix4yj\",\"name\":\"Relationships / Family\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925954059338493952\",\"updated_at\":\"2027-01-02T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"line_item_id\":\"ix4yj\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925954059338493952\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T00:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "line_item_id": "j1myw",
+      "targeting_type": "LOCATION",
+      "targeting_value": "6416b8512febefc9",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T00:00:00Z\",\"deleted\":false,\"id\":\"b2n93hv\",\"line_item_id\":\"j1myw\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\",\"updated_at\":\"2027-01-02T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"line_item_id\":\"j1myw\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T00:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "line_item_id": "j1myw",
+      "targeting_type": "AGE",
+      "targeting_value": "AGE_OVER_18",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T00:00:00Z\",\"deleted\":false,\"id\":\"98s3wpz\",\"line_item_id\":\"j1myw\",\"name\":\"AGE_OVER_18\",\"operator_type\":\"EQ\",\"targeting_type\":\"AGE\",\"targeting_value\":\"AGE_OVER_18\",\"updated_at\":\"2027-01-02T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"line_item_id\":\"j1myw\",\"operator_type\":\"EQ\",\"targeting_type\":\"AGE\",\"targeting_value\":\"AGE_OVER_18\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T00:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "line_item_id": "j1myw",
+      "targeting_type": "PLATFORM",
+      "targeting_value": "0",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T00:00:00Z\",\"deleted\":false,\"id\":\"73k9goj\",\"line_item_id\":\"j1myw\",\"name\":\"iOS\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\",\"updated_at\":\"2027-01-02T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"line_item_id\":\"j1myw\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T00:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "line_item_id": "j1myw",
+      "targeting_type": "PLATFORM",
+      "targeting_value": "1",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T00:00:00Z\",\"deleted\":false,\"id\":\"z0ch150\",\"line_item_id\":\"j1myw\",\"name\":\"Android\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"1\",\"updated_at\":\"2027-01-02T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"line_item_id\":\"j1myw\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T00:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "line_item_id": "j1myw",
+      "targeting_type": "INTEREST",
+      "targeting_value": "1925952988486447104",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T00:00:00Z\",\"deleted\":false,\"id\":\"3xd5pda\",\"line_item_id\":\"j1myw\",\"name\":\"Business & Finance / Personal Finance\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925952988486447104\",\"updated_at\":\"2027-01-02T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"line_item_id\":\"j1myw\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925952988486447104\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T00:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "line_item_id": "j1myw",
+      "targeting_type": "INTEREST",
+      "targeting_value": "1925954095342338048",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T00:00:00Z\",\"deleted\":false,\"id\":\"jxd7s5f\",\"line_item_id\":\"j1myw\",\"name\":\"Relationships / Parenting\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925954095342338048\",\"updated_at\":\"2027-01-02T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"line_item_id\":\"j1myw\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925954095342338048\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T00:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "line_item_id": "j1myw",
+      "targeting_type": "INTEREST",
+      "targeting_value": "1925954059338493952",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-01-02T00:00:00Z\",\"deleted\":false,\"id\":\"zlwjcdy\",\"line_item_id\":\"j1myw\",\"name\":\"Relationships / Family\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925954059338493952\",\"updated_at\":\"2027-01-02T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"line_item_id\":\"j1myw\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925954059338493952\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T00:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "line_item_id": "ix4yj",
+      "tweet_ids": "2138062508651453803"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-01-02T00:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"ftyhu2\",\"line_item_id\":\"ix4yj\",\"tweet_id\":\"2138062508651453803\",\"updated_at\":\"2027-01-02T00:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"line_item_id\":\"ix4yj\",\"tweet_ids\":[\"2138062508651453803\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T00:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "line_item_id": "j1myw",
+      "tweet_ids": "2138243702585486562"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-01-02T00:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"veoefm\",\"line_item_id\":\"j1myw\",\"tweet_id\":\"2138243702585486562\",\"updated_at\":\"2027-01-02T00:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"line_item_id\":\"j1myw\",\"tweet_ids\":[\"2138243702585486562\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T00:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "line_item_id": "ix4yj"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"thimblepot.co.uk\",\"advertiser_user_id\":\"1826771332102232779\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"buu8n\",\"categories\":[],\"created_at\":\"2027-01-02T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":24545455,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-13T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"2acq3i\",\"goal\":\"LINK_CLICKS\",\"id\":\"ix4yj\",\"ios_app_store_identifier\":null,\"name\":\"Offer post UK 18+ mobile\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":270000000,\"updated_at\":\"2027-01-02T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"line_item_id\":\"ix4yj\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T00:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "line_item_id": "j1myw"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"thimblepot.co.uk\",\"advertiser_user_id\":\"1826771332102232779\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"buu8n\",\"categories\":[],\"created_at\":\"2027-01-02T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":16363636,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-13T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"2acq3i\",\"goal\":\"LINK_CLICKS\",\"id\":\"j1myw\",\"ios_app_store_identifier\":null,\"name\":\"Resolution post UK 18+ mobile\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":180000000,\"updated_at\":\"2027-01-02T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"line_item_id\":\"j1myw\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T00:00:00Z",
+    "tool": "activate_campaign",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "campaign_id": "buu8n"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-01-02T00:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"RUNNING\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"2acq3i\",\"id\":\"buu8n\",\"name\":\"Thimblepot New Year installs 2-12 Jan 2027\",\"purchase_order_number\":null,\"reasons_not_servable\":[],\"servable\":true,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-01-02T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"campaign_id\":\"buu8n\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T00:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-01-02T08:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-01-13T01:00:00Z\",\"now\":\"2027-01-02T08:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T08:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ix4yj,j1myw",
+      "start_time": "2027-01-02T00:00:00Z",
+      "end_time": "2027-01-02T08:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ix4yj\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[5507584],\"billed_engagements\":[6],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[2],\"engagements\":[6],\"follows\":null,\"impressions\":[1514],\"likes\":[1],\"link_clicks\":[2],\"qualified_impressions\":[1514],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"j1myw\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[2913417],\"billed_engagements\":[5],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[1],\"engagements\":[5],\"follows\":null,\"impressions\":[1094],\"likes\":null,\"link_clicks\":[1],\"qualified_impressions\":[1094],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-02T08:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ix4yj\",\"j1myw\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-02T00:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T08:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "entity": "PROMOTED_TWEET",
+      "entity_ids": "ftyhu2,veoefm",
+      "start_time": "2027-01-02T00:00:00Z",
+      "end_time": "2027-01-02T08:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ftyhu2\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[5507584],\"billed_engagements\":[6],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[2],\"engagements\":[6],\"follows\":null,\"impressions\":[1514],\"likes\":[1],\"link_clicks\":[2],\"qualified_impressions\":[1514],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"veoefm\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[2913417],\"billed_engagements\":[5],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[1],\"engagements\":[5],\"follows\":null,\"impressions\":[1094],\"likes\":null,\"link_clicks\":[1],\"qualified_impressions\":[1094],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-02T08:00:00Z\",\"entity\":\"PROMOTED_TWEET\",\"entity_ids\":[\"ftyhu2\",\"veoefm\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-02T00:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T08:00:00Z",
+    "tool": "list_line_items",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "campaign_ids": "buu8n",
+      "with_total_count": true
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"advertiser_domain\":\"thimblepot.co.uk\",\"advertiser_user_id\":\"1826771332102232779\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"buu8n\",\"categories\":[],\"created_at\":\"2027-01-02T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":24545455,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-13T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"2acq3i\",\"goal\":\"LINK_CLICKS\",\"id\":\"ix4yj\",\"ios_app_store_identifier\":null,\"name\":\"Offer post UK 18+ mobile\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":270000000,\"updated_at\":\"2027-01-02T00:00:00Z\"},{\"advertiser_domain\":\"thimblepot.co.uk\",\"advertiser_user_id\":\"1826771332102232779\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"buu8n\",\"categories\":[],\"created_at\":\"2027-01-02T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":16363636,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-13T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"2acq3i\",\"goal\":\"LINK_CLICKS\",\"id\":\"j1myw\",\"ios_app_store_identifier\":null,\"name\":\"Resolution post UK 18+ mobile\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":180000000,\"updated_at\":\"2027-01-02T00:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"campaign_ids\":[\"buu8n\"],\"with_total_count\":true}},\"total_count\":2}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T08:00:00Z",
+    "tool": "get_campaign",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "campaign_id": "buu8n"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-01-02T00:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"RUNNING\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"2acq3i\",\"id\":\"buu8n\",\"name\":\"Thimblepot New Year installs 2-12 Jan 2027\",\"purchase_order_number\":null,\"reasons_not_servable\":[],\"servable\":true,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-01-02T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"campaign_id\":\"buu8n\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-02T08:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-01-03T12:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-01-13T01:00:00Z\",\"now\":\"2027-01-03T12:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-03T12:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ix4yj,j1myw",
+      "start_time": "2027-01-02T00:00:00Z",
+      "end_time": "2027-01-03T12:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"errors\":[{\"code\":\"INVALID_TIME_WINDOW\",\"message\":\"Expect time to be midnight in the account's local timezone for day granularity\",\"parameter\":\"\"}],\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"end_time\":\"2027-01-03T12:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ix4yj\",\"j1myw\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"start_time\":\"2027-01-02T00:00:00Z\"}}}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2027-01-03T12:00:00Z",
+    "tool": "get_campaign",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "campaign_id": "buu8n"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-01-02T00:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"RUNNING\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"2acq3i\",\"id\":\"buu8n\",\"name\":\"Thimblepot New Year installs 2-12 Jan 2027\",\"purchase_order_number\":null,\"reasons_not_servable\":[],\"servable\":true,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-01-02T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"campaign_id\":\"buu8n\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-03T12:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ix4yj,j1myw",
+      "start_time": "2027-01-02T00:00:00Z",
+      "end_time": "2027-01-03T12:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ix4yj\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[29558073],\"billed_engagements\":[114],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[12],\"engagements\":[114],\"follows\":null,\"impressions\":[16877],\"likes\":[3],\"link_clicks\":[12],\"qualified_impressions\":[16877],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"j1myw\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[15713821],\"billed_engagements\":[42],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[6],\"engagements\":[42],\"follows\":null,\"impressions\":[8803],\"likes\":null,\"link_clicks\":[6],\"qualified_impressions\":[8803],\"replies\":null,\"retweets\":[1]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-03T12:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ix4yj\",\"j1myw\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-02T00:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-03T12:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ix4yj,j1myw",
+      "start_time": "2027-01-02T00:00:00Z",
+      "end_time": "2027-01-03T00:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ix4yj\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[23760375],\"billed_engagements\":[78],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[9],\"engagements\":[78],\"follows\":null,\"impressions\":[12382],\"likes\":[3],\"link_clicks\":[9],\"qualified_impressions\":[12382],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"j1myw\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[13724423],\"billed_engagements\":[33],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[5],\"engagements\":[33],\"follows\":null,\"impressions\":[5593],\"likes\":null,\"link_clicks\":[5],\"qualified_impressions\":[5593],\"replies\":null,\"retweets\":[1]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-03T00:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ix4yj\",\"j1myw\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-02T00:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-03T12:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-01-05T00:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-01-13T01:00:00Z\",\"now\":\"2027-01-05T00:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T00:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ix4yj,j1myw",
+      "start_time": "2027-01-02T00:00:00Z",
+      "end_time": "2027-01-05T00:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ix4yj\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[23760375,24319059,23571336],\"billed_engagements\":[78,134,104],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[9,13,12],\"engagements\":[78,134,104],\"follows\":null,\"impressions\":[12382,14871,14689],\"likes\":[3,4,4],\"link_clicks\":[9,13,12],\"qualified_impressions\":[12382,14871,14689],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"j1myw\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[13724423,14590747,15541133],\"billed_engagements\":[33,49,68],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[5,7,7],\"engagements\":[33,49,68],\"follows\":null,\"impressions\":[5593,9621,9530],\"likes\":[0,0,1],\"link_clicks\":[5,7,7],\"qualified_impressions\":[5593,9621,9530],\"replies\":null,\"retweets\":[1,0,0]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-05T00:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ix4yj\",\"j1myw\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-02T00:00:00Z\"}},\"time_series_length\":3}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T00:00:00Z",
+    "tool": "get_campaign",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "campaign_id": "buu8n"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-01-02T00:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"RUNNING\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"2acq3i\",\"id\":\"buu8n\",\"name\":\"Thimblepot New Year installs 2-12 Jan 2027\",\"purchase_order_number\":null,\"reasons_not_servable\":[],\"servable\":true,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-01-02T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"campaign_id\":\"buu8n\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T00:00:00Z",
+    "tool": "get_promoted_post",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "promoted_tweet_id": "ftyhu2"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-01-02T00:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"ftyhu2\",\"line_item_id\":\"ix4yj\",\"tweet_id\":\"2138062508651453803\",\"updated_at\":\"2027-01-02T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"promoted_tweet_id\":\"ftyhu2\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T00:00:00Z",
+    "tool": "get_promoted_post",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "promoted_tweet_id": "veoefm"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-01-02T00:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"veoefm\",\"line_item_id\":\"j1myw\",\"tweet_id\":\"2138243702585486562\",\"updated_at\":\"2027-01-02T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"promoted_tweet_id\":\"veoefm\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T00:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "line_item_id": "ix4yj",
+      "total_budget_amount_local_micro": 340000000,
+      "daily_budget_amount_local_micro": 33543654
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"thimblepot.co.uk\",\"advertiser_user_id\":\"1826771332102232779\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"buu8n\",\"categories\":[],\"created_at\":\"2027-01-02T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":33543654,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-13T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"2acq3i\",\"goal\":\"LINK_CLICKS\",\"id\":\"ix4yj\",\"ios_app_store_identifier\":null,\"name\":\"Offer post UK 18+ mobile\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":340000000,\"updated_at\":\"2027-01-05T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"daily_budget_amount_local_micro\":33543654,\"line_item_id\":\"ix4yj\",\"total_budget_amount_local_micro\":340000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T00:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "line_item_id": "j1myw",
+      "total_budget_amount_local_micro": 110000000,
+      "daily_budget_amount_local_micro": 8267962
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"thimblepot.co.uk\",\"advertiser_user_id\":\"1826771332102232779\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"buu8n\",\"categories\":[],\"created_at\":\"2027-01-02T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":8267962,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-13T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"2acq3i\",\"goal\":\"LINK_CLICKS\",\"id\":\"j1myw\",\"ios_app_store_identifier\":null,\"name\":\"Resolution post UK 18+ mobile\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":110000000,\"updated_at\":\"2027-01-05T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"daily_budget_amount_local_micro\":8267962,\"line_item_id\":\"j1myw\",\"total_budget_amount_local_micro\":110000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-05T00:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-01-08T00:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-01-13T01:00:00Z\",\"now\":\"2027-01-08T00:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-08T00:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ix4yj,j1myw",
+      "start_time": "2027-01-02T00:00:00Z",
+      "end_time": "2027-01-08T00:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ix4yj\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[23760375,24319059,23571336,32277084,30714025,33052623],\"billed_engagements\":[78,134,105,106,108,108],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[9,13,12,11,10,11],\"engagements\":[78,134,105,106,108,108],\"follows\":null,\"impressions\":[12382,14871,14781,14616,16271,17373],\"likes\":[3,4,4,2,1,5],\"link_clicks\":[9,13,12,11,10,11],\"qualified_impressions\":[12382,14871,14781,14616,16271,17373],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"j1myw\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[13724423,14590747,15541133,6025327,6689061,6857992],\"billed_engagements\":[33,49,73,44,30,32],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[5,7,7,2,2,2],\"engagements\":[33,49,73,44,30,32],\"follows\":null,\"impressions\":[5593,9621,10023,5662,4026,4047],\"likes\":[0,0,1,1,0,1],\"link_clicks\":[5,7,7,2,2,2],\"qualified_impressions\":[5593,9621,10023,5662,4026,4047],\"replies\":null,\"retweets\":[1,0,0,0,0,0]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-08T00:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ix4yj\",\"j1myw\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-02T00:00:00Z\"}},\"time_series_length\":6}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-08T00:00:00Z",
+    "tool": "get_campaign",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "campaign_id": "buu8n"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-01-02T00:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"RUNNING\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"2acq3i\",\"id\":\"buu8n\",\"name\":\"Thimblepot New Year installs 2-12 Jan 2027\",\"purchase_order_number\":null,\"reasons_not_servable\":[],\"servable\":true,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-01-02T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"campaign_id\":\"buu8n\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-08T00:00:00Z",
+    "tool": "list_line_items",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "line_item_ids": "ix4yj,j1myw"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"advertiser_domain\":\"thimblepot.co.uk\",\"advertiser_user_id\":\"1826771332102232779\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"buu8n\",\"categories\":[],\"created_at\":\"2027-01-02T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":33543654,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-13T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"2acq3i\",\"goal\":\"LINK_CLICKS\",\"id\":\"ix4yj\",\"ios_app_store_identifier\":null,\"name\":\"Offer post UK 18+ mobile\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":340000000,\"updated_at\":\"2027-01-05T00:00:00Z\"},{\"advertiser_domain\":\"thimblepot.co.uk\",\"advertiser_user_id\":\"1826771332102232779\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"buu8n\",\"categories\":[],\"created_at\":\"2027-01-02T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":8267962,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-13T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"2acq3i\",\"goal\":\"LINK_CLICKS\",\"id\":\"j1myw\",\"ios_app_store_identifier\":null,\"name\":\"Resolution post UK 18+ mobile\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":110000000,\"updated_at\":\"2027-01-05T00:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"line_item_ids\":[\"ix4yj\",\"j1myw\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-08T00:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "line_item_id": "j1myw",
+      "entity_status": "PAUSED",
+      "total_budget_amount_local_micro": 63428683,
+      "daily_budget_amount_local_micro": 1
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"thimblepot.co.uk\",\"advertiser_user_id\":\"1826771332102232779\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"buu8n\",\"categories\":[],\"created_at\":\"2027-01-02T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":1,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-13T00:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"2acq3i\",\"goal\":\"LINK_CLICKS\",\"id\":\"j1myw\",\"ios_app_store_identifier\":null,\"name\":\"Resolution post UK 18+ mobile\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":63428683,\"updated_at\":\"2027-01-08T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"daily_budget_amount_local_micro\":1,\"entity_status\":\"PAUSED\",\"line_item_id\":\"j1myw\",\"total_budget_amount_local_micro\":63428683}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-08T00:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "line_item_id": "ix4yj",
+      "total_budget_amount_local_micro": 386571317,
+      "daily_budget_amount_local_micro": 43775363
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"thimblepot.co.uk\",\"advertiser_user_id\":\"1826771332102232779\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"buu8n\",\"categories\":[],\"created_at\":\"2027-01-02T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":43775363,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-13T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"2acq3i\",\"goal\":\"LINK_CLICKS\",\"id\":\"ix4yj\",\"ios_app_store_identifier\":null,\"name\":\"Offer post UK 18+ mobile\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":386571317,\"updated_at\":\"2027-01-08T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"daily_budget_amount_local_micro\":43775363,\"line_item_id\":\"ix4yj\",\"total_budget_amount_local_micro\":386571317}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-08T00:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-01-11T00:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-01-13T01:00:00Z\",\"now\":\"2027-01-11T00:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-11T00:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ix4yj,j1myw",
+      "start_time": "2027-01-08T00:00:00Z",
+      "end_time": "2027-01-11T00:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ix4yj\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[41501202,43343818,40840026],\"billed_engagements\":[141,128,251],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[11,18,19],\"engagements\":[141,128,251],\"follows\":null,\"impressions\":[20532,17700,36915],\"likes\":[3,2,3],\"link_clicks\":[11,18,19],\"qualified_impressions\":[20532,17700,36915],\"replies\":null,\"retweets\":[0,0,1]},\"segment\":null}]},{\"id\":\"j1myw\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":null,\"billed_engagements\":null,\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":null,\"engagements\":null,\"follows\":null,\"impressions\":null,\"likes\":null,\"link_clicks\":null,\"qualified_impressions\":null,\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-11T00:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ix4yj\",\"j1myw\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-08T00:00:00Z\"}},\"time_series_length\":3}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-11T00:00:00Z",
+    "tool": "get_campaign",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "campaign_id": "buu8n"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-01-02T00:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"RUNNING\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"2acq3i\",\"id\":\"buu8n\",\"name\":\"Thimblepot New Year installs 2-12 Jan 2027\",\"purchase_order_number\":null,\"reasons_not_servable\":[],\"servable\":true,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-01-02T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"campaign_id\":\"buu8n\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-11T00:00:00Z",
+    "tool": "get_promoted_post",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "promoted_tweet_id": "ftyhu2"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-01-02T00:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"ftyhu2\",\"line_item_id\":\"ix4yj\",\"tweet_id\":\"2138062508651453803\",\"updated_at\":\"2027-01-02T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"promoted_tweet_id\":\"ftyhu2\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-11T00:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "line_item_id": "ix4yj",
+      "daily_budget_amount_local_micro": 46595885
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"thimblepot.co.uk\",\"advertiser_user_id\":\"1826771332102232779\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"buu8n\",\"categories\":[],\"created_at\":\"2027-01-02T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":46595885,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-01-13T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"2acq3i\",\"goal\":\"LINK_CLICKS\",\"id\":\"ix4yj\",\"ios_app_store_identifier\":null,\"name\":\"Offer post UK 18+ mobile\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-01-02T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":386571317,\"updated_at\":\"2027-01-11T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"daily_budget_amount_local_micro\":46595885,\"line_item_id\":\"ix4yj\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-11T00:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-01-13T01:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-01-13T01:00:00Z\",\"now\":\"2027-01-13T01:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-13T01:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ix4yj,j1myw",
+      "start_time": "2027-01-02T00:00:00Z",
+      "end_time": "2027-01-13T00:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"errors\":[{\"code\":\"INVALID_TIME_WINDOW\",\"message\":\"The end_time (2027-01-13 00:00:00 +0000) can be a maximum of 7.days+1.hours after the start_time (2027-01-02 00:00:00 +0000)\",\"parameter\":\"\"}],\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"end_time\":\"2027-01-13T00:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ix4yj\",\"j1myw\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"start_time\":\"2027-01-02T00:00:00Z\"}}}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2027-01-13T01:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ix4yj,j1myw",
+      "start_time": "2027-01-02T00:00:00Z",
+      "end_time": "2027-01-13T00:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"errors\":[{\"code\":\"INVALID_TIME_WINDOW\",\"message\":\"The end_time (2027-01-13 00:00:00 +0000) can be a maximum of 7.days+1.hours after the start_time (2027-01-02 00:00:00 +0000)\",\"parameter\":\"\"}],\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"end_time\":\"2027-01-13T00:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ix4yj\",\"j1myw\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"start_time\":\"2027-01-02T00:00:00Z\"}}}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2027-01-13T01:00:00Z",
+    "tool": "get_campaign",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "campaign_id": "buu8n"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-01-02T00:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"EXPIRED\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"2acq3i\",\"id\":\"buu8n\",\"name\":\"Thimblepot New Year installs 2-12 Jan 2027\",\"purchase_order_number\":null,\"reasons_not_servable\":[\"EXPIRED\"],\"servable\":false,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-01-02T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"campaign_id\":\"buu8n\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-13T01:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "entity": "CAMPAIGN",
+      "entity_ids": "buu8n",
+      "start_time": "2027-01-02T00:00:00Z",
+      "end_time": "2027-01-13T00:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"errors\":[{\"code\":\"INVALID_TIME_WINDOW\",\"message\":\"The end_time (2027-01-13 00:00:00 +0000) can be a maximum of 7.days+1.hours after the start_time (2027-01-02 00:00:00 +0000)\",\"parameter\":\"\"}],\"request\":{\"params\":{\"account_id\":\"184ophajccr\",\"end_time\":\"2027-01-13T00:00:00Z\",\"entity\":\"CAMPAIGN\",\"entity_ids\":[\"buu8n\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"start_time\":\"2027-01-02T00:00:00Z\"}}}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2027-01-13T01:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ix4yj,j1myw",
+      "start_time": "2027-01-02T00:00:00Z",
+      "end_time": "2027-01-09T00:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ix4yj\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[23760375,24319059,23571336,32277084,30714025,33052623,41501202],\"billed_engagements\":[78,134,105,106,108,108,141],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[9,13,12,11,10,11,11],\"engagements\":[78,134,105,106,108,108,141],\"follows\":null,\"impressions\":[12382,14871,14781,14616,16271,17506,20532],\"likes\":[3,4,4,2,1,5,3],\"link_clicks\":[9,13,12,11,10,11,11],\"qualified_impressions\":[12382,14871,14781,14616,16271,17506,20532],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"j1myw\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[13724423,14590747,15541133,6025327,6689061,6857992,0],\"billed_engagements\":[33,49,73,44,30,36,0],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[5,7,7,2,2,2,0],\"engagements\":[33,49,73,44,30,36,0],\"follows\":null,\"impressions\":[5593,9621,10023,5662,4026,4479,0],\"likes\":[0,0,1,1,0,1,0],\"link_clicks\":[5,7,7,2,2,2,0],\"qualified_impressions\":[5593,9621,10023,5662,4026,4479,0],\"replies\":null,\"retweets\":[1,0,0,0,0,0,0]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-09T00:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ix4yj\",\"j1myw\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-02T00:00:00Z\"}},\"time_series_length\":7}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-13T01:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ix4yj,j1myw",
+      "start_time": "2027-01-09T00:00:00Z",
+      "end_time": "2027-01-13T00:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ix4yj\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[43343818,43140056,43431719,43943170],\"billed_engagements\":[128,272,233,247],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[18,20,19,15],\"engagements\":[128,272,233,247],\"follows\":null,\"impressions\":[17700,39797,33491,36518],\"likes\":[2,4,3,4],\"link_clicks\":[18,20,19,15],\"qualified_impressions\":[17700,39797,33491,36518],\"replies\":[0,0,1,0],\"retweets\":[0,1,0,0]},\"segment\":null}]},{\"id\":\"j1myw\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":null,\"billed_engagements\":null,\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":null,\"engagements\":null,\"follows\":null,\"impressions\":null,\"likes\":null,\"link_clicks\":null,\"qualified_impressions\":null,\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-13T00:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ix4yj\",\"j1myw\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-09T00:00:00Z\"}},\"time_series_length\":4}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-13T01:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "entity": "PROMOTED_TWEET",
+      "entity_ids": "ftyhu2,veoefm",
+      "start_time": "2027-01-09T00:00:00Z",
+      "end_time": "2027-01-13T00:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ftyhu2\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[173858763],\"billed_engagements\":[880],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[72],\"engagements\":[880],\"follows\":null,\"impressions\":[127506],\"likes\":[13],\"link_clicks\":[72],\"qualified_impressions\":[127506],\"replies\":[1],\"retweets\":[1]},\"segment\":null}]},{\"id\":\"veoefm\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":null,\"billed_engagements\":null,\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":null,\"engagements\":null,\"follows\":null,\"impressions\":null,\"likes\":null,\"link_clicks\":null,\"qualified_impressions\":null,\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-13T00:00:00Z\",\"entity\":\"PROMOTED_TWEET\",\"entity_ids\":[\"ftyhu2\",\"veoefm\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-09T00:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-13T01:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ix4yj,j1myw",
+      "start_time": "2027-01-02T00:00:00Z",
+      "end_time": "2027-01-09T00:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ix4yj\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[209195704],\"billed_engagements\":[780],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[77],\"engagements\":[780],\"follows\":null,\"impressions\":[110959],\"likes\":[22],\"link_clicks\":[77],\"qualified_impressions\":[110959],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"j1myw\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[63428683],\"billed_engagements\":[265],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[25],\"engagements\":[265],\"follows\":null,\"impressions\":[39404],\"likes\":[3],\"link_clicks\":[25],\"qualified_impressions\":[39404],\"replies\":null,\"retweets\":[1]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-09T00:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ix4yj\",\"j1myw\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-02T00:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-13T01:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ix4yj,j1myw",
+      "start_time": "2027-01-09T00:00:00Z",
+      "end_time": "2027-01-13T00:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ix4yj\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[173858763],\"billed_engagements\":[880],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[72],\"engagements\":[880],\"follows\":null,\"impressions\":[127506],\"likes\":[13],\"link_clicks\":[72],\"qualified_impressions\":[127506],\"replies\":[1],\"retweets\":[1]},\"segment\":null}]},{\"id\":\"j1myw\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":null,\"billed_engagements\":null,\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":null,\"engagements\":null,\"follows\":null,\"impressions\":null,\"likes\":null,\"link_clicks\":null,\"qualified_impressions\":null,\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-13T00:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ix4yj\",\"j1myw\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-09T00:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-01-13T01:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "184ophajccr",
+      "entity": "CAMPAIGN",
+      "entity_ids": "buu8n",
+      "start_time": "2027-01-02T00:00:00Z",
+      "end_time": "2027-01-09T00:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "PUBLISHER_NETWORK"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"buu8n\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":null,\"billed_engagements\":null,\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":null,\"engagements\":null,\"follows\":null,\"impressions\":null,\"likes\":null,\"link_clicks\":null,\"qualified_impressions\":null,\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-01-09T00:00:00Z\",\"entity\":\"CAMPAIGN\",\"entity_ids\":[\"buu8n\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"PUBLISHER_NETWORK\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-01-02T00:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

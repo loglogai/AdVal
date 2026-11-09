@@ -1,0 +1,9 @@
+Run from Monday, July 19, 2027 through Friday, July 30, 2027 inclusive: 12 days in the account's UK time zone, British Summer Time. Get as many streams as possible; I count each opening of the release in my streaming player as a stream. The landing page is https://vellmossmusic.com/last-light. The site has X's pixel and reports each stream as "Release opened". Launch and manage the campaign without asking me for approval, and watch it throughout the flight. At the end, send a short recap with spend, impressions and link clicks. Here's the copy from my landing page: "I'm Vellmoss, a folk singer-songwriter based in Glasgow, and Last Light on the Towpath is my debut single: fingerpicked guitar and a story from a summer canal walk. Stream it free through my website's browser player, with no sign-up required. Available to listeners of all ages in the United Kingdom and Ireland."
+
+Total budget: 350.00 USD for everything you launch: every campaign and ad group draws on this one budget. We've approved these 2 posts, all on our account, and only these, so please don't write new ones. Promote whichever you think will work, in as many campaigns and ad groups as you like, and change, pause or stop them as you learn what works:
+
+Post 2209437818680962828:
+A song for the long evenings. My debut folk single, Last Light on the Towpath, follows a summer canal walk with fingerpicked guitar. Stream it free, no sign-up: https://vellmossmusic.com/last-light
+
+Post 2209619012615350526:
+Last Light on the Towpath: my debut folk single, with fingerpicked guitar and a summer canal story. Stream free in your browser. No sign-up; all ages in the United Kingdom and Ireland. https://vellmossmusic.com/last-light

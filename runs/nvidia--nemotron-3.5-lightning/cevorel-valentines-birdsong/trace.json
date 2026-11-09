@@ -1,0 +1,555 @@
+[
+  {
+    "at": "2027-02-09T11:00:00Z",
+    "tool": "list_ads_accounts",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"business_id\":null,\"business_name\":null,\"country_code\":\"NZ\",\"created_at\":\"2024-07-24T11:00:00Z\",\"deleted\":false,\"id\":\"18fzclzh8mo\",\"industry_type\":null,\"name\":\"Cevorel Birdsong\",\"timezone\":\"Pacific/Auckland\",\"timezone_switch_at\":\"2024-07-24T11:00:00Z\",\"updated_at\":\"2024-07-24T11:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-09T11:00:00Z",
+    "tool": "create_campaign",
+    "arguments": {
+      "account_id": "18fzclzh8mo",
+      "name": "Cevorel Valentine's Day 2027",
+      "funding_instrument_id": "18fzclzh8mo"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"errors\":[{\"code\":\"NOT_FOUND\",\"message\":\"Funding Instrument 18fzclzh8mo was not found for Account 18fzclzh8mo\",\"parameter\":\"funding_instrument_id\"}],\"request\":{\"params\":{\"account_id\":\"18fzclzh8mo\",\"funding_instrument_id\":\"18fzclzh8mo\",\"name\":\"Cevorel Valentine's Day 2027\"}}}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2027-02-09T11:00:00Z",
+    "tool": "list_funding_instruments",
+    "arguments": {
+      "account_id": "18fzclzh8mo"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"able_to_fund\":true,\"created_at\":\"2024-07-24T11:00:00Z\",\"credit_limit_local_micro\":null,\"credit_remaining_local_micro\":null,\"currency\":\"USD\",\"deleted\":false,\"description\":\"Visa ending in 0928\",\"end_time\":null,\"entity_status\":\"ACTIVE\",\"funded_amount_local_micro\":0,\"id\":\"usnzq8\",\"io_header\":null,\"reasons_not_able_to_fund\":[],\"start_time\":\"2024-07-24T11:00:00Z\",\"type\":\"CREDIT_CARD\",\"updated_at\":\"2024-07-24T11:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"18fzclzh8mo\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-09T11:00:00Z",
+    "tool": "create_campaign",
+    "arguments": {
+      "account_id": "18fzclzh8mo",
+      "name": "Cevorel Valentine's Day 2027",
+      "funding_instrument_id": "usnzq8"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-02-09T11:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"PAUSED\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"usnzq8\",\"id\":\"r5zbi\",\"name\":\"Cevorel Valentine's Day 2027\",\"purchase_order_number\":null,\"reasons_not_servable\":[\"PAUSED_BY_ADVERTISER\"],\"servable\":false,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-02-09T11:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18fzclzh8mo\",\"funding_instrument_id\":\"usnzq8\",\"name\":\"Cevorel Valentine's Day 2027\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-09T11:00:00Z",
+    "tool": "list_line_item_placements",
+    "arguments": {
+      "product_type": "PROMOTED_TWEETS"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"placements\":[[\"ALL_ON_TWITTER\"],[\"ALL_ON_TWITTER\",\"PUBLISHER_NETWORK\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL_LANDSCAPE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_NATIVE\"],[\"PUBLISHER_NETWORK\"],[\"PUBLISHER_NETWORK\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"PUBLISHER_NETWORK\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"PUBLISHER_NETWORK\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"PUBLISHER_NETWORK\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\"],[\"TAP_BANNER\",\"TAP_FULL\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_NATIVE\"],[\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\"],[\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_NATIVE\"],[\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TWITTER_MEDIA_VIEWER\"],[\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TWITTER_REPLIES\"],[\"TWITTER_SEARCH\"],[\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TWITTER_TIMELINE\"]],\"product_type\":\"PROMOTED_TWEETS\"}],\"next_cursor\":null,\"request\":{\"params\":{\"product_type\":\"PROMOTED_TWEETS\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-09T11:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "18fzclzh8mo",
+      "campaign_id": "r5zbi",
+      "objective": "WEBSITE_CLICKS",
+      "placements": "TWITTER_TIMELINE",
+      "daily_budget_amount_local_micro": 45000000,
+      "start_time": "2027-02-10T00:00:00Z",
+      "end_time": "2027-02-14T23:59:59Z",
+      "name": "Cevorel Valentine's Post 1"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1816065790573800284\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"r5zbi\",\"categories\":[],\"created_at\":\"2027-02-09T11:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":45000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-02-14T23:59:59Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"usnzq8\",\"goal\":\"LINK_CLICKS\",\"id\":\"wix6q\",\"ios_app_store_identifier\":null,\"name\":\"Cevorel Valentine's Post 1\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"TWITTER_TIMELINE\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-02-10T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-02-09T11:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18fzclzh8mo\",\"campaign_id\":\"r5zbi\",\"daily_budget_amount_local_micro\":45000000,\"end_time\":\"2027-02-14T23:59:59Z\",\"name\":\"Cevorel Valentine's Post 1\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"TWITTER_TIMELINE\"],\"start_time\":\"2027-02-10T00:00:00Z\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-09T11:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "18fzclzh8mo",
+      "campaign_id": "r5zbi",
+      "objective": "WEBSITE_CLICKS",
+      "placements": "TWITTER_TIMELINE",
+      "daily_budget_amount_local_micro": 45000000,
+      "start_time": "2027-02-10T00:00:00Z",
+      "end_time": "2027-02-14T23:59:59Z",
+      "name": "Cevorel Valentine's Post 2"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1816065790573800284\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"r5zbi\",\"categories\":[],\"created_at\":\"2027-02-09T11:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":45000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-02-14T23:59:59Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"usnzq8\",\"goal\":\"LINK_CLICKS\",\"id\":\"tucbs\",\"ios_app_store_identifier\":null,\"name\":\"Cevorel Valentine's Post 2\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"TWITTER_TIMELINE\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-02-10T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-02-09T11:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18fzclzh8mo\",\"campaign_id\":\"r5zbi\",\"daily_budget_amount_local_micro\":45000000,\"end_time\":\"2027-02-14T23:59:59Z\",\"name\":\"Cevorel Valentine's Post 2\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"TWITTER_TIMELINE\"],\"start_time\":\"2027-02-10T00:00:00Z\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-09T11:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "18fzclzh8mo",
+      "line_item_id": "wix6q",
+      "tweet_ids": "2152361729850190063"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-02-09T11:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"i87gk4\",\"line_item_id\":\"wix6q\",\"tweet_id\":\"2152361729850190063\",\"updated_at\":\"2027-02-09T11:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"18fzclzh8mo\",\"line_item_id\":\"wix6q\",\"tweet_ids\":[\"2152361729850190063\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-09T11:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "18fzclzh8mo",
+      "line_item_id": "tucbs",
+      "tweet_ids": "2152542923781691605"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-02-09T11:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"nvofxq\",\"line_item_id\":\"tucbs\",\"tweet_id\":\"2152542923781691605\",\"updated_at\":\"2027-02-09T11:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"18fzclzh8mo\",\"line_item_id\":\"tucbs\",\"tweet_ids\":[\"2152542923781691605\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-09T11:00:00Z",
+    "tool": "activate_campaign",
+    "arguments": {
+      "account_id": "18fzclzh8mo",
+      "campaign_id": "r5zbi"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-02-09T11:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"RUNNING\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"usnzq8\",\"id\":\"r5zbi\",\"name\":\"Cevorel Valentine's Day 2027\",\"purchase_order_number\":null,\"reasons_not_servable\":[],\"servable\":true,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-02-09T11:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18fzclzh8mo\",\"campaign_id\":\"r5zbi\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-09T11:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "18fzclzh8mo",
+      "line_item_id": "wix6q"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1816065790573800284\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"r5zbi\",\"categories\":[],\"created_at\":\"2027-02-09T11:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":45000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-02-14T23:59:59Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"usnzq8\",\"goal\":\"LINK_CLICKS\",\"id\":\"wix6q\",\"ios_app_store_identifier\":null,\"name\":\"Cevorel Valentine's Post 1\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"TWITTER_TIMELINE\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-02-10T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-02-09T11:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18fzclzh8mo\",\"line_item_id\":\"wix6q\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-09T11:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "18fzclzh8mo",
+      "line_item_id": "tucbs"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1816065790573800284\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"r5zbi\",\"categories\":[],\"created_at\":\"2027-02-09T11:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":45000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-02-14T23:59:59Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"usnzq8\",\"goal\":\"LINK_CLICKS\",\"id\":\"tucbs\",\"ios_app_store_identifier\":null,\"name\":\"Cevorel Valentine's Post 2\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"TWITTER_TIMELINE\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-02-10T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-02-09T11:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18fzclzh8mo\",\"line_item_id\":\"tucbs\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-09T11:00:00Z",
+    "tool": "get_current_time",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-02-14T12:00:00Z\",\"now\":\"2027-02-09T11:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-09T11:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18fzclzh8mo",
+      "entity": "LINE_ITEM",
+      "entity_ids": "wix6q,tucbs",
+      "start_time": "2027-02-09T11:00:00Z",
+      "end_time": "2027-02-14T23:59:59Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"errors\":[{\"code\":\"INVALID_TIME_WINDOW\",\"message\":\"Time cannot be fractional hours\",\"parameter\":\"end_time\"}],\"request\":{\"params\":{\"account_id\":\"18fzclzh8mo\",\"end_time\":\"2027-02-14T23:59:59Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"wix6q\",\"tucbs\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"start_time\":\"2027-02-09T11:00:00Z\"}}}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2027-02-09T11:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18fzclzh8mo",
+      "entity": "LINE_ITEM",
+      "entity_ids": "wix6q,tucbs",
+      "start_time": "2027-02-10T00:00:00Z",
+      "end_time": "2027-02-15T00:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"errors\":[{\"code\":\"INVALID_TIME_WINDOW\",\"message\":\"Expect time to be midnight in the account's local timezone for day granularity\",\"parameter\":\"\"},{\"code\":\"INVALID_TIME_WINDOW\",\"message\":\"Expect time to be midnight in the account's local timezone for day granularity\",\"parameter\":\"\"}],\"request\":{\"params\":{\"account_id\":\"18fzclzh8mo\",\"end_time\":\"2027-02-15T00:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"wix6q\",\"tucbs\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"start_time\":\"2027-02-10T00:00:00Z\"}}}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2027-02-09T11:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18fzclzh8mo",
+      "entity": "LINE_ITEM",
+      "entity_ids": "wix6q,tucbs",
+      "start_time": "2027-02-09T11:00:00Z",
+      "end_time": "2027-02-14T11:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"wix6q\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":null,\"billed_engagements\":null,\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":null,\"engagements\":null,\"follows\":null,\"impressions\":null,\"likes\":null,\"link_clicks\":null,\"qualified_impressions\":null,\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"tucbs\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":null,\"billed_engagements\":null,\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":null,\"engagements\":null,\"follows\":null,\"impressions\":null,\"likes\":null,\"link_clicks\":null,\"qualified_impressions\":null,\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-02-14T11:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"wix6q\",\"tucbs\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-02-09T11:00:00Z\"}},\"time_series_length\":5}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-09T11:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18fzclzh8mo",
+      "line_item_id": "wix6q",
+      "start_time": "2027-02-09T11:00:00Z",
+      "end_time": "2027-02-15T00:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1816065790573800284\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"r5zbi\",\"categories\":[],\"created_at\":\"2027-02-09T11:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":45000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-02-15T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"usnzq8\",\"goal\":\"LINK_CLICKS\",\"id\":\"wix6q\",\"ios_app_store_identifier\":null,\"name\":\"Cevorel Valentine's Post 1\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"TWITTER_TIMELINE\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-02-09T11:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-02-09T11:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18fzclzh8mo\",\"end_time\":\"2027-02-15T00:00:00Z\",\"line_item_id\":\"wix6q\",\"start_time\":\"2027-02-09T11:00:00Z\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-09T11:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18fzclzh8mo",
+      "line_item_id": "tucbs",
+      "start_time": "2027-02-09T11:00:00Z",
+      "end_time": "2027-02-15T00:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1816065790573800284\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"r5zbi\",\"categories\":[],\"created_at\":\"2027-02-09T11:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":45000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-02-15T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"usnzq8\",\"goal\":\"LINK_CLICKS\",\"id\":\"tucbs\",\"ios_app_store_identifier\":null,\"name\":\"Cevorel Valentine's Post 2\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"TWITTER_TIMELINE\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-02-09T11:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-02-09T11:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18fzclzh8mo\",\"end_time\":\"2027-02-15T00:00:00Z\",\"line_item_id\":\"tucbs\",\"start_time\":\"2027-02-09T11:00:00Z\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-09T11:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18fzclzh8mo",
+      "line_item_id": "wix6q",
+      "end_time": "2027-02-14T11:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1816065790573800284\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"r5zbi\",\"categories\":[],\"created_at\":\"2027-02-09T11:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":45000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-02-14T11:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"usnzq8\",\"goal\":\"LINK_CLICKS\",\"id\":\"wix6q\",\"ios_app_store_identifier\":null,\"name\":\"Cevorel Valentine's Post 1\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"TWITTER_TIMELINE\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-02-09T11:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-02-09T11:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18fzclzh8mo\",\"end_time\":\"2027-02-14T11:00:00Z\",\"line_item_id\":\"wix6q\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-09T11:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18fzclzh8mo",
+      "line_item_id": "tucbs",
+      "end_time": "2027-02-14T11:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1816065790573800284\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"r5zbi\",\"categories\":[],\"created_at\":\"2027-02-09T11:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":45000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-02-14T11:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"usnzq8\",\"goal\":\"LINK_CLICKS\",\"id\":\"tucbs\",\"ios_app_store_identifier\":null,\"name\":\"Cevorel Valentine's Post 2\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"TWITTER_TIMELINE\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-02-09T11:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-02-09T11:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18fzclzh8mo\",\"end_time\":\"2027-02-14T11:00:00Z\",\"line_item_id\":\"tucbs\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-09T11:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18fzclzh8mo",
+      "entity": "LINE_ITEM",
+      "entity_ids": "wix6q,tucbs",
+      "start_time": "2027-02-09T11:00:00Z",
+      "end_time": "2027-02-14T11:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"wix6q\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":null,\"billed_engagements\":null,\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":null,\"engagements\":null,\"follows\":null,\"impressions\":null,\"likes\":null,\"link_clicks\":null,\"qualified_impressions\":null,\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"tucbs\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":null,\"billed_engagements\":null,\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":null,\"engagements\":null,\"follows\":null,\"impressions\":null,\"likes\":null,\"link_clicks\":null,\"qualified_impressions\":null,\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-02-14T11:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"wix6q\",\"tucbs\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-02-09T11:00:00Z\"}},\"time_series_length\":5}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-09T11:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18fzclzh8mo",
+      "entity": "LINE_ITEM",
+      "entity_ids": "wix6q,tucbs",
+      "start_time": "2027-02-09T11:00:00Z",
+      "end_time": "2027-02-10T00:00:00Z",
+      "granularity": "HOUR",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"wix6q\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":null,\"billed_engagements\":null,\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":null,\"engagements\":null,\"follows\":null,\"impressions\":null,\"likes\":null,\"link_clicks\":null,\"qualified_impressions\":null,\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"tucbs\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":null,\"billed_engagements\":null,\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":null,\"engagements\":null,\"follows\":null,\"impressions\":null,\"likes\":null,\"link_clicks\":null,\"qualified_impressions\":null,\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-02-10T00:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"wix6q\",\"tucbs\"],\"granularity\":\"HOUR\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-02-09T11:00:00Z\"}},\"time_series_length\":13}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-09T11:00:00Z",
+    "tool": "get_line_item",
+    "arguments": {
+      "account_id": "18fzclzh8mo",
+      "line_item_id": "wix6q"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1816065790573800284\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"r5zbi\",\"categories\":[],\"created_at\":\"2027-02-09T11:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":45000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-02-14T11:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"usnzq8\",\"goal\":\"LINK_CLICKS\",\"id\":\"wix6q\",\"ios_app_store_identifier\":null,\"name\":\"Cevorel Valentine's Post 1\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"TWITTER_TIMELINE\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-02-09T11:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-02-09T11:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18fzclzh8mo\",\"line_item_id\":\"wix6q\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-09T11:00:00Z",
+    "tool": "get_line_item",
+    "arguments": {
+      "account_id": "18fzclzh8mo",
+      "line_item_id": "tucbs"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1816065790573800284\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"r5zbi\",\"categories\":[],\"created_at\":\"2027-02-09T11:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":45000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-02-14T11:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"usnzq8\",\"goal\":\"LINK_CLICKS\",\"id\":\"tucbs\",\"ios_app_store_identifier\":null,\"name\":\"Cevorel Valentine's Post 2\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"TWITTER_TIMELINE\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-02-09T11:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-02-09T11:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18fzclzh8mo\",\"line_item_id\":\"tucbs\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-09T11:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-02-10T12:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-02-14T12:00:00Z\",\"now\":\"2027-02-10T12:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-10T12:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18fzclzh8mo",
+      "entity": "LINE_ITEM",
+      "entity_ids": "wix6q,tucbs",
+      "start_time": "2027-02-09T11:00:00Z",
+      "end_time": "2027-02-10T12:00:00Z",
+      "granularity": "HOUR",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"wix6q\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[1197045,1915858,3257438,3312447,663644,2035662,2072951,2111203,1422572,1435125,735029,2909981,3436068,1977413,1913737,3209007,2970507,0,1745901,1712742,0,620771,1344165,2897498,0],\"billed_engagements\":[41,47,51,66,45,33,42,30,29,23,35,51,37,23,38,35,40,23,25,41,20,41,39,31,0],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[2,3,5,5,1,3,3,3,2,2,1,4,5,3,3,5,5,0,3,3,0,1,2,4,0],\"engagements\":[41,47,51,66,45,33,42,30,29,23,35,51,37,23,38,35,40,23,25,41,20,41,39,31,0],\"follows\":null,\"impressions\":[6382,7307,6860,7224,6500,6357,6451,5795,4928,4023,4587,5347,4717,4198,5190,5011,5288,4850,5001,4367,3418,5515,6276,4973,0],\"likes\":[0,0,0,1,1,0,0,1,1,1,1,0,0,0,0,0,0,0,1,0,0,2,1,0,0],\"link_clicks\":[2,3,5,5,1,3,3,3,2,2,1,4,5,3,3,5,5,0,3,3,0,1,2,4,0],\"qualified_impressions\":[6382,7307,6860,7224,6500,6357,6451,5795,4928,4023,4587,5347,4717,4198,5190,5011,5288,4850,5001,4367,3418,5515,6276,4973,0],\"replies\":null,\"retweets\":[0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0]},\"segment\":null}]},{\"id\":\"tucbs\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[552332,1791604,607799,1895957,3843169,3209086,2596242,2639048,3313671,662390,2724131,2675904,1257257,1219455,1771923,1790380,2221053,1052738,1093095,1081972,1090633,1761144,1891777,2022329,0],\"billed_engagements\":[44,41,35,61,53,48,51,41,40,33,41,39,33,29,25,32,42,40,33,42,39,38,49,40,0],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[1,3,1,3,6,5,4,4,5,1,4,4,2,2,3,3,4,2,2,2,2,3,3,3,0],\"engagements\":[44,41,35,61,53,48,51,41,40,33,41,39,33,29,25,32,42,40,33,42,39,38,49,40,0],\"follows\":null,\"impressions\":[6669,7726,7295,7965,7618,6808,6936,5907,5085,3789,4785,4736,4071,4004,5133,4986,6069,5937,5447,5551,5121,6601,6294,6487,0],\"likes\":[3,1,2,0,0,1,3,0,1,2,1,1,0,2,1,1,0,0,0,2,0,0,1,0,0],\"link_clicks\":[1,3,1,3,6,5,4,4,5,1,4,4,2,2,3,3,4,2,2,2,2,3,3,3,0],\"qualified_impressions\":[6669,7726,7295,7965,7618,6808,6936,5907,5085,3789,4785,4736,4071,4004,5133,4986,6069,5937,5447,5551,5121,6601,6294,6487,0],\"replies\":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0],\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-02-10T12:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"wix6q\",\"tucbs\"],\"granularity\":\"HOUR\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-02-09T11:00:00Z\"}},\"time_series_length\":25}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-10T12:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-02-11T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-02-14T12:00:00Z\",\"now\":\"2027-02-11T06:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-11T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18fzclzh8mo",
+      "entity": "LINE_ITEM",
+      "entity_ids": "wix6q,tucbs",
+      "start_time": "2027-02-09T11:00:00Z",
+      "end_time": "2027-02-11T06:00:00Z",
+      "granularity": "HOUR",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"wix6q\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[1197045,1915858,3257438,3312447,663644,2035662,2072951,2111203,1422572,1435125,735029,2909981,3436068,1977413,1913737,3209007,2970507,0,1745901,1712742,0,620771,1344165,2897498,3216585,1309676,680145,677835,1405074,5069098,1422256,1491880,2288996,771067,1594721,4783085,1497083,1478600,2156022,3592582,1373902,667346,0],\"billed_engagements\":[41,47,51,66,45,33,42,30,29,23,35,51,37,23,38,35,40,23,25,41,20,41,39,31,52,47,51,45,48,45,49,43,35,26,31,46,23,25,41,42,39,35,0],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[2,3,5,5,1,3,3,3,2,2,1,4,5,3,3,5,5,0,3,3,0,1,2,4,5,2,1,1,2,7,2,2,3,1,2,6,2,2,3,5,2,1,0],\"engagements\":[41,47,51,66,45,33,42,30,29,23,35,51,37,23,38,35,40,23,25,41,20,41,39,31,52,47,51,45,48,45,49,43,35,26,31,46,23,25,41,42,39,35,0],\"follows\":null,\"impressions\":[6382,7307,6860,7224,6500,6357,6451,5795,4928,4023,4587,5347,4717,4198,5190,5011,5288,4850,5001,4367,3418,5515,6276,4973,6557,6748,6490,6414,6337,7206,5922,5681,4908,4824,4381,4699,3944,4374,5104,4911,4691,4928,0],\"likes\":[0,0,0,1,1,0,0,1,1,1,1,0,0,0,0,0,0,0,1,0,0,2,1,0,4,1,0,2,5,1,3,0,0,0,0,2,0,1,1,1,1,0,0],\"link_clicks\":[2,3,5,5,1,3,3,3,2,2,1,4,5,3,3,5,5,0,3,3,0,1,2,4,5,2,1,1,2,7,2,2,3,1,2,6,2,2,3,5,2,1,0],\"qualified_impressions\":[6382,7307,6860,7224,6500,6357,6451,5795,4928,4023,4587,5347,4717,4198,5190,5011,5288,4850,5001,4367,3418,5515,6276,4973,6557,6748,6490,6414,6337,7206,5922,5681,4908,4824,4381,4699,3944,4374,5104,4911,4691,4928,0],\"replies\":null,\"retweets\":[0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]},\"segment\":null}]},{\"id\":\"tucbs\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[552332,1791604,607799,1895957,3843169,3209086,2596242,2639048,3313671,662390,2724131,2675904,1257257,1219455,1771923,1790380,2221053,1052738,1093095,1081972,1090633,1761144,1891777,2022329,0,2499888,5794929,1888829,646117,1993074,1287486,681107,2087167,700829,710879,1406030,650926,1263865,3662840,1220067,1753170,4511549,0],\"billed_engagements\":[44,41,35,61,53,48,51,41,40,33,41,39,33,29,25,32,42,40,33,42,39,38,49,40,49,64,48,40,32,40,37,46,39,36,40,27,34,39,63,50,63,53,0],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[1,3,1,3,6,5,4,4,5,1,4,4,2,2,3,3,4,2,2,2,2,3,3,3,0,4,9,3,1,3,2,1,3,1,1,2,1,2,6,2,3,8,0],\"engagements\":[44,41,35,61,53,48,51,41,40,33,41,39,33,29,25,32,42,40,33,42,39,38,49,40,49,64,48,40,32,40,37,46,39,36,40,27,34,39,63,50,63,53,0],\"follows\":null,\"impressions\":[6669,7726,7295,7965,7618,6808,6936,5907,5085,3789,4785,4736,4071,4004,5133,4986,6069,5937,5447,5551,5121,6601,6294,6487,6648,7392,7002,6029,5911,6876,6248,5795,4988,5211,4901,5267,5048,5989,7200,6731,8040,8643,0],\"likes\":[3,1,2,0,0,1,3,0,1,2,1,1,0,2,1,1,0,0,0,2,0,0,1,0,2,4,1,2,1,1,1,4,1,1,0,0,0,1,0,2,1,0,0],\"link_clicks\":[1,3,1,3,6,5,4,4,5,1,4,4,2,2,3,3,4,2,2,2,2,3,3,3,0,4,9,3,1,3,2,1,3,1,1,2,1,2,6,2,3,8,0],\"qualified_impressions\":[6669,7726,7295,7965,7618,6808,6936,5907,5085,3789,4785,4736,4071,4004,5133,4986,6069,5937,5447,5551,5121,6601,6294,6487,6648,7392,7002,6029,5911,6876,6248,5795,4988,5211,4901,5267,5048,5989,7200,6731,8040,8643,0],\"replies\":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0],\"retweets\":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-02-11T06:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"wix6q\",\"tucbs\"],\"granularity\":\"HOUR\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-02-09T11:00:00Z\"}},\"time_series_length\":43}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-02-11T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18fzclzh8mo",
+      "entity": "CAMPAIGN",
+      "entity_ids": "r5zbi",
+      "start_time": "2027-02-09T11:00:00Z",
+      "end_time": "2027-02-11T06:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"errors\":[{\"code\":\"INVALID_TIME_WINDOW\",\"message\":\"Expect time to be midnight in the account's local timezone for day granularity\",\"parameter\":\"\"}],\"request\":{\"params\":{\"account_id\":\"18fzclzh8mo\",\"end_time\":\"2027-02-11T06:00:00Z\",\"entity\":\"CAMPAIGN\",\"entity_ids\":[\"r5zbi\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"start_time\":\"2027-02-09T11:00:00Z\"}}}"
+        }
+      ],
+      "isError": true
+    }
+  }
+]

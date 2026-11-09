@@ -1,0 +1,1545 @@
+[
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "list_ads_accounts",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"business_id\":null,\"business_name\":null,\"country_code\":\"US\",\"created_at\":\"2025-03-17T04:00:00Z\",\"deleted\":false,\"id\":\"18j6bxmsxe7\",\"industry_type\":null,\"name\":\"Yuzustride\",\"timezone\":\"America/New_York\",\"timezone_switch_at\":\"2025-03-17T04:00:00Z\",\"updated_at\":\"2025-03-17T04:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "get_current_time",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-11-01T05:00:00Z\",\"now\":\"2027-10-23T04:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "list_funding_instruments",
+    "arguments": {
+      "account_id": "18j6bxmsxe7"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"able_to_fund\":true,\"created_at\":\"2025-03-17T04:00:00Z\",\"credit_limit_local_micro\":null,\"credit_remaining_local_micro\":null,\"currency\":\"USD\",\"deleted\":false,\"description\":\"Visa ending in 5172\",\"end_time\":null,\"entity_status\":\"ACTIVE\",\"funded_amount_local_micro\":0,\"id\":\"aanmii\",\"io_header\":null,\"reasons_not_able_to_fund\":[],\"start_time\":\"2025-03-17T04:00:00Z\",\"type\":\"CREDIT_CARD\",\"updated_at\":\"2025-03-17T04:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "list_web_event_tags",
+    "arguments": {
+      "account_id": "18j6bxmsxe7"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "q": "United States",
+      "location_type": "COUNTRIES"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"country_code\":\"US\",\"location_type\":\"COUNTRIES\",\"name\":\"United States\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\"},{\"country_code\":\"UM\",\"location_type\":\"COUNTRIES\",\"name\":\"United States Minor Outlying Islands\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"08fbcf4cbc4bc5b9\"},{\"country_code\":\"AE\",\"location_type\":\"COUNTRIES\",\"name\":\"United Arab Emirates\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3f63906fc8aa5a7d\"},{\"country_code\":\"GB\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"}],\"next_cursor\":null,\"request\":{\"params\":{\"location_type\":\"COUNTRIES\",\"q\":\"United States\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "q": "Canada",
+      "location_type": "COUNTRIES"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"country_code\":\"CA\",\"location_type\":\"COUNTRIES\",\"name\":\"Canada\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3376992a082d67c7\"}],\"next_cursor\":null,\"request\":{\"params\":{\"location_type\":\"COUNTRIES\",\"q\":\"Canada\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "search_targeting_platforms",
+    "arguments": {
+      "q": "iOS"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"name\":\"iOS\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\"}],\"request\":{\"params\":{\"q\":\"iOS\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "search_targeting_platforms",
+    "arguments": {
+      "q": "Android"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"name\":\"Android\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"1\"}],\"request\":{\"params\":{\"q\":\"Android\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "search_targeting_interests",
+    "arguments": {
+      "q": "anime"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"name\":\"Anime\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925949503837798401\"}],\"request\":{\"params\":{\"q\":\"anime\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "create_campaign",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "funding_instrument_id": "aanmii",
+      "name": "Yuzustride Halloween 2027"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-10-23T04:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"PAUSED\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"aanmii\",\"id\":\"536eg\",\"name\":\"Yuzustride Halloween 2027\",\"purchase_order_number\":null,\"reasons_not_servable\":[\"PAUSED_BY_ADVERTISER\"],\"servable\":false,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-10-23T04:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"funding_instrument_id\":\"aanmii\",\"name\":\"Yuzustride Halloween 2027\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "campaign_id": "536eg",
+      "name": "Halloween \u2013 Keywords",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "placements": "ALL_ON_TWITTER",
+      "product_type": "PROMOTED_TWEETS",
+      "daily_budget_amount_local_micro": 30000000,
+      "total_budget_amount_local_micro": 270000000,
+      "start_time": "2027-10-23T04:00:00Z",
+      "end_time": "2027-11-01T04:00:00Z",
+      "bid_strategy": "AUTO",
+      "standard_delivery": true
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1901483630392509783\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"536eg\",\"categories\":[],\"created_at\":\"2027-10-23T04:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":30000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-11-01T04:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"aanmii\",\"goal\":\"LINK_CLICKS\",\"id\":\"rpbhi\",\"ios_app_store_identifier\":null,\"name\":\"Halloween \u2013 Keywords\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-10-23T04:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":270000000,\"updated_at\":\"2027-10-23T04:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"bid_strategy\":\"AUTO\",\"campaign_id\":\"536eg\",\"daily_budget_amount_local_micro\":30000000,\"end_time\":\"2027-11-01T04:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"Halloween \u2013 Keywords\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-10-23T04:00:00Z\",\"total_budget_amount_local_micro\":270000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "campaign_id": "536eg",
+      "name": "Halloween \u2013 Anime Interest",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "placements": "ALL_ON_TWITTER",
+      "product_type": "PROMOTED_TWEETS",
+      "daily_budget_amount_local_micro": 25000000,
+      "total_budget_amount_local_micro": 225000000,
+      "start_time": "2027-10-23T04:00:00Z",
+      "end_time": "2027-11-01T04:00:00Z",
+      "bid_strategy": "AUTO",
+      "standard_delivery": true
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1901483630392509783\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"536eg\",\"categories\":[],\"created_at\":\"2027-10-23T04:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":25000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-11-01T04:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"aanmii\",\"goal\":\"LINK_CLICKS\",\"id\":\"2c80p\",\"ios_app_store_identifier\":null,\"name\":\"Halloween \u2013 Anime Interest\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-10-23T04:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":225000000,\"updated_at\":\"2027-10-23T04:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"bid_strategy\":\"AUTO\",\"campaign_id\":\"536eg\",\"daily_budget_amount_local_micro\":25000000,\"end_time\":\"2027-11-01T04:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"Halloween \u2013 Anime Interest\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-10-23T04:00:00Z\",\"total_budget_amount_local_micro\":225000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "campaign_id": "536eg",
+      "name": "Halloween \u2013 Broad US/CA",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "placements": "ALL_ON_TWITTER",
+      "product_type": "PROMOTED_TWEETS",
+      "daily_budget_amount_local_micro": 22000000,
+      "total_budget_amount_local_micro": 198000000,
+      "start_time": "2027-10-23T04:00:00Z",
+      "end_time": "2027-11-01T04:00:00Z",
+      "bid_strategy": "AUTO",
+      "standard_delivery": true
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1901483630392509783\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"536eg\",\"categories\":[],\"created_at\":\"2027-10-23T04:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":22000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-11-01T04:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"aanmii\",\"goal\":\"LINK_CLICKS\",\"id\":\"pcot9\",\"ios_app_store_identifier\":null,\"name\":\"Halloween \u2013 Broad US/CA\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-10-23T04:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":198000000,\"updated_at\":\"2027-10-23T04:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"bid_strategy\":\"AUTO\",\"campaign_id\":\"536eg\",\"daily_budget_amount_local_micro\":22000000,\"end_time\":\"2027-11-01T04:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"Halloween \u2013 Broad US/CA\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-10-23T04:00:00Z\",\"total_budget_amount_local_micro\":198000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "line_item_id": "rpbhi",
+      "targeting_type": "LOCATION",
+      "targeting_value": "96683cc9126741d1",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"id\":\"l7gqjei\",\"line_item_id\":\"rpbhi\",\"location_type\":\"COUNTRIES\",\"name\":\"United States\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\",\"updated_at\":\"2027-10-23T04:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"line_item_id\":\"rpbhi\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "line_item_id": "rpbhi",
+      "targeting_type": "LOCATION",
+      "targeting_value": "3376992a082d67c7",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"id\":\"1iyqanx\",\"line_item_id\":\"rpbhi\",\"location_type\":\"COUNTRIES\",\"name\":\"Canada\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3376992a082d67c7\",\"updated_at\":\"2027-10-23T04:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"line_item_id\":\"rpbhi\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3376992a082d67c7\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "line_item_id": "rpbhi",
+      "targeting_type": "PLATFORM",
+      "targeting_value": "0",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"id\":\"rv9o1jj\",\"line_item_id\":\"rpbhi\",\"name\":\"iOS\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\",\"updated_at\":\"2027-10-23T04:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"line_item_id\":\"rpbhi\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "line_item_id": "rpbhi",
+      "targeting_type": "PLATFORM",
+      "targeting_value": "1",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"id\":\"7v6enk7\",\"line_item_id\":\"rpbhi\",\"name\":\"Android\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"1\",\"updated_at\":\"2027-10-23T04:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"line_item_id\":\"rpbhi\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "line_item_id": "rpbhi",
+      "targeting_type": "BROAD_KEYWORD",
+      "targeting_value": "anime streaming",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"id\":\"v7vkn5g\",\"line_item_id\":\"rpbhi\",\"name\":\"anime streaming\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"anime streaming\",\"updated_at\":\"2027-10-23T04:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"line_item_id\":\"rpbhi\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"anime streaming\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "line_item_id": "rpbhi",
+      "targeting_type": "BROAD_KEYWORD",
+      "targeting_value": "watch anime",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"id\":\"7xlo4jc\",\"line_item_id\":\"rpbhi\",\"name\":\"watch anime\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"watch anime\",\"updated_at\":\"2027-10-23T04:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"line_item_id\":\"rpbhi\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"watch anime\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "line_item_id": "rpbhi",
+      "targeting_type": "BROAD_KEYWORD",
+      "targeting_value": "sports anime",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"id\":\"5nwfhyn\",\"line_item_id\":\"rpbhi\",\"name\":\"sports anime\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"sports anime\",\"updated_at\":\"2027-10-23T04:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"line_item_id\":\"rpbhi\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"sports anime\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "line_item_id": "rpbhi",
+      "targeting_type": "BROAD_KEYWORD",
+      "targeting_value": "anime series",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"id\":\"inxeawg\",\"line_item_id\":\"rpbhi\",\"name\":\"anime series\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"anime series\",\"updated_at\":\"2027-10-23T04:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"line_item_id\":\"rpbhi\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"anime series\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "line_item_id": "rpbhi",
+      "targeting_type": "BROAD_KEYWORD",
+      "targeting_value": "anime free trial",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"id\":\"a4ygwci\",\"line_item_id\":\"rpbhi\",\"name\":\"anime free trial\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"anime free trial\",\"updated_at\":\"2027-10-23T04:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"line_item_id\":\"rpbhi\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"anime free trial\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "line_item_id": "2c80p",
+      "targeting_type": "LOCATION",
+      "targeting_value": "96683cc9126741d1",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"id\":\"a59gbaj\",\"line_item_id\":\"2c80p\",\"location_type\":\"COUNTRIES\",\"name\":\"United States\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\",\"updated_at\":\"2027-10-23T04:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"line_item_id\":\"2c80p\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "line_item_id": "2c80p",
+      "targeting_type": "LOCATION",
+      "targeting_value": "3376992a082d67c7",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"id\":\"87lvueo\",\"line_item_id\":\"2c80p\",\"location_type\":\"COUNTRIES\",\"name\":\"Canada\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3376992a082d67c7\",\"updated_at\":\"2027-10-23T04:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"line_item_id\":\"2c80p\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3376992a082d67c7\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "line_item_id": "2c80p",
+      "targeting_type": "PLATFORM",
+      "targeting_value": "0",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"id\":\"8oeuy2u\",\"line_item_id\":\"2c80p\",\"name\":\"iOS\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\",\"updated_at\":\"2027-10-23T04:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"line_item_id\":\"2c80p\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "line_item_id": "2c80p",
+      "targeting_type": "PLATFORM",
+      "targeting_value": "1",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"id\":\"ajaadxk\",\"line_item_id\":\"2c80p\",\"name\":\"Android\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"1\",\"updated_at\":\"2027-10-23T04:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"line_item_id\":\"2c80p\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "line_item_id": "2c80p",
+      "targeting_type": "INTEREST",
+      "targeting_value": "1925949503837798401",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"id\":\"yfdxf3t\",\"line_item_id\":\"2c80p\",\"name\":\"Anime\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925949503837798401\",\"updated_at\":\"2027-10-23T04:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"line_item_id\":\"2c80p\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925949503837798401\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "line_item_id": "pcot9",
+      "targeting_type": "LOCATION",
+      "targeting_value": "96683cc9126741d1",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"id\":\"xd2yt5o\",\"line_item_id\":\"pcot9\",\"location_type\":\"COUNTRIES\",\"name\":\"United States\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\",\"updated_at\":\"2027-10-23T04:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"line_item_id\":\"pcot9\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "line_item_id": "pcot9",
+      "targeting_type": "LOCATION",
+      "targeting_value": "3376992a082d67c7",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"id\":\"o1r14nu\",\"line_item_id\":\"pcot9\",\"location_type\":\"COUNTRIES\",\"name\":\"Canada\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3376992a082d67c7\",\"updated_at\":\"2027-10-23T04:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"line_item_id\":\"pcot9\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3376992a082d67c7\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "line_item_id": "pcot9",
+      "targeting_type": "PLATFORM",
+      "targeting_value": "0",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"id\":\"dlbts3o\",\"line_item_id\":\"pcot9\",\"name\":\"iOS\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\",\"updated_at\":\"2027-10-23T04:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"line_item_id\":\"pcot9\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "line_item_id": "pcot9",
+      "targeting_type": "PLATFORM",
+      "targeting_value": "1",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"id\":\"nrnc6zs\",\"line_item_id\":\"pcot9\",\"name\":\"Android\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"1\",\"updated_at\":\"2027-10-23T04:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"line_item_id\":\"pcot9\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "list_targeting_criteria",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "line_item_ids": "rpbhi,2c80p,pcot9",
+      "count": 200
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"id\":\"l7gqjei\",\"line_item_id\":\"rpbhi\",\"location_type\":\"COUNTRIES\",\"name\":\"United States\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\",\"updated_at\":\"2027-10-23T04:00:00Z\"},{\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"id\":\"1iyqanx\",\"line_item_id\":\"rpbhi\",\"location_type\":\"COUNTRIES\",\"name\":\"Canada\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3376992a082d67c7\",\"updated_at\":\"2027-10-23T04:00:00Z\"},{\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"id\":\"rv9o1jj\",\"line_item_id\":\"rpbhi\",\"name\":\"iOS\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\",\"updated_at\":\"2027-10-23T04:00:00Z\"},{\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"id\":\"7v6enk7\",\"line_item_id\":\"rpbhi\",\"name\":\"Android\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"1\",\"updated_at\":\"2027-10-23T04:00:00Z\"},{\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"id\":\"v7vkn5g\",\"line_item_id\":\"rpbhi\",\"name\":\"anime streaming\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"anime streaming\",\"updated_at\":\"2027-10-23T04:00:00Z\"},{\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"id\":\"7xlo4jc\",\"line_item_id\":\"rpbhi\",\"name\":\"watch anime\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"watch anime\",\"updated_at\":\"2027-10-23T04:00:00Z\"},{\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"id\":\"5nwfhyn\",\"line_item_id\":\"rpbhi\",\"name\":\"sports anime\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"sports anime\",\"updated_at\":\"2027-10-23T04:00:00Z\"},{\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"id\":\"inxeawg\",\"line_item_id\":\"rpbhi\",\"name\":\"anime series\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"anime series\",\"updated_at\":\"2027-10-23T04:00:00Z\"},{\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"id\":\"a4ygwci\",\"line_item_id\":\"rpbhi\",\"name\":\"anime free trial\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"anime free trial\",\"updated_at\":\"2027-10-23T04:00:00Z\"},{\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"id\":\"a59gbaj\",\"line_item_id\":\"2c80p\",\"location_type\":\"COUNTRIES\",\"name\":\"United States\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\",\"updated_at\":\"2027-10-23T04:00:00Z\"},{\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"id\":\"87lvueo\",\"line_item_id\":\"2c80p\",\"location_type\":\"COUNTRIES\",\"name\":\"Canada\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3376992a082d67c7\",\"updated_at\":\"2027-10-23T04:00:00Z\"},{\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"id\":\"8oeuy2u\",\"line_item_id\":\"2c80p\",\"name\":\"iOS\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\",\"updated_at\":\"2027-10-23T04:00:00Z\"},{\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"id\":\"ajaadxk\",\"line_item_id\":\"2c80p\",\"name\":\"Android\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"1\",\"updated_at\":\"2027-10-23T04:00:00Z\"},{\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"id\":\"yfdxf3t\",\"line_item_id\":\"2c80p\",\"name\":\"Anime\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925949503837798401\",\"updated_at\":\"2027-10-23T04:00:00Z\"},{\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"id\":\"xd2yt5o\",\"line_item_id\":\"pcot9\",\"location_type\":\"COUNTRIES\",\"name\":\"United States\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\",\"updated_at\":\"2027-10-23T04:00:00Z\"},{\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"id\":\"o1r14nu\",\"line_item_id\":\"pcot9\",\"location_type\":\"COUNTRIES\",\"name\":\"Canada\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3376992a082d67c7\",\"updated_at\":\"2027-10-23T04:00:00Z\"},{\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"id\":\"dlbts3o\",\"line_item_id\":\"pcot9\",\"name\":\"iOS\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"0\",\"updated_at\":\"2027-10-23T04:00:00Z\"},{\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"id\":\"nrnc6zs\",\"line_item_id\":\"pcot9\",\"name\":\"Android\",\"operator_type\":\"EQ\",\"targeting_type\":\"PLATFORM\",\"targeting_value\":\"1\",\"updated_at\":\"2027-10-23T04:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"count\":200,\"line_item_ids\":[\"rpbhi\",\"2c80p\",\"pcot9\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "line_item_id": "rpbhi",
+      "tweet_ids": "2244664939118766301,2244846133049296813"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"obmsid\",\"line_item_id\":\"rpbhi\",\"tweet_id\":\"2244664939118766301\",\"updated_at\":\"2027-10-23T04:00:00Z\"},{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"f4add9\",\"line_item_id\":\"rpbhi\",\"tweet_id\":\"2244846133049296813\",\"updated_at\":\"2027-10-23T04:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"line_item_id\":\"rpbhi\",\"tweet_ids\":[\"2244664939118766301\",\"2244846133049296813\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "line_item_id": "2c80p",
+      "tweet_ids": "2244664939118766301,2244846133049296813"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"t98cnm\",\"line_item_id\":\"2c80p\",\"tweet_id\":\"2244664939118766301\",\"updated_at\":\"2027-10-23T04:00:00Z\"},{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"7yl7uz\",\"line_item_id\":\"2c80p\",\"tweet_id\":\"2244846133049296813\",\"updated_at\":\"2027-10-23T04:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"line_item_id\":\"2c80p\",\"tweet_ids\":[\"2244664939118766301\",\"2244846133049296813\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "line_item_id": "pcot9",
+      "tweet_ids": "2244664939118766301,2244846133049296813"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"mwhkv1\",\"line_item_id\":\"pcot9\",\"tweet_id\":\"2244664939118766301\",\"updated_at\":\"2027-10-23T04:00:00Z\"},{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-10-23T04:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"bmoysr\",\"line_item_id\":\"pcot9\",\"tweet_id\":\"2244846133049296813\",\"updated_at\":\"2027-10-23T04:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"line_item_id\":\"pcot9\",\"tweet_ids\":[\"2244664939118766301\",\"2244846133049296813\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "activate_campaign",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "campaign_id": "536eg"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-10-23T04:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"RUNNING\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"aanmii\",\"id\":\"536eg\",\"name\":\"Yuzustride Halloween 2027\",\"purchase_order_number\":null,\"reasons_not_servable\":[],\"servable\":true,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-10-23T04:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"campaign_id\":\"536eg\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "line_item_id": "rpbhi"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1901483630392509783\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"536eg\",\"categories\":[],\"created_at\":\"2027-10-23T04:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":30000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-11-01T04:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"aanmii\",\"goal\":\"LINK_CLICKS\",\"id\":\"rpbhi\",\"ios_app_store_identifier\":null,\"name\":\"Halloween \u2013 Keywords\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-10-23T04:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":270000000,\"updated_at\":\"2027-10-23T04:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"line_item_id\":\"rpbhi\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "line_item_id": "2c80p"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1901483630392509783\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"536eg\",\"categories\":[],\"created_at\":\"2027-10-23T04:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":25000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-11-01T04:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"aanmii\",\"goal\":\"LINK_CLICKS\",\"id\":\"2c80p\",\"ios_app_store_identifier\":null,\"name\":\"Halloween \u2013 Anime Interest\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-10-23T04:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":225000000,\"updated_at\":\"2027-10-23T04:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"line_item_id\":\"2c80p\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "line_item_id": "pcot9"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1901483630392509783\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"536eg\",\"categories\":[],\"created_at\":\"2027-10-23T04:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":22000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-11-01T04:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"aanmii\",\"goal\":\"LINK_CLICKS\",\"id\":\"pcot9\",\"ios_app_store_identifier\":null,\"name\":\"Halloween \u2013 Broad US/CA\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-10-23T04:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":198000000,\"updated_at\":\"2027-10-23T04:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"line_item_id\":\"pcot9\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T04:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-10-23T16:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-11-01T05:00:00Z\",\"now\":\"2027-10-23T16:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T16:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "entity": "LINE_ITEM",
+      "entity_ids": "rpbhi,2c80p,pcot9",
+      "start_time": "2027-10-23T04:00:00Z",
+      "end_time": "2027-10-23T16:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"rpbhi\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[12550732],\"billed_engagements\":[36],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[4],\"engagements\":[36],\"follows\":null,\"impressions\":[4251],\"likes\":[1],\"link_clicks\":[4],\"qualified_impressions\":[4251],\"replies\":null,\"retweets\":[1]},\"segment\":null}]},{\"id\":\"2c80p\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[4974377],\"billed_engagements\":[36],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[2],\"engagements\":[36],\"follows\":null,\"impressions\":[5480],\"likes\":null,\"link_clicks\":[2],\"qualified_impressions\":[5480],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"pcot9\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[2918916],\"billed_engagements\":[62],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[2],\"engagements\":[62],\"follows\":null,\"impressions\":[8764],\"likes\":null,\"link_clicks\":[2],\"qualified_impressions\":[8764],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-10-23T16:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"rpbhi\",\"2c80p\",\"pcot9\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-10-23T04:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-23T16:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-10-24T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-11-01T05:00:00Z\",\"now\":\"2027-10-24T06:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-24T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "entity": "LINE_ITEM",
+      "entity_ids": "rpbhi,2c80p,pcot9",
+      "start_time": "2027-10-23T04:00:00Z",
+      "end_time": "2027-10-24T06:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"rpbhi\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[35486313],\"billed_engagements\":[106],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[11],\"engagements\":[106],\"follows\":null,\"impressions\":[12740],\"likes\":[3],\"link_clicks\":[11],\"qualified_impressions\":[12740],\"replies\":null,\"retweets\":[1]},\"segment\":null}]},{\"id\":\"2c80p\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[23018269],\"billed_engagements\":[182],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[8],\"engagements\":[182],\"follows\":null,\"impressions\":[25196],\"likes\":[5],\"link_clicks\":[8],\"qualified_impressions\":[25196],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"pcot9\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[21485314],\"billed_engagements\":[246],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[13],\"engagements\":[246],\"follows\":null,\"impressions\":[33247],\"likes\":[7],\"link_clicks\":[13],\"qualified_impressions\":[33247],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-10-24T06:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"rpbhi\",\"2c80p\",\"pcot9\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-10-23T04:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-24T06:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "line_item_id": "rpbhi",
+      "bid_strategy": "MAX",
+      "bid_amount_local_micro": 4200000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1901483630392509783\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":4200000,\"bid_strategy\":\"MAX\",\"campaign_id\":\"536eg\",\"categories\":[],\"created_at\":\"2027-10-23T04:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":30000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-11-01T04:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"aanmii\",\"goal\":\"LINK_CLICKS\",\"id\":\"rpbhi\",\"ios_app_store_identifier\":null,\"name\":\"Halloween \u2013 Keywords\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-10-23T04:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":270000000,\"updated_at\":\"2027-10-24T06:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"bid_amount_local_micro\":4200000,\"bid_strategy\":\"MAX\",\"line_item_id\":\"rpbhi\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-24T06:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "line_item_id": "2c80p",
+      "bid_strategy": "MAX",
+      "bid_amount_local_micro": 3740000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1901483630392509783\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":3740000,\"bid_strategy\":\"MAX\",\"campaign_id\":\"536eg\",\"categories\":[],\"created_at\":\"2027-10-23T04:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":25000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-11-01T04:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"aanmii\",\"goal\":\"LINK_CLICKS\",\"id\":\"2c80p\",\"ios_app_store_identifier\":null,\"name\":\"Halloween \u2013 Anime Interest\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-10-23T04:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":225000000,\"updated_at\":\"2027-10-24T06:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"bid_amount_local_micro\":3740000,\"bid_strategy\":\"MAX\",\"line_item_id\":\"2c80p\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-24T06:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "line_item_id": "pcot9",
+      "bid_strategy": "MAX",
+      "bid_amount_local_micro": 2310000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1901483630392509783\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":2310000,\"bid_strategy\":\"MAX\",\"campaign_id\":\"536eg\",\"categories\":[],\"created_at\":\"2027-10-23T04:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":22000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-11-01T04:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"aanmii\",\"goal\":\"LINK_CLICKS\",\"id\":\"pcot9\",\"ios_app_store_identifier\":null,\"name\":\"Halloween \u2013 Broad US/CA\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-10-23T04:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":198000000,\"updated_at\":\"2027-10-24T06:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"bid_amount_local_micro\":2310000,\"bid_strategy\":\"MAX\",\"line_item_id\":\"pcot9\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-24T06:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-10-25T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-11-01T05:00:00Z\",\"now\":\"2027-10-25T06:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-25T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "entity": "LINE_ITEM",
+      "entity_ids": "rpbhi,2c80p,pcot9",
+      "start_time": "2027-10-23T04:00:00Z",
+      "end_time": "2027-10-25T06:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"errors\":[{\"code\":\"INVALID_TIME_WINDOW\",\"message\":\"Expect time to be midnight in the account's local timezone for day granularity\",\"parameter\":\"\"}],\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"end_time\":\"2027-10-25T06:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"rpbhi\",\"2c80p\",\"pcot9\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"start_time\":\"2027-10-23T04:00:00Z\"}}}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2027-10-25T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "entity": "LINE_ITEM",
+      "entity_ids": "rpbhi,2c80p,pcot9",
+      "start_time": "2027-10-23T04:00:00Z",
+      "end_time": "2027-10-25T04:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"rpbhi\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[29788071,27754806],\"billed_engagements\":[99,78],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[9,10],\"engagements\":[99,78],\"follows\":null,\"impressions\":[11667,10755],\"likes\":[3,1],\"link_clicks\":[9,10],\"qualified_impressions\":[11667,10755],\"replies\":null,\"retweets\":[1,0]},\"segment\":null}]},{\"id\":\"2c80p\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[23018269,23737196],\"billed_engagements\":[178,102],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[8,10],\"engagements\":[178,102],\"follows\":null,\"impressions\":[24213,13886],\"likes\":[5,3],\"link_clicks\":[8,10],\"qualified_impressions\":[24213,13886],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"pcot9\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[21485314,10696304],\"billed_engagements\":[232,246],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[13,8],\"engagements\":[232,246],\"follows\":null,\"impressions\":[31799,34906],\"likes\":[6,8],\"link_clicks\":[13,8],\"qualified_impressions\":[31799,34906],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-10-25T04:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"rpbhi\",\"2c80p\",\"pcot9\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-10-23T04:00:00Z\"}},\"time_series_length\":2}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-25T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "entity": "LINE_ITEM",
+      "entity_ids": "rpbhi,2c80p,pcot9",
+      "start_time": "2027-10-23T04:00:00Z",
+      "end_time": "2027-10-25T06:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"rpbhi\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[60065302],\"billed_engagements\":[191],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[20],\"engagements\":[191],\"follows\":null,\"impressions\":[24241],\"likes\":[4],\"link_clicks\":[20],\"qualified_impressions\":[24241],\"replies\":null,\"retweets\":[2]},\"segment\":null}]},{\"id\":\"2c80p\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[48977434],\"billed_engagements\":[290],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[19],\"engagements\":[290],\"follows\":null,\"impressions\":[39311],\"likes\":[8],\"link_clicks\":[19],\"qualified_impressions\":[39311],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"pcot9\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[32181618],\"billed_engagements\":[495],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[21],\"engagements\":[495],\"follows\":null,\"impressions\":[68945],\"likes\":[15],\"link_clicks\":[21],\"qualified_impressions\":[68945],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-10-25T06:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"rpbhi\",\"2c80p\",\"pcot9\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-10-23T04:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-25T06:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "line_item_id": "pcot9",
+      "bid_amount_local_micro": 2900000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1901483630392509783\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":2900000,\"bid_strategy\":\"MAX\",\"campaign_id\":\"536eg\",\"categories\":[],\"created_at\":\"2027-10-23T04:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":22000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-11-01T04:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"aanmii\",\"goal\":\"LINK_CLICKS\",\"id\":\"pcot9\",\"ios_app_store_identifier\":null,\"name\":\"Halloween \u2013 Broad US/CA\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-10-23T04:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":198000000,\"updated_at\":\"2027-10-25T06:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"bid_amount_local_micro\":2900000,\"line_item_id\":\"pcot9\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-25T06:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-10-26T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-11-01T05:00:00Z\",\"now\":\"2027-10-26T06:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-26T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "entity": "LINE_ITEM",
+      "entity_ids": "rpbhi,2c80p,pcot9",
+      "start_time": "2027-10-23T04:00:00Z",
+      "end_time": "2027-10-26T04:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"rpbhi\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[29788071,27754806,29650842],\"billed_engagements\":[99,78,105],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[9,10,13],\"engagements\":[99,78,105],\"follows\":null,\"impressions\":[11667,10755,15291],\"likes\":[3,1,4],\"link_clicks\":[9,10,13],\"qualified_impressions\":[11667,10755,15291],\"replies\":null,\"retweets\":[1,0,1]},\"segment\":null}]},{\"id\":\"2c80p\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[23018269,23737196,21947922],\"billed_engagements\":[178,102,135],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[8,10,10],\"engagements\":[178,102,135],\"follows\":null,\"impressions\":[24213,13886,19321],\"likes\":[5,3,1],\"link_clicks\":[8,10,10],\"qualified_impressions\":[24213,13886,19321],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"pcot9\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[21485314,10696304,21394827],\"billed_engagements\":[232,246,215],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[13,8,15],\"engagements\":[232,246,215],\"follows\":null,\"impressions\":[31799,34906,28704],\"likes\":[6,8,4],\"link_clicks\":[13,8,15],\"qualified_impressions\":[31799,34906,28704],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-10-26T04:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"rpbhi\",\"2c80p\",\"pcot9\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-10-23T04:00:00Z\"}},\"time_series_length\":3}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-26T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "entity": "LINE_ITEM",
+      "entity_ids": "rpbhi,2c80p,pcot9",
+      "start_time": "2027-10-23T04:00:00Z",
+      "end_time": "2027-10-26T06:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"rpbhi\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[87193719],\"billed_engagements\":[291],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[32],\"engagements\":[291],\"follows\":null,\"impressions\":[38584],\"likes\":[8],\"link_clicks\":[32],\"qualified_impressions\":[38584],\"replies\":null,\"retweets\":[2]},\"segment\":null}]},{\"id\":\"2c80p\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[68703387],\"billed_engagements\":[417],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[28],\"engagements\":[417],\"follows\":null,\"impressions\":[57996],\"likes\":[9],\"link_clicks\":[28],\"qualified_impressions\":[57996],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"pcot9\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[53576445],\"billed_engagements\":[704],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[36],\"engagements\":[704],\"follows\":null,\"impressions\":[96637],\"likes\":[19],\"link_clicks\":[36],\"qualified_impressions\":[96637],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-10-26T06:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"rpbhi\",\"2c80p\",\"pcot9\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-10-23T04:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-26T06:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "line_item_id": "rpbhi",
+      "daily_budget_amount_local_micro": 28000000,
+      "total_budget_amount_local_micro": 245000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1901483630392509783\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":4200000,\"bid_strategy\":\"MAX\",\"campaign_id\":\"536eg\",\"categories\":[],\"created_at\":\"2027-10-23T04:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":28000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-11-01T04:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"aanmii\",\"goal\":\"LINK_CLICKS\",\"id\":\"rpbhi\",\"ios_app_store_identifier\":null,\"name\":\"Halloween \u2013 Keywords\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-10-23T04:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":245000000,\"updated_at\":\"2027-10-26T06:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"daily_budget_amount_local_micro\":28000000,\"line_item_id\":\"rpbhi\",\"total_budget_amount_local_micro\":245000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-26T06:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "line_item_id": "2c80p",
+      "daily_budget_amount_local_micro": 26000000,
+      "total_budget_amount_local_micro": 225000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1901483630392509783\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":3740000,\"bid_strategy\":\"MAX\",\"campaign_id\":\"536eg\",\"categories\":[],\"created_at\":\"2027-10-23T04:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":26000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-11-01T04:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"aanmii\",\"goal\":\"LINK_CLICKS\",\"id\":\"2c80p\",\"ios_app_store_identifier\":null,\"name\":\"Halloween \u2013 Anime Interest\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-10-23T04:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":225000000,\"updated_at\":\"2027-10-26T06:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"daily_budget_amount_local_micro\":26000000,\"line_item_id\":\"2c80p\",\"total_budget_amount_local_micro\":225000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-26T06:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "line_item_id": "pcot9",
+      "daily_budget_amount_local_micro": 26000000,
+      "total_budget_amount_local_micro": 230000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1901483630392509783\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":2900000,\"bid_strategy\":\"MAX\",\"campaign_id\":\"536eg\",\"categories\":[],\"created_at\":\"2027-10-23T04:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":26000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-11-01T04:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"aanmii\",\"goal\":\"LINK_CLICKS\",\"id\":\"pcot9\",\"ios_app_store_identifier\":null,\"name\":\"Halloween \u2013 Broad US/CA\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-10-23T04:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":230000000,\"updated_at\":\"2027-10-26T06:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"daily_budget_amount_local_micro\":26000000,\"line_item_id\":\"pcot9\",\"total_budget_amount_local_micro\":230000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-26T06:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-10-27T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-11-01T05:00:00Z\",\"now\":\"2027-10-27T06:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-27T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "entity": "LINE_ITEM",
+      "entity_ids": "rpbhi,2c80p,pcot9",
+      "start_time": "2027-10-26T04:00:00Z",
+      "end_time": "2027-10-27T04:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"rpbhi\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[25480234],\"billed_engagements\":[111],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[11],\"engagements\":[111],\"follows\":null,\"impressions\":[18112],\"likes\":[2],\"link_clicks\":[11],\"qualified_impressions\":[18112],\"replies\":null,\"retweets\":[1]},\"segment\":null}]},{\"id\":\"2c80p\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[13773126],\"billed_engagements\":[99],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[6],\"engagements\":[99],\"follows\":null,\"impressions\":[15843],\"likes\":[1],\"link_clicks\":[6],\"qualified_impressions\":[15843],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"pcot9\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[18168877],\"billed_engagements\":[277],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[10],\"engagements\":[277],\"follows\":null,\"impressions\":[38146],\"likes\":[7],\"link_clicks\":[10],\"qualified_impressions\":[38146],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-10-27T04:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"rpbhi\",\"2c80p\",\"pcot9\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-10-26T04:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-27T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "entity": "LINE_ITEM",
+      "entity_ids": "rpbhi,2c80p,pcot9",
+      "start_time": "2027-10-23T04:00:00Z",
+      "end_time": "2027-10-27T06:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"rpbhi\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[120133726],\"billed_engagements\":[404],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[46],\"engagements\":[404],\"follows\":null,\"impressions\":[57175],\"likes\":[10],\"link_clicks\":[46],\"qualified_impressions\":[57175],\"replies\":null,\"retweets\":[3]},\"segment\":null}]},{\"id\":\"2c80p\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[82476513],\"billed_engagements\":[525],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[34],\"engagements\":[525],\"follows\":null,\"impressions\":[74193],\"likes\":[10],\"link_clicks\":[34],\"qualified_impressions\":[74193],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"pcot9\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[73440163],\"billed_engagements\":[987],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[47],\"engagements\":[987],\"follows\":null,\"impressions\":[135886],\"likes\":[26],\"link_clicks\":[47],\"qualified_impressions\":[135886],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-10-27T06:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"rpbhi\",\"2c80p\",\"pcot9\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-10-23T04:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-27T06:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "line_item_id": "rpbhi",
+      "daily_budget_amount_local_micro": 27000000,
+      "total_budget_amount_local_micro": 235000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1901483630392509783\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":4200000,\"bid_strategy\":\"MAX\",\"campaign_id\":\"536eg\",\"categories\":[],\"created_at\":\"2027-10-23T04:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":27000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-11-01T04:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"aanmii\",\"goal\":\"LINK_CLICKS\",\"id\":\"rpbhi\",\"ios_app_store_identifier\":null,\"name\":\"Halloween \u2013 Keywords\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-10-23T04:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":235000000,\"updated_at\":\"2027-10-27T06:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"daily_budget_amount_local_micro\":27000000,\"line_item_id\":\"rpbhi\",\"total_budget_amount_local_micro\":235000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-27T06:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "line_item_id": "2c80p",
+      "daily_budget_amount_local_micro": 27000000,
+      "total_budget_amount_local_micro": 215000000,
+      "bid_amount_local_micro": 4500000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1901483630392509783\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":4500000,\"bid_strategy\":\"MAX\",\"campaign_id\":\"536eg\",\"categories\":[],\"created_at\":\"2027-10-23T04:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":27000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-11-01T04:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"aanmii\",\"goal\":\"LINK_CLICKS\",\"id\":\"2c80p\",\"ios_app_store_identifier\":null,\"name\":\"Halloween \u2013 Anime Interest\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-10-23T04:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":215000000,\"updated_at\":\"2027-10-27T06:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"bid_amount_local_micro\":4500000,\"daily_budget_amount_local_micro\":27000000,\"line_item_id\":\"2c80p\",\"total_budget_amount_local_micro\":215000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-27T06:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "line_item_id": "pcot9",
+      "daily_budget_amount_local_micro": 33000000,
+      "total_budget_amount_local_micro": 250000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1901483630392509783\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":2900000,\"bid_strategy\":\"MAX\",\"campaign_id\":\"536eg\",\"categories\":[],\"created_at\":\"2027-10-23T04:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":33000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-11-01T04:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"aanmii\",\"goal\":\"LINK_CLICKS\",\"id\":\"pcot9\",\"ios_app_store_identifier\":null,\"name\":\"Halloween \u2013 Broad US/CA\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-10-23T04:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":250000000,\"updated_at\":\"2027-10-27T06:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"daily_budget_amount_local_micro\":33000000,\"line_item_id\":\"pcot9\",\"total_budget_amount_local_micro\":250000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-27T06:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-10-28T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-11-01T05:00:00Z\",\"now\":\"2027-10-28T06:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-28T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "entity": "LINE_ITEM",
+      "entity_ids": "rpbhi,2c80p,pcot9",
+      "start_time": "2027-10-27T04:00:00Z",
+      "end_time": "2027-10-28T04:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"rpbhi\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[19905020],\"billed_engagements\":[92],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[8],\"engagements\":[92],\"follows\":null,\"impressions\":[11573],\"likes\":[1],\"link_clicks\":[8],\"qualified_impressions\":[11573],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"2c80p\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[24929232],\"billed_engagements\":[124],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[10],\"engagements\":[124],\"follows\":null,\"impressions\":[16367],\"likes\":[1],\"link_clicks\":[10],\"qualified_impressions\":[16367],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"pcot9\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[28115739],\"billed_engagements\":[340],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[17],\"engagements\":[340],\"follows\":null,\"impressions\":[46778],\"likes\":[11],\"link_clicks\":[17],\"qualified_impressions\":[46778],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-10-28T04:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"rpbhi\",\"2c80p\",\"pcot9\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-10-27T04:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-28T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "entity": "LINE_ITEM",
+      "entity_ids": "rpbhi,2c80p,pcot9",
+      "start_time": "2027-10-23T04:00:00Z",
+      "end_time": "2027-10-28T06:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"rpbhi\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[140297486],\"billed_engagements\":[494],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[54],\"engagements\":[494],\"follows\":null,\"impressions\":[68475],\"likes\":[12],\"link_clicks\":[54],\"qualified_impressions\":[68475],\"replies\":null,\"retweets\":[3]},\"segment\":null}]},{\"id\":\"2c80p\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[110088207],\"billed_engagements\":[642],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[45],\"engagements\":[642],\"follows\":null,\"impressions\":[90431],\"likes\":[11],\"link_clicks\":[45],\"qualified_impressions\":[90431],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"pcot9\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[99861061],\"billed_engagements\":[1318],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[63],\"engagements\":[1318],\"follows\":null,\"impressions\":[182107],\"likes\":[37],\"link_clicks\":[63],\"qualified_impressions\":[182107],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-10-28T06:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"rpbhi\",\"2c80p\",\"pcot9\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-10-23T04:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-28T06:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-10-29T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-11-01T05:00:00Z\",\"now\":\"2027-10-29T06:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-29T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "entity": "LINE_ITEM",
+      "entity_ids": "rpbhi,2c80p,pcot9",
+      "start_time": "2027-10-28T04:00:00Z",
+      "end_time": "2027-10-29T04:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"rpbhi\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[25399726],\"billed_engagements\":[82],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[10],\"engagements\":[82],\"follows\":null,\"impressions\":[10256],\"likes\":[1],\"link_clicks\":[10],\"qualified_impressions\":[10256],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"2c80p\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[26679985],\"billed_engagements\":[97],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[11],\"engagements\":[97],\"follows\":null,\"impressions\":[12871],\"likes\":[1],\"link_clicks\":[11],\"qualified_impressions\":[12871],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"pcot9\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[31716316],\"billed_engagements\":[273],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[19],\"engagements\":[273],\"follows\":null,\"impressions\":[41547],\"likes\":[5],\"link_clicks\":[19],\"qualified_impressions\":[41547],\"replies\":null,\"retweets\":[1]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-10-29T04:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"rpbhi\",\"2c80p\",\"pcot9\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-10-28T04:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-29T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "entity": "LINE_ITEM",
+      "entity_ids": "rpbhi,2c80p,pcot9",
+      "start_time": "2027-10-23T04:00:00Z",
+      "end_time": "2027-10-29T06:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"rpbhi\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[157978699],\"billed_engagements\":[568],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[61],\"engagements\":[568],\"follows\":null,\"impressions\":[78122],\"likes\":[12],\"link_clicks\":[61],\"qualified_impressions\":[78122],\"replies\":null,\"retweets\":[3]},\"segment\":null}]},{\"id\":\"2c80p\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[136543086],\"billed_engagements\":[740],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[56],\"engagements\":[740],\"follows\":null,\"impressions\":[103435],\"likes\":[12],\"link_clicks\":[56],\"qualified_impressions\":[103435],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"pcot9\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[136336260],\"billed_engagements\":[1597],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[85],\"engagements\":[1597],\"follows\":null,\"impressions\":[223850],\"likes\":[41],\"link_clicks\":[85],\"qualified_impressions\":[223850],\"replies\":null,\"retweets\":[1]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-10-29T06:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"rpbhi\",\"2c80p\",\"pcot9\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-10-23T04:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-29T06:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-10-30T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-11-01T05:00:00Z\",\"now\":\"2027-10-30T06:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-30T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "entity": "LINE_ITEM",
+      "entity_ids": "rpbhi,2c80p,pcot9",
+      "start_time": "2027-10-29T04:00:00Z",
+      "end_time": "2027-10-30T04:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"rpbhi\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[26644650],\"billed_engagements\":[81],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[11],\"engagements\":[81],\"follows\":null,\"impressions\":[12573],\"likes\":[3],\"link_clicks\":[11],\"qualified_impressions\":[12573],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"2c80p\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[25161138],\"billed_engagements\":[154],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[12],\"engagements\":[154],\"follows\":null,\"impressions\":[22103],\"likes\":[6],\"link_clicks\":[12],\"qualified_impressions\":[22103],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"pcot9\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[32668991],\"billed_engagements\":[303],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[23],\"engagements\":[303],\"follows\":null,\"impressions\":[42876],\"likes\":[4],\"link_clicks\":[23],\"qualified_impressions\":[42876],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-10-30T04:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"rpbhi\",\"2c80p\",\"pcot9\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-10-29T04:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-30T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "entity": "LINE_ITEM",
+      "entity_ids": "rpbhi,2c80p,pcot9",
+      "start_time": "2027-10-23T04:00:00Z",
+      "end_time": "2027-10-30T06:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"errors\":[{\"code\":\"INVALID_TIME_WINDOW\",\"message\":\"The end_time (2027-10-30 06:00:00 +0000) can be a maximum of 7.days+1.hours after the start_time (2027-10-23 04:00:00 +0000)\",\"parameter\":\"\"}],\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"end_time\":\"2027-10-30T06:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"rpbhi\",\"2c80p\",\"pcot9\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"start_time\":\"2027-10-23T04:00:00Z\"}}}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2027-10-30T06:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-10-31T06:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-11-01T05:00:00Z\",\"now\":\"2027-10-31T06:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-31T06:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "entity": "LINE_ITEM",
+      "entity_ids": "rpbhi,2c80p,pcot9",
+      "start_time": "2027-10-30T04:00:00Z",
+      "end_time": "2027-10-31T04:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"rpbhi\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[25044581],\"billed_engagements\":[125],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[11],\"engagements\":[125],\"follows\":null,\"impressions\":[17750],\"likes\":[3],\"link_clicks\":[11],\"qualified_impressions\":[17750],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"2c80p\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[25245461],\"billed_engagements\":[136],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[12],\"engagements\":[136],\"follows\":null,\"impressions\":[18556],\"likes\":[3],\"link_clicks\":[12],\"qualified_impressions\":[18556],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"pcot9\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[32570510],\"billed_engagements\":[355],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[23],\"engagements\":[355],\"follows\":null,\"impressions\":[50201],\"likes\":[6],\"link_clicks\":[23],\"qualified_impressions\":[50201],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-10-31T04:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"rpbhi\",\"2c80p\",\"pcot9\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-10-30T04:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-31T06:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "line_item_id": "pcot9",
+      "daily_budget_amount_local_micro": 45000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1901483630392509783\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":2900000,\"bid_strategy\":\"MAX\",\"campaign_id\":\"536eg\",\"categories\":[],\"created_at\":\"2027-10-23T04:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":45000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-11-01T04:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"aanmii\",\"goal\":\"LINK_CLICKS\",\"id\":\"pcot9\",\"ios_app_store_identifier\":null,\"name\":\"Halloween \u2013 Broad US/CA\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-10-23T04:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":250000000,\"updated_at\":\"2027-10-31T06:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"daily_budget_amount_local_micro\":45000000,\"line_item_id\":\"pcot9\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-10-31T06:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-11-01T05:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-11-01T05:00:00Z\",\"now\":\"2027-11-01T05:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-11-01T05:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "entity": "LINE_ITEM",
+      "entity_ids": "rpbhi,2c80p,pcot9",
+      "start_time": "2027-10-31T04:00:00Z",
+      "end_time": "2027-11-01T04:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"rpbhi\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[24564704],\"billed_engagements\":[71],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[10],\"engagements\":[71],\"follows\":null,\"impressions\":[7305],\"likes\":[1],\"link_clicks\":[10],\"qualified_impressions\":[7305],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"2c80p\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[25603696],\"billed_engagements\":[122],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[10],\"engagements\":[122],\"follows\":null,\"impressions\":[17499],\"likes\":[5],\"link_clicks\":[10],\"qualified_impressions\":[17499],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"pcot9\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[37251286],\"billed_engagements\":[308],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[22],\"engagements\":[308],\"follows\":null,\"impressions\":[46497],\"likes\":[9],\"link_clicks\":[22],\"qualified_impressions\":[46497],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-11-01T04:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"rpbhi\",\"2c80p\",\"pcot9\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-10-31T04:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-11-01T05:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "entity": "LINE_ITEM",
+      "entity_ids": "rpbhi,2c80p,pcot9",
+      "start_time": "2027-10-25T04:00:00Z",
+      "end_time": "2027-11-01T04:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"rpbhi\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[176689757],\"billed_engagements\":[667],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[74],\"engagements\":[667],\"follows\":null,\"impressions\":[92860],\"likes\":[15],\"link_clicks\":[74],\"qualified_impressions\":[92860],\"replies\":null,\"retweets\":[2]},\"segment\":null}]},{\"id\":\"2c80p\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[163340560],\"billed_engagements\":[867],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[71],\"engagements\":[867],\"follows\":null,\"impressions\":[122560],\"likes\":[18],\"link_clicks\":[71],\"qualified_impressions\":[122560],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"pcot9\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[201886546],\"billed_engagements\":[2071],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[129],\"engagements\":[2071],\"follows\":null,\"impressions\":[294749],\"likes\":[46],\"link_clicks\":[129],\"qualified_impressions\":[294749],\"replies\":null,\"retweets\":[1]},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-11-01T04:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"rpbhi\",\"2c80p\",\"pcot9\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-10-25T04:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-11-01T05:00:00Z",
+    "tool": "get_campaign",
+    "arguments": {
+      "account_id": "18j6bxmsxe7",
+      "campaign_id": "536eg"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-10-23T04:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"EXPIRED\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"aanmii\",\"id\":\"536eg\",\"name\":\"Yuzustride Halloween 2027\",\"purchase_order_number\":null,\"reasons_not_servable\":[\"EXPIRED\"],\"servable\":false,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-10-23T04:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18j6bxmsxe7\",\"campaign_id\":\"536eg\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

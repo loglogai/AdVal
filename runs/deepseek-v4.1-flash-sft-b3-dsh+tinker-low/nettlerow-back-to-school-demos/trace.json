@@ -1,0 +1,1847 @@
+[
+  {
+    "at": "2027-08-05T23:00:00Z",
+    "tool": "get_current_time",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-08-20T00:00:00Z\",\"now\":\"2027-08-05T23:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-05T23:00:00Z",
+    "tool": "list_ads_accounts",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"business_id\":null,\"business_name\":null,\"country_code\":\"IE\",\"created_at\":\"2025-04-09T23:00:00Z\",\"deleted\":false,\"id\":\"18izf70qa2b\",\"industry_type\":null,\"name\":\"Nettlerow Pharmacy Stock\",\"timezone\":\"Europe/Dublin\",\"timezone_switch_at\":\"2025-04-09T23:00:00Z\",\"updated_at\":\"2025-04-09T23:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-05T23:00:00Z",
+    "tool": "list_funding_instruments",
+    "arguments": {
+      "account_id": "18izf70qa2b"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"able_to_fund\":true,\"created_at\":\"2025-04-09T23:00:00Z\",\"credit_limit_local_micro\":null,\"credit_remaining_local_micro\":null,\"currency\":\"USD\",\"deleted\":false,\"description\":\"American Express ending in 0543\",\"end_time\":null,\"entity_status\":\"ACTIVE\",\"funded_amount_local_micro\":0,\"id\":\"elau5c\",\"io_header\":null,\"reasons_not_able_to_fund\":[],\"start_time\":\"2025-04-09T23:00:00Z\",\"type\":\"CREDIT_CARD\",\"updated_at\":\"2025-04-09T23:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-05T23:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "q": "ireland",
+      "location_type": "COUNTRIES"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"country_code\":\"IE\",\"location_type\":\"COUNTRIES\",\"name\":\"Ireland\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ea679934779f45c7\"}],\"next_cursor\":null,\"request\":{\"params\":{\"location_type\":\"COUNTRIES\",\"q\":\"ireland\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-05T23:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "q": "united kingdom",
+      "location_type": "COUNTRIES"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"country_code\":\"GB\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"},{\"country_code\":\"AE\",\"location_type\":\"COUNTRIES\",\"name\":\"United Arab Emirates\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"3f63906fc8aa5a7d\"},{\"country_code\":\"US\",\"location_type\":\"COUNTRIES\",\"name\":\"United States\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"96683cc9126741d1\"},{\"country_code\":\"UM\",\"location_type\":\"COUNTRIES\",\"name\":\"United States Minor Outlying Islands\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"08fbcf4cbc4bc5b9\"}],\"next_cursor\":null,\"request\":{\"params\":{\"location_type\":\"COUNTRIES\",\"q\":\"united kingdom\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-05T23:00:00Z",
+    "tool": "list_account_posts",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "tweet_type": "PUBLISHED",
+      "timeline_type": "ALL",
+      "count": 100
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Sun Aug 01 23:00:00 +0000 2027\",\"display_text_range\":[0,207],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"nettlerow.ie/demo\",\"expanded_url\":\"https://nettlerow.ie/demo\",\"indices\":[184,207],\"url\":\"https://t.co/jdfugUSEWD\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"From \u20ac89 a month per branch (\u00a379 in the UK). Book a demo by 19 August and your first 60 days cost nothing. Expiry tracking and wholesaler reorders for pharmacies, no clipboard needed. https://t.co/jdfugUSEWD\",\"geo\":null,\"id\":2215960800262941614,\"id_str\":\"2215960800262941614\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2215960800262941614\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Wed Apr 09 23:00:00 +0000 2025\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":1937,\"follow_request_sent\":null,\"followers_count\":8637,\"following\":null,\"friends_count\":687,\"geo_enabled\":false,\"id\":1910105441695838429,\"id_str\":\"1910105441695838429\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":37,\"location\":\"\",\"name\":\"Nettlerow Pharmacy Stock\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1910105441695838429/1611247837\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1852969435211247837/HHp0y7bP_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1852969435211247837/HHp0y7bP_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"NettlerowPharma\",\"statuses_count\":4137,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Sun Aug 01 11:00:00 +0000 2027\",\"display_text_range\":[0,211],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"nettlerow.ie/demo\",\"expanded_url\":\"https://nettlerow.ie/demo\",\"indices\":[188,211],\"url\":\"https://t.co/GEZSMla7Gk\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Two weeks until the school-run queue hits your counter. Book a Nettlerow demo by 19 August and your first 60 days are free, with expiry alerts and auto-reorders set up before term starts. https://t.co/GEZSMla7Gk\",\"geo\":null,\"id\":2215779606328605826,\"id_str\":\"2215779606328605826\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2215779606328605826\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Wed Apr 09 23:00:00 +0000 2025\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":1937,\"follow_request_sent\":null,\"followers_count\":8637,\"following\":null,\"friends_count\":687,\"geo_enabled\":false,\"id\":1910105441695838429,\"id_str\":\"1910105441695838429\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":37,\"location\":\"\",\"name\":\"Nettlerow Pharmacy Stock\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1910105441695838429/1611247837\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1852969435211247837/HHp0y7bP_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1852969435211247837/HHp0y7bP_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"NettlerowPharma\",\"statuses_count\":4137,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Sat Jul 31 23:00:00 +0000 2027\",\"display_text_range\":[0,223],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"nettlerow.ie/demo\",\"expanded_url\":\"https://nettlerow.ie/demo\",\"indices\":[200,223],\"url\":\"https://t.co/tgjSjPZXar\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Back-to-school empties the lice-treatment and kids' paracetamol shelves first. Nettlerow flags short-dated stock and reorders before you run dry. UK & Irish pharmacies: book a demo, get 60 days free. https://t.co/tgjSjPZXar\",\"geo\":null,\"id\":2215598412398887040,\"id_str\":\"2215598412398887040\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":false,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2215598412398887040\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Wed Apr 09 23:00:00 +0000 2025\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":1937,\"follow_request_sent\":null,\"followers_count\":8637,\"following\":null,\"friends_count\":687,\"geo_enabled\":false,\"id\":1910105441695838429,\"id_str\":\"1910105441695838429\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":37,\"location\":\"\",\"name\":\"Nettlerow Pharmacy Stock\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1910105441695838429/1611247837\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1852969435211247837/HHp0y7bP_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1852969435211247837/HHp0y7bP_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"NettlerowPharma\",\"statuses_count\":4137,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"count\":100,\"timeline_type\":\"ALL\",\"tweet_type\":\"PUBLISHED\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-05T23:00:00Z",
+    "tool": "search_targeting_interests",
+    "arguments": {
+      "q": "pharmacy",
+      "count": 50
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"request\":{\"params\":{\"count\":50,\"q\":\"pharmacy\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-05T23:00:00Z",
+    "tool": "search_targeting_interests",
+    "arguments": {
+      "q": "health",
+      "count": 50
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"name\":\"Health & Fitness\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925949856834588672\"},{\"name\":\"Health & Fitness / Nutrition\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925953366091350017\"},{\"name\":\"Health & Fitness / Workouts\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925953337020555264\"}],\"request\":{\"params\":{\"count\":50,\"q\":\"health\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-05T23:00:00Z",
+    "tool": "search_targeting_interests",
+    "arguments": {
+      "q": "business",
+      "count": 50
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"name\":\"Business & Finance\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925949659857530880\"},{\"name\":\"Business & Finance / Entrepreneurship\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925952916411564032\"},{\"name\":\"Business & Finance / Financial Markets & Insights\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925952876284727296\"},{\"name\":\"Business & Finance / Personal Finance\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925952988486447104\"},{\"name\":\"Business & Finance / Real Estate\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925952947197784064\"}],\"request\":{\"params\":{\"count\":50,\"q\":\"business\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-05T23:00:00Z",
+    "tool": "list_line_item_placements",
+    "arguments": {
+      "product_type": "PROMOTED_TWEETS"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"placements\":[[\"ALL_ON_TWITTER\"],[\"ALL_ON_TWITTER\",\"PUBLISHER_NETWORK\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_BANNER\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL_LANDSCAPE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_MRECT\"],[\"ALL_ON_TWITTER\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"ALL_ON_TWITTER\",\"TAP_NATIVE\"],[\"PUBLISHER_NETWORK\"],[\"PUBLISHER_NETWORK\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"PUBLISHER_NETWORK\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"PUBLISHER_NETWORK\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"PUBLISHER_NETWORK\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\"],[\"TAP_BANNER\",\"TAP_FULL\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_NATIVE\"],[\"TAP_BANNER\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_BANNER\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_FULL_LANDSCAPE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_NATIVE\"],[\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_FULL_LANDSCAPE\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\"],[\"TAP_MRECT\",\"TAP_NATIVE\"],[\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_MRECT\",\"TWITTER_TIMELINE\"],[\"TAP_NATIVE\"],[\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_NATIVE\",\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TAP_NATIVE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TAP_NATIVE\",\"TWITTER_TIMELINE\"],[\"TWITTER_MEDIA_VIEWER\"],[\"TWITTER_PROFILE\",\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TWITTER_PROFILE\",\"TWITTER_TIMELINE\"],[\"TWITTER_REPLIES\"],[\"TWITTER_SEARCH\"],[\"TWITTER_SEARCH\",\"TWITTER_TIMELINE\"],[\"TWITTER_TIMELINE\"]],\"product_type\":\"PROMOTED_TWEETS\"}],\"next_cursor\":null,\"request\":{\"params\":{\"product_type\":\"PROMOTED_TWEETS\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-05T23:00:00Z",
+    "tool": "create_campaign",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "funding_instrument_id": "elau5c",
+      "name": "Nettlerow \u2013 Back-to-School Demo Push (Aug 2027)"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-08-05T23:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"PAUSED\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"elau5c\",\"id\":\"z6xpu\",\"name\":\"Nettlerow \u2013 Back-to-School Demo Push (Aug 2027)\",\"purchase_order_number\":null,\"reasons_not_servable\":[\"PAUSED_BY_ADVERTISER\"],\"servable\":false,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-08-05T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"funding_instrument_id\":\"elau5c\",\"name\":\"Nettlerow \u2013 Back-to-School Demo Push (Aug 2027)\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-05T23:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "campaign_id": "z6xpu",
+      "name": "Phrase keywords \u2013 pharmacy stock intent",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "placements": "ALL_ON_TWITTER",
+      "product_type": "PROMOTED_TWEETS",
+      "pay_by": "LINK_CLICK",
+      "bid_strategy": "AUTO",
+      "daily_budget_amount_local_micro": 12000000,
+      "total_budget_amount_local_micro": 168000000,
+      "start_time": "2027-08-06T00:00:00+01:00",
+      "end_time": "2027-08-19T23:59:59+01:00"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1910105441695838429\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"z6xpu\",\"categories\":[],\"created_at\":\"2027-08-05T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":12000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-08-19T22:59:59Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"elau5c\",\"goal\":\"LINK_CLICKS\",\"id\":\"ojv80\",\"ios_app_store_identifier\":null,\"name\":\"Phrase keywords \u2013 pharmacy stock intent\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-08-05T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":168000000,\"updated_at\":\"2027-08-05T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"bid_strategy\":\"AUTO\",\"campaign_id\":\"z6xpu\",\"daily_budget_amount_local_micro\":12000000,\"end_time\":\"2027-08-19T23:59:59+01:00\",\"goal\":\"LINK_CLICKS\",\"name\":\"Phrase keywords \u2013 pharmacy stock intent\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"start_time\":\"2027-08-06T00:00:00+01:00\",\"total_budget_amount_local_micro\":168000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-05T23:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "campaign_id": "z6xpu",
+      "name": "Broad keywords \u2013 pharmacy software",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "placements": "ALL_ON_TWITTER",
+      "product_type": "PROMOTED_TWEETS",
+      "pay_by": "LINK_CLICK",
+      "bid_strategy": "AUTO",
+      "daily_budget_amount_local_micro": 5000000,
+      "total_budget_amount_local_micro": 70000000,
+      "start_time": "2027-08-06T00:00:00+01:00",
+      "end_time": "2027-08-19T23:59:59+01:00"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1910105441695838429\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"z6xpu\",\"categories\":[],\"created_at\":\"2027-08-05T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":5000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-08-19T22:59:59Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"elau5c\",\"goal\":\"LINK_CLICKS\",\"id\":\"ejqz1\",\"ios_app_store_identifier\":null,\"name\":\"Broad keywords \u2013 pharmacy software\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-08-05T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":70000000,\"updated_at\":\"2027-08-05T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"bid_strategy\":\"AUTO\",\"campaign_id\":\"z6xpu\",\"daily_budget_amount_local_micro\":5000000,\"end_time\":\"2027-08-19T23:59:59+01:00\",\"goal\":\"LINK_CLICKS\",\"name\":\"Broad keywords \u2013 pharmacy software\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"start_time\":\"2027-08-06T00:00:00+01:00\",\"total_budget_amount_local_micro\":70000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-05T23:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "campaign_id": "z6xpu",
+      "name": "Broad audience \u2013 IE &amp; UK only",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "placements": "ALL_ON_TWITTER",
+      "product_type": "PROMOTED_TWEETS",
+      "pay_by": "LINK_CLICK",
+      "bid_strategy": "AUTO",
+      "daily_budget_amount_local_micro": 8000000,
+      "total_budget_amount_local_micro": 112000000,
+      "start_time": "2027-08-06T00:00:00+01:00",
+      "end_time": "2027-08-19T23:59:59+01:00"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1910105441695838429\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"z6xpu\",\"categories\":[],\"created_at\":\"2027-08-05T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":8000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-08-19T22:59:59Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"elau5c\",\"goal\":\"LINK_CLICKS\",\"id\":\"l6jkb\",\"ios_app_store_identifier\":null,\"name\":\"Broad audience \u2013 IE &amp; UK only\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-08-05T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":112000000,\"updated_at\":\"2027-08-05T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"bid_strategy\":\"AUTO\",\"campaign_id\":\"z6xpu\",\"daily_budget_amount_local_micro\":8000000,\"end_time\":\"2027-08-19T23:59:59+01:00\",\"goal\":\"LINK_CLICKS\",\"name\":\"Broad audience \u2013 IE &amp; UK only\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"start_time\":\"2027-08-06T00:00:00+01:00\",\"total_budget_amount_local_micro\":112000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-05T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "line_item_id": "ojv80",
+      "targeting_type": "LOCATION",
+      "targeting_value": "ea679934779f45c7"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"id\":\"htgvmnk\",\"line_item_id\":\"ojv80\",\"location_type\":\"COUNTRIES\",\"name\":\"Ireland\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ea679934779f45c7\",\"updated_at\":\"2027-08-05T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"line_item_id\":\"ojv80\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ea679934779f45c7\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-05T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "line_item_id": "ojv80",
+      "targeting_type": "LOCATION",
+      "targeting_value": "6416b8512febefc9"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"id\":\"7jh3nwj\",\"line_item_id\":\"ojv80\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\",\"updated_at\":\"2027-08-05T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"line_item_id\":\"ojv80\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-05T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "line_item_id": "ejqz1",
+      "targeting_type": "LOCATION",
+      "targeting_value": "ea679934779f45c7"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"id\":\"i2m5zm5\",\"line_item_id\":\"ejqz1\",\"location_type\":\"COUNTRIES\",\"name\":\"Ireland\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ea679934779f45c7\",\"updated_at\":\"2027-08-05T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"line_item_id\":\"ejqz1\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ea679934779f45c7\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-05T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "line_item_id": "ejqz1",
+      "targeting_type": "LOCATION",
+      "targeting_value": "6416b8512febefc9"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"id\":\"nn4ia9m\",\"line_item_id\":\"ejqz1\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\",\"updated_at\":\"2027-08-05T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"line_item_id\":\"ejqz1\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-05T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "line_item_id": "l6jkb",
+      "targeting_type": "LOCATION",
+      "targeting_value": "ea679934779f45c7"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"id\":\"2f5p1u3\",\"line_item_id\":\"l6jkb\",\"location_type\":\"COUNTRIES\",\"name\":\"Ireland\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ea679934779f45c7\",\"updated_at\":\"2027-08-05T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"line_item_id\":\"l6jkb\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ea679934779f45c7\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-05T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "line_item_id": "l6jkb",
+      "targeting_type": "LOCATION",
+      "targeting_value": "6416b8512febefc9"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"id\":\"6c7hihd\",\"line_item_id\":\"l6jkb\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\",\"updated_at\":\"2027-08-05T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"line_item_id\":\"l6jkb\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-05T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "line_item_id": "ojv80",
+      "targeting_type": "PHRASE_KEYWORD",
+      "targeting_value": "pharmacy stock software"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"id\":\"4ynorg6\",\"line_item_id\":\"ojv80\",\"name\":\"pharmacy stock software\",\"operator_type\":\"EQ\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"pharmacy stock software\",\"updated_at\":\"2027-08-05T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"line_item_id\":\"ojv80\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"pharmacy stock software\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-05T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "line_item_id": "ojv80",
+      "targeting_type": "PHRASE_KEYWORD",
+      "targeting_value": "pharmacy inventory software"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"id\":\"hmkk3qc\",\"line_item_id\":\"ojv80\",\"name\":\"pharmacy inventory software\",\"operator_type\":\"EQ\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"pharmacy inventory software\",\"updated_at\":\"2027-08-05T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"line_item_id\":\"ojv80\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"pharmacy inventory software\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-05T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "line_item_id": "ojv80",
+      "targeting_type": "PHRASE_KEYWORD",
+      "targeting_value": "pharmacy stock control"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"id\":\"zinlqpr\",\"line_item_id\":\"ojv80\",\"name\":\"pharmacy stock control\",\"operator_type\":\"EQ\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"pharmacy stock control\",\"updated_at\":\"2027-08-05T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"line_item_id\":\"ojv80\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"pharmacy stock control\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-05T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "line_item_id": "ojv80",
+      "targeting_type": "PHRASE_KEYWORD",
+      "targeting_value": "pharmacy ordering software"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"id\":\"y10v3vc\",\"line_item_id\":\"ojv80\",\"name\":\"pharmacy ordering software\",\"operator_type\":\"EQ\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"pharmacy ordering software\",\"updated_at\":\"2027-08-05T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"line_item_id\":\"ojv80\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"pharmacy ordering software\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-05T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "line_item_id": "ojv80",
+      "targeting_type": "PHRASE_KEYWORD",
+      "targeting_value": "pharmacy management software"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"id\":\"1kwc191\",\"line_item_id\":\"ojv80\",\"name\":\"pharmacy management software\",\"operator_type\":\"EQ\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"pharmacy management software\",\"updated_at\":\"2027-08-05T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"line_item_id\":\"ojv80\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"pharmacy management software\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-05T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "line_item_id": "ojv80",
+      "targeting_type": "PHRASE_KEYWORD",
+      "targeting_value": "stock control software"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"id\":\"25sj00a\",\"line_item_id\":\"ojv80\",\"name\":\"stock control software\",\"operator_type\":\"EQ\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"stock control software\",\"updated_at\":\"2027-08-05T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"line_item_id\":\"ojv80\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"stock control software\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-05T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "line_item_id": "ojv80",
+      "targeting_type": "PHRASE_KEYWORD",
+      "targeting_value": "pharmacy expiry tracking"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"id\":\"afvhimv\",\"line_item_id\":\"ojv80\",\"name\":\"pharmacy expiry tracking\",\"operator_type\":\"EQ\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"pharmacy expiry tracking\",\"updated_at\":\"2027-08-05T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"line_item_id\":\"ojv80\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"pharmacy expiry tracking\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-05T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "line_item_id": "ejqz1",
+      "targeting_type": "BROAD_KEYWORD",
+      "targeting_value": "pharmacy software"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"id\":\"emje10b\",\"line_item_id\":\"ejqz1\",\"name\":\"pharmacy software\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"pharmacy software\",\"updated_at\":\"2027-08-05T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"line_item_id\":\"ejqz1\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"pharmacy software\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-05T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "line_item_id": "ejqz1",
+      "targeting_type": "BROAD_KEYWORD",
+      "targeting_value": "pharmacy stock"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"id\":\"sjc2b44\",\"line_item_id\":\"ejqz1\",\"name\":\"pharmacy stock\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"pharmacy stock\",\"updated_at\":\"2027-08-05T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"line_item_id\":\"ejqz1\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"pharmacy stock\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-05T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "line_item_id": "ejqz1",
+      "targeting_type": "BROAD_KEYWORD",
+      "targeting_value": "pharmacy inventory"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"id\":\"v1yd489\",\"line_item_id\":\"ejqz1\",\"name\":\"pharmacy inventory\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"pharmacy inventory\",\"updated_at\":\"2027-08-05T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"line_item_id\":\"ejqz1\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"pharmacy inventory\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-05T23:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "line_item_id": "ojv80",
+      "tweet_ids": "2215598412398887040,2215779606328605826,2215960800262941614"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"1xamcr\",\"line_item_id\":\"ojv80\",\"tweet_id\":\"2215598412398887040\",\"updated_at\":\"2027-08-05T23:00:00Z\"},{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"y5gn6h\",\"line_item_id\":\"ojv80\",\"tweet_id\":\"2215779606328605826\",\"updated_at\":\"2027-08-05T23:00:00Z\"},{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"z8j0ob\",\"line_item_id\":\"ojv80\",\"tweet_id\":\"2215960800262941614\",\"updated_at\":\"2027-08-05T23:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"line_item_id\":\"ojv80\",\"tweet_ids\":[\"2215598412398887040\",\"2215779606328605826\",\"2215960800262941614\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-05T23:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "line_item_id": "ejqz1",
+      "tweet_ids": "2215598412398887040,2215779606328605826,2215960800262941614"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"7mo1aq\",\"line_item_id\":\"ejqz1\",\"tweet_id\":\"2215598412398887040\",\"updated_at\":\"2027-08-05T23:00:00Z\"},{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"1k4amw\",\"line_item_id\":\"ejqz1\",\"tweet_id\":\"2215779606328605826\",\"updated_at\":\"2027-08-05T23:00:00Z\"},{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"10084p\",\"line_item_id\":\"ejqz1\",\"tweet_id\":\"2215960800262941614\",\"updated_at\":\"2027-08-05T23:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"line_item_id\":\"ejqz1\",\"tweet_ids\":[\"2215598412398887040\",\"2215779606328605826\",\"2215960800262941614\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-05T23:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "line_item_id": "l6jkb",
+      "tweet_ids": "2215598412398887040,2215779606328605826,2215960800262941614"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"spmp4r\",\"line_item_id\":\"l6jkb\",\"tweet_id\":\"2215598412398887040\",\"updated_at\":\"2027-08-05T23:00:00Z\"},{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"npue8q\",\"line_item_id\":\"l6jkb\",\"tweet_id\":\"2215779606328605826\",\"updated_at\":\"2027-08-05T23:00:00Z\"},{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"acrthb\",\"line_item_id\":\"l6jkb\",\"tweet_id\":\"2215960800262941614\",\"updated_at\":\"2027-08-05T23:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"line_item_id\":\"l6jkb\",\"tweet_ids\":[\"2215598412398887040\",\"2215779606328605826\",\"2215960800262941614\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-05T23:00:00Z",
+    "tool": "list_targeting_criteria",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "line_item_ids": "ojv80,ejqz1,l6jkb",
+      "count": 100
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"id\":\"htgvmnk\",\"line_item_id\":\"ojv80\",\"location_type\":\"COUNTRIES\",\"name\":\"Ireland\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ea679934779f45c7\",\"updated_at\":\"2027-08-05T23:00:00Z\"},{\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"id\":\"7jh3nwj\",\"line_item_id\":\"ojv80\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\",\"updated_at\":\"2027-08-05T23:00:00Z\"},{\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"id\":\"i2m5zm5\",\"line_item_id\":\"ejqz1\",\"location_type\":\"COUNTRIES\",\"name\":\"Ireland\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ea679934779f45c7\",\"updated_at\":\"2027-08-05T23:00:00Z\"},{\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"id\":\"nn4ia9m\",\"line_item_id\":\"ejqz1\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\",\"updated_at\":\"2027-08-05T23:00:00Z\"},{\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"id\":\"2f5p1u3\",\"line_item_id\":\"l6jkb\",\"location_type\":\"COUNTRIES\",\"name\":\"Ireland\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"ea679934779f45c7\",\"updated_at\":\"2027-08-05T23:00:00Z\"},{\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"id\":\"6c7hihd\",\"line_item_id\":\"l6jkb\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\",\"updated_at\":\"2027-08-05T23:00:00Z\"},{\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"id\":\"4ynorg6\",\"line_item_id\":\"ojv80\",\"name\":\"pharmacy stock software\",\"operator_type\":\"EQ\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"pharmacy stock software\",\"updated_at\":\"2027-08-05T23:00:00Z\"},{\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"id\":\"hmkk3qc\",\"line_item_id\":\"ojv80\",\"name\":\"pharmacy inventory software\",\"operator_type\":\"EQ\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"pharmacy inventory software\",\"updated_at\":\"2027-08-05T23:00:00Z\"},{\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"id\":\"zinlqpr\",\"line_item_id\":\"ojv80\",\"name\":\"pharmacy stock control\",\"operator_type\":\"EQ\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"pharmacy stock control\",\"updated_at\":\"2027-08-05T23:00:00Z\"},{\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"id\":\"y10v3vc\",\"line_item_id\":\"ojv80\",\"name\":\"pharmacy ordering software\",\"operator_type\":\"EQ\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"pharmacy ordering software\",\"updated_at\":\"2027-08-05T23:00:00Z\"},{\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"id\":\"1kwc191\",\"line_item_id\":\"ojv80\",\"name\":\"pharmacy management software\",\"operator_type\":\"EQ\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"pharmacy management software\",\"updated_at\":\"2027-08-05T23:00:00Z\"},{\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"id\":\"25sj00a\",\"line_item_id\":\"ojv80\",\"name\":\"stock control software\",\"operator_type\":\"EQ\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"stock control software\",\"updated_at\":\"2027-08-05T23:00:00Z\"},{\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"id\":\"afvhimv\",\"line_item_id\":\"ojv80\",\"name\":\"pharmacy expiry tracking\",\"operator_type\":\"EQ\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"pharmacy expiry tracking\",\"updated_at\":\"2027-08-05T23:00:00Z\"},{\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"id\":\"emje10b\",\"line_item_id\":\"ejqz1\",\"name\":\"pharmacy software\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"pharmacy software\",\"updated_at\":\"2027-08-05T23:00:00Z\"},{\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"id\":\"sjc2b44\",\"line_item_id\":\"ejqz1\",\"name\":\"pharmacy stock\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"pharmacy stock\",\"updated_at\":\"2027-08-05T23:00:00Z\"},{\"created_at\":\"2027-08-05T23:00:00Z\",\"deleted\":false,\"id\":\"v1yd489\",\"line_item_id\":\"ejqz1\",\"name\":\"pharmacy inventory\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"pharmacy inventory\",\"updated_at\":\"2027-08-05T23:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"count\":100,\"line_item_ids\":[\"ojv80\",\"ejqz1\",\"l6jkb\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-05T23:00:00Z",
+    "tool": "activate_campaign",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "campaign_id": "z6xpu"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2027-08-05T23:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"RUNNING\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"elau5c\",\"id\":\"z6xpu\",\"name\":\"Nettlerow \u2013 Back-to-School Demo Push (Aug 2027)\",\"purchase_order_number\":null,\"reasons_not_servable\":[],\"servable\":true,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2027-08-05T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"campaign_id\":\"z6xpu\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-05T23:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "line_item_id": "ojv80"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1910105441695838429\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"z6xpu\",\"categories\":[],\"created_at\":\"2027-08-05T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":12000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-08-19T22:59:59Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"elau5c\",\"goal\":\"LINK_CLICKS\",\"id\":\"ojv80\",\"ios_app_store_identifier\":null,\"name\":\"Phrase keywords \u2013 pharmacy stock intent\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-08-05T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":168000000,\"updated_at\":\"2027-08-05T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"line_item_id\":\"ojv80\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-05T23:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "line_item_id": "ejqz1"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1910105441695838429\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"z6xpu\",\"categories\":[],\"created_at\":\"2027-08-05T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":5000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-08-19T22:59:59Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"elau5c\",\"goal\":\"LINK_CLICKS\",\"id\":\"ejqz1\",\"ios_app_store_identifier\":null,\"name\":\"Broad keywords \u2013 pharmacy software\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-08-05T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":70000000,\"updated_at\":\"2027-08-05T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"line_item_id\":\"ejqz1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-05T23:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "line_item_id": "l6jkb"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1910105441695838429\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"z6xpu\",\"categories\":[],\"created_at\":\"2027-08-05T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":8000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-08-19T22:59:59Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"elau5c\",\"goal\":\"LINK_CLICKS\",\"id\":\"l6jkb\",\"ios_app_store_identifier\":null,\"name\":\"Broad audience \u2013 IE &amp; UK only\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-08-05T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":112000000,\"updated_at\":\"2027-08-05T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"line_item_id\":\"l6jkb\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-05T23:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-08-06T12:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-08-20T00:00:00Z\",\"now\":\"2027-08-06T12:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-06T12:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ojv80,ejqz1,l6jkb",
+      "start_time": "2027-08-05T23:00:00Z",
+      "end_time": "2027-08-06T12:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"errors\":[{\"code\":\"INVALID_TIME_WINDOW\",\"message\":\"Expect time to be midnight in the account's local timezone for day granularity\",\"parameter\":\"\"}],\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"end_time\":\"2027-08-06T12:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ojv80\",\"ejqz1\",\"l6jkb\"],\"granularity\":\"DAY\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"start_time\":\"2027-08-05T23:00:00Z\"}}}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2027-08-06T12:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "end_time": "2027-08-06T12:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ojv80,ejqz1,l6jkb",
+      "granularity": "HOUR",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-08-05T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ojv80\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[0,0,0,0,0,0,0,2599826,2518435,0,0,0,0],\"billed_engagements\":[3,0,1,0,1,1,1,1,3,3,3,3,0],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[0,0,0,0,0,0,0,1,1,0,0,0,0],\"engagements\":[3,0,1,0,1,1,1,1,3,3,3,3,0],\"follows\":null,\"impressions\":[212,128,87,121,150,161,171,190,286,360,496,406,0],\"likes\":null,\"link_clicks\":[0,0,0,0,0,0,0,1,1,0,0,0,0],\"qualified_impressions\":[212,128,87,121,150,161,171,190,286,360,496,406,0],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ejqz1\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":null,\"billed_engagements\":[1,0,0,0,0,0,0,0,0,5,2,3,0],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":null,\"engagements\":[1,0,0,0,0,0,0,0,0,5,2,3,0],\"follows\":null,\"impressions\":[85,42,30,49,62,70,75,65,138,279,350,284,0],\"likes\":null,\"link_clicks\":null,\"qualified_impressions\":[85,42,30,49,62,70,75,65,138,279,350,284,0],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"l6jkb\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[0,0,0,0,0,0,0,0,1075807,2140499,1955787,0,0],\"billed_engagements\":[2,0,0,2,3,0,1,3,7,4,7,6,0],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[0,0,0,0,0,0,0,0,1,2,2,0,0],\"engagements\":[2,0,0,2,3,0,1,3,7,4,7,6,0],\"follows\":null,\"impressions\":[350,186,112,194,234,248,280,260,580,928,1010,576,0],\"likes\":null,\"link_clicks\":[0,0,0,0,0,0,0,0,1,2,2,0,0],\"qualified_impressions\":[350,186,112,194,234,248,280,260,580,928,1010,576,0],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-08-06T12:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ojv80\",\"ejqz1\",\"l6jkb\"],\"granularity\":\"HOUR\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-08-05T23:00:00Z\"}},\"time_series_length\":13}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-06T12:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-08-06T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-08-20T00:00:00Z\",\"now\":\"2027-08-06T23:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-06T23:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "end_time": "2027-08-06T23:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ojv80,ejqz1,l6jkb",
+      "granularity": "DAY",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-08-05T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ojv80\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[11098127],\"billed_engagements\":[50],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[4],\"engagements\":[50],\"follows\":null,\"impressions\":[8238],\"likes\":null,\"link_clicks\":[4],\"qualified_impressions\":[8238],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ejqz1\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[2571559],\"billed_engagements\":[35],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[1],\"engagements\":[35],\"follows\":null,\"impressions\":[5591],\"likes\":null,\"link_clicks\":[1],\"qualified_impressions\":[5591],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"l6jkb\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[7363830],\"billed_engagements\":[71],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[7],\"engagements\":[71],\"follows\":null,\"impressions\":[11022],\"likes\":[1],\"link_clicks\":[7],\"qualified_impressions\":[11022],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-08-06T23:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ojv80\",\"ejqz1\",\"l6jkb\"],\"granularity\":\"DAY\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-08-05T23:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-06T23:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "line_item_id": "ojv80",
+      "bid_strategy": "MAX",
+      "bid_amount_local_micro": 3900000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1910105441695838429\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":3900000,\"bid_strategy\":\"MAX\",\"campaign_id\":\"z6xpu\",\"categories\":[],\"created_at\":\"2027-08-05T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":12000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-08-19T22:59:59Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"elau5c\",\"goal\":\"LINK_CLICKS\",\"id\":\"ojv80\",\"ios_app_store_identifier\":null,\"name\":\"Phrase keywords \u2013 pharmacy stock intent\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-08-05T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":168000000,\"updated_at\":\"2027-08-06T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"bid_amount_local_micro\":3900000,\"bid_strategy\":\"MAX\",\"line_item_id\":\"ojv80\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-06T23:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "line_item_id": "ejqz1",
+      "bid_strategy": "MAX",
+      "bid_amount_local_micro": 3600000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1910105441695838429\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":3600000,\"bid_strategy\":\"MAX\",\"campaign_id\":\"z6xpu\",\"categories\":[],\"created_at\":\"2027-08-05T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":5000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-08-19T22:59:59Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"elau5c\",\"goal\":\"LINK_CLICKS\",\"id\":\"ejqz1\",\"ios_app_store_identifier\":null,\"name\":\"Broad keywords \u2013 pharmacy software\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-08-05T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":70000000,\"updated_at\":\"2027-08-06T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"bid_amount_local_micro\":3600000,\"bid_strategy\":\"MAX\",\"line_item_id\":\"ejqz1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-06T23:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "line_item_id": "l6jkb",
+      "bid_strategy": "MAX",
+      "bid_amount_local_micro": 1500000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1910105441695838429\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":1500000,\"bid_strategy\":\"MAX\",\"campaign_id\":\"z6xpu\",\"categories\":[],\"created_at\":\"2027-08-05T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":8000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-08-19T22:59:59Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"elau5c\",\"goal\":\"LINK_CLICKS\",\"id\":\"l6jkb\",\"ios_app_store_identifier\":null,\"name\":\"Broad audience \u2013 IE &amp; UK only\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-08-05T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":112000000,\"updated_at\":\"2027-08-06T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"bid_amount_local_micro\":1500000,\"bid_strategy\":\"MAX\",\"line_item_id\":\"l6jkb\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-06T23:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-08-07T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-08-20T00:00:00Z\",\"now\":\"2027-08-07T23:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-07T23:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "end_time": "2027-08-07T23:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ojv80,ejqz1,l6jkb",
+      "granularity": "DAY",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-08-05T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ojv80\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[11098127,10831758],\"billed_engagements\":[50,73],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[4,5],\"engagements\":[50,73],\"follows\":null,\"impressions\":[8307,10657],\"likes\":[0,4],\"link_clicks\":[4,5],\"qualified_impressions\":[8307,10657],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ejqz1\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[2571559,4995712],\"billed_engagements\":[43,25],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[1,3],\"engagements\":[43,25],\"follows\":null,\"impressions\":[6838,3206],\"likes\":[1,0],\"link_clicks\":[1,3],\"qualified_impressions\":[6838,3206],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"l6jkb\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[7363830,7565323],\"billed_engagements\":[74,103],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[7,9],\"engagements\":[74,103],\"follows\":null,\"impressions\":[11714,14224],\"likes\":[1,2],\"link_clicks\":[7,9],\"qualified_impressions\":[11714,14224],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-08-07T23:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ojv80\",\"ejqz1\",\"l6jkb\"],\"granularity\":\"DAY\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-08-05T23:00:00Z\"}},\"time_series_length\":2}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-07T23:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "line_item_id": "ojv80",
+      "daily_budget_amount_local_micro": 14000000,
+      "total_budget_amount_local_micro": 190000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1910105441695838429\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":3900000,\"bid_strategy\":\"MAX\",\"campaign_id\":\"z6xpu\",\"categories\":[],\"created_at\":\"2027-08-05T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":14000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-08-19T22:59:59Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"elau5c\",\"goal\":\"LINK_CLICKS\",\"id\":\"ojv80\",\"ios_app_store_identifier\":null,\"name\":\"Phrase keywords \u2013 pharmacy stock intent\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-08-05T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":190000000,\"updated_at\":\"2027-08-07T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"daily_budget_amount_local_micro\":14000000,\"line_item_id\":\"ojv80\",\"total_budget_amount_local_micro\":190000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-07T23:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "line_item_id": "ejqz1",
+      "daily_budget_amount_local_micro": 7000000,
+      "total_budget_amount_local_micro": 92000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1910105441695838429\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":3600000,\"bid_strategy\":\"MAX\",\"campaign_id\":\"z6xpu\",\"categories\":[],\"created_at\":\"2027-08-05T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":7000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-08-19T22:59:59Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"elau5c\",\"goal\":\"LINK_CLICKS\",\"id\":\"ejqz1\",\"ios_app_store_identifier\":null,\"name\":\"Broad keywords \u2013 pharmacy software\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-08-05T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":92000000,\"updated_at\":\"2027-08-07T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"daily_budget_amount_local_micro\":7000000,\"line_item_id\":\"ejqz1\",\"total_budget_amount_local_micro\":92000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-07T23:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "line_item_id": "l6jkb",
+      "daily_budget_amount_local_micro": 4000000,
+      "total_budget_amount_local_micro": 63000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1910105441695838429\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":1500000,\"bid_strategy\":\"MAX\",\"campaign_id\":\"z6xpu\",\"categories\":[],\"created_at\":\"2027-08-05T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":4000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-08-19T22:59:59Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"elau5c\",\"goal\":\"LINK_CLICKS\",\"id\":\"l6jkb\",\"ios_app_store_identifier\":null,\"name\":\"Broad audience \u2013 IE &amp; UK only\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-08-05T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":63000000,\"updated_at\":\"2027-08-07T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"daily_budget_amount_local_micro\":4000000,\"line_item_id\":\"l6jkb\",\"total_budget_amount_local_micro\":63000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-07T23:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-08-08T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-08-20T00:00:00Z\",\"now\":\"2027-08-08T23:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-08T23:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "end_time": "2027-08-08T23:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ojv80,ejqz1,l6jkb",
+      "granularity": "DAY",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-08-06T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ojv80\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[10831758,12730806],\"billed_engagements\":[75,67],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[5,6],\"engagements\":[75,67],\"follows\":null,\"impressions\":[10932,8768],\"likes\":[4,0],\"link_clicks\":[5,6],\"qualified_impressions\":[10932,8768],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ejqz1\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[4995712,5864151],\"billed_engagements\":[25,58],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[3,3],\"engagements\":[25,58],\"follows\":null,\"impressions\":[3217,10106],\"likes\":[0,1],\"link_clicks\":[3,3],\"qualified_impressions\":[3217,10106],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"l6jkb\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[7565323,3435581],\"billed_engagements\":[105,55],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[9,5],\"engagements\":[105,55],\"follows\":null,\"impressions\":[14618,8582],\"likes\":[3,1],\"link_clicks\":[9,5],\"qualified_impressions\":[14618,8582],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-08-08T23:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ojv80\",\"ejqz1\",\"l6jkb\"],\"granularity\":\"DAY\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-08-06T23:00:00Z\"}},\"time_series_length\":2}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-08T23:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "daily_budget_amount_local_micro": 16000000,
+      "line_item_id": "ojv80",
+      "total_budget_amount_local_micro": 211000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1910105441695838429\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":3900000,\"bid_strategy\":\"MAX\",\"campaign_id\":\"z6xpu\",\"categories\":[],\"created_at\":\"2027-08-05T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":16000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-08-19T22:59:59Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"elau5c\",\"goal\":\"LINK_CLICKS\",\"id\":\"ojv80\",\"ios_app_store_identifier\":null,\"name\":\"Phrase keywords \u2013 pharmacy stock intent\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-08-05T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":211000000,\"updated_at\":\"2027-08-08T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"daily_budget_amount_local_micro\":16000000,\"line_item_id\":\"ojv80\",\"total_budget_amount_local_micro\":211000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-08T23:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "daily_budget_amount_local_micro": 7000000,
+      "line_item_id": "ejqz1",
+      "total_budget_amount_local_micro": 91000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1910105441695838429\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":3600000,\"bid_strategy\":\"MAX\",\"campaign_id\":\"z6xpu\",\"categories\":[],\"created_at\":\"2027-08-05T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":7000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-08-19T22:59:59Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"elau5c\",\"goal\":\"LINK_CLICKS\",\"id\":\"ejqz1\",\"ios_app_store_identifier\":null,\"name\":\"Broad keywords \u2013 pharmacy software\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-08-05T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":91000000,\"updated_at\":\"2027-08-08T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"daily_budget_amount_local_micro\":7000000,\"line_item_id\":\"ejqz1\",\"total_budget_amount_local_micro\":91000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-08T23:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "daily_budget_amount_local_micro": 2000000,
+      "line_item_id": "l6jkb",
+      "total_budget_amount_local_micro": 41000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1910105441695838429\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":1500000,\"bid_strategy\":\"MAX\",\"campaign_id\":\"z6xpu\",\"categories\":[],\"created_at\":\"2027-08-05T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":2000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-08-19T22:59:59Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"elau5c\",\"goal\":\"LINK_CLICKS\",\"id\":\"l6jkb\",\"ios_app_store_identifier\":null,\"name\":\"Broad audience \u2013 IE &amp; UK only\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-08-05T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":41000000,\"updated_at\":\"2027-08-08T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"daily_budget_amount_local_micro\":2000000,\"line_item_id\":\"l6jkb\",\"total_budget_amount_local_micro\":41000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-08T23:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-08-09T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-08-20T00:00:00Z\",\"now\":\"2027-08-09T23:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-09T23:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "end_time": "2027-08-09T23:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ojv80,ejqz1,l6jkb",
+      "granularity": "DAY",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-08-08T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ojv80\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[13487876],\"billed_engagements\":[75],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[6],\"engagements\":[75],\"follows\":null,\"impressions\":[11713],\"likes\":[1],\"link_clicks\":[6],\"qualified_impressions\":[11713],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ejqz1\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[6000803],\"billed_engagements\":[28],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[3],\"engagements\":[28],\"follows\":null,\"impressions\":[3278],\"likes\":[1],\"link_clicks\":[3],\"qualified_impressions\":[3278],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"l6jkb\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[1427566],\"billed_engagements\":[39],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[2],\"engagements\":[39],\"follows\":null,\"impressions\":[6305],\"likes\":[1],\"link_clicks\":[2],\"qualified_impressions\":[6305],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-08-09T23:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ojv80\",\"ejqz1\",\"l6jkb\"],\"granularity\":\"DAY\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-08-08T23:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-09T23:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "bid_amount_local_micro": 4900000,
+      "line_item_id": "ojv80"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1910105441695838429\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":4900000,\"bid_strategy\":\"MAX\",\"campaign_id\":\"z6xpu\",\"categories\":[],\"created_at\":\"2027-08-05T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":16000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-08-19T22:59:59Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"elau5c\",\"goal\":\"LINK_CLICKS\",\"id\":\"ojv80\",\"ios_app_store_identifier\":null,\"name\":\"Phrase keywords \u2013 pharmacy stock intent\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-08-05T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":211000000,\"updated_at\":\"2027-08-09T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"bid_amount_local_micro\":4900000,\"line_item_id\":\"ojv80\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-09T23:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "bid_amount_local_micro": 4500000,
+      "line_item_id": "ejqz1"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1910105441695838429\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":4500000,\"bid_strategy\":\"MAX\",\"campaign_id\":\"z6xpu\",\"categories\":[],\"created_at\":\"2027-08-05T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":7000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-08-19T22:59:59Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"elau5c\",\"goal\":\"LINK_CLICKS\",\"id\":\"ejqz1\",\"ios_app_store_identifier\":null,\"name\":\"Broad keywords \u2013 pharmacy software\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-08-05T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":91000000,\"updated_at\":\"2027-08-09T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"bid_amount_local_micro\":4500000,\"line_item_id\":\"ejqz1\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-09T23:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-08-10T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-08-20T00:00:00Z\",\"now\":\"2027-08-10T23:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-10T23:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "end_time": "2027-08-10T23:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ojv80,ejqz1,l6jkb",
+      "granularity": "DAY",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-08-09T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ojv80\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[14266045],\"billed_engagements\":[80],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[5],\"engagements\":[80],\"follows\":null,\"impressions\":[11636],\"likes\":[2],\"link_clicks\":[5],\"qualified_impressions\":[11636],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ejqz1\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[5052948],\"billed_engagements\":[40],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[2],\"engagements\":[40],\"follows\":null,\"impressions\":[7295],\"likes\":null,\"link_clicks\":[2],\"qualified_impressions\":[7295],\"replies\":null,\"retweets\":[1]},\"segment\":null}]},{\"id\":\"l6jkb\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[1883371],\"billed_engagements\":[44],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[2],\"engagements\":[44],\"follows\":null,\"impressions\":[6007],\"likes\":null,\"link_clicks\":[2],\"qualified_impressions\":[6007],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-08-10T23:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ojv80\",\"ejqz1\",\"l6jkb\"],\"granularity\":\"DAY\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-08-09T23:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-10T23:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-08-11T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-08-20T00:00:00Z\",\"now\":\"2027-08-11T23:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-11T23:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "end_time": "2027-08-11T23:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ojv80,ejqz1,l6jkb",
+      "granularity": "DAY",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-08-10T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ojv80\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[11392621],\"billed_engagements\":[74],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[4],\"engagements\":[74],\"follows\":null,\"impressions\":[11627],\"likes\":[4],\"link_clicks\":[4],\"qualified_impressions\":[11627],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ejqz1\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[4954418],\"billed_engagements\":[25],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[2],\"engagements\":[25],\"follows\":null,\"impressions\":[3963],\"likes\":null,\"link_clicks\":[2],\"qualified_impressions\":[3963],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"l6jkb\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[1274569],\"billed_engagements\":[27],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[2],\"engagements\":[27],\"follows\":null,\"impressions\":[4512],\"likes\":[2],\"link_clicks\":[2],\"qualified_impressions\":[4512],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-08-11T23:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ojv80\",\"ejqz1\",\"l6jkb\"],\"granularity\":\"DAY\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-08-10T23:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-11T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "line_item_id": "ojv80",
+      "targeting_type": "PHRASE_KEYWORD",
+      "targeting_value": "pharmacy inventory management"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-08-11T23:00:00Z\",\"deleted\":false,\"id\":\"bsuhhlv\",\"line_item_id\":\"ojv80\",\"name\":\"pharmacy inventory management\",\"operator_type\":\"EQ\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"pharmacy inventory management\",\"updated_at\":\"2027-08-11T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"line_item_id\":\"ojv80\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"pharmacy inventory management\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-11T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "line_item_id": "ojv80",
+      "targeting_type": "PHRASE_KEYWORD",
+      "targeting_value": "pharmacy stock management"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-08-11T23:00:00Z\",\"deleted\":false,\"id\":\"9xmjvmh\",\"line_item_id\":\"ojv80\",\"name\":\"pharmacy stock management\",\"operator_type\":\"EQ\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"pharmacy stock management\",\"updated_at\":\"2027-08-11T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"line_item_id\":\"ojv80\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"pharmacy stock management\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-11T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "line_item_id": "ojv80",
+      "targeting_type": "PHRASE_KEYWORD",
+      "targeting_value": "chemist software"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-08-11T23:00:00Z\",\"deleted\":false,\"id\":\"4ytgrur\",\"line_item_id\":\"ojv80\",\"name\":\"chemist software\",\"operator_type\":\"EQ\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"chemist software\",\"updated_at\":\"2027-08-11T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"line_item_id\":\"ojv80\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"chemist software\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-11T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "line_item_id": "ojv80",
+      "targeting_type": "PHRASE_KEYWORD",
+      "targeting_value": "dispensary software"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-08-11T23:00:00Z\",\"deleted\":false,\"id\":\"yqc3k5w\",\"line_item_id\":\"ojv80\",\"name\":\"dispensary software\",\"operator_type\":\"EQ\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"dispensary software\",\"updated_at\":\"2027-08-11T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"line_item_id\":\"ojv80\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"dispensary software\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-11T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "line_item_id": "ojv80",
+      "targeting_type": "PHRASE_KEYWORD",
+      "targeting_value": "retail pharmacy software"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-08-11T23:00:00Z\",\"deleted\":false,\"id\":\"uus284l\",\"line_item_id\":\"ojv80\",\"name\":\"retail pharmacy software\",\"operator_type\":\"EQ\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"retail pharmacy software\",\"updated_at\":\"2027-08-11T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"line_item_id\":\"ojv80\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"retail pharmacy software\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-11T23:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "line_item_id": "ojv80",
+      "targeting_type": "PHRASE_KEYWORD",
+      "targeting_value": "pharmacy stocktake"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2027-08-11T23:00:00Z\",\"deleted\":false,\"id\":\"7k1jj2t\",\"line_item_id\":\"ojv80\",\"name\":\"pharmacy stocktake\",\"operator_type\":\"EQ\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"pharmacy stocktake\",\"updated_at\":\"2027-08-11T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"line_item_id\":\"ojv80\",\"targeting_type\":\"PHRASE_KEYWORD\",\"targeting_value\":\"pharmacy stocktake\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-11T23:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-08-12T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-08-20T00:00:00Z\",\"now\":\"2027-08-12T23:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-12T23:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "end_time": "2027-08-12T23:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ojv80,ejqz1,l6jkb",
+      "granularity": "DAY",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-08-11T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ojv80\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[13846672],\"billed_engagements\":[63],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[5],\"engagements\":[63],\"follows\":null,\"impressions\":[10902],\"likes\":[2],\"link_clicks\":[5],\"qualified_impressions\":[10902],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ejqz1\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[5061097],\"billed_engagements\":[27],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[2],\"engagements\":[27],\"follows\":null,\"impressions\":[4798],\"likes\":null,\"link_clicks\":[2],\"qualified_impressions\":[4798],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"l6jkb\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[1901355],\"billed_engagements\":[43],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[2],\"engagements\":[43],\"follows\":null,\"impressions\":[5927],\"likes\":[1],\"link_clicks\":[2],\"qualified_impressions\":[5927],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-08-12T23:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ojv80\",\"ejqz1\",\"l6jkb\"],\"granularity\":\"DAY\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-08-11T23:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-12T23:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "daily_budget_amount_local_micro": 17000000,
+      "line_item_id": "ojv80",
+      "total_budget_amount_local_micro": 206000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1910105441695838429\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":4900000,\"bid_strategy\":\"MAX\",\"campaign_id\":\"z6xpu\",\"categories\":[],\"created_at\":\"2027-08-05T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":17000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-08-19T22:59:59Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"elau5c\",\"goal\":\"LINK_CLICKS\",\"id\":\"ojv80\",\"ios_app_store_identifier\":null,\"name\":\"Phrase keywords \u2013 pharmacy stock intent\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-08-05T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":206000000,\"updated_at\":\"2027-08-12T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"daily_budget_amount_local_micro\":17000000,\"line_item_id\":\"ojv80\",\"total_budget_amount_local_micro\":206000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-12T23:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "daily_budget_amount_local_micro": 7000000,
+      "line_item_id": "ejqz1",
+      "total_budget_amount_local_micro": 84000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1910105441695838429\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":4500000,\"bid_strategy\":\"MAX\",\"campaign_id\":\"z6xpu\",\"categories\":[],\"created_at\":\"2027-08-05T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":7000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-08-19T22:59:59Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"elau5c\",\"goal\":\"LINK_CLICKS\",\"id\":\"ejqz1\",\"ios_app_store_identifier\":null,\"name\":\"Broad keywords \u2013 pharmacy software\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-08-05T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":84000000,\"updated_at\":\"2027-08-12T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"daily_budget_amount_local_micro\":7000000,\"line_item_id\":\"ejqz1\",\"total_budget_amount_local_micro\":84000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-12T23:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "daily_budget_amount_local_micro": 5000000,
+      "line_item_id": "l6jkb",
+      "total_budget_amount_local_micro": 60000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1910105441695838429\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":1500000,\"bid_strategy\":\"MAX\",\"campaign_id\":\"z6xpu\",\"categories\":[],\"created_at\":\"2027-08-05T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":5000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-08-19T22:59:59Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"elau5c\",\"goal\":\"LINK_CLICKS\",\"id\":\"l6jkb\",\"ios_app_store_identifier\":null,\"name\":\"Broad audience \u2013 IE &amp; UK only\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-08-05T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":60000000,\"updated_at\":\"2027-08-12T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"daily_budget_amount_local_micro\":5000000,\"line_item_id\":\"l6jkb\",\"total_budget_amount_local_micro\":60000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-12T23:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-08-13T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-08-20T00:00:00Z\",\"now\":\"2027-08-13T23:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-13T23:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "end_time": "2027-08-13T23:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ojv80,ejqz1,l6jkb",
+      "granularity": "DAY",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-08-12T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ojv80\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[14872370],\"billed_engagements\":[84],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[6],\"engagements\":[84],\"follows\":null,\"impressions\":[10092],\"likes\":[1],\"link_clicks\":[6],\"qualified_impressions\":[10092],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ejqz1\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[6618269],\"billed_engagements\":[47],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[3],\"engagements\":[47],\"follows\":null,\"impressions\":[6772],\"likes\":null,\"link_clicks\":[3],\"qualified_impressions\":[6772],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"l6jkb\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[4888522],\"billed_engagements\":[58],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[6],\"engagements\":[58],\"follows\":null,\"impressions\":[8031],\"likes\":[2],\"link_clicks\":[6],\"qualified_impressions\":[8031],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-08-13T23:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ojv80\",\"ejqz1\",\"l6jkb\"],\"granularity\":\"DAY\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-08-12T23:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-13T23:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-08-14T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-08-20T00:00:00Z\",\"now\":\"2027-08-14T23:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-14T23:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "end_time": "2027-08-14T23:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ojv80,ejqz1,l6jkb",
+      "granularity": "DAY",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-08-13T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ojv80\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[16227733],\"billed_engagements\":[85],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[8],\"engagements\":[85],\"follows\":null,\"impressions\":[10040],\"likes\":[2],\"link_clicks\":[8],\"qualified_impressions\":[10040],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ejqz1\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[5640442],\"billed_engagements\":[44],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[3],\"engagements\":[44],\"follows\":null,\"impressions\":[5678],\"likes\":null,\"link_clicks\":[3],\"qualified_impressions\":[5678],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"l6jkb\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[4160345],\"billed_engagements\":[95],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[5],\"engagements\":[95],\"follows\":null,\"impressions\":[14638],\"likes\":[3],\"link_clicks\":[5],\"qualified_impressions\":[14638],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-08-14T23:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ojv80\",\"ejqz1\",\"l6jkb\"],\"granularity\":\"DAY\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-08-13T23:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-14T23:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-08-15T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-08-20T00:00:00Z\",\"now\":\"2027-08-15T23:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-15T23:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "end_time": "2027-08-15T23:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ojv80,ejqz1,l6jkb",
+      "granularity": "DAY",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-08-14T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ojv80\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[8911121],\"billed_engagements\":[85],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[4],\"engagements\":[85],\"follows\":null,\"impressions\":[12602],\"likes\":[2],\"link_clicks\":[4],\"qualified_impressions\":[12602],\"replies\":null,\"retweets\":[2]},\"segment\":null}]},{\"id\":\"ejqz1\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[6366672],\"billed_engagements\":[28],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[3],\"engagements\":[28],\"follows\":null,\"impressions\":[4416],\"likes\":[1],\"link_clicks\":[3],\"qualified_impressions\":[4416],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"l6jkb\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[4693527],\"billed_engagements\":[60],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[7],\"engagements\":[60],\"follows\":null,\"impressions\":[8192],\"likes\":[1],\"link_clicks\":[7],\"qualified_impressions\":[8192],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-08-15T23:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ojv80\",\"ejqz1\",\"l6jkb\"],\"granularity\":\"DAY\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-08-14T23:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-15T23:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "daily_budget_amount_local_micro": 18000000,
+      "line_item_id": "ojv80",
+      "total_budget_amount_local_micro": 200000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1910105441695838429\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":4900000,\"bid_strategy\":\"MAX\",\"campaign_id\":\"z6xpu\",\"categories\":[],\"created_at\":\"2027-08-05T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":18000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-08-19T22:59:59Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"elau5c\",\"goal\":\"LINK_CLICKS\",\"id\":\"ojv80\",\"ios_app_store_identifier\":null,\"name\":\"Phrase keywords \u2013 pharmacy stock intent\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-08-05T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":200000000,\"updated_at\":\"2027-08-15T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"daily_budget_amount_local_micro\":18000000,\"line_item_id\":\"ojv80\",\"total_budget_amount_local_micro\":200000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-15T23:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "daily_budget_amount_local_micro": 8000000,
+      "line_item_id": "ejqz1",
+      "total_budget_amount_local_micro": 82000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1910105441695838429\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":4500000,\"bid_strategy\":\"MAX\",\"campaign_id\":\"z6xpu\",\"categories\":[],\"created_at\":\"2027-08-05T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":8000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-08-19T22:59:59Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"elau5c\",\"goal\":\"LINK_CLICKS\",\"id\":\"ejqz1\",\"ios_app_store_identifier\":null,\"name\":\"Broad keywords \u2013 pharmacy software\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-08-05T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":82000000,\"updated_at\":\"2027-08-15T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"daily_budget_amount_local_micro\":8000000,\"line_item_id\":\"ejqz1\",\"total_budget_amount_local_micro\":82000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-15T23:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "daily_budget_amount_local_micro": 8000000,
+      "line_item_id": "l6jkb",
+      "total_budget_amount_local_micro": 68000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":null,\"advertiser_user_id\":\"1910105441695838429\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":1500000,\"bid_strategy\":\"MAX\",\"campaign_id\":\"z6xpu\",\"categories\":[],\"created_at\":\"2027-08-05T23:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":8000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2027-08-19T22:59:59Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"elau5c\",\"goal\":\"LINK_CLICKS\",\"id\":\"l6jkb\",\"ios_app_store_identifier\":null,\"name\":\"Broad audience \u2013 IE &amp; UK only\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2027-08-05T23:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":68000000,\"updated_at\":\"2027-08-15T23:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"daily_budget_amount_local_micro\":8000000,\"line_item_id\":\"l6jkb\",\"total_budget_amount_local_micro\":68000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-15T23:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-08-16T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-08-20T00:00:00Z\",\"now\":\"2027-08-16T23:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-16T23:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "end_time": "2027-08-16T23:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ojv80,ejqz1,l6jkb",
+      "granularity": "DAY",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-08-15T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ojv80\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[15471201],\"billed_engagements\":[71],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[6],\"engagements\":[71],\"follows\":null,\"impressions\":[10414],\"likes\":[1],\"link_clicks\":[6],\"qualified_impressions\":[10414],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ejqz1\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[7016385],\"billed_engagements\":[44],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[3],\"engagements\":[44],\"follows\":null,\"impressions\":[4867],\"likes\":null,\"link_clicks\":[3],\"qualified_impressions\":[4867],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"l6jkb\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[3584531],\"billed_engagements\":[78],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[4],\"engagements\":[78],\"follows\":null,\"impressions\":[11367],\"likes\":[3],\"link_clicks\":[4],\"qualified_impressions\":[11367],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-08-16T23:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ojv80\",\"ejqz1\",\"l6jkb\"],\"granularity\":\"DAY\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-08-15T23:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-16T23:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-08-17T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-08-20T00:00:00Z\",\"now\":\"2027-08-17T23:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-17T23:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "end_time": "2027-08-17T23:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ojv80,ejqz1,l6jkb",
+      "granularity": "DAY",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-08-16T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ojv80\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[16434446],\"billed_engagements\":[63],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[7],\"engagements\":[63],\"follows\":null,\"impressions\":[7969],\"likes\":null,\"link_clicks\":[7],\"qualified_impressions\":[7969],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ejqz1\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[6817133],\"billed_engagements\":[31],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[3],\"engagements\":[31],\"follows\":null,\"impressions\":[4718],\"likes\":[1],\"link_clicks\":[3],\"qualified_impressions\":[4718],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"l6jkb\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[7589469],\"billed_engagements\":[90],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[9],\"engagements\":[90],\"follows\":null,\"impressions\":[12231],\"likes\":[4],\"link_clicks\":[9],\"qualified_impressions\":[12231],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-08-17T23:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ojv80\",\"ejqz1\",\"l6jkb\"],\"granularity\":\"DAY\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-08-16T23:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-17T23:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-08-18T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-08-20T00:00:00Z\",\"now\":\"2027-08-18T23:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-18T23:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "end_time": "2027-08-18T23:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ojv80,ejqz1,l6jkb",
+      "granularity": "DAY",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-08-17T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ojv80\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[11725576],\"billed_engagements\":[102],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[5],\"engagements\":[102],\"follows\":null,\"impressions\":[14869],\"likes\":[1],\"link_clicks\":[5],\"qualified_impressions\":[14869],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ejqz1\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[7819245],\"billed_engagements\":[27],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[4],\"engagements\":[27],\"follows\":null,\"impressions\":[3224],\"likes\":[1],\"link_clicks\":[4],\"qualified_impressions\":[3224],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"l6jkb\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[5283385],\"billed_engagements\":[100],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[6],\"engagements\":[100],\"follows\":null,\"impressions\":[14366],\"likes\":[6],\"link_clicks\":[6],\"qualified_impressions\":[14366],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-08-18T23:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ojv80\",\"ejqz1\",\"l6jkb\"],\"granularity\":\"DAY\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-08-17T23:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-18T23:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2027-08-19T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2027-08-20T00:00:00Z\",\"now\":\"2027-08-19T23:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-19T23:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "end_time": "2027-08-19T23:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ojv80,ejqz1,l6jkb",
+      "granularity": "DAY",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-08-05T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"errors\":[{\"code\":\"INVALID_TIME_WINDOW\",\"message\":\"The end_time (2027-08-19 23:00:00 +0000) can be a maximum of 7.days+1.hours after the start_time (2027-08-05 23:00:00 +0000)\",\"parameter\":\"\"}],\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"end_time\":\"2027-08-19T23:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ojv80\",\"ejqz1\",\"l6jkb\"],\"granularity\":\"DAY\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"start_time\":\"2027-08-05T23:00:00Z\"}}}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2027-08-19T23:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "end_time": "2027-08-19T23:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ojv80,ejqz1,l6jkb",
+      "granularity": "TOTAL",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-08-05T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"errors\":[{\"code\":\"INVALID_TIME_WINDOW\",\"message\":\"The end_time (2027-08-19 23:00:00 +0000) can be a maximum of 7.days+1.hours after the start_time (2027-08-05 23:00:00 +0000)\",\"parameter\":\"\"}],\"request\":{\"params\":{\"account_id\":\"18izf70qa2b\",\"end_time\":\"2027-08-19T23:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ojv80\",\"ejqz1\",\"l6jkb\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"start_time\":\"2027-08-05T23:00:00Z\"}}}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2027-08-19T23:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "end_time": "2027-08-19T23:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ojv80,ejqz1,l6jkb",
+      "granularity": "DAY",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-08-18T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ojv80\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[17428097],\"billed_engagements\":[106],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[7],\"engagements\":[106],\"follows\":null,\"impressions\":[13404],\"likes\":[2],\"link_clicks\":[7],\"qualified_impressions\":[13404],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ejqz1\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[4729036],\"billed_engagements\":[84],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[2],\"engagements\":[84],\"follows\":null,\"impressions\":[13520],\"likes\":[2],\"link_clicks\":[2],\"qualified_impressions\":[13520],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"l6jkb\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[6890772],\"billed_engagements\":[93],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[8],\"engagements\":[93],\"follows\":null,\"impressions\":[13679],\"likes\":null,\"link_clicks\":[8],\"qualified_impressions\":[13679],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-08-19T23:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ojv80\",\"ejqz1\",\"l6jkb\"],\"granularity\":\"DAY\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-08-18T23:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-19T23:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "end_time": "2027-08-12T23:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ojv80,ejqz1,l6jkb",
+      "granularity": "DAY",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-08-05T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ojv80\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[11098127,10831758,12730806,15856785,14266045,14334421,13846672],\"billed_engagements\":[50,75,74,82,82,81,68],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[4,5,6,7,5,5,5],\"engagements\":[50,75,74,82,82,81,68],\"follows\":null,\"impressions\":[8307,10932,9566,12416,12007,12723,11268],\"likes\":[0,4,0,1,2,4,2],\"link_clicks\":[4,5,6,7,5,5,5],\"qualified_impressions\":[8307,10932,9566,12416,12007,12723,11268],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ejqz1\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[2571559,4995712,5864151,6000803,5052948,4954418,5061097],\"billed_engagements\":[43,25,66,32,41,31,33],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[1,3,3,3,2,2,2],\"engagements\":[43,25,66,32,41,31,33],\"follows\":null,\"impressions\":[6838,3217,10809,3579,8090,4493,5675],\"likes\":[1,0,2,1,1,0,0],\"link_clicks\":[1,3,3,3,2,2,2],\"qualified_impressions\":[6838,3217,10809,3579,8090,4493,5675],\"replies\":null,\"retweets\":[0,0,0,0,1,0,0]},\"segment\":null}]},{\"id\":\"l6jkb\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[7363830,7565323,3435581,1427566,1883371,1274569,1901355],\"billed_engagements\":[74,105,59,41,46,27,43],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[7,9,5,2,2,2,2],\"engagements\":[74,105,59,41,46,27,43],\"follows\":null,\"impressions\":[11714,14618,9050,6503,6195,4658,5949],\"likes\":[1,3,1,1,0,2,1],\"link_clicks\":[7,9,5,2,2,2,2],\"qualified_impressions\":[11714,14618,9050,6503,6195,4658,5949],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-08-12T23:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ojv80\",\"ejqz1\",\"l6jkb\"],\"granularity\":\"DAY\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-08-05T23:00:00Z\"}},\"time_series_length\":7}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2027-08-19T23:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "18izf70qa2b",
+      "end_time": "2027-08-19T23:00:00Z",
+      "entity": "LINE_ITEM",
+      "entity_ids": "ojv80,ejqz1,l6jkb",
+      "granularity": "DAY",
+      "metric_groups": "BILLING,ENGAGEMENT",
+      "placement": "ALL_ON_TWITTER",
+      "start_time": "2027-08-12T23:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"ojv80\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[14872370,16227733,11298129,15471201,16434446,11725576,17428097],\"billed_engagements\":[88,90,95,74,64,107,106],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[6,8,5,6,7,5,7],\"engagements\":[88,90,95,74,64,107,106],\"follows\":null,\"impressions\":[10525,10872,13196,10953,8363,15320,13404],\"likes\":[1,3,2,1,0,1,2],\"link_clicks\":[6,8,5,6,7,5,7],\"qualified_impressions\":[10525,10872,13196,10953,8363,15320,13404],\"replies\":null,\"retweets\":[0,0,2,0,0,0,0]},\"segment\":null}]},{\"id\":\"ejqz1\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[6618269,5640442,6366672,7016385,6817133,7819245,4729036],\"billed_engagements\":[49,48,28,46,35,27,84],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[3,3,3,3,3,4,2],\"engagements\":[49,48,28,46,35,27,84],\"follows\":null,\"impressions\":[7072,6230,4927,5139,5003,3327,13520],\"likes\":[0,0,1,0,2,1,2],\"link_clicks\":[3,3,3,3,3,4,2],\"qualified_impressions\":[7072,6230,4927,5139,5003,3327,13520],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"l6jkb\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[4888522,4160345,4693527,4509267,7589469,6210391,6890772],\"billed_engagements\":[62,101,62,85,97,104,93],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[6,5,7,5,9,7,8],\"engagements\":[62,101,62,85,97,104,93],\"follows\":null,\"impressions\":[8350,15626,8780,11836,12865,14760,13679],\"likes\":[3,3,1,3,4,6,0],\"link_clicks\":[6,5,7,5,9,7,8],\"qualified_impressions\":[8350,15626,8780,11836,12865,14760,13679],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2027-08-19T23:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"ojv80\",\"ejqz1\",\"l6jkb\"],\"granularity\":\"DAY\",\"metric_groups\":[\"BILLING\",\"ENGAGEMENT\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2027-08-12T23:00:00Z\"}},\"time_series_length\":7}"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

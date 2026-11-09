@@ -1,0 +1,1826 @@
+[
+  {
+    "at": "2026-11-20T00:00:00Z",
+    "tool": "list_ads_accounts",
+    "arguments": {
+      "q": "Quillstep",
+      "with_total_count": true
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"business_id\":null,\"business_name\":null,\"country_code\":\"GB\",\"created_at\":\"2023-05-28T00:00:00Z\",\"deleted\":false,\"id\":\"1866febnka2\",\"industry_type\":null,\"name\":\"Quillstep\",\"timezone\":\"Europe/London\",\"timezone_switch_at\":\"2023-05-28T00:00:00Z\",\"updated_at\":\"2023-05-28T00:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"q\":\"Quillstep\",\"with_total_count\":true}},\"total_count\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-20T00:00:00Z",
+    "tool": "search_targeting_locations",
+    "arguments": {
+      "q": "United Kingdom",
+      "location_type": "COUNTRIES",
+      "country_code": "GB"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"country_code\":\"GB\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"}],\"next_cursor\":null,\"request\":{\"params\":{\"country_code\":\"GB\",\"location_type\":\"COUNTRIES\",\"q\":\"United Kingdom\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-20T00:00:00Z",
+    "tool": "get_current_time",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2026-11-30T01:00:00Z\",\"now\":\"2026-11-20T00:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-20T00:00:00Z",
+    "tool": "list_funding_instruments",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "with_total_count": true
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"able_to_fund\":true,\"created_at\":\"2023-05-28T00:00:00Z\",\"credit_limit_local_micro\":null,\"credit_remaining_local_micro\":null,\"currency\":\"USD\",\"deleted\":false,\"description\":\"Visa ending in 8808\",\"end_time\":null,\"entity_status\":\"ACTIVE\",\"funded_amount_local_micro\":0,\"id\":\"d4diri\",\"io_header\":null,\"reasons_not_able_to_fund\":[],\"start_time\":\"2023-05-28T00:00:00Z\",\"type\":\"CREDIT_CARD\",\"updated_at\":\"2023-05-28T00:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"with_total_count\":true}},\"total_count\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-20T00:00:00Z",
+    "tool": "search_targeting_interests",
+    "arguments": {
+      "q": "software",
+      "count": 20
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"name\":\"Technology / Software Development\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925953040130953216\"}],\"request\":{\"params\":{\"count\":20,\"q\":\"software\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-20T00:00:00Z",
+    "tool": "list_account_posts",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "tweet_type": "PUBLISHED",
+      "timeline_type": "ALL",
+      "tweet_ids": "2121392666835189657,2121573860768234935,2121755054700018547,2121936248635585410",
+      "count": 20
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Sun Nov 15 12:00:00 +0000 2026\",\"display_text_range\":[0,195],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"quillstep.co.uk/black-fri\u2026\",\"expanded_url\":\"https://quillstep.co.uk/black-friday\",\"indices\":[172,195],\"url\":\"https://t.co/gtiFd1Kt8N\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"\u00a30 to start. Quillstep's Solo plan is free forever, and for Black Friday week the Team plan trial runs 60 days instead of 14. Safer schema migrations for Postgres & MySQL. https://t.co/gtiFd1Kt8N\",\"geo\":null,\"id\":2121936248635585410,\"id_str\":\"2121936248635585410\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2121936248635585410\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Sun May 28 00:00:00 +0000 2023\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":889,\"follow_request_sent\":null,\"followers_count\":1589,\"following\":null,\"friends_count\":839,\"geo_enabled\":false,\"id\":1662609628984569493,\"id_str\":\"1662609628984569493\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":9,\"location\":\"\",\"name\":\"Quillstep\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1662609628984569493/1657680789\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1632386564357680789/NOwJjBxk_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1632386564357680789/NOwJjBxk_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"Quillstep\",\"statuses_count\":1089,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Sun Nov 15 00:00:00 +0000 2026\",\"display_text_range\":[0,180],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"quillstep.co.uk/black-fri\u2026\",\"expanded_url\":\"https://quillstep.co.uk/black-friday\",\"indices\":[157,180],\"url\":\"https://t.co/ao5zml1caj\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Ends midnight Sunday 29 Nov: sign up to Quillstep this week and get 60 days of the Team plan free, not the usual 14. Reviewed, reversible schema migrations. https://t.co/ao5zml1caj\",\"geo\":null,\"id\":2121755054700018547,\"id_str\":\"2121755054700018547\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2121755054700018547\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Sun May 28 00:00:00 +0000 2023\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":889,\"follow_request_sent\":null,\"followers_count\":1589,\"following\":null,\"friends_count\":839,\"geo_enabled\":false,\"id\":1662609628984569493,\"id_str\":\"1662609628984569493\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":9,\"location\":\"\",\"name\":\"Quillstep\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1662609628984569493/1657680789\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1632386564357680789/NOwJjBxk_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1632386564357680789/NOwJjBxk_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"Quillstep\",\"statuses_count\":1089,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Sat Nov 14 12:00:00 +0000 2026\",\"display_text_range\":[0,125],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"quillstep.co.uk/black-fri\u2026\",\"expanded_url\":\"https://quillstep.co.uk/black-friday\",\"indices\":[102,125],\"url\":\"https://t.co/ZAKnuRpBfs\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Ever run ALTER TABLE on prod and held your breath until it finished? \ud83d\ude2c There's a calmer way to do it. https://t.co/ZAKnuRpBfs\",\"geo\":null,\"id\":2121573860768234935,\"id_str\":\"2121573860768234935\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":true,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2121573860768234935\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Sun May 28 00:00:00 +0000 2023\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":889,\"follow_request_sent\":null,\"followers_count\":1589,\"following\":null,\"friends_count\":839,\"geo_enabled\":false,\"id\":1662609628984569493,\"id_str\":\"1662609628984569493\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":9,\"location\":\"\",\"name\":\"Quillstep\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1662609628984569493/1657680789\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1632386564357680789/NOwJjBxk_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1632386564357680789/NOwJjBxk_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"Quillstep\",\"statuses_count\":1089,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}},{\"contributors\":null,\"conversation_settings\":\"EVERYONE\",\"coordinates\":null,\"created_at\":\"Sat Nov 14 00:00:00 +0000 2026\",\"display_text_range\":[0,199],\"entities\":{\"hashtags\":[],\"symbols\":[],\"urls\":[{\"display_url\":\"quillstep.co.uk/black-fri\u2026\",\"expanded_url\":\"https://quillstep.co.uk/black-friday\",\"indices\":[176,199],\"url\":\"https://t.co/dSnllxqytV\"}],\"user_mentions\":[]},\"favorite_count\":0,\"favorited\":false,\"full_text\":\"Schema changes shouldn't need a war room. Quillstep turns them into reviewed, reversible migrations for Postgres & MySQL. Black Friday week: a 60-day Team trial instead of 14. https://t.co/dSnllxqytV\",\"geo\":null,\"id\":2121392666835189657,\"id_str\":\"2121392666835189657\",\"in_reply_to_screen_name\":null,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"lang\":\"en\",\"name\":null,\"nullcast\":false,\"place\":null,\"possibly_sensitive\":false,\"retweet_count\":0,\"retweeted\":false,\"scheduled_at\":null,\"scheduled_status\":null,\"scopes\":{\"followers\":false},\"source\":\"<a href=\\\"https://mobile.twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web App</a>\",\"truncated\":false,\"tweet_id\":\"2121392666835189657\",\"tweet_type\":\"PUBLISHED\",\"user\":{\"contributors_enabled\":false,\"created_at\":\"Sun May 28 00:00:00 +0000 2023\",\"default_profile\":false,\"default_profile_image\":false,\"description\":\"\",\"ext_is_blue_verified\":false,\"favourites_count\":889,\"follow_request_sent\":null,\"followers_count\":1589,\"following\":null,\"friends_count\":839,\"geo_enabled\":false,\"id\":1662609628984569493,\"id_str\":\"1662609628984569493\",\"is_translation_enabled\":false,\"is_translator\":false,\"lang\":null,\"listed_count\":9,\"location\":\"\",\"name\":\"Quillstep\",\"notifications\":null,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/1662609628984569493/1657680789\",\"profile_image_url\":\"http://pbs.twimg.com/profile_images/1632386564357680789/NOwJjBxk_normal.jpg\",\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/1632386564357680789/NOwJjBxk_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"protected\":false,\"screen_name\":\"Quillstep\",\"statuses_count\":1089,\"time_zone\":null,\"translator_type\":\"none\",\"url\":null,\"utc_offset\":null,\"verified\":false,\"withheld_in_countries\":[]}}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"count\":20,\"timeline_type\":\"ALL\",\"tweet_ids\":[\"2121392666835189657\",\"2121573860768234935\",\"2121755054700018547\",\"2121936248635585410\"],\"tweet_type\":\"PUBLISHED\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-20T00:00:00Z",
+    "tool": "list_campaigns",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "with_total_count": true
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"with_total_count\":true}},\"total_count\":0}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-20T00:00:00Z",
+    "tool": "list_web_event_tags",
+    "arguments": {
+      "account_id": "1866febnka2"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"1866febnka2\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-20T00:00:00Z",
+    "tool": "search_targeting_interests",
+    "arguments": {
+      "q": "database",
+      "count": 10
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"request\":{\"params\":{\"count\":10,\"q\":\"database\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-20T00:00:00Z",
+    "tool": "search_targeting_interests",
+    "arguments": {
+      "q": "programming",
+      "count": 10
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[],\"request\":{\"params\":{\"count\":10,\"q\":\"programming\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-20T00:00:00Z",
+    "tool": "search_targeting_interests",
+    "arguments": {
+      "q": "technology",
+      "count": 15
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"name\":\"Technology\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925949722688126976\"},{\"name\":\"Technology / Biotech\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925953107038519296\"},{\"name\":\"Technology / Electronics\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925953073983139840\"},{\"name\":\"Technology / Software Development\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925953040130953216\"},{\"name\":\"Technology / Space\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925953141452718081\"}],\"request\":{\"params\":{\"count\":15,\"q\":\"technology\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-20T00:00:00Z",
+    "tool": "estimate_audience",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "targeting_criteria": [
+        {
+          "targeting_type": "LOCATION",
+          "targeting_value": "6416b8512febefc9",
+          "operator_type": "EQ"
+        },
+        {
+          "targeting_type": "INTEREST",
+          "targeting_value": "1925953040130953216",
+          "operator_type": "EQ"
+        },
+        {
+          "targeting_type": "LANGUAGE",
+          "targeting_value": "en",
+          "operator_type": "EQ"
+        }
+      ]
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"audience_size\":{\"max\":19631656,\"min\":17063028},\"warnings\":[{\"code\":\"AUDIENCE_ESTIMATE_PARTIAL_TARGETING\",\"message\":\"Some targeting options are not included in audience estimates. Your campaign will still serve using all selected targeting.\",\"unsupported_targeting_types\":[\"INTEREST\"]}]},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"targeting_criteria\":null}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-20T00:00:00Z",
+    "tool": "create_campaign",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "funding_instrument_id": "d4diri",
+      "name": "BF26 Quillstep UK sign-ups"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2026-11-20T00:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"PAUSED\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"d4diri\",\"id\":\"ysg0s\",\"name\":\"BF26 Quillstep UK sign-ups\",\"purchase_order_number\":null,\"reasons_not_servable\":[\"PAUSED_BY_ADVERTISER\"],\"servable\":false,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2026-11-20T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"funding_instrument_id\":\"d4diri\",\"name\":\"BF26 Quillstep UK sign-ups\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-20T00:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "campaign_id": "ysg0s",
+      "name": "UK devs \u2014 war room trial",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "product_type": "PROMOTED_TWEETS",
+      "placements": "ALL_ON_TWITTER",
+      "advertiser_domain": "quillstep.co.uk",
+      "bid_strategy": "AUTO",
+      "audience_expansion": "DEFINED",
+      "standard_delivery": true,
+      "daily_budget_amount_local_micro": 13750000,
+      "total_budget_amount_local_micro": 137500000,
+      "start_time": "2026-11-20T00:00:00Z",
+      "end_time": "2026-11-30T00:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"quillstep.co.uk\",\"advertiser_user_id\":\"1662609628984569493\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ysg0s\",\"categories\":[],\"created_at\":\"2026-11-20T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":13750000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"d4diri\",\"goal\":\"LINK_CLICKS\",\"id\":\"vfiff\",\"ios_app_store_identifier\":null,\"name\":\"UK devs \u2014 war room trial\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-20T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":137500000,\"updated_at\":\"2026-11-20T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"advertiser_domain\":\"quillstep.co.uk\",\"audience_expansion\":\"DEFINED\",\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ysg0s\",\"daily_budget_amount_local_micro\":13750000,\"end_time\":\"2026-11-30T00:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"UK devs \u2014 war room trial\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-20T00:00:00Z\",\"total_budget_amount_local_micro\":137500000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-20T00:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "campaign_id": "ysg0s",
+      "name": "UK devs \u2014 deadline trial",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "product_type": "PROMOTED_TWEETS",
+      "placements": "ALL_ON_TWITTER",
+      "advertiser_domain": "quillstep.co.uk",
+      "bid_strategy": "AUTO",
+      "audience_expansion": "DEFINED",
+      "standard_delivery": true,
+      "daily_budget_amount_local_micro": 13750000,
+      "total_budget_amount_local_micro": 137500000,
+      "start_time": "2026-11-20T00:00:00Z",
+      "end_time": "2026-11-30T00:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"quillstep.co.uk\",\"advertiser_user_id\":\"1662609628984569493\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ysg0s\",\"categories\":[],\"created_at\":\"2026-11-20T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":13750000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"d4diri\",\"goal\":\"LINK_CLICKS\",\"id\":\"5p62p\",\"ios_app_store_identifier\":null,\"name\":\"UK devs \u2014 deadline trial\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-20T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":137500000,\"updated_at\":\"2026-11-20T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"advertiser_domain\":\"quillstep.co.uk\",\"audience_expansion\":\"DEFINED\",\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ysg0s\",\"daily_budget_amount_local_micro\":13750000,\"end_time\":\"2026-11-30T00:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"UK devs \u2014 deadline trial\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-20T00:00:00Z\",\"total_budget_amount_local_micro\":137500000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-20T00:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "campaign_id": "ysg0s",
+      "name": "UK devs \u2014 free solo",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "product_type": "PROMOTED_TWEETS",
+      "placements": "ALL_ON_TWITTER",
+      "advertiser_domain": "quillstep.co.uk",
+      "bid_strategy": "AUTO",
+      "audience_expansion": "DEFINED",
+      "standard_delivery": true,
+      "daily_budget_amount_local_micro": 13750000,
+      "total_budget_amount_local_micro": 137500000,
+      "start_time": "2026-11-20T00:00:00Z",
+      "end_time": "2026-11-30T00:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"quillstep.co.uk\",\"advertiser_user_id\":\"1662609628984569493\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ysg0s\",\"categories\":[],\"created_at\":\"2026-11-20T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":13750000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"d4diri\",\"goal\":\"LINK_CLICKS\",\"id\":\"ag0ij\",\"ios_app_store_identifier\":null,\"name\":\"UK devs \u2014 free solo\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-20T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":137500000,\"updated_at\":\"2026-11-20T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"advertiser_domain\":\"quillstep.co.uk\",\"audience_expansion\":\"DEFINED\",\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ysg0s\",\"daily_budget_amount_local_micro\":13750000,\"end_time\":\"2026-11-30T00:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"UK devs \u2014 free solo\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-20T00:00:00Z\",\"total_budget_amount_local_micro\":137500000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-20T00:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "campaign_id": "ysg0s",
+      "name": "UK devs \u2014 alter table",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "product_type": "PROMOTED_TWEETS",
+      "placements": "ALL_ON_TWITTER",
+      "advertiser_domain": "quillstep.co.uk",
+      "bid_strategy": "AUTO",
+      "audience_expansion": "DEFINED",
+      "standard_delivery": true,
+      "daily_budget_amount_local_micro": 13750000,
+      "total_budget_amount_local_micro": 137500000,
+      "start_time": "2026-11-20T00:00:00Z",
+      "end_time": "2026-11-30T00:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"quillstep.co.uk\",\"advertiser_user_id\":\"1662609628984569493\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ysg0s\",\"categories\":[],\"created_at\":\"2026-11-20T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":13750000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"d4diri\",\"goal\":\"LINK_CLICKS\",\"id\":\"vp65q\",\"ios_app_store_identifier\":null,\"name\":\"UK devs \u2014 alter table\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-20T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":137500000,\"updated_at\":\"2026-11-20T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"advertiser_domain\":\"quillstep.co.uk\",\"audience_expansion\":\"DEFINED\",\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ysg0s\",\"daily_budget_amount_local_micro\":13750000,\"end_time\":\"2026-11-30T00:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"UK devs \u2014 alter table\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-20T00:00:00Z\",\"total_budget_amount_local_micro\":137500000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-20T00:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "vfiff",
+      "tweet_ids": "2121392666835189657"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2026-11-20T00:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"s27jkr\",\"line_item_id\":\"vfiff\",\"tweet_id\":\"2121392666835189657\",\"updated_at\":\"2026-11-20T00:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"line_item_id\":\"vfiff\",\"tweet_ids\":[\"2121392666835189657\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-20T00:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "5p62p",
+      "tweet_ids": "2121755054700018547"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2026-11-20T00:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"r8l46z\",\"line_item_id\":\"5p62p\",\"tweet_id\":\"2121755054700018547\",\"updated_at\":\"2026-11-20T00:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"line_item_id\":\"5p62p\",\"tweet_ids\":[\"2121755054700018547\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-20T00:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "ag0ij",
+      "tweet_ids": "2121936248635585410"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2026-11-20T00:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"k7sm5a\",\"line_item_id\":\"ag0ij\",\"tweet_id\":\"2121936248635585410\",\"updated_at\":\"2026-11-20T00:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"line_item_id\":\"ag0ij\",\"tweet_ids\":[\"2121936248635585410\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-20T00:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "vp65q",
+      "tweet_ids": "2121573860768234935"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2026-11-20T00:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"xqoeqd\",\"line_item_id\":\"vp65q\",\"tweet_id\":\"2121573860768234935\",\"updated_at\":\"2026-11-20T00:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"line_item_id\":\"vp65q\",\"tweet_ids\":[\"2121573860768234935\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-20T00:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "vfiff",
+      "targeting_type": "LOCATION",
+      "targeting_value": "6416b8512febefc9",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2026-11-20T00:00:00Z\",\"deleted\":false,\"id\":\"tupawi0\",\"line_item_id\":\"vfiff\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\",\"updated_at\":\"2026-11-20T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"line_item_id\":\"vfiff\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-20T00:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "5p62p",
+      "targeting_type": "LOCATION",
+      "targeting_value": "6416b8512febefc9",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2026-11-20T00:00:00Z\",\"deleted\":false,\"id\":\"dsmv5gr\",\"line_item_id\":\"5p62p\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\",\"updated_at\":\"2026-11-20T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"line_item_id\":\"5p62p\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-20T00:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "ag0ij",
+      "targeting_type": "LOCATION",
+      "targeting_value": "6416b8512febefc9",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2026-11-20T00:00:00Z\",\"deleted\":false,\"id\":\"g6jiba4\",\"line_item_id\":\"ag0ij\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\",\"updated_at\":\"2026-11-20T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"line_item_id\":\"ag0ij\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-20T00:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "vp65q",
+      "targeting_type": "LOCATION",
+      "targeting_value": "6416b8512febefc9",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2026-11-20T00:00:00Z\",\"deleted\":false,\"id\":\"21o0kjz\",\"line_item_id\":\"vp65q\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\",\"updated_at\":\"2026-11-20T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"line_item_id\":\"vp65q\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-20T00:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "vfiff",
+      "targeting_type": "INTEREST",
+      "targeting_value": "1925953040130953216",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2026-11-20T00:00:00Z\",\"deleted\":false,\"id\":\"s0yxf2m\",\"line_item_id\":\"vfiff\",\"name\":\"Technology / Software Development\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925953040130953216\",\"updated_at\":\"2026-11-20T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"line_item_id\":\"vfiff\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925953040130953216\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-20T00:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "5p62p",
+      "targeting_type": "INTEREST",
+      "targeting_value": "1925953040130953216",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2026-11-20T00:00:00Z\",\"deleted\":false,\"id\":\"yfjjpyx\",\"line_item_id\":\"5p62p\",\"name\":\"Technology / Software Development\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925953040130953216\",\"updated_at\":\"2026-11-20T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"line_item_id\":\"5p62p\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925953040130953216\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-20T00:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "ag0ij",
+      "targeting_type": "INTEREST",
+      "targeting_value": "1925953040130953216",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2026-11-20T00:00:00Z\",\"deleted\":false,\"id\":\"d27hget\",\"line_item_id\":\"ag0ij\",\"name\":\"Technology / Software Development\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925953040130953216\",\"updated_at\":\"2026-11-20T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"line_item_id\":\"ag0ij\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925953040130953216\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-20T00:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "vp65q",
+      "targeting_type": "INTEREST",
+      "targeting_value": "1925953040130953216",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2026-11-20T00:00:00Z\",\"deleted\":false,\"id\":\"qo7fnde\",\"line_item_id\":\"vp65q\",\"name\":\"Technology / Software Development\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925953040130953216\",\"updated_at\":\"2026-11-20T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"line_item_id\":\"vp65q\",\"operator_type\":\"EQ\",\"targeting_type\":\"INTEREST\",\"targeting_value\":\"1925953040130953216\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-20T00:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "vfiff",
+      "targeting_type": "LANGUAGE",
+      "targeting_value": "en",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2026-11-20T00:00:00Z\",\"deleted\":false,\"id\":\"i6kmht9\",\"line_item_id\":\"vfiff\",\"name\":\"en\",\"operator_type\":\"EQ\",\"targeting_type\":\"LANGUAGE\",\"targeting_value\":\"en\",\"updated_at\":\"2026-11-20T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"line_item_id\":\"vfiff\",\"operator_type\":\"EQ\",\"targeting_type\":\"LANGUAGE\",\"targeting_value\":\"en\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-20T00:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "5p62p",
+      "targeting_type": "LANGUAGE",
+      "targeting_value": "en",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2026-11-20T00:00:00Z\",\"deleted\":false,\"id\":\"yeg4w91\",\"line_item_id\":\"5p62p\",\"name\":\"en\",\"operator_type\":\"EQ\",\"targeting_type\":\"LANGUAGE\",\"targeting_value\":\"en\",\"updated_at\":\"2026-11-20T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"line_item_id\":\"5p62p\",\"operator_type\":\"EQ\",\"targeting_type\":\"LANGUAGE\",\"targeting_value\":\"en\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-20T00:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "ag0ij",
+      "targeting_type": "LANGUAGE",
+      "targeting_value": "en",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2026-11-20T00:00:00Z\",\"deleted\":false,\"id\":\"a0i7egy\",\"line_item_id\":\"ag0ij\",\"name\":\"en\",\"operator_type\":\"EQ\",\"targeting_type\":\"LANGUAGE\",\"targeting_value\":\"en\",\"updated_at\":\"2026-11-20T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"line_item_id\":\"ag0ij\",\"operator_type\":\"EQ\",\"targeting_type\":\"LANGUAGE\",\"targeting_value\":\"en\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-20T00:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "vp65q",
+      "targeting_type": "LANGUAGE",
+      "targeting_value": "en",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2026-11-20T00:00:00Z\",\"deleted\":false,\"id\":\"jljn8ze\",\"line_item_id\":\"vp65q\",\"name\":\"en\",\"operator_type\":\"EQ\",\"targeting_type\":\"LANGUAGE\",\"targeting_value\":\"en\",\"updated_at\":\"2026-11-20T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"line_item_id\":\"vp65q\",\"operator_type\":\"EQ\",\"targeting_type\":\"LANGUAGE\",\"targeting_value\":\"en\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-20T00:00:00Z",
+    "tool": "activate_campaign",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "campaign_id": "ysg0s"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2026-11-20T00:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"RUNNING\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"d4diri\",\"id\":\"ysg0s\",\"name\":\"BF26 Quillstep UK sign-ups\",\"purchase_order_number\":null,\"reasons_not_servable\":[],\"servable\":true,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2026-11-20T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"campaign_id\":\"ysg0s\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-20T00:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "vfiff"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"quillstep.co.uk\",\"advertiser_user_id\":\"1662609628984569493\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ysg0s\",\"categories\":[],\"created_at\":\"2026-11-20T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":13750000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"d4diri\",\"goal\":\"LINK_CLICKS\",\"id\":\"vfiff\",\"ios_app_store_identifier\":null,\"name\":\"UK devs \u2014 war room trial\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-20T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":137500000,\"updated_at\":\"2026-11-20T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"line_item_id\":\"vfiff\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-20T00:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "5p62p"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"quillstep.co.uk\",\"advertiser_user_id\":\"1662609628984569493\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ysg0s\",\"categories\":[],\"created_at\":\"2026-11-20T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":13750000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"d4diri\",\"goal\":\"LINK_CLICKS\",\"id\":\"5p62p\",\"ios_app_store_identifier\":null,\"name\":\"UK devs \u2014 deadline trial\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-20T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":137500000,\"updated_at\":\"2026-11-20T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"line_item_id\":\"5p62p\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-20T00:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "ag0ij"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"quillstep.co.uk\",\"advertiser_user_id\":\"1662609628984569493\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ysg0s\",\"categories\":[],\"created_at\":\"2026-11-20T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":13750000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"d4diri\",\"goal\":\"LINK_CLICKS\",\"id\":\"ag0ij\",\"ios_app_store_identifier\":null,\"name\":\"UK devs \u2014 free solo\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-20T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":137500000,\"updated_at\":\"2026-11-20T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"line_item_id\":\"ag0ij\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-20T00:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "vp65q"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"quillstep.co.uk\",\"advertiser_user_id\":\"1662609628984569493\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ysg0s\",\"categories\":[],\"created_at\":\"2026-11-20T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":13750000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"d4diri\",\"goal\":\"LINK_CLICKS\",\"id\":\"vp65q\",\"ios_app_store_identifier\":null,\"name\":\"UK devs \u2014 alter table\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-20T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":137500000,\"updated_at\":\"2026-11-20T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"line_item_id\":\"vp65q\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-20T00:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2026-11-21T12:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2026-11-30T01:00:00Z\",\"now\":\"2026-11-21T12:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T12:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "entity": "LINE_ITEM",
+      "entity_ids": "vfiff,5p62p,ag0ij,vp65q",
+      "start_time": "2026-11-20T00:00:00Z",
+      "end_time": "2026-11-21T12:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"vfiff\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[20961477],\"billed_engagements\":[64],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[4],\"engagements\":[64],\"follows\":null,\"impressions\":[10048],\"likes\":[1],\"link_clicks\":[4],\"qualified_impressions\":[10048],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"5p62p\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[7186200],\"billed_engagements\":[56],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[1],\"engagements\":[56],\"follows\":null,\"impressions\":[9827],\"likes\":null,\"link_clicks\":[1],\"qualified_impressions\":[9827],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ag0ij\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[10554002],\"billed_engagements\":[29],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[2],\"engagements\":[29],\"follows\":null,\"impressions\":[5873],\"likes\":null,\"link_clicks\":[2],\"qualified_impressions\":[5873],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"vp65q\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[18072705],\"billed_engagements\":[52],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[3],\"engagements\":[52],\"follows\":null,\"impressions\":[8176],\"likes\":[3],\"link_clicks\":[3],\"qualified_impressions\":[8176],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-11-21T12:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"vfiff\",\"5p62p\",\"ag0ij\",\"vp65q\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-20T00:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T12:00:00Z",
+    "tool": "get_active_entities",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "entity": "LINE_ITEM",
+      "start_time": "2026-11-20T00:00:00Z",
+      "end_time": "2026-11-21T12:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"activity_end_time\":\"2026-11-21T10:00:00Z\",\"activity_start_time\":\"2026-11-20T00:00:00Z\",\"entity_id\":\"vp65q\",\"placements\":[\"ALL_ON_TWITTER\"]},{\"activity_end_time\":\"2026-11-21T10:00:00Z\",\"activity_start_time\":\"2026-11-20T00:00:00Z\",\"entity_id\":\"vfiff\",\"placements\":[\"ALL_ON_TWITTER\"]},{\"activity_end_time\":\"2026-11-21T10:00:00Z\",\"activity_start_time\":\"2026-11-20T00:00:00Z\",\"entity_id\":\"ag0ij\",\"placements\":[\"ALL_ON_TWITTER\"]},{\"activity_end_time\":\"2026-11-21T10:00:00Z\",\"activity_start_time\":\"2026-11-20T00:00:00Z\",\"entity_id\":\"5p62p\",\"placements\":[\"ALL_ON_TWITTER\"]}],\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"end_time\":\"2026-11-21T12:00:00Z\",\"entity\":\"LINE_ITEM\",\"start_time\":\"2026-11-20T00:00:00Z\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T12:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "5p62p",
+      "entity_status": "PAUSED",
+      "daily_budget_amount_local_micro": 1000000,
+      "total_budget_amount_local_micro": 10000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"quillstep.co.uk\",\"advertiser_user_id\":\"1662609628984569493\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ysg0s\",\"categories\":[],\"created_at\":\"2026-11-20T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":1000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"d4diri\",\"goal\":\"LINK_CLICKS\",\"id\":\"5p62p\",\"ios_app_store_identifier\":null,\"name\":\"UK devs \u2014 deadline trial\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-20T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":10000000,\"updated_at\":\"2026-11-21T12:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"daily_budget_amount_local_micro\":1000000,\"entity_status\":\"PAUSED\",\"line_item_id\":\"5p62p\",\"total_budget_amount_local_micro\":10000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T12:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "vfiff",
+      "daily_budget_amount_local_micro": 22000000,
+      "total_budget_amount_local_micro": 202500000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"quillstep.co.uk\",\"advertiser_user_id\":\"1662609628984569493\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ysg0s\",\"categories\":[],\"created_at\":\"2026-11-20T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":22000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"d4diri\",\"goal\":\"LINK_CLICKS\",\"id\":\"vfiff\",\"ios_app_store_identifier\":null,\"name\":\"UK devs \u2014 war room trial\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-20T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":202500000,\"updated_at\":\"2026-11-21T12:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"daily_budget_amount_local_micro\":22000000,\"line_item_id\":\"vfiff\",\"total_budget_amount_local_micro\":202500000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T12:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "ag0ij",
+      "daily_budget_amount_local_micro": 19000000,
+      "total_budget_amount_local_micro": 177500000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"quillstep.co.uk\",\"advertiser_user_id\":\"1662609628984569493\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ysg0s\",\"categories\":[],\"created_at\":\"2026-11-20T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":19000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"d4diri\",\"goal\":\"LINK_CLICKS\",\"id\":\"ag0ij\",\"ios_app_store_identifier\":null,\"name\":\"UK devs \u2014 free solo\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-20T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":177500000,\"updated_at\":\"2026-11-21T12:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"daily_budget_amount_local_micro\":19000000,\"line_item_id\":\"ag0ij\",\"total_budget_amount_local_micro\":177500000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T12:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "vp65q",
+      "daily_budget_amount_local_micro": 16000000,
+      "total_budget_amount_local_micro": 160000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"quillstep.co.uk\",\"advertiser_user_id\":\"1662609628984569493\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ysg0s\",\"categories\":[],\"created_at\":\"2026-11-20T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":16000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"d4diri\",\"goal\":\"LINK_CLICKS\",\"id\":\"vp65q\",\"ios_app_store_identifier\":null,\"name\":\"UK devs \u2014 alter table\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-20T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":160000000,\"updated_at\":\"2026-11-21T12:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"daily_budget_amount_local_micro\":16000000,\"line_item_id\":\"vp65q\",\"total_budget_amount_local_micro\":160000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-21T12:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2026-11-23T12:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2026-11-30T01:00:00Z\",\"now\":\"2026-11-23T12:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-23T12:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "entity": "LINE_ITEM",
+      "entity_ids": "vfiff,5p62p,ag0ij,vp65q",
+      "start_time": "2026-11-20T00:00:00Z",
+      "end_time": "2026-11-23T12:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"errors\":[{\"code\":\"INVALID_TIME_WINDOW\",\"message\":\"Expect time to be midnight in the account's local timezone for day granularity\",\"parameter\":\"\"}],\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"end_time\":\"2026-11-23T12:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"vfiff\",\"5p62p\",\"ag0ij\",\"vp65q\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"start_time\":\"2026-11-20T00:00:00Z\"}}}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2026-11-23T12:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "entity": "LINE_ITEM",
+      "entity_ids": "vfiff,5p62p,ag0ij,vp65q",
+      "start_time": "2026-11-20T00:00:00Z",
+      "end_time": "2026-11-23T12:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"vfiff\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[58351815],\"billed_engagements\":[177],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[12],\"engagements\":[177],\"follows\":null,\"impressions\":[27452],\"likes\":[1],\"link_clicks\":[12],\"qualified_impressions\":[27452],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"5p62p\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[7186200],\"billed_engagements\":[62],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[1],\"engagements\":[62],\"follows\":null,\"impressions\":[10343],\"likes\":null,\"link_clicks\":[1],\"qualified_impressions\":[10343],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ag0ij\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[30891290],\"billed_engagements\":[139],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[7],\"engagements\":[139],\"follows\":null,\"impressions\":[23430],\"likes\":[4],\"link_clicks\":[7],\"qualified_impressions\":[23430],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"vp65q\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[40553768],\"billed_engagements\":[148],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[8],\"engagements\":[148],\"follows\":null,\"impressions\":[23987],\"likes\":[4],\"link_clicks\":[8],\"qualified_impressions\":[23987],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-11-23T12:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"vfiff\",\"5p62p\",\"ag0ij\",\"vp65q\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-20T00:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-23T12:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "entity": "LINE_ITEM",
+      "entity_ids": "vfiff,5p62p,ag0ij,vp65q",
+      "start_time": "2026-11-20T00:00:00Z",
+      "end_time": "2026-11-23T00:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"vfiff\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[12127715,18466673,19936406],\"billed_engagements\":[56,45,58],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[2,4,4],\"engagements\":[56,45,58],\"follows\":null,\"impressions\":[8423,7228,8649],\"likes\":[1,0,0],\"link_clicks\":[2,4,4],\"qualified_impressions\":[8423,7228,8649],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"5p62p\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[7186200,0,0],\"billed_engagements\":[46,16,0],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[1,0,0],\"engagements\":[46,16,0],\"follows\":null,\"impressions\":[8073,2270,0],\"likes\":null,\"link_clicks\":[1,0,0],\"qualified_impressions\":[8073,2270,0],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ag0ij\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[10554002,4396943,15940345],\"billed_engagements\":[22,45,52],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[2,1,4],\"engagements\":[22,45,52],\"follows\":null,\"impressions\":[4119,7474,8667],\"likes\":[0,2,1],\"link_clicks\":[2,1,4],\"qualified_impressions\":[4119,7474,8667],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"vp65q\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[10966566,11457292,13579159],\"billed_engagements\":[45,36,46],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[2,2,3],\"engagements\":[45,36,46],\"follows\":null,\"impressions\":[7160,5585,8604],\"likes\":[3,0,1],\"link_clicks\":[2,2,3],\"qualified_impressions\":[7160,5585,8604],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-11-23T00:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"vfiff\",\"5p62p\",\"ag0ij\",\"vp65q\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-20T00:00:00Z\"}},\"time_series_length\":3}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-23T12:00:00Z",
+    "tool": "create_line_item",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "campaign_id": "ysg0s",
+      "name": "UK keywords \u2014 free solo",
+      "objective": "WEBSITE_CLICKS",
+      "goal": "LINK_CLICKS",
+      "product_type": "PROMOTED_TWEETS",
+      "placements": "ALL_ON_TWITTER",
+      "advertiser_domain": "quillstep.co.uk",
+      "bid_strategy": "AUTO",
+      "audience_expansion": "DEFINED",
+      "standard_delivery": true,
+      "daily_budget_amount_local_micro": 5000000,
+      "total_budget_amount_local_micro": 30000000,
+      "start_time": "2026-11-23T12:00:00Z",
+      "end_time": "2026-11-30T00:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"quillstep.co.uk\",\"advertiser_user_id\":\"1662609628984569493\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ysg0s\",\"categories\":[],\"created_at\":\"2026-11-23T12:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":5000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"d4diri\",\"goal\":\"LINK_CLICKS\",\"id\":\"8yy2z\",\"ios_app_store_identifier\":null,\"name\":\"UK keywords \u2014 free solo\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-23T12:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":30000000,\"updated_at\":\"2026-11-23T12:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"advertiser_domain\":\"quillstep.co.uk\",\"audience_expansion\":\"DEFINED\",\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ysg0s\",\"daily_budget_amount_local_micro\":5000000,\"end_time\":\"2026-11-30T00:00:00Z\",\"goal\":\"LINK_CLICKS\",\"name\":\"UK keywords \u2014 free solo\",\"objective\":\"WEBSITE_CLICKS\",\"placements\":[\"ALL_ON_TWITTER\"],\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-23T12:00:00Z\",\"total_budget_amount_local_micro\":30000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-23T12:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "8yy2z",
+      "targeting_type": "LOCATION",
+      "targeting_value": "6416b8512febefc9",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2026-11-23T12:00:00Z\",\"deleted\":false,\"id\":\"93dq2jd\",\"line_item_id\":\"8yy2z\",\"location_type\":\"COUNTRIES\",\"name\":\"United Kingdom\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\",\"updated_at\":\"2026-11-23T12:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"line_item_id\":\"8yy2z\",\"operator_type\":\"EQ\",\"targeting_type\":\"LOCATION\",\"targeting_value\":\"6416b8512febefc9\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-23T12:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "8yy2z",
+      "targeting_type": "LANGUAGE",
+      "targeting_value": "en",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2026-11-23T12:00:00Z\",\"deleted\":false,\"id\":\"ai46hv5\",\"line_item_id\":\"8yy2z\",\"name\":\"en\",\"operator_type\":\"EQ\",\"targeting_type\":\"LANGUAGE\",\"targeting_value\":\"en\",\"updated_at\":\"2026-11-23T12:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"line_item_id\":\"8yy2z\",\"operator_type\":\"EQ\",\"targeting_type\":\"LANGUAGE\",\"targeting_value\":\"en\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-23T12:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "8yy2z",
+      "targeting_type": "BROAD_KEYWORD",
+      "targeting_value": "postgres",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2026-11-23T12:00:00Z\",\"deleted\":false,\"id\":\"zmittcs\",\"line_item_id\":\"8yy2z\",\"name\":\"postgres\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"postgres\",\"updated_at\":\"2026-11-23T12:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"line_item_id\":\"8yy2z\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"postgres\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-23T12:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "8yy2z",
+      "targeting_type": "BROAD_KEYWORD",
+      "targeting_value": "mysql",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2026-11-23T12:00:00Z\",\"deleted\":false,\"id\":\"qewxhcb\",\"line_item_id\":\"8yy2z\",\"name\":\"mysql\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"mysql\",\"updated_at\":\"2026-11-23T12:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"line_item_id\":\"8yy2z\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"mysql\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-23T12:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "8yy2z",
+      "targeting_type": "BROAD_KEYWORD",
+      "targeting_value": "postgresql",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2026-11-23T12:00:00Z\",\"deleted\":false,\"id\":\"d1hiv28\",\"line_item_id\":\"8yy2z\",\"name\":\"postgresql\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"postgresql\",\"updated_at\":\"2026-11-23T12:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"line_item_id\":\"8yy2z\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"postgresql\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-23T12:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "8yy2z",
+      "targeting_type": "BROAD_KEYWORD",
+      "targeting_value": "database migration",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2026-11-23T12:00:00Z\",\"deleted\":false,\"id\":\"9y2san8\",\"line_item_id\":\"8yy2z\",\"name\":\"database migration\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"database migration\",\"updated_at\":\"2026-11-23T12:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"line_item_id\":\"8yy2z\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"database migration\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-23T12:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "8yy2z",
+      "tweet_ids": "2121936248635585410"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2026-11-23T12:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"tu59u9\",\"line_item_id\":\"8yy2z\",\"tweet_id\":\"2121936248635585410\",\"updated_at\":\"2026-11-23T12:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"line_item_id\":\"8yy2z\",\"tweet_ids\":[\"2121936248635585410\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-23T12:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "vfiff",
+      "daily_budget_amount_local_micro": 25000000,
+      "total_budget_amount_local_micro": 220000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"quillstep.co.uk\",\"advertiser_user_id\":\"1662609628984569493\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ysg0s\",\"categories\":[],\"created_at\":\"2026-11-20T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":25000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"d4diri\",\"goal\":\"LINK_CLICKS\",\"id\":\"vfiff\",\"ios_app_store_identifier\":null,\"name\":\"UK devs \u2014 war room trial\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-20T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":220000000,\"updated_at\":\"2026-11-23T12:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"daily_budget_amount_local_micro\":25000000,\"line_item_id\":\"vfiff\",\"total_budget_amount_local_micro\":220000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-23T12:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "ag0ij",
+      "daily_budget_amount_local_micro": 19000000,
+      "total_budget_amount_local_micro": 155000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"quillstep.co.uk\",\"advertiser_user_id\":\"1662609628984569493\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ysg0s\",\"categories\":[],\"created_at\":\"2026-11-20T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":19000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"d4diri\",\"goal\":\"LINK_CLICKS\",\"id\":\"ag0ij\",\"ios_app_store_identifier\":null,\"name\":\"UK devs \u2014 free solo\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-20T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":155000000,\"updated_at\":\"2026-11-23T12:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"daily_budget_amount_local_micro\":19000000,\"line_item_id\":\"ag0ij\",\"total_budget_amount_local_micro\":155000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-23T12:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "vp65q",
+      "daily_budget_amount_local_micro": 15000000,
+      "total_budget_amount_local_micro": 135000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"quillstep.co.uk\",\"advertiser_user_id\":\"1662609628984569493\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ysg0s\",\"categories\":[],\"created_at\":\"2026-11-20T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":15000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"d4diri\",\"goal\":\"LINK_CLICKS\",\"id\":\"vp65q\",\"ios_app_store_identifier\":null,\"name\":\"UK devs \u2014 alter table\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-20T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":135000000,\"updated_at\":\"2026-11-23T12:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"daily_budget_amount_local_micro\":15000000,\"line_item_id\":\"vp65q\",\"total_budget_amount_local_micro\":135000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-23T12:00:00Z",
+    "tool": "activate_line_item",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "8yy2z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"quillstep.co.uk\",\"advertiser_user_id\":\"1662609628984569493\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ysg0s\",\"categories\":[],\"created_at\":\"2026-11-23T12:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":5000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"d4diri\",\"goal\":\"LINK_CLICKS\",\"id\":\"8yy2z\",\"ios_app_store_identifier\":null,\"name\":\"UK keywords \u2014 free solo\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-23T12:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":30000000,\"updated_at\":\"2026-11-23T12:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"line_item_id\":\"8yy2z\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-23T12:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2026-11-25T12:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2026-11-30T01:00:00Z\",\"now\":\"2026-11-25T12:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-25T12:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "entity": "LINE_ITEM",
+      "entity_ids": "vfiff,5p62p,ag0ij,vp65q,8yy2z",
+      "start_time": "2026-11-20T00:00:00Z",
+      "end_time": "2026-11-25T12:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"vfiff\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[100810804],\"billed_engagements\":[285],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[19],\"engagements\":[285],\"follows\":null,\"impressions\":[42107],\"likes\":[4],\"link_clicks\":[19],\"qualified_impressions\":[42107],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"5p62p\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[7186200],\"billed_engagements\":[62],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[1],\"engagements\":[62],\"follows\":null,\"impressions\":[10343],\"likes\":null,\"link_clicks\":[1],\"qualified_impressions\":[10343],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ag0ij\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[63996899],\"billed_engagements\":[240],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[14],\"engagements\":[240],\"follows\":null,\"impressions\":[38415],\"likes\":[6],\"link_clicks\":[14],\"qualified_impressions\":[38415],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"vp65q\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[61591377],\"billed_engagements\":[189],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[11],\"engagements\":[189],\"follows\":null,\"impressions\":[30847],\"likes\":[5],\"link_clicks\":[11],\"qualified_impressions\":[30847],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"8yy2z\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[9386204],\"billed_engagements\":[66],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[6],\"engagements\":[66],\"follows\":null,\"impressions\":[9252],\"likes\":[1],\"link_clicks\":[6],\"qualified_impressions\":[9252],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-11-25T12:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"vfiff\",\"5p62p\",\"ag0ij\",\"vp65q\",\"8yy2z\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-20T00:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-25T12:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "entity": "LINE_ITEM",
+      "entity_ids": "vfiff,ag0ij,vp65q,8yy2z",
+      "start_time": "2026-11-23T00:00:00Z",
+      "end_time": "2026-11-25T00:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"vfiff\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[20939334,23521392],\"billed_engagements\":[57,47],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[4,4],\"engagements\":[57,47],\"follows\":null,\"impressions\":[8486,6390],\"likes\":[1,1],\"link_clicks\":[4,4],\"qualified_impressions\":[8486,6390],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ag0ij\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[14447261,13554018],\"billed_engagements\":[52,53],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[3,3],\"engagements\":[52,53],\"follows\":null,\"impressions\":[7920,8402],\"likes\":[2,1],\"link_clicks\":[3,3],\"qualified_impressions\":[7920,8402],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"vp65q\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[11098983,14489377],\"billed_engagements\":[42,12],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[2,2],\"engagements\":[42,12],\"follows\":null,\"impressions\":[6329,1510],\"likes\":[1,0],\"link_clicks\":[2,2],\"qualified_impressions\":[6329,1510],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"8yy2z\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[4262956,3471090],\"billed_engagements\":[19,33],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[3,2],\"engagements\":[19,33],\"follows\":null,\"impressions\":[2935,4940],\"likes\":[1,0],\"link_clicks\":[3,2],\"qualified_impressions\":[2935,4940],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-11-25T00:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"vfiff\",\"ag0ij\",\"vp65q\",\"8yy2z\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-23T00:00:00Z\"}},\"time_series_length\":2}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-25T12:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "8yy2z",
+      "targeting_type": "BROAD_KEYWORD",
+      "targeting_value": "dba",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2026-11-25T12:00:00Z\",\"deleted\":false,\"id\":\"tqiqmct\",\"line_item_id\":\"8yy2z\",\"name\":\"dba\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"dba\",\"updated_at\":\"2026-11-25T12:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"line_item_id\":\"8yy2z\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"dba\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-25T12:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "8yy2z",
+      "targeting_type": "BROAD_KEYWORD",
+      "targeting_value": "schema migration",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2026-11-25T12:00:00Z\",\"deleted\":false,\"id\":\"rfrgs2a\",\"line_item_id\":\"8yy2z\",\"name\":\"schema migration\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"schema migration\",\"updated_at\":\"2026-11-25T12:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"line_item_id\":\"8yy2z\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"schema migration\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-25T12:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "8yy2z",
+      "targeting_type": "BROAD_KEYWORD",
+      "targeting_value": "alter table",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2026-11-25T12:00:00Z\",\"deleted\":false,\"id\":\"2ul3q2i\",\"line_item_id\":\"8yy2z\",\"name\":\"alter table\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"alter table\",\"updated_at\":\"2026-11-25T12:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"line_item_id\":\"8yy2z\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"alter table\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-25T12:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "8yy2z",
+      "targeting_type": "BROAD_KEYWORD",
+      "targeting_value": "mysql migration",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2026-11-25T12:00:00Z\",\"deleted\":false,\"id\":\"ey2jx9x\",\"line_item_id\":\"8yy2z\",\"name\":\"mysql migration\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"mysql migration\",\"updated_at\":\"2026-11-25T12:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"line_item_id\":\"8yy2z\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"mysql migration\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-25T12:00:00Z",
+    "tool": "add_targeting_criterion",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "8yy2z",
+      "targeting_type": "BROAD_KEYWORD",
+      "targeting_value": "postgres migration",
+      "operator_type": "EQ"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"created_at\":\"2026-11-25T12:00:00Z\",\"deleted\":false,\"id\":\"5izn05b\",\"line_item_id\":\"8yy2z\",\"name\":\"postgres migration\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"postgres migration\",\"updated_at\":\"2026-11-25T12:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"line_item_id\":\"8yy2z\",\"operator_type\":\"EQ\",\"targeting_type\":\"BROAD_KEYWORD\",\"targeting_value\":\"postgres migration\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-25T12:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "8yy2z",
+      "daily_budget_amount_local_micro": 12000000,
+      "total_budget_amount_local_micro": 50000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"quillstep.co.uk\",\"advertiser_user_id\":\"1662609628984569493\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ysg0s\",\"categories\":[],\"created_at\":\"2026-11-23T12:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":12000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"d4diri\",\"goal\":\"LINK_CLICKS\",\"id\":\"8yy2z\",\"ios_app_store_identifier\":null,\"name\":\"UK keywords \u2014 free solo\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-23T12:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":50000000,\"updated_at\":\"2026-11-25T12:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"daily_budget_amount_local_micro\":12000000,\"line_item_id\":\"8yy2z\",\"total_budget_amount_local_micro\":50000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-25T12:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "vp65q",
+      "daily_budget_amount_local_micro": 12000000,
+      "total_budget_amount_local_micro": 115000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"quillstep.co.uk\",\"advertiser_user_id\":\"1662609628984569493\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ysg0s\",\"categories\":[],\"created_at\":\"2026-11-20T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":12000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"d4diri\",\"goal\":\"LINK_CLICKS\",\"id\":\"vp65q\",\"ios_app_store_identifier\":null,\"name\":\"UK devs \u2014 alter table\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-20T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":115000000,\"updated_at\":\"2026-11-25T12:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"daily_budget_amount_local_micro\":12000000,\"line_item_id\":\"vp65q\",\"total_budget_amount_local_micro\":115000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-25T12:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2026-11-27T12:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2026-11-30T01:00:00Z\",\"now\":\"2026-11-27T12:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-27T12:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "entity": "LINE_ITEM",
+      "entity_ids": "vfiff,5p62p,ag0ij,vp65q,8yy2z",
+      "start_time": "2026-11-20T00:00:00Z",
+      "end_time": "2026-11-27T12:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"errors\":[{\"code\":\"INVALID_TIME_WINDOW\",\"message\":\"The end_time (2026-11-27 12:00:00 +0000) can be a maximum of 7.days+1.hours after the start_time (2026-11-20 00:00:00 +0000)\",\"parameter\":\"\"}],\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"end_time\":\"2026-11-27T12:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"vfiff\",\"5p62p\",\"ag0ij\",\"vp65q\",\"8yy2z\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"start_time\":\"2026-11-20T00:00:00Z\"}}}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "at": "2026-11-27T12:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "entity": "LINE_ITEM",
+      "entity_ids": "vfiff,ag0ij,vp65q,8yy2z",
+      "start_time": "2026-11-25T00:00:00Z",
+      "end_time": "2026-11-27T00:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"vfiff\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[18851205,24883252],\"billed_engagements\":[68,28],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[3,5],\"engagements\":[68,28],\"follows\":null,\"impressions\":[9826,2940],\"likes\":[1,0],\"link_clicks\":[3,5],\"qualified_impressions\":[9826,2940],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ag0ij\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[16785249,14851044],\"billed_engagements\":[58,46],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[3,3],\"engagements\":[58,46],\"follows\":null,\"impressions\":[7948,7259],\"likes\":[0,2],\"link_clicks\":[3,3],\"qualified_impressions\":[7948,7259],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"vp65q\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[7200711,10845962],\"billed_engagements\":[32,25],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[1,2],\"engagements\":[32,25],\"follows\":null,\"impressions\":[4489,3445],\"likes\":null,\"link_clicks\":[1,2],\"qualified_impressions\":[4489,3445],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"8yy2z\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[9935761,5888870],\"billed_engagements\":[59,62],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[5,3],\"engagements\":[59,62],\"follows\":null,\"impressions\":[6474,8018],\"likes\":[2,1],\"link_clicks\":[5,3],\"qualified_impressions\":[6474,8018],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-11-27T00:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"vfiff\",\"ag0ij\",\"vp65q\",\"8yy2z\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-25T00:00:00Z\"}},\"time_series_length\":2}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-27T12:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "entity": "LINE_ITEM",
+      "entity_ids": "vfiff,5p62p,ag0ij,vp65q,8yy2z",
+      "start_time": "2026-11-20T00:00:00Z",
+      "end_time": "2026-11-27T00:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"vfiff\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[138725977],\"billed_engagements\":[359],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[26],\"engagements\":[359],\"follows\":null,\"impressions\":[51942],\"likes\":[4],\"link_clicks\":[26],\"qualified_impressions\":[51942],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"5p62p\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[7186200],\"billed_engagements\":[62],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[1],\"engagements\":[62],\"follows\":null,\"impressions\":[10343],\"likes\":null,\"link_clicks\":[1],\"qualified_impressions\":[10343],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ag0ij\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[90528862],\"billed_engagements\":[328],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[19],\"engagements\":[328],\"follows\":null,\"impressions\":[51789],\"likes\":[8],\"link_clicks\":[19],\"qualified_impressions\":[51789],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"vp65q\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[79638050],\"billed_engagements\":[238],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[14],\"engagements\":[238],\"follows\":null,\"impressions\":[37122],\"likes\":[5],\"link_clicks\":[14],\"qualified_impressions\":[37122],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"8yy2z\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[23558677],\"billed_engagements\":[173],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[13],\"engagements\":[173],\"follows\":null,\"impressions\":[22367],\"likes\":[4],\"link_clicks\":[13],\"qualified_impressions\":[22367],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-11-27T00:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"vfiff\",\"5p62p\",\"ag0ij\",\"vp65q\",\"8yy2z\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-20T00:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-27T12:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "entity": "LINE_ITEM",
+      "entity_ids": "vfiff,5p62p,ag0ij,vp65q,8yy2z",
+      "start_time": "2026-11-27T00:00:00Z",
+      "end_time": "2026-11-27T12:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"vfiff\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[13102700],\"billed_engagements\":[10],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[2],\"engagements\":[10],\"follows\":null,\"impressions\":[1536],\"likes\":[1],\"link_clicks\":[2],\"qualified_impressions\":[1536],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"5p62p\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":null,\"billed_engagements\":null,\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":null,\"engagements\":null,\"follows\":null,\"impressions\":null,\"likes\":null,\"link_clicks\":null,\"qualified_impressions\":null,\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ag0ij\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[5217903],\"billed_engagements\":[7],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[1],\"engagements\":[7],\"follows\":null,\"impressions\":[1620],\"likes\":[1],\"link_clicks\":[1],\"qualified_impressions\":[1620],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"vp65q\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":null,\"billed_engagements\":[5],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":null,\"engagements\":[5],\"follows\":null,\"impressions\":[1027],\"likes\":null,\"link_clicks\":null,\"qualified_impressions\":[1027],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"8yy2z\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[2071856],\"billed_engagements\":[19],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[1],\"engagements\":[19],\"follows\":null,\"impressions\":[1739],\"likes\":[3],\"link_clicks\":[1],\"qualified_impressions\":[1739],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-11-27T12:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"vfiff\",\"5p62p\",\"ag0ij\",\"vp65q\",\"8yy2z\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-27T00:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-27T12:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "vp65q",
+      "entity_status": "PAUSED",
+      "total_budget_amount_local_micro": 85000000,
+      "daily_budget_amount_local_micro": 1000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"quillstep.co.uk\",\"advertiser_user_id\":\"1662609628984569493\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ysg0s\",\"categories\":[],\"created_at\":\"2026-11-20T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":1000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"d4diri\",\"goal\":\"LINK_CLICKS\",\"id\":\"vp65q\",\"ios_app_store_identifier\":null,\"name\":\"UK devs \u2014 alter table\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-20T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":85000000,\"updated_at\":\"2026-11-27T12:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"daily_budget_amount_local_micro\":1000000,\"entity_status\":\"PAUSED\",\"line_item_id\":\"vp65q\",\"total_budget_amount_local_micro\":85000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-27T12:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "vfiff",
+      "daily_budget_amount_local_micro": 35000000,
+      "total_budget_amount_local_micro": 250000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"quillstep.co.uk\",\"advertiser_user_id\":\"1662609628984569493\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ysg0s\",\"categories\":[],\"created_at\":\"2026-11-20T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":35000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"d4diri\",\"goal\":\"LINK_CLICKS\",\"id\":\"vfiff\",\"ios_app_store_identifier\":null,\"name\":\"UK devs \u2014 war room trial\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-20T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":250000000,\"updated_at\":\"2026-11-27T12:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"daily_budget_amount_local_micro\":35000000,\"line_item_id\":\"vfiff\",\"total_budget_amount_local_micro\":250000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-27T12:00:00Z",
+    "tool": "promote_post",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "8yy2z",
+      "tweet_ids": "2121392666835189657"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"approval_status\":\"ACCEPTED\",\"created_at\":\"2026-11-27T12:00:00Z\",\"deleted\":false,\"entity_status\":\"ACTIVE\",\"id\":\"q1pyxy\",\"line_item_id\":\"8yy2z\",\"tweet_id\":\"2121392666835189657\",\"updated_at\":\"2026-11-27T12:00:00Z\"}],\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"line_item_id\":\"8yy2z\",\"tweet_ids\":[\"2121392666835189657\"]}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-27T12:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2026-11-29T09:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2026-11-30T01:00:00Z\",\"now\":\"2026-11-29T09:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-29T09:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "entity": "LINE_ITEM",
+      "entity_ids": "vfiff,5p62p,ag0ij,vp65q,8yy2z",
+      "start_time": "2026-11-22T09:00:00Z",
+      "end_time": "2026-11-29T09:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"vfiff\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[191715722],\"billed_engagements\":[411],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[38],\"engagements\":[411],\"follows\":null,\"impressions\":[56477],\"likes\":[6],\"link_clicks\":[38],\"qualified_impressions\":[56477],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"5p62p\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":null,\"billed_engagements\":null,\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":null,\"engagements\":null,\"follows\":null,\"impressions\":null,\"likes\":null,\"link_clicks\":null,\"qualified_impressions\":null,\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ag0ij\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[110773117],\"billed_engagements\":[362],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[24],\"engagements\":[362],\"follows\":null,\"impressions\":[54588],\"likes\":[9],\"link_clicks\":[24],\"qualified_impressions\":[54588],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"vp65q\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[53113498],\"billed_engagements\":[158],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[9],\"engagements\":[158],\"follows\":null,\"impressions\":[24454],\"likes\":[2],\"link_clicks\":[9],\"qualified_impressions\":[24454],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"8yy2z\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[41691079],\"billed_engagements\":[329],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[24],\"engagements\":[329],\"follows\":null,\"impressions\":[43799],\"likes\":[10],\"link_clicks\":[24],\"qualified_impressions\":[43799],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-11-29T09:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"vfiff\",\"5p62p\",\"ag0ij\",\"vp65q\",\"8yy2z\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-22T09:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-29T09:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "entity": "LINE_ITEM",
+      "entity_ids": "vfiff,ag0ij,vp65q,8yy2z",
+      "start_time": "2026-11-27T00:00:00Z",
+      "end_time": "2026-11-29T00:00:00Z",
+      "granularity": "DAY",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"vfiff\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[34159005,31185289],\"billed_engagements\":[57,83],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[7,7],\"engagements\":[57,83],\"follows\":null,\"impressions\":[7437,12243],\"likes\":[1,2],\"link_clicks\":[7,7],\"qualified_impressions\":[7437,12243],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ag0ij\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[17379256,16319145],\"billed_engagements\":[50,56],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[4,4],\"engagements\":[50,56],\"follows\":null,\"impressions\":[7142,7760],\"likes\":[3,0],\"link_clicks\":[4,4],\"qualified_impressions\":[7142,7760],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"vp65q\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":null,\"billed_engagements\":[7,0],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":null,\"engagements\":[7,0],\"follows\":null,\"impressions\":[1281,0],\"likes\":null,\"link_clicks\":null,\"qualified_impressions\":[1281,0],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"8yy2z\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[6877245,7949076],\"billed_engagements\":[72,66],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[4,5],\"engagements\":[72,66],\"follows\":null,\"impressions\":[9272,10469],\"likes\":[3,2],\"link_clicks\":[4,5],\"qualified_impressions\":[9272,10469],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-11-29T00:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"vfiff\",\"ag0ij\",\"vp65q\",\"8yy2z\"],\"granularity\":\"DAY\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-27T00:00:00Z\"}},\"time_series_length\":2}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-29T09:00:00Z",
+    "tool": "list_line_items",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "campaign_ids": "ysg0s",
+      "with_total_count": true
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"advertiser_domain\":\"quillstep.co.uk\",\"advertiser_user_id\":\"1662609628984569493\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ysg0s\",\"categories\":[],\"created_at\":\"2026-11-20T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":35000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"d4diri\",\"goal\":\"LINK_CLICKS\",\"id\":\"vfiff\",\"ios_app_store_identifier\":null,\"name\":\"UK devs \u2014 war room trial\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-20T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":250000000,\"updated_at\":\"2026-11-27T12:00:00Z\"},{\"advertiser_domain\":\"quillstep.co.uk\",\"advertiser_user_id\":\"1662609628984569493\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ysg0s\",\"categories\":[],\"created_at\":\"2026-11-20T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":1000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"d4diri\",\"goal\":\"LINK_CLICKS\",\"id\":\"5p62p\",\"ios_app_store_identifier\":null,\"name\":\"UK devs \u2014 deadline trial\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-20T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":10000000,\"updated_at\":\"2026-11-21T12:00:00Z\"},{\"advertiser_domain\":\"quillstep.co.uk\",\"advertiser_user_id\":\"1662609628984569493\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ysg0s\",\"categories\":[],\"created_at\":\"2026-11-20T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":19000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"d4diri\",\"goal\":\"LINK_CLICKS\",\"id\":\"ag0ij\",\"ios_app_store_identifier\":null,\"name\":\"UK devs \u2014 free solo\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-20T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":155000000,\"updated_at\":\"2026-11-23T12:00:00Z\"},{\"advertiser_domain\":\"quillstep.co.uk\",\"advertiser_user_id\":\"1662609628984569493\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ysg0s\",\"categories\":[],\"created_at\":\"2026-11-20T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":1000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"PAUSED\",\"frequency_cap\":null,\"funding_instrument_id\":\"d4diri\",\"goal\":\"LINK_CLICKS\",\"id\":\"vp65q\",\"ios_app_store_identifier\":null,\"name\":\"UK devs \u2014 alter table\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-20T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":85000000,\"updated_at\":\"2026-11-27T12:00:00Z\"},{\"advertiser_domain\":\"quillstep.co.uk\",\"advertiser_user_id\":\"1662609628984569493\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ysg0s\",\"categories\":[],\"created_at\":\"2026-11-23T12:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":12000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"d4diri\",\"goal\":\"LINK_CLICKS\",\"id\":\"8yy2z\",\"ios_app_store_identifier\":null,\"name\":\"UK keywords \u2014 free solo\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-23T12:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":50000000,\"updated_at\":\"2026-11-25T12:00:00Z\"}],\"next_cursor\":null,\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"campaign_ids\":[\"ysg0s\"],\"with_total_count\":true}},\"total_count\":5}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-29T09:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "entity": "LINE_ITEM",
+      "entity_ids": "vfiff,ag0ij,8yy2z,vp65q,5p62p",
+      "start_time": "2026-11-29T00:00:00Z",
+      "end_time": "2026-11-29T09:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"vfiff\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[18239839],\"billed_engagements\":[19],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[4],\"engagements\":[19],\"follows\":null,\"impressions\":[1931],\"likes\":null,\"link_clicks\":[4],\"qualified_impressions\":[1931],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ag0ij\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[5050575],\"billed_engagements\":[9],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[1],\"engagements\":[9],\"follows\":null,\"impressions\":[1025],\"likes\":null,\"link_clicks\":[1],\"qualified_impressions\":[1025],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"8yy2z\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[3306081],\"billed_engagements\":[18],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[2],\"engagements\":[18],\"follows\":null,\"impressions\":[1691],\"likes\":[1],\"link_clicks\":[2],\"qualified_impressions\":[1691],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"vp65q\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":null,\"billed_engagements\":null,\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":null,\"engagements\":null,\"follows\":null,\"impressions\":null,\"likes\":null,\"link_clicks\":null,\"qualified_impressions\":null,\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"5p62p\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":null,\"billed_engagements\":null,\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":null,\"engagements\":null,\"follows\":null,\"impressions\":null,\"likes\":null,\"link_clicks\":null,\"qualified_impressions\":null,\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-11-29T09:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"vfiff\",\"ag0ij\",\"8yy2z\",\"vp65q\",\"5p62p\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-29T00:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-29T09:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "8yy2z",
+      "total_budget_amount_local_micro": 55000000,
+      "daily_budget_amount_local_micro": 12000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"quillstep.co.uk\",\"advertiser_user_id\":\"1662609628984569493\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ysg0s\",\"categories\":[],\"created_at\":\"2026-11-23T12:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":12000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"d4diri\",\"goal\":\"LINK_CLICKS\",\"id\":\"8yy2z\",\"ios_app_store_identifier\":null,\"name\":\"UK keywords \u2014 free solo\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-23T12:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":55000000,\"updated_at\":\"2026-11-29T09:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"daily_budget_amount_local_micro\":12000000,\"line_item_id\":\"8yy2z\",\"total_budget_amount_local_micro\":55000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-29T09:00:00Z",
+    "tool": "update_line_item",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "line_item_id": "vfiff",
+      "total_budget_amount_local_micro": 245000000
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"advertiser_domain\":\"quillstep.co.uk\",\"advertiser_user_id\":\"1662609628984569493\",\"android_app_store_identifier\":null,\"automatic_tweet_promotion\":null,\"bid_amount_local_micro\":null,\"bid_strategy\":\"AUTO\",\"campaign_id\":\"ysg0s\",\"categories\":[],\"created_at\":\"2026-11-20T00:00:00Z\",\"creative_source\":\"MANUAL\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":35000000,\"deleted\":false,\"duration_in_days\":null,\"end_time\":\"2026-11-30T00:00:00Z\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"d4diri\",\"goal\":\"LINK_CLICKS\",\"id\":\"vfiff\",\"ios_app_store_identifier\":null,\"name\":\"UK devs \u2014 war room trial\",\"objective\":\"WEBSITE_CLICKS\",\"pay_by\":\"LINK_CLICK\",\"placements\":[\"ALL_ON_TWITTER\"],\"primary_web_event_tag\":null,\"product_type\":\"PROMOTED_TWEETS\",\"standard_delivery\":true,\"start_time\":\"2026-11-20T00:00:00Z\",\"target_cpa_local_micro\":null,\"total_budget_amount_local_micro\":245000000,\"updated_at\":\"2026-11-29T09:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"line_item_id\":\"vfiff\",\"total_budget_amount_local_micro\":245000000}}}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-29T09:00:00Z",
+    "tool": "wait_until",
+    "arguments": {
+      "until": "2026-11-30T01:00:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"latest_wake\":\"2026-11-30T01:00:00Z\",\"now\":\"2026-11-30T01:00:00Z\"}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-30T01:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "entity": "LINE_ITEM",
+      "entity_ids": "vfiff,5p62p,ag0ij,vp65q,8yy2z",
+      "start_time": "2026-11-20T00:00:00Z",
+      "end_time": "2026-11-27T00:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"vfiff\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[138725977],\"billed_engagements\":[359],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[26],\"engagements\":[359],\"follows\":null,\"impressions\":[51942],\"likes\":[4],\"link_clicks\":[26],\"qualified_impressions\":[51942],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"5p62p\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[7186200],\"billed_engagements\":[62],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[1],\"engagements\":[62],\"follows\":null,\"impressions\":[10343],\"likes\":null,\"link_clicks\":[1],\"qualified_impressions\":[10343],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ag0ij\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[90528862],\"billed_engagements\":[328],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[19],\"engagements\":[328],\"follows\":null,\"impressions\":[51789],\"likes\":[8],\"link_clicks\":[19],\"qualified_impressions\":[51789],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"vp65q\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[79638050],\"billed_engagements\":[238],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[14],\"engagements\":[238],\"follows\":null,\"impressions\":[37122],\"likes\":[5],\"link_clicks\":[14],\"qualified_impressions\":[37122],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"8yy2z\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[23558677],\"billed_engagements\":[173],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[13],\"engagements\":[173],\"follows\":null,\"impressions\":[22367],\"likes\":[4],\"link_clicks\":[13],\"qualified_impressions\":[22367],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-11-27T00:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"vfiff\",\"5p62p\",\"ag0ij\",\"vp65q\",\"8yy2z\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-20T00:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-30T01:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "entity": "LINE_ITEM",
+      "entity_ids": "vfiff,5p62p,ag0ij,vp65q,8yy2z",
+      "start_time": "2026-11-27T00:00:00Z",
+      "end_time": "2026-11-30T01:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"vfiff\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[98433166],\"billed_engagements\":[221],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[21],\"engagements\":[221],\"follows\":null,\"impressions\":[31922],\"likes\":[5],\"link_clicks\":[21],\"qualified_impressions\":[31922],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"5p62p\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":null,\"billed_engagements\":null,\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":null,\"engagements\":null,\"follows\":null,\"impressions\":null,\"likes\":null,\"link_clicks\":null,\"qualified_impressions\":null,\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"ag0ij\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[50262568],\"billed_engagements\":[157],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[12],\"engagements\":[157],\"follows\":null,\"impressions\":[21827],\"likes\":[3],\"link_clicks\":[12],\"qualified_impressions\":[21827],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"vp65q\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":null,\"billed_engagements\":[7],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":null,\"engagements\":[7],\"follows\":null,\"impressions\":[1281],\"likes\":null,\"link_clicks\":null,\"qualified_impressions\":[1281],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"8yy2z\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[25350406],\"billed_engagements\":[197],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[16],\"engagements\":[197],\"follows\":null,\"impressions\":[27825],\"likes\":[6],\"link_clicks\":[16],\"qualified_impressions\":[27825],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-11-30T01:00:00Z\",\"entity\":\"LINE_ITEM\",\"entity_ids\":[\"vfiff\",\"5p62p\",\"ag0ij\",\"vp65q\",\"8yy2z\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-27T00:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-30T01:00:00Z",
+    "tool": "get_account_stats",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "entity": "PROMOTED_TWEET",
+      "entity_ids": "s27jkr,r8l46z,k7sm5a,xqoeqd,tu59u9,q1pyxy",
+      "start_time": "2026-11-23T00:00:00Z",
+      "end_time": "2026-11-30T01:00:00Z",
+      "granularity": "TOTAL",
+      "metric_groups": "ENGAGEMENT,BILLING",
+      "placement": "ALL_ON_TWITTER"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":[{\"id\":\"s27jkr\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[186628349],\"billed_engagements\":[421],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[37],\"engagements\":[421],\"follows\":null,\"impressions\":[59564],\"likes\":[8],\"link_clicks\":[37],\"qualified_impressions\":[59564],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"r8l46z\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":null,\"billed_engagements\":null,\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":null,\"engagements\":null,\"follows\":null,\"impressions\":null,\"likes\":null,\"link_clicks\":null,\"qualified_impressions\":null,\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"k7sm5a\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[109900140],\"billed_engagements\":[366],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[24],\"engagements\":[366],\"follows\":null,\"impressions\":[53356],\"likes\":[8],\"link_clicks\":[24],\"qualified_impressions\":[53356],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"xqoeqd\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[43635033],\"billed_engagements\":[118],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[7],\"engagements\":[118],\"follows\":null,\"impressions\":[17054],\"likes\":[1],\"link_clicks\":[7],\"qualified_impressions\":[17054],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"tu59u9\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[31725035],\"billed_engagements\":[276],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[18],\"engagements\":[276],\"follows\":null,\"impressions\":[37766],\"likes\":[9],\"link_clicks\":[18],\"qualified_impressions\":[37766],\"replies\":null,\"retweets\":null},\"segment\":null}]},{\"id\":\"q1pyxy\",\"id_data\":[{\"metrics\":{\"app_clicks\":null,\"billed_charge_local_micro\":[17184048],\"billed_engagements\":[94],\"card_engagements\":null,\"carousel_swipes\":null,\"clicks\":[11],\"engagements\":[94],\"follows\":null,\"impressions\":[12426],\"likes\":[1],\"link_clicks\":[11],\"qualified_impressions\":[12426],\"replies\":null,\"retweets\":null},\"segment\":null}]}],\"data_type\":\"stats\",\"request\":{\"params\":{\"country\":null,\"end_time\":\"2026-11-30T01:00:00Z\",\"entity\":\"PROMOTED_TWEET\",\"entity_ids\":[\"s27jkr\",\"r8l46z\",\"k7sm5a\",\"xqoeqd\",\"tu59u9\",\"q1pyxy\"],\"granularity\":\"TOTAL\",\"metric_groups\":[\"ENGAGEMENT\",\"BILLING\"],\"placement\":\"ALL_ON_TWITTER\",\"platform\":null,\"segmentation_type\":null,\"start_time\":\"2026-11-23T00:00:00Z\"}},\"time_series_length\":1}"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "at": "2026-11-30T01:00:00Z",
+    "tool": "get_campaign",
+    "arguments": {
+      "account_id": "1866febnka2",
+      "campaign_id": "ysg0s"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"data\":{\"budget_optimization\":\"LINE_ITEM\",\"created_at\":\"2026-11-20T00:00:00Z\",\"currency\":\"USD\",\"daily_budget_amount_local_micro\":null,\"deleted\":false,\"duration_in_days\":null,\"effective_status\":\"EXPIRED\",\"entity_status\":\"ACTIVE\",\"frequency_cap\":null,\"funding_instrument_id\":\"d4diri\",\"id\":\"ysg0s\",\"name\":\"BF26 Quillstep UK sign-ups\",\"purchase_order_number\":null,\"reasons_not_servable\":[\"EXPIRED\"],\"servable\":false,\"standard_delivery\":null,\"total_budget_amount_local_micro\":null,\"updated_at\":\"2026-11-20T00:00:00Z\"},\"request\":{\"params\":{\"account_id\":\"1866febnka2\",\"campaign_id\":\"ysg0s\"}}}"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

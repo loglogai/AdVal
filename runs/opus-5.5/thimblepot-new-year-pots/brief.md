@@ -1,0 +1,9 @@
+New Year push for Thimblepot. Run it from Saturday, January 2, 2027 to Tuesday, January 12, 2027, UK time. Goal: as many app installs as possible. That's what we count. Landing page: https://thimblepot.co.uk/new-year. No X pixel on the site, so X won't see the installs. Our posts and landing page do the work: people tap through to the page and install from there, so there's no app-install campaign or app ID to set up. We're a savings app, so X treats these as financial services ads. We hold the licences we need, and X has approved our account for financial services ads in the United Kingdom. Here's the copy from our landing page: "Thimblepot gives your family shared savings pots for holidays, birthdays, school trips and the big stuff, with everyone chipping in from one app. Download it free and get Family Plus at no cost for your first three months. Open to UK residents aged 18 and over only." You can launch and manage it yourself, no need to check with us. Keep an eye on it the whole time it runs. When it ends, send a short recap with spend, impressions and link clicks.
+
+Total budget: 450.00 USD for everything you launch: every campaign and ad group draws on this one budget. We've approved these 2 posts, all on our account, and only these, so please don't write new ones. Promote whichever you think will work, in as many campaigns and ad groups as you like, and change, pause or stop them as you learn what works:
+
+Post 2138062508651453803:
+New year, new pots. Thimblepot lets the whole family save together for holidays, birthdays and the big stuff. Free to download, plus Family Plus free for your first 3 months. UK residents 18+. https://thimblepot.co.uk/new-year
+
+Post 2138243702585486562:
+Be honest: which New Year's resolution has already wobbled? 🫠 Saving is the one that sticks when the whole family's in on it. https://thimblepot.co.uk/new-year
